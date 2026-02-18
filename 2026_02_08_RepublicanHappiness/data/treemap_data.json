@@ -1,0 +1,740 @@
+{
+  "name": "Time Use",
+  "children": [
+    {
+      "name": "Work",
+      "children": [
+        {
+          "name": "Working",
+          "value": 144453306128.0,
+          "meaning": 4.28,
+          "happiness": 3.85,
+          "pct": 28.79
+        },
+        {
+          "name": "Work breaks",
+          "value": 1473936248.0,
+          "meaning": 5.2,
+          "happiness": 3.49,
+          "pct": 0.29
+        },
+        {
+          "name": "Security procedures",
+          "value": 810688501.0,
+          "meaning": 4.75,
+          "happiness": 4.75,
+          "pct": 0.16
+        },
+        {
+          "name": "502",
+          "value": 210090885.0,
+          "meaning": 3.06,
+          "happiness": 3.97,
+          "pct": 0.04
+        }
+      ],
+      "meaning": 4.29,
+      "pct": 29.3
+    },
+    {
+      "name": "TV & Leisure",
+      "children": [
+        {
+          "name": "TV & relaxing",
+          "value": 113246845362.0,
+          "meaning": 3.74,
+          "happiness": 4.24,
+          "pct": 22.57
+        },
+        {
+          "name": "Reading for pleasure",
+          "value": 2468494298.0,
+          "meaning": 4.79,
+          "happiness": 5.24,
+          "pct": 0.49
+        },
+        {
+          "name": "Writing",
+          "value": 18316322.0,
+          "meaning": 5.23,
+          "happiness": 3.9,
+          "pct": 0.0
+        },
+        {
+          "name": "Other leisure",
+          "value": 7040685.0,
+          "meaning": 6.0,
+          "happiness": 6.0,
+          "pct": 0.0
+        }
+      ],
+      "meaning": 3.76,
+      "pct": 23.1
+    },
+    {
+      "name": "Housework",
+      "children": [
+        {
+          "name": "Cleaning",
+          "value": 22155360436.0,
+          "meaning": 4.07,
+          "happiness": 3.9,
+          "pct": 4.41
+        },
+        {
+          "name": "Cooking",
+          "value": 21354294798.0,
+          "meaning": 4.47,
+          "happiness": 4.4,
+          "pct": 4.26
+        },
+        {
+          "name": "Laundry",
+          "value": 5228563416.0,
+          "meaning": 4.45,
+          "happiness": 4.38,
+          "pct": 1.04
+        },
+        {
+          "name": "Home repairs",
+          "value": 5064803893.0,
+          "meaning": 3.99,
+          "happiness": 3.83,
+          "pct": 1.01
+        },
+        {
+          "name": "Sewing & textiles",
+          "value": 3400303752.0,
+          "meaning": 4.69,
+          "happiness": 4.49,
+          "pct": 0.68
+        },
+        {
+          "name": "Interior maintenance",
+          "value": 2393554454.0,
+          "meaning": 4.47,
+          "happiness": 3.94,
+          "pct": 0.48
+        },
+        {
+          "name": "Exterior cleaning",
+          "value": 1736582344.0,
+          "meaning": 4.3,
+          "happiness": 3.74,
+          "pct": 0.35
+        },
+        {
+          "name": "Lawn & garden",
+          "value": 1427850024.0,
+          "meaning": 4.29,
+          "happiness": 3.93,
+          "pct": 0.28
+        },
+        {
+          "name": "208",
+          "value": 384605962.0,
+          "meaning": 4.05,
+          "happiness": 3.14,
+          "pct": 0.08
+        },
+        {
+          "name": "905",
+          "value": 275586735.0,
+          "meaning": 3.26,
+          "happiness": 3.13,
+          "pct": 0.05
+        },
+        {
+          "name": "902",
+          "value": 180049394.0,
+          "meaning": 3.68,
+          "happiness": 2.95,
+          "pct": 0.04
+        },
+        {
+          "name": "Using HH services",
+          "value": 40630263.0,
+          "meaning": 1.73,
+          "happiness": 3.31,
+          "pct": 0.01
+        },
+        {
+          "name": "904",
+          "value": 25924012.0,
+          "meaning": 6.0,
+          "happiness": 6.0,
+          "pct": 0.01
+        },
+        {
+          "name": "299",
+          "value": 8636210.0,
+          "meaning": 6.0,
+          "happiness": 5.0,
+          "pct": 0.0
+        },
+        {
+          "name": "903",
+          "value": 4992770.0,
+          "meaning": 3.78,
+          "happiness": 3.97,
+          "pct": 0.0
+        },
+        {
+          "name": "999",
+          "value": 4091704.0,
+          "meaning": 5.0,
+          "happiness": 3.0,
+          "pct": 0.0
+        }
+      ],
+      "meaning": 4.28,
+      "pct": 12.7
+    },
+    {
+      "name": "Travel",
+      "children": [
+        {
+          "name": "Commute (work)",
+          "value": 12168203013.0,
+          "meaning": 3.73,
+          "happiness": 4.05,
+          "pct": 2.42
+        },
+        {
+          "name": "Travel (shopping)",
+          "value": 8210707284.0,
+          "meaning": 3.92,
+          "happiness": 4.37,
+          "pct": 1.64
+        },
+        {
+          "name": "Travel (eating)",
+          "value": 5008337939.0,
+          "meaning": 4.2,
+          "happiness": 4.5,
+          "pct": 1.0
+        },
+        {
+          "name": "Travel (childcare)",
+          "value": 4133415596.0,
+          "meaning": 4.5,
+          "happiness": 4.55,
+          "pct": 0.82
+        },
+        {
+          "name": "Travel (leisure)",
+          "value": 3473816761.0,
+          "meaning": 4.09,
+          "happiness": 4.49,
+          "pct": 0.69
+        },
+        {
+          "name": "Travel (education)",
+          "value": 1615950697.0,
+          "meaning": 4.25,
+          "happiness": 4.58,
+          "pct": 0.32
+        },
+        {
+          "name": "Travel (housework)",
+          "value": 1554149397.0,
+          "meaning": 4.21,
+          "happiness": 4.55,
+          "pct": 0.31
+        },
+        {
+          "name": "Travel (sports)",
+          "value": 1538773872.0,
+          "meaning": 4.0,
+          "happiness": 4.49,
+          "pct": 0.31
+        },
+        {
+          "name": "Travel (medical)",
+          "value": 1096287161.0,
+          "meaning": 3.9,
+          "happiness": 3.84,
+          "pct": 0.22
+        },
+        {
+          "name": "Travel (other)",
+          "value": 1048374517.0,
+          "meaning": 3.97,
+          "happiness": 4.32,
+          "pct": 0.21
+        },
+        {
+          "name": "Travel (volunteering)",
+          "value": 581306654.0,
+          "meaning": 4.63,
+          "happiness": 4.61,
+          "pct": 0.12
+        },
+        {
+          "name": "Travel (religious)",
+          "value": 553804418.0,
+          "meaning": 4.74,
+          "happiness": 4.95,
+          "pct": 0.11
+        },
+        {
+          "name": "Travel (phone)",
+          "value": 512393901.0,
+          "meaning": 3.15,
+          "happiness": 3.79,
+          "pct": 0.1
+        },
+        {
+          "name": "Travel (personal)",
+          "value": 453011240.0,
+          "meaning": 4.27,
+          "happiness": 4.32,
+          "pct": 0.09
+        },
+        {
+          "name": "1809",
+          "value": 191129759.0,
+          "meaning": 3.93,
+          "happiness": 3.74,
+          "pct": 0.04
+        },
+        {
+          "name": "1810",
+          "value": 151775821.0,
+          "meaning": 3.81,
+          "happiness": 4.71,
+          "pct": 0.03
+        },
+        {
+          "name": "1816",
+          "value": 113794677.0,
+          "meaning": 4.69,
+          "happiness": 3.75,
+          "pct": 0.02
+        },
+        {
+          "name": "1818",
+          "value": 73974789.0,
+          "meaning": 3.61,
+          "happiness": 4.59,
+          "pct": 0.01
+        }
+      ],
+      "meaning": 4.01,
+      "pct": 8.5
+    },
+    {
+      "name": "Eating & Drinking",
+      "children": [
+        {
+          "name": "Eating & drinking",
+          "value": 38766796406.0,
+          "meaning": 4.62,
+          "happiness": 4.68,
+          "pct": 7.73
+        },
+        {
+          "name": "Waiting for food/drink",
+          "value": 116073164.0,
+          "meaning": 4.16,
+          "happiness": 4.48,
+          "pct": 0.02
+        }
+      ],
+      "meaning": 4.62,
+      "pct": 7.7
+    },
+    {
+      "name": "Childcare",
+      "children": [
+        {
+          "name": "Caring for kids",
+          "value": 21921930770.0,
+          "meaning": 5.33,
+          "happiness": 5.0,
+          "pct": 4.37
+        },
+        {
+          "name": "Playing with kids",
+          "value": 2125803601.0,
+          "meaning": 5.45,
+          "happiness": 4.44,
+          "pct": 0.42
+        },
+        {
+          "name": "Non-HH kid activities",
+          "value": 1691013985.0,
+          "meaning": 4.43,
+          "happiness": 4.27,
+          "pct": 0.34
+        },
+        {
+          "name": "Non-HH kid care",
+          "value": 1542037634.0,
+          "meaning": 5.68,
+          "happiness": 5.38,
+          "pct": 0.31
+        },
+        {
+          "name": "Kid health care",
+          "value": 414260135.0,
+          "meaning": 4.77,
+          "happiness": 4.12,
+          "pct": 0.08
+        },
+        {
+          "name": "Homework help",
+          "value": 405392446.0,
+          "meaning": 5.57,
+          "happiness": 3.99,
+          "pct": 0.08
+        },
+        {
+          "name": "404",
+          "value": 270226772.0,
+          "meaning": 5.59,
+          "happiness": 4.41,
+          "pct": 0.05
+        },
+        {
+          "name": "Waiting for kids",
+          "value": 252203053.0,
+          "meaning": 4.78,
+          "happiness": 4.45,
+          "pct": 0.05
+        },
+        {
+          "name": "HH kid care (secondary)",
+          "value": 229073368.0,
+          "meaning": 5.58,
+          "happiness": 4.63,
+          "pct": 0.05
+        },
+        {
+          "name": "403",
+          "value": 191691504.0,
+          "meaning": 6.0,
+          "happiness": 2.97,
+          "pct": 0.04
+        },
+        {
+          "name": "1003",
+          "value": 46241408.0,
+          "meaning": 4.14,
+          "happiness": 4.29,
+          "pct": 0.01
+        },
+        {
+          "name": "Non-HH kid reading",
+          "value": 35429661.0,
+          "meaning": 5.49,
+          "happiness": 5.0,
+          "pct": 0.01
+        },
+        {
+          "name": "HH kid play (secondary)",
+          "value": 29855074.0,
+          "meaning": 4.59,
+          "happiness": 2.17,
+          "pct": 0.01
+        },
+        {
+          "name": "Other childcare",
+          "value": 19167288.0,
+          "meaning": 4.64,
+          "happiness": 5.07,
+          "pct": 0.0
+        },
+        {
+          "name": "1004",
+          "value": 3146146.0,
+          "meaning": 6.0,
+          "happiness": 3.0,
+          "pct": 0.0
+        }
+      ],
+      "meaning": 5.31,
+      "pct": 5.8
+    },
+    {
+      "name": "Socializing",
+      "children": [
+        {
+          "name": "Talking & visiting",
+          "value": 20173380070.0,
+          "meaning": 5.16,
+          "happiness": 4.94,
+          "pct": 4.02
+        },
+        {
+          "name": "Events & parties",
+          "value": 3045206252.0,
+          "meaning": 5.27,
+          "happiness": 5.24,
+          "pct": 0.61
+        }
+      ],
+      "meaning": 5.17,
+      "pct": 4.6
+    },
+    {
+      "name": "Shopping",
+      "children": [
+        {
+          "name": "Shopping",
+          "value": 12979346187.0,
+          "meaning": 4.13,
+          "happiness": 4.31,
+          "pct": 2.59
+        },
+        {
+          "name": "Researching purchases",
+          "value": 26853019.0,
+          "meaning": 1.87,
+          "happiness": 3.66,
+          "pct": 0.01
+        }
+      ],
+      "meaning": 4.13,
+      "pct": 2.6
+    },
+    {
+      "name": "Sports & Exercise",
+      "children": [
+        {
+          "name": "Exercise & sports",
+          "value": 9567624134.0,
+          "meaning": 5.09,
+          "happiness": 4.92,
+          "pct": 1.91
+        },
+        {
+          "name": "Spectator sports",
+          "value": 706626347.0,
+          "meaning": 5.0,
+          "happiness": 5.07,
+          "pct": 0.14
+        },
+        {
+          "name": "1303",
+          "value": 7416084.0,
+          "meaning": 3.74,
+          "happiness": 6.0,
+          "pct": 0.0
+        }
+      ],
+      "meaning": 5.08,
+      "pct": 2.0
+    },
+    {
+      "name": "Religious",
+      "children": [
+        {
+          "name": "Religious practice",
+          "value": 4743675594.0,
+          "meaning": 5.54,
+          "happiness": 5.1,
+          "pct": 0.95
+        },
+        {
+          "name": "Other religious",
+          "value": 13316074.0,
+          "meaning": 6.0,
+          "happiness": 5.64,
+          "pct": 0.0
+        }
+      ],
+      "meaning": 5.54,
+      "pct": 0.9
+    },
+    {
+      "name": "Education",
+      "children": [
+        {
+          "name": "Homework & research",
+          "value": 2677819317.0,
+          "meaning": 4.84,
+          "happiness": 3.56,
+          "pct": 0.53
+        },
+        {
+          "name": "Taking classes",
+          "value": 1692804155.0,
+          "meaning": 4.92,
+          "happiness": 3.75,
+          "pct": 0.34
+        },
+        {
+          "name": "Other education",
+          "value": 172973055.0,
+          "meaning": 5.81,
+          "happiness": 4.87,
+          "pct": 0.03
+        },
+        {
+          "name": "Registration",
+          "value": 53650400.0,
+          "meaning": 5.74,
+          "happiness": 4.6,
+          "pct": 0.01
+        }
+      ],
+      "meaning": 4.92,
+      "pct": 0.9
+    },
+    {
+      "name": "Volunteering",
+      "children": [
+        {
+          "name": "Other volunteering",
+          "value": 935303220.0,
+          "meaning": 5.22,
+          "happiness": 5.01,
+          "pct": 0.19
+        },
+        {
+          "name": "Admin volunteering",
+          "value": 910400271.0,
+          "meaning": 5.67,
+          "happiness": 5.21,
+          "pct": 0.18
+        },
+        {
+          "name": "Computer volunteering",
+          "value": 647979936.0,
+          "meaning": 4.86,
+          "happiness": 4.54,
+          "pct": 0.13
+        },
+        {
+          "name": "Performance volunteering",
+          "value": 534411168.0,
+          "meaning": 4.9,
+          "happiness": 4.36,
+          "pct": 0.11
+        },
+        {
+          "name": "Fundraising",
+          "value": 375114344.0,
+          "meaning": 5.38,
+          "happiness": 4.85,
+          "pct": 0.07
+        },
+        {
+          "name": "Food prep volunteering",
+          "value": 194320444.0,
+          "meaning": 4.48,
+          "happiness": 4.49,
+          "pct": 0.04
+        },
+        {
+          "name": "Mentoring",
+          "value": 46784261.0,
+          "meaning": 6.0,
+          "happiness": 3.59,
+          "pct": 0.01
+        },
+        {
+          "name": "1507",
+          "value": 2961986.0,
+          "meaning": 4.81,
+          "happiness": 4.6,
+          "pct": 0.0
+        },
+        {
+          "name": "1508",
+          "value": 2465246.0,
+          "meaning": 4.0,
+          "happiness": 4.0,
+          "pct": 0.0
+        }
+      ],
+      "meaning": 5.21,
+      "pct": 0.7
+    },
+    {
+      "name": "Phone Calls",
+      "children": [
+        {
+          "name": "Phone & mail",
+          "value": 2932825720.0,
+          "meaning": 4.96,
+          "happiness": 3.95,
+          "pct": 0.58
+        },
+        {
+          "name": "Email & texting",
+          "value": 7467121.0,
+          "meaning": 6.0,
+          "happiness": 6.0,
+          "pct": 0.0
+        }
+      ],
+      "meaning": 4.96,
+      "pct": 0.6
+    },
+    {
+      "name": "Prof. Services",
+      "children": [
+        {
+          "name": "Medical services",
+          "value": 1390904710.0,
+          "meaning": 4.45,
+          "happiness": 3.03,
+          "pct": 0.28
+        },
+        {
+          "name": "Personal care services",
+          "value": 591137203.0,
+          "meaning": 4.43,
+          "happiness": 4.76,
+          "pct": 0.12
+        },
+        {
+          "name": "Financial services",
+          "value": 155341956.0,
+          "meaning": 3.95,
+          "happiness": 4.12,
+          "pct": 0.03
+        },
+        {
+          "name": "Real estate",
+          "value": 153661929.0,
+          "meaning": 4.62,
+          "happiness": 2.51,
+          "pct": 0.03
+        },
+        {
+          "name": "Vet services",
+          "value": 74909483.0,
+          "meaning": 4.77,
+          "happiness": 3.88,
+          "pct": 0.01
+        },
+        {
+          "name": "Other prof. services",
+          "value": 59812500.0,
+          "meaning": 4.61,
+          "happiness": 3.91,
+          "pct": 0.01
+        },
+        {
+          "name": "Childcare services",
+          "value": 26433011.0,
+          "meaning": 5.65,
+          "happiness": 5.34,
+          "pct": 0.01
+        },
+        {
+          "name": "Legal services",
+          "value": 3809033.0,
+          "meaning": 6.0,
+          "happiness": 5.73,
+          "pct": 0.0
+        }
+      ],
+      "meaning": 4.45,
+      "pct": 0.5
+    }
+  ]
+}

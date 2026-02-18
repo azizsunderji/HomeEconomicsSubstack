@@ -1,0 +1,57 @@
+[
+  {
+    "name":"Jeff Bezos",
+    "netWorth":194.0,
+    "philanthropyScore":2
+  },
+  {
+    "name":"Mark Zuckerberg",
+    "netWorth":177.0,
+    "philanthropyScore":2
+  },
+  {
+    "name":"Larry Ellison",
+    "netWorth":141.0,
+    "philanthropyScore":1
+  },
+  {
+    "name":"Bill Gates",
+    "netWorth":128.0,
+    "philanthropyScore":5
+  },
+  {
+    "name":"Steve Ballmer",
+    "netWorth":121.0,
+    "philanthropyScore":2
+  },
+  {
+    "name":"Larry Page",
+    "netWorth":114.0,
+    "philanthropyScore":1
+  },
+  {
+    "name":"Sergey Brin",
+    "netWorth":110.0,
+    "philanthropyScore":2
+  },
+  {
+    "name":"Michael Dell",
+    "netWorth":91.0,
+    "philanthropyScore":2
+  },
+  {
+    "name":"Jensen Huang",
+    "netWorth":77.0,
+    "philanthropyScore":1
+  },
+  {
+    "name":"MacKenzie Scott",
+    "netWorth":35.6,
+    "philanthropyScore":5
+  },
+  {
+    "name":"Eric Schmidt",
+    "netWorth":20.6,
+    "philanthropyScore":3
+  }
+]

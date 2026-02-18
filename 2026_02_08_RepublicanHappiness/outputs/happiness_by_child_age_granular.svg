@@ -1,0 +1,1616 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="640.80625pt" height="535.00088pt" viewBox="0 0 640.80625 535.00088" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-02-09T10:17:50.242447</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M -0 535.00088 
+L 640.80625 535.00088 
+L 640.80625 0 
+L -0 0 
+z
+" style="fill: #f6f7f3"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 25.78125 490.646 
+L 633.60625 490.646 
+L 633.60625 47.21 
+L 25.78125 47.21 
+z
+" style="fill: #f6f7f3"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="mc13fe58594" d="M 0 0 
+L 0 4 
+" style="stroke: #999999; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mc13fe58594" x="65.826922" y="490.646" style="fill: #999999; stroke: #999999; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <!-- 0 -->
+      <g transform="translate(62.626922 505.146) scale(0.1 -0.1)">
+       <defs>
+        <path id="ABCOracleEdu-Regular-30" d="M 2042 -96 
+C 3021 -96 3738 678 3738 2240 
+C 3738 3802 3021 4576 2042 4576 
+C 1069 4576 352 3802 352 2240 
+C 352 678 1069 -96 2042 -96 
+z
+M 2042 461 
+C 1408 461 1030 998 1030 2240 
+C 1030 3475 1408 4019 2042 4019 
+C 2682 4019 3059 3475 3059 2240 
+C 3059 998 2682 461 2042 461 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#ABCOracleEdu-Regular-30"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#mc13fe58594" x="127.913234" y="490.646" style="fill: #999999; stroke: #999999; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <!-- 2 -->
+      <g transform="translate(124.928078 505.146) scale(0.1 -0.1)">
+       <defs>
+        <path id="ABCOracleEdu-Regular-32" d="M 250 0 
+L 3488 0 
+L 3488 608 
+L 992 608 
+C 1094 998 1414 1274 2016 1626 
+L 2438 1875 
+C 3053 2234 3456 2637 3456 3283 
+C 3456 4000 2854 4576 1965 4576 
+C 1050 4576 384 4038 378 3130 
+L 1062 3130 
+C 1069 3674 1414 4026 1965 4026 
+C 2419 4026 2771 3744 2771 3290 
+C 2771 2842 2502 2605 1907 2253 
+L 1600 2074 
+C 678 1536 282 960 250 0 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#ABCOracleEdu-Regular-32"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#mc13fe58594" x="189.999547" y="490.646" style="fill: #999999; stroke: #999999; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <!-- 4 -->
+      <g transform="translate(186.904234 505.146) scale(0.1 -0.1)">
+       <defs>
+        <path id="ABCOracleEdu-Regular-34" d="M 243 1018 
+L 2464 1018 
+L 2464 0 
+L 3123 0 
+L 3123 1018 
+L 3699 1018 
+L 3699 1594 
+L 3123 1594 
+L 3123 4480 
+L 2413 4480 
+L 243 1664 
+L 243 1018 
+z
+M 870 1594 
+L 2464 3654 
+L 2464 1594 
+L 870 1594 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#ABCOracleEdu-Regular-34"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mc13fe58594" x="252.085859" y="490.646" style="fill: #999999; stroke: #999999; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <!-- 6 -->
+      <g transform="translate(249.010859 505.146) scale(0.1 -0.1)">
+       <defs>
+        <path id="ABCOracleEdu-Regular-36" d="M 2106 -96 
+C 3008 -96 3616 563 3616 1395 
+C 3616 2234 3046 2893 2202 2893 
+C 1645 2893 1222 2611 1024 2240 
+C 1024 3226 1338 4026 2131 4026 
+C 2560 4026 2765 3802 2861 3565 
+L 3533 3565 
+C 3437 4090 3014 4576 2138 4576 
+C 979 4576 352 3629 352 2125 
+C 352 704 1050 -96 2106 -96 
+z
+M 2054 461 
+C 1542 461 1158 845 1158 1402 
+C 1158 1958 1542 2349 2054 2349 
+C 2592 2349 2950 1965 2950 1402 
+C 2950 858 2592 461 2054 461 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#ABCOracleEdu-Regular-36"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#mc13fe58594" x="314.172172" y="490.646" style="fill: #999999; stroke: #999999; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <!-- 8 -->
+      <g transform="translate(311.092484 505.146) scale(0.1 -0.1)">
+       <defs>
+        <path id="ABCOracleEdu-Regular-38" d="M 1971 -96 
+C 2938 -96 3610 467 3610 1248 
+C 3610 1837 3245 2266 2733 2406 
+C 3181 2573 3450 2944 3450 3424 
+C 3450 4083 2848 4576 1971 4576 
+C 1107 4576 493 4083 493 3424 
+C 493 2925 768 2560 1229 2406 
+C 685 2259 333 1837 333 1248 
+C 333 467 1011 -96 1971 -96 
+z
+M 1971 461 
+C 1414 461 1011 800 1011 1293 
+C 1011 1792 1389 2125 1971 2125 
+C 2560 2125 2931 1792 2931 1293 
+C 2931 794 2534 461 1971 461 
+z
+M 1971 2650 
+C 1504 2650 1165 2944 1165 3354 
+C 1165 3757 1498 4019 1971 4019 
+C 2458 4019 2778 3757 2778 3354 
+C 2778 2944 2451 2650 1971 2650 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#ABCOracleEdu-Regular-38"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#mc13fe58594" x="376.258484" y="490.646" style="fill: #999999; stroke: #999999; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <!-- 10 -->
+      <g transform="translate(371.148328 505.146) scale(0.1 -0.1)">
+       <defs>
+        <path id="ABCOracleEdu-Regular-31" d="M 1203 0 
+L 1856 0 
+L 1856 4480 
+L 1286 4480 
+C 1152 3898 704 3584 134 3584 
+L 134 3117 
+L 1203 3117 
+L 1203 0 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#ABCOracleEdu-Regular-31"/>
+       <use xlink:href="#ABCOracleEdu-Regular-30" x="38.199997"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#mc13fe58594" x="438.344797" y="490.646" style="fill: #999999; stroke: #999999; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <!-- 12 -->
+      <g transform="translate(433.449484 505.146) scale(0.1 -0.1)">
+       <use xlink:href="#ABCOracleEdu-Regular-31"/>
+       <use xlink:href="#ABCOracleEdu-Regular-32" x="38.199997"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#mc13fe58594" x="500.43111" y="490.646" style="fill: #999999; stroke: #999999; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <!-- 14 -->
+      <g transform="translate(495.425641 505.146) scale(0.1 -0.1)">
+       <use xlink:href="#ABCOracleEdu-Regular-31"/>
+       <use xlink:href="#ABCOracleEdu-Regular-34" x="38.199997"/>
+      </g>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#mc13fe58594" x="562.517422" y="490.646" style="fill: #999999; stroke: #999999; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <!-- 16 -->
+      <g transform="translate(557.532266 505.146) scale(0.1 -0.1)">
+       <use xlink:href="#ABCOracleEdu-Regular-31"/>
+       <use xlink:href="#ABCOracleEdu-Regular-36" x="38.199997"/>
+      </g>
+     </g>
+    </g>
+    <g id="text_10">
+     <!-- Age of youngest child -->
+     <g style="fill: #3d3733" transform="translate(274.365469 518.950687) scale(0.11 -0.11)">
+      <defs>
+       <path id="ABCOracleEdu-Regular-41" d="M 45 0 
+L 755 0 
+L 1120 998 
+L 3110 998 
+L 3469 0 
+L 4192 0 
+L 2509 4480 
+L 1760 4480 
+L 45 0 
+z
+M 1331 1574 
+L 1664 2490 
+L 2118 3744 
+L 2125 3744 
+L 2566 2515 
+L 2906 1574 
+L 1331 1574 
+z
+" transform="scale(0.015625)"/>
+       <path id="ABCOracleEdu-Regular-67" d="M 1811 -1344 
+C 2893 -1344 3360 -685 3360 45 
+L 3360 3245 
+L 2726 3245 
+L 2726 2816 
+C 2579 3085 2221 3334 1722 3334 
+C 941 3334 282 2746 282 1702 
+C 282 646 941 70 1722 70 
+C 2227 70 2579 320 2726 589 
+L 2726 13 
+C 2726 -525 2394 -832 1850 -832 
+C 1408 -832 1184 -678 1101 -397 
+L 422 -397 
+C 525 -1018 1011 -1344 1811 -1344 
+z
+M 1830 576 
+C 1267 576 941 992 941 1702 
+C 941 2381 1293 2829 1830 2829 
+C 2381 2829 2739 2368 2739 1702 
+C 2739 1043 2381 576 1830 576 
+z
+" transform="scale(0.015625)"/>
+       <path id="ABCOracleEdu-Regular-65" d="M 1914 -96 
+C 2701 -96 3213 307 3366 838 
+L 2675 838 
+C 2566 614 2330 429 1926 429 
+C 1363 429 966 832 928 1446 
+L 3443 1446 
+C 3430 2643 2822 3341 1856 3341 
+C 998 3341 269 2643 269 1619 
+C 269 576 915 -96 1914 -96 
+z
+M 941 1958 
+C 1018 2470 1395 2810 1869 2810 
+C 2381 2810 2714 2483 2797 1958 
+L 941 1958 
+z
+" transform="scale(0.015625)"/>
+       <path id="ABCOracleEdu-Regular-20" transform="scale(0.015625)"/>
+       <path id="ABCOracleEdu-Regular-6f" d="M 1888 -96 
+C 2822 -96 3507 627 3507 1626 
+C 3507 2618 2822 3341 1888 3341 
+C 954 3341 269 2618 269 1626 
+C 269 627 954 -96 1888 -96 
+z
+M 1888 435 
+C 1325 435 928 870 928 1626 
+C 928 2374 1325 2810 1888 2810 
+C 2458 2810 2848 2374 2848 1626 
+C 2848 870 2458 435 1888 435 
+z
+" transform="scale(0.015625)"/>
+       <path id="ABCOracleEdu-Regular-66" d="M 717 3552 
+L 717 3245 
+L 122 3245 
+L 122 2758 
+L 717 2758 
+L 717 0 
+L 1370 0 
+L 1370 2758 
+L 2221 2758 
+L 2221 3245 
+L 1370 3245 
+L 1370 3488 
+C 1370 3885 1555 4038 1882 4038 
+C 1971 4038 2074 4026 2182 4006 
+L 2182 4538 
+C 2074 4557 1946 4570 1792 4570 
+C 1133 4570 717 4237 717 3552 
+z
+" transform="scale(0.015625)"/>
+       <path id="ABCOracleEdu-Regular-79" d="M 749 -1312 
+C 1178 -1312 1446 -1184 1638 -966 
+C 1805 -774 1894 -518 2003 -186 
+L 3168 3245 
+L 2502 3245 
+L 1894 1280 
+C 1824 1056 1766 883 1683 538 
+L 1670 538 
+C 1581 870 1523 1056 1446 1274 
+L 794 3245 
+L 83 3245 
+L 1178 237 
+C 1254 32 1286 -83 1286 -237 
+C 1286 -589 1056 -774 698 -774 
+C 614 -774 525 -768 435 -742 
+L 435 -1286 
+C 550 -1306 653 -1312 749 -1312 
+z
+" transform="scale(0.015625)"/>
+       <path id="ABCOracleEdu-Regular-75" d="M 1555 -96 
+C 1946 -96 2298 77 2483 429 
+L 2483 0 
+L 3117 0 
+L 3117 3245 
+L 2470 3245 
+L 2470 1421 
+C 2470 730 2061 448 1690 448 
+C 1306 448 1107 685 1107 1171 
+L 1107 3245 
+L 467 3245 
+L 467 1094 
+C 467 346 864 -96 1555 -96 
+z
+" transform="scale(0.015625)"/>
+       <path id="ABCOracleEdu-Regular-6e" d="M 506 0 
+L 1152 0 
+L 1152 1811 
+C 1152 2509 1536 2803 1965 2803 
+C 2381 2803 2573 2522 2573 2106 
+L 2573 0 
+L 3219 0 
+L 3219 2170 
+C 3219 2938 2765 3341 2118 3341 
+C 1702 3341 1350 3149 1139 2810 
+L 1139 3245 
+L 506 3245 
+L 506 0 
+z
+" transform="scale(0.015625)"/>
+       <path id="ABCOracleEdu-Regular-73" d="M 1734 -96 
+C 2509 -96 3104 320 3104 934 
+C 3104 1472 2707 1728 1926 1907 
+L 1504 2010 
+C 1152 2093 992 2189 992 2413 
+C 992 2669 1248 2829 1613 2829 
+C 2035 2829 2272 2656 2362 2374 
+L 2989 2374 
+C 2906 2893 2438 3334 1619 3334 
+C 845 3334 333 2906 333 2374 
+C 333 1843 717 1587 1389 1434 
+L 1773 1350 
+C 2253 1248 2445 1126 2445 877 
+C 2445 595 2157 416 1754 416 
+C 1267 416 979 646 909 973 
+L 211 973 
+C 288 352 838 -96 1734 -96 
+z
+" transform="scale(0.015625)"/>
+       <path id="ABCOracleEdu-Regular-74" d="M 672 4205 
+L 672 3245 
+L 128 3245 
+L 128 2739 
+L 672 2739 
+L 672 883 
+C 672 224 1069 -32 1574 -32 
+C 1722 -32 1907 -13 2016 19 
+L 2016 506 
+C 1914 486 1824 480 1741 480 
+C 1421 480 1312 653 1312 1011 
+L 1312 2739 
+L 1952 2739 
+L 1952 3245 
+L 1312 3245 
+L 1312 4205 
+L 672 4205 
+z
+" transform="scale(0.015625)"/>
+       <path id="ABCOracleEdu-Regular-63" d="M 1850 -96 
+C 2694 -96 3194 403 3296 979 
+L 2643 979 
+C 2528 659 2291 448 1869 448 
+C 1382 448 954 832 954 1619 
+C 954 2400 1376 2797 1894 2797 
+C 2272 2797 2522 2605 2637 2266 
+L 3290 2266 
+C 3187 2848 2694 3334 1862 3334 
+C 992 3334 275 2694 275 1619 
+C 275 512 979 -96 1850 -96 
+z
+" transform="scale(0.015625)"/>
+       <path id="ABCOracleEdu-Regular-68" d="M 506 0 
+L 1152 0 
+L 1152 1811 
+C 1152 2509 1536 2803 1965 2803 
+C 2381 2803 2573 2522 2573 2106 
+L 2573 0 
+L 3219 0 
+L 3219 2170 
+C 3219 2938 2765 3341 2118 3341 
+C 1709 3341 1363 3162 1152 2829 
+L 1152 4480 
+L 506 4480 
+L 506 0 
+z
+" transform="scale(0.015625)"/>
+       <path id="ABCOracleEdu-Regular-69" d="M 506 0 
+L 1152 0 
+L 1152 3245 
+L 506 3245 
+L 506 0 
+z
+M 448 3693 
+L 1197 3693 
+L 1197 4416 
+L 448 4416 
+L 448 3693 
+z
+" transform="scale(0.015625)"/>
+       <path id="ABCOracleEdu-Regular-6c" d="M 506 0 
+L 1152 0 
+L 1152 4480 
+L 506 4480 
+L 506 0 
+z
+" transform="scale(0.015625)"/>
+       <path id="ABCOracleEdu-Regular-64" d="M 1722 -96 
+C 2227 -96 2560 134 2746 442 
+L 2746 0 
+L 3392 0 
+L 3392 4480 
+L 2746 4480 
+L 2746 2803 
+C 2560 3110 2227 3341 1722 3341 
+C 890 3341 275 2688 275 1626 
+C 275 570 890 -96 1722 -96 
+z
+M 1830 429 
+C 1267 429 934 909 934 1626 
+C 934 2349 1267 2816 1830 2816 
+C 2368 2816 2758 2317 2758 1626 
+C 2758 941 2368 429 1830 429 
+z
+" transform="scale(0.015625)"/>
+      </defs>
+      <use xlink:href="#ABCOracleEdu-Regular-41"/>
+      <use xlink:href="#ABCOracleEdu-Regular-67" x="66.499985"/>
+      <use xlink:href="#ABCOracleEdu-Regular-65" x="126.799973"/>
+      <use xlink:href="#ABCOracleEdu-Regular-20" x="184.59996"/>
+      <use xlink:href="#ABCOracleEdu-Regular-6f" x="208.199951"/>
+      <use xlink:href="#ABCOracleEdu-Regular-66" x="267.199936"/>
+      <use xlink:href="#ABCOracleEdu-Regular-20" x="303.59993"/>
+      <use xlink:href="#ABCOracleEdu-Regular-79" x="327.199921"/>
+      <use xlink:href="#ABCOracleEdu-Regular-6f" x="378.599915"/>
+      <use xlink:href="#ABCOracleEdu-Regular-75" x="437.599899"/>
+      <use xlink:href="#ABCOracleEdu-Regular-6e" x="494.19989"/>
+      <use xlink:href="#ABCOracleEdu-Regular-67" x="551.799881"/>
+      <use xlink:href="#ABCOracleEdu-Regular-65" x="612.099869"/>
+      <use xlink:href="#ABCOracleEdu-Regular-73" x="669.899857"/>
+      <use xlink:href="#ABCOracleEdu-Regular-74" x="721.999847"/>
+      <use xlink:href="#ABCOracleEdu-Regular-20" x="756.799835"/>
+      <use xlink:href="#ABCOracleEdu-Regular-63" x="780.399826"/>
+      <use xlink:href="#ABCOracleEdu-Regular-68" x="835.699814"/>
+      <use xlink:href="#ABCOracleEdu-Regular-69" x="893.299805"/>
+      <use xlink:href="#ABCOracleEdu-Regular-6c" x="919.199799"/>
+      <use xlink:href="#ABCOracleEdu-Regular-64" x="945.099792"/>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_10">
+      <path d="M 25.78125 490.646 
+L 633.60625 490.646 
+" clip-path="url(#p721e14ff67)" style="fill: none; stroke: #999999; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_11"/>
+     <g id="text_11">
+      <!-- 3.8 -->
+      <g transform="translate(7.721875 494.146) scale(0.1 -0.1)">
+       <defs>
+        <path id="ABCOracleEdu-Regular-33" d="M 1856 -96 
+C 2880 -96 3450 538 3450 1184 
+C 3450 1792 3059 2182 2515 2317 
+C 2982 2477 3309 2886 3309 3379 
+C 3309 4006 2746 4576 1862 4576 
+C 1024 4576 435 4070 352 3386 
+L 1037 3386 
+C 1101 3770 1408 4026 1856 4026 
+C 2317 4026 2630 3725 2630 3315 
+C 2630 2861 2285 2573 1632 2573 
+L 1338 2573 
+L 1338 2029 
+L 1632 2029 
+C 2349 2029 2778 1709 2778 1254 
+C 2778 723 2381 461 1856 461 
+C 1331 461 1018 755 960 1101 
+L 262 1101 
+C 346 390 922 -96 1856 -96 
+z
+" transform="scale(0.015625)"/>
+        <path id="ABCOracleEdu-Regular-2e" d="M 422 0 
+L 1171 0 
+L 1171 774 
+L 422 774 
+L 422 0 
+z
+" transform="scale(0.015625)"/>
+       </defs>
+       <use xlink:href="#ABCOracleEdu-Regular-33"/>
+       <use xlink:href="#ABCOracleEdu-Regular-2e" x="59.099991"/>
+       <use xlink:href="#ABCOracleEdu-Regular-38" x="83.999985"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_12">
+      <path d="M 25.78125 392.104667 
+L 633.60625 392.104667 
+" clip-path="url(#p721e14ff67)" style="fill: none; stroke: #999999; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_13"/>
+     <g id="text_12">
+      <!-- 4.0 -->
+      <g transform="translate(7.2 395.604667) scale(0.1 -0.1)">
+       <use xlink:href="#ABCOracleEdu-Regular-34"/>
+       <use xlink:href="#ABCOracleEdu-Regular-2e" x="61.899994"/>
+       <use xlink:href="#ABCOracleEdu-Regular-30" x="86.799988"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_14">
+      <path d="M 25.78125 293.563333 
+L 633.60625 293.563333 
+" clip-path="url(#p721e14ff67)" style="fill: none; stroke: #999999; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_15"/>
+     <g id="text_13">
+      <!-- 4.2 -->
+      <g transform="translate(7.629687 297.063333) scale(0.1 -0.1)">
+       <use xlink:href="#ABCOracleEdu-Regular-34"/>
+       <use xlink:href="#ABCOracleEdu-Regular-2e" x="61.899994"/>
+       <use xlink:href="#ABCOracleEdu-Regular-32" x="86.799988"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_16">
+      <path d="M 25.78125 195.022 
+L 633.60625 195.022 
+" clip-path="url(#p721e14ff67)" style="fill: none; stroke: #999999; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_17"/>
+     <g id="text_14">
+      <!-- 4.4 -->
+      <g transform="translate(7.409375 198.522) scale(0.1 -0.1)">
+       <use xlink:href="#ABCOracleEdu-Regular-34"/>
+       <use xlink:href="#ABCOracleEdu-Regular-2e" x="61.899994"/>
+       <use xlink:href="#ABCOracleEdu-Regular-34" x="86.799988"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_18">
+      <path d="M 25.78125 96.480667 
+L 633.60625 96.480667 
+" clip-path="url(#p721e14ff67)" style="fill: none; stroke: #999999; stroke-opacity: 0.3; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_19"/>
+     <g id="text_15">
+      <!-- 4.6 -->
+      <g transform="translate(7.45 99.980667) scale(0.1 -0.1)">
+       <use xlink:href="#ABCOracleEdu-Regular-34"/>
+       <use xlink:href="#ABCOracleEdu-Regular-2e" x="61.899994"/>
+       <use xlink:href="#ABCOracleEdu-Regular-36" x="86.799988"/>
+      </g>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 25.78125 490.646 
+L 633.60625 490.646 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 53.409659 2362.931333 
+L 78.244184 2362.931333 
+L 78.244184 163.173247 
+L 53.409659 163.173247 
+z
+" clip-path="url(#p721e14ff67)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 84.452815 2362.931333 
+L 109.28734 2362.931333 
+L 109.28734 188.042568 
+L 84.452815 188.042568 
+z
+" clip-path="url(#p721e14ff67)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 115.495972 2362.931333 
+L 140.330497 2362.931333 
+L 140.330497 163.641505 
+L 115.495972 163.641505 
+z
+" clip-path="url(#p721e14ff67)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 146.539128 2362.931333 
+L 171.373653 2362.931333 
+L 171.373653 237.980022 
+L 146.539128 237.980022 
+z
+" clip-path="url(#p721e14ff67)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 177.582284 2362.931333 
+L 202.416809 2362.931333 
+L 202.416809 229.726153 
+L 177.582284 229.726153 
+z
+" clip-path="url(#p721e14ff67)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 208.625441 2362.931333 
+L 233.459966 2362.931333 
+L 233.459966 191.798746 
+L 208.625441 191.798746 
+z
+" clip-path="url(#p721e14ff67)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 239.668597 2362.931333 
+L 264.503122 2362.931333 
+L 264.503122 196.57144 
+L 239.668597 196.57144 
+z
+" clip-path="url(#p721e14ff67)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 270.711753 2362.931333 
+L 295.546278 2362.931333 
+L 295.546278 210.276802 
+L 270.711753 210.276802 
+z
+" clip-path="url(#p721e14ff67)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 301.754909 2362.931333 
+L 326.589434 2362.931333 
+L 326.589434 272.572285 
+L 301.754909 272.572285 
+z
+" clip-path="url(#p721e14ff67)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 332.798066 2362.931333 
+L 357.632591 2362.931333 
+L 357.632591 220.423096 
+L 332.798066 220.423096 
+z
+" clip-path="url(#p721e14ff67)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 363.841222 2362.931333 
+L 388.675747 2362.931333 
+L 388.675747 156.74498 
+L 363.841222 156.74498 
+z
+" clip-path="url(#p721e14ff67)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 394.884378 2362.931333 
+L 419.718903 2362.931333 
+L 419.718903 255.695388 
+L 394.884378 255.695388 
+z
+" clip-path="url(#p721e14ff67)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 425.927534 2362.931333 
+L 450.762059 2362.931333 
+L 450.762059 260.530723 
+L 425.927534 260.530723 
+z
+" clip-path="url(#p721e14ff67)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 456.970691 2362.931333 
+L 481.805216 2362.931333 
+L 481.805216 297.006585 
+L 456.970691 297.006585 
+z
+" clip-path="url(#p721e14ff67)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 488.013847 2362.931333 
+L 512.848372 2362.931333 
+L 512.848372 196.356662 
+L 488.013847 196.356662 
+z
+" clip-path="url(#p721e14ff67)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 519.057003 2362.931333 
+L 543.891528 2362.931333 
+L 543.891528 296.906259 
+L 519.057003 296.906259 
+z
+" clip-path="url(#p721e14ff67)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 550.10016 2362.931333 
+L 574.934685 2362.931333 
+L 574.934685 142.70853 
+L 550.10016 142.70853 
+z
+" clip-path="url(#p721e14ff67)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 581.143316 2362.931333 
+L 605.977841 2362.931333 
+L 605.977841 431.226007 
+L 581.143316 431.226007 
+z
+" clip-path="url(#p721e14ff67)" style="fill: #fbcab5"/>
+   </g>
+   <g id="text_16">
+    <!-- No children: 4.12 -->
+    <g style="fill: #3d3733" transform="translate(539.754032 320.130275) scale(0.09 -0.09)">
+     <defs>
+      <path id="ABCOracleEdu-Regular-4e" d="M 576 0 
+L 1242 0 
+L 1242 2291 
+C 1242 2784 1229 3219 1210 3648 
+L 3392 0 
+L 4256 0 
+L 4256 4480 
+L 3590 4480 
+L 3590 2221 
+C 3590 1734 3597 1286 3610 851 
+L 1440 4480 
+L 576 4480 
+L 576 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Regular-72" d="M 506 0 
+L 1152 0 
+L 1152 1619 
+C 1152 2163 1325 2509 1690 2650 
+C 1856 2714 2048 2726 2291 2707 
+L 2291 3334 
+C 1779 3366 1331 3174 1139 2611 
+L 1139 3245 
+L 506 3245 
+L 506 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Regular-3a" d="M 422 2470 
+L 1171 2470 
+L 1171 3245 
+L 422 3245 
+L 422 2470 
+z
+M 422 0 
+L 1171 0 
+L 1171 774 
+L 422 774 
+L 422 0 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#ABCOracleEdu-Regular-4e"/>
+     <use xlink:href="#ABCOracleEdu-Regular-6f" x="75.499985"/>
+     <use xlink:href="#ABCOracleEdu-Regular-20" x="134.499969"/>
+     <use xlink:href="#ABCOracleEdu-Regular-63" x="158.09996"/>
+     <use xlink:href="#ABCOracleEdu-Regular-68" x="213.399948"/>
+     <use xlink:href="#ABCOracleEdu-Regular-69" x="270.999939"/>
+     <use xlink:href="#ABCOracleEdu-Regular-6c" x="296.899933"/>
+     <use xlink:href="#ABCOracleEdu-Regular-64" x="322.799927"/>
+     <use xlink:href="#ABCOracleEdu-Regular-72" x="383.699921"/>
+     <use xlink:href="#ABCOracleEdu-Regular-65" x="421.699905"/>
+     <use xlink:href="#ABCOracleEdu-Regular-6e" x="479.499893"/>
+     <use xlink:href="#ABCOracleEdu-Regular-3a" x="537.099884"/>
+     <use xlink:href="#ABCOracleEdu-Regular-20" x="561.999878"/>
+     <use xlink:href="#ABCOracleEdu-Regular-34" x="585.599869"/>
+     <use xlink:href="#ABCOracleEdu-Regular-2e" x="647.499863"/>
+     <use xlink:href="#ABCOracleEdu-Regular-31" x="672.399857"/>
+     <use xlink:href="#ABCOracleEdu-Regular-32" x="710.599854"/>
+    </g>
+   </g>
+   <g id="text_17">
+    <!-- Activity-weighted happiness (0-6 scale), respondents aged 25-54 -->
+    <g style="fill: #888888" transform="translate(25.78125 38.34128) scale(0.11 -0.11)">
+     <defs>
+      <path id="ABCOracleEdu-Regular-76" d="M 1229 0 
+L 2029 0 
+L 3130 3245 
+L 2458 3245 
+L 1850 1286 
+L 1651 621 
+L 1645 621 
+L 1440 1286 
+L 806 3245 
+L 109 3245 
+L 1229 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Regular-2d" d="M 352 1581 
+L 2042 1581 
+L 2042 2163 
+L 352 2163 
+L 352 1581 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Regular-77" d="M 1062 0 
+L 1798 0 
+L 2477 2490 
+L 3168 0 
+L 3910 0 
+L 4826 3245 
+L 4166 3245 
+L 3533 736 
+L 2874 3245 
+L 2125 3245 
+L 1466 723 
+L 832 3245 
+L 134 3245 
+L 1062 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Regular-61" d="M 1402 -90 
+C 1990 -90 2330 218 2470 435 
+C 2483 294 2515 102 2541 0 
+L 3181 0 
+C 3123 218 3078 512 3078 781 
+L 3078 2330 
+C 3078 2950 2688 3341 1798 3341 
+C 934 3341 480 2886 384 2458 
+L 1101 2458 
+C 1158 2662 1395 2848 1798 2848 
+C 2202 2848 2445 2656 2445 2362 
+C 2445 2067 2285 1971 1766 1907 
+L 1555 1882 
+C 973 1805 250 1651 250 877 
+C 250 198 832 -90 1402 -90 
+z
+M 1549 429 
+C 1203 429 934 589 934 909 
+C 934 1280 1235 1363 1715 1440 
+C 2163 1510 2336 1581 2445 1728 
+L 2445 1357 
+C 2445 826 2086 429 1549 429 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Regular-70" d="M 506 -1248 
+L 1152 -1248 
+L 1152 442 
+C 1331 141 1677 -96 2176 -96 
+C 3008 -96 3622 557 3622 1619 
+C 3622 2675 3008 3341 2176 3341 
+C 1677 3341 1331 3104 1152 2810 
+L 1152 3245 
+L 506 3245 
+L 506 -1248 
+z
+M 2067 429 
+C 1530 429 1146 928 1146 1619 
+C 1146 2310 1530 2816 2067 2816 
+C 2637 2816 2963 2342 2963 1619 
+C 2963 896 2637 429 2067 429 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Regular-28" d="M 1318 -576 
+L 1901 -576 
+C 1312 205 960 1056 960 2080 
+C 960 3104 1312 3949 1901 4736 
+L 1318 4736 
+C 749 4051 314 3072 314 2080 
+C 314 1088 749 102 1318 -576 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Regular-29" d="M 762 4736 
+L 179 4736 
+C 768 3955 1120 3104 1120 2080 
+C 1120 1056 768 211 179 -576 
+L 762 -576 
+C 1331 109 1766 1088 1766 2080 
+C 1766 3072 1331 4058 762 4736 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Regular-2c" d="M 333 -986 
+L 774 -986 
+C 1030 -666 1171 -339 1171 230 
+L 1171 774 
+L 422 774 
+L 422 0 
+L 774 0 
+C 755 -365 582 -678 333 -986 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Regular-35" d="M 1850 -96 
+C 2822 -96 3456 557 3456 1421 
+C 3456 2323 2925 2912 2035 2912 
+C 1587 2912 1210 2694 1062 2477 
+L 1229 3898 
+L 3200 3898 
+L 3200 4480 
+L 710 4480 
+L 390 1920 
+L 1075 1920 
+C 1229 2150 1498 2387 1926 2387 
+C 2477 2387 2778 1978 2778 1440 
+C 2778 896 2438 480 1850 480 
+C 1344 480 1101 768 1018 1043 
+L 294 1043 
+C 352 486 858 -96 1850 -96 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#ABCOracleEdu-Regular-41"/>
+     <use xlink:href="#ABCOracleEdu-Regular-63" x="66.499985"/>
+     <use xlink:href="#ABCOracleEdu-Regular-74" x="121.799973"/>
+     <use xlink:href="#ABCOracleEdu-Regular-69" x="156.59996"/>
+     <use xlink:href="#ABCOracleEdu-Regular-76" x="182.499954"/>
+     <use xlink:href="#ABCOracleEdu-Regular-69" x="233.199951"/>
+     <use xlink:href="#ABCOracleEdu-Regular-74" x="259.099945"/>
+     <use xlink:href="#ABCOracleEdu-Regular-79" x="293.899933"/>
+     <use xlink:href="#ABCOracleEdu-Regular-2d" x="345.299927"/>
+     <use xlink:href="#ABCOracleEdu-Regular-77" x="382.699921"/>
+     <use xlink:href="#ABCOracleEdu-Regular-65" x="460.299911"/>
+     <use xlink:href="#ABCOracleEdu-Regular-69" x="518.099899"/>
+     <use xlink:href="#ABCOracleEdu-Regular-67" x="543.999893"/>
+     <use xlink:href="#ABCOracleEdu-Regular-68" x="604.299881"/>
+     <use xlink:href="#ABCOracleEdu-Regular-74" x="661.899872"/>
+     <use xlink:href="#ABCOracleEdu-Regular-65" x="696.69986"/>
+     <use xlink:href="#ABCOracleEdu-Regular-64" x="754.499847"/>
+     <use xlink:href="#ABCOracleEdu-Regular-20" x="815.399841"/>
+     <use xlink:href="#ABCOracleEdu-Regular-68" x="838.999832"/>
+     <use xlink:href="#ABCOracleEdu-Regular-61" x="896.599823"/>
+     <use xlink:href="#ABCOracleEdu-Regular-70" x="951.999817"/>
+     <use xlink:href="#ABCOracleEdu-Regular-70" x="1012.899811"/>
+     <use xlink:href="#ABCOracleEdu-Regular-69" x="1073.799805"/>
+     <use xlink:href="#ABCOracleEdu-Regular-6e" x="1099.699799"/>
+     <use xlink:href="#ABCOracleEdu-Regular-65" x="1157.299789"/>
+     <use xlink:href="#ABCOracleEdu-Regular-73" x="1215.099777"/>
+     <use xlink:href="#ABCOracleEdu-Regular-73" x="1267.199768"/>
+     <use xlink:href="#ABCOracleEdu-Regular-20" x="1319.299759"/>
+     <use xlink:href="#ABCOracleEdu-Regular-28" x="1342.89975"/>
+     <use xlink:href="#ABCOracleEdu-Regular-30" x="1375.399734"/>
+     <use xlink:href="#ABCOracleEdu-Regular-2d" x="1439.399719"/>
+     <use xlink:href="#ABCOracleEdu-Regular-36" x="1476.799713"/>
+     <use xlink:href="#ABCOracleEdu-Regular-20" x="1538.299698"/>
+     <use xlink:href="#ABCOracleEdu-Regular-73" x="1561.899689"/>
+     <use xlink:href="#ABCOracleEdu-Regular-63" x="1613.99968"/>
+     <use xlink:href="#ABCOracleEdu-Regular-61" x="1669.299667"/>
+     <use xlink:href="#ABCOracleEdu-Regular-6c" x="1724.699661"/>
+     <use xlink:href="#ABCOracleEdu-Regular-65" x="1750.599655"/>
+     <use xlink:href="#ABCOracleEdu-Regular-29" x="1808.399643"/>
+     <use xlink:href="#ABCOracleEdu-Regular-2c" x="1840.899628"/>
+     <use xlink:href="#ABCOracleEdu-Regular-20" x="1865.799622"/>
+     <use xlink:href="#ABCOracleEdu-Regular-72" x="1889.399612"/>
+     <use xlink:href="#ABCOracleEdu-Regular-65" x="1927.399597"/>
+     <use xlink:href="#ABCOracleEdu-Regular-73" x="1985.199585"/>
+     <use xlink:href="#ABCOracleEdu-Regular-70" x="2037.299576"/>
+     <use xlink:href="#ABCOracleEdu-Regular-6f" x="2098.19957"/>
+     <use xlink:href="#ABCOracleEdu-Regular-6e" x="2157.199554"/>
+     <use xlink:href="#ABCOracleEdu-Regular-64" x="2214.799545"/>
+     <use xlink:href="#ABCOracleEdu-Regular-65" x="2275.699539"/>
+     <use xlink:href="#ABCOracleEdu-Regular-6e" x="2333.499527"/>
+     <use xlink:href="#ABCOracleEdu-Regular-74" x="2391.099518"/>
+     <use xlink:href="#ABCOracleEdu-Regular-73" x="2425.899506"/>
+     <use xlink:href="#ABCOracleEdu-Regular-20" x="2477.999496"/>
+     <use xlink:href="#ABCOracleEdu-Regular-61" x="2501.599487"/>
+     <use xlink:href="#ABCOracleEdu-Regular-67" x="2556.999481"/>
+     <use xlink:href="#ABCOracleEdu-Regular-65" x="2617.299469"/>
+     <use xlink:href="#ABCOracleEdu-Regular-64" x="2675.099457"/>
+     <use xlink:href="#ABCOracleEdu-Regular-20" x="2735.999451"/>
+     <use xlink:href="#ABCOracleEdu-Regular-32" x="2759.599442"/>
+     <use xlink:href="#ABCOracleEdu-Regular-35" x="2819.299438"/>
+     <use xlink:href="#ABCOracleEdu-Regular-2d" x="2877.799423"/>
+     <use xlink:href="#ABCOracleEdu-Regular-35" x="2915.199417"/>
+     <use xlink:href="#ABCOracleEdu-Regular-34" x="2973.699402"/>
+    </g>
+   </g>
+   <g id="text_18">
+    <!-- Source: American Time Use Survey Well-Being Module (2010-2021) -->
+    <g style="fill: #999999" transform="translate(25.78125 526.12088) scale(0.08 -0.08)">
+     <defs>
+      <path id="ABCOracleEdu-Regular-53" d="M 2170 -96 
+C 3232 -96 3974 499 3974 1312 
+C 3974 1946 3526 2291 2490 2554 
+L 1946 2694 
+C 1312 2854 1075 2976 1075 3322 
+C 1075 3744 1491 4019 2067 4019 
+C 2669 4019 3040 3763 3155 3386 
+L 3846 3386 
+C 3718 4045 3117 4576 2074 4576 
+C 1126 4576 390 4032 390 3290 
+C 390 2618 838 2278 1773 2054 
+L 2342 1920 
+C 3021 1754 3270 1581 3270 1222 
+C 3270 800 2848 480 2189 480 
+C 1491 480 1069 819 960 1382 
+L 250 1382 
+C 346 518 1050 -96 2170 -96 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Regular-6d" d="M 506 0 
+L 1152 0 
+L 1152 1850 
+C 1152 2483 1453 2797 1875 2797 
+C 2253 2797 2451 2528 2451 2048 
+L 2451 0 
+L 3098 0 
+L 3098 1850 
+C 3098 2490 3398 2797 3834 2797 
+C 4211 2797 4397 2547 4397 2080 
+L 4397 0 
+L 5037 0 
+L 5037 2189 
+C 5037 2976 4550 3341 3923 3341 
+C 3482 3341 3104 3110 2925 2784 
+C 2752 3162 2438 3341 2035 3341 
+C 1651 3341 1299 3155 1133 2842 
+L 1133 3245 
+L 506 3245 
+L 506 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Regular-54" d="M 1370 0 
+L 2042 0 
+L 2042 3872 
+L 3264 3872 
+L 3264 4480 
+L 147 4480 
+L 147 3872 
+L 1370 3872 
+L 1370 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Regular-55" d="M 2208 -96 
+C 3200 -96 3885 557 3885 1632 
+L 3885 4480 
+L 3213 4480 
+L 3213 1728 
+C 3213 960 2867 512 2208 512 
+C 1555 512 1203 960 1203 1728 
+L 1203 4480 
+L 531 4480 
+L 531 1632 
+C 531 557 1216 -96 2208 -96 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Regular-57" d="M 1318 0 
+L 2106 0 
+L 2957 3667 
+L 3814 0 
+L 4602 0 
+L 5728 4480 
+L 5043 4480 
+L 4198 883 
+L 3398 4480 
+L 2554 4480 
+L 1747 883 
+L 883 4480 
+L 192 4480 
+L 1318 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Regular-42" d="M 576 0 
+L 2067 0 
+C 2963 0 3654 461 3654 1261 
+C 3654 1850 3258 2227 2784 2330 
+C 3206 2445 3526 2816 3526 3309 
+C 3526 4051 2918 4480 2035 4480 
+L 576 4480 
+L 576 0 
+z
+M 2010 2554 
+L 1248 2554 
+L 1248 3917 
+L 1971 3917 
+C 2502 3917 2848 3731 2848 3245 
+C 2848 2816 2541 2554 2010 2554 
+z
+M 1248 563 
+L 1248 2022 
+L 2010 2022 
+C 2637 2022 2970 1741 2970 1293 
+C 2970 826 2624 563 2003 563 
+L 1248 563 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Regular-4d" d="M 576 0 
+L 1235 0 
+L 1235 2221 
+C 1235 2739 1235 3174 1216 3610 
+L 2522 0 
+L 3200 0 
+L 4493 3603 
+L 4480 2221 
+L 4480 0 
+L 5139 0 
+L 5139 4480 
+L 4173 4480 
+L 3277 1926 
+C 3091 1414 2976 1056 2886 762 
+L 2874 762 
+C 2816 986 2637 1504 2458 2003 
+L 1574 4480 
+L 576 4480 
+L 576 0 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#ABCOracleEdu-Regular-53"/>
+     <use xlink:href="#ABCOracleEdu-Regular-6f" x="66.199997"/>
+     <use xlink:href="#ABCOracleEdu-Regular-75" x="125.199982"/>
+     <use xlink:href="#ABCOracleEdu-Regular-72" x="181.799973"/>
+     <use xlink:href="#ABCOracleEdu-Regular-63" x="219.799957"/>
+     <use xlink:href="#ABCOracleEdu-Regular-65" x="275.099945"/>
+     <use xlink:href="#ABCOracleEdu-Regular-3a" x="332.899933"/>
+     <use xlink:href="#ABCOracleEdu-Regular-20" x="357.799927"/>
+     <use xlink:href="#ABCOracleEdu-Regular-41" x="381.399918"/>
+     <use xlink:href="#ABCOracleEdu-Regular-6d" x="447.899902"/>
+     <use xlink:href="#ABCOracleEdu-Regular-65" x="533.899887"/>
+     <use xlink:href="#ABCOracleEdu-Regular-72" x="591.699875"/>
+     <use xlink:href="#ABCOracleEdu-Regular-69" x="629.69986"/>
+     <use xlink:href="#ABCOracleEdu-Regular-63" x="655.599854"/>
+     <use xlink:href="#ABCOracleEdu-Regular-61" x="710.899841"/>
+     <use xlink:href="#ABCOracleEdu-Regular-6e" x="766.299835"/>
+     <use xlink:href="#ABCOracleEdu-Regular-20" x="823.899826"/>
+     <use xlink:href="#ABCOracleEdu-Regular-54" x="847.499817"/>
+     <use xlink:href="#ABCOracleEdu-Regular-69" x="900.799805"/>
+     <use xlink:href="#ABCOracleEdu-Regular-6d" x="926.699799"/>
+     <use xlink:href="#ABCOracleEdu-Regular-65" x="1012.699783"/>
+     <use xlink:href="#ABCOracleEdu-Regular-20" x="1070.499771"/>
+     <use xlink:href="#ABCOracleEdu-Regular-55" x="1094.099762"/>
+     <use xlink:href="#ABCOracleEdu-Regular-73" x="1163.099747"/>
+     <use xlink:href="#ABCOracleEdu-Regular-65" x="1215.199738"/>
+     <use xlink:href="#ABCOracleEdu-Regular-20" x="1272.999725"/>
+     <use xlink:href="#ABCOracleEdu-Regular-53" x="1296.599716"/>
+     <use xlink:href="#ABCOracleEdu-Regular-75" x="1362.799713"/>
+     <use xlink:href="#ABCOracleEdu-Regular-72" x="1419.399704"/>
+     <use xlink:href="#ABCOracleEdu-Regular-76" x="1457.399689"/>
+     <use xlink:href="#ABCOracleEdu-Regular-65" x="1508.099686"/>
+     <use xlink:href="#ABCOracleEdu-Regular-79" x="1565.899673"/>
+     <use xlink:href="#ABCOracleEdu-Regular-20" x="1617.299667"/>
+     <use xlink:href="#ABCOracleEdu-Regular-57" x="1640.899658"/>
+     <use xlink:href="#ABCOracleEdu-Regular-65" x="1733.399643"/>
+     <use xlink:href="#ABCOracleEdu-Regular-6c" x="1791.199631"/>
+     <use xlink:href="#ABCOracleEdu-Regular-6c" x="1817.099625"/>
+     <use xlink:href="#ABCOracleEdu-Regular-2d" x="1842.999619"/>
+     <use xlink:href="#ABCOracleEdu-Regular-42" x="1880.399612"/>
+     <use xlink:href="#ABCOracleEdu-Regular-65" x="1942.499603"/>
+     <use xlink:href="#ABCOracleEdu-Regular-69" x="2000.299591"/>
+     <use xlink:href="#ABCOracleEdu-Regular-6e" x="2026.199585"/>
+     <use xlink:href="#ABCOracleEdu-Regular-67" x="2083.799576"/>
+     <use xlink:href="#ABCOracleEdu-Regular-20" x="2144.099564"/>
+     <use xlink:href="#ABCOracleEdu-Regular-4d" x="2167.699554"/>
+     <use xlink:href="#ABCOracleEdu-Regular-6f" x="2256.999542"/>
+     <use xlink:href="#ABCOracleEdu-Regular-64" x="2315.999527"/>
+     <use xlink:href="#ABCOracleEdu-Regular-75" x="2376.899521"/>
+     <use xlink:href="#ABCOracleEdu-Regular-6c" x="2433.499512"/>
+     <use xlink:href="#ABCOracleEdu-Regular-65" x="2459.399506"/>
+     <use xlink:href="#ABCOracleEdu-Regular-20" x="2517.199493"/>
+     <use xlink:href="#ABCOracleEdu-Regular-28" x="2540.799484"/>
+     <use xlink:href="#ABCOracleEdu-Regular-32" x="2573.299469"/>
+     <use xlink:href="#ABCOracleEdu-Regular-30" x="2632.999466"/>
+     <use xlink:href="#ABCOracleEdu-Regular-31" x="2696.999451"/>
+     <use xlink:href="#ABCOracleEdu-Regular-30" x="2735.199448"/>
+     <use xlink:href="#ABCOracleEdu-Regular-2d" x="2799.199432"/>
+     <use xlink:href="#ABCOracleEdu-Regular-32" x="2836.599426"/>
+     <use xlink:href="#ABCOracleEdu-Regular-30" x="2896.299423"/>
+     <use xlink:href="#ABCOracleEdu-Regular-32" x="2960.299408"/>
+     <use xlink:href="#ABCOracleEdu-Regular-31" x="3019.999405"/>
+     <use xlink:href="#ABCOracleEdu-Regular-29" x="3058.199402"/>
+    </g>
+   </g>
+   <g id="text_19">
+    <!-- Parents of young children are happiest -->
+    <g style="fill: #3d3733" transform="translate(25.78125 17.21) scale(0.14 -0.14)">
+     <defs>
+      <path id="ABCOracleEdu-Bold-50" d="M 1990 2387 
+L 1414 2387 
+L 1414 3744 
+L 1990 3744 
+C 2406 3744 2822 3571 2822 3066 
+C 2822 2579 2406 2387 1990 2387 
+z
+M 486 0 
+L 1414 0 
+L 1414 1619 
+L 2054 1619 
+C 3014 1619 3782 2163 3782 3066 
+C 3782 3955 3014 4480 2054 4480 
+L 486 4480 
+L 486 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Bold-61" d="M 1350 -90 
+C 1850 -90 2221 115 2413 422 
+C 2432 243 2464 90 2483 0 
+L 3354 0 
+C 3296 218 3245 525 3245 794 
+L 3245 2349 
+C 3245 3034 2790 3386 1875 3386 
+C 986 3386 454 3008 326 2400 
+L 1274 2400 
+C 1325 2624 1530 2771 1856 2771 
+C 2189 2771 2374 2630 2374 2374 
+C 2374 2042 2112 1990 1734 1946 
+L 1466 1914 
+C 1005 1856 179 1741 179 922 
+C 179 269 691 -90 1350 -90 
+z
+M 1626 563 
+C 1325 563 1101 698 1101 947 
+C 1101 1267 1376 1331 1779 1402 
+C 2086 1453 2240 1504 2374 1664 
+L 2374 1338 
+C 2374 890 2067 563 1626 563 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Bold-72" d="M 410 0 
+L 1293 0 
+L 1293 1338 
+C 1293 1958 1459 2381 1882 2522 
+C 2035 2573 2227 2573 2445 2554 
+L 2445 3379 
+C 1798 3411 1498 3187 1274 2579 
+L 1274 3290 
+L 410 3290 
+L 410 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Bold-65" d="M 1952 -96 
+C 2765 -96 3315 288 3501 870 
+L 2579 870 
+C 2490 704 2298 582 1965 582 
+C 1498 582 1146 902 1107 1382 
+L 3603 1382 
+C 3590 2675 2886 3386 1901 3386 
+C 979 3386 205 2662 205 1638 
+C 205 614 864 -96 1952 -96 
+z
+M 1114 1990 
+C 1184 2400 1510 2707 1933 2707 
+C 2387 2707 2656 2400 2726 1990 
+L 1114 1990 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Bold-6e" d="M 410 0 
+L 1293 0 
+L 1293 1830 
+C 1293 2432 1626 2682 1946 2682 
+C 2330 2682 2426 2413 2426 2125 
+L 2426 0 
+L 3309 0 
+L 3309 2189 
+C 3309 2957 2906 3386 2234 3386 
+C 1696 3386 1402 3091 1267 2874 
+L 1267 3290 
+L 410 3290 
+L 410 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Bold-74" d="M 653 4262 
+L 653 3290 
+L 90 3290 
+L 90 2618 
+L 653 2618 
+L 653 992 
+C 653 205 1146 -32 1702 -32 
+C 1920 -32 2125 0 2234 38 
+L 2234 672 
+C 2118 646 2022 634 1939 634 
+C 1626 634 1510 813 1510 1139 
+L 1510 2618 
+L 2170 2618 
+L 2170 3290 
+L 1510 3290 
+L 1510 4262 
+L 653 4262 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Bold-73" d="M 1747 -96 
+C 2624 -96 3270 314 3270 992 
+C 3270 1594 2714 1856 2048 1997 
+L 1683 2074 
+C 1306 2150 1158 2227 1158 2432 
+C 1158 2650 1370 2771 1658 2771 
+C 1978 2771 2195 2643 2253 2400 
+L 3149 2400 
+C 3085 2944 2592 3386 1677 3386 
+C 864 3386 275 3002 275 2374 
+C 275 1811 666 1530 1408 1370 
+L 1798 1286 
+C 2234 1197 2387 1101 2387 896 
+C 2387 653 2150 518 1798 518 
+C 1357 518 1139 742 1101 1056 
+L 154 1056 
+C 186 371 749 -96 1747 -96 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Bold-20" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Bold-6f" d="M 1933 -96 
+C 2906 -96 3661 621 3661 1645 
+C 3661 2669 2906 3386 1933 3386 
+C 960 3386 205 2669 205 1645 
+C 205 621 960 -96 1933 -96 
+z
+M 1933 608 
+C 1427 608 1107 973 1107 1645 
+C 1107 2317 1427 2682 1933 2682 
+C 2438 2682 2758 2317 2758 1645 
+C 2758 973 2438 608 1933 608 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Bold-66" d="M 710 3488 
+L 710 3290 
+L 109 3290 
+L 109 2650 
+L 710 2650 
+L 710 0 
+L 1606 0 
+L 1606 2650 
+L 2426 2650 
+L 2426 3290 
+L 1606 3290 
+L 1606 3424 
+C 1606 3757 1779 3910 2093 3910 
+C 2176 3910 2266 3898 2362 3878 
+L 2362 4525 
+C 2202 4557 2029 4576 1843 4576 
+C 1114 4576 710 4192 710 3488 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Bold-79" d="M 819 -1344 
+C 1203 -1344 1510 -1242 1728 -998 
+C 1907 -800 2042 -499 2195 -83 
+L 3418 3290 
+L 2477 3290 
+L 2042 1773 
+C 1958 1491 1888 1235 1786 819 
+L 1773 819 
+C 1670 1242 1600 1510 1504 1798 
+L 1018 3290 
+L 0 3290 
+L 1146 346 
+C 1210 173 1254 51 1254 -77 
+C 1254 -435 1018 -608 678 -608 
+C 589 -608 499 -602 403 -576 
+L 403 -1306 
+C 544 -1331 691 -1344 819 -1344 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Bold-75" d="M 1466 -96 
+C 1926 -96 2202 83 2381 371 
+L 2381 0 
+L 3245 0 
+L 3245 3290 
+L 2362 3290 
+L 2362 1498 
+C 2362 870 2080 621 1773 621 
+C 1389 621 1261 896 1261 1280 
+L 1261 3290 
+L 378 3290 
+L 378 1120 
+C 378 288 870 -96 1466 -96 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Bold-67" d="M 1869 -1344 
+C 3034 -1344 3514 -742 3514 109 
+L 3514 3290 
+L 2630 3290 
+L 2630 2886 
+C 2464 3174 2118 3386 1683 3386 
+C 864 3386 218 2822 218 1734 
+C 218 646 864 90 1683 90 
+C 2150 90 2470 307 2630 589 
+L 2630 77 
+C 2630 -429 2406 -685 1882 -685 
+C 1536 -685 1318 -550 1254 -288 
+L 352 -288 
+C 442 -960 928 -1344 1869 -1344 
+z
+M 1875 762 
+C 1376 762 1120 1133 1120 1741 
+C 1120 2349 1376 2714 1875 2714 
+C 2342 2714 2643 2304 2643 1741 
+C 2643 1171 2342 762 1875 762 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Bold-63" d="M 1888 -96 
+C 2765 -96 3341 442 3424 1082 
+L 2566 1082 
+C 2483 832 2272 621 1901 621 
+C 1446 621 1133 986 1133 1638 
+C 1133 2291 1446 2669 1901 2669 
+C 2272 2669 2483 2458 2566 2208 
+L 3424 2208 
+C 3334 2848 2778 3386 1914 3386 
+C 902 3386 211 2662 211 1638 
+C 211 595 890 -96 1888 -96 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Bold-68" d="M 410 0 
+L 1293 0 
+L 1293 1830 
+C 1293 2432 1626 2682 1946 2682 
+C 2330 2682 2426 2413 2426 2125 
+L 2426 0 
+L 3309 0 
+L 3309 2189 
+C 3309 2957 2906 3386 2234 3386 
+C 1715 3386 1427 3110 1293 2912 
+L 1293 4480 
+L 410 4480 
+L 410 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Bold-69" d="M 410 0 
+L 1280 0 
+L 1280 3290 
+L 410 3290 
+L 410 0 
+z
+M 346 3642 
+L 1338 3642 
+L 1338 4506 
+L 346 4506 
+L 346 3642 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Bold-6c" d="M 410 0 
+L 1293 0 
+L 1293 4480 
+L 410 4480 
+L 410 0 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Bold-64" d="M 1696 -96 
+C 2144 -96 2502 96 2662 378 
+L 2662 0 
+L 3546 0 
+L 3546 4480 
+L 2662 4480 
+L 2662 2893 
+C 2502 3168 2144 3386 1696 3386 
+C 864 3386 218 2733 218 1645 
+C 218 557 864 -96 1696 -96 
+z
+M 1888 595 
+C 1376 595 1120 1005 1120 1645 
+C 1120 2285 1376 2694 1888 2694 
+C 2368 2694 2675 2253 2675 1645 
+C 2675 1037 2368 595 1888 595 
+z
+" transform="scale(0.015625)"/>
+      <path id="ABCOracleEdu-Bold-70" d="M 410 -1248 
+L 1293 -1248 
+L 1293 397 
+C 1453 122 1811 -96 2259 -96 
+C 3091 -96 3738 557 3738 1645 
+C 3738 2733 3091 3386 2259 3386 
+C 1811 3386 1453 3194 1293 2912 
+L 1293 3290 
+L 410 3290 
+L 410 -1248 
+z
+M 2067 595 
+C 1587 595 1280 1037 1280 1645 
+C 1280 2253 1587 2694 2067 2694 
+C 2579 2694 2835 2285 2835 1645 
+C 2835 1005 2579 595 2067 595 
+z
+" transform="scale(0.015625)"/>
+     </defs>
+     <use xlink:href="#ABCOracleEdu-Bold-50"/>
+     <use xlink:href="#ABCOracleEdu-Bold-61" x="61.099991"/>
+     <use xlink:href="#ABCOracleEdu-Bold-72" x="117.899979"/>
+     <use xlink:href="#ABCOracleEdu-Bold-65" x="157.799973"/>
+     <use xlink:href="#ABCOracleEdu-Bold-6e" x="216.999969"/>
+     <use xlink:href="#ABCOracleEdu-Bold-74" x="274.699966"/>
+     <use xlink:href="#ABCOracleEdu-Bold-73" x="312.399963"/>
+     <use xlink:href="#ABCOracleEdu-Bold-20" x="366.09996"/>
+     <use xlink:href="#ABCOracleEdu-Bold-6f" x="387.499954"/>
+     <use xlink:href="#ABCOracleEdu-Bold-66" x="447.899948"/>
+     <use xlink:href="#ABCOracleEdu-Bold-20" x="487.199936"/>
+     <use xlink:href="#ABCOracleEdu-Bold-79" x="508.59993"/>
+     <use xlink:href="#ABCOracleEdu-Bold-6f" x="562.699921"/>
+     <use xlink:href="#ABCOracleEdu-Bold-75" x="623.099915"/>
+     <use xlink:href="#ABCOracleEdu-Bold-6e" x="680.199905"/>
+     <use xlink:href="#ABCOracleEdu-Bold-67" x="737.899902"/>
+     <use xlink:href="#ABCOracleEdu-Bold-20" x="799.099899"/>
+     <use xlink:href="#ABCOracleEdu-Bold-63" x="820.499893"/>
+     <use xlink:href="#ABCOracleEdu-Bold-68" x="876.799881"/>
+     <use xlink:href="#ABCOracleEdu-Bold-69" x="934.499878"/>
+     <use xlink:href="#ABCOracleEdu-Bold-6c" x="960.899872"/>
+     <use xlink:href="#ABCOracleEdu-Bold-64" x="987.499863"/>
+     <use xlink:href="#ABCOracleEdu-Bold-72" x="1049.29985"/>
+     <use xlink:href="#ABCOracleEdu-Bold-65" x="1089.199844"/>
+     <use xlink:href="#ABCOracleEdu-Bold-6e" x="1148.399841"/>
+     <use xlink:href="#ABCOracleEdu-Bold-20" x="1206.099838"/>
+     <use xlink:href="#ABCOracleEdu-Bold-61" x="1227.499832"/>
+     <use xlink:href="#ABCOracleEdu-Bold-72" x="1284.29982"/>
+     <use xlink:href="#ABCOracleEdu-Bold-65" x="1324.199814"/>
+     <use xlink:href="#ABCOracleEdu-Bold-20" x="1383.399811"/>
+     <use xlink:href="#ABCOracleEdu-Bold-68" x="1404.799805"/>
+     <use xlink:href="#ABCOracleEdu-Bold-61" x="1462.499802"/>
+     <use xlink:href="#ABCOracleEdu-Bold-70" x="1519.299789"/>
+     <use xlink:href="#ABCOracleEdu-Bold-70" x="1581.099777"/>
+     <use xlink:href="#ABCOracleEdu-Bold-69" x="1642.899765"/>
+     <use xlink:href="#ABCOracleEdu-Bold-65" x="1669.299759"/>
+     <use xlink:href="#ABCOracleEdu-Bold-73" x="1728.499756"/>
+     <use xlink:href="#ABCOracleEdu-Bold-74" x="1782.199753"/>
+    </g>
+   </g>
+   <g id="line2d_20">
+    <path d="M 25.78125 331.739409 
+L 633.60625 331.739409 
+" clip-path="url(#p721e14ff67)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #3d3733; stroke-opacity: 0.7"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p721e14ff67">
+   <rect x="25.78125" y="47.21" width="607.825" height="443.436"/>
+  </clipPath>
+ </defs>
+</svg>

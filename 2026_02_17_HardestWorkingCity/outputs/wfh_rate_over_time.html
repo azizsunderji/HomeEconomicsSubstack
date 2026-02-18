@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf') format('opentype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf') format('opentype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf') format('opentype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf') format('opentype');
+    font-weight: 500;
+}
+body {
+    font-family: 'ABC Oracle Edu', sans-serif;
+    background: #F6F7F3;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+</style>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+<script>
+const college = [{"year": 2005, "pct": 4.9}, {"year": 2006, "pct": 5.2}, {"year": 2007, "pct": 5.4}, {"year": 2008, "pct": 5.5}, {"year": 2009, "pct": 5.7}, {"year": 2010, "pct": 5.6}, {"year": 2011, "pct": 5.8}, {"year": 2012, "pct": 5.9}, {"year": 2013, "pct": 5.9}, {"year": 2014, "pct": 6.1}, {"year": 2015, "pct": 6.3}, {"year": 2016, "pct": 6.8}, {"year": 2017, "pct": 7.1}, {"year": 2018, "pct": 7.3}, {"year": 2019, "pct": 7.9}, {"year": 2021, "pct": 29.9}, {"year": 2022, "pct": 24.6}, {"year": 2023, "pct": 21.7}, {"year": 2024, "pct": 20.7}];
+const nocollege = [{"year": 2005, "pct": 3.1}, {"year": 2006, "pct": 3.3}, {"year": 2007, "pct": 3.5}, {"year": 2008, "pct": 3.5}, {"year": 2009, "pct": 3.6}, {"year": 2010, "pct": 3.6}, {"year": 2011, "pct": 3.5}, {"year": 2012, "pct": 3.6}, {"year": 2013, "pct": 3.6}, {"year": 2014, "pct": 3.6}, {"year": 2015, "pct": 3.7}, {"year": 2016, "pct": 4.1}, {"year": 2017, "pct": 4.2}, {"year": 2018, "pct": 4.2}, {"year": 2019, "pct": 4.5}, {"year": 2021, "pct": 11.3}, {"year": 2022, "pct": 10.2}, {"year": 2023, "pct": 9.8}, {"year": 2024, "pct": 9.4}];
+
+const width = 900;
+const height = 750;
+const margin = {top: 100, right: 130, bottom: 60, left: 50};
+const innerW = width - margin.left - margin.right;
+const innerH = height - margin.top - margin.bottom;
+
+const svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .style("background", "#F6F7F3");
+
+const g = svg.append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+// Title
+svg.append("text")
+    .attr("x", margin.left)
+    .attr("y", 35)
+    .attr("font-family", "ABC Oracle Edu, sans-serif")
+    .attr("font-weight", 700)
+    .attr("font-size", 22)
+    .attr("fill", "#3D3733")
+    .text("The Work-From-Home Surge");
+
+svg.append("text")
+    .attr("x", margin.left)
+    .attr("y", 58)
+    .attr("font-family", "ABC Oracle Edu, sans-serif")
+    .attr("font-weight", 400)
+    .attr("font-size", 14)
+    .attr("fill", "#888")
+    .text("Share of workers who report working from home, by education");
+
+svg.append("text")
+    .attr("x", margin.left)
+    .attr("y", 76)
+    .attr("font-family", "ABC Oracle Edu, sans-serif")
+    .attr("font-weight", 300)
+    .attr("font-size", 11.5)
+    .attr("fill", "#aaa")
+    .text("Workers ages 25–64. No 2020 data (ACS suspended due to COVID).");
+
+// Scales
+const x = d3.scaleLinear()
+    .domain([2005, 2024])
+    .range([0, innerW]);
+
+const y = d3.scaleLinear()
+    .domain([0, 33])
+    .range([innerH, 0]);
+
+// Gridlines
+const yTicks = [0, 5, 10, 15, 20, 25, 30];
+yTicks.forEach(tick => {
+    g.append("line")
+        .attr("x1", 0)
+        .attr("x2", innerW)
+        .attr("y1", y(tick))
+        .attr("y2", y(tick))
+        .attr("stroke", "#ddd")
+        .attr("stroke-width", 0.5);
+});
+
+// Y-axis labels
+yTicks.forEach((tick, i) => {
+    g.append("text")
+        .attr("x", -8)
+        .attr("y", y(tick))
+        .attr("dy", "0.35em")
+        .attr("text-anchor", "end")
+        .attr("font-family", "ABC Oracle Edu, sans-serif")
+        .attr("font-weight", 300)
+        .attr("font-size", 11)
+        .attr("fill", "#999")
+        .text(i === yTicks.length - 1 ? tick + "%" : tick);
+});
+
+// X-axis labels
+[2005, 2010, 2015, 2020, 2024].forEach(yr => {
+    g.append("text")
+        .attr("x", x(yr))
+        .attr("y", innerH + 25)
+        .attr("text-anchor", "middle")
+        .attr("font-family", "ABC Oracle Edu, sans-serif")
+        .attr("font-weight", 300)
+        .attr("font-size", 11)
+        .attr("fill", "#999")
+        .text(yr);
+});
+
+// Line generator
+const line = d3.line()
+    .x(d => x(d.year))
+    .y(d => y(d.pct));
+
+// College line
+g.append("path")
+    .datum(college)
+    .attr("fill", "none")
+    .attr("stroke", "#0BB4FF")
+    .attr("stroke-width", 2.5)
+    .attr("d", line);
+
+// No-college line
+g.append("path")
+    .datum(nocollege)
+    .attr("fill", "none")
+    .attr("stroke", "#3D3733")
+    .attr("stroke-width", 2.5)
+    .attr("d", line);
+
+// Dots at endpoints
+[[college, "#0BB4FF"], [nocollege, "#3D3733"]].forEach(([data, color]) => {
+    const last = data[data.length - 1];
+    g.append("circle")
+        .attr("cx", x(last.year))
+        .attr("cy", y(last.pct))
+        .attr("r", 4)
+        .attr("fill", color);
+});
+
+// End labels
+const collegeEnd = college[college.length - 1];
+const nocollegeEnd = nocollege[nocollege.length - 1];
+
+g.append("text")
+    .attr("x", x(collegeEnd.year) + 10)
+    .attr("y", y(collegeEnd.pct))
+    .attr("dy", "0.35em")
+    .attr("font-family", "ABC Oracle Edu, sans-serif")
+    .attr("font-weight", 500)
+    .attr("font-size", 13)
+    .attr("fill", "#0BB4FF")
+    .text("College degree");
+
+g.append("text")
+    .attr("x", x(collegeEnd.year) + 10)
+    .attr("y", y(collegeEnd.pct) + 16)
+    .attr("dy", "0.35em")
+    .attr("font-family", "ABC Oracle Edu, sans-serif")
+    .attr("font-weight", 700)
+    .attr("font-size", 13)
+    .attr("fill", "#0BB4FF")
+    .text(collegeEnd.pct.toFixed(0) + "%");
+
+g.append("text")
+    .attr("x", x(nocollegeEnd.year) + 10)
+    .attr("y", y(nocollegeEnd.pct))
+    .attr("dy", "0.35em")
+    .attr("font-family", "ABC Oracle Edu, sans-serif")
+    .attr("font-weight", 500)
+    .attr("font-size", 13)
+    .attr("fill", "#3D3733")
+    .text("No degree");
+
+g.append("text")
+    .attr("x", x(nocollegeEnd.year) + 10)
+    .attr("y", y(nocollegeEnd.pct) + 16)
+    .attr("dy", "0.35em")
+    .attr("font-family", "ABC Oracle Edu, sans-serif")
+    .attr("font-weight", 700)
+    .attr("font-size", 13)
+    .attr("fill", "#3D3733")
+    .text(nocollegeEnd.pct.toFixed(0) + "%");
+
+// 2020 annotation
+g.append("text")
+    .attr("x", x(2020))
+    .attr("y", y(29.9) - 15)
+    .attr("text-anchor", "middle")
+    .attr("font-family", "ABC Oracle Edu, sans-serif")
+    .attr("font-weight", 300)
+    .attr("font-style", "italic")
+    .attr("font-size", 10)
+    .attr("fill", "#aaa")
+    .text("No 2020 data");
+
+// Source
+svg.append("text")
+    .attr("x", margin.left)
+    .attr("y", height - 12)
+    .attr("font-family", "ABC Oracle Edu, sans-serif")
+    .attr("font-style", "italic")
+    .attr("font-weight", 300)
+    .attr("font-size", 10)
+    .attr("fill", "#aaa")
+    .text("Source: American Community Survey (IPUMS), 2005–2024.");
+</script>
+</body>
+</html>

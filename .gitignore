@@ -1,0 +1,27 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large data files
+*.parquet
+*.gz
+*.zip
+*.tar
+*.pkl
+*.pickle
+
+# Intermediate data (keep CSVs under 50MB — large ones excluded manually)
+# Large CSVs will be listed explicitly below as needed
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# Secrets
+.env
+*.key

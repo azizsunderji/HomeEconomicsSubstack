@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf');
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf');
+    font-weight: 300;
+  }
+  body {
+    font-family: 'ABC Oracle Edu', sans-serif;
+    background: #F6F7F3;
+    color: #3D3733;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  h1 { font-size: 24px; margin-bottom: 5px; }
+  h2 { font-size: 18px; margin-top: 60px; margin-bottom: 5px; border-top: 2px solid #ddd; padding-top: 30px; }
+  .subtitle { font-size: 13px; color: #888; font-style: italic; margin-bottom: 20px; }
+  .source { font-size: 10px; color: #aaa; font-style: italic; margin-top: 5px; }
+  .chart-container { margin: 20px 0 40px 0; }
+  svg text { font-family: 'ABC Oracle Edu', sans-serif; }
+  .tooltip {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 11px;
+    pointer-events: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 10;
+  }
+</style>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+<h1>Chart Explorations: Parents vs Non-Parents</h1>
+<p class="subtitle">All data: ATUS Well-Being Module 2010-2021, respondents aged 25-54. Showing time allocation and happiness by activity.</p>
+
+<div id="tooltip" class="tooltip" style="display:none;"></div>
+
+<script>
+const data = [
+  {"activity":"Childcare","p_time":0.0990,"np_time":0.0130,"p_happy":4.896,"np_happy":4.723,"comp":0.413,"level":0.010,"total":0.423},
+  {"activity":"Housework","p_time":0.1377,"np_time":0.1144,"p_happy":4.193,"np_happy":4.027,"comp":0.096,"level":0.021,"total":0.117},
+  {"activity":"Shopping","p_time":0.0288,"np_time":0.0224,"p_happy":4.413,"np_happy":4.154,"comp":0.027,"level":0.007,"total":0.034},
+  {"activity":"Travel","p_time":0.0877,"np_time":0.0813,"p_happy":4.353,"np_happy":4.288,"comp":0.028,"level":0.005,"total":0.033},
+  {"activity":"Religious","p_time":0.0107,"np_time":0.0076,"p_happy":5.239,"np_happy":4.878,"comp":0.016,"level":0.003,"total":0.019},
+  {"activity":"Volunteering","p_time":0.0088,"np_time":0.0056,"p_happy":4.818,"np_happy":4.817,"comp":0.016,"level":0.000,"total":0.016},
+  {"activity":"Eating & Drinking","p_time":0.0756,"np_time":0.0798,"p_happy":4.843,"np_happy":4.510,"comp":-0.020,"level":0.026,"total":0.006},
+  {"activity":"Prof. Services","p_time":0.0047,"np_time":0.0051,"p_happy":3.481,"np_happy":3.642,"comp":-0.001,"level":-0.001,"total":-0.002},
+  {"activity":"Education","p_time":0.0076,"np_time":0.0109,"p_happy":4.054,"np_happy":3.408,"comp":-0.012,"level":0.006,"total":-0.007},
+  {"activity":"Phone Calls","p_time":0.0054,"np_time":0.0064,"p_happy":3.586,"np_happy":4.297,"comp":-0.004,"level":-0.004,"total":-0.008},
+  {"activity":"Sports & Leisure","p_time":0.0181,"np_time":0.0232,"p_happy":5.086,"np_happy":4.801,"comp":-0.025,"level":0.006,"total":-0.019},
+  {"activity":"Work","p_time":0.2822,"np_time":0.3052,"p_happy":3.919,"np_happy":3.787,"comp":-0.089,"level":0.039,"total":-0.050},
+  {"activity":"Socializing","p_time":0.2337,"np_time":0.3251,"p_happy":4.506,"np_happy":4.289,"comp":-0.402,"level":0.060,"total":-0.341}
+];
+
+const BLUE = '#0BB4FF';
+const GREEN = '#67A275';
+const LIGHT_GREEN = '#C6DCCB';
+const RED = '#F4743B';
+const LIGHT_RED = '#FBCAB5';
+const YELLOW = '#FEC439';
+const BLACK = '#3D3733';
+const BG = '#F6F7F3';
+const CREAM = '#DADFCE';
+
+const tooltip = d3.select('#tooltip');
+
+function showTooltip(evt, html) {
+  tooltip.html(html).style('display','block')
+    .style('left', (evt.pageX + 12) + 'px')
+    .style('top', (evt.pageY - 20) + 'px');
+}
+function hideTooltip() { tooltip.style('display','none'); }
+
+// =====================================================================
+// CHART 1: Decomposed Waterfall
+// =====================================================================
+{
+  const container = d3.select('body').append('div').attr('class','chart-container');
+  container.append('h2').text('1. Decomposed Waterfall');
+  container.append('p').attr('class','subtitle').text('Each bar split into time effect (how much they do it) and happiness effect (how happy they are doing it)');
+
+  const sorted = [...data].sort((a,b) => a.total - b.total);
+  const W = 900, H = 500, ml = 110, mr = 60, mt = 30, mb = 80;
+  const svg = container.append('svg').attr('width',W).attr('height',H).style('background',BG);
+
+  const x = d3.scaleBand().domain(sorted.map(d=>d.activity).concat(['Net'])).range([ml, W-mr]).padding(0.25);
+  const npOverall = 4.133;
+  const pOverall = 4.353;
+
+  // Compute cumulative for waterfall
+  let cum = npOverall;
+  const bars = sorted.map(d => {
+    const start = cum;
+    cum += d.total;
+    return {...d, start, end: cum};
+  });
+
+  const yMin = Math.min(...bars.map(b => Math.min(b.start, b.end))) - 0.05;
+  const yMax = Math.max(...bars.map(b => Math.max(b.start, b.end))) + 0.1;
+  const y = d3.scaleLinear().domain([yMin, yMax]).range([H-mb, mt]);
+
+  // Grid
+  svg.selectAll('.grid').data(y.ticks(6)).join('line')
+    .attr('x1',ml).attr('x2',W-mr).attr('y1',d=>y(d)).attr('y2',d=>y(d))
+    .attr('stroke','#ccc').attr('stroke-width',0.5);
+
+  // Y axis labels
+  svg.selectAll('.ylabel').data(y.ticks(6)).join('text')
+    .attr('x',ml-8).attr('y',d=>y(d)+4).attr('text-anchor','end')
+    .attr('font-size',10).attr('fill','#888').text(d=>d.toFixed(1));
+
+  // Reference lines
+  svg.append('line').attr('x1',ml).attr('x2',W-mr).attr('y1',y(npOverall)).attr('y2',y(npOverall))
+    .attr('stroke',BLACK).attr('stroke-dasharray','4,3').attr('stroke-width',0.8);
+  svg.append('text').attr('x',ml+2).attr('y',y(npOverall)-6).attr('font-size',9).attr('fill',BLACK)
+    .text(`No children: ${npOverall.toFixed(2)}`);
+
+  // Draw bars — split into comp and level
+  bars.forEach(d => {
+    const bw = x.bandwidth();
+    const xPos = x(d.activity);
+
+    if (d.total >= 0) {
+      // Comp portion (bottom), level portion (top)
+      const compH = Math.abs(d.comp) / Math.abs(d.total) * Math.abs(y(d.start) - y(d.end));
+      const levelH = Math.abs(d.level) / Math.abs(d.total) * Math.abs(y(d.start) - y(d.end));
+
+      if (d.comp >= 0) {
+        // Both positive: comp on bottom, level on top
+        svg.append('rect').attr('x',xPos).attr('width',bw)
+          .attr('y', y(d.start + d.comp)).attr('height', y(d.start) - y(d.start + d.comp))
+          .attr('fill', GREEN).attr('opacity', 0.6);
+        svg.append('rect').attr('x',xPos).attr('width',bw)
+          .attr('y', y(d.end)).attr('height', y(d.start + d.comp) - y(d.end))
+          .attr('fill', GREEN).attr('opacity', 1);
+      } else {
+        // Mixed: comp is negative but total is positive (level dominates)
+        // Draw level as the full positive bar, comp as a small negative offset
+        svg.append('rect').attr('x',xPos).attr('width',bw)
+          .attr('y', y(d.end)).attr('height', y(d.start) - y(d.end))
+          .attr('fill', GREEN).attr('opacity', 0.85);
+      }
+    } else {
+      // Negative total
+      if (d.comp <= 0 && d.level <= 0) {
+        const compH = Math.abs(d.comp) / Math.abs(d.total) * (y(d.end) - y(d.start));
+        svg.append('rect').attr('x',xPos).attr('width',bw)
+          .attr('y', y(d.start)).attr('height', compH)
+          .attr('fill', LIGHT_RED).attr('opacity', 0.6);
+        svg.append('rect').attr('x',xPos).attr('width',bw)
+          .attr('y', y(d.start) + compH).attr('height', (y(d.end) - y(d.start)) - compH)
+          .attr('fill', LIGHT_RED).attr('opacity', 1);
+      } else {
+        // comp is negative, level may be positive but smaller
+        svg.append('rect').attr('x',xPos).attr('width',bw)
+          .attr('y', y(d.start)).attr('height', y(d.end) - y(d.start))
+          .attr('fill', LIGHT_RED).attr('opacity', 0.85);
+      }
+    }
+
+    // Value label
+    if (Math.abs(d.total) > 0.005) {
+      const ly = d.total >= 0 ? y(d.end) - 8 : y(d.end) + 12;
+      svg.append('text').attr('x', xPos + bw/2).attr('y', ly)
+        .attr('text-anchor','middle').attr('font-size',8).attr('fill',BLACK)
+        .text((d.total >= 0 ? '+' : '') + d.total.toFixed(3));
+    }
+
+    // Connector line
+    const nextBar = bars[bars.indexOf(d) + 1];
+    if (nextBar) {
+      svg.append('line')
+        .attr('x1', xPos + bw).attr('x2', x(nextBar.activity))
+        .attr('y1', y(d.end)).attr('y2', y(d.end))
+        .attr('stroke','#999').attr('stroke-width',0.5);
+    }
+  });
+
+  // Net bar
+  svg.append('rect').attr('x', x('Net')).attr('width', x.bandwidth())
+    .attr('y', y(pOverall)).attr('height', y(0) - y(pOverall) > 0 ? y(yMin) - y(pOverall) : 0)
+    .attr('fill', GREEN).attr('opacity', 0.4);
+  // Actually draw net bar from 0 to pOverall
+  svg.append('rect').attr('x', x('Net')).attr('width', x.bandwidth())
+    .attr('y', y(pOverall)).attr('height', y(yMin) - y(pOverall))
+    .attr('fill', GREEN).attr('opacity', 0.35);
+  svg.append('text').attr('x', x('Net') + x.bandwidth()/2).attr('y', y(pOverall) - 6)
+    .attr('text-anchor','middle').attr('font-size',9).attr('fill',GREEN).attr('font-weight',700)
+    .text(`Parents: ${pOverall.toFixed(2)}`);
+
+  // Legend
+  svg.append('rect').attr('x',W-mr-180).attr('y',mt+5).attr('width',12).attr('height',12).attr('fill',GREEN).attr('opacity',0.6);
+  svg.append('text').attr('x',W-mr-163).attr('y',mt+15).attr('font-size',10).attr('fill',BLACK).text('Time effect (comp.)');
+  svg.append('rect').attr('x',W-mr-180).attr('y',mt+23).attr('width',12).attr('height',12).attr('fill',GREEN).attr('opacity',1);
+  svg.append('text').attr('x',W-mr-163).attr('y',mt+33).attr('font-size',10).attr('fill',BLACK).text('Happiness effect (level)');
+
+  // X axis
+  svg.selectAll('.xlabel').data(sorted.map(d=>d.activity).concat(['Net'])).join('text')
+    .attr('x', d => x(d) + x.bandwidth()/2).attr('y', H - mb + 15)
+    .attr('text-anchor','end').attr('font-size',9).attr('fill',BLACK)
+    .attr('transform', d => `rotate(-40, ${x(d)+x.bandwidth()/2}, ${H-mb+15})`)
+    .text(d=>d);
+
+  container.append('p').attr('class','source').text('Source: ATUS Well-Being Module (2010-2021)');
+}
+
+// =====================================================================
+// CHART 2: Arrow Scatter
+// =====================================================================
+{
+  const container = d3.select('body').append('div').attr('class','chart-container');
+  container.append('h2').text('2. Arrow Scatter');
+  container.append('p').attr('class','subtitle').text('Each activity shown at its time share (x) and happiness (y). Arrows point from non-parent to parent position.');
+
+  const W = 900, H = 550, ml = 60, mr = 30, mt = 30, mb = 50;
+  const svg = container.append('svg').attr('width',W).attr('height',H).style('background',BG);
+
+  const x = d3.scaleLinear().domain([0, 0.35]).range([ml, W-mr]);
+  const y = d3.scaleLinear().domain([3.2, 5.5]).range([H-mb, mt]);
+
+  // Grid
+  svg.selectAll('.xgrid').data(x.ticks(7)).join('line')
+    .attr('x1',d=>x(d)).attr('x2',d=>x(d)).attr('y1',mt).attr('y2',H-mb)
+    .attr('stroke','#ddd').attr('stroke-width',0.5);
+  svg.selectAll('.ygrid').data(y.ticks(6)).join('line')
+    .attr('x1',ml).attr('x2',W-mr).attr('y1',d=>y(d)).attr('y2',d=>y(d))
+    .attr('stroke','#ddd').attr('stroke-width',0.5);
+
+  // Axes labels
+  svg.append('text').attr('x',W/2).attr('y',H-8).attr('text-anchor','middle').attr('font-size',11).attr('fill',BLACK)
+    .text('Share of waking time');
+  svg.append('text').attr('x',15).attr('y',H/2).attr('text-anchor','middle').attr('font-size',11).attr('fill',BLACK)
+    .attr('transform',`rotate(-90, 15, ${H/2})`).text('Happiness (0-6)');
+
+  // X axis ticks
+  svg.selectAll('.xtick').data(x.ticks(7)).join('text')
+    .attr('x',d=>x(d)).attr('y',H-mb+18).attr('text-anchor','middle').attr('font-size',9).attr('fill','#888')
+    .text(d=>(d*100).toFixed(0)+'%');
+  svg.selectAll('.ytick').data(y.ticks(6)).join('text')
+    .attr('x',ml-8).attr('y',d=>y(d)+4).attr('text-anchor','end').attr('font-size',9).attr('fill','#888')
+    .text(d=>d.toFixed(1));
+
+  // Arrow marker
+  svg.append('defs').append('marker').attr('id','arrowhead')
+    .attr('viewBox','0 0 10 10').attr('refX',8).attr('refY',5)
+    .attr('markerWidth',6).attr('markerHeight',6).attr('orient','auto')
+    .append('path').attr('d','M 0 0 L 10 5 L 0 10 z').attr('fill',GREEN);
+
+  svg.append('defs').append('marker').attr('id','arrowhead-red')
+    .attr('viewBox','0 0 10 10').attr('refX',8).attr('refY',5)
+    .attr('markerWidth',6).attr('markerHeight',6).attr('orient','auto')
+    .append('path').attr('d','M 0 0 L 10 5 L 0 10 z').attr('fill',RED);
+
+  data.forEach(d => {
+    const x1 = x(d.np_time), y1 = y(d.np_happy);
+    const x2 = x(d.p_time), y2 = y(d.p_happy);
+    const color = d.total >= 0 ? GREEN : RED;
+    const marker = d.total >= 0 ? 'url(#arrowhead)' : 'url(#arrowhead-red)';
+
+    // Non-parent dot
+    svg.append('circle').attr('cx',x1).attr('cy',y1).attr('r',4)
+      .attr('fill',BLUE).attr('opacity',0.6)
+      .on('mouseover', evt => showTooltip(evt, `<b>${d.activity}</b><br>Non-parents: ${(d.np_time*100).toFixed(1)}% time, ${d.np_happy.toFixed(2)} happy`))
+      .on('mouseout', hideTooltip);
+
+    // Arrow
+    svg.append('line')
+      .attr('x1',x1).attr('y1',y1).attr('x2',x2).attr('y2',y2)
+      .attr('stroke',color).attr('stroke-width',1.5).attr('marker-end',marker).attr('opacity',0.7);
+
+    // Parent dot
+    svg.append('circle').attr('cx',x2).attr('cy',y2).attr('r',5)
+      .attr('fill',color).attr('opacity',0.8)
+      .on('mouseover', evt => showTooltip(evt, `<b>${d.activity}</b><br>Parents: ${(d.p_time*100).toFixed(1)}% time, ${d.p_happy.toFixed(2)} happy<br>Δtime: ${((d.p_time-d.np_time)*100).toFixed(1)}pp, Δhappy: ${(d.p_happy-d.np_happy).toFixed(2)}`))
+      .on('mouseout', hideTooltip);
+
+    // Label
+    const labelX = x2 + 6;
+    const labelY = y2 - 6;
+    svg.append('text').attr('x',labelX).attr('y',labelY)
+      .attr('font-size',9).attr('fill',BLACK).text(d.activity);
+  });
+
+  // Legend
+  svg.append('circle').attr('cx',W-mr-150).attr('cy',mt+15).attr('r',4).attr('fill',BLUE).attr('opacity',0.6);
+  svg.append('text').attr('x',W-mr-140).attr('y',mt+19).attr('font-size',10).attr('fill',BLACK).text('Non-parent');
+  svg.append('circle').attr('cx',W-mr-150).attr('cy',mt+33).attr('r',5).attr('fill',GREEN).attr('opacity',0.8);
+  svg.append('text').attr('x',W-mr-140).attr('y',mt+37).attr('font-size',10).attr('fill',BLACK).text('Parent');
+
+  container.append('p').attr('class','source').text('Source: ATUS Well-Being Module (2010-2021)');
+}
+
+// =====================================================================
+// CHART 3: Butterfly Chart
+// =====================================================================
+{
+  const container = d3.select('body').append('div').attr('class','chart-container');
+  container.append('h2').text('3. Butterfly Chart');
+  container.append('p').attr('class','subtitle').text('Time allocation (left) and happiness score (right) for each activity. Green = parents, blue = no children.');
+
+  const sorted = [...data].sort((a,b) => b.total - a.total);
+  const W = 900, H = 480, ml = 10, mr = 10, mt = 30, mb = 30;
+  const centerX = 360;
+  const svg = container.append('svg').attr('width',W).attr('height',H).style('background',BG);
+
+  const yScale = d3.scaleBand().domain(sorted.map(d=>d.activity)).range([mt, H-mb]).padding(0.2);
+  const xTimeScale = d3.scaleLinear().domain([0, 0.35]).range([centerX - 15, ml + 10]);
+  const xHappyScale = d3.scaleLinear().domain([3, 5.5]).range([centerX + 15, W - mr - 10]);
+
+  // Center divider
+  svg.append('line').attr('x1',centerX).attr('x2',centerX).attr('y1',mt-10).attr('y2',H-mb+10)
+    .attr('stroke','#ccc').attr('stroke-width',1);
+
+  // Headers
+  svg.append('text').attr('x',centerX - 100).attr('y',mt - 5).attr('text-anchor','middle')
+    .attr('font-size',11).attr('fill',BLACK).attr('font-weight',700).text('← Time share');
+  svg.append('text').attr('x',centerX + 120).attr('y',mt - 5).attr('text-anchor','middle')
+    .attr('font-size',11).attr('fill',BLACK).attr('font-weight',700).text('Happiness score →');
+
+  const bh = yScale.bandwidth() / 2 - 1;
+
+  sorted.forEach(d => {
+    const yPos = yScale(d.activity);
+    // Activity label
+    svg.append('text').attr('x',centerX).attr('y',yPos + yScale.bandwidth()/2 + 4)
+      .attr('text-anchor','middle').attr('font-size',9).attr('fill',BLACK).text(d.activity);
+
+    // Time bars (going left)
+    svg.append('rect')
+      .attr('x', xTimeScale(d.p_time)).attr('y', yPos)
+      .attr('width', centerX - 15 - xTimeScale(d.p_time)).attr('height', bh)
+      .attr('fill', GREEN).attr('opacity', 0.8);
+    svg.append('rect')
+      .attr('x', xTimeScale(d.np_time)).attr('y', yPos + bh + 2)
+      .attr('width', centerX - 15 - xTimeScale(d.np_time)).attr('height', bh)
+      .attr('fill', BLUE).attr('opacity', 0.6);
+
+    // Happiness bars (going right)
+    svg.append('rect')
+      .attr('x', centerX + 15).attr('y', yPos)
+      .attr('width', xHappyScale(d.p_happy) - centerX - 15).attr('height', bh)
+      .attr('fill', GREEN).attr('opacity', 0.8);
+    svg.append('rect')
+      .attr('x', centerX + 15).attr('y', yPos + bh + 2)
+      .attr('width', xHappyScale(d.np_happy) - centerX - 15).attr('height', bh)
+      .attr('fill', BLUE).attr('opacity', 0.6);
+  });
+
+  // X axis ticks for time
+  [0.05, 0.10, 0.15, 0.20, 0.25, 0.30].forEach(v => {
+    svg.append('text').attr('x', xTimeScale(v)).attr('y', H-mb+15)
+      .attr('text-anchor','middle').attr('font-size',8).attr('fill','#aaa').text((v*100)+'%');
+  });
+  // X axis ticks for happiness
+  [3.5, 4.0, 4.5, 5.0].forEach(v => {
+    svg.append('text').attr('x', xHappyScale(v)).attr('y', H-mb+15)
+      .attr('text-anchor','middle').attr('font-size',8).attr('fill','#aaa').text(v.toFixed(1));
+  });
+
+  // Legend
+  svg.append('rect').attr('x',20).attr('y',mt-15).attr('width',10).attr('height',10).attr('fill',GREEN).attr('opacity',0.8);
+  svg.append('text').attr('x',34).attr('y',mt-6).attr('font-size',9).attr('fill',BLACK).text('Parents');
+  svg.append('rect').attr('x',80).attr('y',mt-15).attr('width',10).attr('height',10).attr('fill',BLUE).attr('opacity',0.6);
+  svg.append('text').attr('x',94).attr('y',mt-6).attr('font-size',9).attr('fill',BLACK).text('No children');
+
+  container.append('p').attr('class','source').text('Source: ATUS Well-Being Module (2010-2021)');
+}
+
+// =====================================================================
+// CHART 4: Dumbbell Chart (two panels)
+// =====================================================================
+{
+  const container = d3.select('body').append('div').attr('class','chart-container');
+  container.append('h2').text('4. Dumbbell Chart (Two Panels)');
+  container.append('p').attr('class','subtitle').text('Left panel: time share. Right panel: happiness. Dots connected for parent vs non-parent.');
+
+  const sorted = [...data].sort((a,b) => a.total - b.total);
+  const W = 900, H = 480, ml = 110, mr = 30, mt = 40, mb = 30;
+  const gap = 60;
+  const midX = (W - ml - mr) / 2 + ml;
+  const svg = container.append('svg').attr('width',W).attr('height',H).style('background',BG);
+
+  const yScale = d3.scaleBand().domain(sorted.map(d=>d.activity)).range([mt, H-mb]).padding(0.3);
+  const xTime = d3.scaleLinear().domain([0, 0.35]).range([ml, midX - gap/2]);
+  const xHappy = d3.scaleLinear().domain([3.2, 5.5]).range([midX + gap/2, W - mr]);
+
+  // Panel headers
+  svg.append('text').attr('x', (ml + midX - gap/2)/2).attr('y', mt - 15)
+    .attr('text-anchor','middle').attr('font-size',12).attr('fill',BLACK).attr('font-weight',700)
+    .text('Time Share');
+  svg.append('text').attr('x', (midX + gap/2 + W - mr)/2).attr('y', mt - 15)
+    .attr('text-anchor','middle').attr('font-size',12).attr('fill',BLACK).attr('font-weight',700)
+    .text('Happiness');
+
+  // Grid lines
+  xTime.ticks(5).forEach(v => {
+    svg.append('line').attr('x1',xTime(v)).attr('x2',xTime(v)).attr('y1',mt).attr('y2',H-mb)
+      .attr('stroke','#eee').attr('stroke-width',0.5);
+    svg.append('text').attr('x',xTime(v)).attr('y',H-mb+15).attr('text-anchor','middle')
+      .attr('font-size',8).attr('fill','#aaa').text((v*100).toFixed(0)+'%');
+  });
+  xHappy.ticks(5).forEach(v => {
+    svg.append('line').attr('x1',xHappy(v)).attr('x2',xHappy(v)).attr('y1',mt).attr('y2',H-mb)
+      .attr('stroke','#eee').attr('stroke-width',0.5);
+    svg.append('text').attr('x',xHappy(v)).attr('y',H-mb+15).attr('text-anchor','middle')
+      .attr('font-size',8).attr('fill','#aaa').text(v.toFixed(1));
+  });
+
+  sorted.forEach(d => {
+    const yPos = yScale(d.activity) + yScale.bandwidth()/2;
+
+    // Activity label
+    svg.append('text').attr('x',ml-5).attr('y',yPos+4).attr('text-anchor','end')
+      .attr('font-size',10).attr('fill',BLACK).text(d.activity);
+
+    // Time dumbbell
+    svg.append('line').attr('x1',xTime(d.np_time)).attr('x2',xTime(d.p_time))
+      .attr('y1',yPos).attr('y2',yPos).attr('stroke','#ccc').attr('stroke-width',2);
+    svg.append('circle').attr('cx',xTime(d.np_time)).attr('cy',yPos).attr('r',5)
+      .attr('fill',BLUE).attr('opacity',0.7);
+    svg.append('circle').attr('cx',xTime(d.p_time)).attr('cy',yPos).attr('r',5)
+      .attr('fill',GREEN).attr('opacity',0.9);
+
+    // Happiness dumbbell
+    svg.append('line').attr('x1',xHappy(d.np_happy)).attr('x2',xHappy(d.p_happy))
+      .attr('y1',yPos).attr('y2',yPos).attr('stroke','#ccc').attr('stroke-width',2);
+    svg.append('circle').attr('cx',xHappy(d.np_happy)).attr('cy',yPos).attr('r',5)
+      .attr('fill',BLUE).attr('opacity',0.7);
+    svg.append('circle').attr('cx',xHappy(d.p_happy)).attr('cy',yPos).attr('r',5)
+      .attr('fill',GREEN).attr('opacity',0.9);
+  });
+
+  // Legend
+  svg.append('circle').attr('cx',midX-20).attr('cy',mt-15).attr('r',5).attr('fill',GREEN).attr('opacity',0.9);
+  svg.append('text').attr('x',midX-12).attr('y',mt-11).attr('font-size',9).attr('fill',BLACK).text('Parents');
+  svg.append('circle').attr('cx',midX+40).attr('cy',mt-15).attr('r',5).attr('fill',BLUE).attr('opacity',0.7);
+  svg.append('text').attr('x',midX+48).attr('y',mt-11).attr('font-size',9).attr('fill',BLACK).text('No children');
+
+  container.append('p').attr('class','source').text('Source: ATUS Well-Being Module (2010-2021)');
+}
+
+// =====================================================================
+// CHART 5: Delta Bubble Scatter (Δtime vs Δhappiness)
+// =====================================================================
+{
+  const container = d3.select('body').append('div').attr('class','chart-container');
+  container.append('h2').text('5. Delta Bubble Scatter');
+  container.append('p').attr('class','subtitle').text('X = change in time share (parent - non-parent), Y = change in happiness. Bubble size = average time share. Quadrants show the story.');
+
+  const W = 900, H = 550, ml = 70, mr = 100, mt = 40, mb = 60;
+  const svg = container.append('svg').attr('width',W).attr('height',H).style('background',BG);
+
+  const xExtent = d3.extent(data, d => (d.p_time - d.np_time)*100);
+  const yExtent = d3.extent(data, d => d.p_happy - d.np_happy);
+  const x = d3.scaleLinear().domain([Math.min(xExtent[0],-10)*1.2, Math.max(xExtent[1],9)*1.2]).range([ml, W-mr]);
+  const y = d3.scaleLinear().domain([yExtent[0]*1.3, yExtent[1]*1.3]).range([H-mb, mt]);
+  const r = d3.scaleSqrt().domain([0, 0.35]).range([3, 35]);
+
+  // Zero lines
+  svg.append('line').attr('x1',x(0)).attr('x2',x(0)).attr('y1',mt).attr('y2',H-mb)
+    .attr('stroke',BLACK).attr('stroke-width',0.8).attr('opacity',0.3);
+  svg.append('line').attr('x1',ml).attr('x2',W-mr).attr('y1',y(0)).attr('y2',y(0))
+    .attr('stroke',BLACK).attr('stroke-width',0.8).attr('opacity',0.3);
+
+  // Quadrant labels
+  svg.append('text').attr('x',x(6)).attr('y',y(0.45)).attr('font-size',10).attr('fill','#bbb')
+    .attr('text-anchor','middle').text('More time & happier');
+  svg.append('text').attr('x',x(-6)).attr('y',y(0.45)).attr('font-size',10).attr('fill','#bbb')
+    .attr('text-anchor','middle').text('Less time & happier');
+  svg.append('text').attr('x',x(-6)).attr('y',y(-0.55)).attr('font-size',10).attr('fill','#bbb')
+    .attr('text-anchor','middle').text('Less time & less happy');
+  svg.append('text').attr('x',x(6)).attr('y',y(-0.55)).attr('font-size',10).attr('fill','#bbb')
+    .attr('text-anchor','middle').text('More time & less happy');
+
+  // Grid
+  x.ticks(8).forEach(v => {
+    if (v !== 0) svg.append('line').attr('x1',x(v)).attr('x2',x(v)).attr('y1',mt).attr('y2',H-mb)
+      .attr('stroke','#eee').attr('stroke-width',0.5);
+  });
+  y.ticks(6).forEach(v => {
+    if (Math.abs(v) > 0.01) svg.append('line').attr('x1',ml).attr('x2',W-mr).attr('y1',y(v)).attr('y2',y(v))
+      .attr('stroke','#eee').attr('stroke-width',0.5);
+  });
+
+  // Axis labels
+  svg.append('text').attr('x', W/2).attr('y', H - 10).attr('text-anchor','middle')
+    .attr('font-size',11).attr('fill',BLACK).text('← Parents do less          Change in time share (pp)          Parents do more →');
+  svg.append('text').attr('x',15).attr('y',H/2).attr('text-anchor','middle').attr('font-size',11).attr('fill',BLACK)
+    .attr('transform',`rotate(-90,15,${H/2})`).text('Change in happiness');
+
+  // Ticks
+  x.ticks(8).forEach(v => {
+    svg.append('text').attr('x',x(v)).attr('y',H-mb+18).attr('text-anchor','middle')
+      .attr('font-size',9).attr('fill','#888').text((v > 0 ? '+' : '') + v.toFixed(0) + 'pp');
+  });
+  y.ticks(6).forEach(v => {
+    svg.append('text').attr('x',ml-8).attr('y',y(v)+4).attr('text-anchor','end')
+      .attr('font-size',9).attr('fill','#888').text((v > 0 ? '+' : '') + v.toFixed(2));
+  });
+
+  // Bubbles
+  data.forEach(d => {
+    const dx = (d.p_time - d.np_time) * 100;
+    const dy = d.p_happy - d.np_happy;
+    const avgTime = (d.p_time + d.np_time) / 2;
+    const color = d.total >= 0 ? GREEN : RED;
+
+    svg.append('circle')
+      .attr('cx', x(dx)).attr('cy', y(dy)).attr('r', r(avgTime))
+      .attr('fill', color).attr('opacity', 0.5).attr('stroke', color).attr('stroke-width', 1)
+      .on('mouseover', evt => showTooltip(evt,
+        `<b>${d.activity}</b><br>Δtime: ${dx > 0 ? '+' : ''}${dx.toFixed(1)}pp<br>Δhappy: ${dy > 0 ? '+' : ''}${dy.toFixed(2)}<br>Net contribution: ${d.total > 0 ? '+' : ''}${d.total.toFixed(3)}`))
+      .on('mouseout', hideTooltip);
+
+    svg.append('text').attr('x', x(dx)).attr('y', y(dy) - r(avgTime) - 4)
+      .attr('text-anchor','middle').attr('font-size',9).attr('fill',BLACK).text(d.activity);
+  });
+
+  container.append('p').attr('class','source').text('Source: ATUS Well-Being Module (2010-2021)');
+}
+
+// =====================================================================
+// CHART 6: Slope Chart
+// =====================================================================
+{
+  const container = d3.select('body').append('div').attr('class','chart-container');
+  container.append('h2').text('6. Slope Chart (Contribution to Daily Happiness)');
+  container.append('p').attr('class','subtitle').text('Each line connects an activity\'s contribution (time × happiness) for non-parents (left) to parents (right). Green = parents gain, red = parents lose.');
+
+  const W = 900, H = 550, ml = 130, mr = 130, mt = 50, mb = 30;
+  const svg = container.append('svg').attr('width',W).attr('height',H).style('background',BG);
+
+  // Compute contributions
+  const contribs = data.map(d => ({
+    activity: d.activity,
+    np_contrib: d.np_time * d.np_happy,
+    p_contrib: d.p_time * d.p_happy,
+    delta: d.total
+  })).sort((a,b) => b.np_contrib - a.np_contrib);
+
+  const maxC = d3.max(contribs, d => Math.max(d.np_contrib, d.p_contrib));
+  const y = d3.scaleLinear().domain([0, maxC * 1.05]).range([H-mb, mt]);
+
+  const xLeft = ml + 30;
+  const xRight = W - mr - 30;
+
+  // Column headers
+  svg.append('text').attr('x',xLeft).attr('y',mt-20).attr('text-anchor','middle')
+    .attr('font-size',13).attr('fill',BLUE).attr('font-weight',700).text('No Children');
+  svg.append('text').attr('x',xRight).attr('y',mt-20).attr('text-anchor','middle')
+    .attr('font-size',13).attr('fill',GREEN).attr('font-weight',700).text('Parents');
+
+  // Grid
+  y.ticks(6).forEach(v => {
+    svg.append('line').attr('x1',xLeft-20).attr('x2',xRight+20).attr('y1',y(v)).attr('y2',y(v))
+      .attr('stroke','#eee').attr('stroke-width',0.5);
+    svg.append('text').attr('x',xLeft-25).attr('y',y(v)+4).attr('text-anchor','end')
+      .attr('font-size',8).attr('fill','#aaa').text(v.toFixed(2));
+  });
+
+  contribs.forEach(d => {
+    const color = d.delta >= 0 ? GREEN : RED;
+    const opacity = Math.min(1, Math.abs(d.delta) / 0.1 * 0.5 + 0.3);
+
+    // Slope line
+    svg.append('line')
+      .attr('x1',xLeft).attr('y1',y(d.np_contrib))
+      .attr('x2',xRight).attr('y2',y(d.p_contrib))
+      .attr('stroke',color).attr('stroke-width', Math.max(1, Math.abs(d.delta) * 15))
+      .attr('opacity', opacity);
+
+    // Left dot + label
+    svg.append('circle').attr('cx',xLeft).attr('cy',y(d.np_contrib)).attr('r',4)
+      .attr('fill',BLUE);
+    svg.append('text').attr('x',xLeft-10).attr('y',y(d.np_contrib)+4)
+      .attr('text-anchor','end').attr('font-size',9).attr('fill',BLACK)
+      .text(d.activity);
+
+    // Right dot + label
+    svg.append('circle').attr('cx',xRight).attr('cy',y(d.p_contrib)).attr('r',4)
+      .attr('fill',GREEN);
+    svg.append('text').attr('x',xRight+10).attr('y',y(d.p_contrib)+4)
+      .attr('text-anchor','start').attr('font-size',9).attr('fill',BLACK)
+      .text(`${d.activity} (${d.delta > 0 ? '+' : ''}${d.delta.toFixed(3)})`);
+  });
+
+  container.append('p').attr('class','source').text('Source: ATUS Well-Being Module (2010-2021)');
+}
+
+// =====================================================================
+// CHART 7: Stacked Area / Contribution Bars
+// =====================================================================
+{
+  const container = d3.select('body').append('div').attr('class','chart-container');
+  container.append('h2').text('7. Side-by-Side Contribution Bars');
+  container.append('p').attr('class','subtitle').text('Each bar = time share × happiness (contribution to daily happiness). Paired bars show how parenthood reshuffles the happiness budget.');
+
+  const sorted = [...data].sort((a,b) => (b.p_time*b.p_happy) - (a.p_time*a.p_happy));
+  const W = 900, H = 500, ml = 110, mr = 30, mt = 30, mb = 30;
+  const svg = container.append('svg').attr('width',W).attr('height',H).style('background',BG);
+
+  const yScale = d3.scaleBand().domain(sorted.map(d=>d.activity)).range([mt, H-mb]).padding(0.15);
+  const maxContrib = d3.max(sorted, d => Math.max(d.p_time * d.p_happy, d.np_time * d.np_happy));
+  const x = d3.scaleLinear().domain([0, maxContrib * 1.1]).range([ml, W-mr]);
+
+  // Grid
+  x.ticks(6).forEach(v => {
+    svg.append('line').attr('x1',x(v)).attr('x2',x(v)).attr('y1',mt).attr('y2',H-mb)
+      .attr('stroke','#eee').attr('stroke-width',0.5);
+    svg.append('text').attr('x',x(v)).attr('y',H-mb+15).attr('text-anchor','middle')
+      .attr('font-size',8).attr('fill','#aaa').text(v.toFixed(2));
+  });
+
+  const bh = yScale.bandwidth() / 2 - 1;
+
+  sorted.forEach(d => {
+    const yPos = yScale(d.activity);
+    const pContrib = d.p_time * d.p_happy;
+    const npContrib = d.np_time * d.np_happy;
+
+    svg.append('text').attr('x',ml-5).attr('y',yPos + yScale.bandwidth()/2 + 4)
+      .attr('text-anchor','end').attr('font-size',10).attr('fill',BLACK).text(d.activity);
+
+    // Parent bar (top)
+    svg.append('rect').attr('x',ml).attr('y',yPos)
+      .attr('width', x(pContrib) - ml).attr('height', bh)
+      .attr('fill', GREEN).attr('opacity', 0.85);
+
+    // Non-parent bar (bottom)
+    svg.append('rect').attr('x',ml).attr('y',yPos + bh + 2)
+      .attr('width', x(npContrib) - ml).attr('height', bh)
+      .attr('fill', BLUE).attr('opacity', 0.6);
+
+    // Delta annotation
+    const delta = pContrib - npContrib;
+    if (Math.abs(delta) > 0.005) {
+      const annotX = x(Math.max(pContrib, npContrib)) + 5;
+      svg.append('text').attr('x', annotX).attr('y', yPos + yScale.bandwidth()/2 + 4)
+        .attr('font-size', 8).attr('fill', delta > 0 ? GREEN : RED)
+        .text((delta > 0 ? '+' : '') + delta.toFixed(3));
+    }
+  });
+
+  // Legend
+  svg.append('rect').attr('x',W-mr-140).attr('y',mt).attr('width',10).attr('height',10).attr('fill',GREEN).attr('opacity',0.85);
+  svg.append('text').attr('x',W-mr-126).attr('y',mt+9).attr('font-size',9).attr('fill',BLACK).text('Parents');
+  svg.append('rect').attr('x',W-mr-140).attr('y',mt+16).attr('width',10).attr('height',10).attr('fill',BLUE).attr('opacity',0.6);
+  svg.append('text').attr('x',W-mr-126).attr('y',mt+25).attr('font-size',9).attr('fill',BLACK).text('No children');
+
+  container.append('p').attr('class','source').text('Source: ATUS Well-Being Module (2010-2021)');
+}
+
+</script>
+</body>
+</html>

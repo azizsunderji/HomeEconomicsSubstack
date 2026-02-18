@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="637.252973pt" height="514.512812pt" viewBox="0 0 637.252973 514.512812" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-02-17T15:12:04.735654</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 514.512812 
+L 637.252973 514.512812 
+L 637.252973 0 
+L 0 0 
+z
+" style="fill: #f6f7f3"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 32.279688 473.352813 
+L 619.496193 473.352813 
+L 619.496193 41.352813 
+L 32.279688 41.352813 
+z
+" style="fill: #f6f7f3"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m17a971cfa1" d="M 0 0 
+L 0 3.5 
+" style="stroke: #3d3733; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m17a971cfa1" x="54.58728" y="473.352813" style="fill: #3d3733; stroke: #3d3733; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="54.58728" y="487.352813" transform="rotate(-0 54.58728 487.352813)">2016</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m17a971cfa1" x="161.412372" y="473.352813" style="fill: #3d3733; stroke: #3d3733; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="161.412372" y="487.352813" transform="rotate(-0 161.412372 487.352813)">2018</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m17a971cfa1" x="268.091328" y="473.352813" style="fill: #3d3733; stroke: #3d3733; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="268.091328" y="487.352813" transform="rotate(-0 268.091328 487.352813)">2020</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m17a971cfa1" x="374.916419" y="473.352813" style="fill: #3d3733; stroke: #3d3733; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="374.916419" y="487.352813" transform="rotate(-0 374.916419 487.352813)">2022</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m17a971cfa1" x="481.595375" y="473.352813" style="fill: #3d3733; stroke: #3d3733; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="481.595375" y="487.352813" transform="rotate(-0 481.595375 487.352813)">2024</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m17a971cfa1" x="588.420467" y="473.352813" style="fill: #3d3733; stroke: #3d3733; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="588.420467" y="487.352813" transform="rotate(-0 588.420467 487.352813)">2026</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7">
+      <path d="M 32.279688 447.941048 
+L 619.496193 447.941048 
+" clip-path="url(#p444c473dc7)" style="fill: none; stroke: #ffffff; stroke-width: 1.2; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_7">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: end" x="28.779688" y="451.441048" transform="rotate(-0 28.779688 451.441048)">-10</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_9">
+      <path d="M 32.279688 384.411636 
+L 619.496193 384.411636 
+" clip-path="url(#p444c473dc7)" style="fill: none; stroke: #ffffff; stroke-width: 1.2; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_8">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: end" x="28.779688" y="387.911636" transform="rotate(-0 28.779688 387.911636)">-5</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_11">
+      <path d="M 32.279688 320.882224 
+L 619.496193 320.882224 
+" clip-path="url(#p444c473dc7)" style="fill: none; stroke: #ffffff; stroke-width: 1.2; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12"/>
+     <g id="text_9">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: end" x="28.779688" y="324.382224" transform="rotate(-0 28.779688 324.382224)">0</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_13">
+      <path d="M 32.279688 257.352813 
+L 619.496193 257.352813 
+" clip-path="url(#p444c473dc7)" style="fill: none; stroke: #ffffff; stroke-width: 1.2; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14"/>
+     <g id="text_10">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: end" x="28.779688" y="260.852813" transform="rotate(-0 28.779688 260.852813)">5</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_15">
+      <path d="M 32.279688 193.823401 
+L 619.496193 193.823401 
+" clip-path="url(#p444c473dc7)" style="fill: none; stroke: #ffffff; stroke-width: 1.2; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16"/>
+     <g id="text_11">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: end" x="28.779688" y="197.323401" transform="rotate(-0 28.779688 197.323401)">10</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_17">
+      <path d="M 32.279688 130.293989 
+L 619.496193 130.293989 
+" clip-path="url(#p444c473dc7)" style="fill: none; stroke: #ffffff; stroke-width: 1.2; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18"/>
+     <g id="text_12">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: end" x="28.779688" y="133.793989" transform="rotate(-0 28.779688 133.793989)">15</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_19">
+      <path d="M 32.279688 66.764577 
+L 619.496193 66.764577 
+" clip-path="url(#p444c473dc7)" style="fill: none; stroke: #ffffff; stroke-width: 1.2; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_20"/>
+     <g id="text_13">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: end" x="28.779688" y="70.264577" transform="rotate(-0 28.779688 70.264577)">20%</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 405.897157 473.352813 
+L 592.804534 473.352813 
+L 592.804534 41.352813 
+L 405.897157 41.352813 
+z
+" clip-path="url(#p444c473dc7)" style="fill: #0bb4ff; opacity: 0.08; stroke: #0bb4ff; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_21">
+    <path d="M 32.279688 320.882224 
+L 619.496193 320.882224 
+" clip-path="url(#p444c473dc7)" style="fill: none; stroke: #3d3733; stroke-opacity: 0.3; stroke-width: 0.5; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 32.279687 473.352813 
+L 619.496193 473.352813 
+" style="fill: none; stroke: #3d3733; stroke-width: 0.5; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_22">
+    <path d="M 58.971347 259.778087 
+L 63.209278 261.774146 
+L 67.73948 265.172024 
+L 72.123547 266.705008 
+L 76.653749 267.828172 
+L 81.037816 267.687661 
+L 85.568018 269.143085 
+L 90.09822 270.920844 
+L 94.482287 273.227076 
+L 99.012489 275.083836 
+L 103.396556 276.746606 
+L 107.926758 277.930008 
+L 112.45696 276.492707 
+L 116.548756 273.744516 
+L 121.078958 268.363792 
+L 125.463025 266.809933 
+L 129.993227 266.020034 
+L 134.377294 267.491664 
+L 138.907496 267.514376 
+L 143.437698 268.19108 
+L 147.821765 267.714874 
+L 152.351967 267.949354 
+L 156.736034 266.828108 
+L 161.266236 265.270689 
+L 165.796438 265.129445 
+L 169.888234 265.757577 
+L 174.418436 268.169288 
+L 178.802503 268.846036 
+L 183.332705 270.325909 
+L 187.716772 270.297194 
+L 192.246974 269.99942 
+L 196.777176 268.595796 
+L 201.161243 269.631158 
+L 205.691445 268.6065 
+L 210.075512 267.875536 
+L 214.605714 266.638065 
+L 219.135916 267.622385 
+L 223.227712 269.282553 
+L 227.757914 269.021652 
+L 232.141981 268.739098 
+L 236.672183 267.428266 
+L 241.05625 267.269275 
+L 245.586452 267.11612 
+L 250.116654 267.391357 
+L 254.500721 267.048613 
+L 259.030923 267.814871 
+L 263.41499 269.488598 
+L 267.945192 270.43638 
+L 272.475395 269.743113 
+L 276.713326 268.024747 
+L 281.243528 269.935779 
+L 285.627595 278.287124 
+L 290.157797 287.583859 
+L 294.541863 294.000123 
+L 299.072066 294.314103 
+L 303.602268 295.597367 
+L 307.986335 297.370629 
+L 312.516537 298.584912 
+L 316.900604 298.898936 
+L 321.430806 298.203896 
+L 325.961008 295.621925 
+L 330.052804 292.063644 
+L 334.583006 286.11525 
+L 338.967073 270.929863 
+L 343.497275 249.116328 
+L 347.881342 224.410928 
+L 352.411544 202.888728 
+L 356.941746 179.623082 
+L 361.325813 157.188693 
+L 365.856015 141.816886 
+L 370.240082 132.00214 
+L 374.770284 125.974343 
+L 379.300486 124.686345 
+L 383.392282 124.034197 
+L 387.922484 126.0576 
+L 392.306551 127.169269 
+L 396.836753 133.821748 
+L 401.22082 143.793996 
+L 405.751022 157.501964 
+L 410.281224 174.780041 
+L 414.665291 192.922242 
+L 419.195493 208.554156 
+L 423.57956 220.975903 
+L 428.109762 230.654343 
+L 432.639964 237.753081 
+L 436.73176 244.585983 
+L 441.261962 247.306884 
+L 445.646029 254.92291 
+L 450.176231 261.71663 
+L 454.560298 272.581914 
+L 459.0905 279.388908 
+L 463.620702 283.527024 
+L 468.004769 284.804239 
+L 472.534971 283.986068 
+L 476.919038 283.348624 
+L 481.44924 283.135599 
+L 485.979442 282.361986 
+L 490.217373 281.536302 
+L 494.747576 282.94984 
+L 499.131642 283.081001 
+L 503.661844 283.918943 
+L 508.045911 282.214559 
+L 512.576113 283.217848 
+L 517.106316 284.149306 
+L 521.490382 284.544256 
+L 526.020585 284.597988 
+L 530.404651 283.191091 
+L 534.934853 282.979356 
+L 539.465056 281.944616 
+L 543.556851 281.227578 
+L 548.087054 279.898477 
+L 552.47112 280.053496 
+L 557.001322 282.119552 
+L 561.385389 285.0351 
+L 565.915591 288.415862 
+L 570.445794 290.203788 
+L 574.82986 291.140887 
+L 579.360063 291.055094 
+L 583.744129 292.634106 
+L 588.274332 294.010811 
+L 592.804534 296.050128 
+" clip-path="url(#p444c473dc7)" style="fill: none; stroke: #3d3733; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="text_14">
+    <text style="fill: #0bb4ff; opacity: 0.8; font: 9px 'ABC Oracle Edu'" transform="translate(422.853382 80.797104)">Supply boom</text>
+    <text style="fill: #0bb4ff; opacity: 0.8; font: 9px 'ABC Oracle Edu'" transform="translate(436.709163 90.202104)">period</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'" transform="translate(594.996567 293.665128)">National</text>
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'" transform="translate(594.996567 302.980128)">+2.0%</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: #0bb4ff; font: 9px 'ABC Oracle Edu'" transform="translate(594.996567 351.89831)">Austin</text>
+    <text style="fill: #0bb4ff; font: 9px 'ABC Oracle Edu'" transform="translate(594.996567 361.21331)">-2.6%</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: #3d3733; font: 700 13px 'ABC Oracle Edu'; text-anchor: middle" x="325.88794" y="16.352813" transform="rotate(-0 325.88794 16.352813)">Austin rents boomed, then crashed. National rents kept climbing.</text>
+   </g>
+   <g id="line2d_23">
+    <path d="M 58.971347 257.811641 
+L 63.209278 266.532996 
+L 67.73948 271.797751 
+L 72.123547 269.577594 
+L 76.653749 271.475775 
+L 81.037816 271.945399 
+L 85.568018 275.914661 
+L 90.09822 280.862263 
+L 94.482287 285.286405 
+L 99.012489 290.164664 
+L 103.396556 292.314894 
+L 107.926758 295.044889 
+L 112.45696 294.785267 
+L 116.548756 287.570479 
+L 121.078958 277.646849 
+L 125.463025 276.661174 
+L 129.993227 280.701561 
+L 134.377294 285.288161 
+L 138.907496 288.512523 
+L 143.437698 291.09693 
+L 147.821765 293.051707 
+L 152.351967 291.498309 
+L 156.736034 286.852192 
+L 161.266236 288.186302 
+L 165.796438 292.457358 
+L 169.888234 294.653564 
+L 174.418436 301.000534 
+L 178.802503 300.369057 
+L 183.332705 300.918435 
+L 187.716772 294.253522 
+L 192.246974 286.384626 
+L 196.777176 278.985083 
+L 201.161243 273.356996 
+L 205.691445 267.608003 
+L 210.075512 263.768282 
+L 214.605714 262.326266 
+L 219.135916 261.235314 
+L 223.227712 263.262438 
+L 227.757914 258.133897 
+L 232.141981 258.929494 
+L 236.672183 257.892973 
+L 241.05625 262.851832 
+L 245.586452 263.286826 
+L 250.116654 261.626651 
+L 254.500721 259.951731 
+L 259.030923 260.508424 
+L 263.41499 266.864551 
+L 267.945192 267.070702 
+L 272.475395 265.715682 
+L 276.713326 266.011535 
+L 281.243528 269.645224 
+L 285.627595 282.789694 
+L 290.157797 296.487938 
+L 294.541863 308.237568 
+L 299.072066 312.700754 
+L 303.602268 316.148716 
+L 307.986335 322.822026 
+L 312.516537 327.903138 
+L 316.900604 328.324224 
+L 321.430806 326.821136 
+L 325.961008 320.844741 
+L 330.052804 312.4014 
+L 334.583006 301.178279 
+L 338.967073 273.992551 
+L 343.497275 232.600842 
+L 347.881342 184.361103 
+L 352.411544 141.169276 
+L 356.941746 101.132957 
+L 361.325813 66.443971 
+L 365.856015 49.011916 
+L 370.240082 48.303301 
+L 374.770284 47.099187 
+L 379.300486 55.568051 
+L 383.392282 57.083325 
+L 387.922484 66.266335 
+L 392.306551 73.158308 
+L 396.836753 92.53611 
+L 401.22082 117.166736 
+L 405.751022 147.351574 
+L 410.281224 186.864398 
+L 414.665291 219.409086 
+L 419.195493 244.411679 
+L 423.57956 258.090379 
+L 428.109762 272.165572 
+L 432.639964 277.829554 
+L 436.73176 288.007281 
+L 441.261962 290.587607 
+L 445.646029 306.485737 
+L 450.176231 317.921764 
+L 454.560298 338.217248 
+L 459.0905 353.913057 
+L 463.620702 363.313967 
+L 468.004769 369.505323 
+L 472.534971 366.869191 
+L 476.919038 361.533808 
+L 481.44924 356.488148 
+L 485.979442 358.51145 
+L 490.217373 363.193352 
+L 494.747576 371.903753 
+L 499.131642 370.207649 
+L 503.661844 369.4645 
+L 508.045911 364.864118 
+L 512.576113 367.155064 
+L 517.106316 369.852025 
+L 521.490382 367.923093 
+L 526.020585 368.99286 
+L 530.404651 369.739065 
+L 534.934853 371.911852 
+L 539.465056 368.484065 
+L 543.556851 363.726858 
+L 548.087054 358.355358 
+L 552.47112 357.189901 
+L 557.001322 356.173966 
+L 561.385389 358.723553 
+L 565.915591 362.826176 
+L 570.445794 364.268362 
+L 574.82986 363.723632 
+L 579.360063 358.456675 
+L 583.744129 356.579072 
+L 588.274332 355.323677 
+L 592.804534 354.28331 
+" clip-path="url(#p444c473dc7)" style="fill: none; stroke: #0bb4ff; stroke-width: 2.5; stroke-linecap: square"/>
+   </g>
+  </g>
+  <g id="text_18">
+   <text style="fill: #888888; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="320.4" y="22.452812" transform="rotate(-0 320.4 22.452812)">Year-over-year change in Zillow Observed Rent Index (ZORI), 2016-2026</text>
+  </g>
+  <g id="text_19">
+   <text style="fill: #888888; font: italic 8px 'ABC Oracle Edu'; text-anchor: middle" x="320.4" y="505.752813" transform="rotate(-0 320.4 505.752813)">Source: Zillow Research, ZORI (smoothed, all homes, metro level). Jan 2016 - Jan 2026.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p444c473dc7">
+   <rect x="32.279688" y="41.352813" width="587.216506" height="432"/>
+  </clipPath>
+ </defs>
+</svg>

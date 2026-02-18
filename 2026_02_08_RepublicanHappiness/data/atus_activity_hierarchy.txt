@@ -1,0 +1,600 @@
+COMPLETE ATUS ACTIVITY CODE HIERARCHY
+Ages 25-54, Well-Being Module (2010, 2012, 2013, 2021)
+Total: 338 unique 6-digit codes, 65,153 observations
+
+
+====================================================================================================
+  01 — Personal Care                                       [  0.4% of time, 205 obs]
+====================================================================================================
+
+    0103 — Health-Related Self Care                       [ 0.42%, happy=3.27, n=205]
+      010301  Health-related self care                                  0.425%  happy=3.27  n=203
+      010399  Health-related self care NEC                              0.000%  happy=0.00  n=2
+
+====================================================================================================
+  02 — Household Activities                                [ 12.4% of time, 10,945 obs]
+====================================================================================================
+
+    0201 — Housework                                      [ 4.31%, happy=3.90, n=2,745]
+      020101  Interior cleaning                                         2.869%  happy=3.92  n=1,475
+      020102  Laundry                                                   1.242%  happy=3.83  n=1,007
+      020103  Sewing/repairing textiles                                 0.080%  happy=4.40  n=34
+      020104  Storing interior HH items                                 0.123%  happy=3.88  n=229
+
+    0202 — Food & Drink Prep/Cleanup                      [ 4.19%, happy=4.40, n=5,078]
+      020201  Food and drink preparation                                3.354%  happy=4.53  n=3,930
+      020202  Food presentation/table setting                           0.058%  happy=4.83  n=68
+      020203  Kitchen/food cleanup                                      0.781%  happy=3.81  n=1,080
+
+    0203 — Interior Maintenance/Repair/Decoration         [ 0.47%, happy=3.94, n=193]
+      020301  Interior arrangement/decoration                           0.390%  happy=4.25  n=151
+      020302  Building/repairing furniture                              0.045%  happy=1.73  n=11
+      020303  Heating/cooling                                           0.036%  happy=3.39  n=31
+
+    0204 — Exterior Maintenance/Repair                    [ 0.34%, happy=3.74, n=151]
+      020401  Exterior cleaning                                         0.160%  happy=3.69  n=93
+      020402  Exterior repair/improvements                              0.180%  happy=3.78  n=58
+
+    0205 — Lawn, Garden & Houseplants                     [ 1.03%, happy=4.38, n=483]
+      020501  Lawn/garden/houseplant care                               1.005%  happy=4.40  n=467
+      020502  Ponds/pools/hot tubs                                      0.022%  happy=3.87  n=16
+
+    0206 — Animals & Pets                                 [ 0.67%, happy=4.49, n=850]
+      020602  Walking/exercising/playing with animals                   0.307%  happy=4.16  n=502
+      020603                                                            0.360%  happy=4.78  n=347
+      020699  Animals & pets NEC                                        0.000%  happy=5.00  n=1
+
+    0207 — Vehicles                                       [ 0.28%, happy=3.93, n=152]
+      020701  Vehicle repair/maintenance (by self)                      0.278%  happy=3.93  n=151
+      020799  Vehicles NEC                                              0.002%  happy=4.00  n=1
+
+    0208 — Appliances, Tools & Toys                       [ 0.08%, happy=3.14, n=49]
+      020801  Appliance/tool/toy set-up/repair                          0.075%  happy=3.14  n=48
+      020899  Appliances NEC                                            0.000%  happy=4.00  n=1
+
+    0209 — Household & Personal Organization/Planning     [ 0.99%, happy=3.83, n=1,243]
+      020901  Financial management                                      0.153%  happy=3.26  n=123
+      020902  HH & personal organization/planning                       0.598%  happy=4.07  n=770
+      020903  HH & personal mail/messages (not email)                   0.038%  happy=3.83  n=89
+      020904  HH & personal email/messages                              0.182%  happy=3.63  n=232
+      020905                                                            0.017%  happy=2.87  n=28
+      020999  HH management NEC                                         0.002%  happy=3.00  n=1
+
+    0299 — Household Activities NEC                       [ 0.00%, happy=5.00, n=1]
+      029999  Household activities NEC                                  0.002%  happy=5.00  n=1
+
+====================================================================================================
+  03 — Caring for & Helping HH Members                     [  4.9% of time, 5,251 obs]
+====================================================================================================
+
+    0301 — Caring for & Helping HH Children               [ 4.30%, happy=5.00, n=4,784]
+      030101  Physical care for HH children                             1.694%  happy=4.66  n=2,517
+      030102  Reading to/with HH children                               0.175%  happy=5.41  n=236
+      030103  Playing with HH children                                  1.232%  happy=5.46  n=721
+      030104  Arts and crafts with HH children                          0.023%  happy=5.52  n=15
+      030105  Playing sports with HH children                           0.046%  happy=5.28  n=37
+      030106  Talking with/listening to HH children                     0.183%  happy=5.31  n=208
+      030108  Looking after HH children (primary)                       0.061%  happy=4.50  n=81
+      030109  Attending HH children's events                            0.392%  happy=4.95  n=217
+      030110  Waiting for/with HH children                              0.255%  happy=4.99  n=133
+      030111  Picking up/dropping off HH children                       0.054%  happy=4.13  n=76
+      030112  Caring for HH children NEC                                0.185%  happy=4.69  n=536
+      030199  Caring for HH children NEC                                0.004%  happy=4.71  n=7
+
+    0302 — HH Children's Education                        [ 0.42%, happy=4.44, n=273]
+      030201  Homework (HH children)                                    0.373%  happy=4.42  n=249
+      030202  Meetings & school conferences (HH children)               0.013%  happy=3.70  n=9
+      030203  Home schooling HH children                                0.028%  happy=5.21  n=9
+      030299  HH children education NEC                                 0.005%  happy=3.48  n=6
+
+    0303 — HH Children's Health                           [ 0.08%, happy=3.99, n=65]
+      030301  Providing medical care to HH children                     0.022%  happy=3.13  n=33
+      030302  Obtaining medical care for HH children                    0.041%  happy=4.72  n=17
+      030303  Waiting for HH children health care                       0.016%  happy=3.30  n=15
+
+    0304 — Caring for HH Adults                           [ 0.08%, happy=4.12, n=57]
+      030401  Physical care for HH adults                               0.034%  happy=4.61  n=40
+      030402  Looking after HH adults (primary)                         0.001%  happy=5.62  n=3
+      030403  Providing medical care to HH adults                       0.007%  happy=3.81  n=5
+      030404  Obtaining medical care for HH adults                      0.012%  happy=5.00  n=3
+      030405  Waiting for/with HH adults                                0.027%  happy=3.10  n=6
+
+    0305 — Helping HH Adults                              [ 0.05%, happy=4.45, n=69]
+      030501  Helping HH adults                                         0.008%  happy=3.88  n=4
+      030502  Organization & planning for HH adults                     0.004%  happy=4.10  n=5
+      030503  Picking up/dropping off HH adults                         0.012%  happy=4.56  n=36
+      030504  Waiting for/with HH adults                                0.018%  happy=4.57  n=21
+      030599  Helping HH adults NEC                                     0.008%  happy=4.74  n=3
+
+    0399 — Caring for HH Members NEC                      [ 0.00%, happy=5.07, n=3]
+      039999  Caring for HH members NEC                                 0.004%  happy=5.07  n=3
+
+====================================================================================================
+  04 — Caring for & Helping Non-HH Members                 [  0.7% of time, 527 obs]
+====================================================================================================
+
+    0401 — Caring for & Helping Non-HH Children           [ 0.30%, happy=5.38, n=210]
+      040101  Physical care for non-HH children                         0.047%  happy=4.64  n=54
+      040102  Reading to/with non-HH children                           0.010%  happy=6.00  n=6
+      040103  Playing with non-HH children                              0.142%  happy=5.59  n=48
+      040104  Arts and crafts with non-HH children                      0.001%  happy=5.00  n=1
+      040105  Playing sports with non-HH children                       0.006%  happy=5.76  n=3
+      040106  Talking with/listening to non-HH children                 0.021%  happy=5.94  n=10
+      040108  Looking after non-HH children                             0.001%  happy=5.62  n=2
+      040109  Attending non-HH children events                          0.037%  happy=5.43  n=18
+      040110  Waiting for/with non-HH children                          0.016%  happy=5.19  n=9
+      040111  Picking up/dropping off non-HH children                   0.003%  happy=3.72  n=5
+      040112  Caring for non-HH children NEC                            0.016%  happy=4.75  n=52
+      040199  Caring for non-HH children NEC                            0.002%  happy=6.00  n=2
+
+    0402 — Non-HH Children's Education                    [ 0.01%, happy=5.00, n=4]
+      040201  Homework (non-HH children)                                0.004%  happy=5.01  n=3
+      040203                                                            0.003%  happy=5.00  n=1
+
+    0403 — Non-HH Children's Health                       [ 0.04%, happy=2.97, n=3]
+      040302  Obtaining medical care for non-HH children                0.028%  happy=4.00  n=2
+      040303                                                            0.010%  happy=0.00  n=1
+
+    0404 — Caring for Non-HH Adults                       [ 0.05%, happy=4.41, n=32]
+      040401  Physical care for non-HH adults                           0.021%  happy=4.81  n=16
+      040402  Looking after non-HH adults                               0.002%  happy=2.75  n=4
+      040403  Providing medical care to non-HH adults                   0.010%  happy=3.22  n=5
+      040404  Obtaining medical care for non-HH adults                  0.004%  happy=3.00  n=1
+      040405  Waiting for/with non-HH adults                            0.012%  happy=5.67  n=3
+      040499  Caring for non-HH adults NEC                              0.005%  happy=3.93  n=3
+
+    0405 — Helping Non-HH Adults                          [ 0.33%, happy=4.27, n=278]
+      040501  Housework/cooking/shopping for non-HH adults              0.090%  happy=4.38  n=46
+      040502  House/lawn maintenance for non-HH adults                  0.089%  happy=4.24  n=38
+      040503  Animal/pet care for non-HH adults                         0.013%  happy=4.56  n=12
+      040504  Vehicle/appliance maint for non-HH adults                 0.049%  happy=3.53  n=22
+      040505  Financial management for non-HH adults                    0.012%  happy=4.70  n=6
+      040506  HH management for non-HH adults                           0.011%  happy=4.20  n=17
+      040507  Picking up/dropping off non-HH adults                     0.034%  happy=5.27  n=105
+      040508  Waiting for/with non-HH adults                            0.012%  happy=2.81  n=21
+      040599  Helping non-HH adults NEC                                 0.021%  happy=4.55  n=11
+
+====================================================================================================
+  05 — Work & Work-Related                                 [ 28.8% of time, 5,629 obs]
+====================================================================================================
+
+    0501 — Working                                        [28.35%, happy=3.85, n=5,420]
+      050101  Work, main job                                           27.679%  happy=3.85  n=5,193
+      050102  Work, other job(s)                                        0.613%  happy=3.95  n=180
+      050103  Security procedures as part of job                        0.001%  happy=3.12  n=2
+      050104  Waiting associated with working                           0.048%  happy=4.64  n=41
+      050199  Working NEC                                               0.014%  happy=3.79  n=4
+
+    0502 — Work-Related Activities                        [ 0.04%, happy=3.97, n=34]
+      050201  Eating & drinking as part of job                          0.008%  happy=5.00  n=4
+      050202  Waiting as part of job                                    0.024%  happy=3.64  n=27
+      050205                                                            0.001%  happy=3.33  n=2
+      050299  Work-related NEC                                          0.008%  happy=4.00  n=1
+
+    0503 — Other Income-Generating                        [ 0.16%, happy=4.75, n=69]
+      050301  Income from other jobs                                    0.003%  happy=4.92  n=3
+      050303                                                            0.046%  happy=4.96  n=21
+      050304                                                            0.006%  happy=3.68  n=5
+      050399  Other income-generating NEC                               0.105%  happy=4.72  n=40
+
+    0504 — Job Search & Interviewing                      [ 0.29%, happy=3.49, n=106]
+      050401  Job search activities                                     0.283%  happy=3.47  n=102
+      050403  Job interviewing                                          0.007%  happy=4.21  n=4
+
+====================================================================================================
+  06 — Education                                           [  0.9% of time, 283 obs]
+====================================================================================================
+
+    0601 — Taking Class                                   [ 0.33%, happy=3.75, n=75]
+      060101  Taking class for degree                                   0.267%  happy=3.71  n=55
+      060102  Taking class for personal interest                        0.063%  happy=3.92  n=16
+      060103  Waiting for class                                         0.002%  happy=3.15  n=3
+      060199  Taking class NEC                                          0.001%  happy=5.00  n=1
+
+    0603 — Research/Homework                              [ 0.53%, happy=3.56, n=194]
+      060301  Research/homework for degree                              0.519%  happy=3.55  n=190
+      060302  Research/homework personal interest                       0.001%  happy=6.00  n=1
+      060399  Research/homework NEC                                     0.006%  happy=4.00  n=3
+
+    0604 — Registration/Admin                             [ 0.01%, happy=4.60, n=9]
+      060401  Admin for education                                       0.004%  happy=5.41  n=6
+      060403                                                            0.003%  happy=3.00  n=1
+      060499  Admin education NEC                                       0.004%  happy=5.00  n=2
+
+    0699 — Education NEC                                  [ 0.03%, happy=4.87, n=5]
+      069999  Education NEC                                             0.034%  happy=4.87  n=5
+
+====================================================================================================
+  07 — Consumer Purchases (Shopping)                       [  2.5% of time, 2,621 obs]
+====================================================================================================
+
+    0701 — Shopping                                       [ 2.53%, happy=4.31, n=2,618]
+      070101  Shopping                                                  0.810%  happy=4.04  n=688
+      070102  Comparison shopping (in store)                            0.039%  happy=3.48  n=137
+      070103  Buying gas                                                0.170%  happy=4.33  n=573
+      070104  Shopping (unclassified store)                             1.496%  happy=4.48  n=1,205
+      070105  Waiting while shopping                                    0.014%  happy=3.39  n=15
+
+    0702 — Researching Purchases                          [ 0.01%, happy=3.66, n=3]
+      070201  Online comparison shopping                                0.005%  happy=3.66  n=3
+
+====================================================================================================
+  08 — Professional & Personal Care Services               [  0.5% of time, 299 obs]
+====================================================================================================
+
+    0801 — Using Childcare Services                       [ 0.01%, happy=5.34, n=12]
+      080101  Using childcare services                                  0.005%  happy=5.34  n=12
+
+    0802 — Using Financial Services/Banking               [ 0.03%, happy=4.12, n=73]
+      080201  Using financial services/banking                          0.026%  happy=4.12  n=64
+      080202                                                            0.001%  happy=3.69  n=4
+      080203                                                            0.004%  happy=4.25  n=5
+
+    0803 — Using Legal Services                           [ 0.00%, happy=5.73, n=2]
+      080301  Using legal services                                      0.001%  happy=5.73  n=2
+
+    0804 — Using Medical Services                         [ 0.27%, happy=3.03, n=109]
+      080401  Using medical services                                    0.221%  happy=3.25  n=81
+      080402  Using dental services                                     0.009%  happy=0.00  n=1
+      080403  Using mental health services                              0.044%  happy=2.55  n=27
+
+    0805 — Using Personal Care Services                   [ 0.12%, happy=4.76, n=69]
+      080501  Using personal care services (haircut, spa)               0.115%  happy=4.76  n=63
+      080502                                                            0.001%  happy=4.37  n=6
+
+    0806 — Using Real Estate Services                     [ 0.01%, happy=3.88, n=13]
+      080601  Real estate services                                      0.015%  happy=3.88  n=13
+
+    0807 — Using Veterinary Services                      [ 0.03%, happy=2.51, n=13]
+      080701  Using veterinary services                                 0.018%  happy=2.54  n=9
+      080702                                                            0.012%  happy=2.47  n=4
+
+    0899 — Using Prof Services NEC                        [ 0.01%, happy=3.91, n=8]
+      089999  Prof services NEC                                         0.012%  happy=3.91  n=8
+
+====================================================================================================
+  09 — Household Services                                  [  0.1% of time, 70 obs]
+====================================================================================================
+
+    0901 — Using Household Services                       [ 0.01%, happy=3.31, n=11]
+      090101  Using interior cleaning services                          0.003%  happy=5.70  n=2
+      090103  Using clothing repair/cleaning                            0.005%  happy=2.12  n=9
+
+    0902 — Using Home Maint Services                      [ 0.04%, happy=2.95, n=16]
+      090201  Using home maint/repair services                          0.019%  happy=3.26  n=12
+      090202  Waiting for home maint                                    0.016%  happy=2.59  n=4
+
+    0903 — Using Pet Services                             [ 0.00%, happy=3.97, n=6]
+      090301  Using pet services                                        0.001%  happy=3.62  n=3
+      090302                                                            0.000%  happy=5.40  n=2
+      090399  Pet services NEC                                          0.000%  happy=3.00  n=1
+
+    0904 — Using Lawn & Garden Services                   [ 0.01%, happy=6.00, n=2]
+      090401  Using lawn & garden services                              0.005%  happy=6.00  n=2
+
+    0905 — Using Vehicle Services                         [ 0.05%, happy=3.13, n=34]
+      090501  Using vehicle maint services                              0.029%  happy=2.61  n=25
+      090502  Waiting for vehicle maint                                 0.024%  happy=3.81  n=8
+      090599  Vehicle services NEC                                      0.000%  happy=0.00  n=1
+
+    0999 — Using HH Services NEC                          [ 0.00%, happy=3.00, n=1]
+      099999  HH services NEC                                           0.001%  happy=3.00  n=1
+
+====================================================================================================
+  10 — Government Services & Civic Obligations             [  0.1% of time, 26 obs]
+====================================================================================================
+
+    1001 — Using Government Services                      [ 0.05%, happy=4.63, n=14]
+      100101  Using police/fire services                                0.003%  happy=3.00  n=1
+      100102  Using social services                                     0.014%  happy=4.25  n=4
+      100103  Obtaining licenses/permits                                0.025%  happy=5.00  n=8
+      100199  Gov services NEC                                          0.002%  happy=5.00  n=1
+
+    1002 — Civic Obligations & Participation              [ 0.01%, happy=2.17, n=6]
+      100201  Civic obligations (jury duty)                             0.006%  happy=2.17  n=6
+
+    1003 —                                                [ 0.01%, happy=4.29, n=5]
+      100304                                                            0.009%  happy=4.29  n=5
+
+    1004 —                                                [ 0.00%, happy=3.00, n=1]
+      100401                                                            0.001%  happy=3.00  n=1
+
+====================================================================================================
+  11 — Eating & Drinking                                   [  7.6% of time, 9,547 obs]
+====================================================================================================
+
+    1101 — Eating & Drinking                              [ 7.61%, happy=4.68, n=9,514]
+      110101  Eating and drinking                                       7.609%  happy=4.68  n=9,514
+
+    1102 — Waiting for Eating & Drinking                  [ 0.02%, happy=4.48, n=33]
+      110201  Waiting for eating & drinking                             0.023%  happy=4.48  n=33
+
+====================================================================================================
+  12 — Socializing, Relaxing & Leisure                     [ 27.3% of time, 10,841 obs]
+====================================================================================================
+
+    1201 — Socializing & Communicating                    [ 3.96%, happy=4.94, n=2,111]
+      120101  Socializing and communicating                             3.962%  happy=4.94  n=2,110
+      120199  Socializing NEC                                           0.001%  happy=5.00  n=1
+
+    1202 — Attending/Hosting Social Events                [ 0.60%, happy=5.24, n=192]
+      120201  Attending/hosting parties/receptions/ceremonies           0.539%  happy=5.34  n=170
+      120202  Attending meetings for personal interest (clubs)          0.059%  happy=4.35  n=21
+      120299  Social events NEC                                         0.001%  happy=5.00  n=1
+
+    1203 — Relaxing & Leisure (TV, reading, relaxing)     [22.21%, happy=4.24, n=8,354]
+      120301  Relaxing, thinking                                        1.614%  happy=4.16  n=1,015
+      120302  Tobacco and drug use                                      0.034%  happy=3.97  n=76
+      120303  Television and movies (at home)                          16.200%  happy=4.23  n=5,338
+      120304  Television and movies (in theater)                        0.015%  happy=3.30  n=10
+      120305  Listening to/playing music                                0.107%  happy=3.93  n=55
+      120306  Listening to the radio                                    0.155%  happy=5.13  n=73
+      120307  Listening to/reading audio content                        1.517%  happy=4.64  n=448
+      120308  Writing for personal interest                             1.245%  happy=3.84  n=598
+      120309  Computer use for leisure (not games)                      0.146%  happy=4.34  n=45
+      120310  Playing games                                             0.005%  happy=5.00  n=1
+      120311  Reading for personal interest                             0.009%  happy=4.92  n=4
+      120312  Arts and crafts as hobby                                  1.118%  happy=4.29  n=672
+      120313  Collecting as hobby                                       0.034%  happy=5.13  n=11
+      120399  Relaxing & leisure NEC                                    0.010%  happy=5.44  n=8
+
+    1204 — Arts & Entertainment (attending)               [ 0.49%, happy=5.24, n=177]
+      120401  Attending performing arts                                 0.068%  happy=5.36  n=28
+      120402  Attending museums                                         0.056%  happy=5.34  n=24
+      120403  Attending movies/film                                     0.152%  happy=5.14  n=55
+      120404  Attending gambling establishments                         0.035%  happy=3.22  n=7
+      120499  Arts & entertainment NEC                                  0.175%  happy=5.65  n=63
+
+    1205 — Waiting for Socializing                        [ 0.00%, happy=3.90, n=6]
+      120501  Waiting for socializing                                   0.000%  happy=4.00  n=1
+      120502                                                            0.001%  happy=3.00  n=1
+      120503                                                            0.000%  happy=2.00  n=1
+      120504                                                            0.002%  happy=4.88  n=3
+
+    1299 — Socializing NEC                                [ 0.00%, happy=6.00, n=1]
+      129999  Socializing/leisure NEC                                   0.001%  happy=6.00  n=1
+
+====================================================================================================
+  13 — Sports, Exercise & Recreation                       [  2.0% of time, 1,129 obs]
+====================================================================================================
+
+    1301 — Participating in Sports/Exercise/Recreation    [ 1.88%, happy=4.92, n=1,065]
+      130101  Aerobics                                                  0.016%  happy=5.28  n=8
+      130102  Baseball/softball                                         0.005%  happy=4.10  n=3
+      130103  Basketball                                                0.019%  happy=3.94  n=18
+      130104  Biking                                                    0.075%  happy=5.25  n=43
+      130105  Billiards                                                 0.011%  happy=5.23  n=6
+      130106  Boating                                                   0.055%  happy=5.67  n=17
+      130107  Bowling                                                   0.033%  happy=4.72  n=8
+      130108  Climbing/spelunking                                       0.002%  happy=5.00  n=1
+      130109  Dancing                                                   0.025%  happy=4.88  n=8
+      130110  Equestrian sports                                         0.006%  happy=3.69  n=3
+      130112  Fishing                                                   0.101%  happy=5.25  n=35
+      130113  Football                                                  0.005%  happy=6.00  n=1
+      130114  Golfing                                                   0.081%  happy=5.10  n=32
+      130116  Hiking                                                    0.034%  happy=5.05  n=19
+      130117  Hockey                                                    0.004%  happy=6.00  n=3
+      130118  Hunting                                                   0.042%  happy=5.19  n=17
+      130119  Martial arts                                              0.004%  happy=4.99  n=6
+      130120  Racquet sports                                            0.021%  happy=5.68  n=7
+      130122  Rollerblading                                             0.017%  happy=5.42  n=5
+      130124  Running                                                   0.111%  happy=4.89  n=88
+      130125  Skiing/ice skating/snowboarding                           0.031%  happy=5.69  n=9
+      130126  Soccer                                                    0.021%  happy=5.15  n=9
+      130127  Softball                                                  0.015%  happy=4.39  n=5
+      130128  Cardiovascular equipment                                  0.065%  happy=4.40  n=62
+      130129  Swimming                                                  0.004%  happy=6.00  n=4
+      130130  Tennis                                                    0.019%  happy=5.72  n=5
+      130131  Yoga                                                      0.318%  happy=4.92  n=240
+      130132  Volleyball                                                0.167%  happy=5.11  n=77
+      130133  Walking                                                   0.118%  happy=4.80  n=60
+      130134  Water sports                                              0.345%  happy=4.49  n=206
+      130135  Weightlifting                                             0.012%  happy=5.00  n=1
+      130136  Working out (unspecified)                                 0.021%  happy=4.80  n=16
+      130199  Sports NEC                                                0.076%  happy=4.85  n=43
+
+    1302 — Attending Sporting Events                      [ 0.14%, happy=5.07, n=62]
+      130202  Waiting for sporting events                               0.028%  happy=4.64  n=11
+      130203                                                            0.008%  happy=5.37  n=4
+      130204                                                            0.002%  happy=4.00  n=1
+      130210                                                            0.006%  happy=6.00  n=2
+      130213                                                            0.034%  happy=5.23  n=11
+      130216                                                            0.013%  happy=4.21  n=8
+      130218                                                            0.002%  happy=6.00  n=1
+      130223                                                            0.000%  happy=5.00  n=1
+      130224                                                            0.022%  happy=5.49  n=10
+      130225                                                            0.005%  happy=5.22  n=2
+      130226                                                            0.003%  happy=6.00  n=2
+      130227                                                            0.004%  happy=6.00  n=1
+      130229                                                            0.001%  happy=3.00  n=1
+      130232                                                            0.002%  happy=3.00  n=1
+      130299  Attending sports NEC                                      0.007%  happy=5.03  n=6
+
+    1303 —                                                [ 0.00%, happy=6.00, n=2]
+      130301  Waiting for sports/exercise                               0.001%  happy=6.00  n=2
+
+====================================================================================================
+  14 — Religious & Spiritual                               [  0.9% of time, 581 obs]
+====================================================================================================
+
+    1401 — Religious/Spiritual Practice                   [ 0.91%, happy=5.10, n=579]
+      140101  Attending religious services                              0.642%  happy=5.15  n=338
+      140102  Religious practices                                       0.194%  happy=4.94  n=194
+      140103  Waiting for religious activities                          0.005%  happy=4.25  n=6
+      140105  Religious education                                       0.067%  happy=5.11  n=41
+
+    1499 — Religious NEC                                  [ 0.00%, happy=5.64, n=2]
+      149999  Religious NEC                                             0.003%  happy=5.64  n=2
+
+====================================================================================================
+  15 — Volunteer Activities                                [  0.7% of time, 383 obs]
+====================================================================================================
+
+    1501 — Administrative (vol)                           [ 0.13%, happy=4.54, n=103]
+      150101  Computer use (vol)                                        0.031%  happy=3.75  n=35
+      150102  Organizing & preparing (vol)                              0.054%  happy=4.70  n=33
+      150103  Reading (vol)                                             0.007%  happy=5.75  n=3
+      150104  Telephone calls (vol)                                     0.005%  happy=3.70  n=10
+      150105  Writing (vol)                                             0.004%  happy=3.00  n=1
+      150106  Fundraising (vol)                                         0.013%  happy=5.70  n=11
+      150199  Admin (vol) NEC                                           0.014%  happy=4.77  n=10
+
+    1502 — Social Service (vol)                           [ 0.18%, happy=5.21, n=94]
+      150201  Food prep/distribution (vol)                              0.077%  happy=5.28  n=25
+      150202  Collecting/delivering (vol)                               0.005%  happy=5.03  n=6
+      150203  Providing care (vol)                                      0.009%  happy=5.18  n=11
+      150204  Teaching/training (vol)                                   0.086%  happy=5.19  n=50
+      150299  Social service (vol) NEC                                  0.002%  happy=4.07  n=2
+
+    1503 — Maintenance (vol)                              [ 0.04%, happy=4.49, n=14]
+      150301  Building/repair (vol)                                     0.004%  happy=5.00  n=1
+      150302  Cleaning (vol)                                            0.032%  happy=4.41  n=12
+      150399  Maint (vol) NEC                                           0.001%  happy=5.00  n=1
+
+    1504 — Performance (vol)                              [ 0.07%, happy=4.85, n=30]
+      150401  Performing (vol)                                          0.021%  happy=5.46  n=11
+      150402  Serving at events (vol)                                   0.053%  happy=4.60  n=18
+      150499  Performance (vol) NEC                                     0.001%  happy=6.00  n=1
+
+    1505 — Meetings (vol)                                 [ 0.11%, happy=4.36, n=38]
+      150501  Attending meetings (vol)                                  0.105%  happy=4.36  n=38
+
+    1506 — Public Health/Safety (vol)                     [ 0.01%, happy=3.59, n=2]
+      150602  Public safety (vol)                                       0.009%  happy=3.59  n=2
+
+    1507 —                                                [ 0.00%, happy=4.60, n=2]
+      150701                                                            0.001%  happy=4.60  n=2
+
+    1508 —                                                [ 0.00%, happy=4.00, n=1]
+      150801                                                            0.000%  happy=4.00  n=1
+
+    1599 — Volunteering NEC                               [ 0.18%, happy=5.01, n=99]
+      159999  Volunteering NEC                                          0.184%  happy=5.01  n=99
+
+====================================================================================================
+  16 — Telephone Calls                                     [  0.6% of time, 481 obs]
+====================================================================================================
+
+    1601 — Telephone Calls                                [ 0.58%, happy=3.95, n=480]
+      160101  Telephone calls (to/from)                                 0.214%  happy=4.70  n=221
+      160102  Waiting for phone calls                                   0.194%  happy=3.87  n=120
+      160103                                                            0.001%  happy=1.57  n=2
+      160104                                                            0.017%  happy=1.92  n=5
+      160105                                                            0.042%  happy=1.43  n=14
+      160106                                                            0.018%  happy=1.55  n=12
+      160107                                                            0.000%  happy=3.00  n=1
+      160108                                                            0.003%  happy=0.68  n=5
+      160199  Telephone NEC                                             0.086%  happy=4.57  n=100
+
+    1602 — Waiting for Calls                              [ 0.00%, happy=6.00, n=1]
+      160201                                                            0.001%  happy=6.00  n=1
+
+====================================================================================================
+  18 — Traveling                                           [  8.3% of time, 15,664 obs]
+====================================================================================================
+
+    1801 — Travel: Personal Care                          [ 0.09%, happy=4.32, n=111]
+      180101  Travel: personal care                                     0.089%  happy=4.32  n=111
+
+    1802 — Travel: Household                              [ 0.31%, happy=4.55, n=509]
+      180201  Travel: housework                                         0.031%  happy=3.59  n=68
+      180202  Travel: HH shopping                                       0.024%  happy=4.65  n=69
+      180203                                                            0.004%  happy=4.90  n=9
+      180204                                                            0.008%  happy=3.97  n=5
+      180205                                                            0.004%  happy=4.82  n=11
+      180206                                                            0.027%  happy=4.26  n=50
+      180207                                                            0.011%  happy=3.97  n=25
+      180208                                                            0.001%  happy=5.76  n=6
+      180209                                                            0.196%  happy=4.76  n=265
+      180299                                                            0.000%  happy=3.00  n=1
+
+    1803 — Travel: HH Members                             [ 0.81%, happy=4.55, n=1,615]
+      180302  Travel: caring for HH adults                              0.665%  happy=4.57  n=1,420
+      180303  Travel: helping HH adults                                 0.006%  happy=4.18  n=20
+      180304                                                            0.022%  happy=4.74  n=26
+      180305                                                            0.010%  happy=5.61  n=7
+      180306                                                            0.108%  happy=4.30  n=142
+
+    1804 — Travel: Non-HH Members                         [ 0.32%, happy=4.58, n=591]
+      180402  Travel: caring for non-HH adults                          0.080%  happy=4.96  n=169
+      180404                                                            0.005%  happy=2.66  n=3
+      180405                                                            0.002%  happy=3.93  n=9
+      180406                                                            0.231%  happy=4.49  n=410
+
+    1805 — Travel: Work                                   [ 2.39%, happy=4.05, n=3,634]
+      180501  Travel: working                                           2.326%  happy=4.05  n=3,550
+      180502  Travel: work-related                                      0.012%  happy=3.80  n=13
+      180503  Travel: income-generating                                 0.015%  happy=4.03  n=29
+      180504  Travel: job search                                        0.036%  happy=3.65  n=42
+
+    1806 — Travel: Education                              [ 0.10%, happy=3.79, n=88]
+      180601  Travel: education                                         0.073%  happy=3.58  n=70
+      180603                                                            0.024%  happy=4.46  n=14
+      180604                                                            0.002%  happy=3.75  n=3
+      180699                                                            0.000%  happy=2.00  n=1
+
+    1807 — Travel: Shopping                               [ 1.61%, happy=4.37, n=3,667]
+      180701  Travel: grocery shopping                                  0.414%  happy=4.26  n=1,092
+      180703  Travel: shopping (non-grocery)                            0.337%  happy=4.48  n=759
+      180704  Travel: comparison shopping                               0.696%  happy=4.41  n=1,603
+      180705                                                            0.164%  happy=4.20  n=213
+
+    1808 — Travel: Prof Services                          [ 0.21%, happy=3.84, n=310]
+      180801  Travel: childcare services                                0.003%  happy=3.99  n=7
+      180802  Travel: financial services                                0.040%  happy=3.40  n=77
+      180804  Travel: medical/dental                                    0.108%  happy=3.66  n=114
+      180805  Travel: personal care services                            0.029%  happy=4.73  n=67
+      180806  Travel: real estate                                       0.021%  happy=4.38  n=24
+      180807  Travel: veterinary                                        0.011%  happy=3.67  n=15
+      180899                                                            0.002%  happy=4.71  n=6
+
+    1809 — Travel: HH Services                            [ 0.04%, happy=3.74, n=76]
+      180901  Travel: HH services                                       0.003%  happy=3.62  n=6
+      180902  Travel: home maint                                        0.003%  happy=1.30  n=3
+      180903  Travel: pet services                                      0.008%  happy=3.84  n=16
+      180905  Travel: vehicle services                                  0.023%  happy=4.05  n=51
+
+    1810 — Travel: Gov Services                           [ 0.03%, happy=4.71, n=19]
+      181001  Travel: gov services                                      0.029%  happy=4.68  n=16
+      181002  Travel: civic                                             0.001%  happy=6.00  n=3
+
+    1811 — Travel: Eating & Drinking                      [ 0.68%, happy=4.49, n=1,477]
+      181101  Travel: eating & drinking                                 0.682%  happy=4.49  n=1,477
+
+    1812 — Travel: Socializing & Leisure                  [ 0.98%, happy=4.50, n=1,937]
+      181201  Travel: socializing                                       0.524%  happy=4.42  n=1,123
+      181202  Travel: social events                                     0.075%  happy=4.87  n=215
+      181204  Travel: arts & entertainment                              0.107%  happy=4.82  n=193
+      181205                                                            0.082%  happy=5.05  n=51
+      181206                                                            0.194%  happy=4.17  n=354
+      181299                                                            0.000%  happy=5.00  n=1
+
+    1813 — Travel: Sports & Exercise                      [ 0.30%, happy=4.49, n=642]
+      181301  Travel: exercise                                          0.266%  happy=4.56  n=567
+      181302  Travel: attending sports                                  0.034%  happy=3.99  n=75
+
+    1814 — Travel: Religious                              [ 0.11%, happy=4.95, n=411]
+      181401  Travel: religious                                         0.109%  happy=4.95  n=411
+
+    1815 — Travel: Volunteering                           [ 0.11%, happy=4.61, n=270]
+      181501  Travel: volunteering                                      0.112%  happy=4.61  n=261
+      181599                                                            0.002%  happy=4.75  n=9
+
+    1816 — Travel: Telephone                              [ 0.02%, happy=3.75, n=29]
+      181601  Travel: telephone                                         0.022%  happy=3.75  n=29
+
+    1818 — Security for Traveling                         [ 0.01%, happy=4.59, n=15]
+      181801  Security for traveling                                    0.015%  happy=4.59  n=15
+
+    1899 —                                                [ 0.20%, happy=4.32, n=263]
+      189999  Travel NEC                                                0.203%  happy=4.32  n=263
+
+====================================================================================================
+  50 — Data Codes / Unable to Classify                     [  1.2% of time, 671 obs]
+====================================================================================================
+
+    5001 —                                                [ 1.17%, happy=4.13, n=671]
+      500101  Unable to code                                            1.015%  happy=4.14  n=526
+      500103  Interviewer coding error                                  0.110%  happy=3.84  n=104
+      500104                                                            0.036%  happy=4.56  n=31
+      500107  NEC                                                       0.009%  happy=4.02  n=10

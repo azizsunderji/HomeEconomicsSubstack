@@ -1,0 +1,142 @@
+[
+  {
+    "activity": "Childcare",
+    "parent_time": 0.09895355260687097,
+    "nonparent_time": 0.013005542685984882,
+    "parent_happy": 4.895649253873391,
+    "nonparent_happy": 4.722753002179431,
+    "delta_contrib": 0.4230199202227414,
+    "comp_effect": 0.4133412662631505,
+    "level_effect": 0.009678653959590857
+  },
+  {
+    "activity": "Eating & Drinking",
+    "parent_time": 0.07558044824719676,
+    "nonparent_time": 0.07975053918671887,
+    "parent_happy": 4.843177546821952,
+    "nonparent_happy": 4.509826630676455,
+    "delta_contrib": 0.006388424494490896,
+    "comp_effect": -0.019501438988949297,
+    "level_effect": 0.0258898634834402
+  },
+  {
+    "activity": "Education",
+    "parent_time": 0.007593793949236547,
+    "nonparent_time": 0.01094149352932337,
+    "parent_happy": 4.054263070644023,
+    "nonparent_happy": 3.4080403665598102,
+    "delta_contrib": -0.00650181324391725,
+    "comp_effect": -0.012490775041603864,
+    "level_effect": 0.005988961797686618
+  },
+  {
+    "activity": "Housework",
+    "parent_time": 0.13772221691707648,
+    "nonparent_time": 0.11441279581742031,
+    "parent_happy": 4.192587224008134,
+    "nonparent_happy": 4.027482157844684,
+    "delta_contrib": 0.11661691332482454,
+    "comp_effect": 0.09580252934499886,
+    "level_effect": 0.020814383979825744
+  },
+  {
+    "activity": "Phone Calls",
+    "parent_time": 0.00537103205626842,
+    "nonparent_time": 0.006410773175522285,
+    "parent_happy": 3.5855466412071286,
+    "nonparent_happy": 4.296958741359266,
+    "delta_contrib": -0.00828874188626293,
+    "comp_effect": -0.004097882484497098,
+    "level_effect": -0.00419085940176583
+  },
+  {
+    "activity": "Prof. Services",
+    "parent_time": 0.004729652446654863,
+    "nonparent_time": 0.005098739908081839,
+    "parent_happy": 3.480514724852333,
+    "nonparent_happy": 3.6423991259828505,
+    "delta_contrib": -0.0021100208007950524,
+    "comp_effect": -0.0013144890955838996,
+    "level_effect": -0.0007955317052111533
+  },
+  {
+    "activity": "Religious",
+    "parent_time": 0.010722904086962984,
+    "nonparent_time": 0.007620368382560875,
+    "parent_happy": 5.238596505869179,
+    "nonparent_happy": 4.877518145780675,
+    "delta_contrib": 0.019004482819260628,
+    "comp_effect": 0.015692803448284484,
+    "level_effect": 0.003311679370976138
+  },
+  {
+    "activity": "Shopping",
+    "parent_time": 0.028777313494261575,
+    "nonparent_time": 0.02239634925728736,
+    "parent_happy": 4.4131175989148455,
+    "nonparent_happy": 4.154184637987399,
+    "delta_contrib": 0.033959098599391765,
+    "comp_effect": 0.0273338245905112,
+    "level_effect": 0.006625274008880576
+  },
+  {
+    "activity": "Socializing",
+    "parent_time": 0.04583180799232648,
+    "nonparent_time": 0.04691613968254331,
+    "parent_happy": 4.998499265235716,
+    "nonparent_happy": 4.9651218674352995,
+    "delta_contrib": -0.003854092499376488,
+    "comp_effect": -0.005401935071734639,
+    "level_effect": 0.001547842572358166
+  },
+  {
+    "activity": "Sports & Exercise",
+    "parent_time": 0.018087778622155208,
+    "nonparent_time": 0.02317824562352829,
+    "parent_happy": 5.085828620489623,
+    "nonparent_happy": 4.801273649280554,
+    "delta_contrib": -0.01929375775116139,
+    "comp_effect": -0.025164983921732997,
+    "level_effect": 0.0058712261705716
+  },
+  {
+    "activity": "TV & Leisure",
+    "parent_time": 0.18787437870061163,
+    "nonparent_time": 0.278156928835539,
+    "parent_happy": 4.3854017157060605,
+    "nonparent_happy": 4.175464581362413,
+    "delta_contrib": -0.33752978172246606,
+    "comp_effect": -0.3864484203317472,
+    "level_effect": 0.048918638609281244
+  },
+  {
+    "activity": "Travel",
+    "parent_time": 0.08771801926635227,
+    "nonparent_time": 0.08131361108203411,
+    "parent_happy": 4.352710841712138,
+    "nonparent_happy": 4.288382759957574,
+    "delta_contrib": 0.03310728556007558,
+    "comp_effect": 0.02767054529199639,
+    "level_effect": 0.0054367402680791715
+  },
+  {
+    "activity": "Volunteering",
+    "parent_time": 0.008835500822907067,
+    "nonparent_time": 0.005558804104948669,
+    "parent_happy": 4.818441229789208,
+    "nonparent_happy": 4.8167910862220396,
+    "delta_contrib": 0.015797743388160656,
+    "comp_effect": 0.01578586705332037,
+    "level_effect": 1.1876334840281688e-05
+  },
+  {
+    "activity": "Work",
+    "parent_time": 0.2822016007911187,
+    "nonparent_time": 0.3052396687285069,
+    "parent_happy": 3.9186605133344057,
+    "nonparent_happy": 3.7870533039243814,
+    "delta_contrib": -0.05010662612715944,
+    "comp_effect": -0.0887623792140393,
+    "level_effect": 0.03865575308687993
+  }
+]

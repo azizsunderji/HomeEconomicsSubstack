@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face {
+  font-family: 'ABC Oracle Edu';
+  src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'ABC Oracle Edu';
+  src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf') format('opentype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'ABC Oracle Edu';
+  src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf') format('opentype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'ABC Oracle Edu';
+  src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+
+body {
+  background: #F6F7F3;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'ABC Oracle Edu', sans-serif;
+}
+svg text {
+  font-family: 'ABC Oracle Edu', sans-serif;
+}
+</style>
+</head>
+<body>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+
+const width = 900;
+const height = 750;
+const margin = { top: 80, right: 60, bottom: 60, left: 80 };
+
+const sota = [
+  { name: "GPT-2", date: "2019-02-14", p50: 0.039762, ci_low: 0.002019, ci_high: 0.130397, family: "openai" },
+  { name: "davinci-002", date: "2020-05-28", p50: 0.148793, ci_low: 0.07102, ci_high: 0.246039, family: "openai" },
+  { name: "GPT-3.5 Turbo", date: "2022-03-15", p50: 0.604245, ci_low: 0.227348, ci_high: 0.989884, family: "openai" },
+  { name: "GPT-4", date: "2023-03-14", p50: 3.524514, ci_low: 1.539554, ci_high: 6.796939, family: "openai" },
+  { name: "GPT-4 (Nov '23)", date: "2023-11-06", p50: 3.609578, ci_low: 1.591756, ci_high: 7.169444, family: "openai" },
+  { name: "GPT-4o", date: "2024-05-13", p50: 6.404471, ci_low: 3.507029, ci_high: 12.005238, family: "openai" },
+  { name: "Claude 3.5\nSonnet", date: "2024-06-20", p50: 10.771603, ci_low: 4.726563, ci_high: 20.892402, family: "anthropic" },
+  { name: "o1-preview", date: "2024-09-12", p50: 19.395096, ci_low: 11.144477, ci_high: 32.760986, family: "openai" },
+  { name: "Claude 3.5\nSonnet v2", date: "2024-10-22", p50: 19.776241, ci_low: 9.669489, ci_high: 40.167901, family: "anthropic" },
+  { name: "o1", date: "2024-12-05", p50: 37.937543, ci_low: 20.748909, ci_high: 65.751345, family: "openai" },
+  { name: "Claude 3.7\nSonnet", date: "2025-02-24", p50: 59.763762, ci_low: 32.488674, ci_high: 103.15522, family: "anthropic" },
+  { name: "o3", date: "2025-04-16", p50: 120.730463, ci_low: 73.152427, ci_high: 201.358464, family: "openai" },
+  { name: "GPT-5", date: "2025-08-07", p50: 213.954459, ci_low: 117.50858, ci_high: 479.89444, family: "openai" },
+  { name: "Gemini 3\nPro", date: "2025-11-18", p50: 236.654674, ci_low: 138.748224, ci_high: 442.590073, family: "google" },
+  { name: "Claude\nOpus 4.5", date: "2025-11-24", p50: 320.422486, ci_low: 172.952147, ci_high: 734.096977, family: "anthropic" },
+  { name: "GPT-5.2", date: "2025-12-11", p50: 394.383957, ci_low: 197.995955, ci_high: 1042.54945, family: "openai" },
+];
+
+const nonSota = [
+  { name: "Claude 3 Opus", date: "2024-03-04", p50: 3.575399, family: "anthropic" },
+  { name: "GPT-4 Turbo", date: "2024-04-09", p50: 3.225159, family: "openai" },
+  { name: "Claude 4 Opus", date: "2025-05-22", p50: 101.182643, family: "anthropic" },
+  { name: "Claude 4.1 Opus", date: "2025-08-05", p50: 100.84381, family: "anthropic" },
+  { name: "GPT-5.1 Codex Max", date: "2025-11-19", p50: 236.548491, family: "openai" },
+];
+
+const parseDate = d3.timeParse("%Y-%m-%d");
+sota.forEach(d => d.dateObj = parseDate(d.date));
+nonSota.forEach(d => d.dateObj = parseDate(d.date));
+
+const svg = d3.select("body").append("svg")
+  .attr("width", width)
+  .attr("height", height);
+
+const bg = svg.append("rect")
+  .attr("width", width)
+  .attr("height", height)
+  .attr("fill", "#F6F7F3");
+
+const x = d3.scaleTime()
+  .domain([new Date(2018, 9, 1), new Date(2026, 3, 1)])
+  .range([margin.left, width - margin.right]);
+
+const y = d3.scaleLog()
+  .domain([0.01, 1500])
+  .range([height - margin.bottom, margin.top]);
+
+// Gridlines
+const yTicks = [0.01, 0.1, 1, 10, 60, 600];
+svg.selectAll(".gridline")
+  .data(yTicks)
+  .join("line")
+  .attr("class", "gridline")
+  .attr("x1", margin.left)
+  .attr("x2", width - margin.right)
+  .attr("y1", d => y(d))
+  .attr("y2", d => y(d))
+  .attr("stroke", "#ccc")
+  .attr("stroke-width", 0.5);
+
+// Y-axis labels
+const yLabels = [
+  { val: 0.0167, label: "1 sec" },
+  { val: 0.1, label: "6 sec" },
+  { val: 1, label: "1 min" },
+  { val: 10, label: "10 min" },
+  { val: 60, label: "1 hr" },
+  { val: 600, label: "10 hrs" },
+];
+
+svg.selectAll(".ylabel")
+  .data(yLabels)
+  .join("text")
+  .attr("class", "ylabel")
+  .attr("x", margin.left - 10)
+  .attr("y", d => y(d.val))
+  .attr("text-anchor", "end")
+  .attr("dominant-baseline", "middle")
+  .attr("font-size", 12)
+  .attr("fill", "#3D3733")
+  .text(d => d.label);
+
+// X-axis
+const xAxis = d3.axisBottom(x)
+  .ticks(d3.timeYear.every(1))
+  .tickFormat(d3.timeFormat("%Y"))
+  .tickSize(0);
+
+svg.append("g")
+  .attr("transform", `translate(0,${height - margin.bottom})`)
+  .call(xAxis)
+  .call(g => g.select(".domain").remove())
+  .selectAll("text")
+  .attr("font-size", 12)
+  .attr("fill", "#3D3733")
+  .attr("font-family", "'ABC Oracle Edu', sans-serif");
+
+// Confidence interval lines for SOTA
+svg.selectAll(".ci-line")
+  .data(sota)
+  .join("line")
+  .attr("class", "ci-line")
+  .attr("x1", d => x(d.dateObj))
+  .attr("x2", d => x(d.dateObj))
+  .attr("y1", d => y(d.ci_low))
+  .attr("y2", d => y(d.ci_high))
+  .attr("stroke", "#0BB4FF")
+  .attr("stroke-width", 1.5)
+  .attr("opacity", 0.3);
+
+// Trend line (log-linear regression: log(p50) ~ time)
+// Fit OLS on log(p50) vs. time in days
+const t0 = sota[0].dateObj.getTime();
+const xVals = sota.map(d => (d.dateObj.getTime() - t0) / (1000 * 60 * 60 * 24)); // days since first
+const yVals = sota.map(d => Math.log(d.p50));
+
+const n = xVals.length;
+const sumX = d3.sum(xVals);
+const sumY = d3.sum(yVals);
+const sumXY = d3.sum(xVals.map((xi, i) => xi * yVals[i]));
+const sumX2 = d3.sum(xVals.map(xi => xi * xi));
+
+const slope = (n * sumXY - sumX * sumY) / (n * sumX2 - sumX * sumX);
+const intercept = (sumY - slope * sumX) / n;
+
+// Draw trend line across full x domain
+const trendStart = x.domain()[0];
+const trendEnd = x.domain()[1];
+const daysStart = (trendStart.getTime() - t0) / (1000 * 60 * 60 * 24);
+const daysEnd = (trendEnd.getTime() - t0) / (1000 * 60 * 60 * 24);
+
+svg.append("line")
+  .attr("x1", x(trendStart))
+  .attr("y1", y(Math.exp(intercept + slope * daysStart)))
+  .attr("x2", x(trendEnd))
+  .attr("y2", y(Math.exp(intercept + slope * daysEnd)))
+  .attr("stroke", "#0BB4FF")
+  .attr("stroke-width", 2)
+  .attr("opacity", 0.35)
+  .attr("stroke-dasharray", "6,4");
+
+// Non-SOTA dots (gray)
+svg.selectAll(".dot-nonsota")
+  .data(nonSota)
+  .join("circle")
+  .attr("class", "dot-nonsota")
+  .attr("cx", d => x(d.dateObj))
+  .attr("cy", d => y(d.p50))
+  .attr("r", 4)
+  .attr("fill", "#bbb")
+  .attr("opacity", 0.5);
+
+// SOTA dots
+svg.selectAll(".dot-sota")
+  .data(sota)
+  .join("circle")
+  .attr("class", "dot-sota")
+  .attr("cx", d => x(d.dateObj))
+  .attr("cy", d => y(d.p50))
+  .attr("r", 5)
+  .attr("fill", d => {
+    if (d.family === "anthropic") return "#0BB4FF";
+    if (d.family === "openai") return "#3D3733";
+    return "#67A275";
+  })
+  .attr("stroke", "#F6F7F3")
+  .attr("stroke-width", 1.5);
+
+// Labels with leader lines for select models
+// Each label: name, lx/ly = pixel offset from dot to label, anchor
+const labeled = [
+  { name: "GPT-2", lx: 12, ly: 4, anchor: "start" },
+  { name: "GPT-4", lx: 12, ly: -10, anchor: "start" },
+  { name: "GPT-4o", lx: 40, ly: -35, anchor: "start" },
+  { name: "Claude 3.5\nSonnet", lx: 40, ly: 30, anchor: "start" },
+  { name: "o1", lx: 30, ly: -25, anchor: "start" },
+  { name: "Claude 3.7\nSonnet", lx: -80, ly: 45, anchor: "end" },
+  { name: "o3", lx: -80, ly: -10, anchor: "end" },
+  { name: "GPT-5", lx: -70, ly: -35, anchor: "end" },
+  { name: "Gemini 3\nPro", lx: -100, ly: 50, anchor: "end" },
+  { name: "Claude\nOpus 4.5", lx: -110, ly: -35, anchor: "end" },
+  { name: "GPT-5.2", lx: 20, ly: 30, anchor: "start" },
+];
+
+labeled.forEach(lbl => {
+  const d = sota.find(s => s.name === lbl.name);
+  if (!d) return;
+  const dotX = x(d.dateObj);
+  const dotY = y(d.p50);
+  const labelX = dotX + lbl.lx;
+  const labelY = dotY + lbl.ly;
+  const lines = d.name.split("\n");
+
+  // Leader line from dot to label
+  const needsLeader = Math.abs(lbl.lx) > 15 || Math.abs(lbl.ly) > 15;
+  if (needsLeader) {
+    svg.append("line")
+      .attr("x1", dotX)
+      .attr("y1", dotY)
+      .attr("x2", labelX + (lbl.anchor === "end" ? 4 : -4))
+      .attr("y2", labelY + (lines.length > 1 ? 6 : 0))
+      .attr("stroke", "#bbb")
+      .attr("stroke-width", 0.75);
+  }
+
+  const g = svg.append("g");
+  lines.forEach((line, i) => {
+    g.append("text")
+      .attr("x", labelX)
+      .attr("y", labelY + i * 13)
+      .attr("text-anchor", lbl.anchor)
+      .attr("font-size", 11)
+      .attr("fill", "#3D3733")
+      .attr("font-weight", 400)
+      .text(line);
+  });
+});
+
+// Title
+svg.append("text")
+  .attr("x", margin.left)
+  .attr("y", 30)
+  .attr("font-size", 20)
+  .attr("font-weight", 700)
+  .attr("fill", "#3D3733")
+  .text("How long can AI work unsupervised?");
+
+svg.append("text")
+  .attr("x", margin.left)
+  .attr("y", 52)
+  .attr("font-size", 14)
+  .attr("font-weight", 400)
+  .attr("fill", "#888")
+  .text("50% task-completion time horizon (minutes of human expert work)");
+
+// Source
+svg.append("text")
+  .attr("x", margin.left)
+  .attr("y", height - 10)
+  .attr("font-size", 10)
+  .attr("font-style", "italic")
+  .attr("fill", "#aaa")
+  .text("Source: METR, Task-Completion Time Horizons of Frontier AI Models (v1.1)");
+
+// Legend
+const legendData = [
+  { label: "Anthropic", color: "#0BB4FF" },
+  { label: "OpenAI", color: "#3D3733" },
+  { label: "Google", color: "#67A275" },
+  { label: "Non-frontier", color: "#bbb" },
+];
+
+const legend = svg.append("g")
+  .attr("transform", `translate(${margin.left}, ${height - 30})`);
+
+let legendX = 0;
+legendData.forEach((d, i) => {
+  legend.append("circle")
+    .attr("cx", legendX)
+    .attr("cy", 0)
+    .attr("r", 4)
+    .attr("fill", d.color)
+    .attr("opacity", d.label === "Non-frontier" ? 0.5 : 1);
+  legend.append("text")
+    .attr("x", legendX + 10)
+    .attr("y", 0)
+    .attr("dominant-baseline", "middle")
+    .attr("font-size", 10)
+    .attr("fill", "#3D3733")
+    .text(d.label);
+  // Advance x for next item (estimate text width)
+  legendX += d.label.length * 6.5 + 24;
+});
+
+</script>
+</body>
+</html>

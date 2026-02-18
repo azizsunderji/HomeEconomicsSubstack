@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bezos vs Scott: A Tale of Two Fortunes</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'ABC Oracle Edu', system-ui, sans-serif;
+    background: #F6F7F3;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.chart-container {
+    width: 900px;
+    background: #F6F7F3;
+}
+
+.chart-title {
+    font-size: 23px;
+    font-weight: 500;
+    color: #3D3733;
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+.chart-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    color: #3D3733;
+    opacity: 0.7;
+    margin-bottom: 24px;
+    line-height: 1.3;
+}
+
+.chart-source {
+    font-size: 11px;
+    font-weight: 300;
+    color: #999;
+    font-style: italic;
+    margin-top: 12px;
+}
+</style>
+</head>
+<body>
+<div class="chart-container">
+    <div class="chart-title">One Fortune, Two Approaches</div>
+    <div class="chart-subtitle">Jeff Bezos has given away roughly 2% of his wealth. His ex-wife, MacKenzie Scott,<br>has given away 36% of hers — wealth that originated from the same source.</div>
+    <svg id="chart"></svg>
+    <div class="chart-source">Source: Forbes World's Billionaires List 2024; Chronicle of Philanthropy; Forbes top 25 philanthropists 2024</div>
+</div>
+<script>
+
+const data = [
+    {
+        name: "Jeff Bezos",
+        netWorth: 194,
+        donated: 4.1,
+        pctDonated: 2.1,
+        philanthropyScore: 2,
+        givingPledge: false,
+        label: "Not a Giving Pledge signatory"
+    },
+    {
+        name: "MacKenzie Scott",
+        netWorth: 35.6,
+        donated: 19.25,
+        pctDonated: 36,
+        philanthropyScore: 5,
+        givingPledge: true,
+        label: "Signed the Giving Pledge in 2019"
+    }
+];
+
+const width = 900;
+const height = 500;
+const margin = {top: 10, right: 60, bottom: 60, left: 60};
+
+const svg = d3.select("#chart")
+    .attr("width", width)
+    .attr("height", height);
+
+const g = svg.append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+const chartW = width - margin.left - margin.right;
+const chartH = height - margin.top - margin.bottom;
+
+// Two columns, centered
+const colWidth = 280;
+const gap = 100;
+const startX = (chartW - 2 * colWidth - gap) / 2;
+
+const colors = {
+    bezos: "#F4743B",
+    scott: "#67A275",
+    bg: "#EDEFE7"
+};
+
+data.forEach((d, i) => {
+    const cx = startX + i * (colWidth + gap) + colWidth / 2;
+    const col = g.append("g").attr("transform", `translate(${cx}, 0)`);
+
+    const color = i === 0 ? colors.bezos : colors.scott;
+
+    // Name
+    col.append("text")
+        .attr("x", 0)
+        .attr("y", 30)
+        .attr("text-anchor", "middle")
+        .attr("font-size", "20px")
+        .attr("font-weight", 500)
+        .attr("fill", color)
+        .text(d.name);
+
+    // Net Worth
+    col.append("text")
+        .attr("x", 0)
+        .attr("y", 58)
+        .attr("text-anchor", "middle")
+        .attr("font-size", "14px")
+        .attr("font-weight", 300)
+        .attr("fill", "#3D3733")
+        .attr("opacity", 0.6)
+        .text(`Net worth: $${d.netWorth}B`);
+
+    // Waffle-style: total wealth as grid, donated portion highlighted
+    // Use a simpler bar representation
+    const barY = 85;
+    const barHeight = 160;
+    const barWidth = 100;
+
+    // Total bar (background)
+    col.append("rect")
+        .attr("x", -barWidth / 2)
+        .attr("y", barY)
+        .attr("width", barWidth)
+        .attr("height", barHeight)
+        .attr("fill", colors.bg)
+        .attr("rx", 4);
+
+    // Donated portion (filled from bottom)
+    const donatedHeight = (d.pctDonated / 100) * barHeight;
+    col.append("rect")
+        .attr("x", -barWidth / 2)
+        .attr("y", barY + barHeight - donatedHeight)
+        .attr("width", barWidth)
+        .attr("height", donatedHeight)
+        .attr("fill", color)
+        .attr("opacity", 0.85)
+        .attr("rx", donatedHeight === barHeight ? 4 : 0);
+
+    // Round top corners only if donated fills from bottom
+    // Add a small rect at top of donated if not full
+    if (donatedHeight < barHeight) {
+        col.append("rect")
+            .attr("x", -barWidth / 2)
+            .attr("y", barY + barHeight - donatedHeight)
+            .attr("width", barWidth)
+            .attr("height", Math.min(4, donatedHeight))
+            .attr("fill", color)
+            .attr("opacity", 0.85);
+    }
+
+    // Percentage label on the bar
+    col.append("text")
+        .attr("x", 0)
+        .attr("y", barY + barHeight - donatedHeight / 2)
+        .attr("text-anchor", "middle")
+        .attr("dy", "0.35em")
+        .attr("font-size", donatedHeight > 30 ? "28px" : "20px")
+        .attr("font-weight", 700)
+        .attr("fill", donatedHeight > 30 ? "white" : color)
+        .text(`${d.pctDonated}%`);
+
+    // "donated" label below percentage
+    if (donatedHeight > 50) {
+        col.append("text")
+            .attr("x", 0)
+            .attr("y", barY + barHeight - donatedHeight / 2 + 22)
+            .attr("text-anchor", "middle")
+            .attr("font-size", "12px")
+            .attr("font-weight", 300)
+            .attr("fill", "white")
+            .attr("opacity", 0.9)
+            .text("donated");
+    }
+
+    // Dollar amounts below bar
+    const infoY = barY + barHeight + 30;
+
+    col.append("text")
+        .attr("x", 0)
+        .attr("y", infoY)
+        .attr("text-anchor", "middle")
+        .attr("font-size", "16px")
+        .attr("font-weight", 500)
+        .attr("fill", "#3D3733")
+        .text(`$${d.donated}B donated`);
+
+    col.append("text")
+        .attr("x", 0)
+        .attr("y", infoY + 24)
+        .attr("text-anchor", "middle")
+        .attr("font-size", "13px")
+        .attr("font-weight", 300)
+        .attr("fill", "#999")
+        .text(`Forbes philanthropy score: ${d.philanthropyScore} of 5`);
+
+    // Giving pledge status
+    col.append("text")
+        .attr("x", 0)
+        .attr("y", infoY + 46)
+        .attr("text-anchor", "middle")
+        .attr("font-size", "12px")
+        .attr("font-weight", 400)
+        .attr("fill", d.givingPledge ? colors.scott : colors.bezos)
+        .text(d.label);
+});
+
+// Add the "2%" label for Bezos outside the bar since it's too small
+// Already handled by the conditional above
+
+// Connector annotation between the two
+const midX = startX + colWidth / 2 + (colWidth + gap) / 2;
+g.append("text")
+    .attr("x", midX)
+    .attr("y", 170)
+    .attr("text-anchor", "middle")
+    .attr("font-size", "13px")
+    .attr("font-weight", 300)
+    .attr("fill", "#999")
+    .text("Same source of wealth:");
+
+g.append("text")
+    .attr("x", midX)
+    .attr("y", 188)
+    .attr("text-anchor", "middle")
+    .attr("font-size", "13px")
+    .attr("font-weight", 500)
+    .attr("fill", "#3D3733")
+    .text("Amazon");
+
+</script>
+</body>
+</html>

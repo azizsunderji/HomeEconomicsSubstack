@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="640.038036pt" height="536.102pt" viewBox="0 0 640.038036 536.102" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-01-27T14:41:48.447380</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 536.102 
+L 640.038036 536.102 
+L 640.038036 0 
+L 0 0 
+z
+" style="fill: #f6f7f3"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 36.740625 482.33 
+L 552.033015 482.33 
+L 552.033015 32.21 
+L 36.740625 32.21 
+z
+" style="fill: #f6f7f3"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 36.740625 482.33 
+L 36.740625 32.21 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="mcac12a4840" d="M 0 0 
+L 0 3.5 
+" style="stroke: #3d3733; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mcac12a4840" x="36.740625" y="482.33" style="fill: #3d3733; stroke: #3d3733; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="36.740625" y="496.33" transform="rotate(-0 36.740625 496.33)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 101.152174 482.33 
+L 101.152174 32.21 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mcac12a4840" x="101.152174" y="482.33" style="fill: #3d3733; stroke: #3d3733; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="101.152174" y="496.33" transform="rotate(-0 101.152174 496.33)">1</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 165.563723 482.33 
+L 165.563723 32.21 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#mcac12a4840" x="165.563723" y="482.33" style="fill: #3d3733; stroke: #3d3733; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="165.563723" y="496.33" transform="rotate(-0 165.563723 496.33)">2</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 229.975271 482.33 
+L 229.975271 32.21 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#mcac12a4840" x="229.975271" y="482.33" style="fill: #3d3733; stroke: #3d3733; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="229.975271" y="496.33" transform="rotate(-0 229.975271 496.33)">3</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 294.38682 482.33 
+L 294.38682 32.21 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#mcac12a4840" x="294.38682" y="482.33" style="fill: #3d3733; stroke: #3d3733; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="294.38682" y="496.33" transform="rotate(-0 294.38682 496.33)">4</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 358.798369 482.33 
+L 358.798369 32.21 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#mcac12a4840" x="358.798369" y="482.33" style="fill: #3d3733; stroke: #3d3733; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="358.798369" y="496.33" transform="rotate(-0 358.798369 496.33)">5</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_13">
+      <path d="M 423.209918 482.33 
+L 423.209918 32.21 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#mcac12a4840" x="423.209918" y="482.33" style="fill: #3d3733; stroke: #3d3733; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="423.209918" y="496.33" transform="rotate(-0 423.209918 496.33)">6</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_15">
+      <path d="M 487.621466 482.33 
+L 487.621466 32.21 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#mcac12a4840" x="487.621466" y="482.33" style="fill: #3d3733; stroke: #3d3733; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="487.621466" y="496.33" transform="rotate(-0 487.621466 496.33)">7</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_17">
+      <path d="M 552.033015 482.33 
+L 552.033015 32.21 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#mcac12a4840" x="552.033015" y="482.33" style="fill: #3d3733; stroke: #3d3733; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="552.033015" y="496.33" transform="rotate(-0 552.033015 496.33)">8</text>
+     </g>
+    </g>
+    <g id="text_10">
+     <text style="fill: #3d3733; font: 11px 'ABC Oracle Edu'" transform="translate(203.170179 510.42)">Information Sector Employment (%)</text>
+     <text style="fill: #3d3733; font: 11px 'ABC Oracle Edu'" transform="translate(201.602679 521.915)">(Software, Internet, Media, Telecom)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_19">
+      <path d="M 36.740625 453.101429 
+L 552.033015 453.101429 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_20"/>
+     <g id="text_11">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: end" x="33.240625" y="456.601429" transform="rotate(-0 33.240625 456.601429)">−3</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_21">
+      <path d="M 36.740625 394.644286 
+L 552.033015 394.644286 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_22"/>
+     <g id="text_12">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: end" x="33.240625" y="398.144286" transform="rotate(-0 33.240625 398.144286)">−2</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_23">
+      <path d="M 36.740625 336.187143 
+L 552.033015 336.187143 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_24"/>
+     <g id="text_13">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: end" x="33.240625" y="339.687143" transform="rotate(-0 33.240625 339.687143)">−1</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_25">
+      <path d="M 36.740625 277.73 
+L 552.033015 277.73 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_26"/>
+     <g id="text_14">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: end" x="33.240625" y="281.23" transform="rotate(-0 33.240625 281.23)">0</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_27">
+      <path d="M 36.740625 219.272857 
+L 552.033015 219.272857 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_28"/>
+     <g id="text_15">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: end" x="33.240625" y="222.772857" transform="rotate(-0 33.240625 222.772857)">1</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_29">
+      <path d="M 36.740625 160.815714 
+L 552.033015 160.815714 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_30"/>
+     <g id="text_16">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: end" x="33.240625" y="164.315714" transform="rotate(-0 33.240625 164.315714)">2</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_31">
+      <path d="M 36.740625 102.358571 
+L 552.033015 102.358571 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_32"/>
+     <g id="text_17">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: end" x="33.240625" y="105.858571" transform="rotate(-0 33.240625 105.858571)">3</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_33">
+      <path d="M 36.740625 43.901429 
+L 552.033015 43.901429 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.3; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_34"/>
+     <g id="text_18">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: end" x="33.240625" y="47.401429" transform="rotate(-0 33.240625 47.401429)">4</text>
+     </g>
+    </g>
+    <g id="text_19">
+     <text style="fill: #3d3733; font: 11px 'ABC Oracle Edu'; text-anchor: middle" x="15.34" y="257.27" transform="rotate(-90 15.34 257.27)">Home Price Change, June–Dec 2025 (%)</text>
+    </g>
+   </g>
+   <g id="line2d_35">
+    <path d="M 36.740625 419.905996 
+L 41.562404 416.856773 
+L 46.384183 413.80755 
+L 51.205962 410.758327 
+L 56.027741 407.709105 
+L 60.84952 404.659882 
+L 65.671299 401.610659 
+L 70.493078 398.561436 
+L 75.314857 395.512214 
+L 80.136637 392.462991 
+L 84.958416 389.413768 
+L 89.780195 386.364545 
+L 94.601974 383.315323 
+L 99.423753 380.2661 
+L 104.245532 377.216877 
+L 109.067311 374.167654 
+L 113.88909 371.118431 
+L 118.710869 368.069209 
+L 123.532648 365.019986 
+L 128.354427 361.970763 
+L 133.176206 358.92154 
+L 137.997985 355.872318 
+L 142.819764 352.823095 
+L 147.641543 349.773872 
+L 152.463322 346.724649 
+L 157.285102 343.675427 
+L 162.106881 340.626204 
+L 166.92866 337.576981 
+L 171.750439 334.527758 
+L 176.572218 331.478535 
+L 181.393997 328.429313 
+L 186.215776 325.38009 
+L 191.037555 322.330867 
+L 195.859334 319.281644 
+L 200.681113 316.232422 
+L 205.502892 313.183199 
+L 210.324671 310.133976 
+L 215.14645 307.084753 
+L 219.968229 304.035531 
+L 224.790008 300.986308 
+L 229.611787 297.937085 
+L 234.433567 294.887862 
+L 239.255346 291.838639 
+L 244.077125 288.789417 
+L 248.898904 285.740194 
+L 253.720683 282.690971 
+L 258.542462 279.641748 
+L 263.364241 276.592526 
+L 268.18602 273.543303 
+L 273.007799 270.49408 
+L 277.829578 267.444857 
+L 282.651357 264.395635 
+L 287.473136 261.346412 
+L 292.294915 258.297189 
+L 297.116694 255.247966 
+L 301.938473 252.198743 
+L 306.760252 249.149521 
+L 311.582032 246.100298 
+L 316.403811 243.051075 
+L 321.22559 240.001852 
+L 326.047369 236.95263 
+L 330.869148 233.903407 
+L 335.690927 230.854184 
+L 340.512706 227.804961 
+L 345.334485 224.755739 
+L 350.156264 221.706516 
+L 354.978043 218.657293 
+L 359.799822 215.60807 
+L 364.621601 212.558847 
+L 369.44338 209.509625 
+L 374.265159 206.460402 
+L 379.086938 203.411179 
+L 383.908717 200.361956 
+L 388.730497 197.312734 
+L 393.552276 194.263511 
+L 398.374055 191.214288 
+L 403.195834 188.165065 
+L 408.017613 185.115843 
+L 412.839392 182.06662 
+L 417.661171 179.017397 
+L 422.48295 175.968174 
+L 427.304729 172.918951 
+L 432.126508 169.869729 
+L 436.948287 166.820506 
+L 441.770066 163.771283 
+L 446.591845 160.72206 
+L 451.413624 157.672838 
+L 456.235403 154.623615 
+L 461.057182 151.574392 
+L 465.878962 148.525169 
+L 470.700741 145.475947 
+L 475.52252 142.426724 
+L 480.344299 139.377501 
+L 485.166078 136.328278 
+L 489.987857 133.279055 
+L 494.809636 130.229833 
+L 499.631415 127.18061 
+L 504.453194 124.131387 
+L 509.274973 121.082164 
+L 514.096752 118.032942 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #f4743b; stroke-opacity: 0.7; stroke-width: 2"/>
+   </g>
+   <g id="line2d_36">
+    <path d="M 36.740625 277.73 
+L 552.033015 277.73 
+" clip-path="url(#pa0a1416b8b)" style="fill: none; stroke: #3d3733; stroke-opacity: 0.4; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 36.740625 482.33 
+L 552.033015 482.33 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_20">
+    <text style="fill: #888888; font: italic 8px 'ABC Oracle Edu'; text-anchor: start" x="41.893549" y="527.342" transform="rotate(-0 41.893549 527.342)">Source: Zillow ZHVI (Dec 2025), ACS 2023 1-Year Estimates</text>
+   </g>
+   <g id="text_21">
+    <text style="fill: #3d3733; font: 700 14px 'ABC Oracle Edu'; text-anchor: middle" x="294.38682" y="17.21" transform="rotate(-0 294.38682 17.21)">Bay Area Counties: Information Industry vs Home Prices</text>
+   </g>
+   <g id="PathCollection_1">
+    <path d="M 281.03431 451.737688 
+C 288.914312 451.737688 296.472631 448.60693 302.044634 443.034927 
+C 307.616637 437.462924 310.747395 429.904605 310.747395 422.024603 
+C 310.747395 414.1446 307.616637 406.586281 302.044634 401.014278 
+C 296.472631 395.442275 288.914312 392.311517 281.03431 392.311517 
+C 273.154307 392.311517 265.595989 395.442275 260.023986 401.014278 
+C 254.451982 406.586281 251.321224 414.1446 251.321224 422.024603 
+C 251.321224 429.904605 254.451982 437.462924 260.023986 443.034927 
+C 265.595989 448.60693 273.154307 451.737688 281.03431 451.737688 
+z
+" clip-path="url(#pa0a1416b8b)" style="fill: #0bb4ff; stroke: #3d3733; stroke-width: 2.5"/>
+    <path d="M 167.668634 399.042744 
+C 174.526167 399.042744 181.103755 396.318217 185.952763 391.46921 
+C 190.80177 386.620202 193.526297 380.042614 193.526297 373.185082 
+C 193.526297 366.327549 190.80177 359.749961 185.952763 354.900953 
+C 181.103755 350.051946 174.526167 347.327419 167.668634 347.327419 
+C 160.811102 347.327419 154.233514 350.051946 149.384506 354.900953 
+C 144.535499 359.749961 141.810972 366.327549 141.810972 373.185082 
+C 141.810972 380.042614 144.535499 386.620202 149.384506 391.46921 
+C 154.233514 396.318217 160.811102 399.042744 167.668634 399.042744 
+z
+" clip-path="url(#pa0a1416b8b)" style="fill: #0bb4ff; stroke: #3d3733; stroke-width: 2.5"/>
+    <path d="M 308.287417 239.468836 
+C 312.527186 239.468836 316.593876 237.784357 319.591846 234.786388 
+C 322.589815 231.788418 324.274294 227.721728 324.274294 223.481959 
+C 324.274294 219.24219 322.589815 215.1755 319.591846 212.17753 
+C 316.593876 209.179561 312.527186 207.495083 308.287417 207.495083 
+C 304.047648 207.495083 299.980958 209.179561 296.982988 212.17753 
+C 293.985019 215.1755 292.300541 219.24219 292.300541 223.481959 
+C 292.300541 227.721728 293.985019 231.788418 296.982988 234.786388 
+C 299.980958 237.784357 304.047648 239.468836 308.287417 239.468836 
+z
+" clip-path="url(#pa0a1416b8b)" style="fill: #0bb4ff; stroke: #3d3733; stroke-width: 2.5"/>
+    <path d="M 107.333905 418.544157 
+C 111.084443 418.544157 114.681874 417.054052 117.333905 414.402021 
+C 119.985936 411.74999 121.476041 408.152559 121.476041 404.402021 
+C 121.476041 400.651483 119.985936 397.054052 117.333905 394.402021 
+C 114.681874 391.74999 111.084443 390.259885 107.333905 390.259885 
+C 103.583367 390.259885 99.985936 391.74999 97.333905 394.402021 
+C 94.681874 397.054052 93.19177 400.651483 93.19177 404.402021 
+C 93.19177 408.152559 94.681874 411.74999 97.333905 414.402021 
+C 99.985936 417.054052 103.583367 418.544157 107.333905 418.544157 
+z
+" clip-path="url(#pa0a1416b8b)" style="fill: #0bb4ff; stroke: #3d3733; stroke-width: 2.5"/>
+    <path d="M 442.91967 126.645283 
+C 448.908332 126.645283 454.652519 124.265962 458.887143 120.031339 
+C 463.121766 115.796716 465.501086 110.052528 465.501086 104.063867 
+C 465.501086 98.075205 463.121766 92.331018 458.887143 88.096395 
+C 454.652519 83.861771 448.908332 81.482451 442.91967 81.482451 
+C 436.931009 81.482451 431.186821 83.861771 426.952198 88.096395 
+C 422.717575 92.331018 420.338255 98.075205 420.338255 104.063867 
+C 420.338255 110.052528 422.717575 115.796716 426.952198 120.031339 
+C 431.186821 124.265962 436.931009 126.645283 442.91967 126.645283 
+z
+" clip-path="url(#pa0a1416b8b)" style="fill: #0bb4ff; stroke: #3d3733; stroke-width: 2.5"/>
+    <path d="M 331.87086 275.725957 
+C 337.632683 275.725957 343.159293 273.43676 347.233518 269.362536 
+C 351.307743 265.288311 353.596939 259.761701 353.596939 253.999877 
+C 353.596939 248.238054 351.307743 242.711444 347.233518 238.637219 
+C 343.159293 234.562994 337.632683 232.273798 331.87086 232.273798 
+C 326.109036 232.273798 320.582426 234.562994 316.508201 238.637219 
+C 312.433977 242.711444 310.14478 248.238054 310.14478 253.999877 
+C 310.14478 259.761701 312.433977 265.288311 316.508201 269.362536 
+C 320.582426 273.43676 326.109036 275.725957 331.87086 275.725957 
+z
+" clip-path="url(#pa0a1416b8b)" style="fill: #0bb4ff; stroke: #3d3733; stroke-width: 2.5"/>
+    <path d="M 449.685203 194.009509 
+C 458.071662 194.009509 466.115762 190.677533 472.045883 184.747412 
+C 477.976005 178.81729 481.30798 170.773191 481.30798 162.386732 
+C 481.30798 154.000274 477.976005 145.956174 472.045883 140.026052 
+C 466.115762 134.095931 458.071662 130.763956 449.685203 130.763956 
+C 441.298745 130.763956 433.254645 134.095931 427.324524 140.026052 
+C 421.394402 145.956174 418.062427 154.000274 418.062427 162.386732 
+C 418.062427 170.773191 421.394402 178.81729 427.324524 184.747412 
+C 433.254645 190.677533 441.298745 194.009509 449.685203 194.009509 
+z
+" clip-path="url(#pa0a1416b8b)" style="fill: #0bb4ff; stroke: #3d3733; stroke-width: 2.5"/>
+    <path d="M 170.372696 182.48043 
+C 174.639539 182.48043 178.732197 180.785196 181.749311 177.768082 
+C 184.766425 174.750968 186.461659 170.65831 186.461659 166.391467 
+C 186.461659 162.124624 184.766425 158.031965 181.749311 155.014852 
+C 178.732197 151.997738 174.639539 150.302504 170.372696 150.302504 
+C 166.105853 150.302504 162.013194 151.997738 158.996081 155.014852 
+C 155.978967 158.031965 154.283733 162.124624 154.283733 166.391467 
+C 154.283733 170.65831 155.978967 174.750968 158.996081 177.768082 
+C 162.013194 180.785196 166.105853 182.48043 170.372696 182.48043 
+z
+" clip-path="url(#pa0a1416b8b)" style="fill: #0bb4ff; stroke: #3d3733; stroke-width: 2.5"/>
+    <path d="M 143.360064 382.299925 
+C 148.285449 382.299925 153.009766 380.343049 156.492539 376.860276 
+C 159.975312 373.377503 161.932188 368.653186 161.932188 363.727801 
+C 161.932188 358.802416 159.975312 354.078099 156.492539 350.595326 
+C 153.009766 347.112553 148.285449 345.155677 143.360064 345.155677 
+C 138.434679 345.155677 133.710362 347.112553 130.227589 350.595326 
+C 126.744816 354.078099 124.787939 358.802416 124.787939 363.727801 
+C 124.787939 368.653186 126.744816 373.377503 130.227589 376.860276 
+C 133.710362 380.343049 138.434679 382.299925 143.360064 382.299925 
+z
+" clip-path="url(#pa0a1416b8b)" style="fill: #0bb4ff; stroke: #3d3733; stroke-width: 2.5"/>
+    <path d="M 163.954176 353.700281 
+C 168.985156 353.700281 173.810757 351.701452 177.368197 348.144012 
+C 180.925637 344.586571 182.924467 339.76097 182.924467 334.72999 
+C 182.924467 329.69901 180.925637 324.873408 177.368197 321.315968 
+C 173.810757 317.758528 168.985156 315.759699 163.954176 315.759699 
+C 158.923196 315.759699 154.097594 317.758528 150.540154 321.315968 
+C 146.982714 324.873408 144.983884 329.69901 144.983884 334.72999 
+C 144.983884 339.76097 146.982714 344.586571 150.540154 348.144012 
+C 154.097594 351.701452 158.923196 353.700281 163.954176 353.700281 
+z
+" clip-path="url(#pa0a1416b8b)" style="fill: #0bb4ff; stroke: #3d3733; stroke-width: 2.5"/>
+   </g>
+   <g id="legend_1">
+    <g id="line2d_37">
+     <path d="M 448.793953 467.88 
+L 458.793953 467.88 
+L 468.793953 467.88 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #f4743b; stroke-opacity: 0.7; stroke-width: 2"/>
+    </g>
+    <g id="text_22">
+     <text style="font: 10px 'ABC Oracle Edu'; text-anchor: start" x="476.793953" y="471.38" transform="rotate(-0 476.793953 471.38)">Trend (r=0.69)</text>
+    </g>
+   </g>
+   <g id="legend_2">
+    <g id="text_23">
+     <text style="font: 9px 'ABC Oracle Edu'; text-anchor: start" x="45.781406" y="46.61" transform="rotate(-0 45.781406 46.61)">Population</text>
+    </g>
+    <g id="line2d_38">
+     <path d="M 44.840625 62.315 
+L 53.840625 62.315 
+L 62.840625 62.315 
+" style="fill: none; stroke: #ffffff; stroke-width: 1.5; stroke-linecap: square"/>
+     <defs>
+      <path id="m026886e76b" d="M 0 6.369416 
+C 1.689189 6.369416 3.30942 5.698294 4.503857 4.503857 
+C 5.698294 3.30942 6.369416 1.689189 6.369416 0 
+C 6.369416 -1.689189 5.698294 -3.30942 4.503857 -4.503857 
+C 3.30942 -5.698294 1.689189 -6.369416 0 -6.369416 
+C -1.689189 -6.369416 -3.30942 -5.698294 -4.503857 -4.503857 
+C -5.698294 -3.30942 -6.369416 -1.689189 -6.369416 0 
+C -6.369416 1.689189 -5.698294 3.30942 -4.503857 4.503857 
+C -3.30942 5.698294 -1.689189 6.369416 0 6.369416 
+z
+" style="stroke: #3d3733; stroke-width: 2"/>
+     </defs>
+     <g>
+      <use xlink:href="#m026886e76b" x="53.840625" y="62.315" style="fill: #0bb4ff; stroke: #3d3733; stroke-width: 2"/>
+     </g>
+    </g>
+    <g id="text_24">
+     <text style="font: 9px 'ABC Oracle Edu'; text-anchor: start" x="70.040625" y="65.465" transform="rotate(-0 70.040625 65.465)">250k</text>
+    </g>
+    <g id="line2d_39">
+     <path d="M 44.840625 81.17 
+L 53.840625 81.17 
+L 62.840625 81.17 
+" style="fill: none; stroke: #ffffff; stroke-width: 1.5; stroke-linecap: square"/>
+     <defs>
+      <path id="m1bfb591102" d="M 0 9.777702 
+C 2.593077 9.777702 5.080297 8.747462 6.91388 6.91388 
+C 8.747462 5.080297 9.777702 2.593077 9.777702 0 
+C 9.777702 -2.593077 8.747462 -5.080297 6.91388 -6.91388 
+C 5.080297 -8.747462 2.593077 -9.777702 0 -9.777702 
+C -2.593077 -9.777702 -5.080297 -8.747462 -6.91388 -6.91388 
+C -8.747462 -5.080297 -9.777702 -2.593077 -9.777702 0 
+C -9.777702 2.593077 -8.747462 5.080297 -6.91388 6.91388 
+C -5.080297 8.747462 -2.593077 9.777702 0 9.777702 
+z
+" style="stroke: #3d3733; stroke-width: 2"/>
+     </defs>
+     <g>
+      <use xlink:href="#m1bfb591102" x="53.840625" y="81.17" style="fill: #0bb4ff; stroke: #3d3733; stroke-width: 2"/>
+     </g>
+    </g>
+    <g id="text_25">
+     <text style="font: 9px 'ABC Oracle Edu'; text-anchor: start" x="70.040625" y="84.32" transform="rotate(-0 70.040625 84.32)">1M</text>
+    </g>
+    <g id="line2d_40">
+     <path d="M 44.840625 100.025 
+L 53.840625 100.025 
+L 62.840625 100.025 
+" style="fill: none; stroke: #ffffff; stroke-width: 1.5; stroke-linecap: square"/>
+     <defs>
+      <path id="m548f8e59ed" d="M 0 12.422013 
+C 3.294356 12.422013 6.454228 11.113151 8.783689 8.783689 
+C 11.113151 6.454228 12.422013 3.294356 12.422013 0 
+C 12.422013 -3.294356 11.113151 -6.454228 8.783689 -8.783689 
+C 6.454228 -11.113151 3.294356 -12.422013 0 -12.422013 
+C -3.294356 -12.422013 -6.454228 -11.113151 -8.783689 -8.783689 
+C -11.113151 -6.454228 -12.422013 -3.294356 -12.422013 0 
+C -12.422013 3.294356 -11.113151 6.454228 -8.783689 8.783689 
+C -6.454228 11.113151 -3.294356 12.422013 0 12.422013 
+z
+" style="stroke: #3d3733; stroke-width: 2"/>
+     </defs>
+     <g>
+      <use xlink:href="#m548f8e59ed" x="53.840625" y="100.025" style="fill: #0bb4ff; stroke: #3d3733; stroke-width: 2"/>
+     </g>
+    </g>
+    <g id="text_26">
+     <text style="font: 9px 'ABC Oracle Edu'; text-anchor: start" x="70.040625" y="103.175" transform="rotate(-0 70.040625 103.175)">1.8M</text>
+    </g>
+   </g>
+   <g id="patch_4">
+    <path d="M 328.625541 434.067026 
+Q 305.798656 428.290941 282.97177 422.514855 
+" style="fill: none; stroke: #666666; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_27">
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'" transform="translate(332.563549 442.76146)">Alameda</text>
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'" transform="translate(332.563549 452.50846)">(Oakland, Berkeley)</text>
+   </g>
+   <g id="text_28">
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'" transform="translate(199.874409 347.417224)">Contra Costa</text>
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'" transform="translate(199.874409 356.732224)">(Walnut Creek, Richmond)</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 151.204766 187.959351 
+Q 228.770557 205.500048 306.336348 223.040745 
+" style="fill: none; stroke: #666666; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_29">
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'" transform="translate(123.300264 174.070245)">Marin</text>
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'" transform="translate(55.715889 183.817245)">(Sausalito, Mill Valley)</text>
+   </g>
+   <g id="text_30">
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'" transform="translate(126.65737 378.373164)">Napa</text>
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'" transform="translate(126.65737 388.120164)">(Wine Country)</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 490.449152 104.063867 
+Q 467.683795 104.063867 444.918438 104.063867 
+" style="fill: none; stroke: #666666; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_31">
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'; text-anchor: start" x="494.448909" y="106.336367" transform="rotate(-0 494.448909 106.336367)">San Francisco</text>
+   </g>
+   <g id="patch_7">
+    <path d="M 395.316031 271.743915 
+Q 364.555733 263.141024 333.795435 254.538133 
+" style="fill: none; stroke: #666666; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_32">
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'" transform="translate(383.400099 280.582449)">San Mateo</text>
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'" transform="translate(383.400099 290.329449)">(Redwood City, Daly City)</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 497.233475 155.28043 
+Q 474.44751 158.685895 451.661545 162.091359 
+" style="fill: none; stroke: #666666; stroke-width: 0.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_33">
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'" transform="translate(501.214442 142.248589)">Santa Clara</text>
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'" transform="translate(501.214442 151.995589)">(San Jose, Palo Alto, Cupertino)</text>
+   </g>
+   <g id="text_34">
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'; text-anchor: start" x="202.57847" y="145.28111" transform="rotate(-0 202.57847 145.28111)">Santa Cruz</text>
+   </g>
+   <g id="text_35">
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'" transform="translate(169.124683 337.797944)">Solano</text>
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'" transform="translate(169.124683 347.436944)">(Vallejo, Fairfield)</text>
+   </g>
+   <g id="text_36">
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'" transform="translate(196.15995 308.962133)">Sonoma</text>
+    <text style="fill: #3d3733; font: 9px 'ABC Oracle Edu'" transform="translate(196.15995 318.277133)">(Santa Rosa)</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa0a1416b8b">
+   <rect x="36.740625" y="32.21" width="515.29239" height="450.12"/>
+  </clipPath>
+ </defs>
+</svg>

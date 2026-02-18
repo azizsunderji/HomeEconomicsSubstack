@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The $50 Billion Club: Giving as % of Wealth</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'ABC Oracle Edu', system-ui, sans-serif;
+    background: #F6F7F3;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.chart-container {
+    width: 900px;
+    background: #F6F7F3;
+}
+
+.chart-title {
+    font-size: 23px;
+    font-weight: 500;
+    color: #3D3733;
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+.chart-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    color: #3D3733;
+    opacity: 0.7;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.chart-source {
+    font-size: 11px;
+    font-weight: 300;
+    color: #999;
+    font-style: italic;
+    margin-top: 8px;
+}
+</style>
+</head>
+<body>
+<div class="chart-container">
+    <div class="chart-title">The $50 Billion Club Doesn't Give Much Away</div>
+    <div class="chart-subtitle">Lifetime charitable giving as a percentage of peak net worth. Ranges shown where<br>only Forbes score bands (not exact figures) are available. Ranked most to least generous.</div>
+    <svg id="chart"></svg>
+    <div class="chart-source">Source: Forbes World's Billionaires List 2024; Chronicle of Philanthropy; foundation records; historical biographies.<br>Ranges reflect Forbes philanthropy score bands: 1 = &lt; 1%, 2 = 1–5%, 3 = 5–10%, 4 = 10–20%, 5 = &gt; 20%.</div>
+</div>
+<script>
+
+// pct: best point estimate (null if unknown — use midpoint of range)
+// lo/hi: range from Forbes score band (shown as range bar when pct is uncertain)
+// exact: true if we have a specific reported figure, false if estimating from score band
+const data = [
+    // Gilded Age — inflation-adjusted peak wealth estimates (2024 dollars)
+    {name: "Andrew Carnegie",      pct: 90,   lo: 85,  hi: 95,  era: "Gilded Age", netWorth: 310},
+    {name: "John D. Rockefeller",  pct: 35,   lo: 30,  hi: 40,  era: "Gilded Age", netWorth: 400},
+    {name: "Andrew Mellon",        pct: 25,   lo: 20,  hi: 30,  era: "Gilded Age", netWorth: 100},
+    // Modern — ranges reflect cross-source disagreement (Forbes, Chronicle, PND, Fox13)
+    {name: "Warren Buffett",       pct: 43,   lo: 30,  hi: 43,  era: "Modern", netWorth: 133},
+    {name: "Bill Gates",           pct: 34,   lo: 26,  hi: 55,  era: "Modern", netWorth: 128},
+    {name: "MacKenzie Scott",      pct: 47,   lo: 36,  hi: 53,  era: "Modern", netWorth: 35.6},
+    {name: "Michael Bloomberg",    pct: 18,   lo: 17,  hi: 18,  era: "Modern", netWorth: 106},
+    {name: "Steve Ballmer",        pct: 3.4,  lo: 3.1, hi: 3.7, era: "Modern", netWorth: 121},
+    {name: "Mark Zuckerberg",      pct: 2.7,  lo: 2.1, hi: 2.7, era: "Modern", netWorth: 177},
+    {name: "Jeff Bezos",           pct: 1.7,  lo: 1.6, hi: 2.1, era: "Modern", netWorth: 194},
+    {name: "Elon Musk",            pct: 0.5,  lo: 0.3, hi: 0.8, era: "Modern", netWorth: 195},
+    // Modern — Forbes score band only (score 2 = 1–5%)
+    {name: "Sergey Brin",          pct: null,  lo: 1,   hi: 5,   era: "Modern", netWorth: 110},
+    {name: "Michael Dell",         pct: null,  lo: 1,   hi: 5,   era: "Modern", netWorth: 91},
+    {name: "Alice Walton",         pct: null,  lo: 1,   hi: 5,   era: "Modern", netWorth: 72.3},
+    {name: "Julia Koch & family",  pct: null,  lo: 1,   hi: 5,   era: "Modern", netWorth: 64.3},
+    {name: "Charles Koch & family",pct: null,  lo: 1,   hi: 5,   era: "Modern", netWorth: 58.5},
+    // Modern — Forbes score band only (score 1 = < 1%)
+    {name: "Larry Ellison",        pct: null,  lo: 0,   hi: 1,   era: "Modern", netWorth: 141},
+    {name: "Larry Page",           pct: null,  lo: 0,   hi: 1,   era: "Modern", netWorth: 114},
+    {name: "Jim Walton & family",  pct: null,  lo: 0,   hi: 1,   era: "Modern", netWorth: 78.4},
+    {name: "Rob Walton & family",  pct: null,  lo: 0,   hi: 1,   era: "Modern", netWorth: 77.4},
+    {name: "Jensen Huang",         pct: null,  lo: 0,   hi: 1,   era: "Modern", netWorth: 77},
+];
+
+// For sorting: use pct if exact, otherwise midpoint of range
+data.forEach(d => {
+    d.sortVal = d.pct !== null ? d.pct : (d.lo + d.hi) / 2;
+});
+
+// Sort by giving % descending
+data.sort((a, b) => {
+    if (b.sortVal !== a.sortVal) return b.sortVal - a.sortVal;
+    if (a.era !== b.era) return a.era === "Gilded Age" ? -1 : 1;
+    return (b.netWorth || 0) - (a.netWorth || 0);
+});
+
+const width = 900;
+const rowHeight = 26;
+const margin = {top: 30, right: 60, bottom: 50, left: 200};
+const height = margin.top + data.length * rowHeight + margin.bottom;
+const chartWidth = width - margin.left - margin.right;
+
+const svg = d3.select("#chart")
+    .attr("width", width)
+    .attr("height", height);
+
+const g = svg.append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+const x = d3.scaleLinear()
+    .domain([0, 100])
+    .range([0, chartWidth]);
+
+const gildedColor = "#FEC439";
+const modernColor = "#0BB4FF";
+
+// Gridlines and axis labels
+[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100].forEach(v => {
+    g.append("line")
+        .attr("x1", x(v))
+        .attr("x2", x(v))
+        .attr("y1", -4)
+        .attr("y2", data.length * rowHeight)
+        .attr("stroke", "#ddd")
+        .attr("stroke-width", v % 20 === 0 ? 0.8 : 0.4);
+
+    if (v % 20 === 0) {
+        g.append("text")
+            .attr("x", x(v))
+            .attr("y", -10)
+            .attr("text-anchor", "middle")
+            .attr("font-size", "11px")
+            .attr("fill", "#999")
+            .attr("font-weight", 300)
+            .attr("font-family", "'ABC Oracle Edu', system-ui, sans-serif")
+            .text(`${v}%`);
+    }
+});
+
+// Rows
+const rows = g.selectAll(".row")
+    .data(data)
+    .enter()
+    .append("g")
+    .attr("transform", (d, i) => `translate(0, ${i * rowHeight + rowHeight / 2})`);
+
+// Lollipop lines: medium shade; error bars + dots: full saturated
+const gildedLollipopColor = "#FEE199";
+const modernLollipopColor = "#8ED3FF";
+
+// Lollipop line (lightest) — runs from 0 to the start of the error bar
+rows.append("line")
+    .attr("x1", 0)
+    .attr("x2", d => x(d.lo))
+    .attr("y1", 0)
+    .attr("y2", 0)
+    .attr("stroke", d => d.era === "Gilded Age" ? gildedLollipopColor : modernLollipopColor)
+    .attr("stroke-width", 1.5);
+
+// Radius scale — linear on radius for maximum differentiation
+const rScale = d3.scaleLinear()
+    .domain([d3.min(data, d => d.netWorth), d3.max(data, d => d.netWorth)])
+    .range([4, 26]);
+
+// Error bars — split into left and right segments that stop at the bubble edge
+rows.filter(d => d.lo !== d.hi)
+    .each(function(d) {
+        const row = d3.select(this);
+        const color = d.era === "Gilded Age" ? gildedColor : modernColor;
+        const dotPct = d.pct !== null ? d.pct : (d.lo + d.hi) / 2;
+        const r = rScale(d.netWorth);
+        const cx = x(dotPct);
+        // Left segment: from lo to left edge of bubble
+        if (x(d.lo) < cx - r) {
+            row.append("line")
+                .attr("x1", x(d.lo))
+                .attr("x2", cx - r)
+                .attr("y1", 0).attr("y2", 0)
+                .attr("stroke", color)
+                .attr("stroke-width", 1.5);
+        }
+        // Right segment: from right edge of bubble to hi
+        if (x(d.hi) > cx + r) {
+            row.append("line")
+                .attr("x1", cx + r)
+                .attr("x2", x(d.hi))
+                .attr("y1", 0).attr("y2", 0)
+                .attr("stroke", color)
+                .attr("stroke-width", 1.5);
+        }
+    });
+
+// Bubble for ALL entries — transparent fill, opaque stroke
+rows.append("circle")
+    .attr("cx", d => x(d.pct !== null ? d.pct : (d.lo + d.hi) / 2))
+    .attr("cy", 0)
+    .attr("r", d => rScale(d.netWorth))
+    .attr("fill", d => d.era === "Gilded Age" ? gildedColor : modernColor)
+    .attr("fill-opacity", 0.35)
+    .attr("stroke", d => d.era === "Gilded Age" ? gildedColor : modernColor)
+    .attr("stroke-width", 1.5);
+
+// Name labels (left)
+rows.append("text")
+    .attr("x", -50)
+    .attr("y", 0)
+    .attr("dy", "0.35em")
+    .attr("text-anchor", "end")
+    .attr("font-size", "13px")
+    .attr("font-weight", d => d.name === "Jeff Bezos" ? 700 : 400)
+    .attr("fill", d => d.era === "Gilded Age" ? "#9E8530" : "#3D3733")
+    .attr("font-family", "'ABC Oracle Edu', system-ui, sans-serif")
+    .text(d => d.name);
+
+// Net worth labels (between name and chart)
+rows.append("text")
+    .attr("x", -8)
+    .attr("y", 0)
+    .attr("dy", "0.35em")
+    .attr("text-anchor", "end")
+    .attr("font-size", "11px")
+    .attr("fill", "#999")
+    .attr("font-weight", 300)
+    .attr("font-family", "'ABC Oracle Edu', system-ui, sans-serif")
+    .text(d => {
+        const nw = d.netWorth;
+        if (nw >= 100) return `$${Math.round(nw)}B`;
+        if (nw % 1 === 0) return `$${nw}B`;
+        return `$${nw}B`;
+    });
+
+// Legend at bottom
+const legendY = data.length * rowHeight + 20;
+
+// Gilded Age
+g.append("circle").attr("cx", 0).attr("cy", legendY).attr("r", 5).attr("fill", gildedColor).attr("opacity", 0.85);
+g.append("text").attr("x", 12).attr("y", legendY).attr("dy", "0.35em")
+    .attr("font-size", "12px").attr("fill", "#999").attr("font-weight", 300)
+    .attr("font-family", "'ABC Oracle Edu', system-ui, sans-serif")
+    .text("Gilded Age");
+
+// Modern
+g.append("circle").attr("cx", 110).attr("cy", legendY).attr("r", 5).attr("fill", modernColor).attr("opacity", 0.85);
+g.append("text").attr("x", 122).attr("y", legendY).attr("dy", "0.35em")
+    .attr("font-size", "12px").attr("fill", "#999").attr("font-weight", 300)
+    .attr("font-family", "'ABC Oracle Edu', system-ui, sans-serif")
+    .text("Modern (2024)");
+
+// Error bar legend
+g.append("line").attr("x1", 240).attr("x2", 270).attr("y1", legendY).attr("y2", legendY)
+    .attr("stroke", modernColor).attr("stroke-width", 3);
+g.append("text").attr("x", 280).attr("y", legendY).attr("dy", "0.35em")
+    .attr("font-size", "12px").attr("fill", "#999").attr("font-weight", 300)
+    .attr("font-family", "'ABC Oracle Edu', system-ui, sans-serif")
+    .text("Estimated range");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+[
+  {
+    "name":"Elon Musk",
+    "netWorth":195.0,
+    "philanthropyScore":1,
+    "industry":"Automotive"
+  },
+  {
+    "name":"Jeff Bezos",
+    "netWorth":194.0,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Mark Zuckerberg",
+    "netWorth":177.0,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Larry Ellison",
+    "netWorth":141.0,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Warren Buffett",
+    "netWorth":133.0,
+    "philanthropyScore":5,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Bill Gates",
+    "netWorth":128.0,
+    "philanthropyScore":5,
+    "industry":"Technology"
+  },
+  {
+    "name":"Steve Ballmer",
+    "netWorth":121.0,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Larry Page",
+    "netWorth":114.0,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Sergey Brin",
+    "netWorth":110.0,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Michael Bloomberg",
+    "netWorth":106.0,
+    "philanthropyScore":4,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Michael Dell",
+    "netWorth":91.0,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Jim Walton & family",
+    "netWorth":78.4,
+    "philanthropyScore":1,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Rob Walton & family",
+    "netWorth":77.4,
+    "philanthropyScore":1,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Jensen Huang",
+    "netWorth":77.0,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Alice Walton",
+    "netWorth":72.3,
+    "philanthropyScore":2,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Julia Koch & family",
+    "netWorth":64.3,
+    "philanthropyScore":2,
+    "industry":"Diversified"
+  },
+  {
+    "name":"Charles Koch & family",
+    "netWorth":58.5,
+    "philanthropyScore":2,
+    "industry":"Diversified"
+  }
+]

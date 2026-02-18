@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1145.089375pt" height="465.24pt" viewBox="0 0 1145.089375 465.24" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-02-17T16:19:34.069164</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.9.4, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 465.24 
+L 1145.089375 465.24 
+L 1145.089375 0 
+L 0 0 
+z
+" style="fill: #f6f7f3"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 35.959375 421.4 
+L 379.696042 421.4 
+L 379.696042 74.08 
+L 35.959375 74.08 
+z
+" style="fill: #f6f7f3"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 294.629897 421.4 
+L 364.071648 421.4 
+L 364.071648 74.08 
+L 294.629897 74.08 
+z
+" clip-path="url(#p46aadc2f63)" style="fill: #0bb4ff; opacity: 0.1; stroke: #0bb4ff; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m2b7ad5f59b" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m2b7ad5f59b" x="51.583769" y="421.4" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="51.583769" y="435.4" transform="rotate(-0 51.583769 435.4)">2015</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m2b7ad5f59b" x="121.02552" y="421.4" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="121.02552" y="435.4" transform="rotate(-0 121.02552 435.4)">2017</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m2b7ad5f59b" x="190.467271" y="421.4" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="190.467271" y="435.4" transform="rotate(-0 190.467271 435.4)">2019</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m2b7ad5f59b" x="259.909021" y="421.4" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="259.909021" y="435.4" transform="rotate(-0 259.909021 435.4)">2021</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m2b7ad5f59b" x="329.350772" y="421.4" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="329.350772" y="435.4" transform="rotate(-0 329.350772 435.4)">2023</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_6">
+      <path d="M 35.959375 406.935981 
+L 379.696042 406.935981 
+" clip-path="url(#p46aadc2f63)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_7"/>
+     <g id="text_6">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="32.459375" y="410.435981" transform="rotate(-0 32.459375 410.435981)">24</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8">
+      <path d="M 35.959375 358.472976 
+L 379.696042 358.472976 
+" clip-path="url(#p46aadc2f63)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_9"/>
+     <g id="text_7">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="32.459375" y="361.972976" transform="rotate(-0 32.459375 361.972976)">26</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_10">
+      <path d="M 35.959375 310.00997 
+L 379.696042 310.00997 
+" clip-path="url(#p46aadc2f63)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_11"/>
+     <g id="text_8">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="32.459375" y="313.50997" transform="rotate(-0 32.459375 313.50997)">28</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_12">
+      <path d="M 35.959375 261.546964 
+L 379.696042 261.546964 
+" clip-path="url(#p46aadc2f63)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_13"/>
+     <g id="text_9">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="32.459375" y="265.046964" transform="rotate(-0 32.459375 265.046964)">30</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_14">
+      <path d="M 35.959375 213.083959 
+L 379.696042 213.083959 
+" clip-path="url(#p46aadc2f63)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_15"/>
+     <g id="text_10">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="32.459375" y="216.583959" transform="rotate(-0 32.459375 216.583959)">32</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_16">
+      <path d="M 35.959375 164.620953 
+L 379.696042 164.620953 
+" clip-path="url(#p46aadc2f63)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_17"/>
+     <g id="text_11">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="32.459375" y="168.120953" transform="rotate(-0 32.459375 168.120953)">34</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_18">
+      <path d="M 35.959375 116.157948 
+L 379.696042 116.157948 
+" clip-path="url(#p46aadc2f63)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_19"/>
+     <g id="text_12">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="32.459375" y="119.657948" transform="rotate(-0 32.459375 119.657948)">36</text>
+     </g>
+    </g>
+    <g id="text_13">
+     <text style="font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="14.2" y="247.74" transform="rotate(-90 14.2 247.74)">%</text>
+    </g>
+   </g>
+   <g id="line2d_20">
+    <path d="M 51.583769 239.407355 
+L 86.304644 219.042913 
+L 121.02552 247.506839 
+L 155.746395 274.862201 
+L 190.467271 205.039682 
+L 259.909021 89.867273 
+L 294.629897 261.620075 
+L 329.350772 186.218781 
+L 364.071648 216.242181 
+" clip-path="url(#p46aadc2f63)" style="fill: none; stroke: #0bb4ff; stroke-width: 2.5; stroke-linecap: square"/>
+    <defs>
+     <path id="m705e81ea5b" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #0bb4ff"/>
+    </defs>
+    <g clip-path="url(#p46aadc2f63)">
+     <use xlink:href="#m705e81ea5b" x="51.583769" y="239.407355" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="86.304644" y="219.042913" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="121.02552" y="247.506839" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="155.746395" y="274.862201" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="190.467271" y="205.039682" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="259.909021" y="89.867273" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="294.629897" y="261.620075" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="329.350772" y="186.218781" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="364.071648" y="216.242181" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+    </g>
+   </g>
+   <g id="line2d_21">
+    <path d="M 51.583769 234.752504 
+L 86.304644 254.079414 
+L 121.02552 287.098584 
+L 155.746395 326.553428 
+L 190.467271 325.430409 
+L 259.909021 371.879656 
+L 294.629897 405.612727 
+L 329.350772 361.013273 
+L 364.071648 269.336617 
+" clip-path="url(#p46aadc2f63)" style="fill: none; stroke: #3d3733; stroke-width: 2.5; stroke-linecap: square"/>
+    <defs>
+     <path id="m4be9b15687" d="M -2.5 2.5 
+L 2.5 2.5 
+L 2.5 -2.5 
+L -2.5 -2.5 
+z
+" style="stroke: #3d3733; stroke-linejoin: miter"/>
+    </defs>
+    <g clip-path="url(#p46aadc2f63)">
+     <use xlink:href="#m4be9b15687" x="51.583769" y="234.752504" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="86.304644" y="254.079414" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="121.02552" y="287.098584" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="155.746395" y="326.553428" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="190.467271" y="325.430409" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="259.909021" y="371.879656" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="294.629897" y="405.612727" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="329.350772" y="361.013273" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="364.071648" y="269.336617" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="patch_4">
+    <path d="M 35.959375 421.4 
+L 379.696042 421.4 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_14">
+    <text style="fill: #3d3733; font: 700 13px 'ABC Oracle Edu'; text-anchor: middle" x="207.827708" y="64.08" transform="rotate(-0 207.827708 64.08)">Mover Rate (%)</text>
+   </g>
+   <g id="legend_1">
+    <g id="line2d_22">
+     <path d="M 44.959375 86.58 
+L 54.959375 86.58 
+L 64.959375 86.58 
+" style="fill: none; stroke: #0bb4ff; stroke-width: 2.5; stroke-linecap: square"/>
+     <g>
+      <use xlink:href="#m705e81ea5b" x="54.959375" y="86.58" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     </g>
+    </g>
+    <g id="text_15">
+     <text style="font: 10px 'ABC Oracle Edu'; text-anchor: start" x="72.959375" y="90.08" transform="rotate(-0 72.959375 90.08)">Austin</text>
+    </g>
+    <g id="line2d_23">
+     <path d="M 44.959375 100.53 
+L 54.959375 100.53 
+L 64.959375 100.53 
+" style="fill: none; stroke: #3d3733; stroke-width: 2.5; stroke-linecap: square"/>
+     <g>
+      <use xlink:href="#m4be9b15687" x="54.959375" y="100.53" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     </g>
+    </g>
+    <g id="text_16">
+     <text style="font: 10px 'ABC Oracle Edu'; text-anchor: start" x="72.959375" y="104.03" transform="rotate(-0 72.959375 104.03)">Dallas</text>
+    </g>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_5">
+    <path d="M 415.056042 421.4 
+L 758.792708 421.4 
+L 758.792708 74.08 
+L 415.056042 74.08 
+z
+" style="fill: #f6f7f3"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 673.726564 421.4 
+L 743.168314 421.4 
+L 743.168314 74.08 
+L 673.726564 74.08 
+z
+" clip-path="url(#p587ce7ebbb)" style="fill: #0bb4ff; opacity: 0.1; stroke: #0bb4ff; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_6">
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#m2b7ad5f59b" x="430.680436" y="421.4" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="430.680436" y="435.4" transform="rotate(-0 430.680436 435.4)">2015</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_25">
+      <g>
+       <use xlink:href="#m2b7ad5f59b" x="500.122186" y="421.4" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="500.122186" y="435.4" transform="rotate(-0 500.122186 435.4)">2017</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_26">
+      <g>
+       <use xlink:href="#m2b7ad5f59b" x="569.563937" y="421.4" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="569.563937" y="435.4" transform="rotate(-0 569.563937 435.4)">2019</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_27">
+      <g>
+       <use xlink:href="#m2b7ad5f59b" x="639.005688" y="421.4" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="639.005688" y="435.4" transform="rotate(-0 639.005688 435.4)">2021</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_28">
+      <g>
+       <use xlink:href="#m2b7ad5f59b" x="708.447439" y="421.4" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_21">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="708.447439" y="435.4" transform="rotate(-0 708.447439 435.4)">2023</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_8">
+     <g id="line2d_29">
+      <path d="M 415.056042 394.832483 
+L 758.792708 394.832483 
+" clip-path="url(#p587ce7ebbb)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_30"/>
+     <g id="text_22">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="411.556042" y="398.332483" transform="rotate(-0 411.556042 398.332483)">2.50</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_31">
+      <path d="M 415.056042 354.837863 
+L 758.792708 354.837863 
+" clip-path="url(#p587ce7ebbb)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_32"/>
+     <g id="text_23">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="411.556042" y="358.337863" transform="rotate(-0 411.556042 358.337863)">2.55</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_33">
+      <path d="M 415.056042 314.843242 
+L 758.792708 314.843242 
+" clip-path="url(#p587ce7ebbb)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_34"/>
+     <g id="text_24">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="411.556042" y="318.343242" transform="rotate(-0 411.556042 318.343242)">2.60</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_35">
+      <path d="M 415.056042 274.848621 
+L 758.792708 274.848621 
+" clip-path="url(#p587ce7ebbb)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_36"/>
+     <g id="text_25">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="411.556042" y="278.348621" transform="rotate(-0 411.556042 278.348621)">2.65</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_37">
+      <path d="M 415.056042 234.854001 
+L 758.792708 234.854001 
+" clip-path="url(#p587ce7ebbb)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_38"/>
+     <g id="text_26">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="411.556042" y="238.354001" transform="rotate(-0 411.556042 238.354001)">2.70</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_39">
+      <path d="M 415.056042 194.85938 
+L 758.792708 194.85938 
+" clip-path="url(#p587ce7ebbb)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_40"/>
+     <g id="text_27">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="411.556042" y="198.35938" transform="rotate(-0 411.556042 198.35938)">2.75</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_41">
+      <path d="M 415.056042 154.864759 
+L 758.792708 154.864759 
+" clip-path="url(#p587ce7ebbb)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_42"/>
+     <g id="text_28">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="411.556042" y="158.364759" transform="rotate(-0 411.556042 158.364759)">2.80</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_43">
+      <path d="M 415.056042 114.870138 
+L 758.792708 114.870138 
+" clip-path="url(#p587ce7ebbb)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_44"/>
+     <g id="text_29">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="411.556042" y="118.370138" transform="rotate(-0 411.556042 118.370138)">2.85</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_45">
+      <path d="M 415.056042 74.875518 
+L 758.792708 74.875518 
+" clip-path="url(#p587ce7ebbb)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_46"/>
+     <g id="text_30">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="411.556042" y="78.375518" transform="rotate(-0 411.556042 78.375518)">2.90</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_47">
+    <path d="M 430.680436 278.978307 
+L 465.401311 134.625737 
+L 500.122186 181.925553 
+L 534.843062 231.184632 
+L 569.563937 123.379212 
+L 639.005688 281.356429 
+L 673.726564 295.212288 
+L 708.447439 402.779078 
+L 743.168314 405.612727 
+" clip-path="url(#p587ce7ebbb)" style="fill: none; stroke: #0bb4ff; stroke-width: 2.5; stroke-linecap: square"/>
+    <g clip-path="url(#p587ce7ebbb)">
+     <use xlink:href="#m705e81ea5b" x="430.680436" y="278.978307" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="465.401311" y="134.625737" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="500.122186" y="181.925553" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="534.843062" y="231.184632" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="569.563937" y="123.379212" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="639.005688" y="281.356429" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="673.726564" y="295.212288" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="708.447439" y="402.779078" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="743.168314" y="405.612727" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+    </g>
+   </g>
+   <g id="line2d_48">
+    <path d="M 430.680436 89.867273 
+L 465.401311 179.484352 
+L 500.122186 129.358335 
+L 534.843062 222.012217 
+L 569.563937 185.636721 
+L 639.005688 273.839862 
+L 673.726564 291.159559 
+L 708.447439 255.391028 
+L 743.168314 339.582909 
+" clip-path="url(#p587ce7ebbb)" style="fill: none; stroke: #3d3733; stroke-width: 2.5; stroke-linecap: square"/>
+    <g clip-path="url(#p587ce7ebbb)">
+     <use xlink:href="#m4be9b15687" x="430.680436" y="89.867273" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="465.401311" y="179.484352" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="500.122186" y="129.358335" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="534.843062" y="222.012217" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="569.563937" y="185.636721" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="639.005688" y="273.839862" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="673.726564" y="291.159559" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="708.447439" y="255.391028" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="743.168314" y="339.582909" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="patch_7">
+    <path d="M 415.056042 421.4 
+L 758.792708 421.4 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_31">
+    <text style="fill: #3d3733; font: 700 13px 'ABC Oracle Edu'; text-anchor: middle" x="586.924375" y="64.08" transform="rotate(-0 586.924375 64.08)">Avg Bedrooms (Movers)</text>
+   </g>
+   <g id="legend_2">
+    <g id="line2d_49">
+     <path d="M 424.056042 393 
+L 434.056042 393 
+L 444.056042 393 
+" style="fill: none; stroke: #0bb4ff; stroke-width: 2.5; stroke-linecap: square"/>
+     <g>
+      <use xlink:href="#m705e81ea5b" x="434.056042" y="393" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     </g>
+    </g>
+    <g id="text_32">
+     <text style="font: 10px 'ABC Oracle Edu'; text-anchor: start" x="452.056042" y="396.5" transform="rotate(-0 452.056042 396.5)">Austin</text>
+    </g>
+    <g id="line2d_50">
+     <path d="M 424.056042 406.95 
+L 434.056042 406.95 
+L 444.056042 406.95 
+" style="fill: none; stroke: #3d3733; stroke-width: 2.5; stroke-linecap: square"/>
+     <g>
+      <use xlink:href="#m4be9b15687" x="434.056042" y="406.95" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     </g>
+    </g>
+    <g id="text_33">
+     <text style="font: 10px 'ABC Oracle Edu'; text-anchor: start" x="452.056042" y="410.45" transform="rotate(-0 452.056042 410.45)">Dallas</text>
+    </g>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_8">
+    <path d="M 794.152708 421.4 
+L 1137.889375 421.4 
+L 1137.889375 74.08 
+L 794.152708 74.08 
+z
+" style="fill: #f6f7f3"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 1052.82323 421.4 
+L 1122.264981 421.4 
+L 1122.264981 74.08 
+L 1052.82323 74.08 
+z
+" clip-path="url(#pe3b0203cfb)" style="fill: #0bb4ff; opacity: 0.1; stroke: #0bb4ff; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_5">
+    <g id="xtick_11">
+     <g id="line2d_51">
+      <g>
+       <use xlink:href="#m2b7ad5f59b" x="809.777102" y="421.4" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_34">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="809.777102" y="435.4" transform="rotate(-0 809.777102 435.4)">2015</text>
+     </g>
+    </g>
+    <g id="xtick_12">
+     <g id="line2d_52">
+      <g>
+       <use xlink:href="#m2b7ad5f59b" x="879.218853" y="421.4" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_35">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="879.218853" y="435.4" transform="rotate(-0 879.218853 435.4)">2017</text>
+     </g>
+    </g>
+    <g id="xtick_13">
+     <g id="line2d_53">
+      <g>
+       <use xlink:href="#m2b7ad5f59b" x="948.660604" y="421.4" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_36">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="948.660604" y="435.4" transform="rotate(-0 948.660604 435.4)">2019</text>
+     </g>
+    </g>
+    <g id="xtick_14">
+     <g id="line2d_54">
+      <g>
+       <use xlink:href="#m2b7ad5f59b" x="1018.102355" y="421.4" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_37">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="1018.102355" y="435.4" transform="rotate(-0 1018.102355 435.4)">2021</text>
+     </g>
+    </g>
+    <g id="xtick_15">
+     <g id="line2d_55">
+      <g>
+       <use xlink:href="#m2b7ad5f59b" x="1087.544106" y="421.4" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_38">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="1087.544106" y="435.4" transform="rotate(-0 1087.544106 435.4)">2023</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_6">
+    <g id="ytick_17">
+     <g id="line2d_56">
+      <path d="M 794.152708 404.740231 
+L 1137.889375 404.740231 
+" clip-path="url(#pe3b0203cfb)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_57"/>
+     <g id="text_39">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="790.652708" y="408.240231" transform="rotate(-0 790.652708 408.240231)">24</text>
+     </g>
+    </g>
+    <g id="ytick_18">
+     <g id="line2d_58">
+      <path d="M 794.152708 351.663355 
+L 1137.889375 351.663355 
+" clip-path="url(#pe3b0203cfb)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_59"/>
+     <g id="text_40">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="790.652708" y="355.163355" transform="rotate(-0 790.652708 355.163355)">26</text>
+     </g>
+    </g>
+    <g id="ytick_19">
+     <g id="line2d_60">
+      <path d="M 794.152708 298.586479 
+L 1137.889375 298.586479 
+" clip-path="url(#pe3b0203cfb)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_61"/>
+     <g id="text_41">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="790.652708" y="302.086479" transform="rotate(-0 790.652708 302.086479)">28</text>
+     </g>
+    </g>
+    <g id="ytick_20">
+     <g id="line2d_62">
+      <path d="M 794.152708 245.509604 
+L 1137.889375 245.509604 
+" clip-path="url(#pe3b0203cfb)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_63"/>
+     <g id="text_42">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="790.652708" y="249.009604" transform="rotate(-0 790.652708 249.009604)">30</text>
+     </g>
+    </g>
+    <g id="ytick_21">
+     <g id="line2d_64">
+      <path d="M 794.152708 192.432728 
+L 1137.889375 192.432728 
+" clip-path="url(#pe3b0203cfb)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_65"/>
+     <g id="text_43">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="790.652708" y="195.932728" transform="rotate(-0 790.652708 195.932728)">32</text>
+     </g>
+    </g>
+    <g id="ytick_22">
+     <g id="line2d_66">
+      <path d="M 794.152708 139.355853 
+L 1137.889375 139.355853 
+" clip-path="url(#pe3b0203cfb)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_67"/>
+     <g id="text_44">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="790.652708" y="142.855853" transform="rotate(-0 790.652708 142.855853)">34</text>
+     </g>
+    </g>
+    <g id="ytick_23">
+     <g id="line2d_68">
+      <path d="M 794.152708 86.278977 
+L 1137.889375 86.278977 
+" clip-path="url(#pe3b0203cfb)" style="fill: none; stroke: #ffffff; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_69"/>
+     <g id="text_45">
+      <text style="font: 10px 'ABC Oracle Edu'; text-anchor: end" x="790.652708" y="89.778977" transform="rotate(-0 790.652708 89.778977)">36</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_70">
+    <path d="M 809.777102 370.535133 
+L 844.497978 332.398415 
+L 879.218853 300.102962 
+L 913.939729 281.999956 
+L 948.660604 254.522658 
+L 1018.102355 225.954965 
+L 1052.82323 172.900438 
+L 1087.544106 89.867273 
+L 1122.264981 126.680778 
+" clip-path="url(#pe3b0203cfb)" style="fill: none; stroke: #0bb4ff; stroke-width: 2.5; stroke-linecap: square"/>
+    <g clip-path="url(#pe3b0203cfb)">
+     <use xlink:href="#m705e81ea5b" x="809.777102" y="370.535133" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="844.497978" y="332.398415" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="879.218853" y="300.102962" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="913.939729" y="281.999956" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="948.660604" y="254.522658" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="1018.102355" y="225.954965" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="1052.82323" y="172.900438" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="1087.544106" y="89.867273" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     <use xlink:href="#m705e81ea5b" x="1122.264981" y="126.680778" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+    </g>
+   </g>
+   <g id="line2d_71">
+    <path d="M 809.777102 405.612727 
+L 844.497978 398.371006 
+L 879.218853 372.894105 
+L 913.939729 351.524773 
+L 948.660604 318.568362 
+L 1018.102355 265.15344 
+L 1052.82323 152.933658 
+L 1087.544106 110.827032 
+L 1122.264981 140.535339 
+" clip-path="url(#pe3b0203cfb)" style="fill: none; stroke: #3d3733; stroke-width: 2.5; stroke-linecap: square"/>
+    <g clip-path="url(#pe3b0203cfb)">
+     <use xlink:href="#m4be9b15687" x="809.777102" y="405.612727" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="844.497978" y="398.371006" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="879.218853" y="372.894105" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="913.939729" y="351.524773" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="948.660604" y="318.568362" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="1018.102355" y="265.15344" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="1052.82323" y="152.933658" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="1087.544106" y="110.827032" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     <use xlink:href="#m4be9b15687" x="1122.264981" y="140.535339" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+    </g>
+   </g>
+   <g id="line2d_72">
+    <path d="M 794.152708 245.509604 
+L 1137.889375 245.509604 
+" clip-path="url(#pe3b0203cfb)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #f4743b; stroke-opacity: 0.6"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 794.152708 421.4 
+L 1137.889375 421.4 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_46">
+    <text style="fill: #3d3733; font: 700 13px 'ABC Oracle Edu'; text-anchor: middle" x="966.021042" y="64.08" transform="rotate(-0 966.021042 64.08)">Mover Median Burden (%)</text>
+   </g>
+   <g id="legend_3">
+    <g id="line2d_73">
+     <path d="M 803.152708 86.58 
+L 813.152708 86.58 
+L 823.152708 86.58 
+" style="fill: none; stroke: #0bb4ff; stroke-width: 2.5; stroke-linecap: square"/>
+     <g>
+      <use xlink:href="#m705e81ea5b" x="813.152708" y="86.58" style="fill: #0bb4ff; stroke: #0bb4ff"/>
+     </g>
+    </g>
+    <g id="text_47">
+     <text style="font: 10px 'ABC Oracle Edu'; text-anchor: start" x="831.152708" y="90.08" transform="rotate(-0 831.152708 90.08)">Austin</text>
+    </g>
+    <g id="line2d_74">
+     <path d="M 803.152708 100.53 
+L 813.152708 100.53 
+L 823.152708 100.53 
+" style="fill: none; stroke: #3d3733; stroke-width: 2.5; stroke-linecap: square"/>
+     <g>
+      <use xlink:href="#m4be9b15687" x="813.152708" y="100.53" style="fill: #3d3733; stroke: #3d3733; stroke-linejoin: miter"/>
+     </g>
+    </g>
+    <g id="text_48">
+     <text style="font: 10px 'ABC Oracle Edu'; text-anchor: start" x="831.152708" y="104.03" transform="rotate(-0 831.152708 104.03)">Dallas</text>
+    </g>
+    <g id="line2d_75">
+     <path d="M 803.152708 114.48 
+L 813.152708 114.48 
+L 823.152708 114.48 
+" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #f4743b; stroke-opacity: 0.6"/>
+    </g>
+    <g id="text_49">
+     <text style="font: 10px 'ABC Oracle Edu'; text-anchor: start" x="831.152708" y="117.98" transform="rotate(-0 831.152708 117.98)">30% threshold</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_50">
+   <!-- Austin vs Dallas: Income-Controlled ($40K-$80K) -->
+   <g style="fill: #3d3733" transform="translate(389.969375 18.4)">
+    <text>
+     <tspan style="font: 700 16px 'ABC Oracle Edu'" x="0 10.623993 19.759995 28.35199 34.383987 38.607986 47.839981 51.263977 59.855972 68.447968 71.871964 83.487961 92.575958 96.831955 101.087952 110.175949 118.767944 123.007935 126.431931 131.183929 140.415924 149.42392 159.087921 172.959915 182.431915 188.479904 200.271896 209.935898 219.167892 225.19989 231.583878 241.247879 245.503876 249.759872 259.231873 269.119873 272.543869 328.460052 338.508041 348.812042 359.948044" y="-0.9375">Austin vs Dallas: Income-Controlled (80K)</tspan>
+     <tspan style="font: 16px 'DejaVu Sans'" x="277.967865 288.147552 311.936615" y="-0.9375">40−</tspan>
+     <tspan style="font: oblique 16px 'DejaVu Sans'" x="298.32724" y="-0.9375">K</tspan>
+    </text>
+   </g>
+  </g>
+  <g id="text_51">
+   <text style="fill: #888888; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="572.689375" y="28.8" transform="rotate(-0 572.689375 28.8)">Middle-income renters only, ruling out composition effects</text>
+  </g>
+  <g id="text_52">
+   <text style="fill: #999999; font: italic 8px 'ABC Oracle Edu'; text-anchor: middle" x="572.689375" y="456.48" transform="rotate(-0 572.689375 456.48)">Source: ACS 1-Year PUMS (2015-2024, excl. 2020), Zillow ZORI</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p46aadc2f63">
+   <rect x="35.959375" y="74.08" width="343.736667" height="347.32"/>
+  </clipPath>
+  <clipPath id="p587ce7ebbb">
+   <rect x="415.056042" y="74.08" width="343.736667" height="347.32"/>
+  </clipPath>
+  <clipPath id="pe3b0203cfb">
+   <rect x="794.152708" y="74.08" width="343.736667" height="347.32"/>
+  </clipPath>
+ </defs>
+</svg>

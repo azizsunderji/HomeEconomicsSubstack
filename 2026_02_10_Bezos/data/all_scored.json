@@ -1,0 +1,2594 @@
+[
+  {
+    "name":"Elon Musk",
+    "netWorth":195.0,
+    "philanthropyScore":1,
+    "industry":"Automotive"
+  },
+  {
+    "name":"Jeff Bezos",
+    "netWorth":194.0,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Mark Zuckerberg",
+    "netWorth":177.0,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Larry Ellison",
+    "netWorth":141.0,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Warren Buffett",
+    "netWorth":133.0,
+    "philanthropyScore":5,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Bill Gates",
+    "netWorth":128.0,
+    "philanthropyScore":5,
+    "industry":"Technology"
+  },
+  {
+    "name":"Steve Ballmer",
+    "netWorth":121.0,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Larry Page",
+    "netWorth":114.0,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Sergey Brin",
+    "netWorth":110.0,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Michael Bloomberg",
+    "netWorth":106.0,
+    "philanthropyScore":4,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Michael Dell",
+    "netWorth":91.0,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Jim Walton & family",
+    "netWorth":78.4,
+    "philanthropyScore":1,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Rob Walton & family",
+    "netWorth":77.4,
+    "philanthropyScore":1,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Jensen Huang",
+    "netWorth":77.0,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Alice Walton",
+    "netWorth":72.3,
+    "philanthropyScore":2,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Julia Koch & family",
+    "netWorth":64.3,
+    "philanthropyScore":2,
+    "industry":"Diversified"
+  },
+  {
+    "name":"Charles Koch & family",
+    "netWorth":58.5,
+    "philanthropyScore":2,
+    "industry":"Diversified"
+  },
+  {
+    "name":"Phil Knight & family",
+    "netWorth":40.9,
+    "philanthropyScore":3,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Stephen Schwarzman",
+    "netWorth":38.8,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Ken Griffin",
+    "netWorth":36.4,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"MacKenzie Scott",
+    "netWorth":35.6,
+    "philanthropyScore":5,
+    "industry":"Technology"
+  },
+  {
+    "name":"Thomas Peterffy",
+    "netWorth":34.0,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Len Blavatnik",
+    "netWorth":32.1,
+    "philanthropyScore":2,
+    "industry":"Diversified"
+  },
+  {
+    "name":"Miriam Adelson & family",
+    "netWorth":32.0,
+    "philanthropyScore":2,
+    "industry":"Gambling & Casinos"
+  },
+  {
+    "name":"Jim Simons",
+    "netWorth":31.4,
+    "philanthropyScore":4,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Abigail Johnson",
+    "netWorth":29.0,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Lukas Walton",
+    "netWorth":28.0,
+    "philanthropyScore":1,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Jeff Yass",
+    "netWorth":27.6,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Thomas Frist, Jr. & family",
+    "netWorth":26.2,
+    "philanthropyScore":1,
+    "industry":"Healthcare"
+  },
+  {
+    "name":"Daniel Gilbert",
+    "netWorth":26.2,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"John Menard, Jr.",
+    "netWorth":25.2,
+    "philanthropyScore":1,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Diane Hendricks",
+    "netWorth":20.9,
+    "philanthropyScore":1,
+    "industry":"Construction & Engineering"
+  },
+  {
+    "name":"Eric Schmidt",
+    "netWorth":20.6,
+    "philanthropyScore":3,
+    "industry":"Technology"
+  },
+  {
+    "name":"David Tepper",
+    "netWorth":20.6,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Steve Cohen",
+    "netWorth":19.8,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Rupert Murdoch & family",
+    "netWorth":19.5,
+    "philanthropyScore":1,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Harold Hamm & family",
+    "netWorth":18.5,
+    "philanthropyScore":1,
+    "industry":"Energy"
+  },
+  {
+    "name":"Dustin Moskovitz",
+    "netWorth":18.3,
+    "philanthropyScore":4,
+    "industry":"Technology"
+  },
+  {
+    "name":"Donald Bren",
+    "netWorth":18.0,
+    "philanthropyScore":4,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Stanley Kroenke",
+    "netWorth":16.2,
+    "philanthropyScore":1,
+    "industry":"Sports"
+  },
+  {
+    "name":"Jan Koum",
+    "netWorth":16.1,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Ray Dalio",
+    "netWorth":15.4,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Philip Anschutz",
+    "netWorth":15.3,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Leonard Lauder",
+    "netWorth":15.1,
+    "philanthropyScore":3,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"George Kaiser",
+    "netWorth":14.6,
+    "philanthropyScore":4,
+    "industry":"Energy"
+  },
+  {
+    "name":"David Duffield",
+    "netWorth":14.1,
+    "philanthropyScore":3,
+    "industry":"Technology"
+  },
+  {
+    "name":"Henry Samueli",
+    "netWorth":14.1,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Leon Black",
+    "netWorth":14.0,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Jerry Jones",
+    "netWorth":13.8,
+    "philanthropyScore":1,
+    "industry":"Sports"
+  },
+  {
+    "name":"David Green & family",
+    "netWorth":13.7,
+    "philanthropyScore":2,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"David Sun",
+    "netWorth":13.6,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"John Tu",
+    "netWorth":13.6,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Christy Walton",
+    "netWorth":13.6,
+    "philanthropyScore":1,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Laurene Powell Jobs & family",
+    "netWorth":12.8,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"George Roberts",
+    "netWorth":12.7,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Jeffery Hildebrand",
+    "netWorth":12.6,
+    "philanthropyScore":2,
+    "industry":"Energy"
+  },
+  {
+    "name":"Israel Englander",
+    "netWorth":12.4,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Shahid Khan",
+    "netWorth":12.2,
+    "philanthropyScore":1,
+    "industry":"Automotive"
+  },
+  {
+    "name":"Henry Nicholas, III.",
+    "netWorth":11.9,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Edward Johnson, IV.",
+    "netWorth":11.8,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"John Doerr",
+    "netWorth":11.7,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Henry Kravis",
+    "netWorth":11.7,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Eric Smidt",
+    "netWorth":11.7,
+    "philanthropyScore":1,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Andrew Beal",
+    "netWorth":11.5,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Michael Rubin",
+    "netWorth":11.5,
+    "philanthropyScore":1,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Bubba Cathy",
+    "netWorth":11.2,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Dan Cathy",
+    "netWorth":11.2,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Trudy Cathy White",
+    "netWorth":11.2,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Melinda French Gates",
+    "netWorth":11.1,
+    "philanthropyScore":5,
+    "industry":"Technology"
+  },
+  {
+    "name":"Robert Kraft",
+    "netWorth":11.1,
+    "philanthropyScore":3,
+    "industry":"Sports"
+  },
+  {
+    "name":"Brian Chesky",
+    "netWorth":11.0,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Donald Newhouse",
+    "netWorth":11.0,
+    "philanthropyScore":2,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Patrick Ryan",
+    "netWorth":10.7,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Marc Benioff",
+    "netWorth":10.6,
+    "philanthropyScore":4,
+    "industry":"Technology"
+  },
+  {
+    "name":"Nathan Blecharczyk",
+    "netWorth":10.6,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Antony Ressler",
+    "netWorth":10.5,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Bernard Marcus",
+    "netWorth":10.3,
+    "philanthropyScore":4,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Judy Love & family",
+    "netWorth":10.2,
+    "philanthropyScore":1,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"James Goodnight",
+    "netWorth":10.1,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Nancy Walton Laurie",
+    "netWorth":10.1,
+    "philanthropyScore":1,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Stephen Ross",
+    "netWorth":10.1,
+    "philanthropyScore":2,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Ann Walton Kroenke",
+    "netWorth":10.0,
+    "philanthropyScore":1,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Mat Ishbia",
+    "netWorth":9.9,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Elizabeth Johnson",
+    "netWorth":9.9,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"John Malone",
+    "netWorth":9.8,
+    "philanthropyScore":3,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Charles Schwab",
+    "netWorth":9.8,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Jack Dangermond",
+    "netWorth":9.7,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Joe Gebbia",
+    "netWorth":9.7,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Michael Kim",
+    "netWorth":9.7,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Harry Stine",
+    "netWorth":9.7,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"John Morris",
+    "netWorth":9.5,
+    "philanthropyScore":3,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Tilman Fertitta",
+    "netWorth":9.4,
+    "philanthropyScore":2,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Robert F. Smith",
+    "netWorth":9.2,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Tom Gores",
+    "netWorth":9.1,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Ralph Lauren",
+    "netWorth":9.0,
+    "philanthropyScore":1,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"J. Christopher Reyes",
+    "netWorth":9.0,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Jude Reyes",
+    "netWorth":9.0,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Ernest Garcia, II.",
+    "netWorth":8.9,
+    "philanthropyScore":1,
+    "industry":"Automotive"
+  },
+  {
+    "name":"Robert Rowling",
+    "netWorth":8.9,
+    "philanthropyScore":2,
+    "industry":"Service"
+  },
+  {
+    "name":"Orlando Bravo",
+    "netWorth":8.7,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Ken Fisher",
+    "netWorth":8.7,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Ken Langone",
+    "netWorth":8.7,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Arthur Blank",
+    "netWorth":8.4,
+    "philanthropyScore":3,
+    "industry":"Sports"
+  },
+  {
+    "name":"Josh Harris",
+    "netWorth":8.4,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Steven Rales",
+    "netWorth":8.3,
+    "philanthropyScore":2,
+    "industry":"Manufacturing"
+  },
+  {
+    "name":"David Shaw",
+    "netWorth":8.3,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Elisabeth DeLuca & family",
+    "netWorth":8.2,
+    "philanthropyScore":2,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Ronda Stryker",
+    "netWorth":8.2,
+    "philanthropyScore":3,
+    "industry":"Healthcare"
+  },
+  {
+    "name":"Paul Tudor Jones, II.",
+    "netWorth":8.1,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Richard Kinder",
+    "netWorth":8.1,
+    "philanthropyScore":3,
+    "industry":"Energy"
+  },
+  {
+    "name":"Leonard Stern",
+    "netWorth":8.1,
+    "philanthropyScore":1,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Micky Arison",
+    "netWorth":8.0,
+    "philanthropyScore":2,
+    "industry":"Service"
+  },
+  {
+    "name":"Rocco Commisso",
+    "netWorth":8.0,
+    "philanthropyScore":1,
+    "industry":"Telecom"
+  },
+  {
+    "name":"David Geffen",
+    "netWorth":8.0,
+    "philanthropyScore":3,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Jimmy Haslam",
+    "netWorth":8.0,
+    "philanthropyScore":2,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Tamara Gustavson",
+    "netWorth":7.8,
+    "philanthropyScore":1,
+    "industry":"Service"
+  },
+  {
+    "name":"John Brown",
+    "netWorth":7.7,
+    "philanthropyScore":2,
+    "industry":"Healthcare"
+  },
+  {
+    "name":"Bruce Kovner",
+    "netWorth":7.7,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Igor Olenicoff",
+    "netWorth":7.7,
+    "philanthropyScore":1,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Randa Duncan Williams",
+    "netWorth":7.7,
+    "philanthropyScore":1,
+    "industry":"Energy"
+  },
+  {
+    "name":"Dannine Avara",
+    "netWorth":7.6,
+    "philanthropyScore":1,
+    "industry":"Energy"
+  },
+  {
+    "name":"Charles Butt",
+    "netWorth":7.6,
+    "philanthropyScore":4,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Scott Duncan",
+    "netWorth":7.6,
+    "philanthropyScore":1,
+    "industry":"Energy"
+  },
+  {
+    "name":"Milane Frantz",
+    "netWorth":7.6,
+    "philanthropyScore":1,
+    "industry":"Energy"
+  },
+  {
+    "name":"Thomas Hagen",
+    "netWorth":7.6,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"David Steward",
+    "netWorth":7.6,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Jeff Greene",
+    "netWorth":7.5,
+    "philanthropyScore":1,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Peter Thiel",
+    "netWorth":7.5,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Judy Faulkner",
+    "netWorth":7.4,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Jonathan Gray",
+    "netWorth":7.4,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Don Hankey",
+    "netWorth":7.4,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Pauline MacMillan Keinath",
+    "netWorth":7.3,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"John Overdeck",
+    "netWorth":7.3,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"David Siegel",
+    "netWorth":7.3,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Charles Simonyi",
+    "netWorth":7.3,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Stephen Bisciotti",
+    "netWorth":7.2,
+    "philanthropyScore":2,
+    "industry":"Sports"
+  },
+  {
+    "name":"Ray Lee Hunt",
+    "netWorth":7.2,
+    "philanthropyScore":2,
+    "industry":"Energy"
+  },
+  {
+    "name":"Douglas Leone",
+    "netWorth":7.2,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Robert Rich, Jr.",
+    "netWorth":7.2,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Edward Roski, Jr.",
+    "netWorth":7.1,
+    "philanthropyScore":1,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Edythe Broad & family",
+    "netWorth":7.0,
+    "philanthropyScore":5,
+    "industry":"Diversified"
+  },
+  {
+    "name":"Arthur Dantchik",
+    "netWorth":7.0,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Dennis Washington",
+    "netWorth":7.0,
+    "philanthropyScore":3,
+    "industry":"Logistics"
+  },
+  {
+    "name":"Bert Beveridge",
+    "netWorth":6.8,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Terrence Pegula",
+    "netWorth":6.8,
+    "philanthropyScore":2,
+    "industry":"Energy"
+  },
+  {
+    "name":"Vinod Khosla",
+    "netWorth":6.7,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Thomas Pritzker",
+    "netWorth":6.7,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Lynsi Snyder",
+    "netWorth":6.7,
+    "philanthropyScore":2,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"George Soros",
+    "netWorth":6.7,
+    "philanthropyScore":5,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Joe Mansueto",
+    "netWorth":6.5,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Michael Milken",
+    "netWorth":6.5,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Marc Rowan",
+    "netWorth":6.5,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Mark Stevens",
+    "netWorth":6.5,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"David Bonderman",
+    "netWorth":6.4,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Scott Cook",
+    "netWorth":6.4,
+    "philanthropyScore":3,
+    "industry":"Technology"
+  },
+  {
+    "name":"Dan Friedkin",
+    "netWorth":6.4,
+    "philanthropyScore":3,
+    "industry":"Automotive"
+  },
+  {
+    "name":"Annette Lerner & family",
+    "netWorth":6.4,
+    "philanthropyScore":1,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Robert Pera",
+    "netWorth":6.4,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Gary Rollins",
+    "netWorth":6.4,
+    "philanthropyScore":2,
+    "industry":"Service"
+  },
+  {
+    "name":"Neil Bluhm",
+    "netWorth":6.3,
+    "philanthropyScore":2,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Pierre Omidyar",
+    "netWorth":6.3,
+    "philanthropyScore":5,
+    "industry":"Technology"
+  },
+  {
+    "name":"Don Vultaggio & family",
+    "netWorth":6.3,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Stanley Druckenmiller",
+    "netWorth":6.2,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Patrick Soon-Shiong",
+    "netWorth":6.2,
+    "philanthropyScore":2,
+    "industry":"Healthcare"
+  },
+  {
+    "name":"Daniel Ziff",
+    "netWorth":6.2,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Dirk Ziff",
+    "netWorth":6.2,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Robert Ziff",
+    "netWorth":6.2,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Gayle Benson",
+    "netWorth":6.1,
+    "philanthropyScore":2,
+    "industry":"Sports"
+  },
+  {
+    "name":"Philippe Laffont",
+    "netWorth":6.1,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Blair Parry-Okeden",
+    "netWorth":6.1,
+    "philanthropyScore":2,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Karen Pritzker",
+    "netWorth":6.1,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Paul Singer",
+    "netWorth":6.1,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Jim Kennedy",
+    "netWorth":6.0,
+    "philanthropyScore":3,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Leo Koguan",
+    "netWorth":6.0,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Mark Walter",
+    "netWorth":6.0,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Kelcy Warren",
+    "netWorth":6.0,
+    "philanthropyScore":2,
+    "industry":"Energy"
+  },
+  {
+    "name":"Les Wexner & family",
+    "netWorth":6.0,
+    "philanthropyScore":3,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Jim Davis & family",
+    "netWorth":5.9,
+    "philanthropyScore":2,
+    "industry":"Manufacturing"
+  },
+  {
+    "name":"Donald Horton & family",
+    "netWorth":5.9,
+    "philanthropyScore":1,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Carl Icahn",
+    "netWorth":5.9,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Jeff Rothschild",
+    "netWorth":5.9,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Robert Faith",
+    "netWorth":5.8,
+    "philanthropyScore":1,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"John A. Sobrato & family",
+    "netWorth":5.8,
+    "philanthropyScore":4,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Denise York & family",
+    "netWorth":5.8,
+    "philanthropyScore":1,
+    "industry":"Sports"
+  },
+  {
+    "name":"Chase Coleman, III.",
+    "netWorth":5.7,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Tim Sweeney",
+    "netWorth":5.7,
+    "philanthropyScore":1,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Tom Golisano",
+    "netWorth":5.6,
+    "philanthropyScore":2,
+    "industry":"Service"
+  },
+  {
+    "name":"Janice McNair",
+    "netWorth":5.6,
+    "philanthropyScore":2,
+    "industry":"Sports"
+  },
+  {
+    "name":"Michael Moritz",
+    "netWorth":5.6,
+    "philanthropyScore":4,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Lynda Resnick",
+    "netWorth":5.6,
+    "philanthropyScore":3,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Stewart Resnick",
+    "netWorth":5.6,
+    "philanthropyScore":3,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Fred Smith",
+    "netWorth":5.6,
+    "philanthropyScore":1,
+    "industry":"Logistics"
+  },
+  {
+    "name":"Ty Warner",
+    "netWorth":5.6,
+    "philanthropyScore":2,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"George Lucas",
+    "netWorth":5.5,
+    "philanthropyScore":4,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Doug Meijer & family",
+    "netWorth":5.5,
+    "philanthropyScore":2,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Hank Meijer & family",
+    "netWorth":5.5,
+    "philanthropyScore":2,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Mark Meijer & family",
+    "netWorth":5.5,
+    "philanthropyScore":2,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Mark Cuban",
+    "netWorth":5.4,
+    "philanthropyScore":1,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Archie Aldis Emmerson & family",
+    "netWorth":5.4,
+    "philanthropyScore":2,
+    "industry":"Manufacturing"
+  },
+  {
+    "name":"Robert Hale, Jr.",
+    "netWorth":5.4,
+    "philanthropyScore":3,
+    "industry":"Telecom"
+  },
+  {
+    "name":"Thomas Secunda",
+    "netWorth":5.4,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Jon Stryker",
+    "netWorth":5.4,
+    "philanthropyScore":4,
+    "industry":"Healthcare"
+  },
+  {
+    "name":"Robert Bass",
+    "netWorth":5.3,
+    "philanthropyScore":2,
+    "industry":"Energy"
+  },
+  {
+    "name":"Rick Caruso",
+    "netWorth":5.3,
+    "philanthropyScore":2,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Charles B. Johnson",
+    "netWorth":5.3,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Thai Lee",
+    "netWorth":5.3,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Ronald Wanek",
+    "netWorth":5.3,
+    "philanthropyScore":2,
+    "industry":"Manufacturing"
+  },
+  {
+    "name":"Charles Dolan & family",
+    "netWorth":5.2,
+    "philanthropyScore":2,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Min Kao & family",
+    "netWorth":5.2,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Elizabeth Uihlein",
+    "netWorth":5.2,
+    "philanthropyScore":2,
+    "industry":"Manufacturing"
+  },
+  {
+    "name":"Richard Uihlein",
+    "netWorth":5.2,
+    "philanthropyScore":2,
+    "industry":"Manufacturing"
+  },
+  {
+    "name":"Russ Weiner",
+    "netWorth":5.2,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Ron Baron",
+    "netWorth":5.1,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Dagmar Dolby & family",
+    "netWorth":5.1,
+    "philanthropyScore":3,
+    "industry":"Technology"
+  },
+  {
+    "name":"Bill Haslam",
+    "netWorth":5.1,
+    "philanthropyScore":1,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"John Henry",
+    "netWorth":5.1,
+    "philanthropyScore":1,
+    "industry":"Sports"
+  },
+  {
+    "name":"Sami Mnaymneh",
+    "netWorth":5.1,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Jean (Gigi) Pritzker",
+    "netWorth":5.1,
+    "philanthropyScore":2,
+    "industry":"Service"
+  },
+  {
+    "name":"Romesh T. Wadhwani",
+    "netWorth":5.1,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Ben Chestnut",
+    "netWorth":5.0,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Helen Johnson-Leipold",
+    "netWorth":5.0,
+    "philanthropyScore":2,
+    "industry":"Manufacturing"
+  },
+  {
+    "name":"John Sall",
+    "netWorth":5.0,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Ken Xie",
+    "netWorth":5.0,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Margot Birmingham Perot",
+    "netWorth":4.9,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Jack Dorsey",
+    "netWorth":4.9,
+    "philanthropyScore":4,
+    "industry":"Technology"
+  },
+  {
+    "name":"Johnelle Hunt",
+    "netWorth":4.9,
+    "philanthropyScore":2,
+    "industry":"Logistics"
+  },
+  {
+    "name":"H. Fisk Johnson",
+    "netWorth":4.9,
+    "philanthropyScore":2,
+    "industry":"Manufacturing"
+  },
+  {
+    "name":"S. Curtis Johnson",
+    "netWorth":4.9,
+    "philanthropyScore":2,
+    "industry":"Manufacturing"
+  },
+  {
+    "name":"Winifred J. Marquart",
+    "netWorth":4.9,
+    "philanthropyScore":2,
+    "industry":"Manufacturing"
+  },
+  {
+    "name":"Arturo Moreno",
+    "netWorth":4.9,
+    "philanthropyScore":2,
+    "industry":"Sports"
+  },
+  {
+    "name":"Mitchell Rales",
+    "netWorth":4.9,
+    "philanthropyScore":2,
+    "industry":"Manufacturing"
+  },
+  {
+    "name":"Trevor Rees-Jones",
+    "netWorth":4.9,
+    "philanthropyScore":4,
+    "industry":"Energy"
+  },
+  {
+    "name":"Herbert Wertheim",
+    "netWorth":4.9,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Herb Simon",
+    "netWorth":4.8,
+    "philanthropyScore":2,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Steven Spielberg",
+    "netWorth":4.8,
+    "philanthropyScore":3,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"William Berkley",
+    "netWorth":4.7,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"W. Herbert Hunt",
+    "netWorth":4.7,
+    "philanthropyScore":1,
+    "industry":"Energy"
+  },
+  {
+    "name":"Jim Kavanaugh",
+    "netWorth":4.7,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Ronald Lauder",
+    "netWorth":4.6,
+    "philanthropyScore":3,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Jeffrey Lurie & family",
+    "netWorth":4.6,
+    "philanthropyScore":2,
+    "industry":"Sports"
+  },
+  {
+    "name":"Gwendolyn Sontheim Meyer",
+    "netWorth":4.6,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Jim Coulter",
+    "netWorth":4.5,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Jeff T. Green",
+    "netWorth":4.5,
+    "philanthropyScore":1,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Jeremy Jacobs, Sr. & family",
+    "netWorth":4.5,
+    "philanthropyScore":2,
+    "industry":"Service"
+  },
+  {
+    "name":"Lynn Schusterman & family",
+    "netWorth":4.5,
+    "philanthropyScore":5,
+    "industry":"Energy"
+  },
+  {
+    "name":"Jeff Skoll",
+    "netWorth":4.5,
+    "philanthropyScore":5,
+    "industry":"Technology"
+  },
+  {
+    "name":"Jim Davis",
+    "netWorth":4.4,
+    "philanthropyScore":3,
+    "industry":"Service"
+  },
+  {
+    "name":"Reed Hastings",
+    "netWorth":4.4,
+    "philanthropyScore":3,
+    "industry":"Technology"
+  },
+  {
+    "name":"Martha Ingram & family",
+    "netWorth":4.4,
+    "philanthropyScore":1,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"James Irsay",
+    "netWorth":4.4,
+    "philanthropyScore":1,
+    "industry":"Sports"
+  },
+  {
+    "name":"Rupert Johnson, Jr.",
+    "netWorth":4.4,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Isaac Perlmutter",
+    "netWorth":4.4,
+    "philanthropyScore":1,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Dan Snyder",
+    "netWorth":4.4,
+    "philanthropyScore":1,
+    "industry":"Sports"
+  },
+  {
+    "name":"William Ackman",
+    "netWorth":4.3,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"John Catsimatidis",
+    "netWorth":4.3,
+    "philanthropyScore":1,
+    "industry":"Energy"
+  },
+  {
+    "name":"Daniel D'Aniello",
+    "netWorth":4.3,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Michael Xie",
+    "netWorth":4.3,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Austen Cargill, II.",
+    "netWorth":4.2,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"James Cargill, II.",
+    "netWorth":4.2,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Barry Diller",
+    "netWorth":4.2,
+    "philanthropyScore":3,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Rajiv Jain",
+    "netWorth":4.2,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Peter Kellogg",
+    "netWorth":4.2,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Marianne Liebmann",
+    "netWorth":4.2,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Steven Udvar-Hazy",
+    "netWorth":4.2,
+    "philanthropyScore":3,
+    "industry":"Service"
+  },
+  {
+    "name":"Hamilton James & family",
+    "netWorth":4.1,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Richard Schulze",
+    "netWorth":4.1,
+    "philanthropyScore":3,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"James Chambers",
+    "netWorth":4.0,
+    "philanthropyScore":2,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Marian Ilitch",
+    "netWorth":4.0,
+    "philanthropyScore":3,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Roger Penske",
+    "netWorth":4.0,
+    "philanthropyScore":1,
+    "industry":"Automotive"
+  },
+  {
+    "name":"Katharine Rayner",
+    "netWorth":4.0,
+    "philanthropyScore":2,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Donald Sterling",
+    "netWorth":4.0,
+    "philanthropyScore":1,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Margaretta Taylor",
+    "netWorth":4.0,
+    "philanthropyScore":2,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Robert Duggan",
+    "netWorth":3.9,
+    "philanthropyScore":1,
+    "industry":"Healthcare"
+  },
+  {
+    "name":"Joseph Grendys",
+    "netWorth":3.9,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Eric Lefkofsky",
+    "netWorth":3.9,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Gail Miller",
+    "netWorth":3.9,
+    "philanthropyScore":2,
+    "industry":"Automotive"
+  },
+  {
+    "name":"David Rubenstein",
+    "netWorth":3.9,
+    "philanthropyScore":4,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Thomas Siebel",
+    "netWorth":3.9,
+    "philanthropyScore":4,
+    "industry":"Technology"
+  },
+  {
+    "name":"Pat Stryker",
+    "netWorth":3.9,
+    "philanthropyScore":3,
+    "industry":"Healthcare"
+  },
+  {
+    "name":"Charles Zegar",
+    "netWorth":3.9,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Sid Bass",
+    "netWorth":3.8,
+    "philanthropyScore":2,
+    "industry":"Energy"
+  },
+  {
+    "name":"James Clark",
+    "netWorth":3.8,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"William Conway, Jr.",
+    "netWorth":3.8,
+    "philanthropyScore":4,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Jose E. Feliciano",
+    "netWorth":3.8,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"J. Joe Ricketts & family",
+    "netWorth":3.8,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Barry Sternlicht",
+    "netWorth":3.8,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Hayes Barnard",
+    "netWorth":3.7,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Mary Alice Dorrance Malone",
+    "netWorth":3.7,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"John Middleton",
+    "netWorth":3.7,
+    "philanthropyScore":2,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Eren Ozmen",
+    "netWorth":3.7,
+    "philanthropyScore":1,
+    "industry":"Manufacturing"
+  },
+  {
+    "name":"H. Ross Perot, Jr.",
+    "netWorth":3.7,
+    "philanthropyScore":2,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Anthony Pritzker",
+    "netWorth":3.7,
+    "philanthropyScore":3,
+    "industry":"Service"
+  },
+  {
+    "name":"Penny Pritzker",
+    "netWorth":3.7,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Vincent Viola",
+    "netWorth":3.7,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Daniel Och",
+    "netWorth":3.6,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Fatih Ozmen",
+    "netWorth":3.6,
+    "philanthropyScore":1,
+    "industry":"Manufacturing"
+  },
+  {
+    "name":"Bob Parsons",
+    "netWorth":3.6,
+    "philanthropyScore":3,
+    "industry":"Technology"
+  },
+  {
+    "name":"Ira Rennert",
+    "netWorth":3.6,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Rodger Riney & family",
+    "netWorth":3.6,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Jon Yarbrough",
+    "netWorth":3.6,
+    "philanthropyScore":1,
+    "industry":"Gambling & Casinos"
+  },
+  {
+    "name":"Norman Braman",
+    "netWorth":3.5,
+    "philanthropyScore":2,
+    "industry":"Automotive"
+  },
+  {
+    "name":"David Filo",
+    "netWorth":3.5,
+    "philanthropyScore":3,
+    "industry":"Technology"
+  },
+  {
+    "name":"Amos Hostetter, Jr.",
+    "netWorth":3.5,
+    "philanthropyScore":5,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Richard LeFrak & family",
+    "netWorth":3.5,
+    "philanthropyScore":2,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"John Paulson",
+    "netWorth":3.5,
+    "philanthropyScore":4,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"J.B. Pritzker",
+    "netWorth":3.5,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Leonard Schleifer",
+    "netWorth":3.5,
+    "philanthropyScore":1,
+    "industry":"Healthcare"
+  },
+  {
+    "name":"Carl Thoma",
+    "netWorth":3.5,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Jonathan Nelson",
+    "netWorth":3.4,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Stewart Rahr",
+    "netWorth":3.4,
+    "philanthropyScore":3,
+    "industry":"Healthcare"
+  },
+  {
+    "name":"Steve Wynn",
+    "netWorth":3.4,
+    "philanthropyScore":1,
+    "industry":"Gambling & Casinos"
+  },
+  {
+    "name":"John Arnold",
+    "netWorth":3.3,
+    "philanthropyScore":5,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Seth Boro",
+    "netWorth":3.3,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"J. Hyatt Brown",
+    "netWorth":3.3,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Scott Crabill",
+    "netWorth":3.3,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Edward DeBartolo, Jr.",
+    "netWorth":3.3,
+    "philanthropyScore":2,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Stewart Horejsi & family",
+    "netWorth":3.3,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Daniel Loeb",
+    "netWorth":3.3,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Holden Spaht",
+    "netWorth":3.3,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Frank VanderSloot",
+    "netWorth":3.3,
+    "philanthropyScore":3,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Nicolas Berggruen",
+    "netWorth":3.2,
+    "philanthropyScore":2,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"George Bishop",
+    "netWorth":3.2,
+    "philanthropyScore":1,
+    "industry":"Energy"
+  },
+  {
+    "name":"Todd Christopher",
+    "netWorth":3.2,
+    "philanthropyScore":1,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Stephen Deckoff",
+    "netWorth":3.2,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"J. Tomilson Hill",
+    "netWorth":3.2,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Michael Jordan",
+    "netWorth":3.2,
+    "philanthropyScore":1,
+    "industry":"Sports"
+  },
+  {
+    "name":"George Kurtz",
+    "netWorth":3.2,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Chris Larsen",
+    "netWorth":3.2,
+    "philanthropyScore":4,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Pablo Legorreta",
+    "netWorth":3.2,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Drayton McLane, Jr.",
+    "netWorth":3.2,
+    "philanthropyScore":2,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Robert Sands",
+    "netWorth":3.2,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Warren Stephens",
+    "netWorth":3.2,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Todd Wanek",
+    "netWorth":3.2,
+    "philanthropyScore":2,
+    "industry":"Manufacturing"
+  },
+  {
+    "name":"Brian Acton",
+    "netWorth":3.1,
+    "philanthropyScore":4,
+    "industry":"Technology"
+  },
+  {
+    "name":"George Argyros & family",
+    "netWorth":3.1,
+    "philanthropyScore":3,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Aneel Bhusri",
+    "netWorth":3.1,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Andrew Cherng",
+    "netWorth":3.1,
+    "philanthropyScore":2,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Peggy Cherng",
+    "netWorth":3.1,
+    "philanthropyScore":2,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Bennett Dorrance",
+    "netWorth":3.1,
+    "philanthropyScore":2,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Frank Fertitta, III.",
+    "netWorth":3.1,
+    "philanthropyScore":2,
+    "industry":"Sports"
+  },
+  {
+    "name":"Geoffrey Palmer",
+    "netWorth":3.1,
+    "philanthropyScore":1,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Richard Peery",
+    "netWorth":3.1,
+    "philanthropyScore":2,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Howard Schultz",
+    "netWorth":3.1,
+    "philanthropyScore":3,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Jerry Speyer & family",
+    "netWorth":3.1,
+    "philanthropyScore":1,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Evan Spiegel",
+    "netWorth":3.1,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Meg Whitman",
+    "netWorth":3.1,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Ron Burkle",
+    "netWorth":3.0,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Charles Cohen",
+    "netWorth":3.0,
+    "philanthropyScore":1,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Ray Davis",
+    "netWorth":3.0,
+    "philanthropyScore":2,
+    "industry":"Energy"
+  },
+  {
+    "name":"John Paul DeJoria",
+    "netWorth":3.0,
+    "philanthropyScore":2,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"James Duff",
+    "netWorth":3.0,
+    "philanthropyScore":1,
+    "industry":"Diversified"
+  },
+  {
+    "name":"Thomas Duff",
+    "netWorth":3.0,
+    "philanthropyScore":1,
+    "industry":"Diversified"
+  },
+  {
+    "name":"Lorenzo Fertitta",
+    "netWorth":3.0,
+    "philanthropyScore":2,
+    "industry":"Sports"
+  },
+  {
+    "name":"John Fisher",
+    "netWorth":3.0,
+    "philanthropyScore":2,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Phillip T. (Terry) Ragon",
+    "netWorth":3.0,
+    "philanthropyScore":4,
+    "industry":"Technology"
+  },
+  {
+    "name":"Haim Saban",
+    "netWorth":3.0,
+    "philanthropyScore":3,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Thomas Tull",
+    "netWorth":3.0,
+    "philanthropyScore":2,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Glenn Dubin",
+    "netWorth":2.9,
+    "philanthropyScore":4,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"C. Dean Metropoulos",
+    "netWorth":2.9,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Daniel Sundheim",
+    "netWorth":2.9,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Glen Taylor",
+    "netWorth":2.9,
+    "philanthropyScore":1,
+    "industry":"Service"
+  },
+  {
+    "name":"William Young",
+    "netWorth":2.9,
+    "philanthropyScore":1,
+    "industry":"Manufacturing"
+  },
+  {
+    "name":"Leon G. Cooperman",
+    "netWorth":2.8,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Eleanor Butt Crook & family",
+    "netWorth":2.8,
+    "philanthropyScore":3,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Bobby Murphy",
+    "netWorth":2.8,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Sean Parker",
+    "netWorth":2.8,
+    "philanthropyScore":4,
+    "industry":"Technology"
+  },
+  {
+    "name":"Alejandro Santo Domingo",
+    "netWorth":2.8,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Oprah Winfrey",
+    "netWorth":2.8,
+    "philanthropyScore":2,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Kenneth Feld & family",
+    "netWorth":2.7,
+    "philanthropyScore":1,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Gerald Ford",
+    "netWorth":2.7,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"John Pritzker",
+    "netWorth":2.7,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Phil Ruffin",
+    "netWorth":2.7,
+    "philanthropyScore":1,
+    "industry":"Diversified"
+  },
+  {
+    "name":"Jeff Sutton",
+    "netWorth":2.7,
+    "philanthropyScore":1,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Cameron Winklevoss",
+    "netWorth":2.7,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Tyler Winklevoss",
+    "netWorth":2.7,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"David Baszucki",
+    "netWorth":2.6,
+    "philanthropyScore":2,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Vincent McMahon",
+    "netWorth":2.6,
+    "philanthropyScore":1,
+    "industry":"Sports"
+  },
+  {
+    "name":"Daniel Pritzker",
+    "netWorth":2.6,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Kavitark Ram Shriram",
+    "netWorth":2.6,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Alan Trefler",
+    "netWorth":2.6,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Jerry Yang",
+    "netWorth":2.6,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Mortimer Zuckerman",
+    "netWorth":2.6,
+    "philanthropyScore":4,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Edward Bass",
+    "netWorth":2.5,
+    "philanthropyScore":3,
+    "industry":"Energy"
+  },
+  {
+    "name":"Riley Bechtel & family",
+    "netWorth":2.5,
+    "philanthropyScore":1,
+    "industry":"Construction & Engineering"
+  },
+  {
+    "name":"Stephen Mandel, Jr.",
+    "netWorth":2.5,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Richard Sands",
+    "netWorth":2.5,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Scott Shleifer",
+    "netWorth":2.5,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Ted Turner",
+    "netWorth":2.5,
+    "philanthropyScore":5,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"John Tyson & family",
+    "netWorth":2.5,
+    "philanthropyScore":2,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"S. Daniel Abraham",
+    "netWorth":2.4,
+    "philanthropyScore":3,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Bruce Karsh",
+    "netWorth":2.4,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Steven Sarowitz",
+    "netWorth":2.4,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"William Stone",
+    "netWorth":2.4,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Noam Gottesman",
+    "netWorth":2.3,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Donald Trump",
+    "netWorth":2.3,
+    "philanthropyScore":1,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"David Walentas",
+    "netWorth":2.3,
+    "philanthropyScore":1,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Anita Zucker",
+    "netWorth":2.3,
+    "philanthropyScore":2,
+    "industry":"Manufacturing"
+  },
+  {
+    "name":"Lee Bass",
+    "netWorth":2.2,
+    "philanthropyScore":2,
+    "industry":"Energy"
+  },
+  {
+    "name":"Timothy Boyle",
+    "netWorth":2.2,
+    "philanthropyScore":1,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Alec Gores",
+    "netWorth":2.2,
+    "philanthropyScore":1,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Larry Robbins",
+    "netWorth":2.2,
+    "philanthropyScore":3,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"James Dinan",
+    "netWorth":2.1,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Gordon Getty",
+    "netWorth":2.1,
+    "philanthropyScore":3,
+    "industry":"Energy"
+  },
+  {
+    "name":"James Leprino",
+    "netWorth":2.1,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Barbara Tyson",
+    "netWorth":2.1,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Elaine Wynn",
+    "netWorth":2.1,
+    "philanthropyScore":3,
+    "industry":"Gambling & Casinos"
+  },
+  {
+    "name":"Amy Wyss",
+    "netWorth":2.0,
+    "philanthropyScore":2,
+    "industry":"Healthcare"
+  },
+  {
+    "name":"Leslie Alexander",
+    "netWorth":1.9,
+    "philanthropyScore":1,
+    "industry":"Sports"
+  },
+  {
+    "name":"Evan Williams",
+    "netWorth":1.9,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Clifford Asness",
+    "netWorth":1.8,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Jim Breyer",
+    "netWorth":1.8,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Phillip Frost",
+    "netWorth":1.8,
+    "philanthropyScore":3,
+    "industry":"Healthcare"
+  },
+  {
+    "name":"Jim McKelvey",
+    "netWorth":1.8,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Jerry Moyes & family",
+    "netWorth":1.8,
+    "philanthropyScore":1,
+    "industry":"Logistics"
+  },
+  {
+    "name":"Ronald Perelman",
+    "netWorth":1.8,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"David Zalik",
+    "netWorth":1.8,
+    "philanthropyScore":3,
+    "industry":"Technology"
+  },
+  {
+    "name":"Jorge Perez",
+    "netWorth":1.7,
+    "philanthropyScore":3,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Andres Santo Domingo",
+    "netWorth":1.7,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Anthony Wood",
+    "netWorth":1.7,
+    "philanthropyScore":1,
+    "industry":"Technology"
+  },
+  {
+    "name":"Nicholas Pritzker",
+    "netWorth":1.6,
+    "philanthropyScore":2,
+    "industry":"Finance & Investments"
+  },
+  {
+    "name":"Chad Richison",
+    "netWorth":1.6,
+    "philanthropyScore":2,
+    "industry":"Technology"
+  },
+  {
+    "name":"Doris Fisher",
+    "netWorth":1.5,
+    "philanthropyScore":2,
+    "industry":"Fashion & Retail"
+  },
+  {
+    "name":"Randal J. Kirk",
+    "netWorth":1.5,
+    "philanthropyScore":1,
+    "industry":"Healthcare"
+  },
+  {
+    "name":"Timothy Springer",
+    "netWorth":1.5,
+    "philanthropyScore":1,
+    "industry":"Healthcare"
+  },
+  {
+    "name":"Jeff Tangney",
+    "netWorth":1.5,
+    "philanthropyScore":1,
+    "industry":"Healthcare"
+  },
+  {
+    "name":"Noubar Afeyan",
+    "netWorth":1.4,
+    "philanthropyScore":1,
+    "industry":"Healthcare"
+  },
+  {
+    "name":"Charles Ergen",
+    "netWorth":1.4,
+    "philanthropyScore":1,
+    "industry":"Media & Entertainment"
+  },
+  {
+    "name":"Jim Koch",
+    "netWorth":1.4,
+    "philanthropyScore":1,
+    "industry":"Food & Beverage"
+  },
+  {
+    "name":"Jane Goldman",
+    "netWorth":1.1,
+    "philanthropyScore":1,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Amy Goldman Fowler",
+    "netWorth":1.1,
+    "philanthropyScore":1,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Diane Kemper",
+    "netWorth":1.1,
+    "philanthropyScore":1,
+    "industry":"Real Estate"
+  },
+  {
+    "name":"Kenneth Tuchman",
+    "netWorth":1.1,
+    "philanthropyScore":1,
+    "industry":"Service"
+  }
+]

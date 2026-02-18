@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>US States vs. World Economies — GDP Rankings, 1997–2024</title>
+<style>
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf') format('opentype'); font-weight: 400; }
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf') format('opentype'); font-weight: 700; }
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf') format('opentype'); font-weight: 300; }
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf') format('opentype'); font-weight: 500; }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F6F7F3;
+    font-family: 'ABC Oracle Edu', -apple-system, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .tooltip {
+    position: absolute; pointer-events: none;
+    background: #3D3733; color: #F6F7F3;
+    padding: 8px 12px; border-radius: 4px;
+    font-family: 'ABC Oracle Edu', sans-serif;
+    font-size: 13px; line-height: 1.4;
+    opacity: 0; transition: opacity 0.15s; z-index: 10;
+  }
+</style>
+</head>
+<body>
+<div class="tooltip" id="tooltip"></div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+
+const DATA = [{"name":"United States","type":"country","points":[{"year":1997,"rank":1,"value":8577.55},{"year":1998,"rank":1,"value":9062.82},{"year":1999,"rank":1,"value":9631.17},{"year":2000,"rank":1,"value":10250.95},{"year":2001,"rank":1,"value":10581.93},{"year":2002,"rank":1,"value":10929.11},{"year":2003,"rank":1,"value":11456.44},{"year":2004,"rank":1,"value":12217.19},{"year":2005,"rank":1,"value":13039.2},{"year":2006,"rank":1,"value":13815.59},{"year":2007,"rank":1,"value":14474.23},{"year":2008,"rank":1,"value":14769.86},{"year":2009,"rank":1,"value":14478.06},{"year":2010,"rank":1,"value":15048.96},{"year":2011,"rank":1,"value":15599.73},{"year":2012,"rank":1,"value":16253.97},{"year":2013,"rank":1,"value":16843.19},{"year":2014,"rank":1,"value":17550.68},{"year":2015,"rank":1,"value":18206.02},{"year":2016,"rank":1,"value":18695.11},{"year":2017,"rank":1,"value":19477.34},{"year":2018,"rank":1,"value":20533.06},{"year":2019,"rank":1,"value":21380.98},{"year":2020,"rank":1,"value":21060.47},{"year":2021,"rank":1,"value":23315.08},{"year":2022,"rank":1,"value":25604.85},{"year":2023,"rank":1,"value":27292.17},{"year":2024,"rank":1,"value":28750.96}]},{"name":"Japan","type":"country","points":[{"year":1997,"rank":2,"value":4492.45},{"year":1998,"rank":2,"value":4098.36},{"year":1999,"rank":2,"value":4635.98},{"year":2000,"rank":2,"value":4968.36},{"year":2001,"rank":2,"value":4374.71},{"year":2002,"rank":2,"value":4182.85},{"year":2003,"rank":2,"value":4519.56},{"year":2004,"rank":2,"value":4893.12},{"year":2005,"rank":2,"value":4831.47},{"year":2006,"rank":2,"value":4601.66},{"year":2007,"rank":2,"value":4579.75},{"year":2008,"rank":2,"value":5106.68},{"year":2009,"rank":2,"value":5289.49},{"year":2010,"rank":3,"value":5759.07},{"year":2011,"rank":3,"value":6233.15},{"year":2012,"rank":3,"value":6272.36},{"year":2013,"rank":3,"value":5212.33},{"year":2014,"rank":3,"value":4896.99},{"year":2015,"rank":3,"value":4444.93},{"year":2016,"rank":3,"value":5003.68},{"year":2017,"rank":3,"value":4930.84},{"year":2018,"rank":3,"value":5040.88},{"year":2019,"rank":3,"value":5117.99},{"year":2020,"rank":3,"value":5054.07},{"year":2021,"rank":3,"value":5039.15},{"year":2022,"rank":3,"value":4262.46},{"year":2023,"rank":4,"value":4213.17},{"year":2024,"rank":5,"value":4027.6}]},{"name":"Germany","type":"country","points":[{"year":1997,"rank":3,"value":2218.79},{"year":1998,"rank":3,"value":2247.76},{"year":1999,"rank":3,"value":2213.87},{"year":2000,"rank":3,"value":1966.98},{"year":2001,"rank":3,"value":1966.38},{"year":2002,"rank":3,"value":2102.35},{"year":2003,"rank":3,"value":2534.72},{"year":2004,"rank":3,"value":2852.32},{"year":2005,"rank":3,"value":2893.39},{"year":2006,"rank":3,"value":3046.31},{"year":2007,"rank":4,"value":3484.06},{"year":2008,"rank":4,"value":3808.2},{"year":2009,"rank":4,"value":3478.55},{"year":2010,"rank":4,"value":3467.09},{"year":2011,"rank":4,"value":3823.58},{"year":2012,"rank":4,"value":3596.48},{"year":2013,"rank":4,"value":3807.02},{"year":2014,"rank":4,"value":3964.87},{"year":2015,"rank":4,"value":3425.1},{"year":2016,"rank":4,"value":3536.79},{"year":2017,"rank":4,"value":3765.35},{"year":2018,"rank":4,"value":4055.43},{"year":2019,"rank":4,"value":3959.89},{"year":2020,"rank":4,"value":3941.4},{"year":2021,"rank":4,"value":4355.25},{"year":2022,"rank":4,"value":4201.02},{"year":2023,"rank":3,"value":4562.21},{"year":2024,"rank":3,"value":4685.59}]},{"name":"United Kingdom","type":"country","points":[{"year":1997,"rank":4,"value":1569.32},{"year":1998,"rank":4,"value":1660.82},{"year":1999,"rank":4,"value":1693.46},{"year":2000,"rank":4,"value":1671.6},{"year":2001,"rank":4,"value":1656.17},{"year":2002,"rank":4,"value":1790.54},{"year":2003,"rank":4,"value":2061.23},{"year":2004,"rank":4,"value":2429.77},{"year":2005,"rank":4,"value":2551.36},{"year":2006,"rank":5,"value":2719.56},{"year":2007,"rank":5,"value":3104.7},{"year":2008,"rank":5,"value":2945.25},{"year":2009,"rank":6,"value":2429.36},{"year":2010,"rank":6,"value":2496.74},{"year":2011,"rank":6,"value":2675.59},{"year":2012,"rank":5,"value":2719.72},{"year":2013,"rank":6,"value":2796.91},{"year":2014,"rank":5,"value":3085.36},{"year":2015,"rank":5,"value":2945.58},{"year":2016,"rank":5,"value":2706.81},{"year":2017,"rank":6,"value":2699.12},{"year":2018,"rank":6,"value":2897.03},{"year":2019,"rank":6,"value":2875.71},{"year":2020,"rank":6,"value":2724.0},{"year":2021,"rank":6,"value":3194.56},{"year":2022,"rank":7,"value":3181.24},{"year":2023,"rank":7,"value":3420.8},{"year":2024,"rank":7,"value":3686.03}]},{"name":"France","type":"country","points":[{"year":1997,"rank":5,"value":1449.39},{"year":1998,"rank":5,"value":1496.91},{"year":1999,"rank":5,"value":1486.92},{"year":2000,"rank":5,"value":1360.96},{"year":2001,"rank":6,"value":1370.38},{"year":2002,"rank":5,"value":1492.43},{"year":2003,"rank":5,"value":1835.1},{"year":2004,"rank":5,"value":2109.79},{"year":2005,"rank":6,"value":2192.15},{"year":2006,"rank":6,"value":2317.86},{"year":2007,"rank":6,"value":2655.82},{"year":2008,"rank":6,"value":2926.8},{"year":2009,"rank":5,"value":2700.08},{"year":2010,"rank":5,"value":2646.23},{"year":2011,"rank":5,"value":2870.41},{"year":2012,"rank":6,"value":2683.01},{"year":2013,"rank":5,"value":2816.08},{"year":2014,"rank":6,"value":2861.24},{"year":2015,"rank":7,"value":2442.48},{"year":2016,"rank":7,"value":2470.41},{"year":2017,"rank":8,"value":2588.87},{"year":2018,"rank":7,"value":2781.58},{"year":2019,"rank":8,"value":2722.79},{"year":2020,"rank":8,"value":2647.93},{"year":2021,"rank":8,"value":2966.43},{"year":2022,"rank":8,"value":2794.79},{"year":2023,"rank":8,"value":3056.25},{"year":2024,"rank":8,"value":3160.44}]},{"name":"Italy","type":"country","points":[{"year":1997,"rank":6,"value":1244.99},{"year":1998,"rank":6,"value":1272.73},{"year":1999,"rank":6,"value":1255.0},{"year":2000,"rank":8,"value":1149.66},{"year":2001,"rank":8,"value":1172.04},{"year":2002,"rank":8,"value":1281.75},{"year":2003,"rank":7,"value":1582.93},{"year":2004,"rank":7,"value":1812.81},{"year":2005,"rank":7,"value":1864.98},{"year":2006,"rank":7,"value":1958.56},{"year":2007,"rank":7,"value":2222.52},{"year":2008,"rank":7,"value":2417.51},{"year":2009,"rank":7,"value":2209.48},{"year":2010,"rank":8,"value":2144.94},{"year":2011,"rank":8,"value":2306.97},{"year":2012,"rank":10,"value":2097.93},{"year":2013,"rank":10,"value":2153.23},{"year":2014,"rank":9,"value":2173.26},{"year":2015,"rank":9,"value":1845.43},{"year":2016,"rank":9,"value":1887.11},{"year":2017,"rank":10,"value":1970.72},{"year":2018,"rank":9,"value":2099.44},{"year":2019,"rank":9,"value":2019.61},{"year":2020,"rank":9,"value":1907.48},{"year":2021,"rank":9,"value":2179.21},{"year":2022,"rank":12,"value":2104.07},{"year":2023,"rank":10,"value":2316.73},{"year":2024,"rank":10,"value":2380.83}]},{"name":"California","type":"state","points":[{"year":1997,"rank":7,"value":1068.05},{"year":1998,"rank":7,"value":1143.67},{"year":1999,"rank":7,"value":1239.77},{"year":2000,"rank":6,"value":1354.79},{"year":2001,"rank":5,"value":1373.27},{"year":2002,"rank":7,"value":1419.32},{"year":2003,"rank":8,"value":1498.58},{"year":2004,"rank":8,"value":1585.08},{"year":2005,"rank":8,"value":1698.86},{"year":2006,"rank":8,"value":1812.16},{"year":2007,"rank":8,"value":1900.22},{"year":2008,"rank":8,"value":1946.24},{"year":2009,"rank":8,"value":1879.81},{"year":2010,"rank":9,"value":1938.6},{"year":2011,"rank":10,"value":2014.05},{"year":2012,"rank":9,"value":2108.87},{"year":2013,"rank":9,"value":2223.3},{"year":2014,"rank":8,"value":2342.22},{"year":2015,"rank":6,"value":2487.16},{"year":2016,"rank":6,"value":2586.49},{"year":2017,"rank":5,"value":2740.55},{"year":2018,"rank":5,"value":2899.53},{"year":2019,"rank":5,"value":3068.63},{"year":2020,"rank":5,"value":3072.93},{"year":2021,"rank":5,"value":3418.26},{"year":2022,"rank":5,"value":3618.29},{"year":2023,"rank":5,"value":3827.01},{"year":2024,"rank":4,"value":4048.11}]},{"name":"China","type":"country","points":[{"year":1997,"rank":8,"value":967.75},{"year":1998,"rank":8,"value":1037.13},{"year":1999,"rank":8,"value":1103.84},{"year":2000,"rank":7,"value":1223.75},{"year":2001,"rank":7,"value":1355.04},{"year":2002,"rank":6,"value":1489.82},{"year":2003,"rank":6,"value":1683.9},{"year":2004,"rank":6,"value":1984.2},{"year":2005,"rank":5,"value":2317.55},{"year":2006,"rank":4,"value":2791.5},{"year":2007,"rank":3,"value":3604.06},{"year":2008,"rank":3,"value":4667.35},{"year":2009,"rank":3,"value":5189.58},{"year":2010,"rank":2,"value":6192.56},{"year":2011,"rank":2,"value":7671.76},{"year":2012,"rank":2,"value":8673.66},{"year":2013,"rank":2,"value":9743.12},{"year":2014,"rank":2,"value":10674.53},{"year":2015,"rank":2,"value":11280.81},{"year":2016,"rank":2,"value":11456.02},{"year":2017,"rank":2,"value":12537.56},{"year":2018,"rank":2,"value":14147.77},{"year":2019,"rank":2,"value":14560.17},{"year":2020,"rank":2,"value":14996.41},{"year":2021,"rank":2,"value":18201.7},{"year":2022,"rank":2,"value":18316.77},{"year":2023,"rank":2,"value":18270.36},{"year":2024,"rank":2,"value":18743.8}]},{"name":"Texas","type":"state","points":[{"year":1997,"rank":11,"value":610.66},{"year":1998,"rank":10,"value":648.24},{"year":1999,"rank":9,"value":683.35},{"year":2000,"rank":10,"value":742.16},{"year":2001,"rank":10,"value":780.21},{"year":2002,"rank":10,"value":796.36},{"year":2003,"rank":11,"value":840.86},{"year":2004,"rank":11,"value":921.23},{"year":2005,"rank":11,"value":1003.75},{"year":2006,"rank":11,"value":1108.24},{"year":2007,"rank":15,"value":1198.57},{"year":2008,"rank":13,"value":1253.14},{"year":2009,"rank":14,"value":1179.17},{"year":2010,"rank":14,"value":1255.66},{"year":2011,"rank":15,"value":1351.78},{"year":2012,"rank":14,"value":1429.59},{"year":2013,"rank":14,"value":1526.78},{"year":2014,"rank":13,"value":1592.18},{"year":2015,"rank":11,"value":1585.99},{"year":2016,"rank":11,"value":1582.98},{"year":2017,"rank":12,"value":1667.31},{"year":2018,"rank":12,"value":1808.03},{"year":2019,"rank":11,"value":1864.87},{"year":2020,"rank":10,"value":1810.67},{"year":2021,"rank":10,"value":2117.01},{"year":2022,"rank":9,"value":2476.9},{"year":2023,"rank":9,"value":2637.24},{"year":2024,"rank":9,"value":2769.77}]},{"name":"India","type":"country","points":[{"year":1997,"rank":17,"value":415.87},{"year":1998,"rank":15,"value":421.35},{"year":1999,"rank":15,"value":458.82},{"year":2000,"rank":15,"value":468.4},{"year":2001,"rank":15,"value":485.44},{"year":2002,"rank":14,"value":514.94},{"year":2003,"rank":14,"value":607.7},{"year":2004,"rank":14,"value":709.15},{"year":2005,"rank":15,"value":820.38},{"year":2006,"rank":16,"value":940.26},{"year":2007,"rank":14,"value":1216.74},{"year":2008,"rank":14,"value":1198.9},{"year":2009,"rank":12,"value":1341.89},{"year":2010,"rank":10,"value":1675.62},{"year":2011,"rank":11,"value":1823.05},{"year":2012,"rank":12,"value":1827.64},{"year":2013,"rank":11,"value":1856.72},{"year":2014,"rank":11,"value":2039.13},{"year":2015,"rank":8,"value":2103.59},{"year":2016,"rank":8,"value":2294.8},{"year":2017,"rank":7,"value":2651.47},{"year":2018,"rank":8,"value":2702.93},{"year":2019,"rank":7,"value":2835.61},{"year":2020,"rank":7,"value":2674.85},{"year":2021,"rank":7,"value":3167.27},{"year":2022,"rank":6,"value":3346.11},{"year":2023,"rank":6,"value":3638.49},{"year":2024,"rank":6,"value":3909.89}]}];
+
+const STATE_NAMES = new Set(["California", "Texas"]);
+const HIGHLIGHT = "California";
+const WIDTH = 900;
+const HEIGHT = 750;
+const margin = { top: 80, right: 145, bottom: 60, left: 145 };
+const innerW = WIDTH - margin.left - margin.right;
+const innerH = HEIGHT - margin.top - margin.bottom;
+
+const years = DATA[0].points.map(d => d.year);
+const xScale = d3.scaleLinear().domain([d3.min(years), d3.max(years)]).range([0, innerW]);
+
+// --- Compute stacked layout using sqrt scaling ---
+const GAP = 2;
+const entityLayout = new Map();
+DATA.forEach(d => entityLayout.set(d.name, []));
+
+years.forEach(year => {
+  // Gather entities for this year, sorted by rank
+  const yearData = DATA.map(d => {
+    const pt = d.points.find(p => p.year === year);
+    return { name: d.name, type: d.type, rank: pt.rank, value: pt.value };
+  });
+  yearData.sort((a, b) => a.rank - b.rank);
+
+  // Sqrt scaling for band heights
+  const sqrtVals = yearData.map(d => Math.sqrt(d.value));
+  const totalSqrt = d3.sum(sqrtVals);
+  const totalGap = GAP * (yearData.length - 1);
+  const available = innerH - totalGap;
+
+  let cumY = 0;
+  yearData.forEach((d, i) => {
+    const h = (sqrtVals[i] / totalSqrt) * available;
+    entityLayout.get(d.name).push({
+      year, y0: cumY, y1: cumY + h, value: d.value, rank: d.rank
+    });
+    cumY += h + GAP;
+  });
+});
+
+// --- Area generator with bump curves ---
+const area = d3.area()
+  .x(d => xScale(d.year))
+  .y0(d => d.y0)
+  .y1(d => d.y1)
+  .curve(d3.curveBumpX);
+
+// --- Color helpers ---
+function getColor(d) {
+  if (d.name === HIGHLIGHT) return "#F4743B";
+  if (STATE_NAMES.has(d.name)) return "#0BB4FF";
+  return "#3D3733";
+}
+function getFillOpacity(d) {
+  if (d.name === HIGHLIGHT) return 0.7;
+  if (STATE_NAMES.has(d.name)) return 0.55;
+  return 0.13;
+}
+function getStrokeOpacity(d) {
+  if (d.name === HIGHLIGHT) return 0.9;
+  if (STATE_NAMES.has(d.name)) return 0.7;
+  return 0.3;
+}
+
+// --- Draw ---
+const svg = d3.select("body").append("svg")
+  .attr("viewBox", `0 0 ${WIDTH} ${HEIGHT}`)
+  .attr("width", WIDTH).attr("height", HEIGHT)
+  .style("background", "#F6F7F3");
+
+const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+// Title
+svg.append("text").attr("x", margin.left).attr("y", 30)
+  .attr("font-family", "'ABC Oracle Edu', sans-serif").attr("font-size", 22)
+  .attr("font-weight", 700).attr("fill", "#3D3733")
+  .text("US States vs. World Economies");
+svg.append("text").attr("x", margin.left).attr("y", 52)
+  .attr("font-family", "'ABC Oracle Edu', sans-serif").attr("font-size", 14)
+  .attr("fill", "#3D3733").attr("opacity", 0.7)
+  .text("GDP rankings by size, current USD, 1997–2024");
+
+// X gridlines & labels
+const xTicks = years.filter(y => y % 5 === 0 || y === 1997 || y === 2024);
+g.selectAll(".x-grid").data(xTicks).join("line")
+  .attr("x1", d => xScale(d)).attr("x2", d => xScale(d))
+  .attr("y1", 0).attr("y2", innerH)
+  .attr("stroke", "#DADFCE").attr("stroke-width", 0.5);
+g.selectAll(".x-label").data(xTicks).join("text")
+  .attr("x", d => xScale(d)).attr("y", innerH + 24)
+  .attr("text-anchor", "middle")
+  .attr("font-family", "'ABC Oracle Edu', sans-serif").attr("font-size", 12)
+  .attr("fill", "#3D3733").attr("opacity", 0.6).text(d => d);
+
+// Draw areas: countries first (back), then states (front)
+const drawOrder = [...DATA].sort((a, b) => {
+  const aState = STATE_NAMES.has(a.name) || a.name === HIGHLIGHT;
+  const bState = STATE_NAMES.has(b.name) || b.name === HIGHLIGHT;
+  if (aState && !bState) return 1;  // states on top
+  if (!aState && bState) return -1;
+  if (a.name === HIGHLIGHT) return 1; // California on very top
+  if (b.name === HIGHLIGHT) return -1;
+  return 0;
+});
+
+const ribbons = g.selectAll(".ribbon-group")
+  .data(drawOrder)
+  .join("g")
+  .attr("class", "ribbon-group");
+
+ribbons.append("path")
+  .attr("class", "ribbon")
+  .attr("d", d => area(entityLayout.get(d.name)))
+  .attr("fill", d => getColor(d))
+  .attr("fill-opacity", d => getFillOpacity(d))
+  .attr("stroke", d => getColor(d))
+  .attr("stroke-width", 0.5)
+  .attr("stroke-opacity", d => getStrokeOpacity(d));
+
+// --- Labels ---
+function avoidCollisions(labels, yAccessor, spacing) {
+  const sorted = [...labels].sort((a, b) => yAccessor(a) - yAccessor(b));
+  sorted[0]._adjustedY = yAccessor(sorted[0]);
+  for (let i = 1; i < sorted.length; i++) {
+    const prev = sorted[i - 1]._adjustedY;
+    const curr = yAccessor(sorted[i]);
+    sorted[i]._adjustedY = curr - prev < spacing ? prev + spacing : curr;
+  }
+  return sorted;
+}
+
+// Left labels: position at vertical center of band for first year
+const leftLabels = DATA.map(d => {
+  const pts = entityLayout.get(d.name);
+  const first = pts[0];
+  return {
+    name: d.name, type: d.type,
+    mid: (first.y0 + first.y1) / 2,
+    isState: STATE_NAMES.has(d.name) || d.name === HIGHLIGHT
+  };
+});
+const leftAdj = avoidCollisions(leftLabels, d => d.mid, 14);
+g.selectAll(".label-left").data(leftAdj).join("text")
+  .attr("x", -10).attr("y", d => d._adjustedY)
+  .attr("text-anchor", "end").attr("dominant-baseline", "middle")
+  .attr("font-family", "'ABC Oracle Edu', sans-serif").attr("font-size", 11)
+  .attr("font-weight", d => d.isState ? 700 : 400)
+  .attr("fill", d => getColor(d))
+  .attr("opacity", d => d.isState ? 1 : 0.65)
+  .text(d => d.name);
+
+// Right labels: position at vertical center of band for last year
+const rightLabels = DATA.map(d => {
+  const pts = entityLayout.get(d.name);
+  const last = pts[pts.length - 1];
+  return {
+    name: d.name, type: d.type,
+    mid: (last.y0 + last.y1) / 2,
+    isState: STATE_NAMES.has(d.name) || d.name === HIGHLIGHT
+  };
+});
+const rightAdj = avoidCollisions(rightLabels, d => d.mid, 14);
+g.selectAll(".label-right").data(rightAdj).join("text")
+  .attr("x", innerW + 10).attr("y", d => d._adjustedY)
+  .attr("text-anchor", "start").attr("dominant-baseline", "middle")
+  .attr("font-family", "'ABC Oracle Edu', sans-serif").attr("font-size", 11)
+  .attr("font-weight", d => d.isState ? 700 : 400)
+  .attr("fill", d => getColor(d))
+  .attr("opacity", d => d.isState ? 1 : 0.65)
+  .text(d => d.name);
+
+// --- Hover ---
+const tooltip = d3.select("#tooltip");
+ribbons
+  .on("mouseenter", function(event, d) {
+    ribbons.selectAll(".ribbon")
+      .attr("fill-opacity", s => s.name === d.name ? 0.8 : 0.04)
+      .attr("stroke-opacity", s => s.name === d.name ? 1 : 0.05);
+    d3.select(this).raise();
+  })
+  .on("mousemove", function(event, d) {
+    const [mx] = d3.pointer(event, g.node());
+    const yr = Math.round(xScale.invert(mx));
+    const clampedYr = Math.max(d3.min(years), Math.min(d3.max(years), yr));
+    const pt = d.points.find(p => p.year === clampedYr) || d.points[d.points.length - 1];
+    const label = d.type === "state" ? " (US state)" : "";
+    const valStr = pt.value >= 1000 ? `$${(pt.value / 1000).toFixed(2)}T` : `$${pt.value.toFixed(0)}B`;
+    tooltip.style("opacity", 1)
+      .style("left", (event.pageX + 14) + "px").style("top", (event.pageY - 28) + "px")
+      .html(`<strong>${d.name}</strong>${label} (${pt.year})<br>Rank #${pt.rank}<br>GDP: ${valStr}`);
+  })
+  .on("mouseleave", function() {
+    ribbons.selectAll(".ribbon")
+      .attr("fill-opacity", d => getFillOpacity(d))
+      .attr("stroke-opacity", d => getStrokeOpacity(d));
+    tooltip.style("opacity", 0);
+  });
+
+// Source
+svg.append("text").attr("x", margin.left).attr("y", HEIGHT - 14)
+  .attr("font-family", "'ABC Oracle Edu', sans-serif").attr("font-size", 10)
+  .attr("fill", "#3D3733").attr("opacity", 0.5).attr("font-style", "italic")
+  .text("Source: BEA (state GDP), World Bank (country GDP). Current USD. Band height proportional to √GDP. US states in color.");
+</script>
+</body>
+</html>

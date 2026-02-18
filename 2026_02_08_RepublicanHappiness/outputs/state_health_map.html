@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf');
+  }
+  body {
+    font-family: 'ABC Oracle Edu', 'Helvetica Neue', sans-serif;
+    background: #F6F7F3;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  .container {
+    width: 900px;
+    padding: 30px 0 20px 0;
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3D3733;
+    margin: 0 0 4px 0;
+  }
+  .subtitle {
+    font-size: 14px;
+    color: #888;
+    margin: 0 0 18px 0;
+  }
+  .source {
+    font-size: 11px;
+    color: #aaa;
+    font-style: italic;
+    margin-top: 8px;
+  }
+  .tooltip {
+    position: absolute;
+    pointer-events: none;
+    background: #3D3733;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 1.5;
+    opacity: 0;
+    transition: opacity 0.15s;
+  }
+  .tooltip .state-name { font-weight: bold; }
+  .tooltip .happy-label { color: #FEC439; }
+  .legend-label {
+    font-size: 11px;
+    fill: #3D3733;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>How healthy does your state feel?</h1>
+  <p class="subtitle">Self-assessed health rating (1 = excellent, 5 = poor), ATUS Well-Being Module 2010-2021</p>
+  <div id="map"></div>
+  <p class="source">Source: ATUS Well-Being Module (2010, 2012, 2013, 2021). GENHEALTH variable, person-level. States with n &lt; 50 excluded.</p>
+</div>
+<div class="tooltip" id="tooltip"></div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+<script>
+
+const stateData = [
+  {"fips":"01","name":"Alabama","mean_health":2.77,"pct_excellent":11.4,"pct_poor":5.7,"mean_happy":4.458,"n":699},
+  {"fips":"02","name":"Alaska","mean_health":2.30,"pct_excellent":27.0,"pct_poor":4.1,"mean_happy":4.523,"n":52},
+  {"fips":"04","name":"Arizona","mean_health":2.61,"pct_excellent":15.6,"pct_poor":5.5,"mean_happy":4.429,"n":659},
+  {"fips":"05","name":"Arkansas","mean_health":2.68,"pct_excellent":14.6,"pct_poor":7.0,"mean_happy":4.371,"n":555},
+  {"fips":"06","name":"California","mean_health":2.53,"pct_excellent":17.9,"pct_poor":4.2,"mean_happy":4.357,"n":3818},
+  {"fips":"08","name":"Colorado","mean_health":2.41,"pct_excellent":20.4,"pct_poor":3.1,"mean_happy":4.367,"n":772},
+  {"fips":"09","name":"Connecticut","mean_health":2.31,"pct_excellent":22.1,"pct_poor":2.5,"mean_happy":4.413,"n":554},
+  {"fips":"10","name":"Delaware","mean_health":2.36,"pct_excellent":22.2,"pct_poor":2.5,"mean_happy":4.344,"n":81},
+  {"fips":"11","name":"District of Columbia","mean_health":2.43,"pct_excellent":21.0,"pct_poor":4.9,"mean_happy":4.351,"n":143},
+  {"fips":"12","name":"Florida","mean_health":2.54,"pct_excellent":17.4,"pct_poor":4.3,"mean_happy":4.418,"n":1591},
+  {"fips":"13","name":"Georgia","mean_health":2.58,"pct_excellent":16.5,"pct_poor":5.3,"mean_happy":4.455,"n":1342},
+  {"fips":"15","name":"Hawaii","mean_health":2.36,"pct_excellent":23.7,"pct_poor":2.5,"mean_happy":4.482,"n":118},
+  {"fips":"16","name":"Idaho","mean_health":2.44,"pct_excellent":19.3,"pct_poor":2.8,"mean_happy":4.380,"n":145},
+  {"fips":"17","name":"Illinois","mean_health":2.53,"pct_excellent":17.2,"pct_poor":4.1,"mean_happy":4.370,"n":1821},
+  {"fips":"18","name":"Indiana","mean_health":2.63,"pct_excellent":15.2,"pct_poor":5.5,"mean_happy":4.299,"n":954},
+  {"fips":"19","name":"Iowa","mean_health":2.46,"pct_excellent":17.9,"pct_poor":3.8,"mean_happy":4.272,"n":531},
+  {"fips":"20","name":"Kansas","mean_health":2.47,"pct_excellent":17.3,"pct_poor":3.0,"mean_happy":4.406,"n":371},
+  {"fips":"21","name":"Kentucky","mean_health":2.71,"pct_excellent":13.7,"pct_poor":6.7,"mean_happy":4.359,"n":614},
+  {"fips":"22","name":"Louisiana","mean_health":2.73,"pct_excellent":13.5,"pct_poor":6.9,"mean_happy":4.451,"n":475},
+  {"fips":"23","name":"Maine","mean_health":2.54,"pct_excellent":16.8,"pct_poor":4.0,"mean_happy":4.375,"n":125},
+  {"fips":"24","name":"Maryland","mean_health":2.46,"pct_excellent":18.8,"pct_poor":3.0,"mean_happy":4.373,"n":793},
+  {"fips":"25","name":"Massachusetts","mean_health":2.38,"pct_excellent":20.4,"pct_poor":2.6,"mean_happy":4.273,"n":922},
+  {"fips":"26","name":"Michigan","mean_health":2.58,"pct_excellent":15.5,"pct_poor":5.5,"mean_happy":4.290,"n":1409},
+  {"fips":"27","name":"Minnesota","mean_health":2.31,"pct_excellent":22.2,"pct_poor":1.9,"mean_happy":4.358,"n":929},
+  {"fips":"28","name":"Mississippi","mean_health":2.79,"pct_excellent":13.1,"pct_poor":6.3,"mean_happy":4.544,"n":398},
+  {"fips":"29","name":"Missouri","mean_health":2.56,"pct_excellent":15.7,"pct_poor":4.3,"mean_happy":4.307,"n":911},
+  {"fips":"30","name":"Montana","mean_health":2.44,"pct_excellent":22.0,"pct_poor":3.7,"mean_happy":4.349,"n":82},
+  {"fips":"31","name":"Nebraska","mean_health":2.46,"pct_excellent":17.0,"pct_poor":3.6,"mean_happy":4.445,"n":224},
+  {"fips":"32","name":"Nevada","mean_health":2.57,"pct_excellent":16.2,"pct_poor":4.2,"mean_happy":4.344,"n":265},
+  {"fips":"33","name":"New Hampshire","mean_health":2.34,"pct_excellent":20.5,"pct_poor":2.1,"mean_happy":4.462,"n":195},
+  {"fips":"34","name":"New Jersey","mean_health":2.49,"pct_excellent":17.5,"pct_poor":3.0,"mean_happy":4.298,"n":1062},
+  {"fips":"35","name":"New Mexico","mean_health":2.63,"pct_excellent":18.6,"pct_poor":4.5,"mean_happy":4.458,"n":334},
+  {"fips":"36","name":"New York","mean_health":2.54,"pct_excellent":18.1,"pct_poor":4.1,"mean_happy":4.231,"n":2097},
+  {"fips":"37","name":"North Carolina","mean_health":2.52,"pct_excellent":18.4,"pct_poor":4.9,"mean_happy":4.455,"n":1274},
+  {"fips":"38","name":"North Dakota","mean_health":2.37,"pct_excellent":21.6,"pct_poor":3.4,"mean_happy":4.497,"n":116},
+  {"fips":"39","name":"Ohio","mean_health":2.58,"pct_excellent":15.3,"pct_poor":5.4,"mean_happy":4.364,"n":1395},
+  {"fips":"40","name":"Oklahoma","mean_health":2.62,"pct_excellent":13.8,"pct_poor":5.6,"mean_happy":4.402,"n":594},
+  {"fips":"41","name":"Oregon","mean_health":2.47,"pct_excellent":18.2,"pct_poor":3.0,"mean_happy":4.343,"n":595},
+  {"fips":"42","name":"Pennsylvania","mean_health":2.52,"pct_excellent":16.3,"pct_poor":4.2,"mean_happy":4.356,"n":1495},
+  {"fips":"44","name":"Rhode Island","mean_health":2.48,"pct_excellent":18.3,"pct_poor":3.8,"mean_happy":4.400,"n":131},
+  {"fips":"45","name":"South Carolina","mean_health":2.60,"pct_excellent":17.1,"pct_poor":6.6,"mean_happy":4.502,"n":730},
+  {"fips":"46","name":"South Dakota","mean_health":2.54,"pct_excellent":16.5,"pct_poor":6.6,"mean_happy":4.461,"n":121},
+  {"fips":"47","name":"Tennessee","mean_health":2.59,"pct_excellent":16.2,"pct_poor":5.8,"mean_happy":4.321,"n":822},
+  {"fips":"48","name":"Texas","mean_health":2.58,"pct_excellent":17.7,"pct_poor":4.3,"mean_happy":4.514,"n":3013},
+  {"fips":"49","name":"Utah","mean_health":2.40,"pct_excellent":20.7,"pct_poor":2.5,"mean_happy":4.440,"n":280},
+  {"fips":"50","name":"Vermont","mean_health":2.27,"pct_excellent":25.4,"pct_poor":1.8,"mean_happy":4.451,"n":114},
+  {"fips":"51","name":"Virginia","mean_health":2.46,"pct_excellent":18.3,"pct_poor":3.2,"mean_happy":4.394,"n":1183},
+  {"fips":"53","name":"Washington","mean_health":2.48,"pct_excellent":17.2,"pct_poor":3.2,"mean_happy":4.183,"n":1065},
+  {"fips":"54","name":"West Virginia","mean_health":2.69,"pct_excellent":14.7,"pct_poor":7.0,"mean_happy":4.374,"n":143},
+  {"fips":"55","name":"Wisconsin","mean_health":2.51,"pct_excellent":15.7,"pct_poor":4.3,"mean_happy":4.249,"n":979},
+  {"fips":"56","name":"Wyoming","mean_health":2.43,"pct_excellent":20.9,"pct_poor":3.0,"mean_happy":4.445,"n":67}
+];
+
+const dataMap = new Map(stateData.map(d => [d.fips, d]));
+const values = stateData.map(d => d.mean_health);
+const minVal = Math.min(...values);  // healthiest (lowest number)
+const maxVal = Math.max(...values);  // least healthy
+
+const width = 900;
+const height = 560;
+const legendHeight = 20;
+
+// Color scale: green (healthy/low) -> cream (mid) -> red (unhealthy/high)
+const colorScale = d3.scaleSequential()
+  .domain([minVal, maxVal])
+  .interpolator(t => {
+    if (t < 0.5) {
+      const t2 = t * 2;
+      return d3.interpolateRgb('#67A275', '#DADFCE')(t2);
+    } else {
+      const t2 = (t - 0.5) * 2;
+      return d3.interpolateRgb('#DADFCE', '#F4743B')(t2);
+    }
+  });
+
+const svg = d3.select('#map')
+  .append('svg')
+  .attr('width', width)
+  .attr('height', height + 60);
+
+const tooltip = d3.select('#tooltip');
+
+d3.json('https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json').then(us => {
+  const states = topojson.feature(us, us.objects.states);
+
+  const projection = d3.geoAlbersUsa()
+    .fitSize([width, height], states);
+
+  const path = d3.geoPath().projection(projection);
+
+  svg.selectAll('path')
+    .data(states.features)
+    .join('path')
+    .attr('d', path)
+    .attr('fill', d => {
+      const fips = d.id.toString().padStart(2, '0');
+      const data = dataMap.get(fips);
+      return data ? colorScale(data.mean_health) : '#e0e0e0';
+    })
+    .attr('stroke', '#F6F7F3')
+    .attr('stroke-width', 1.2)
+    .on('mouseover', function(event, d) {
+      const fips = d.id.toString().padStart(2, '0');
+      const data = dataMap.get(fips);
+      d3.select(this).attr('stroke', '#3D3733').attr('stroke-width', 2);
+      if (data) {
+        tooltip.style('opacity', 1)
+          .html(`<span class="state-name">${data.name}</span><br>
+                 Health rating: ${data.mean_health.toFixed(2)} / 5<br>
+                 ${data.pct_excellent}% excellent, ${data.pct_poor}% poor<br>
+                 <span class="happy-label">Happiness: ${data.mean_happy.toFixed(2)}</span><br>
+                 Sample: ${data.n.toLocaleString()} people`);
+      }
+    })
+    .on('mousemove', function(event) {
+      tooltip
+        .style('left', (event.pageX + 14) + 'px')
+        .style('top', (event.pageY - 30) + 'px');
+    })
+    .on('mouseout', function() {
+      d3.select(this).attr('stroke', '#F6F7F3').attr('stroke-width', 1.2);
+      tooltip.style('opacity', 0);
+    });
+
+  svg.append('path')
+    .datum(topojson.mesh(us, us.objects.states, (a, b) => a !== b))
+    .attr('fill', 'none')
+    .attr('stroke', '#F6F7F3')
+    .attr('stroke-width', 1.2)
+    .attr('d', path);
+
+  // Legend
+  const legendWidth = 300;
+  const legendX = (width - legendWidth) / 2;
+  const legendY = height + 10;
+
+  const legendScale = d3.scaleLinear()
+    .domain([minVal, maxVal])
+    .range([0, legendWidth]);
+
+  const legendAxis = d3.axisBottom(legendScale)
+    .ticks(5)
+    .tickFormat(d => d.toFixed(1));
+
+  const defs = svg.append('defs');
+  const gradient = defs.append('linearGradient')
+    .attr('id', 'legend-gradient')
+    .attr('x1', '0%').attr('x2', '100%');
+
+  const nStops = 20;
+  for (let i = 0; i <= nStops; i++) {
+    const t = i / nStops;
+    const val = minVal + t * (maxVal - minVal);
+    gradient.append('stop')
+      .attr('offset', `${t * 100}%`)
+      .attr('stop-color', colorScale(val));
+  }
+
+  svg.append('rect')
+    .attr('x', legendX)
+    .attr('y', legendY)
+    .attr('width', legendWidth)
+    .attr('height', legendHeight)
+    .style('fill', 'url(#legend-gradient)')
+    .attr('rx', 3);
+
+  svg.append('g')
+    .attr('transform', `translate(${legendX}, ${legendY + legendHeight})`)
+    .call(legendAxis)
+    .call(g => g.select('.domain').remove())
+    .call(g => g.selectAll('text').attr('class', 'legend-label'));
+
+  svg.append('text')
+    .attr('x', legendX - 8)
+    .attr('y', legendY + legendHeight / 2 + 4)
+    .attr('text-anchor', 'end')
+    .attr('class', 'legend-label')
+    .text('Healthier');
+
+  svg.append('text')
+    .attr('x', legendX + legendWidth + 8)
+    .attr('y', legendY + legendHeight / 2 + 4)
+    .attr('text-anchor', 'start')
+    .attr('class', 'legend-label')
+    .text('Less healthy');
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face {
+  font-family: 'ABC Oracle Edu';
+  src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'ABC Oracle Edu';
+  src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf') format('opentype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'ABC Oracle Edu';
+  src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf') format('opentype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'ABC Oracle Edu';
+  src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+
+body {
+  background: #F6F7F3;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'ABC Oracle Edu', sans-serif;
+}
+svg text {
+  font-family: 'ABC Oracle Edu', sans-serif;
+}
+</style>
+</head>
+<body>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+
+const width = 900;
+const height = 750;
+const margin = { top: 75, right: 25, bottom: 45, left: 105 };
+
+// All models — two companies only
+const models = [
+  // OpenAI
+  { name: "GPT-4 (Nov '23)", date: "2023-11-06", p50: 3.609578, family: "openai" },
+  { name: "GPT-4 Turbo", date: "2024-04-09", p50: 3.225159, family: "openai" },
+  { name: "GPT-4o", date: "2024-05-13", p50: 6.404471, family: "openai" },
+  { name: "o1-preview", date: "2024-09-12", p50: 19.395096, family: "openai" },
+  { name: "o1", date: "2024-12-05", p50: 37.937543, family: "openai" },
+  { name: "o3", date: "2025-04-16", p50: 120.730463, family: "openai" },
+  { name: "GPT-5", date: "2025-08-07", p50: 213.954459, family: "openai" },
+  { name: "GPT-5.1 Codex Max", date: "2025-11-19", p50: 236.548491, family: "openai" },
+  { name: "GPT-5.2", date: "2025-12-11", p50: 394.383957, family: "openai" },
+  // Anthropic
+  { name: "Claude 3 Opus", date: "2024-03-04", p50: 3.575399, family: "anthropic" },
+  { name: "Claude 3.5 Sonnet", date: "2024-06-20", p50: 10.771603, family: "anthropic" },
+  { name: "Claude 3.5 Sonnet v2", date: "2024-10-22", p50: 19.776241, family: "anthropic" },
+  { name: "Claude 3.7 Sonnet", date: "2025-02-24", p50: 59.763762, family: "anthropic" },
+  { name: "Claude 4 Opus", date: "2025-05-22", p50: 101.182643, family: "anthropic" },
+  { name: "Claude 4.1 Opus", date: "2025-08-05", p50: 100.84381, family: "anthropic" },
+  { name: "Claude Opus 4.5", date: "2025-11-24", p50: 320.422486, family: "anthropic" },
+];
+
+const parseDate = d3.timeParse("%Y-%m-%d");
+models.forEach(d => d.dateObj = parseDate(d.date));
+
+function formatDuration(minutes) {
+  if (minutes < 1) return `${Math.round(minutes * 60)} sec`;
+  if (minutes < 60) return `${Math.round(minutes)} min`;
+  const hrs = minutes / 60;
+  if (hrs < 10) return `${hrs.toFixed(1)} hrs`;
+  return `${Math.round(hrs)} hrs`;
+}
+
+// Two lanes
+const lanes = [
+  { key: "openai", label: "OpenAI", color: "#3D3733" },
+  { key: "anthropic", label: "Anthropic", color: "#0BB4FF" },
+];
+
+const laneHeight = 300;
+const laneGap = 12;
+lanes.forEach((lane, i) => {
+  lane.y0 = margin.top + i * (laneHeight + laneGap);
+  lane.center = lane.y0 + laneHeight / 2;
+});
+
+const svg = d3.select("body").append("svg")
+  .attr("width", width)
+  .attr("height", height);
+
+svg.append("rect")
+  .attr("width", width)
+  .attr("height", height)
+  .attr("fill", "#F6F7F3");
+
+const x = d3.scaleTime()
+  .domain([new Date(2023, 8, 1), new Date(2026, 3, 1)])
+  .range([margin.left, width - margin.right]);
+
+const bubbleR = 2.8;
+const spacing = bubbleR * 0.85;
+
+function mulberry32(a) {
+  return function() {
+    a |= 0; a = a + 0x6D2B79F5 | 0;
+    var t = Math.imul(a ^ a >>> 15, 1 | a);
+    t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  }
+}
+
+function spiralPositions(n, seed) {
+  const rng = mulberry32(seed);
+  const positions = [];
+  const golden = Math.PI * (3 - Math.sqrt(5));
+  for (let i = 0; i < n; i++) {
+    const angle = i * golden;
+    const r = spacing * Math.sqrt(i);
+    const jx = (rng() - 0.5) * bubbleR * 0.3;
+    const jy = (rng() - 0.5) * bubbleR * 0.3;
+    positions.push({ dx: r * Math.cos(angle) + jx, dy: r * Math.sin(angle) + jy });
+  }
+  return positions;
+}
+
+function clusterRadius(n) {
+  return spacing * Math.sqrt(Math.max(0, n - 1)) + bubbleR;
+}
+
+function blobPath(cx, cy, baseR, seed) {
+  const rng = mulberry32(seed);
+  const nPoints = 7;
+  const points = [];
+  for (let i = 0; i < nPoints; i++) {
+    const angle = (i / nPoints) * Math.PI * 2;
+    const rVariation = baseR * (0.65 + rng() * 0.7);
+    points.push([
+      cx + rVariation * Math.cos(angle),
+      cy + rVariation * Math.sin(angle)
+    ]);
+  }
+  let d = `M ${points[0][0]},${points[0][1]}`;
+  for (let i = 0; i < nPoints; i++) {
+    const curr = points[i];
+    const next = points[(i + 1) % nPoints];
+    const cpx = (curr[0] + next[0]) / 2;
+    const cpy = (curr[1] + next[1]) / 2;
+    d += ` Q ${curr[0]},${curr[1]} ${cpx},${cpy}`;
+  }
+  d += " Z";
+  return d;
+}
+
+const familyColor = {
+  openai: "#3D3733",
+  anthropic: "#0577AA",
+};
+
+// Subtle horizontal baseline per lane + lane labels
+lanes.forEach((lane, i) => {
+  svg.append("line")
+    .attr("x1", margin.left)
+    .attr("x2", width - margin.right)
+    .attr("y1", lane.center)
+    .attr("y2", lane.center)
+    .attr("stroke", lane.color)
+    .attr("stroke-width", 0.5)
+    .attr("opacity", 0.15);
+
+  svg.append("text")
+    .attr("x", margin.left - 12)
+    .attr("y", lane.center)
+    .attr("text-anchor", "end")
+    .attr("dominant-baseline", "middle")
+    .attr("font-size", 12)
+    .attr("font-weight", 500)
+    .attr("fill", lane.color)
+    .text(lane.label);
+});
+
+// X-axis
+const xAxis = d3.axisBottom(x)
+  .ticks(d3.timeYear.every(1))
+  .tickFormat(d3.timeFormat("%Y"))
+  .tickSize(0);
+
+svg.append("g")
+  .attr("transform", `translate(0,${lanes[1].y0 + laneHeight + 5})`)
+  .call(xAxis)
+  .call(g => g.select(".domain").remove())
+  .selectAll("text")
+  .attr("font-size", 11)
+  .attr("fill", "#3D3733")
+  .attr("font-family", "'ABC Oracle Edu', sans-serif");
+
+// Draw blob clusters
+models.forEach((model, mi) => {
+  const lane = lanes.find(l => l.key === model.family);
+  const cx = x(model.dateObj);
+  const cy = lane.center;
+  const nBubbles = Math.max(1, Math.round(model.p50));
+  const positions = spiralPositions(nBubbles, mi * 1000 + 42);
+  const color = familyColor[model.family];
+
+  svg.selectAll(null)
+    .data(positions)
+    .join("path")
+    .attr("d", (d, i) => blobPath(cx + d.dx, cy + d.dy, bubbleR, mi * 10000 + i))
+    .attr("fill", color)
+    .attr("opacity", 0.25)
+    .attr("stroke", "none");
+});
+
+// === LABELS — SINGLE ROW, SHIFTED HORIZONTALLY TO AVOID OVERLAP ===
+// All labels stay at the same y-position. If two would overlap, nudge them
+// apart horizontally and draw a leader line from the shifted label to its cluster.
+
+const charWidth = 4.2;
+const labelPadding = 6;
+
+lanes.forEach(lane => {
+  const laneModels = models
+    .filter(m => m.family === lane.key)
+    .sort((a, b) => a.dateObj - b.dateObj);
+
+  const labelY = lane.y0 + 14;
+  const durationY = labelY + 10;
+
+  // First pass: compute natural positions and widths
+  const labels = laneModels.map(model => {
+    const natural = x(model.dateObj);
+    const w = Math.max(model.name.length, formatDuration(model.p50).length) * charWidth;
+    return { model, natural, w, left: natural - w / 2, right: natural + w / 2, final: natural };
+  });
+
+  // Second pass: greedy left-to-right, push right if overlapping
+  for (let i = 1; i < labels.length; i++) {
+    const prev = labels[i - 1];
+    const curr = labels[i];
+    const minLeft = prev.final + prev.w / 2 + labelPadding;
+    if (curr.natural - curr.w / 2 < minLeft) {
+      curr.final = minLeft + curr.w / 2;
+    }
+  }
+
+  // Third pass: if rightmost label exceeds chart, push everything left
+  const lastLabel = labels[labels.length - 1];
+  const maxRight = width - margin.right - 5;
+  if (lastLabel && lastLabel.final + lastLabel.w / 2 > maxRight) {
+    const overflow = lastLabel.final + lastLabel.w / 2 - maxRight;
+    labels.forEach(l => l.final -= overflow);
+  }
+
+  // Draw labels and leader lines
+  labels.forEach(({ model, natural, final: fx }) => {
+    const shifted = Math.abs(fx - natural) > 3;
+
+    // Leader line from label down to cluster x-position
+    if (shifted) {
+      svg.append("line")
+        .attr("x1", fx)
+        .attr("y1", durationY + 3)
+        .attr("x2", natural)
+        .attr("y2", lane.center - clusterRadius(Math.max(1, Math.round(model.p50))) - 2)
+        .attr("stroke", "#ccc")
+        .attr("stroke-width", 0.5);
+    }
+
+    // Model name
+    svg.append("text")
+      .attr("class", "label-name")
+      .attr("x", fx)
+      .attr("y", labelY)
+      .attr("text-anchor", "middle")
+      .attr("font-size", 7.5)
+      .attr("fill", "#3D3733")
+      .attr("font-weight", 400)
+      .text(model.name);
+
+    // Duration
+    svg.append("text")
+      .attr("class", "label-duration")
+      .attr("x", fx)
+      .attr("y", durationY)
+      .attr("text-anchor", "middle")
+      .attr("font-size", 7)
+      .attr("fill", "#999")
+      .attr("font-weight", 300)
+      .text(formatDuration(model.p50));
+  });
+});
+
+// Title
+svg.append("text")
+  .attr("x", margin.left)
+  .attr("y", 28)
+  .attr("font-size", 20)
+  .attr("font-weight", 700)
+  .attr("fill", "#3D3733")
+  .text("How long can AI work unsupervised?");
+
+svg.append("text")
+  .attr("x", margin.left)
+  .attr("y", 48)
+  .attr("font-size", 13)
+  .attr("font-weight", 400)
+  .attr("fill", "#888")
+  .text("Each dot = 1 minute of autonomous work (50% task-completion horizon)");
+
+// Source
+svg.append("text")
+  .attr("x", margin.left)
+  .attr("y", height - 8)
+  .attr("font-size", 10)
+  .attr("font-style", "italic")
+  .attr("fill", "#aaa")
+  .text("Source: METR, Task-Completion Time Horizons of Frontier AI Models (v1.1)");
+
+</script>
+</body>
+</html>

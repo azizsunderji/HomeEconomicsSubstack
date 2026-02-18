@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf') format('opentype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf') format('opentype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf') format('opentype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf') format('opentype');
+    font-weight: 500;
+}
+body {
+    font-family: 'ABC Oracle Edu', sans-serif;
+    background: #F6F7F3;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+</style>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+<script>
+const eduData = {"HS or less": [{"year": 2020, "pct": 31.4}, {"year": 2021, "pct": 23.9}, {"year": 2022, "pct": 20.3}, {"year": 2023, "pct": 20.1}, {"year": 2024, "pct": 20.3}, {"year": 2025, "pct": 20.9}], "Some college": [{"year": 2020, "pct": 39.0}, {"year": 2021, "pct": 30.1}, {"year": 2022, "pct": 27.6}, {"year": 2023, "pct": 25.9}, {"year": 2024, "pct": 25.1}, {"year": 2025, "pct": 23.8}], "Bachelor's": [{"year": 2020, "pct": 54.5}, {"year": 2021, "pct": 40.0}, {"year": 2022, "pct": 37.2}, {"year": 2023, "pct": 34.8}, {"year": 2024, "pct": 33.8}, {"year": 2025, "pct": 33.2}], "Graduate": [{"year": 2020, "pct": 59.0}, {"year": 2021, "pct": 43.6}, {"year": 2022, "pct": 39.5}, {"year": 2023, "pct": 36.0}, {"year": 2024, "pct": 36.0}, {"year": 2025, "pct": 34.8}]};
+const globalData = [["Canada", 38.0], ["UK", 36.0], ["US (Bachelor's)", 33.2], ["Germany", 32.0], ["Netherlands", 28.0], ["Spain", 24.0], ["France", 20.0], ["S. Korea", 10.0]];
+
+const width = 900;
+const height = 750;
+const margin = {top: 100, right: 200, bottom: 60, left: 50};
+const innerW = width - margin.left - margin.right;
+const innerH = height - margin.top - margin.bottom;
+
+const svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .style("background", "#F6F7F3");
+
+const g = svg.append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+// Title
+svg.append("text")
+    .attr("x", margin.left)
+    .attr("y", 35)
+    .attr("font-family", "ABC Oracle Edu, sans-serif")
+    .attr("font-weight", 700)
+    .attr("font-size", 22)
+    .attr("fill", "#3D3733")
+    .text("Work From Home Has Plateaued");
+
+svg.append("text")
+    .attr("x", margin.left)
+    .attr("y", 58)
+    .attr("font-family", "ABC Oracle Edu, sans-serif")
+    .attr("font-weight", 400)
+    .attr("font-size", 14)
+    .attr("fill", "#888")
+    .text("Share of full paid workdays done from home, by education (US)");
+
+svg.append("text")
+    .attr("x", margin.left)
+    .attr("y", 76)
+    .attr("font-family", "ABC Oracle Edu, sans-serif")
+    .attr("font-weight", 300)
+    .attr("font-size", 11.5)
+    .attr("fill", "#aaa")
+    .text("Workers ages 20–64. Right margin: international comparison (college grads).");
+
+// Scales
+const x = d3.scaleLinear()
+    .domain([2020, 2025])
+    .range([0, innerW]);
+
+const y = d3.scaleLinear()
+    .domain([0, 62])
+    .range([innerH, 0]);
+
+// Gridlines
+const yTicks = [0, 10, 20, 30, 40, 50, 60];
+yTicks.forEach(tick => {
+    g.append("line")
+        .attr("x1", 0)
+        .attr("x2", innerW)
+        .attr("y1", y(tick))
+        .attr("y2", y(tick))
+        .attr("stroke", "#ddd")
+        .attr("stroke-width", 0.5);
+});
+
+// Y-axis labels
+yTicks.forEach((tick, i) => {
+    g.append("text")
+        .attr("x", -8)
+        .attr("y", y(tick))
+        .attr("dy", "0.35em")
+        .attr("text-anchor", "end")
+        .attr("font-family", "ABC Oracle Edu, sans-serif")
+        .attr("font-weight", 300)
+        .attr("font-size", 11)
+        .attr("fill", "#999")
+        .text(i === yTicks.length - 1 ? tick + "%" : tick);
+});
+
+// X-axis labels
+[2020, 2021, 2022, 2023, 2024, 2025].forEach(yr => {
+    g.append("text")
+        .attr("x", x(yr))
+        .attr("y", innerH + 25)
+        .attr("text-anchor", "middle")
+        .attr("font-family", "ABC Oracle Edu, sans-serif")
+        .attr("font-weight", 300)
+        .attr("font-size", 11)
+        .attr("fill", "#999")
+        .text(yr);
+});
+
+// Colors for education lines
+const colors = {
+    "Graduate": "#0BB4FF",
+    "Bachelor's": "#67A275",
+    "Some college": "#FEC439",
+    "HS or less": "#3D3733",
+};
+
+// Line generator
+const line = d3.line()
+    .x(d => x(d.year))
+    .y(d => y(d.pct));
+
+// Draw lines
+const groups = ["Graduate", "Bachelor's", "Some college", "HS or less"];
+groups.forEach(grp => {
+    const data = eduData[grp];
+    g.append("path")
+        .datum(data)
+        .attr("fill", "none")
+        .attr("stroke", colors[grp])
+        .attr("stroke-width", 2.5)
+        .attr("d", line);
+
+    // Endpoint dot
+    const last = data[data.length - 1];
+    g.append("circle")
+        .attr("cx", x(last.year))
+        .attr("cy", y(last.pct))
+        .attr("r", 4)
+        .attr("fill", colors[grp]);
+
+    // End label
+    g.append("text")
+        .attr("x", x(last.year) + 10)
+        .attr("y", y(last.pct) - 2)
+        .attr("dy", "0.35em")
+        .attr("font-family", "ABC Oracle Edu, sans-serif")
+        .attr("font-weight", 500)
+        .attr("font-size", 11)
+        .attr("fill", colors[grp])
+        .text(grp);
+
+    g.append("text")
+        .attr("x", x(last.year) + 10)
+        .attr("y", y(last.pct) + 12)
+        .attr("dy", "0.35em")
+        .attr("font-family", "ABC Oracle Edu, sans-serif")
+        .attr("font-weight", 700)
+        .attr("font-size", 11)
+        .attr("fill", colors[grp])
+        .text(last.pct.toFixed(0) + "%");
+});
+
+// Global comparison section on the right
+const globalX = innerW + 110;
+
+// Section header
+g.append("text")
+    .attr("x", globalX)
+    .attr("y", y(55))
+    .attr("text-anchor", "middle")
+    .attr("font-family", "ABC Oracle Edu, sans-serif")
+    .attr("font-weight", 500)
+    .attr("font-size", 10)
+    .attr("fill", "#888")
+    .text("Global");
+
+g.append("text")
+    .attr("x", globalX)
+    .attr("y", y(55) + 13)
+    .attr("text-anchor", "middle")
+    .attr("font-family", "ABC Oracle Edu, sans-serif")
+    .attr("font-weight", 300)
+    .attr("font-size", 9)
+    .attr("fill", "#aaa")
+    .text("(college grads)");
+
+// Vertical line for global dot plot
+g.append("line")
+    .attr("x1", globalX)
+    .attr("x2", globalX)
+    .attr("y1", y(42))
+    .attr("y2", y(5))
+    .attr("stroke", "#ddd")
+    .attr("stroke-width", 1);
+
+// Country dots and labels
+globalData.forEach(([country, pct]) => {
+    const isUS = country.includes("US");
+    g.append("circle")
+        .attr("cx", globalX)
+        .attr("cy", y(pct))
+        .attr("r", isUS ? 5 : 3.5)
+        .attr("fill", isUS ? "#67A275" : "#999")
+        .attr("stroke", isUS ? "#67A275" : "none")
+        .attr("stroke-width", isUS ? 2 : 0)
+        .attr("fill-opacity", isUS ? 1 : 0.7);
+
+    g.append("text")
+        .attr("x", globalX + 10)
+        .attr("y", y(pct))
+        .attr("dy", "0.35em")
+        .attr("font-family", "ABC Oracle Edu, sans-serif")
+        .attr("font-weight", isUS ? 500 : 300)
+        .attr("font-size", 10)
+        .attr("fill", isUS ? "#67A275" : "#888")
+        .text(country + " " + pct.toFixed(0) + "%");
+});
+
+// Source
+svg.append("text")
+    .attr("x", margin.left)
+    .attr("y", height - 12)
+    .attr("font-family", "ABC Oracle Edu, sans-serif")
+    .attr("font-style", "italic")
+    .attr("font-weight", 300)
+    .attr("font-size", 10)
+    .attr("fill", "#aaa")
+    .text("Source: SWAA (Barrero, Bloom, Buckman & Davis), Dec 2025. Global: G-SWA, 40 countries, Nov 2024–Feb 2025.");
+</script>
+</body>
+</html>

@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>State Real GDP Rankings, 1997–2024</title>
+<style>
+  @font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf') format('opentype');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf') format('opentype');
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf') format('opentype');
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf') format('opentype');
+    font-weight: 500;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F6F7F3;
+    font-family: 'ABC Oracle Edu', -apple-system, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  svg { display: block; }
+
+  .tooltip {
+    position: absolute;
+    pointer-events: none;
+    background: #3D3733;
+    color: #F6F7F3;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: 'ABC Oracle Edu', sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+    opacity: 0;
+    transition: opacity 0.15s;
+    z-index: 10;
+  }
+</style>
+</head>
+<body>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const DATA = [
+  {
+    "fips": "06000",
+    "name": "California",
+    "points": [
+      {"year": 1997, "rank": 1, "value": 1441226.4},
+      {"year": 1998, "rank": 1, "value": 1538612.3},
+      {"year": 1999, "rank": 1, "value": 1655438.5},
+      {"year": 2000, "rank": 1, "value": 1784320.6},
+      {"year": 2001, "rank": 1, "value": 1784567.7},
+      {"year": 2002, "rank": 1, "value": 1821509.5},
+      {"year": 2003, "rank": 1, "value": 1895287.6},
+      {"year": 2004, "rank": 1, "value": 1956745.5},
+      {"year": 2005, "rank": 1, "value": 2042141.0},
+      {"year": 2006, "rank": 1, "value": 2120435.4},
+      {"year": 2007, "rank": 1, "value": 2168940.4},
+      {"year": 2008, "rank": 1, "value": 2192331.8},
+      {"year": 2009, "rank": 1, "value": 2110679.4},
+      {"year": 2010, "rank": 1, "value": 2153852.8},
+      {"year": 2011, "rank": 1, "value": 2192887.2},
+      {"year": 2012, "rank": 1, "value": 2255437.3},
+      {"year": 2013, "rank": 1, "value": 2340335.3},
+      {"year": 2014, "rank": 1, "value": 2428675.7},
+      {"year": 2015, "rank": 1, "value": 2545979.5},
+      {"year": 2016, "rank": 1, "value": 2623711.7},
+      {"year": 2017, "rank": 1, "value": 2740550.3},
+      {"year": 2018, "rank": 1, "value": 2850970.3},
+      {"year": 2019, "rank": 1, "value": 2969609.0},
+      {"year": 2020, "rank": 1, "value": 2930654.6},
+      {"year": 2021, "rank": 1, "value": 3151112.5},
+      {"year": 2022, "rank": 1, "value": 3147211.4},
+      {"year": 2023, "rank": 1, "value": 3204016.4},
+      {"year": 2024, "rank": 1, "value": 3306928.6}
+    ]
+  },
+  {
+    "fips": "36000",
+    "name": "New York",
+    "points": [
+      {"year": 1997, "rank": 2, "value": 1085934.4},
+      {"year": 1998, "rank": 2, "value": 1112323.6},
+      {"year": 1999, "rank": 2, "value": 1172149.8},
+      {"year": 2000, "rank": 2, "value": 1217036.4},
+      {"year": 2001, "rank": 2, "value": 1240755.2},
+      {"year": 2002, "rank": 2, "value": 1228580.8},
+      {"year": 2003, "rank": 2, "value": 1236563.1},
+      {"year": 2004, "rank": 2, "value": 1269433.1},
+      {"year": 2005, "rank": 2, "value": 1301438.0},
+      {"year": 2006, "rank": 2, "value": 1339568.5},
+      {"year": 2007, "rank": 2, "value": 1353798.9},
+      {"year": 2008, "rank": 2, "value": 1328095.7},
+      {"year": 2009, "rank": 2, "value": 1379504.6},
+      {"year": 2010, "rank": 2, "value": 1431624.0},
+      {"year": 2011, "rank": 2, "value": 1440346.8},
+      {"year": 2012, "rank": 2, "value": 1496280.1},
+      {"year": 2013, "rank": 3, "value": 1501818.0},
+      {"year": 2014, "rank": 3, "value": 1535375.9},
+      {"year": 2015, "rank": 3, "value": 1565835.2},
+      {"year": 2016, "rank": 3, "value": 1590567.8},
+      {"year": 2017, "rank": 3, "value": 1624800.7},
+      {"year": 2018, "rank": 3, "value": 1665186.8},
+      {"year": 2019, "rank": 3, "value": 1704364.3},
+      {"year": 2020, "rank": 3, "value": 1667234.8},
+      {"year": 2021, "rank": 3, "value": 1750551.2},
+      {"year": 2022, "rank": 3, "value": 1781554.1},
+      {"year": 2023, "rank": 3, "value": 1793384.5},
+      {"year": 2024, "rank": 3, "value": 1840059.3}
+    ]
+  },
+  {
+    "fips": "48000",
+    "name": "Texas",
+    "points": [
+      {"year": 1997, "rank": 3, "value": 860046.9},
+      {"year": 1998, "rank": 3, "value": 920059.6},
+      {"year": 1999, "rank": 3, "value": 957247.2},
+      {"year": 2000, "rank": 3, "value": 989904.9},
+      {"year": 2001, "rank": 3, "value": 1020517.0},
+      {"year": 2002, "rank": 3, "value": 1042584.4},
+      {"year": 2003, "rank": 3, "value": 1052132.3},
+      {"year": 2004, "rank": 3, "value": 1111189.1},
+      {"year": 2005, "rank": 3, "value": 1143413.1},
+      {"year": 2006, "rank": 3, "value": 1225147.3},
+      {"year": 2007, "rank": 3, "value": 1288828.7},
+      {"year": 2008, "rank": 3, "value": 1287191.5},
+      {"year": 2009, "rank": 3, "value": 1285560.2},
+      {"year": 2010, "rank": 3, "value": 1323059.1},
+      {"year": 2011, "rank": 3, "value": 1370174.9},
+      {"year": 2012, "rank": 3, "value": 1438354.4},
+      {"year": 2013, "rank": 2, "value": 1511806.5},
+      {"year": 2014, "rank": 2, "value": 1559636.1},
+      {"year": 2015, "rank": 2, "value": 1634127.1},
+      {"year": 2016, "rank": 2, "value": 1633863.3},
+      {"year": 2017, "rank": 2, "value": 1667313.0},
+      {"year": 2018, "rank": 2, "value": 1746543.3},
+      {"year": 2019, "rank": 2, "value": 1806736.1},
+      {"year": 2020, "rank": 2, "value": 1782738.2},
+      {"year": 2021, "rank": 2, "value": 1905512.4},
+      {"year": 2022, "rank": 2, "value": 1975164.0},
+      {"year": 2023, "rank": 2, "value": 2137536.7},
+      {"year": 2024, "rank": 2, "value": 2221943.3}
+    ]
+  },
+  {
+    "fips": "17000",
+    "name": "Illinois",
+    "points": [
+      {"year": 1997, "rank": 4, "value": 619325.8},
+      {"year": 1998, "rank": 4, "value": 639642.7},
+      {"year": 1999, "rank": 5, "value": 663857.8},
+      {"year": 2000, "rank": 5, "value": 687111.4},
+      {"year": 2001, "rank": 5, "value": 688404.3},
+      {"year": 2002, "rank": 5, "value": 692398.1},
+      {"year": 2003, "rank": 5, "value": 703548.8},
+      {"year": 2004, "rank": 5, "value": 726139.0},
+      {"year": 2005, "rank": 5, "value": 741248.6},
+      {"year": 2006, "rank": 5, "value": 759825.7},
+      {"year": 2007, "rank": 5, "value": 769571.6},
+      {"year": 2008, "rank": 5, "value": 759095.3},
+      {"year": 2009, "rank": 5, "value": 740794.3},
+      {"year": 2010, "rank": 5, "value": 755391.4},
+      {"year": 2011, "rank": 5, "value": 772225.6},
+      {"year": 2012, "rank": 5, "value": 790723.3},
+      {"year": 2013, "rank": 5, "value": 795435.2},
+      {"year": 2014, "rank": 5, "value": 811490.1},
+      {"year": 2015, "rank": 5, "value": 825424.9},
+      {"year": 2016, "rank": 5, "value": 826404.7},
+      {"year": 2017, "rank": 5, "value": 832826.8},
+      {"year": 2018, "rank": 5, "value": 851517.2},
+      {"year": 2019, "rank": 5, "value": 858018.3},
+      {"year": 2020, "rank": 5, "value": 810693.1},
+      {"year": 2021, "rank": 5, "value": 857114.6},
+      {"year": 2022, "rank": 5, "value": 872907.5},
+      {"year": 2023, "rank": 5, "value": 884965.3},
+      {"year": 2024, "rank": 5, "value": 899125.9}
+    ]
+  },
+  {
+    "fips": "12000",
+    "name": "Florida",
+    "points": [
+      {"year": 1997, "rank": 5, "value": 603988.6},
+      {"year": 1998, "rank": 5, "value": 634032.3},
+      {"year": 1999, "rank": 4, "value": 664152.0},
+      {"year": 2000, "rank": 4, "value": 693837.3},
+      {"year": 2001, "rank": 4, "value": 714638.0},
+      {"year": 2002, "rank": 4, "value": 746252.8},
+      {"year": 2003, "rank": 4, "value": 781834.2},
+      {"year": 2004, "rank": 4, "value": 833946.8},
+      {"year": 2005, "rank": 4, "value": 883164.5},
+      {"year": 2006, "rank": 4, "value": 909298.9},
+      {"year": 2007, "rank": 4, "value": 922288.3},
+      {"year": 2008, "rank": 4, "value": 891766.9},
+      {"year": 2009, "rank": 4, "value": 840480.6},
+      {"year": 2010, "rank": 4, "value": 851956.4},
+      {"year": 2011, "rank": 4, "value": 849395.3},
+      {"year": 2012, "rank": 4, "value": 857861.3},
+      {"year": 2013, "rank": 4, "value": 880183.5},
+      {"year": 2014, "rank": 4, "value": 905648.5},
+      {"year": 2015, "rank": 4, "value": 945929.0},
+      {"year": 2016, "rank": 4, "value": 978989.7},
+      {"year": 2017, "rank": 4, "value": 1014866.9},
+      {"year": 2018, "rank": 4, "value": 1050433.8},
+      {"year": 2019, "rank": 4, "value": 1084913.9},
+      {"year": 2020, "rank": 4, "value": 1072481.6},
+      {"year": 2021, "rank": 4, "value": 1172655.3},
+      {"year": 2022, "rank": 4, "value": 1245927.6},
+      {"year": 2023, "rank": 4, "value": 1309392.2},
+      {"year": 2024, "rank": 4, "value": 1352275.1}
+    ]
+  },
+  {
+    "fips": "42000",
+    "name": "Pennsylvania",
+    "points": [
+      {"year": 1997, "rank": 6, "value": 521711.8},
+      {"year": 1998, "rank": 6, "value": 534933.6},
+      {"year": 1999, "rank": 6, "value": 552163.6},
+      {"year": 2000, "rank": 6, "value": 566250.9},
+      {"year": 2001, "rank": 6, "value": 577677.5},
+      {"year": 2002, "rank": 6, "value": 583507.4},
+      {"year": 2003, "rank": 6, "value": 598809.5},
+      {"year": 2004, "rank": 6, "value": 614957.1},
+      {"year": 2005, "rank": 6, "value": 626290.1},
+      {"year": 2006, "rank": 6, "value": 626589.9},
+      {"year": 2007, "rank": 6, "value": 649638.1},
+      {"year": 2008, "rank": 6, "value": 665148.3},
+      {"year": 2009, "rank": 6, "value": 645206.7},
+      {"year": 2010, "rank": 6, "value": 666805.8},
+      {"year": 2011, "rank": 6, "value": 676468.3},
+      {"year": 2012, "rank": 6, "value": 689007.0},
+      {"year": 2013, "rank": 6, "value": 704195.0},
+      {"year": 2014, "rank": 6, "value": 718691.6},
+      {"year": 2015, "rank": 6, "value": 734145.1},
+      {"year": 2016, "rank": 6, "value": 744847.1},
+      {"year": 2017, "rank": 6, "value": 754318.0},
+      {"year": 2018, "rank": 6, "value": 763855.4},
+      {"year": 2019, "rank": 6, "value": 771852.5},
+      {"year": 2020, "rank": 6, "value": 738176.1},
+      {"year": 2021, "rank": 6, "value": 766140.0},
+      {"year": 2022, "rank": 6, "value": 776824.7},
+      {"year": 2023, "rank": 6, "value": 789918.5},
+      {"year": 2024, "rank": 6, "value": 803232.5}
+    ]
+  },
+  {
+    "fips": "39000",
+    "name": "Ohio",
+    "points": [
+      {"year": 1997, "rank": 7, "value": 501214.2},
+      {"year": 1998, "rank": 7, "value": 518604.0},
+      {"year": 1999, "rank": 7, "value": 530745.6},
+      {"year": 2000, "rank": 7, "value": 541005.9},
+      {"year": 2001, "rank": 7, "value": 534612.4},
+      {"year": 2002, "rank": 7, "value": 546688.2},
+      {"year": 2003, "rank": 7, "value": 557024.5},
+      {"year": 2004, "rank": 7, "value": 572308.5},
+      {"year": 2005, "rank": 7, "value": 584867.7},
+      {"year": 2006, "rank": 7, "value": 582637.6},
+      {"year": 2007, "rank": 7, "value": 585403.0},
+      {"year": 2008, "rank": 7, "value": 580389.0},
+      {"year": 2009, "rank": 7, "value": 550982.4},
+      {"year": 2010, "rank": 7, "value": 563816.3},
+      {"year": 2011, "rank": 7, "value": 580251.4},
+      {"year": 2012, "rank": 7, "value": 586540.9},
+      {"year": 2013, "rank": 7, "value": 603057.4},
+      {"year": 2014, "rank": 7, "value": 624973.4},
+      {"year": 2015, "rank": 7, "value": 633274.8},
+      {"year": 2016, "rank": 7, "value": 638157.5},
+      {"year": 2017, "rank": 7, "value": 652187.5},
+      {"year": 2018, "rank": 7, "value": 656212.0},
+      {"year": 2019, "rank": 7, "value": 674063.9},
+      {"year": 2020, "rank": 7, "value": 655730.1},
+      {"year": 2021, "rank": 7, "value": 691630.0},
+      {"year": 2022, "rank": 7, "value": 694473.4},
+      {"year": 2023, "rank": 7, "value": 707996.2},
+      {"year": 2024, "rank": 7, "value": 721997.3}
+    ]
+  },
+  {
+    "fips": "34000",
+    "name": "New Jersey",
+    "points": [
+      {"year": 1997, "rank": 8, "value": 454064.1},
+      {"year": 1998, "rank": 8, "value": 461237.3},
+      {"year": 1999, "rank": 8, "value": 477827.9},
+      {"year": 2000, "rank": 8, "value": 503901.5},
+      {"year": 2001, "rank": 8, "value": 509631.5},
+      {"year": 2002, "rank": 8, "value": 517752.2},
+      {"year": 2003, "rank": 8, "value": 529815.9},
+      {"year": 2004, "rank": 8, "value": 536174.0},
+      {"year": 2005, "rank": 8, "value": 546357.8},
+      {"year": 2006, "rank": 8, "value": 555211.0},
+      {"year": 2007, "rank": 8, "value": 560823.8},
+      {"year": 2008, "rank": 8, "value": 573202.7},
+      {"year": 2009, "rank": 8, "value": 546362.2},
+      {"year": 2010, "rank": 8, "value": 554764.4},
+      {"year": 2011, "rank": 8, "value": 548479.3},
+      {"year": 2012, "rank": 8, "value": 560729.7},
+      {"year": 2013, "rank": 8, "value": 570952.4},
+      {"year": 2014, "rank": 8, "value": 570696.4},
+      {"year": 2015, "rank": 8, "value": 581414.9},
+      {"year": 2016, "rank": 8, "value": 587049.7},
+      {"year": 2017, "rank": 8, "value": 590086.7},
+      {"year": 2018, "rank": 8, "value": 606892.2},
+      {"year": 2019, "rank": 9, "value": 618691.0},
+      {"year": 2020, "rank": 9, "value": 598481.3},
+      {"year": 2021, "rank": 9, "value": 631158.3},
+      {"year": 2022, "rank": 9, "value": 648512.4},
+      {"year": 2023, "rank": 10, "value": 662320.1},
+      {"year": 2024, "rank": 10, "value": 675897.6}
+    ]
+  },
+  {
+    "fips": "13000",
+    "name": "Georgia",
+    "points": [
+      {"year": 1997, "rank": 10, "value": 351183.9},
+      {"year": 1998, "rank": 10, "value": 377705.9},
+      {"year": 1999, "rank": 10, "value": 404465.2},
+      {"year": 2000, "rank": 10, "value": 417713.5},
+      {"year": 2001, "rank": 10, "value": 422731.6},
+      {"year": 2002, "rank": 10, "value": 427329.7},
+      {"year": 2003, "rank": 10, "value": 439074.6},
+      {"year": 2004, "rank": 10, "value": 461245.4},
+      {"year": 2005, "rank": 10, "value": 480838.3},
+      {"year": 2006, "rank": 9, "value": 487524.9},
+      {"year": 2007, "rank": 9, "value": 492238.7},
+      {"year": 2008, "rank": 10, "value": 481860.3},
+      {"year": 2009, "rank": 10, "value": 464016.8},
+      {"year": 2010, "rank": 11, "value": 471588.2},
+      {"year": 2011, "rank": 10, "value": 481215.4},
+      {"year": 2012, "rank": 9, "value": 489027.3},
+      {"year": 2013, "rank": 9, "value": 499900.2},
+      {"year": 2014, "rank": 9, "value": 517511.9},
+      {"year": 2015, "rank": 9, "value": 540108.5},
+      {"year": 2016, "rank": 9, "value": 561718.3},
+      {"year": 2017, "rank": 9, "value": 583543.3},
+      {"year": 2018, "rank": 9, "value": 600934.7},
+      {"year": 2019, "rank": 8, "value": 620744.9},
+      {"year": 2020, "rank": 8, "value": 603202.5},
+      {"year": 2021, "rank": 8, "value": 643748.4},
+      {"year": 2022, "rank": 8, "value": 670107.2},
+      {"year": 2023, "rank": 8, "value": 679447.2},
+      {"year": 2024, "rank": 9, "value": 697450.9}
+    ]
+  },
+  {
+    "fips": "37000",
+    "name": "North Carolina",
+    "points": [
+      {"year": 1997, "rank": 11, "value": 340580.3},
+      {"year": 1998, "rank": 11, "value": 351977.9},
+      {"year": 1999, "rank": 11, "value": 372030.3},
+      {"year": 2000, "rank": 11, "value": 384115.3},
+      {"year": 2001, "rank": 12, "value": 387433.9},
+      {"year": 2002, "rank": 11, "value": 393685.9},
+      {"year": 2003, "rank": 11, "value": 404582.5},
+      {"year": 2004, "rank": 12, "value": 420579.4},
+      {"year": 2005, "rank": 11, "value": 442305.6},
+      {"year": 2006, "rank": 11, "value": 470663.9},
+      {"year": 2007, "rank": 11, "value": 477920.8},
+      {"year": 2008, "rank": 9, "value": 492688.8},
+      {"year": 2009, "rank": 9, "value": 473610.5},
+      {"year": 2010, "rank": 9, "value": 482030.4},
+      {"year": 2011, "rank": 9, "value": 484200.3},
+      {"year": 2012, "rank": 10, "value": 488126.5},
+      {"year": 2013, "rank": 10, "value": 497456.6},
+      {"year": 2014, "rank": 10, "value": 509782.4},
+      {"year": 2015, "rank": 10, "value": 525229.1},
+      {"year": 2016, "rank": 10, "value": 536308.5},
+      {"year": 2017, "rank": 10, "value": 546810.1},
+      {"year": 2018, "rank": 11, "value": 556573.7},
+      {"year": 2019, "rank": 11, "value": 567975.0},
+      {"year": 2020, "rank": 11, "value": 564278.8},
+      {"year": 2021, "rank": 11, "value": 599293.8},
+      {"year": 2022, "rank": 11, "value": 620666.5},
+      {"year": 2023, "rank": 11, "value": 643045.8},
+      {"year": 2024, "rank": 11, "value": 664131.6}
+    ]
+  },
+  {
+    "fips": "25000",
+    "name": "Massachusetts",
+    "points": [
+      {"year": 1997, "rank": 12, "value": 322389.9},
+      {"year": 1998, "rank": 13, "value": 335504.4},
+      {"year": 1999, "rank": 13, "value": 353837.9},
+      {"year": 2000, "rank": 12, "value": 382599.6},
+      {"year": 2001, "rank": 11, "value": 388180.8},
+      {"year": 2002, "rank": 13, "value": 388451.6},
+      {"year": 2003, "rank": 13, "value": 397069.9},
+      {"year": 2004, "rank": 13, "value": 407886.0},
+      {"year": 2005, "rank": 13, "value": 417075.6},
+      {"year": 2006, "rank": 13, "value": 426926.1},
+      {"year": 2007, "rank": 13, "value": 440373.8},
+      {"year": 2008, "rank": 13, "value": 447526.8},
+      {"year": 2009, "rank": 12, "value": 441307.6},
+      {"year": 2010, "rank": 12, "value": 462330.8},
+      {"year": 2011, "rank": 12, "value": 472664.3},
+      {"year": 2012, "rank": 11, "value": 483286.3},
+      {"year": 2013, "rank": 12, "value": 486991.8},
+      {"year": 2014, "rank": 11, "value": 496250.9},
+      {"year": 2015, "rank": 11, "value": 514398.7},
+      {"year": 2016, "rank": 11, "value": 521662.8},
+      {"year": 2017, "rank": 11, "value": 530129.4},
+      {"year": 2018, "rank": 12, "value": 549262.1},
+      {"year": 2019, "rank": 12, "value": 566326.8},
+      {"year": 2020, "rank": 12, "value": 560395.8},
+      {"year": 2021, "rank": 12, "value": 597420.0},
+      {"year": 2022, "rank": 12, "value": 607470.6},
+      {"year": 2023, "rank": 12, "value": 614786.1},
+      {"year": 2024, "rank": 12, "value": 628786.9}
+    ]
+  },
+  {
+    "fips": "53000",
+    "name": "Washington",
+    "points": [
+      {"year": 1997, "rank": 14, "value": 281522.2},
+      {"year": 1998, "rank": 14, "value": 299817.0},
+      {"year": 1999, "rank": 14, "value": 322721.6},
+      {"year": 2000, "rank": 14, "value": 325857.6},
+      {"year": 2001, "rank": 14, "value": 317860.6},
+      {"year": 2002, "rank": 14, "value": 321977.1},
+      {"year": 2003, "rank": 14, "value": 327645.2},
+      {"year": 2004, "rank": 14, "value": 335449.3},
+      {"year": 2005, "rank": 14, "value": 358396.3},
+      {"year": 2006, "rank": 14, "value": 372145.0},
+      {"year": 2007, "rank": 14, "value": 394221.9},
+      {"year": 2008, "rank": 14, "value": 401093.2},
+      {"year": 2009, "rank": 14, "value": 390814.0},
+      {"year": 2010, "rank": 14, "value": 403471.3},
+      {"year": 2011, "rank": 14, "value": 411575.7},
+      {"year": 2012, "rank": 14, "value": 426447.0},
+      {"year": 2013, "rank": 14, "value": 439472.2},
+      {"year": 2014, "rank": 14, "value": 456186.5},
+      {"year": 2015, "rank": 14, "value": 476715.4},
+      {"year": 2016, "rank": 14, "value": 495724.9},
+      {"year": 2017, "rank": 12, "value": 527169.4},
+      {"year": 2018, "rank": 10, "value": 561785.7},
+      {"year": 2019, "rank": 10, "value": 588794.4},
+      {"year": 2020, "rank": 10, "value": 587167.8},
+      {"year": 2021, "rank": 10, "value": 626122.2},
+      {"year": 2022, "rank": 10, "value": 643017.6},
+      {"year": 2023, "rank": 9, "value": 670977.8},
+      {"year": 2024, "rank": 8, "value": 702232.3}
+    ]
+  }
+];
+
+const HIGHLIGHT_STATE = "California";
+const WIDTH = 900;
+const HEIGHT = 750;
+const margin = { top: 80, right: 130, bottom: 60, left: 130 };
+const innerW = WIDTH - margin.left - margin.right;
+const innerH = HEIGHT - margin.top - margin.bottom;
+
+const years = DATA[0].points.map(d => d.year);
+const minRank = 1;
+const maxRank = Math.max(...DATA.flatMap(d => d.points.map(p => p.rank)));
+
+const xScale = d3.scaleLinear()
+  .domain([d3.min(years), d3.max(years)])
+  .range([0, innerW]);
+
+const yScale = d3.scaleLinear()
+  .domain([minRank - 0.5, maxRank + 0.5])
+  .range([0, innerH]);
+
+const line = d3.line()
+  .x(d => xScale(d.year))
+  .y(d => yScale(d.rank))
+  .curve(d3.curveBumpX);
+
+const svg = d3.select("body").append("svg")
+  .attr("viewBox", `0 0 ${WIDTH} ${HEIGHT}`)
+  .attr("width", WIDTH)
+  .attr("height", HEIGHT)
+  .style("background", "#F6F7F3");
+
+const g = svg.append("g")
+  .attr("transform", `translate(${margin.left},${margin.top})`);
+
+// Title
+svg.append("text")
+  .attr("x", margin.left)
+  .attr("y", 30)
+  .attr("font-family", "'ABC Oracle Edu', sans-serif")
+  .attr("font-size", 22)
+  .attr("font-weight", 700)
+  .attr("fill", "#3D3733")
+  .text("State Real GDP Rankings");
+
+svg.append("text")
+  .attr("x", margin.left)
+  .attr("y", 52)
+  .attr("font-family", "'ABC Oracle Edu', sans-serif")
+  .attr("font-size", 14)
+  .attr("fill", "#3D3733")
+  .attr("opacity", 0.7)
+  .text("Top 12 states by 2024 real GDP (chained 2017 dollars)");
+
+// X-axis gridlines
+const xTicks = years.filter(y => y % 5 === 0 || y === 1997 || y === 2024);
+g.selectAll(".x-grid")
+  .data(xTicks)
+  .join("line")
+    .attr("class", "x-grid")
+    .attr("x1", d => xScale(d))
+    .attr("x2", d => xScale(d))
+    .attr("y1", 0)
+    .attr("y2", innerH)
+    .attr("stroke", "#DADFCE")
+    .attr("stroke-width", 0.5);
+
+// X-axis labels
+g.selectAll(".x-label")
+  .data(xTicks)
+  .join("text")
+    .attr("class", "x-label")
+    .attr("x", d => xScale(d))
+    .attr("y", innerH + 24)
+    .attr("text-anchor", "middle")
+    .attr("font-family", "'ABC Oracle Edu', sans-serif")
+    .attr("font-size", 12)
+    .attr("fill", "#3D3733")
+    .attr("opacity", 0.6)
+    .text(d => d);
+
+// Y-axis rank labels
+const rankTicks = d3.range(minRank, maxRank + 1);
+g.selectAll(".y-grid")
+  .data(rankTicks)
+  .join("line")
+    .attr("class", "y-grid")
+    .attr("x1", -10)
+    .attr("x2", innerW + 10)
+    .attr("y1", d => yScale(d))
+    .attr("y2", d => yScale(d))
+    .attr("stroke", "#DADFCE")
+    .attr("stroke-width", 0.5);
+
+// Lines
+const stateGroups = g.selectAll(".state-group")
+  .data(DATA)
+  .join("g")
+    .attr("class", "state-group");
+
+stateGroups.append("path")
+  .attr("class", "bump-line")
+  .attr("d", d => line(d.points))
+  .attr("fill", "none")
+  .attr("stroke", d => d.name === HIGHLIGHT_STATE ? "#F4743B" : "#3D3733")
+  .attr("stroke-width", d => d.name === HIGHLIGHT_STATE ? 3 : 1.5)
+  .attr("stroke-opacity", d => d.name === HIGHLIGHT_STATE ? 1 : 0.25);
+
+// Circles
+stateGroups.selectAll(".bump-dot")
+  .data(d => d.points.map(p => ({ ...p, name: d.name, fips: d.fips })))
+  .join("circle")
+    .attr("class", "bump-dot")
+    .attr("cx", d => xScale(d.year))
+    .attr("cy", d => yScale(d.rank))
+    .attr("r", d => d.name === HIGHLIGHT_STATE ? 4 : 3)
+    .attr("fill", d => d.name === HIGHLIGHT_STATE ? "#F4743B" : "#3D3733")
+    .attr("fill-opacity", d => d.name === HIGHLIGHT_STATE ? 1 : 0.25)
+    .attr("stroke", "#F6F7F3")
+    .attr("stroke-width", 1);
+
+// Label collision avoidance
+function avoidCollisions(labels, yAccessor, spacing) {
+  const sorted = [...labels].sort((a, b) => yAccessor(a) - yAccessor(b));
+  for (let i = 1; i < sorted.length; i++) {
+    const prev = yAccessor(sorted[i - 1]);
+    const curr = yAccessor(sorted[i]);
+    if (curr - prev < spacing) {
+      sorted[i]._adjustedY = prev + spacing;
+    } else {
+      sorted[i]._adjustedY = curr;
+    }
+  }
+  sorted[0]._adjustedY = yAccessor(sorted[0]);
+  // Second pass to fix downstream
+  for (let i = 1; i < sorted.length; i++) {
+    if (sorted[i]._adjustedY - sorted[i - 1]._adjustedY < spacing) {
+      sorted[i]._adjustedY = sorted[i - 1]._adjustedY + spacing;
+    }
+  }
+  return sorted;
+}
+
+// Left labels (1997)
+const leftLabels = DATA.map(d => ({
+  name: d.name,
+  rank: d.points[0].rank,
+  isHighlight: d.name === HIGHLIGHT_STATE
+}));
+const leftAdjusted = avoidCollisions(leftLabels, d => yScale(d.rank), 16);
+
+g.selectAll(".label-left")
+  .data(leftAdjusted)
+  .join("text")
+    .attr("class", "label-left")
+    .attr("x", -14)
+    .attr("y", d => d._adjustedY)
+    .attr("text-anchor", "end")
+    .attr("dominant-baseline", "middle")
+    .attr("font-family", "'ABC Oracle Edu', sans-serif")
+    .attr("font-size", 11)
+    .attr("font-weight", d => d.isHighlight ? 700 : 400)
+    .attr("fill", d => d.isHighlight ? "#F4743B" : "#3D3733")
+    .attr("opacity", d => d.isHighlight ? 1 : 0.7)
+    .text(d => d.name);
+
+// Right labels (2024)
+const rightLabels = DATA.map(d => ({
+  name: d.name,
+  rank: d.points[d.points.length - 1].rank,
+  isHighlight: d.name === HIGHLIGHT_STATE
+}));
+const rightAdjusted = avoidCollisions(rightLabels, d => yScale(d.rank), 16);
+
+g.selectAll(".label-right")
+  .data(rightAdjusted)
+  .join("text")
+    .attr("class", "label-right")
+    .attr("x", innerW + 14)
+    .attr("y", d => d._adjustedY)
+    .attr("text-anchor", "start")
+    .attr("dominant-baseline", "middle")
+    .attr("font-family", "'ABC Oracle Edu', sans-serif")
+    .attr("font-size", 11)
+    .attr("font-weight", d => d.isHighlight ? 700 : 400)
+    .attr("fill", d => d.isHighlight ? "#F4743B" : "#3D3733")
+    .attr("opacity", d => d.isHighlight ? 1 : 0.7)
+    .text(d => d.name);
+
+// Hover interaction
+const tooltip = d3.select("#tooltip");
+
+stateGroups
+  .on("mouseenter", function(event, d) {
+    // Dim all others
+    stateGroups.selectAll(".bump-line")
+      .attr("stroke-opacity", s => s.name === d.name ? 1 : 0.08);
+    stateGroups.selectAll(".bump-dot")
+      .attr("fill-opacity", s => s.name === d.name ? 1 : 0.08);
+
+    d3.select(this).select(".bump-line")
+      .attr("stroke-width", 3)
+      .attr("stroke", d.name === HIGHLIGHT_STATE ? "#F4743B" : "#3D3733");
+  })
+  .on("mousemove", function(event, d) {
+    const [mx] = d3.pointer(event, g.node());
+    const yearIdx = Math.round(xScale.invert(mx)) - years[0];
+    const clamped = Math.max(0, Math.min(years.length - 1, yearIdx));
+    const pt = d.points[clamped];
+    if (!pt) return;
+
+    const gdpStr = pt.value >= 1000000
+      ? `$${(pt.value / 1000000).toFixed(2)}T`
+      : `$${(pt.value / 1000).toFixed(0)}B`;
+
+    tooltip
+      .style("opacity", 1)
+      .style("left", (event.pageX + 14) + "px")
+      .style("top", (event.pageY - 28) + "px")
+      .html(`<strong>${d.name}</strong> (${pt.year})<br>Rank #${pt.rank}<br>GDP: ${gdpStr}`);
+  })
+  .on("mouseleave", function() {
+    stateGroups.selectAll(".bump-line")
+      .attr("stroke-opacity", d => d.name === HIGHLIGHT_STATE ? 1 : 0.25)
+      .attr("stroke-width", d => d.name === HIGHLIGHT_STATE ? 3 : 1.5);
+    stateGroups.selectAll(".bump-dot")
+      .attr("fill-opacity", d => d.name === HIGHLIGHT_STATE ? 1 : 0.25);
+    tooltip.style("opacity", 0);
+  });
+
+// Source
+svg.append("text")
+  .attr("x", margin.left)
+  .attr("y", HEIGHT - 14)
+  .attr("font-family", "'ABC Oracle Edu', sans-serif")
+  .attr("font-size", 10)
+  .attr("fill", "#3D3733")
+  .attr("opacity", 0.5)
+  .attr("font-style", "italic")
+  .text("Source: Bureau of Economic Analysis, SAGDP9 Real GDP by State (chained 2017 dollars)");
+</script>
+</body>
+</html>

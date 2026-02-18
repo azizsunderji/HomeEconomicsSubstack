@@ -1,0 +1,7404 @@
+{
+  "CH-VS": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Canton of Valais",
+      "country": "Switzerland"
+    },
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Canton of Valais",
+      "country": "Switzerland"
+    },
+    {
+      "lang": "Swiss High German",
+      "code": "",
+      "region": "Canton of Valais",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-GE": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Canton of Geneva",
+      "country": "Switzerland"
+    },
+    {
+      "lang": "Swiss French",
+      "code": "",
+      "region": "Canton of Geneva",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-FR": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Canton of Fribourg",
+      "country": "Switzerland"
+    },
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Canton of Fribourg",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-NE": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Canton of Neuchâtel",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-JU": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Canton of Jura",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-VD": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Canton of Vaud",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-GL": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Canton of Glarus",
+      "country": "Switzerland"
+    },
+    {
+      "lang": "Swiss High German",
+      "code": "",
+      "region": "Canton of Glarus",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-GR": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Canton of the Grisons",
+      "country": "Switzerland"
+    },
+    {
+      "lang": "Italian",
+      "code": "ita",
+      "region": "Canton of the Grisons",
+      "country": "Switzerland"
+    },
+    {
+      "lang": "Romansh",
+      "code": "roh",
+      "region": "Canton of the Grisons",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-SO": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Canton of Solothurn",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-ZG": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Canton of Zug",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-ZH": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Canton of Zürich",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-AG": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Canton of Aargau",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-AI": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Canton of Appenzell Innerrhoden",
+      "country": "Switzerland"
+    },
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Canton of Appenzell Innerrhoden",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-LU": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Canton of Lucerne",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-BL": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Canton of Basel-Landschaft",
+      "country": "Switzerland"
+    },
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Canton of Basel-Landschaft",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-BS": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Canton of Basel-Stadt",
+      "country": "Switzerland"
+    },
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Canton of Basel-Stadt",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-UR": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Canton of Uri",
+      "country": "Switzerland"
+    },
+    {
+      "lang": "Swiss High German",
+      "code": "",
+      "region": "Canton of Uri",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-SH": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Canton of Schaffhausen",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-TG": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Canton of Thurgau",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-TI": [
+    {
+      "lang": "Italian",
+      "code": "ita",
+      "region": "Canton of Ticino",
+      "country": "Switzerland"
+    }
+  ],
+  "ES-GA": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Galicia",
+      "country": "Spain"
+    },
+    {
+      "lang": "Galician",
+      "code": "glg",
+      "region": "Galicia",
+      "country": "Spain"
+    }
+  ],
+  "ES-AS": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Asturias",
+      "country": "Spain"
+    }
+  ],
+  "ES-PV": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Basque Autonomous Community",
+      "country": "Spain"
+    },
+    {
+      "lang": "Basque",
+      "code": "eus",
+      "region": "Basque Autonomous Community",
+      "country": "Spain"
+    },
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Basque Autonomous Community",
+      "country": "Spain"
+    },
+    {
+      "lang": "Basque",
+      "code": "eus",
+      "region": "Basque Autonomous Community",
+      "country": "Spain"
+    },
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Basque Autonomous Community",
+      "country": "Spain"
+    },
+    {
+      "lang": "Basque",
+      "code": "eus",
+      "region": "Basque Autonomous Community",
+      "country": "Spain"
+    }
+  ],
+  "ES-AR": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Aragon",
+      "country": "Spain"
+    },
+    {
+      "lang": "Catalan",
+      "code": "cat",
+      "region": "Aragon",
+      "country": "Spain"
+    },
+    {
+      "lang": "Aragonese",
+      "code": "arg",
+      "region": "Aragon",
+      "country": "Spain"
+    }
+  ],
+  "ES-CT": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Catalonia",
+      "country": "Spain"
+    },
+    {
+      "lang": "Catalan",
+      "code": "cat",
+      "region": "Catalonia",
+      "country": "Spain"
+    },
+    {
+      "lang": "Occitan",
+      "code": "oci",
+      "region": "Catalonia",
+      "country": "Spain"
+    },
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Catalonia",
+      "country": "Spain"
+    },
+    {
+      "lang": "Catalan",
+      "code": "cat",
+      "region": "Catalonia",
+      "country": "Spain"
+    },
+    {
+      "lang": "Occitan",
+      "code": "oci",
+      "region": "Catalonia",
+      "country": "Spain"
+    }
+  ],
+  "ES-VC": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Valencian Community",
+      "country": "Spain"
+    },
+    {
+      "lang": "Valencian",
+      "code": "",
+      "region": "Valencian Community",
+      "country": "Spain"
+    },
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Valencian Community",
+      "country": "Spain"
+    },
+    {
+      "lang": "Valencian",
+      "code": "",
+      "region": "Valencian Community",
+      "country": "Spain"
+    }
+  ],
+  "ES-RI": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "La Rioja",
+      "country": "Spain"
+    }
+  ],
+  "ES-CL": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Castile and León",
+      "country": "Spain"
+    }
+  ],
+  "ES-AN": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Andalusia",
+      "country": "Spain"
+    }
+  ],
+  "ES-CN": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Canary Islands",
+      "country": "Spain"
+    }
+  ],
+  "ES-IB": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Balearic Islands",
+      "country": "Spain"
+    },
+    {
+      "lang": "Catalan",
+      "code": "cat",
+      "region": "Balearic Islands",
+      "country": "Spain"
+    },
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Balearic Islands",
+      "country": "Spain"
+    },
+    {
+      "lang": "Catalan",
+      "code": "cat",
+      "region": "Balearic Islands",
+      "country": "Spain"
+    }
+  ],
+  "PH-07": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Central Visayas",
+      "country": "Philippines"
+    },
+    {
+      "lang": "Cebuano",
+      "code": "ceb",
+      "region": "Central Visayas",
+      "country": "Philippines"
+    },
+    {
+      "lang": "Filipino",
+      "code": "fil",
+      "region": "Central Visayas",
+      "country": "Philippines"
+    }
+  ],
+  "AD-02": [
+    {
+      "lang": "Catalan",
+      "code": "cat",
+      "region": "Canillo",
+      "country": "Andorra"
+    }
+  ],
+  "AD-03": [
+    {
+      "lang": "Catalan",
+      "code": "cat",
+      "region": "Encamp",
+      "country": "Andorra"
+    }
+  ],
+  "AD-05": [
+    {
+      "lang": "Catalan",
+      "code": "cat",
+      "region": "Ordino",
+      "country": "Andorra"
+    }
+  ],
+  "AD-04": [
+    {
+      "lang": "Catalan",
+      "code": "cat",
+      "region": "La Massana",
+      "country": "Andorra"
+    }
+  ],
+  "AD-06": [
+    {
+      "lang": "Catalan",
+      "code": "cat",
+      "region": "Sant Julià de Lòria",
+      "country": "Andorra"
+    }
+  ],
+  "AD-08": [
+    {
+      "lang": "Catalan",
+      "code": "cat",
+      "region": "Escaldes-Engordany",
+      "country": "Andorra"
+    }
+  ],
+  "AD-07": [
+    {
+      "lang": "Catalan",
+      "code": "cat",
+      "region": "Andorra la Vella",
+      "country": "Andorra"
+    }
+  ],
+  "CH-BE": [
+    {
+      "lang": "Swiss High German",
+      "code": "",
+      "region": "Canton of Berne",
+      "country": "Switzerland"
+    },
+    {
+      "lang": "Swiss French",
+      "code": "",
+      "region": "Canton of Berne",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-AR": [
+    {
+      "lang": "Swiss High German",
+      "code": "",
+      "region": "Canton of Appenzell Ausserrhoden",
+      "country": "Switzerland"
+    },
+    {
+      "lang": "Swiss High German",
+      "code": "",
+      "region": "Canton of Appenzell Ausserrhoden",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-SZ": [
+    {
+      "lang": "Swiss High German",
+      "code": "",
+      "region": "Canton of Schwyz",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-OW": [
+    {
+      "lang": "Swiss High German",
+      "code": "",
+      "region": "Canton of Obwalden",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-NW": [
+    {
+      "lang": "Swiss High German",
+      "code": "",
+      "region": "Canton of Nidwalden",
+      "country": "Switzerland"
+    }
+  ],
+  "CH-SG": [
+    {
+      "lang": "Swiss High German",
+      "code": "",
+      "region": "Canton of St. Gallen",
+      "country": "Switzerland"
+    }
+  ],
+  "GT-16": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Alta Verapaz Department",
+      "country": "Guatemala"
+    },
+    {
+      "lang": "Achi",
+      "code": "acr",
+      "region": "Alta Verapaz Department",
+      "country": "Guatemala"
+    },
+    {
+      "lang": "Q’eqchi’",
+      "code": "kek",
+      "region": "Alta Verapaz Department",
+      "country": "Guatemala"
+    },
+    {
+      "lang": "Poqomchi'",
+      "code": "poh",
+      "region": "Alta Verapaz Department",
+      "country": "Guatemala"
+    },
+    {
+      "lang": "Poqomam",
+      "code": "poc",
+      "region": "Alta Verapaz Department",
+      "country": "Guatemala"
+    }
+  ],
+  "GT-03": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Sacatepéquez Department",
+      "country": "Guatemala"
+    },
+    {
+      "lang": "Kaqchikel",
+      "code": "cak",
+      "region": "Sacatepéquez Department",
+      "country": "Guatemala"
+    }
+  ],
+  "GT-18": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Izabal Department",
+      "country": "Guatemala"
+    },
+    {
+      "lang": "Garifuna",
+      "code": "cab",
+      "region": "Izabal Department",
+      "country": "Guatemala"
+    },
+    {
+      "lang": "Q’eqchi’",
+      "code": "kek",
+      "region": "Izabal Department",
+      "country": "Guatemala"
+    }
+  ],
+  "GT-22": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Jutiapa Department",
+      "country": "Guatemala"
+    }
+  ],
+  "GT-21": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Jalapa Department",
+      "country": "Guatemala"
+    }
+  ],
+  "GT-05": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Escuintla Department",
+      "country": "Guatemala"
+    },
+    {
+      "lang": "Kaqchikel",
+      "code": "cak",
+      "region": "Escuintla Department",
+      "country": "Guatemala"
+    },
+    {
+      "lang": "Poqomam",
+      "code": "poc",
+      "region": "Escuintla Department",
+      "country": "Guatemala"
+    }
+  ],
+  "GT-02": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "El Progreso Department",
+      "country": "Guatemala"
+    }
+  ],
+  "GT-13": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Huehuetenango Department",
+      "country": "Guatemala"
+    },
+    {
+      "lang": "Jakaltek",
+      "code": "jac",
+      "region": "Huehuetenango Department",
+      "country": "Guatemala"
+    },
+    {
+      "lang": "Mam",
+      "code": "mam",
+      "region": "Huehuetenango Department",
+      "country": "Guatemala"
+    },
+    {
+      "lang": "Akateko",
+      "code": "knj",
+      "region": "Huehuetenango Department",
+      "country": "Guatemala"
+    },
+    {
+      "lang": "Awakatek",
+      "code": "agu",
+      "region": "Huehuetenango Department",
+      "country": "Guatemala"
+    },
+    {
+      "lang": "Chuj",
+      "code": "cac",
+      "region": "Huehuetenango Department",
+      "country": "Guatemala"
+    },
+    {
+      "lang": "Q’anjob’al",
+      "code": "kjb",
+      "region": "Huehuetenango Department",
+      "country": "Guatemala"
+    }
+  ],
+  "GT-06": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Santa Rosa Department",
+      "country": "Guatemala"
+    }
+  ],
+  "GT-11": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Retalhuleu Department",
+      "country": "Guatemala"
+    },
+    {
+      "lang": "Kaqchikel",
+      "code": "cak",
+      "region": "Retalhuleu Department",
+      "country": "Guatemala"
+    },
+    {
+      "lang": "K’iche’",
+      "code": "quc",
+      "region": "Retalhuleu Department",
+      "country": "Guatemala"
+    }
+  ],
+  "US-CA": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "California",
+      "country": "United States"
+    }
+  ],
+  "US-AL": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Alabama",
+      "country": "United States"
+    }
+  ],
+  "US-NH": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "New Hampshire",
+      "country": "United States"
+    }
+  ],
+  "US-MA": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Massachusetts",
+      "country": "United States"
+    }
+  ],
+  "US-HI": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Hawaii",
+      "country": "United States"
+    },
+    {
+      "lang": "Hawaiian",
+      "code": "haw",
+      "region": "Hawaii",
+      "country": "United States"
+    }
+  ],
+  "US-AK": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Tsetsaut",
+      "code": "txc",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Gwich’in",
+      "code": "gwi",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Ahtna",
+      "code": "aht",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Iñupiaq",
+      "code": "ipk",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Aleut",
+      "code": "ale",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Eyak",
+      "code": "eya",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Deg Xinag",
+      "code": "ing",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Dena'ina",
+      "code": "tfn",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Tlingit",
+      "code": "tli",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Yupik",
+      "code": "",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Alutiiq",
+      "code": "ems",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Upper Kuskokwim",
+      "code": "kuu",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Tanacross",
+      "code": "tcb",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Hän",
+      "code": "haa",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Koyukon",
+      "code": "koy",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Holikachuk",
+      "code": "hoi",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Haida",
+      "code": "hai",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Tanana",
+      "code": "",
+      "region": "Alaska",
+      "country": "United States"
+    },
+    {
+      "lang": "Tsimshian",
+      "code": "tsi",
+      "region": "Alaska",
+      "country": "United States"
+    }
+  ],
+  "US-FL": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Florida",
+      "country": "United States"
+    }
+  ],
+  "PH-TAW": [
+    {
+      "lang": "Sama",
+      "code": "",
+      "region": "Tawi-Tawi",
+      "country": "Philippines"
+    }
+  ],
+  "RU-KR": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Karelia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Karelia",
+      "country": "Russia"
+    }
+  ],
+  "RU-KO": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Komi Republic",
+      "country": "Russia"
+    },
+    {
+      "lang": "Komi",
+      "code": "kom",
+      "region": "Komi Republic",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Komi Republic",
+      "country": "Russia"
+    },
+    {
+      "lang": "Komi",
+      "code": "kom",
+      "region": "Komi Republic",
+      "country": "Russia"
+    }
+  ],
+  "RU-NEN": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Nenets Autonomous Okrug",
+      "country": "Russia"
+    },
+    {
+      "lang": "Nenets",
+      "code": "yrk",
+      "region": "Nenets Autonomous Okrug",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Nenets Autonomous Okrug",
+      "country": "Russia"
+    },
+    {
+      "lang": "Nenets",
+      "code": "yrk",
+      "region": "Nenets Autonomous Okrug",
+      "country": "Russia"
+    }
+  ],
+  "RU-LEN": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Leningrad Oblast",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Leningrad Oblast",
+      "country": "Russia"
+    }
+  ],
+  "RU-KDA": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Krasnodar Krai",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Krasnodar Krai",
+      "country": "Russia"
+    }
+  ],
+  "RU-AD": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Adygea",
+      "country": "Russia"
+    },
+    {
+      "lang": "Adyghe",
+      "code": "ady",
+      "region": "Adygea",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Adygea",
+      "country": "Russia"
+    },
+    {
+      "lang": "Adyghe",
+      "code": "ady",
+      "region": "Adygea",
+      "country": "Russia"
+    }
+  ],
+  "RU-KL": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Kalmykia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Kalmyk",
+      "code": "xal",
+      "region": "Kalmykia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Kalmykia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Kalmyk",
+      "code": "xal",
+      "region": "Kalmykia",
+      "country": "Russia"
+    }
+  ],
+  "RU-DA": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Azerbaijani",
+      "code": "aze",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Avar",
+      "code": "ava",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Lezgian",
+      "code": "lez",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Dargwa",
+      "code": "dar",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Chechen",
+      "code": "che",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Nogai",
+      "code": "nog",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Tabasaran",
+      "code": "tab",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Lak",
+      "code": "lbe",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Kumyk",
+      "code": "kum",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Aghul",
+      "code": "agx",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Rutulian",
+      "code": "rut",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Tsakhur",
+      "code": "tkr",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Azerbaijani",
+      "code": "aze",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Avar",
+      "code": "ava",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Lezgian",
+      "code": "lez",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Dargwa",
+      "code": "dar",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Chechen",
+      "code": "che",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Nogai",
+      "code": "nog",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Tabasaran",
+      "code": "tab",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Lak",
+      "code": "lbe",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Kumyk",
+      "code": "kum",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Aghul",
+      "code": "agx",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Rutulian",
+      "code": "rut",
+      "region": "Dagestan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Tsakhur",
+      "code": "tkr",
+      "region": "Dagestan",
+      "country": "Russia"
+    }
+  ],
+  "RU-CE": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Chechnya",
+      "country": "Russia"
+    },
+    {
+      "lang": "Chechen",
+      "code": "che",
+      "region": "Chechnya",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Chechnya",
+      "country": "Russia"
+    },
+    {
+      "lang": "Chechen",
+      "code": "che",
+      "region": "Chechnya",
+      "country": "Russia"
+    }
+  ],
+  "RU-STA": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Stavropol Krai",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Stavropol Krai",
+      "country": "Russia"
+    }
+  ],
+  "RU-IN": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Ingushetia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Ingush",
+      "code": "inh",
+      "region": "Ingushetia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Ingushetia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Ingush",
+      "code": "inh",
+      "region": "Ingushetia",
+      "country": "Russia"
+    }
+  ],
+  "RU-SE": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "North Ossetia–Alania",
+      "country": "Russia"
+    },
+    {
+      "lang": "Ossetian",
+      "code": "",
+      "region": "North Ossetia–Alania",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "North Ossetia–Alania",
+      "country": "Russia"
+    },
+    {
+      "lang": "Ossetian",
+      "code": "",
+      "region": "North Ossetia–Alania",
+      "country": "Russia"
+    }
+  ],
+  "RU-KB": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Kabardino-Balkaria",
+      "country": "Russia"
+    },
+    {
+      "lang": "Kabardian",
+      "code": "kbd",
+      "region": "Kabardino-Balkaria",
+      "country": "Russia"
+    },
+    {
+      "lang": "Karachay-Balkar",
+      "code": "krc",
+      "region": "Kabardino-Balkaria",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Kabardino-Balkaria",
+      "country": "Russia"
+    },
+    {
+      "lang": "Kabardian",
+      "code": "kbd",
+      "region": "Kabardino-Balkaria",
+      "country": "Russia"
+    },
+    {
+      "lang": "Karachay-Balkar",
+      "code": "krc",
+      "region": "Kabardino-Balkaria",
+      "country": "Russia"
+    }
+  ],
+  "RU-KC": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Karachay-Cherkessia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Abaza",
+      "code": "abq",
+      "region": "Karachay-Cherkessia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Kabardian",
+      "code": "kbd",
+      "region": "Karachay-Cherkessia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Karachay-Balkar",
+      "code": "krc",
+      "region": "Karachay-Cherkessia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Nogai",
+      "code": "nog",
+      "region": "Karachay-Cherkessia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Karachay-Cherkessia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Abaza",
+      "code": "abq",
+      "region": "Karachay-Cherkessia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Kabardian",
+      "code": "kbd",
+      "region": "Karachay-Cherkessia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Karachay-Balkar",
+      "code": "krc",
+      "region": "Karachay-Cherkessia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Nogai",
+      "code": "nog",
+      "region": "Karachay-Cherkessia",
+      "country": "Russia"
+    }
+  ],
+  "RU-SAR": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Saratov Oblast",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Saratov Oblast",
+      "country": "Russia"
+    }
+  ],
+  "RU-MO": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Mordovia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Moksha",
+      "code": "mdf",
+      "region": "Mordovia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Erzya",
+      "code": "myv",
+      "region": "Mordovia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Mordovia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Moksha",
+      "code": "mdf",
+      "region": "Mordovia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Erzya",
+      "code": "myv",
+      "region": "Mordovia",
+      "country": "Russia"
+    }
+  ],
+  "RU-UD": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Udmurtia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Udmurt",
+      "code": "udm",
+      "region": "Udmurtia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Udmurtia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Udmurt",
+      "code": "udm",
+      "region": "Udmurtia",
+      "country": "Russia"
+    }
+  ],
+  "RU-ME": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Mari El",
+      "country": "Russia"
+    },
+    {
+      "lang": "Mari",
+      "code": "chm",
+      "region": "Mari El",
+      "country": "Russia"
+    },
+    {
+      "lang": "Hill Mari",
+      "code": "mrj",
+      "region": "Mari El",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Mari El",
+      "country": "Russia"
+    },
+    {
+      "lang": "Mari",
+      "code": "chm",
+      "region": "Mari El",
+      "country": "Russia"
+    },
+    {
+      "lang": "Hill Mari",
+      "code": "mrj",
+      "region": "Mari El",
+      "country": "Russia"
+    }
+  ],
+  "RU-CU": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Chuvashia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Chuvash",
+      "code": "chv",
+      "region": "Chuvashia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Chuvashia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Chuvash",
+      "code": "chv",
+      "region": "Chuvashia",
+      "country": "Russia"
+    }
+  ],
+  "RU-TA": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Tatarstan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Tatar",
+      "code": "tat",
+      "region": "Tatarstan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Tatarstan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Tatar",
+      "code": "tat",
+      "region": "Tatarstan",
+      "country": "Russia"
+    }
+  ],
+  "RU-BA": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Bashkortostan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Bashkir",
+      "code": "bak",
+      "region": "Bashkortostan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Bashkortostan",
+      "country": "Russia"
+    },
+    {
+      "lang": "Bashkir",
+      "code": "bak",
+      "region": "Bashkortostan",
+      "country": "Russia"
+    }
+  ],
+  "RU-ALT": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Altai Krai",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Altai Krai",
+      "country": "Russia"
+    }
+  ],
+  "RU-AL": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Altai Republic",
+      "country": "Russia"
+    },
+    {
+      "lang": "Southern Altai",
+      "code": "alt",
+      "region": "Altai Republic",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Altai Republic",
+      "country": "Russia"
+    },
+    {
+      "lang": "Southern Altai",
+      "code": "alt",
+      "region": "Altai Republic",
+      "country": "Russia"
+    }
+  ],
+  "RU-KHM": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Khanty-Mansi Autonomous Okrug",
+      "country": "Russia"
+    },
+    {
+      "lang": "Khanty",
+      "code": "kca",
+      "region": "Khanty-Mansi Autonomous Okrug",
+      "country": "Russia"
+    },
+    {
+      "lang": "Mansi",
+      "code": "mns",
+      "region": "Khanty-Mansi Autonomous Okrug",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Khanty-Mansi Autonomous Okrug",
+      "country": "Russia"
+    },
+    {
+      "lang": "Khanty",
+      "code": "kca",
+      "region": "Khanty-Mansi Autonomous Okrug",
+      "country": "Russia"
+    },
+    {
+      "lang": "Mansi",
+      "code": "mns",
+      "region": "Khanty-Mansi Autonomous Okrug",
+      "country": "Russia"
+    }
+  ],
+  "RU-YAN": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Yamalo-Nenets Autonomous Okrug",
+      "country": "Russia"
+    },
+    {
+      "lang": "Nenets",
+      "code": "yrk",
+      "region": "Yamalo-Nenets Autonomous Okrug",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Yamalo-Nenets Autonomous Okrug",
+      "country": "Russia"
+    },
+    {
+      "lang": "Nenets",
+      "code": "yrk",
+      "region": "Yamalo-Nenets Autonomous Okrug",
+      "country": "Russia"
+    }
+  ],
+  "RU-KK": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Khakassia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Khakas",
+      "code": "kjh",
+      "region": "Khakassia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Khakassia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Khakas",
+      "code": "kjh",
+      "region": "Khakassia",
+      "country": "Russia"
+    }
+  ],
+  "RU-KYA": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Krasnoyarsk Krai",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Krasnoyarsk Krai",
+      "country": "Russia"
+    }
+  ],
+  "RU-SA": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Sakha",
+      "country": "Russia"
+    },
+    {
+      "lang": "Yakut",
+      "code": "sah",
+      "region": "Sakha",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Sakha",
+      "country": "Russia"
+    },
+    {
+      "lang": "Yakut",
+      "code": "sah",
+      "region": "Sakha",
+      "country": "Russia"
+    }
+  ],
+  "RU-BU": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Buryatia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Buryat",
+      "code": "bua",
+      "region": "Buryatia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Buryatia",
+      "country": "Russia"
+    },
+    {
+      "lang": "Buryat",
+      "code": "bua",
+      "region": "Buryatia",
+      "country": "Russia"
+    }
+  ],
+  "RU-ZAB": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Zabaykalsky Krai",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Zabaykalsky Krai",
+      "country": "Russia"
+    }
+  ],
+  "UA-40": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Sevastopol",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Sevastopol",
+      "country": "Ukraine"
+    },
+    {
+      "lang": "Ukrainian",
+      "code": "ukr",
+      "region": "Sevastopol",
+      "country": "Russia"
+    },
+    {
+      "lang": "Ukrainian",
+      "code": "ukr",
+      "region": "Sevastopol",
+      "country": "Ukraine"
+    }
+  ],
+  "RU-YEV": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Jewish Autonomous Oblast",
+      "country": "Russia"
+    },
+    {
+      "lang": "Yiddish",
+      "code": "yid",
+      "region": "Jewish Autonomous Oblast",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Jewish Autonomous Oblast",
+      "country": "Russia"
+    },
+    {
+      "lang": "Yiddish",
+      "code": "yid",
+      "region": "Jewish Autonomous Oblast",
+      "country": "Russia"
+    }
+  ],
+  "RU-KHA": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Khabarovsk Krai",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Khabarovsk Krai",
+      "country": "Russia"
+    }
+  ],
+  "RU-KAM": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Kamchatka Krai",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Kamchatka Krai",
+      "country": "Russia"
+    }
+  ],
+  "RU-CHU": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Chukotka Autonomous Okrug",
+      "country": "Russia"
+    },
+    {
+      "lang": "Chukchi",
+      "code": "ckt",
+      "region": "Chukotka Autonomous Okrug",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Chukotka Autonomous Okrug",
+      "country": "Russia"
+    },
+    {
+      "lang": "Chukchi",
+      "code": "ckt",
+      "region": "Chukotka Autonomous Okrug",
+      "country": "Russia"
+    }
+  ],
+  "ZA-WC": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Western Cape",
+      "country": "South Africa"
+    },
+    {
+      "lang": "Xhosa",
+      "code": "xho",
+      "region": "Western Cape",
+      "country": "South Africa"
+    },
+    {
+      "lang": "Afrikaans",
+      "code": "afr",
+      "region": "Western Cape",
+      "country": "South Africa"
+    }
+  ],
+  "AF-BDS": [
+    {
+      "lang": "Uzbek",
+      "code": "uzb",
+      "region": "Badakhshan Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Badakhshan Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Badakhshan Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Pamir",
+      "code": "",
+      "region": "Badakhshan Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-BGL": [
+    {
+      "lang": "Uzbek",
+      "code": "uzb",
+      "region": "Baghlan Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Turkmen",
+      "code": "tuk",
+      "region": "Baghlan Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Baghlan Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Baghlan Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-BDG": [
+    {
+      "lang": "Uzbek",
+      "code": "uzb",
+      "region": "Badghis Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Turkmen",
+      "code": "tuk",
+      "region": "Badghis Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Badghis Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Badghis Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-FYB": [
+    {
+      "lang": "Uzbek",
+      "code": "uzb",
+      "region": "Faryab Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Faryab Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Faryab Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-SAR": [
+    {
+      "lang": "Uzbek",
+      "code": "uzb",
+      "region": "Sar-e Pol Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Sar-e Pol Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Sar-e Pol Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-SAM": [
+    {
+      "lang": "Uzbek",
+      "code": "uzb",
+      "region": "Samangan Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Samangan Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-JOW": [
+    {
+      "lang": "Uzbek",
+      "code": "uzb",
+      "region": "Jowzjan Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Turkmen",
+      "code": "tuk",
+      "region": "Jowzjan Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Jowzjan Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-TAK": [
+    {
+      "lang": "Uzbek",
+      "code": "uzb",
+      "region": "Takhar Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Takhar Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-KAB": [
+    {
+      "lang": "Uzbek",
+      "code": "uzb",
+      "region": "Kabul Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Turkmen",
+      "code": "tuk",
+      "region": "Kabul Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Kabul Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Kabul Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-NIM": [
+    {
+      "lang": "Balochi",
+      "code": "bal",
+      "region": "Nimruz Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Nimruz Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Nimruz Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-KAP": [
+    {
+      "lang": "Pashayi",
+      "code": "",
+      "region": "Kapisa Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Kapisa Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Kapisa Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-LAG": [
+    {
+      "lang": "Pashayi",
+      "code": "",
+      "region": "Laghman Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Laghman Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Nuristani",
+      "code": "",
+      "region": "Laghman Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Laghman Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-BAL": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Balkh Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Balkh Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-ZAB": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Zabul Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-NUR": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Nuristan Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Nuristani",
+      "code": "",
+      "region": "Nuristan Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Nuristan Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-BAM": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Bamyan Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Bamyan Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-KAN": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Kandahar Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-HEL": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Helmand Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Helmand Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-NAN": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Nangarhar Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Nangarhar Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-FRA": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Farah Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Farah Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-GHA": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Ghazni Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Ghazni Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-DAY": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Daykundi Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Daykundi Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-PIA": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Paktia Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Paktia Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-HER": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Herat Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Herat Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-URU": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Uruzgan Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Uruzgan Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-WAR": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Maidan Wardak Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Maidan Wardak Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-PKA": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Paktika Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-KHO": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Khost Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Khost Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-GHO": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Ghor Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Ghor Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-KDZ": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Kunduz Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Kunduz Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-KNR": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Kunar Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Kunar Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-PAR": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Parwan Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Parwan Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-LOG": [
+    {
+      "lang": "Pashto",
+      "code": "pus",
+      "region": "Logar Province",
+      "country": "Afghanistan"
+    },
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Logar Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "AF-PAN": [
+    {
+      "lang": "Dari",
+      "code": "prs",
+      "region": "Panjshir Province",
+      "country": "Afghanistan"
+    }
+  ],
+  "TR-07": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Antalya Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-01": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Adana Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-16": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Bursa Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-08": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Artvin Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-02": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Adıyaman Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-03": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Afyonkarahisar Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-11": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Bilecik Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-10": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Balıkesir Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-17": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Çanakkale Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-66": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Yozgat Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-12": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Bingöl Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-75": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Ardahan Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-09": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Aydın Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-05": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Amasya Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-04": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Ağrı Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-15": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Burdur Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-72": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Batman Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-65": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Van Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-42": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Konya Province",
+      "country": "Turkey"
+    },
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Konya Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-14": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Bolu Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-20": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Denizli Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-54": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Sakarya Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-68": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Aksaray Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-36": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Kars Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-21": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Diyarbakır Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-22": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Edirne Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-13": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Bitlis Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-31": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Hatay Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-74": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Bartın Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-41": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Kocaeli Province",
+      "country": "Turkey"
+    },
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Kocaeli Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-30": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Hakkâri Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-48": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Muğla Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-76": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Iğdır Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-43": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Kütahya Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-79": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Kilis Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-59": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Tekirdağ Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-45": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Manisa Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-47": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Mardin Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-44": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Malatya Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-49": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Muş Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-39": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Kırklareli Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-33": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Mersin Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-40": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Kırşehir Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-57": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Sinop Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-51": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Niğde Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-67": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Zonguldak Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-32": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Isparta Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-18": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Çankırı Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-19": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Çorum Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-80": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Osmaniye Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-35": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "İzmir Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-25": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Erzurum Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-63": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Şanlıurfa Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-61": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Trabzon Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-50": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Nevşehir Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-81": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Düzce Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-28": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Giresun Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-29": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Gümüşhane Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-56": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Siirt Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-46": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Kahramanmaraş Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-70": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Karaman Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-55": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Samsun Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-26": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Eskişehir Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-69": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Bayburt Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-64": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Uşak Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-77": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Yalova Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-23": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Elazığ Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-58": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Sivas Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-27": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Gaziantep Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-78": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Karabük Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-24": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Erzincan Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-52": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Ordu Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-37": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Kastamonu Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-60": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Tokat Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-38": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Kayseri Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-53": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Rize Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-71": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Kırıkkale Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-34": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Istanbul Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-62": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Tunceli Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-73": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Şırnak Province",
+      "country": "Turkey"
+    }
+  ],
+  "TR-06": [
+    {
+      "lang": "Turkish",
+      "code": "tur",
+      "region": "Ankara Province",
+      "country": "Turkey"
+    }
+  ],
+  "TH-83": [
+    {
+      "lang": "Thai",
+      "code": "tha",
+      "region": "Phuket",
+      "country": "Thailand"
+    },
+    {
+      "lang": "Southern Thai",
+      "code": "sou",
+      "region": "Phuket",
+      "country": "Thailand"
+    }
+  ],
+  "TH-20": [
+    {
+      "lang": "Thai",
+      "code": "tha",
+      "region": "Chon Buri",
+      "country": "Thailand"
+    }
+  ],
+  "TH-50": [
+    {
+      "lang": "Thai",
+      "code": "tha",
+      "region": "Chiang Mai",
+      "country": "Thailand"
+    },
+    {
+      "lang": "Northern Thai",
+      "code": "nod",
+      "region": "Chiang Mai",
+      "country": "Thailand"
+    }
+  ],
+  "AR-K": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Catamarca Province",
+      "country": "Argentina"
+    }
+  ],
+  "KY": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Cayman Islands",
+      "country": "United Kingdom"
+    }
+  ],
+  "VG": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "British Virgin Islands",
+      "country": "United Kingdom"
+    }
+  ],
+  "FR-973": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "French Guiana",
+      "country": "France"
+    },
+    {
+      "lang": "Guianan Creole",
+      "code": "gcr",
+      "region": "French Guiana",
+      "country": "France"
+    },
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "French Guiana",
+      "country": "France"
+    },
+    {
+      "lang": "Guianan Creole",
+      "code": "gcr",
+      "region": "French Guiana",
+      "country": "France"
+    }
+  ],
+  "FR-20R": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Corsica",
+      "country": "France"
+    }
+  ],
+  "FR-PDL": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Pays de la Loire",
+      "country": "France"
+    }
+  ],
+  "FR-976": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Mayotte",
+      "country": "France"
+    },
+    {
+      "lang": "Maore",
+      "code": "swb",
+      "region": "Mayotte",
+      "country": "France"
+    },
+    {
+      "lang": "Bushi",
+      "code": "buc",
+      "region": "Mayotte",
+      "country": "France"
+    },
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Mayotte",
+      "country": "France"
+    },
+    {
+      "lang": "Maore",
+      "code": "swb",
+      "region": "Mayotte",
+      "country": "France"
+    },
+    {
+      "lang": "Bushi",
+      "code": "buc",
+      "region": "Mayotte",
+      "country": "France"
+    }
+  ],
+  "FR-974": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Réunion",
+      "country": "France"
+    },
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Réunion",
+      "country": "France"
+    }
+  ],
+  "FR-GES": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Grand Est",
+      "country": "France"
+    }
+  ],
+  "FR-OCC": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Occitania",
+      "country": "France"
+    }
+  ],
+  "US-AZ": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Arizona",
+      "country": "United States"
+    }
+  ],
+  "US-UT": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Utah",
+      "country": "United States"
+    }
+  ],
+  "US-IL": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Illinois",
+      "country": "United States"
+    },
+    {
+      "lang": "American English",
+      "code": "",
+      "region": "Illinois",
+      "country": "United States"
+    }
+  ],
+  "US-ND": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "North Dakota",
+      "country": "United States"
+    }
+  ],
+  "US-SD": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "South Dakota",
+      "country": "United States"
+    }
+  ],
+  "US-MT": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Montana",
+      "country": "United States"
+    }
+  ],
+  "US-WY": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Wyoming",
+      "country": "United States"
+    }
+  ],
+  "US-ID": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Idaho",
+      "country": "United States"
+    }
+  ],
+  "US-CO": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Colorado",
+      "country": "United States"
+    }
+  ],
+  "US-VA": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Virginia",
+      "country": "United States"
+    }
+  ],
+  "US-NJ": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "New Jersey",
+      "country": "United States"
+    }
+  ],
+  "US-IN": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Indiana",
+      "country": "United States"
+    }
+  ],
+  "US-GA": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Georgia",
+      "country": "United States"
+    }
+  ],
+  "US-NC": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "North Carolina",
+      "country": "United States"
+    }
+  ],
+  "US-SC": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "South Carolina",
+      "country": "United States"
+    }
+  ],
+  "US-MS": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Mississippi",
+      "country": "United States"
+    }
+  ],
+  "US-TN": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Tennessee",
+      "country": "United States"
+    }
+  ],
+  "US-IA": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Iowa",
+      "country": "United States"
+    }
+  ],
+  "US-NE": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Nebraska",
+      "country": "United States"
+    }
+  ],
+  "US-KS": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Kansas",
+      "country": "United States"
+    }
+  ],
+  "US-KY": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Kentucky",
+      "country": "United States"
+    }
+  ],
+  "US-AR": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Arkansas",
+      "country": "United States"
+    }
+  ],
+  "US-OK": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Oklahoma",
+      "country": "United States"
+    }
+  ],
+  "RU-MOW": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Moscow",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Moscow",
+      "country": "Russia"
+    }
+  ],
+  "RU-SPE": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Saint Petersburg",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Saint Petersburg",
+      "country": "Russia"
+    }
+  ],
+  "RU-TY": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Tuva",
+      "country": "Russia"
+    },
+    {
+      "lang": "Tuvan",
+      "code": "tyv",
+      "region": "Tuva",
+      "country": "Russia"
+    },
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Tuva",
+      "country": "Russia"
+    },
+    {
+      "lang": "Tuvan",
+      "code": "tyv",
+      "region": "Tuva",
+      "country": "Russia"
+    }
+  ],
+  "MN-037": [
+    {
+      "lang": "Mongolian",
+      "code": "mon",
+      "region": "Darkhan-Uul Province",
+      "country": "Mongolia"
+    }
+  ],
+  "PS-JEM": [
+    {
+      "lang": "Arabic",
+      "code": "ara",
+      "region": "Quds Governorate",
+      "country": "Palestine"
+    }
+  ],
+  "PS-TKM": [
+    {
+      "lang": "Arabic",
+      "code": "ara",
+      "region": "Tulkarm Governorate",
+      "country": "Palestine"
+    }
+  ],
+  "RW-01": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Kigali",
+      "country": "Rwanda"
+    },
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Kigali",
+      "country": "Rwanda"
+    },
+    {
+      "lang": "Swahili",
+      "code": "swa",
+      "region": "Kigali",
+      "country": "Rwanda"
+    },
+    {
+      "lang": "Kinyarwanda",
+      "code": "kin",
+      "region": "Kigali",
+      "country": "Rwanda"
+    },
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Kigali",
+      "country": "Rwanda"
+    },
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Kigali",
+      "country": "Rwanda"
+    },
+    {
+      "lang": "Swahili",
+      "code": "swa",
+      "region": "Kigali",
+      "country": "Rwanda"
+    },
+    {
+      "lang": "Kinyarwanda",
+      "code": "kin",
+      "region": "Kigali",
+      "country": "Rwanda"
+    }
+  ],
+  "CF-BGF": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Bangui",
+      "country": "Central African Republic"
+    },
+    {
+      "lang": "Sango",
+      "code": "sag",
+      "region": "Bangui",
+      "country": "Central African Republic"
+    }
+  ],
+  "IQ-NI": [
+    {
+      "lang": "Arabic",
+      "code": "ara",
+      "region": "Nineveh Governorate",
+      "country": "Iraq"
+    }
+  ],
+  "JP-26": [
+    {
+      "lang": "Japanese",
+      "code": "jpn",
+      "region": "Kyoto Prefecture",
+      "country": "Japan"
+    }
+  ],
+  "KR-11": [
+    {
+      "lang": "Korean",
+      "code": "kor",
+      "region": "Seoul",
+      "country": "South Korea"
+    }
+  ],
+  "TH-94": [
+    {
+      "lang": "Thai",
+      "code": "tha",
+      "region": "Pattani",
+      "country": "Thailand"
+    }
+  ],
+  "TH-84": [
+    {
+      "lang": "Thai",
+      "code": "tha",
+      "region": "Surat Thani",
+      "country": "Thailand"
+    },
+    {
+      "lang": "Southern Thai",
+      "code": "sou",
+      "region": "Surat Thani",
+      "country": "Thailand"
+    }
+  ],
+  "TH-12": [
+    {
+      "lang": "Thai",
+      "code": "tha",
+      "region": "Nonthaburi",
+      "country": "Thailand"
+    }
+  ],
+  "TH-77": [
+    {
+      "lang": "Thai",
+      "code": "tha",
+      "region": "Prachuap Khiri Khan",
+      "country": "Thailand"
+    }
+  ],
+  "TH-80": [
+    {
+      "lang": "Thai",
+      "code": "tha",
+      "region": "Nakhon Si Thammarat",
+      "country": "Thailand"
+    },
+    {
+      "lang": "Southern Thai",
+      "code": "sou",
+      "region": "Nakhon Si Thammarat",
+      "country": "Thailand"
+    }
+  ],
+  "TH-30": [
+    {
+      "lang": "Thai",
+      "code": "tha",
+      "region": "Nakhon Ratchasima",
+      "country": "Thailand"
+    },
+    {
+      "lang": "Isan",
+      "code": "tts",
+      "region": "Nakhon Ratchasima",
+      "country": "Thailand"
+    },
+    {
+      "lang": "Khorat Thai",
+      "code": "",
+      "region": "Nakhon Ratchasima",
+      "country": "Thailand"
+    }
+  ],
+  "TH-42": [
+    {
+      "lang": "Thai",
+      "code": "tha",
+      "region": "Loei province",
+      "country": "Thailand"
+    },
+    {
+      "lang": "Isan",
+      "code": "tts",
+      "region": "Loei province",
+      "country": "Thailand"
+    }
+  ],
+  "TH-40": [
+    {
+      "lang": "Thai",
+      "code": "tha",
+      "region": "Khon Kaen",
+      "country": "Thailand"
+    },
+    {
+      "lang": "Isan",
+      "code": "tts",
+      "region": "Khon Kaen",
+      "country": "Thailand"
+    }
+  ],
+  "TH-34": [
+    {
+      "lang": "Thai",
+      "code": "tha",
+      "region": "Ubon Ratchathani",
+      "country": "Thailand"
+    },
+    {
+      "lang": "Isan",
+      "code": "tts",
+      "region": "Ubon Ratchathani",
+      "country": "Thailand"
+    },
+    {
+      "lang": "Northern Khmer",
+      "code": "kxm",
+      "region": "Ubon Ratchathani",
+      "country": "Thailand"
+    }
+  ],
+  "AU-VIC": [
+    {
+      "lang": "Australian English",
+      "code": "",
+      "region": "Victoria",
+      "country": "Australia"
+    }
+  ],
+  "TJ-RA": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Districts under Central Government Jurisdiction",
+      "country": "Tajikistan"
+    },
+    {
+      "lang": "Kyrgyz",
+      "code": "kir",
+      "region": "Districts under Central Government Jurisdiction",
+      "country": "Tajikistan"
+    },
+    {
+      "lang": "Tajik",
+      "code": "tgk",
+      "region": "Districts under Central Government Jurisdiction",
+      "country": "Tajikistan"
+    },
+    {
+      "lang": "Uzbek",
+      "code": "uzb",
+      "region": "Districts under Central Government Jurisdiction",
+      "country": "Tajikistan"
+    },
+    {
+      "lang": "Pamir",
+      "code": "",
+      "region": "Districts under Central Government Jurisdiction",
+      "country": "Tajikistan"
+    }
+  ],
+  "GQ-BN": [
+    {
+      "lang": "Bube",
+      "code": "bvb",
+      "region": "Bioko Norte",
+      "country": "Equatorial Guinea"
+    }
+  ],
+  "BE-WAL": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Wallonia",
+      "country": "Belgium"
+    },
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Wallonia",
+      "country": "Belgium"
+    }
+  ],
+  "BE-BRU": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Brussels-Capital Region",
+      "country": "Belgium"
+    },
+    {
+      "lang": "Dutch",
+      "code": "nld",
+      "region": "Brussels-Capital Region",
+      "country": "Belgium"
+    }
+  ],
+  "NL-FR": [
+    {
+      "lang": "Dutch",
+      "code": "nld",
+      "region": "Friesland",
+      "country": "Netherlands"
+    },
+    {
+      "lang": "West Frisian",
+      "code": "fry",
+      "region": "Friesland",
+      "country": "Netherlands"
+    }
+  ],
+  "BE-VLG": [
+    {
+      "lang": "Dutch",
+      "code": "nld",
+      "region": "Flemish Region",
+      "country": "Belgium"
+    }
+  ],
+  "ES-ML": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Melilla",
+      "country": "Spain"
+    },
+    {
+      "lang": "Berber",
+      "code": "",
+      "region": "Melilla",
+      "country": "Spain"
+    }
+  ],
+  "GM-B": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Banjul",
+      "country": "The Gambia"
+    }
+  ],
+  "RS-VO": [
+    {
+      "lang": "Croatian",
+      "code": "hrv",
+      "region": "Vojvodina",
+      "country": "Serbia"
+    },
+    {
+      "lang": "Romanian",
+      "code": "ron",
+      "region": "Vojvodina",
+      "country": "Serbia"
+    },
+    {
+      "lang": "Slovak",
+      "code": "slk",
+      "region": "Vojvodina",
+      "country": "Serbia"
+    },
+    {
+      "lang": "Hungarian",
+      "code": "hun",
+      "region": "Vojvodina",
+      "country": "Serbia"
+    },
+    {
+      "lang": "Serbian",
+      "code": "srp",
+      "region": "Vojvodina",
+      "country": "Serbia"
+    },
+    {
+      "lang": "Rusyn",
+      "code": "rue",
+      "region": "Vojvodina",
+      "country": "Serbia"
+    }
+  ],
+  "RS-KM": [
+    {
+      "lang": "Albanian",
+      "code": "sqi",
+      "region": "Kosovo and Metohija",
+      "country": "Serbia"
+    },
+    {
+      "lang": "Serbian",
+      "code": "srp",
+      "region": "Kosovo and Metohija",
+      "country": "Serbia"
+    }
+  ],
+  "MK-802": [
+    {
+      "lang": "Albanian",
+      "code": "sqi",
+      "region": "Aračinovo Municipality",
+      "country": "North Macedonia"
+    },
+    {
+      "lang": "Albanian",
+      "code": "sqi",
+      "region": "Aračinovo Municipality",
+      "country": "Democratic Federal Yugoslavia"
+    },
+    {
+      "lang": "Albanian",
+      "code": "sqi",
+      "region": "Aračinovo Municipality",
+      "country": "Federal People's Republic of Yugoslavia"
+    },
+    {
+      "lang": "Albanian",
+      "code": "sqi",
+      "region": "Aračinovo Municipality",
+      "country": "Democratic Federal Macedonia"
+    },
+    {
+      "lang": "Albanian",
+      "code": "sqi",
+      "region": "Aračinovo Municipality",
+      "country": "People's Republic of Macedonia"
+    },
+    {
+      "lang": "Macedonian",
+      "code": "mkd",
+      "region": "Aračinovo Municipality",
+      "country": "North Macedonia"
+    },
+    {
+      "lang": "Macedonian",
+      "code": "mkd",
+      "region": "Aračinovo Municipality",
+      "country": "Democratic Federal Yugoslavia"
+    },
+    {
+      "lang": "Macedonian",
+      "code": "mkd",
+      "region": "Aračinovo Municipality",
+      "country": "Federal People's Republic of Yugoslavia"
+    },
+    {
+      "lang": "Macedonian",
+      "code": "mkd",
+      "region": "Aračinovo Municipality",
+      "country": "Democratic Federal Macedonia"
+    },
+    {
+      "lang": "Macedonian",
+      "code": "mkd",
+      "region": "Aračinovo Municipality",
+      "country": "People's Republic of Macedonia"
+    }
+  ],
+  "IR-26": [
+    {
+      "lang": "Persian",
+      "code": "fas",
+      "region": "Qazvin Province",
+      "country": "Iran"
+    }
+  ],
+  "HN-IB": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Bay Islands Department",
+      "country": "Honduras"
+    },
+    {
+      "lang": "Honduran Spanish",
+      "code": "",
+      "region": "Bay Islands Department",
+      "country": "Honduras"
+    }
+  ],
+  "JP-11": [
+    {
+      "lang": "Japanese",
+      "code": "jpn",
+      "region": "Saitama Prefecture",
+      "country": "Japan"
+    }
+  ],
+  "KZ-71": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Astana",
+      "country": "Kazakhstan"
+    },
+    {
+      "lang": "Kazakh",
+      "code": "kaz",
+      "region": "Astana",
+      "country": "Kazakhstan"
+    }
+  ],
+  "KZ-75": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Almaty",
+      "country": "Kazakhstan"
+    },
+    {
+      "lang": "Kazakh",
+      "code": "kaz",
+      "region": "Almaty",
+      "country": "Kazakhstan"
+    }
+  ],
+  "KZ-79": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Shymkent",
+      "country": "Kazakhstan"
+    },
+    {
+      "lang": "Kazakh",
+      "code": "kaz",
+      "region": "Shymkent",
+      "country": "Kazakhstan"
+    }
+  ],
+  "ID-JA": [
+    {
+      "lang": "Malay",
+      "code": "msa",
+      "region": "Jambi",
+      "country": "Indonesia"
+    },
+    {
+      "lang": "Indonesian",
+      "code": "ind",
+      "region": "Jambi",
+      "country": "Indonesia"
+    },
+    {
+      "lang": "Malay",
+      "code": "msa",
+      "region": "Jambi",
+      "country": "Indonesia"
+    },
+    {
+      "lang": "Indonesian",
+      "code": "ind",
+      "region": "Jambi",
+      "country": "Indonesia"
+    }
+  ],
+  "ID-LA": [
+    {
+      "lang": "Indonesian",
+      "code": "ind",
+      "region": "Lampung",
+      "country": "Indonesia"
+    },
+    {
+      "lang": "Lampung Api",
+      "code": "ljp",
+      "region": "Lampung",
+      "country": "Indonesia"
+    },
+    {
+      "lang": "Indonesian",
+      "code": "ind",
+      "region": "Lampung",
+      "country": "Indonesia"
+    },
+    {
+      "lang": "Lampung Api",
+      "code": "ljp",
+      "region": "Lampung",
+      "country": "Indonesia"
+    }
+  ],
+  "ET-SO": [
+    {
+      "lang": "Somali",
+      "code": "som",
+      "region": "Somali Region",
+      "country": "Ethiopia"
+    }
+  ],
+  "ET-AF": [
+    {
+      "lang": "Afar",
+      "code": "aar",
+      "region": "Afar Region",
+      "country": "Ethiopia"
+    }
+  ],
+  "ET-AA": [
+    {
+      "lang": "Amharic",
+      "code": "amh",
+      "region": "Addis Ababa",
+      "country": "Ethiopia"
+    }
+  ],
+  "ET-AM": [
+    {
+      "lang": "Amharic",
+      "code": "amh",
+      "region": "Amhara Region",
+      "country": "Ethiopia"
+    }
+  ],
+  "ET-BE": [
+    {
+      "lang": "Amharic",
+      "code": "amh",
+      "region": "Benishangul-Gumuz Region",
+      "country": "Ethiopia"
+    }
+  ],
+  "ET-GA": [
+    {
+      "lang": "Amharic",
+      "code": "amh",
+      "region": "Gambela Region",
+      "country": "Ethiopia"
+    }
+  ],
+  "ET-TI": [
+    {
+      "lang": "Tigrinya",
+      "code": "tir",
+      "region": "Tigray Region",
+      "country": "Ethiopia"
+    }
+  ],
+  "DZ-35": [
+    {
+      "lang": "Arabic",
+      "code": "ara",
+      "region": "Boumerdès Province",
+      "country": "Algeria"
+    }
+  ],
+  "DE-BE": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Berlin",
+      "country": "Germany"
+    }
+  ],
+  "PW-010": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Angaur",
+      "country": "Palau"
+    },
+    {
+      "lang": "Japanese",
+      "code": "jpn",
+      "region": "Angaur",
+      "country": "Palau"
+    },
+    {
+      "lang": "Palauan",
+      "code": "pau",
+      "region": "Angaur",
+      "country": "Palau"
+    }
+  ],
+  "PG-SHM": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Southern Highlands Province",
+      "country": "Papua New Guinea"
+    }
+  ],
+  "GE-TB": [
+    {
+      "lang": "Abkhaz",
+      "code": "abk",
+      "region": "Tbilisi",
+      "country": "Georgia"
+    },
+    {
+      "lang": "Georgian",
+      "code": "kat",
+      "region": "Tbilisi",
+      "country": "Georgia"
+    }
+  ],
+  "GE-GU": [
+    {
+      "lang": "Georgian",
+      "code": "kat",
+      "region": "Guria",
+      "country": "Georgia"
+    }
+  ],
+  "GE-SJ": [
+    {
+      "lang": "Georgian",
+      "code": "kat",
+      "region": "Samtskhe–Javakheti",
+      "country": "Georgia"
+    }
+  ],
+  "GE-RL": [
+    {
+      "lang": "Georgian",
+      "code": "kat",
+      "region": "Racha-Lechkhumi and Kvemo Svaneti",
+      "country": "Georgia"
+    }
+  ],
+  "GE-KA": [
+    {
+      "lang": "Georgian",
+      "code": "kat",
+      "region": "Kakheti",
+      "country": "Georgia"
+    }
+  ],
+  "GE-IM": [
+    {
+      "lang": "Georgian",
+      "code": "kat",
+      "region": "Imereti",
+      "country": "Georgia"
+    }
+  ],
+  "GE-SK": [
+    {
+      "lang": "Georgian",
+      "code": "kat",
+      "region": "Shida Kartli",
+      "country": "Georgia"
+    }
+  ],
+  "GE-KK": [
+    {
+      "lang": "Georgian",
+      "code": "kat",
+      "region": "Kvemo Kartli",
+      "country": "Georgia"
+    }
+  ],
+  "GE-SZ": [
+    {
+      "lang": "Georgian",
+      "code": "kat",
+      "region": "Samegrelo-Zemo Svaneti",
+      "country": "Georgia"
+    }
+  ],
+  "GE-MM": [
+    {
+      "lang": "Georgian",
+      "code": "kat",
+      "region": "Mtskheta-Mtianeti",
+      "country": "Georgia"
+    }
+  ],
+  "DE-BY": [
+    {
+      "lang": "Bavarian",
+      "code": "bar",
+      "region": "Bavaria",
+      "country": "Germany"
+    },
+    {
+      "lang": "Standard High German",
+      "code": "",
+      "region": "Bavaria",
+      "country": "Germany"
+    }
+  ],
+  "ET-HA": [
+    {
+      "lang": "Harari",
+      "code": "har",
+      "region": "Harari Region",
+      "country": "Ethiopia"
+    },
+    {
+      "lang": "Oromo",
+      "code": "orm",
+      "region": "Harari Region",
+      "country": "Ethiopia"
+    }
+  ],
+  "ID-BE": [
+    {
+      "lang": "Malay",
+      "code": "msa",
+      "region": "Bengkulu",
+      "country": "Indonesia"
+    },
+    {
+      "lang": "Indonesian",
+      "code": "ind",
+      "region": "Bengkulu",
+      "country": "Indonesia"
+    },
+    {
+      "lang": "Bengkulu",
+      "code": "bke",
+      "region": "Bengkulu",
+      "country": "Indonesia"
+    }
+  ],
+  "ID-AC": [
+    {
+      "lang": "Indonesian",
+      "code": "ind",
+      "region": "Aceh",
+      "country": "Indonesia"
+    },
+    {
+      "lang": "Acehnese",
+      "code": "ace",
+      "region": "Aceh",
+      "country": "Indonesia"
+    }
+  ],
+  "ID-BB": [
+    {
+      "lang": "Indonesian",
+      "code": "ind",
+      "region": "Bangka Belitung Islands",
+      "country": "Indonesia"
+    },
+    {
+      "lang": "Hakka Chinese",
+      "code": "hak",
+      "region": "Bangka Belitung Islands",
+      "country": "Indonesia"
+    },
+    {
+      "lang": "Bangka",
+      "code": "mfb",
+      "region": "Bangka Belitung Islands",
+      "country": "Indonesia"
+    }
+  ],
+  "ID-SU": [
+    {
+      "lang": "Indonesian",
+      "code": "ind",
+      "region": "North Sumatra",
+      "country": "Indonesia"
+    }
+  ],
+  "ID-BT": [
+    {
+      "lang": "Indonesian",
+      "code": "ind",
+      "region": "Banten",
+      "country": "Indonesia"
+    },
+    {
+      "lang": "Javanese",
+      "code": "jav",
+      "region": "Banten",
+      "country": "Indonesia"
+    },
+    {
+      "lang": "Sundanese",
+      "code": "sun",
+      "region": "Banten",
+      "country": "Indonesia"
+    }
+  ],
+  "ID-JK": [
+    {
+      "lang": "Indonesian",
+      "code": "ind",
+      "region": "Jakarta",
+      "country": "Indonesia"
+    }
+  ],
+  "ID-YO": [
+    {
+      "lang": "Indonesian",
+      "code": "ind",
+      "region": "Yogyakarta",
+      "country": "Indonesia"
+    },
+    {
+      "lang": "Javanese",
+      "code": "jav",
+      "region": "Yogyakarta",
+      "country": "Indonesia"
+    }
+  ],
+  "ID-KI": [
+    {
+      "lang": "Indonesian",
+      "code": "ind",
+      "region": "East Kalimantan",
+      "country": "Indonesia"
+    }
+  ],
+  "ID-KU": [
+    {
+      "lang": "Indonesian",
+      "code": "ind",
+      "region": "North Kalimantan",
+      "country": "Indonesia"
+    }
+  ],
+  "ID-PB": [
+    {
+      "lang": "Indonesian",
+      "code": "ind",
+      "region": "West Papua",
+      "country": "Indonesia"
+    }
+  ],
+  "GL-KU": [
+    {
+      "lang": "Greenlandic",
+      "code": "kal",
+      "region": "Kujalleq",
+      "country": "Greenland"
+    }
+  ],
+  "GL-SM": [
+    {
+      "lang": "Greenlandic",
+      "code": "kal",
+      "region": "Sermersooq",
+      "country": "Greenland"
+    }
+  ],
+  "BO-L": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "La Paz Department",
+      "country": "Bolivia"
+    },
+    {
+      "lang": "Aymara",
+      "code": "aym",
+      "region": "La Paz Department",
+      "country": "Bolivia"
+    },
+    {
+      "lang": "Quechua",
+      "code": "que",
+      "region": "La Paz Department",
+      "country": "Bolivia"
+    }
+  ],
+  "AT-1": [
+    {
+      "lang": "Hungarian",
+      "code": "hun",
+      "region": "Burgenland",
+      "country": "Austria"
+    },
+    {
+      "lang": "Burgenland Croatian",
+      "code": "",
+      "region": "Burgenland",
+      "country": "Austria"
+    },
+    {
+      "lang": "Austrian German",
+      "code": "",
+      "region": "Burgenland",
+      "country": "Austria"
+    }
+  ],
+  "CD-LU": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Lualaba Province",
+      "country": "Democratic Republic of the Congo"
+    }
+  ],
+  "MK-609": [
+    {
+      "lang": "Albanian",
+      "code": "sqi",
+      "region": "Tetovo Municipality",
+      "country": "North Macedonia"
+    },
+    {
+      "lang": "Macedonian",
+      "code": "mkd",
+      "region": "Tetovo Municipality",
+      "country": "North Macedonia"
+    }
+  ],
+  "HU-NK": [
+    {
+      "lang": "Hungarian",
+      "code": "hun",
+      "region": "Nagykanizsa",
+      "country": "Hungary"
+    }
+  ],
+  "HU-SH": [
+    {
+      "lang": "Hungarian",
+      "code": "hun",
+      "region": "Szombathely",
+      "country": "Hungary"
+    }
+  ],
+  "HU-PS": [
+    {
+      "lang": "Hungarian",
+      "code": "hun",
+      "region": "Pécs",
+      "country": "Hungary"
+    }
+  ],
+  "ID-BA": [
+    {
+      "lang": "Indonesian",
+      "code": "ind",
+      "region": "Bali",
+      "country": "Indonesia"
+    }
+  ],
+  "ID-PD": [
+    {
+      "lang": "Indonesian",
+      "code": "ind",
+      "region": "Southwest Papua",
+      "country": "Indonesia"
+    }
+  ],
+  "LI-11": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Vaduz",
+      "country": "Liechtenstein"
+    }
+  ],
+  "LI-02": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Eschen",
+      "country": "Liechtenstein"
+    }
+  ],
+  "LI-10": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Triesenberg",
+      "country": "Liechtenstein"
+    }
+  ],
+  "LI-09": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Triesen",
+      "country": "Liechtenstein"
+    }
+  ],
+  "LI-08": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Schellenberg",
+      "country": "Liechtenstein"
+    }
+  ],
+  "LI-07": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Schaan",
+      "country": "Liechtenstein"
+    }
+  ],
+  "LI-06": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Ruggell",
+      "country": "Liechtenstein"
+    }
+  ],
+  "LI-05": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Planken",
+      "country": "Liechtenstein"
+    }
+  ],
+  "LI-04": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Mauren",
+      "country": "Liechtenstein"
+    }
+  ],
+  "LI-03": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Gamprin",
+      "country": "Liechtenstein"
+    }
+  ],
+  "LI-01": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Balzers",
+      "country": "Liechtenstein"
+    }
+  ],
+  "GE-AB": [
+    {
+      "lang": "Abkhaz",
+      "code": "abk",
+      "region": "Autonomous Republic of Abkhazia",
+      "country": "Georgia"
+    },
+    {
+      "lang": "Georgian",
+      "code": "kat",
+      "region": "Autonomous Republic of Abkhazia",
+      "country": "Georgia"
+    }
+  ],
+  "FI-01": [
+    {
+      "lang": "Swedish",
+      "code": "swe",
+      "region": "Åland",
+      "country": "Finland"
+    }
+  ],
+  "DE-HE": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Hesse",
+      "country": "Germany"
+    }
+  ],
+  "SE-BD": [
+    {
+      "lang": "Finnish",
+      "code": "fin",
+      "region": "Norrbotten County",
+      "country": "Sweden"
+    },
+    {
+      "lang": "Swedish",
+      "code": "swe",
+      "region": "Norrbotten County",
+      "country": "Sweden"
+    },
+    {
+      "lang": "Meänkieli",
+      "code": "fit",
+      "region": "Norrbotten County",
+      "country": "Sweden"
+    },
+    {
+      "lang": "Sámi",
+      "code": "",
+      "region": "Norrbotten County",
+      "country": "Sweden"
+    }
+  ],
+  "BS-FP": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Freeport",
+      "country": "The Bahamas"
+    }
+  ],
+  "IR-27": [
+    {
+      "lang": "Persian",
+      "code": "fas",
+      "region": "Golestan Province",
+      "country": "Iran"
+    }
+  ],
+  "CO-CAS": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Casanare Department",
+      "country": "Colombia"
+    },
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Casanare Department",
+      "country": "Colombia"
+    }
+  ],
+  "CO-AMA": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Amazonas Department",
+      "country": "Colombia"
+    }
+  ],
+  "CO-ANT": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Antioquia",
+      "country": "Colombia"
+    }
+  ],
+  "CO-ARA": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Arauca Department",
+      "country": "Colombia"
+    }
+  ],
+  "CO-VID": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Vichada Department",
+      "country": "Colombia"
+    }
+  ],
+  "BG-10": [
+    {
+      "lang": "Bulgarian",
+      "code": "bul",
+      "region": "Kyustendil",
+      "country": "Bulgaria"
+    }
+  ],
+  "US-PR": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Puerto Rico",
+      "country": "United States"
+    },
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Puerto Rico",
+      "country": "United States"
+    },
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Puerto Rico",
+      "country": "United States"
+    },
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Puerto Rico",
+      "country": "United States"
+    }
+  ],
+  "GB-ENG": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "England",
+      "country": "United Kingdom"
+    }
+  ],
+  "GB-SCT": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Scotland",
+      "country": "United Kingdom"
+    },
+    {
+      "lang": "Scottish Gaelic",
+      "code": "gla",
+      "region": "Scotland",
+      "country": "United Kingdom"
+    },
+    {
+      "lang": "Scots",
+      "code": "sco",
+      "region": "Scotland",
+      "country": "United Kingdom"
+    }
+  ],
+  "GB-WLS": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Wales",
+      "country": "United Kingdom"
+    },
+    {
+      "lang": "Welsh",
+      "code": "cym",
+      "region": "Wales",
+      "country": "United Kingdom"
+    }
+  ],
+  "GB-NIR": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Northern Ireland",
+      "country": "United Kingdom"
+    },
+    {
+      "lang": "Irish",
+      "code": "gle",
+      "region": "Northern Ireland",
+      "country": "United Kingdom"
+    }
+  ],
+  "VI": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "United States Virgin Islands",
+      "country": "United States"
+    }
+  ],
+  "US-GU": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Guam",
+      "country": "United States"
+    },
+    {
+      "lang": "Chamorro",
+      "code": "cha",
+      "region": "Guam",
+      "country": "United States"
+    }
+  ],
+  "US-AS": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "American Samoa",
+      "country": "United States"
+    },
+    {
+      "lang": "Samoan",
+      "code": "smo",
+      "region": "American Samoa",
+      "country": "United States"
+    }
+  ],
+  "US-MP": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Northern Mariana Islands",
+      "country": "United States"
+    },
+    {
+      "lang": "Carolinian",
+      "code": "cal",
+      "region": "Northern Mariana Islands",
+      "country": "United States"
+    },
+    {
+      "lang": "Chamorro",
+      "code": "cha",
+      "region": "Northern Mariana Islands",
+      "country": "United States"
+    },
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Northern Mariana Islands",
+      "country": "United States"
+    },
+    {
+      "lang": "Carolinian",
+      "code": "cal",
+      "region": "Northern Mariana Islands",
+      "country": "United States"
+    },
+    {
+      "lang": "Chamorro",
+      "code": "cha",
+      "region": "Northern Mariana Islands",
+      "country": "United States"
+    }
+  ],
+  "AO-CAB": [
+    {
+      "lang": "Portuguese",
+      "code": "por",
+      "region": "Cabinda Province",
+      "country": "Angola"
+    }
+  ],
+  "AO-LUA": [
+    {
+      "lang": "Portuguese",
+      "code": "por",
+      "region": "Luanda Province",
+      "country": "Angola"
+    }
+  ],
+  "HU-DE": [
+    {
+      "lang": "Hungarian",
+      "code": "hun",
+      "region": "Debrecen",
+      "country": "Hungary"
+    }
+  ],
+  "HU-SD": [
+    {
+      "lang": "Hungarian",
+      "code": "hun",
+      "region": "Szeged",
+      "country": "Hungary"
+    }
+  ],
+  "HU-SF": [
+    {
+      "lang": "Hungarian",
+      "code": "hun",
+      "region": "Székesfehérvár",
+      "country": "Hungary"
+    }
+  ],
+  "HU-VM": [
+    {
+      "lang": "Hungarian",
+      "code": "hun",
+      "region": "Veszprém",
+      "country": "Hungary"
+    }
+  ],
+  "HU-SN": [
+    {
+      "lang": "Hungarian",
+      "code": "hun",
+      "region": "Sopron",
+      "country": "Hungary"
+    }
+  ],
+  "HU-KM": [
+    {
+      "lang": "Hungarian",
+      "code": "hun",
+      "region": "Kecskemét",
+      "country": "Hungary"
+    }
+  ],
+  "HU-SK": [
+    {
+      "lang": "Hungarian",
+      "code": "hun",
+      "region": "Szolnok",
+      "country": "Hungary"
+    }
+  ],
+  "HU-KV": [
+    {
+      "lang": "Hungarian",
+      "code": "hun",
+      "region": "Kaposvár",
+      "country": "Hungary"
+    }
+  ],
+  "HU-TB": [
+    {
+      "lang": "Hungarian",
+      "code": "hun",
+      "region": "Tatabánya",
+      "country": "Hungary"
+    }
+  ],
+  "HU-SS": [
+    {
+      "lang": "Hungarian",
+      "code": "hun",
+      "region": "Szekszárd",
+      "country": "Hungary"
+    }
+  ],
+  "TN-81": [
+    {
+      "lang": "Arabic",
+      "code": "ara",
+      "region": "Gabès Governorate",
+      "country": "Tunisia"
+    }
+  ],
+  "CN-XZ": [
+    {
+      "lang": "Tibetan",
+      "code": "bod",
+      "region": "Tibet Autonomous Region",
+      "country": "People's Republic of China"
+    },
+    {
+      "lang": "Putonghua",
+      "code": "cmn",
+      "region": "Tibet Autonomous Region",
+      "country": "People's Republic of China"
+    }
+  ],
+  "IT-23": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Aosta Valley",
+      "country": "Italy"
+    },
+    {
+      "lang": "Italian",
+      "code": "ita",
+      "region": "Aosta Valley",
+      "country": "Italy"
+    }
+  ],
+  "IT-32": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Trentino-South Tyrol",
+      "country": "Italy"
+    },
+    {
+      "lang": "Italian",
+      "code": "ita",
+      "region": "Trentino-South Tyrol",
+      "country": "Italy"
+    },
+    {
+      "lang": "Ladin",
+      "code": "lld",
+      "region": "Trentino-South Tyrol",
+      "country": "Italy"
+    }
+  ],
+  "IT-36": [
+    {
+      "lang": "German",
+      "code": "deu",
+      "region": "Friuli Venezia Giulia",
+      "country": "Italy"
+    },
+    {
+      "lang": "Italian",
+      "code": "ita",
+      "region": "Friuli Venezia Giulia",
+      "country": "Italy"
+    },
+    {
+      "lang": "Slovene",
+      "code": "slv",
+      "region": "Friuli Venezia Giulia",
+      "country": "Italy"
+    },
+    {
+      "lang": "Friulian",
+      "code": "fur",
+      "region": "Friuli Venezia Giulia",
+      "country": "Italy"
+    }
+  ],
+  "IT-88": [
+    {
+      "lang": "Italian",
+      "code": "ita",
+      "region": "Sardinia",
+      "country": "Italy"
+    },
+    {
+      "lang": "Sardinian",
+      "code": "srd",
+      "region": "Sardinia",
+      "country": "Italy"
+    }
+  ],
+  "UA-43": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Autonomous Republic of Crimea",
+      "country": "Ukraine"
+    },
+    {
+      "lang": "Ukrainian",
+      "code": "ukr",
+      "region": "Autonomous Republic of Crimea",
+      "country": "Ukraine"
+    },
+    {
+      "lang": "Crimean Tatar",
+      "code": "crh",
+      "region": "Autonomous Republic of Crimea",
+      "country": "Ukraine"
+    }
+  ],
+  "VN-HN": [
+    {
+      "lang": "Vietnamese",
+      "code": "vie",
+      "region": "Hanoi",
+      "country": "Vietnam"
+    }
+  ],
+  "UZ-TK": [
+    {
+      "lang": "Uzbek",
+      "code": "uzb",
+      "region": "Tashkent",
+      "country": "Uzbekistan"
+    }
+  ],
+  "AZ-BA": [
+    {
+      "lang": "Azerbaijani",
+      "code": "aze",
+      "region": "Baku",
+      "country": "Azerbaijan"
+    }
+  ],
+  "AZ-GA": [
+    {
+      "lang": "Azerbaijani",
+      "code": "aze",
+      "region": "Ganja",
+      "country": "Azerbaijan"
+    }
+  ],
+  "AZ-YE": [
+    {
+      "lang": "Azerbaijani",
+      "code": "aze",
+      "region": "Yevlakh",
+      "country": "Azerbaijan"
+    }
+  ],
+  "AZ-SM": [
+    {
+      "lang": "Azerbaijani",
+      "code": "aze",
+      "region": "Sumgait",
+      "country": "Azerbaijan"
+    }
+  ],
+  "AZ-LA": [
+    {
+      "lang": "Azerbaijani",
+      "code": "aze",
+      "region": "Lankaran",
+      "country": "Azerbaijan"
+    }
+  ],
+  "AZ-NV": [
+    {
+      "lang": "Azerbaijani",
+      "code": "aze",
+      "region": "Nakhchivan",
+      "country": "Azerbaijan"
+    }
+  ],
+  "AZ-MI": [
+    {
+      "lang": "Azerbaijani",
+      "code": "aze",
+      "region": "Mingachevir",
+      "country": "Azerbaijan"
+    }
+  ],
+  "AZ-SA": [
+    {
+      "lang": "Azerbaijani",
+      "code": "aze",
+      "region": "Shaki",
+      "country": "Azerbaijan"
+    }
+  ],
+  "AZ-SR": [
+    {
+      "lang": "Azerbaijani",
+      "code": "aze",
+      "region": "Shirvan",
+      "country": "Azerbaijan"
+    }
+  ],
+  "TW-TPE": [
+    {
+      "lang": "Standard Taiwanese Mandarin",
+      "code": "",
+      "region": "Taipei",
+      "country": "Taiwan"
+    }
+  ],
+  "DJ-DJ": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Djibouti City",
+      "country": "Djibouti"
+    },
+    {
+      "lang": "Arabic",
+      "code": "ara",
+      "region": "Djibouti City",
+      "country": "Djibouti"
+    }
+  ],
+  "CD-KN": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Kinshasa",
+      "country": "Democratic Republic of the Congo"
+    }
+  ],
+  "FR-BL": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Saint Barthélemy",
+      "country": "France"
+    }
+  ],
+  "FR-PF": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "French Polynesia",
+      "country": "France"
+    }
+  ],
+  "FR-NC": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "New Caledonia",
+      "country": "France"
+    }
+  ],
+  "FR-PM": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Saint Pierre and Miquelon",
+      "country": "France"
+    }
+  ],
+  "FR-WF": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Wallis and Futuna",
+      "country": "France"
+    },
+    {
+      "lang": "Futunan",
+      "code": "fud",
+      "region": "Wallis and Futuna",
+      "country": "France"
+    },
+    {
+      "lang": "Wallisian",
+      "code": "wls",
+      "region": "Wallis and Futuna",
+      "country": "France"
+    }
+  ],
+  "FR-MF": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Saint-Martin",
+      "country": "France"
+    }
+  ],
+  "CO-DC": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Bogotá",
+      "country": "Colombia"
+    },
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Bogotá",
+      "country": "Colombia"
+    }
+  ],
+  "EC-N": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Napo Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Waorani",
+      "code": "auc",
+      "region": "Napo Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Northern Quichua",
+      "code": "",
+      "region": "Napo Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-Y": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Pastaza Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Záparo",
+      "code": "zro",
+      "region": "Pastaza Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Shuar",
+      "code": "jiv",
+      "region": "Pastaza Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Waorani",
+      "code": "auc",
+      "region": "Pastaza Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Northern Quichua",
+      "code": "",
+      "region": "Pastaza Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Achuar",
+      "code": "acu",
+      "region": "Pastaza Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Andoa",
+      "code": "anb",
+      "region": "Pastaza Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-A": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Azuay Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Northern Quichua",
+      "code": "",
+      "region": "Azuay Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-H": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Chimborazo Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Northern Quichua",
+      "code": "",
+      "region": "Chimborazo Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-X": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Cotopaxi Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Northern Quichua",
+      "code": "",
+      "region": "Cotopaxi Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-B": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Bolívar Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Northern Quichua",
+      "code": "",
+      "region": "Bolívar Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-P": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Pichincha Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Northern Quichua",
+      "code": "",
+      "region": "Pichincha Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-C": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Carchi Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Awa Pit",
+      "code": "kwi",
+      "region": "Carchi Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-I": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Imbabura Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Northern Quichua",
+      "code": "",
+      "region": "Imbabura Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Awa Pit",
+      "code": "kwi",
+      "region": "Imbabura Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-G": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Guayas Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-F": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Cañar Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Northern Quichua",
+      "code": "",
+      "region": "Cañar Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-E": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Esmeraldas Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Cha'palaa",
+      "code": "cbi",
+      "region": "Esmeraldas Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Awa Pit",
+      "code": "kwi",
+      "region": "Esmeraldas Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Embera",
+      "code": "",
+      "region": "Esmeraldas Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-O": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "El Oro Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-W": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Galápagos Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-U": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Sucumbíos Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Northern Quichua",
+      "code": "",
+      "region": "Sucumbíos Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Cofán",
+      "code": "con",
+      "region": "Sucumbíos Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Secoya",
+      "code": "sey",
+      "region": "Sucumbíos Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Siona",
+      "code": "snn",
+      "region": "Sucumbíos Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-D": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Orellana Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Waorani",
+      "code": "auc",
+      "region": "Orellana Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Northern Quichua",
+      "code": "",
+      "region": "Orellana Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-L": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Loja Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Northern Quichua",
+      "code": "",
+      "region": "Loja Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-T": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Tungurahua Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Northern Quichua",
+      "code": "",
+      "region": "Tungurahua Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-R": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Los Ríos Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-M": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Manabí Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-S": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Morona-Santiago Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Shuar",
+      "code": "jiv",
+      "region": "Morona-Santiago Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Achuar",
+      "code": "acu",
+      "region": "Morona-Santiago Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-Z": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Zamora Chinchipe",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Shuar",
+      "code": "jiv",
+      "region": "Zamora Chinchipe",
+      "country": "Ecuador"
+    }
+  ],
+  "PK-JK": [
+    {
+      "lang": "Urdu",
+      "code": "urd",
+      "region": "Azad Kashmir",
+      "country": "Pakistan"
+    },
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Azad Kashmir",
+      "country": "Pakistan"
+    }
+  ],
+  "MU-RO": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Rodrigues",
+      "country": "Mauritius"
+    }
+  ],
+  "BA-BIH": [
+    {
+      "lang": "Croatian",
+      "code": "hrv",
+      "region": "Federation of Bosnia and Herzegovina",
+      "country": "Bosnia and Herzegovina"
+    },
+    {
+      "lang": "Serbian",
+      "code": "srp",
+      "region": "Federation of Bosnia and Herzegovina",
+      "country": "Bosnia and Herzegovina"
+    },
+    {
+      "lang": "Bosnian",
+      "code": "bos",
+      "region": "Federation of Bosnia and Herzegovina",
+      "country": "Bosnia and Herzegovina"
+    }
+  ],
+  "BY-HM": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Minsk",
+      "country": "Belarus"
+    },
+    {
+      "lang": "Belarusian",
+      "code": "bel",
+      "region": "Minsk",
+      "country": "Belarus"
+    }
+  ],
+  "AM-ER": [
+    {
+      "lang": "Armenian",
+      "code": "hye",
+      "region": "Yerevan",
+      "country": "Armenia"
+    }
+  ],
+  "NO-22": [
+    {
+      "lang": "Norwegian",
+      "code": "nor",
+      "region": "Jan Mayen",
+      "country": "Norway"
+    }
+  ],
+  "NO-21": [
+    {
+      "lang": "Norwegian",
+      "code": "nor",
+      "region": "Svalbard",
+      "country": "Norway"
+    }
+  ],
+  "LV-RIX": [
+    {
+      "lang": "Latvian",
+      "code": "lav",
+      "region": "Riga",
+      "country": "Latvia"
+    }
+  ],
+  "LV-DGV": [
+    {
+      "lang": "Latvian",
+      "code": "lav",
+      "region": "Daugavpils",
+      "country": "Latvia"
+    }
+  ],
+  "LV-LPX": [
+    {
+      "lang": "Latvian",
+      "code": "lav",
+      "region": "Liepāja",
+      "country": "Latvia"
+    }
+  ],
+  "TH-10": [
+    {
+      "lang": "Thai",
+      "code": "tha",
+      "region": "Bangkok",
+      "country": "Thailand"
+    },
+    {
+      "lang": "Thai",
+      "code": "tha",
+      "region": "Bangkok",
+      "country": "Ayutthaya Kingdom"
+    },
+    {
+      "lang": "Thai",
+      "code": "tha",
+      "region": "Bangkok",
+      "country": "Konbaung dynasty"
+    },
+    {
+      "lang": "Thai",
+      "code": "tha",
+      "region": "Bangkok",
+      "country": "Thonburi Kingdom"
+    },
+    {
+      "lang": "Thai",
+      "code": "tha",
+      "region": "Bangkok",
+      "country": "Rattanakosin Kingdom"
+    }
+  ],
+  "MN-1": [
+    {
+      "lang": "Mongolian",
+      "code": "mon",
+      "region": "Ulaanbaatar",
+      "country": "Mongolia"
+    }
+  ],
+  "UZ-QR": [
+    {
+      "lang": "Uzbek",
+      "code": "uzb",
+      "region": "Karakalpakstan",
+      "country": "Uzbekistan"
+    },
+    {
+      "lang": "Karakalpak",
+      "code": "kaa",
+      "region": "Karakalpakstan",
+      "country": "Uzbekistan"
+    }
+  ],
+  "TM-S": [
+    {
+      "lang": "Turkmen",
+      "code": "tuk",
+      "region": "Ashgabat",
+      "country": "Turkmenistan"
+    }
+  ],
+  "CS-SR": [
+    {
+      "lang": "Serbo-Croatian",
+      "code": "hbs",
+      "region": "Republic of Serbia",
+      "country": "Serbia and Montenegro"
+    },
+    {
+      "lang": "Serbo-Croatian",
+      "code": "hbs",
+      "region": "Republic of Serbia",
+      "country": "Socialist Federal Republic of Yugoslavia"
+    },
+    {
+      "lang": "Serbo-Croatian",
+      "code": "hbs",
+      "region": "Republic of Serbia",
+      "country": "Federal Republic of Yugoslavia"
+    }
+  ],
+  "YU-SR": [
+    {
+      "lang": "Serbo-Croatian",
+      "code": "hbs",
+      "region": "Republic of Serbia",
+      "country": "Serbia and Montenegro"
+    },
+    {
+      "lang": "Serbo-Croatian",
+      "code": "hbs",
+      "region": "Republic of Serbia",
+      "country": "Socialist Federal Republic of Yugoslavia"
+    },
+    {
+      "lang": "Serbo-Croatian",
+      "code": "hbs",
+      "region": "Republic of Serbia",
+      "country": "Federal Republic of Yugoslavia"
+    }
+  ],
+  "KP-01": [
+    {
+      "lang": "North Korean standard language",
+      "code": "",
+      "region": "Pyongyang",
+      "country": "North Korea"
+    },
+    {
+      "lang": "North Korean standard language",
+      "code": "",
+      "region": "Pyongyang",
+      "country": "North Korea"
+    }
+  ],
+  "KP-13": [
+    {
+      "lang": "North Korean standard language",
+      "code": "",
+      "region": "Rason",
+      "country": "North Korea"
+    }
+  ],
+  "MV-MLE": [
+    {
+      "lang": "Divehi",
+      "code": "div",
+      "region": "Malé",
+      "country": "Maldives"
+    }
+  ],
+  "CA-QC": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Quebec",
+      "country": "Canada"
+    }
+  ],
+  "CA-NB": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "New Brunswick",
+      "country": "Canada"
+    },
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "New Brunswick",
+      "country": "Canada"
+    }
+  ],
+  "CA-NT": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Northwest Territories",
+      "country": "Canada"
+    },
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Northwest Territories",
+      "country": "Canada"
+    },
+    {
+      "lang": "North Slavey",
+      "code": "scs",
+      "region": "Northwest Territories",
+      "country": "Canada"
+    },
+    {
+      "lang": "Dogrib",
+      "code": "dgr",
+      "region": "Northwest Territories",
+      "country": "Canada"
+    },
+    {
+      "lang": "Gwich’in",
+      "code": "gwi",
+      "region": "Northwest Territories",
+      "country": "Canada"
+    },
+    {
+      "lang": "Chipewyan",
+      "code": "chp",
+      "region": "Northwest Territories",
+      "country": "Canada"
+    },
+    {
+      "lang": "Inuvialuktun",
+      "code": "",
+      "region": "Northwest Territories",
+      "country": "Canada"
+    },
+    {
+      "lang": "Inuinnaqtun",
+      "code": "",
+      "region": "Northwest Territories",
+      "country": "Canada"
+    },
+    {
+      "lang": "Denetaca",
+      "code": "xsl",
+      "region": "Northwest Territories",
+      "country": "Canada"
+    },
+    {
+      "lang": "Inuktitut",
+      "code": "iku",
+      "region": "Northwest Territories",
+      "country": "Canada"
+    },
+    {
+      "lang": "Cree",
+      "code": "cre",
+      "region": "Northwest Territories",
+      "country": "Canada"
+    }
+  ],
+  "CA-YT": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Yukon",
+      "country": "Canada"
+    },
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Yukon",
+      "country": "Canada"
+    }
+  ],
+  "CA-NU": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Nunavut",
+      "country": "Canada"
+    },
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Nunavut",
+      "country": "Canada"
+    },
+    {
+      "lang": "Inuinnaqtun",
+      "code": "",
+      "region": "Nunavut",
+      "country": "Canada"
+    },
+    {
+      "lang": "Inuktitut",
+      "code": "iku",
+      "region": "Nunavut",
+      "country": "Canada"
+    }
+  ],
+  "ES-NC": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Navarre",
+      "country": "Spain"
+    },
+    {
+      "lang": "Basque",
+      "code": "eus",
+      "region": "Navarre",
+      "country": "Spain"
+    }
+  ],
+  "IN-CG": [
+    {
+      "lang": "Hindi",
+      "code": "hin",
+      "region": "Chhattisgarh",
+      "country": "India"
+    },
+    {
+      "lang": "Chhattisgarhi",
+      "code": "hne",
+      "region": "Chhattisgarh",
+      "country": "India"
+    }
+  ],
+  "IN-HR": [
+    {
+      "lang": "Hindi",
+      "code": "hin",
+      "region": "Haryana",
+      "country": "India"
+    },
+    {
+      "lang": "Haryanvi",
+      "code": "bgc",
+      "region": "Haryana",
+      "country": "India"
+    }
+  ],
+  "IN-JH": [
+    {
+      "lang": "Hindi",
+      "code": "hin",
+      "region": "Jharkhand",
+      "country": "India"
+    },
+    {
+      "lang": "Urdu",
+      "code": "urd",
+      "region": "Jharkhand",
+      "country": "India"
+    },
+    {
+      "lang": "Bangla",
+      "code": "ben",
+      "region": "Jharkhand",
+      "country": "India"
+    },
+    {
+      "lang": "Ho",
+      "code": "hoc",
+      "region": "Jharkhand",
+      "country": "India"
+    },
+    {
+      "lang": "Kurukh",
+      "code": "kru",
+      "region": "Jharkhand",
+      "country": "India"
+    },
+    {
+      "lang": "Odia",
+      "code": "ory",
+      "region": "Jharkhand",
+      "country": "India"
+    },
+    {
+      "lang": "Santali",
+      "code": "sat",
+      "region": "Jharkhand",
+      "country": "India"
+    },
+    {
+      "lang": "Maithili",
+      "code": "mai",
+      "region": "Jharkhand",
+      "country": "India"
+    },
+    {
+      "lang": "Nagpuri",
+      "code": "sck",
+      "region": "Jharkhand",
+      "country": "India"
+    },
+    {
+      "lang": "Mundari",
+      "code": "unr",
+      "region": "Jharkhand",
+      "country": "India"
+    },
+    {
+      "lang": "Kharia",
+      "code": "khr",
+      "region": "Jharkhand",
+      "country": "India"
+    },
+    {
+      "lang": "Kudmali",
+      "code": "kyw",
+      "region": "Jharkhand",
+      "country": "India"
+    },
+    {
+      "lang": "Khortha",
+      "code": "",
+      "region": "Jharkhand",
+      "country": "India"
+    },
+    {
+      "lang": "Panchpargania",
+      "code": "tdb",
+      "region": "Jharkhand",
+      "country": "India"
+    }
+  ],
+  "IN-WB": [
+    {
+      "lang": "Hindi",
+      "code": "hin",
+      "region": "West Bengal",
+      "country": "India"
+    },
+    {
+      "lang": "Urdu",
+      "code": "urd",
+      "region": "West Bengal",
+      "country": "India"
+    },
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "West Bengal",
+      "country": "India"
+    },
+    {
+      "lang": "Telugu",
+      "code": "tel",
+      "region": "West Bengal",
+      "country": "India"
+    },
+    {
+      "lang": "Bangla",
+      "code": "ben",
+      "region": "West Bengal",
+      "country": "India"
+    },
+    {
+      "lang": "Kurukh",
+      "code": "kru",
+      "region": "West Bengal",
+      "country": "India"
+    },
+    {
+      "lang": "Odia",
+      "code": "ory",
+      "region": "West Bengal",
+      "country": "India"
+    },
+    {
+      "lang": "Nepali",
+      "code": "nep",
+      "region": "West Bengal",
+      "country": "India"
+    },
+    {
+      "lang": "Santali",
+      "code": "sat",
+      "region": "West Bengal",
+      "country": "India"
+    },
+    {
+      "lang": "Punjabi",
+      "code": "pan",
+      "region": "West Bengal",
+      "country": "India"
+    },
+    {
+      "lang": "Rangpuri",
+      "code": "rkt",
+      "region": "West Bengal",
+      "country": "India"
+    },
+    {
+      "lang": "Kudmali",
+      "code": "kyw",
+      "region": "West Bengal",
+      "country": "India"
+    },
+    {
+      "lang": "Rajbanshi",
+      "code": "rjs",
+      "region": "West Bengal",
+      "country": "India"
+    }
+  ],
+  "IN-RJ": [
+    {
+      "lang": "Hindi",
+      "code": "hin",
+      "region": "Rajasthan",
+      "country": "India"
+    }
+  ],
+  "IN-UP": [
+    {
+      "lang": "Hindi",
+      "code": "hin",
+      "region": "Uttar Pradesh",
+      "country": "India"
+    },
+    {
+      "lang": "Urdu",
+      "code": "urd",
+      "region": "Uttar Pradesh",
+      "country": "India"
+    }
+  ],
+  "IN-MH": [
+    {
+      "lang": "Marathi",
+      "code": "mar",
+      "region": "Maharashtra",
+      "country": "India"
+    }
+  ],
+  "IN-AP": [
+    {
+      "lang": "Urdu",
+      "code": "urd",
+      "region": "Andhra Pradesh",
+      "country": "India"
+    },
+    {
+      "lang": "Telugu",
+      "code": "tel",
+      "region": "Andhra Pradesh",
+      "country": "India"
+    }
+  ],
+  "IN-TS": [
+    {
+      "lang": "Urdu",
+      "code": "urd",
+      "region": "Telangana",
+      "country": "India"
+    },
+    {
+      "lang": "Telugu",
+      "code": "tel",
+      "region": "Telangana",
+      "country": "India"
+    }
+  ],
+  "IN-ML": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Meghalaya",
+      "country": "India"
+    },
+    {
+      "lang": "Khasi",
+      "code": "kha",
+      "region": "Meghalaya",
+      "country": "India"
+    },
+    {
+      "lang": "Garo",
+      "code": "grt",
+      "region": "Meghalaya",
+      "country": "India"
+    }
+  ],
+  "CA-ON": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Ontario",
+      "country": "Canada"
+    }
+  ],
+  "CA-MB": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Manitoba",
+      "country": "Canada"
+    }
+  ],
+  "CA-AB": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Alberta",
+      "country": "Canada"
+    }
+  ],
+  "CA-NS": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Nova Scotia",
+      "country": "Canada"
+    }
+  ],
+  "CA-BC": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "British Columbia",
+      "country": "Canada"
+    }
+  ],
+  "CA-PE": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Prince Edward Island",
+      "country": "Canada"
+    }
+  ],
+  "CA-SK": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Saskatchewan",
+      "country": "Canada"
+    }
+  ],
+  "CA-NL": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Newfoundland and Labrador",
+      "country": "Canada"
+    }
+  ],
+  "MY-13": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Sarawak",
+      "country": "Malaysia"
+    }
+  ],
+  "IN-TN": [
+    {
+      "lang": "Tamil",
+      "code": "tam",
+      "region": "Tamil Nadu",
+      "country": "India"
+    }
+  ],
+  "UA-48": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Mykolaiv Oblast",
+      "country": "Ukraine"
+    },
+    {
+      "lang": "Ukrainian",
+      "code": "ukr",
+      "region": "Mykolaiv Oblast",
+      "country": "Ukraine"
+    }
+  ],
+  "UA-65": [
+    {
+      "lang": "Ukrainian",
+      "code": "ukr",
+      "region": "Kherson Oblast",
+      "country": "Ukraine"
+    }
+  ],
+  "UA-07": [
+    {
+      "lang": "Ukrainian",
+      "code": "ukr",
+      "region": "Volyn Oblast",
+      "country": "Ukraine"
+    }
+  ],
+  "UA-77": [
+    {
+      "lang": "Ukrainian",
+      "code": "ukr",
+      "region": "Chernivtsi Oblast",
+      "country": "Ukraine"
+    }
+  ],
+  "UA-51": [
+    {
+      "lang": "Ukrainian",
+      "code": "ukr",
+      "region": "Odesa Oblast",
+      "country": "Ukraine"
+    }
+  ],
+  "UA-09": [
+    {
+      "lang": "Ukrainian",
+      "code": "ukr",
+      "region": "Luhansk Oblast",
+      "country": "Ukraine"
+    }
+  ],
+  "UA-61": [
+    {
+      "lang": "Ukrainian",
+      "code": "ukr",
+      "region": "Ternopil Oblast",
+      "country": "Ukraine"
+    }
+  ],
+  "UA-14": [
+    {
+      "lang": "Ukrainian",
+      "code": "ukr",
+      "region": "Donetsk Oblast",
+      "country": "Ukraine"
+    }
+  ],
+  "MY-01": [
+    {
+      "lang": "Malay",
+      "code": "msa",
+      "region": "Johor",
+      "country": "Malaysia"
+    }
+  ],
+  "IN-AS": [
+    {
+      "lang": "Bangla",
+      "code": "ben",
+      "region": "Assam",
+      "country": "India"
+    },
+    {
+      "lang": "Assamese",
+      "code": "asm",
+      "region": "Assam",
+      "country": "India"
+    },
+    {
+      "lang": "Bodo",
+      "code": "brx",
+      "region": "Assam",
+      "country": "India"
+    }
+  ],
+  "IN-KA": [
+    {
+      "lang": "Kannada",
+      "code": "kan",
+      "region": "Karnataka",
+      "country": "India"
+    }
+  ],
+  "IN-OD": [
+    {
+      "lang": "Odia",
+      "code": "ory",
+      "region": "Odisha",
+      "country": "India"
+    }
+  ],
+  "IN-GA": [
+    {
+      "lang": "Konkani",
+      "code": "kok",
+      "region": "Goa",
+      "country": "India"
+    }
+  ],
+  "IN-KL": [
+    {
+      "lang": "Malayalam",
+      "code": "mal",
+      "region": "Kerala",
+      "country": "India"
+    }
+  ],
+  "IN-PB": [
+    {
+      "lang": "Punjabi",
+      "code": "pan",
+      "region": "Punjab",
+      "country": "India"
+    }
+  ],
+  "US-UM": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "United States Minor Outlying Islands",
+      "country": "United States"
+    }
+  ],
+  "UM-76": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Navassa Island",
+      "country": "United States"
+    }
+  ],
+  "UM-79": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Wake Island",
+      "country": "United States"
+    }
+  ],
+  "UM-71": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Midway Atoll",
+      "country": "United States"
+    }
+  ],
+  "NG-AN": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Anambra State",
+      "country": "Nigeria"
+    },
+    {
+      "lang": "Igbo",
+      "code": "ibo",
+      "region": "Anambra State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-BO": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Borno State",
+      "country": "Nigeria"
+    }
+  ],
+  "UM-67": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Johnston Atoll",
+      "country": "United States"
+    }
+  ],
+  "NG-ZA": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Zamfara State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-AB": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Abia State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-AD": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Adamawa State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-GO": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Gombe State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-KO": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Kogi State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-AK": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Akwa Ibom State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-TA": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Taraba State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-OY": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Oyo State",
+      "country": "Nigeria"
+    },
+    {
+      "lang": "Yoruba",
+      "code": "yor",
+      "region": "Oyo State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-DE": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Delta State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-RI": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Rivers State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-PL": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Plateau State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-NI": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Niger State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-BA": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Bauchi State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-SO": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Sokoto State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-EB": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Ebonyi State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-BY": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Bayelsa State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-EK": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Ekiti State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-KT": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Katsina State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-KN": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Kano State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-JI": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Jigawa State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-ED": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Edo State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-YO": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Yobe State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-CR": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Cross River State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-KE": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Kebbi State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-LA": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Lagos State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-NA": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Nasarawa State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-ON": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Ondo State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-OG": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Ogun State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-IM": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Imo State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-KD": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Kaduna State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-EN": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Enugu State",
+      "country": "Nigeria"
+    }
+  ],
+  "BR-BA": [
+    {
+      "lang": "Portuguese",
+      "code": "por",
+      "region": "Bahia",
+      "country": "Brazil"
+    }
+  ],
+  "KR-28": [
+    {
+      "lang": "Korean",
+      "code": "kor",
+      "region": "Incheon",
+      "country": "South Korea"
+    }
+  ],
+  "KR-31": [
+    {
+      "lang": "Korean",
+      "code": "kor",
+      "region": "Ulsan",
+      "country": "South Korea"
+    }
+  ],
+  "NG-KW": [
+    {
+      "lang": "Yoruba",
+      "code": "yor",
+      "region": "Kwara State",
+      "country": "Nigeria"
+    }
+  ],
+  "NG-OS": [
+    {
+      "lang": "Yoruba",
+      "code": "yor",
+      "region": "Osun State",
+      "country": "Nigeria"
+    }
+  ],
+  "SM-07": [
+    {
+      "lang": "Italian",
+      "code": "ita",
+      "region": "San Marino",
+      "country": "San Marino"
+    }
+  ],
+  "SM-09": [
+    {
+      "lang": "Italian",
+      "code": "ita",
+      "region": "Serravalle",
+      "country": "San Marino"
+    }
+  ],
+  "PK-SD": [
+    {
+      "lang": "Urdu",
+      "code": "urd",
+      "region": "Sindh",
+      "country": "Pakistan"
+    },
+    {
+      "lang": "Sindhi",
+      "code": "snd",
+      "region": "Sindh",
+      "country": "Pakistan"
+    }
+  ],
+  "KH-12": [
+    {
+      "lang": "Khmer",
+      "code": "khm",
+      "region": "Phnom Penh",
+      "country": "Cambodia"
+    }
+  ],
+  "AZ-AGS": [
+    {
+      "lang": "Azerbaijani",
+      "code": "aze",
+      "region": "Aghdash District",
+      "country": "Azerbaijan"
+    }
+  ],
+  "AZ-DAS": [
+    {
+      "lang": "Azerbaijani",
+      "code": "aze",
+      "region": "Dashkasan District",
+      "country": "Azerbaijan"
+    }
+  ],
+  "AZ-QOB": [
+    {
+      "lang": "Azerbaijani",
+      "code": "aze",
+      "region": "Gobustan District",
+      "country": "Azerbaijan"
+    }
+  ],
+  "VE-N": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Monagas",
+      "country": "Venezuela"
+    }
+  ],
+  "RU-PER": [
+    {
+      "lang": "Russian",
+      "code": "rus",
+      "region": "Perm Krai",
+      "country": "Russia"
+    }
+  ],
+  "KM-A": [
+    {
+      "lang": "Swahili",
+      "code": "swa",
+      "region": "Anjouan",
+      "country": "Comoros"
+    }
+  ],
+  "CN-BJ": [
+    {
+      "lang": "Chinese",
+      "code": "zho",
+      "region": "Beijing",
+      "country": "People's Republic of China"
+    }
+  ],
+  "EC-SD": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Santo Domingo de los Tsáchilas Province",
+      "country": "Ecuador"
+    },
+    {
+      "lang": "Tsachila",
+      "code": "cof",
+      "region": "Santo Domingo de los Tsáchilas Province",
+      "country": "Ecuador"
+    }
+  ],
+  "EC-SE": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Santa Elena Province",
+      "country": "Ecuador"
+    }
+  ],
+  "SH-AC": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Ascension",
+      "country": "United Kingdom"
+    }
+  ],
+  "SH-HL": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Saint Helena",
+      "country": "United Kingdom"
+    }
+  ],
+  "CS-CG": [
+    {
+      "lang": "Serbo-Croatian",
+      "code": "hbs",
+      "region": "Republic of Montenegro",
+      "country": "Yugoslavia"
+    },
+    {
+      "lang": "Serbo-Croatian",
+      "code": "hbs",
+      "region": "Republic of Montenegro",
+      "country": "Serbia and Montenegro"
+    },
+    {
+      "lang": "Serbo-Croatian",
+      "code": "hbs",
+      "region": "Republic of Montenegro",
+      "country": "Federal Republic of Yugoslavia"
+    }
+  ],
+  "YU-CG": [
+    {
+      "lang": "Serbo-Croatian",
+      "code": "hbs",
+      "region": "Republic of Montenegro",
+      "country": "Yugoslavia"
+    },
+    {
+      "lang": "Serbo-Croatian",
+      "code": "hbs",
+      "region": "Republic of Montenegro",
+      "country": "Serbia and Montenegro"
+    },
+    {
+      "lang": "Serbo-Croatian",
+      "code": "hbs",
+      "region": "Republic of Montenegro",
+      "country": "Federal Republic of Yugoslavia"
+    }
+  ],
+  "CL-AR": [
+    {
+      "lang": "Spanish",
+      "code": "spa",
+      "region": "Araucanía Region",
+      "country": "Chile"
+    },
+    {
+      "lang": "Mapudungun",
+      "code": "arn",
+      "region": "Araucanía Region",
+      "country": "Chile"
+    }
+  ],
+  "NA-CA": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Zambezi Region",
+      "country": "Namibia"
+    }
+  ],
+  "NA-KA": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Karas Region",
+      "country": "Namibia"
+    }
+  ],
+  "NA-HA": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Hardap Region",
+      "country": "Namibia"
+    }
+  ],
+  "AM-AR": [
+    {
+      "lang": "Armenian",
+      "code": "hye",
+      "region": "Ararat Province",
+      "country": "Armenia"
+    }
+  ],
+  "NA-KE": [
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Kavango East Region",
+      "country": "Namibia"
+    }
+  ],
+  "IN-PY": [
+    {
+      "lang": "French",
+      "code": "fra",
+      "region": "Puducherry",
+      "country": "India"
+    },
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Puducherry",
+      "country": "India"
+    },
+    {
+      "lang": "Tamil",
+      "code": "tam",
+      "region": "Puducherry",
+      "country": "India"
+    },
+    {
+      "lang": "Telugu",
+      "code": "tel",
+      "region": "Puducherry",
+      "country": "India"
+    },
+    {
+      "lang": "Malayalam",
+      "code": "mal",
+      "region": "Puducherry",
+      "country": "India"
+    }
+  ],
+  "IN-AN": [
+    {
+      "lang": "Hindi",
+      "code": "hin",
+      "region": "Andaman and Nicobar Islands",
+      "country": "India"
+    },
+    {
+      "lang": "Tamil",
+      "code": "tam",
+      "region": "Andaman and Nicobar Islands",
+      "country": "India"
+    },
+    {
+      "lang": "Nicobarese",
+      "code": "",
+      "region": "Andaman and Nicobar Islands",
+      "country": "India"
+    }
+  ],
+  "IN-LA": [
+    {
+      "lang": "Hindi",
+      "code": "hin",
+      "region": "Ladakh",
+      "country": "India"
+    },
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Ladakh",
+      "country": "India"
+    }
+  ],
+  "IN-DL": [
+    {
+      "lang": "Hindi",
+      "code": "hin",
+      "region": "National Capital Territory of Delhi",
+      "country": "India"
+    },
+    {
+      "lang": "Urdu",
+      "code": "urd",
+      "region": "National Capital Territory of Delhi",
+      "country": "India"
+    },
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "National Capital Territory of Delhi",
+      "country": "India"
+    },
+    {
+      "lang": "Punjabi",
+      "code": "pan",
+      "region": "National Capital Territory of Delhi",
+      "country": "India"
+    }
+  ],
+  "IN-JK": [
+    {
+      "lang": "Hindi",
+      "code": "hin",
+      "region": "Jammu and Kashmir",
+      "country": "India"
+    },
+    {
+      "lang": "Urdu",
+      "code": "urd",
+      "region": "Jammu and Kashmir",
+      "country": "India"
+    },
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Jammu and Kashmir",
+      "country": "India"
+    },
+    {
+      "lang": "Dogri",
+      "code": "dgo",
+      "region": "Jammu and Kashmir",
+      "country": "India"
+    },
+    {
+      "lang": "Kashmiri",
+      "code": "kas",
+      "region": "Jammu and Kashmir",
+      "country": "India"
+    }
+  ],
+  "IN-DH": [
+    {
+      "lang": "Hindi",
+      "code": "hin",
+      "region": "Dadra and Nagar Haveli and Daman and Diu",
+      "country": "India"
+    },
+    {
+      "lang": "Marathi",
+      "code": "mar",
+      "region": "Dadra and Nagar Haveli and Daman and Diu",
+      "country": "India"
+    },
+    {
+      "lang": "English",
+      "code": "eng",
+      "region": "Dadra and Nagar Haveli and Daman and Diu",
+      "country": "India"
+    },
+    {
+      "lang": "Gujarati",
+      "code": "guj",
+      "region": "Dadra and Nagar Haveli and Daman and Diu",
+      "country": "India"
+    }
+  ],
+  "CN-MO": [
+    {
+      "lang": "Portuguese",
+      "code": "por",
+      "region": "Macau",
+      "country": "People's Republic of China"
+    },
+    {
+      "lang": "Cantonese",
+      "code": "",
+      "region": "Macau",
+      "country": "People's Republic of China"
+    },
+    {
+      "lang": "Standard Chinese",
+      "code": "cmn",
+      "region": "Macau",
+      "country": "People's Republic of China"
+    }
+  ],
+  "CN-HK": [
+    {
+      "lang": "Standard Chinese",
+      "code": "cmn",
+      "region": "Hong Kong",
+      "country": "People's Republic of China"
+    }
+  ],
+  "LV-039": [
+    {
+      "lang": "Latvian",
+      "code": "lav",
+      "region": "Jaunpiebalga Municipality",
+      "country": "Latvia"
+    }
+  ]
+}

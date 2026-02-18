@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Modern vs Gilded Age Philanthropy</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'ABC Oracle Edu', system-ui, sans-serif;
+    background: #F6F7F3;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.chart-container {
+    width: 900px;
+    background: #F6F7F3;
+}
+
+.chart-title {
+    font-size: 23px;
+    font-weight: 500;
+    color: #3D3733;
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+.chart-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    color: #3D3733;
+    opacity: 0.7;
+    margin-bottom: 24px;
+    line-height: 1.3;
+}
+
+.chart-source {
+    font-size: 11px;
+    font-weight: 300;
+    color: #999;
+    font-style: italic;
+    margin-top: 8px;
+}
+</style>
+</head>
+<body>
+<div class="chart-container">
+    <div class="chart-title">The Robber Barons Were More Generous</div>
+    <div class="chart-subtitle">Lifetime charitable giving as a percentage of peak wealth: Gilded Age industrialists<br>vs. today's tech titans.</div>
+    <svg id="chart"></svg>
+    <div class="chart-source">Source: Forbes 2024; Chronicle of Philanthropy; historical estimates from various biographies and foundation records. Gilded Age percentages are of peak inflation-adjusted wealth.</div>
+</div>
+<script>
+
+// Data: lifetime giving as % of peak wealth
+// Gilded Age figures from biographies and foundation records
+// Modern figures from Forbes philanthropy data and Chronicle of Philanthropy
+const data = [
+    // Gilded Age
+    {name: "Andrew Carnegie", pct: 90, era: "Gilded Age", note: "Gave away ~$350M of ~$380M fortune (1919 dollars)"},
+    {name: "John D. Rockefeller", pct: 35, era: "Gilded Age", note: "Donated ~$540M of ~$1.5B peak fortune"},
+    {name: "Andrew Mellon", pct: 25, era: "Gilded Age", note: "National Gallery + foundations"},
+    // Modern — high givers
+    {name: "Warren Buffett", pct: 30, era: "Modern", note: "$62B of ~$206B peak, pledged 99%"},
+    {name: "Bill Gates", pct: 26, era: "Modern", note: "$47.7B of ~$183B peak"},
+    {name: "MacKenzie Scott", pct: 36, era: "Modern", note: "$19.25B of ~$53B post-divorce peak"},
+    {name: "George Soros", pct: 76, era: "Modern", note: "$34.8B of ~$46B peak"},
+    {name: "Michael Bloomberg", pct: 17, era: "Modern", note: "$21.1B of ~$124B peak"},
+    // Modern — low givers
+    {name: "Jeff Bezos", pct: 2.1, era: "Modern", note: "$4.1B of ~$194B", highlight: true},
+    {name: "Elon Musk", pct: 0.5, era: "Modern", note: "~$1B of ~$195B"},
+    {name: "Larry Ellison", pct: 1.5, era: "Modern", note: "~$2.1B of ~$141B"},
+    {name: "Mark Zuckerberg", pct: 3.5, era: "Modern", note: "~$6.2B of ~$177B"},
+];
+
+// Sort by pct descending
+data.sort((a, b) => b.pct - a.pct);
+
+const width = 900;
+const rowHeight = 42;
+const margin = {top: 20, right: 140, bottom: 30, left: 190};
+const height = margin.top + data.length * rowHeight + margin.bottom;
+const chartWidth = width - margin.left - margin.right;
+
+const svg = d3.select("#chart")
+    .attr("width", width)
+    .attr("height", height);
+
+const g = svg.append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+const x = d3.scaleLinear()
+    .domain([0, 100])
+    .range([0, chartWidth]);
+
+// Gridlines
+[0, 25, 50, 75, 100].forEach(v => {
+    g.append("line")
+        .attr("x1", x(v))
+        .attr("x2", x(v))
+        .attr("y1", 0)
+        .attr("y2", data.length * rowHeight)
+        .attr("stroke", "#ddd")
+        .attr("stroke-width", 0.5);
+
+    g.append("text")
+        .attr("x", x(v))
+        .attr("y", -6)
+        .attr("text-anchor", "middle")
+        .attr("font-size", "11px")
+        .attr("fill", "#999")
+        .attr("font-weight", 300)
+        .text(v === 0 ? "0%" : `${v}%`);
+});
+
+// Rows
+const rows = g.selectAll(".row")
+    .data(data)
+    .enter()
+    .append("g")
+    .attr("transform", (d, i) => `translate(0, ${i * rowHeight + rowHeight / 2})`);
+
+// Bar
+rows.append("rect")
+    .attr("x", 0)
+    .attr("y", -12)
+    .attr("width", d => x(d.pct))
+    .attr("height", 24)
+    .attr("fill", d => {
+        if (d.highlight) return "#F4743B";
+        if (d.era === "Gilded Age") return "#FEC439";
+        if (d.pct >= 20) return "#67A275";
+        return "#0BB4FF";
+    })
+    .attr("opacity", d => d.highlight ? 0.9 : 0.7)
+    .attr("rx", 2);
+
+// Name labels
+rows.append("text")
+    .attr("x", -10)
+    .attr("y", 0)
+    .attr("dy", "0.35em")
+    .attr("text-anchor", "end")
+    .attr("font-size", "14px")
+    .attr("font-weight", d => d.highlight ? 700 : 400)
+    .attr("fill", d => d.highlight ? "#F4743B" : "#3D3733")
+    .text(d => d.name);
+
+// Era tag
+rows.append("text")
+    .attr("x", -10)
+    .attr("y", 13)
+    .attr("text-anchor", "end")
+    .attr("font-size", "10px")
+    .attr("font-weight", 300)
+    .attr("fill", "#999")
+    .text(d => d.era === "Gilded Age" ? "Gilded Age" : "");
+
+// Percentage labels at end of bar
+rows.append("text")
+    .attr("x", d => x(d.pct) + 8)
+    .attr("y", 0)
+    .attr("dy", "0.35em")
+    .attr("font-size", "13px")
+    .attr("font-weight", d => d.highlight ? 700 : 400)
+    .attr("fill", d => d.highlight ? "#F4743B" : "#3D3733")
+    .text(d => `${d.pct}%`);
+
+// Legend
+const legendY = data.length * rowHeight + 18;
+const legends = [
+    {label: "Gilded Age", color: "#FEC439"},
+    {label: "Modern (20%+)", color: "#67A275"},
+    {label: "Modern (< 20%)", color: "#0BB4FF"},
+    {label: "Jeff Bezos", color: "#F4743B"},
+];
+
+let legendX = 0;
+legends.forEach(l => {
+    g.append("rect")
+        .attr("x", legendX)
+        .attr("y", legendY - 8)
+        .attr("width", 12)
+        .attr("height", 12)
+        .attr("fill", l.color)
+        .attr("opacity", 0.7)
+        .attr("rx", 2);
+
+    const text = g.append("text")
+        .attr("x", legendX + 16)
+        .attr("y", legendY)
+        .attr("dy", "0.1em")
+        .attr("font-size", "11px")
+        .attr("fill", "#999")
+        .attr("font-weight", 300)
+        .text(l.label);
+
+    legendX += text.node().getComputedTextLength() + 36;
+});
+
+</script>
+</body>
+</html>
