@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Metro Population vs. Technical PhDs</title>
+<style>
+  @font-face {
+    font-family: 'ABC Oracle';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf') format('opentype');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'ABC Oracle';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf') format('opentype');
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'ABC Oracle';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf') format('opentype');
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: 'ABC Oracle';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf') format('opentype');
+    font-weight: 500;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F6F7F3;
+    font-family: 'ABC Oracle', -apple-system, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  #chart { position: relative; }
+  .tooltip {
+    position: absolute;
+    pointer-events: none;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-family: 'ABC Oracle', sans-serif;
+    color: #3D3733;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 0.15s;
+    white-space: nowrap;
+    z-index: 10;
+  }
+  .tooltip .name { font-weight: 700; font-size: 13px; margin-bottom: 3px; }
+  .tooltip .stat { font-weight: 300; color: #666; }
+  .tooltip .highlight { color: #0BB4FF; font-weight: 500; }
+  .label-text {
+    font-family: 'ABC Oracle', sans-serif;
+    font-size: 11px;
+    fill: #3D3733;
+    font-weight: 400;
+  }
+</style>
+</head>
+<body>
+<div id="chart">
+  <div class="tooltip" id="tooltip"></div>
+</div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const WIDTH = 900, HEIGHT = 750;
+const MARGIN = {top: 70, right: 40, bottom: 60, left: 70};
+const w = WIDTH - MARGIN.left - MARGIN.right;
+const h = HEIGHT - MARGIN.top - MARGIN.bottom;
+
+const BLUE = '#0BB4FF';
+const BLACK = '#3D3733';
+
+const svg = d3.select('#chart')
+  .append('svg')
+  .attr('width', WIDTH)
+  .attr('height', HEIGHT);
+
+svg.append('rect')
+  .attr('width', WIDTH)
+  .attr('height', HEIGHT)
+  .attr('fill', '#F6F7F3');
+
+const g = svg.append('g')
+  .attr('transform', `translate(${MARGIN.left},${MARGIN.top})`);
+
+const data = {"metros": [{"name": "MSA 31460", "short": "", "pop": 158925, "phds": 5, "per10k": 0.5, "residual": -0.982}, {"name": "Stockton-Lodi, CA", "short": "Stockton", "pop": 787626, "phds": 383, "per10k": 7.6, "residual": 0.004}, {"name": "Sebastian-Vero Beach-West Vero Corridor, FL", "short": "Sebastian", "pop": 163945, "phds": 31, "per10k": 2.4, "residual": -0.207}, {"name": "Chicago-Naperville-Elgin, IL-IN", "short": "Chicago", "pop": 9478387, "phds": 9117, "per10k": 14.0, "residual": -0.015}, {"name": "Allentown-Bethlehem-Easton, PA-NJ", "short": "Allentown", "pop": 867285, "phds": 492, "per10k": 8.1, "residual": 0.059}, {"name": "Ithaca, NY", "short": "Ithaca", "pop": 103706, "phds": 817, "per10k": 132.8, "residual": 1.471}, {"name": "Toledo, OH", "short": "Toledo", "pop": 537080, "phds": 345, "per10k": 9.6, "residual": 0.173}, {"name": "Harrisburg-Carlisle, PA", "short": "Harrisburg", "pop": 597640, "phds": 243, "per10k": 5.8, "residual": -0.039}, {"name": "San Antonio-New Braunfels, TX", "short": "San Antonio", "pop": 2531462, "phds": 1068, "per10k": 6.4, "residual": -0.206}, {"name": "College Station-Bryan, TX", "short": "College Station", "pop": 237618, "phds": 557, "per10k": 44.0, "residual": 0.839}, {"name": "Decatur, AL", "short": "Decatur", "pop": 156901, "phds": 43, "per10k": 4.0, "residual": -0.041}, {"name": "Hartford-West Hartford-East Hartford, CT", "short": "Hartford", "pop": 1132576, "phds": 1041, "per10k": 13.1, "residual": 0.234}, {"name": "St. George, UT", "short": "St. George", "pop": 189950, "phds": 68, "per10k": 5.4, "residual": 0.051}, {"name": "Charlotte-Concord-Gastonia, NC-SC", "short": "Charlotte", "pop": 2754405, "phds": 1562, "per10k": 8.3, "residual": -0.088}, {"name": "Greensboro-High Point, NC", "short": "Greensboro", "pop": 824969, "phds": 403, "per10k": 7.2, "residual": 0.0}, {"name": "Columbia, SC", "short": "Columbia", "pop": 786648, "phds": 613, "per10k": 11.8, "residual": 0.209}, {"name": "Colorado Springs, CO", "short": "Colorado Springs", "pop": 760635, "phds": 639, "per10k": 12.6, "residual": 0.246}, {"name": "Miami-Fort Lauderdale-West Palm Beach, FL", "short": "Miami", "pop": 6102902, "phds": 2537, "per10k": 5.8, "residual": -0.324}, {"name": "Homosassa Springs, FL", "short": "Homosassa Springs", "pop": 158877, "phds": 13, "per10k": 1.0, "residual": -0.567}, {"name": "New York-Newark-Jersey City, NY-NJ", "short": "New York", "pop": 20562983, "phds": 23358, "per10k": 16.2, "residual": -0.041}, {"name": "Johnstown, PA", "short": "Johnstown", "pop": 132115, "phds": 41, "per10k": 4.3, "residual": 0.035}, {"name": "San Angelo, TX", "short": "San Angelo", "pop": 119789, "phds": 47, "per10k": 6.0, "residual": 0.15}, {"name": "Blacksburg-Christiansburg-Radford, VA", "short": "Blacksburg", "pop": 180826, "phds": 369, "per10k": 32.8, "residual": 0.813}, {"name": "Saginaw, MI", "short": "Saginaw", "pop": 189130, "phds": 30, "per10k": 2.3, "residual": -0.302}, {"name": "Boise City, ID", "short": "Boise City", "pop": 820487, "phds": 654, "per10k": 11.9, "residual": 0.213}, {"name": "Lincoln, NE", "short": "Lincoln", "pop": 323813, "phds": 299, "per10k": 14.7, "residual": 0.395}, {"name": "Las Vegas-Henderson-North Las Vegas, NV", "short": "Las Vegas", "pop": 2293694, "phds": 577, "per10k": 3.6, "residual": -0.418}, {"name": "Salem, OR", "short": "Salem", "pop": 486675, "phds": 57, "per10k": 1.7, "residual": -0.553}, {"name": "Medford, OR", "short": "Medford", "pop": 222574, "phds": 124, "per10k": 7.7, "residual": 0.223}, {"name": "Tucson, AZ", "short": "Tucson", "pop": 1061624, "phds": 1288, "per10k": 17.6, "residual": 0.363}, {"name": "North Port-Bradenton-Sarasota, FL", "short": "North Port", "pop": 864490, "phds": 410, "per10k": 6.1, "residual": -0.019}, {"name": "Clarksville, TN-KY", "short": "Clarksville", "pop": 336235, "phds": 9, "per10k": 0.4, "residual": -1.147}, {"name": "Springfield, MA", "short": "Springfield", "pop": 564835, "phds": 443, "per10k": 11.5, "residual": 0.254}, {"name": "Springfield, MO", "short": "Springfield", "pop": 432133, "phds": 64, "per10k": 2.2, "residual": -0.436}, {"name": "MSA 17460", "short": "", "pop": 1978751, "phds": 1081, "per10k": 7.7, "residual": -0.062}, {"name": "Roanoke, VA", "short": "Roanoke", "pop": 335327, "phds": 97, "per10k": 4.0, "residual": -0.113}, {"name": "Dothan, AL", "short": "Dothan", "pop": 152376, "phds": 3, "per10k": 0.3, "residual": -1.18}, {"name": "Albuquerque, NM", "short": "Albuquerque", "pop": 929859, "phds": 2279, "per10k": 34.8, "residual": 0.685}, {"name": "Las Cruces, NM", "short": "Las Cruces", "pop": 221736, "phds": 268, "per10k": 19.4, "residual": 0.56}, {"name": "Omaha, NE-IA", "short": "Omaha", "pop": 1058871, "phds": 304, "per10k": 4.3, "residual": -0.262}, {"name": "Iowa City, IA", "short": "Iowa City", "pop": 154754, "phds": 338, "per10k": 36.8, "residual": 0.863}, {"name": "Spokane-Spokane Valley, WA", "short": "Spokane", "pop": 655805, "phds": 318, "per10k": 7.0, "residual": 0.026}, {"name": "Goldsboro, NC", "short": "Goldsboro", "pop": 117637, "phds": 13, "per10k": 1.7, "residual": -0.398}, {"name": "Bloomington, IN", "short": "Bloomington", "pop": 139851, "phds": 375, "per10k": 45.2, "residual": 0.965}, {"name": "Urban Honolulu, HI", "short": "Urban Honolulu", "pop": 1003612, "phds": 674, "per10k": 9.5, "residual": 0.114}, {"name": "Santa Rosa-Petaluma, CA", "short": "Santa Rosa", "pop": 485294, "phds": 238, "per10k": 6.7, "residual": 0.069}, {"name": "Visalia, CA", "short": "Visalia", "pop": 475680, "phds": 24, "per10k": 0.8, "residual": -0.916}, {"name": "Tampa-St. Petersburg-Clearwater, FL", "short": "Tampa", "pop": 3239566, "phds": 860, "per10k": 3.6, "residual": -0.438}, {"name": "Naples-Marco Island, FL", "short": "Naples", "pop": 387561, "phds": 44, "per10k": 1.5, "residual": -0.538}, {"name": "Cape Coral-Fort Myers, FL", "short": "Cape Coral", "pop": 792714, "phds": 209, "per10k": 3.5, "residual": -0.263}, {"name": "Crestview-Fort Walton Beach-Destin, FL", "short": "Crestview", "pop": 337585, "phds": 133, "per10k": 5.6, "residual": 0.02}, {"name": "St. Louis, MO-IL", "short": "St. Louis", "pop": 2895984, "phds": 1478, "per10k": 7.3, "residual": -0.14}, {"name": "Louisville/Jefferson County, KY-IN", "short": "Louisville/Jefferson County", "pop": 1292960, "phds": 645, "per10k": 7.2, "residual": -0.048}, {"name": "Trenton-Princeton, NJ", "short": "Princeton", "pop": 382880, "phds": 1402, "per10k": 54.1, "residual": 0.972}, {"name": "Buffalo-Cheektowaga, NY", "short": "Buffalo", "pop": 1162227, "phds": 591, "per10k": 7.2, "residual": -0.026}, {"name": "MSA 19380", "short": "", "pop": 814223, "phds": 839, "per10k": 15.0, "residual": 0.326}, {"name": "Erie, PA", "short": "Erie", "pop": 269914, "phds": 42, "per10k": 2.3, "residual": -0.355}, {"name": "State College, PA", "short": "State College", "pop": 157830, "phds": 708, "per10k": 72.5, "residual": 1.173}, {"name": "El Paso, TX", "short": "El Paso", "pop": 866830, "phds": 340, "per10k": 6.3, "residual": -0.101}, {"name": "Grand Rapids-Wyoming-Kentwood, MI", "short": "Grand Rapids", "pop": 957450, "phds": 408, "per10k": 6.5, "residual": -0.078}, {"name": "Yakima, WA", "short": "Yakima", "pop": 256185, "phds": 125, "per10k": 8.0, "residual": 0.148}, {"name": "Bellingham, WA", "short": "Bellingham", "pop": 228456, "phds": 334, "per10k": 21.5, "residual": 0.639}, {"name": "Raleigh-Cary, NC", "short": "Raleigh", "pop": 1437614, "phds": 2200, "per10k": 22.6, "residual": 0.426}, {"name": "Fort Collins-Loveland, CO", "short": "Fort Collins", "pop": 363740, "phds": 495, "per10k": 20.3, "residual": 0.549}, {"name": "MSA 15680", "short": "", "pop": 102729, "phds": 76, "per10k": 11.1, "residual": 0.444}, {"name": "La Crosse-Onalaska, WI-MN", "short": "La Crosse", "pop": 120354, "phds": 10, "per10k": 1.3, "residual": -0.525}, {"name": "Merced, CA", "short": "Merced", "pop": 285920, "phds": 70, "per10k": 4.1, "residual": -0.166}, {"name": "Chico, CA", "short": "Chico", "pop": 209672, "phds": 53, "per10k": 3.9, "residual": -0.112}, {"name": "Punta Gorda, FL", "short": "Punta Gorda", "pop": 195020, "phds": 37, "per10k": 2.3, "residual": -0.228}, {"name": "Orlando-Kissimmee-Sanford, FL", "short": "Orlando", "pop": 2721767, "phds": 1449, "per10k": 7.7, "residual": -0.114}, {"name": "Palm Bay-Melbourne-Titusville, FL", "short": "Palm Bay", "pop": 620472, "phds": 492, "per10k": 10.6, "residual": 0.247}, {"name": "Bloomington, IL", "short": "Bloomington", "pop": 170942, "phds": 215, "per10k": 20.3, "residual": 0.61}, {"name": "Boston-Cambridge-Newton, MA-NH", "short": "Boston", "pop": 4991280, "phds": 15345, "per10k": 43.5, "residual": 0.571}, {"name": "Lima, OH", "short": "Lima", "pop": 101753, "phds": 22, "per10k": 3.2, "residual": -0.089}, {"name": "Scranton--Wilkes-Barre, PA", "short": "Scranton", "pop": 506449, "phds": 154, "per10k": 4.3, "residual": -0.144}, {"name": "Lancaster, PA", "short": "Lancaster", "pop": 555317, "phds": 257, "per10k": 6.8, "residual": 0.027}, {"name": "Wichita Falls, TX", "short": "Wichita Falls", "pop": 130306, "phds": 58, "per10k": 6.9, "residual": 0.194}, {"name": "Huntsville, AL", "short": "Huntsville", "pop": 491970, "phds": 649, "per10k": 19.1, "residual": 0.497}, {"name": "Monroe, LA", "short": "Monroe", "pop": 158534, "phds": 64, "per10k": 6.2, "residual": 0.126}, {"name": "St. Cloud, MN", "short": "St. Cloud", "pop": 211394, "phds": 51, "per10k": 3.8, "residual": -0.134}, {"name": "Spartanburg, SC", "short": "Spartanburg", "pop": 337965, "phds": 111, "per10k": 4.9, "residual": -0.059}, {"name": "Greenville-Anderson-Greer, SC", "short": "Greenville", "pop": 1012493, "phds": 318, "per10k": 4.6, "residual": -0.218}, {"name": "Riverside-San Bernardino-Ontario, CA", "short": "Riverside", "pop": 4638966, "phds": 1234, "per10k": 4.1, "residual": -0.483}, {"name": "Fresno, CA", "short": "Fresno", "pop": 1011642, "phds": 115, "per10k": 1.8, "residual": -0.659}, {"name": "Napa, CA", "short": "Napa", "pop": 136233, "phds": 85, "per10k": 8.7, "residual": 0.335}, {"name": "Jacksonville, FL", "short": "Jacksonville", "pop": 1611064, "phds": 503, "per10k": 4.5, "residual": -0.279}, {"name": "Kansas City, MO-KS", "short": "Kansas City", "pop": 2256185, "phds": 575, "per10k": 3.8, "residual": -0.41}, {"name": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD", "short": "Philadelphia", "pop": 6284816, "phds": 5179, "per10k": 11.8, "residual": -0.03}, {"name": "Rochester, NY", "short": "Rochester", "pop": 1077815, "phds": 1305, "per10k": 17.3, "residual": 0.36}, {"name": "Nashville-Davidson--Murfreesboro--Franklin, TN", "short": "Nashville", "pop": 2075681, "phds": 1355, "per10k": 9.6, "residual": 0.009}, {"name": "Dallas-Fort Worth-Arlington, TX", "short": "Dallas", "pop": 7734594, "phds": 5825, "per10k": 11.5, "residual": -0.096}, {"name": "McAllen-Edinburg-Mission, TX", "short": "McAllen", "pop": 880882, "phds": 42, "per10k": 0.8, "residual": -1.019}, {"name": "Jackson, MI", "short": "Jackson", "pop": 160353, "phds": 28, "per10k": 2.5, "residual": -0.239}, {"name": "Des Moines-West Des Moines, IA", "short": "Des Moines", "pop": 618551, "phds": 166, "per10k": 4.0, "residual": -0.224}, {"name": "Greenville, NC", "short": "Greenville", "pop": 172368, "phds": 62, "per10k": 5.8, "residual": 0.066}, {"name": "Muncie, IN", "short": "Muncie", "pop": 112282, "phds": 7, "per10k": 1.0, "residual": -0.641}, {"name": "Eugene-Springfield, OR", "short": "Eugene", "pop": 382630, "phds": 273, "per10k": 10.2, "residual": 0.262}, {"name": "Providence-Warwick, RI-MA", "short": "Providence", "pop": 1672598, "phds": 1065, "per10k": 9.0, "residual": 0.026}, {"name": "Memphis, TN-MS-AR", "short": "Memphis", "pop": 1215682, "phds": 587, "per10k": 7.3, "residual": -0.054}, {"name": "Joplin, MO-KS", "short": "Joplin", "pop": 183083, "phds": 2, "per10k": 0.2, "residual": -1.46}, {"name": "Albany-Schenectady-Troy, NY", "short": "Albany", "pop": 873312, "phds": 1442, "per10k": 23.7, "residual": 0.522}, {"name": "Springfield, OH", "short": "Springfield", "pop": 135529, "phds": 44, "per10k": 4.7, "residual": 0.052}, {"name": "Waco, TX", "short": "Waco", "pop": 263459, "phds": 120, "per10k": 7.4, "residual": 0.114}, {"name": "Richmond, VA", "short": "Richmond", "pop": 1330046, "phds": 1043, "per10k": 11.2, "residual": 0.145}, {"name": "Salisbury, MD", "short": "Salisbury", "pop": 429663, "phds": 142, "per10k": 4.6, "residual": -0.087}, {"name": "Yuma, AZ", "short": "Yuma", "pop": 224246, "phds": 21, "per10k": 1.4, "residual": -0.552}, {"name": "MSA 39140", "short": "", "pop": 241642, "phds": 58, "per10k": 3.1, "residual": -0.153}, {"name": "Sacramento-Roseville-Folsom, CA", "short": "Sacramento", "pop": 2405927, "phds": 1626, "per10k": 9.9, "residual": 0.005}, {"name": "Ocala, FL", "short": "Ocala", "pop": 387997, "phds": 33, "per10k": 1.1, "residual": -0.663}, {"name": "Augusta-Richmond County, GA-SC", "short": "Augusta", "pop": 538428, "phds": 359, "per10k": 9.8, "residual": 0.189}, {"name": "Chattanooga, TN-GA", "short": "Chattanooga", "pop": 548748, "phds": 179, "per10k": 4.6, "residual": -0.124}, {"name": "Rockford, IL", "short": "Rockford", "pop": 336629, "phds": 99, "per10k": 4.3, "residual": -0.107}, {"name": "Barnstable Town, MA", "short": "Barnstable Town", "pop": 265117, "phds": 207, "per10k": 9.9, "residual": 0.348}, {"name": "Gulfport-Biloxi, MS", "short": "Gulfport", "pop": 354814, "phds": 95, "per10k": 3.9, "residual": -0.154}, {"name": "Columbus, OH", "short": "Columbus", "pop": 2052484, "phds": 1940, "per10k": 14.0, "residual": 0.171}, {"name": "Tyler, TX", "short": "Tyler", "pop": 237904, "phds": 35, "per10k": 2.2, "residual": -0.363}, {"name": "Virginia Beach-Chesapeake-Norfolk, VA-NC", "short": "Virginia Beach", "pop": 1707320, "phds": 894, "per10k": 7.7, "residual": -0.062}, {"name": "Montgomery, AL", "short": "Montgomery", "pop": 431524, "phds": 89, "per10k": 3.0, "residual": -0.292}, {"name": "Shreveport-Bossier City, LA", "short": "Shreveport", "pop": 398533, "phds": 12, "per10k": 0.4, "residual": -1.118}, {"name": "Mankato, MN", "short": "Mankato", "pop": 103809, "phds": 130, "per10k": 20.5, "residual": 0.672}, {"name": "Lawrence, KS", "short": "Lawrence", "pop": 119791, "phds": 344, "per10k": 48.8, "residual": 1.014}, {"name": "Wichita, KS", "short": "Wichita", "pop": 626237, "phds": 156, "per10k": 3.8, "residual": -0.257}, {"name": "Winston-Salem, NC", "short": "Winston", "pop": 664893, "phds": 169, "per10k": 3.7, "residual": -0.256}, {"name": "Asheville, NC", "short": "Asheville", "pop": 528577, "phds": 132, "per10k": 3.4, "residual": -0.235}, {"name": "Portland-South Portland, ME", "short": "Portland", "pop": 557893, "phds": 222, "per10k": 5.4, "residual": -0.039}, {"name": "Lawton, OK", "short": "Lawton", "pop": 128072, "phds": 69, "per10k": 8.3, "residual": 0.279}, {"name": "Vallejo, CA", "short": "Vallejo", "pop": 450602, "phds": 118, "per10k": 3.8, "residual": -0.194}, {"name": "Pensacola-Ferry Pass-Brent, FL", "short": "Pensacola", "pop": 518531, "phds": 103, "per10k": 2.9, "residual": -0.332}, {"name": "Cincinnati, OH-KY-IN", "short": "Cincinnati", "pop": 2189635, "phds": 1634, "per10k": 11.1, "residual": 0.06}, {"name": "Jackson, MS", "short": "Jackson", "pop": 614738, "phds": 260, "per10k": 6.3, "residual": -0.025}, {"name": "Hattiesburg, MS", "short": "Hattiesburg", "pop": 178923, "phds": 35, "per10k": 3.0, "residual": -0.204}, {"name": "Atlantic City-Hammonton, NJ", "short": "Atlantic City", "pop": 264226, "phds": 132, "per10k": 7.1, "residual": 0.154}, {"name": "Glens Falls, NY", "short": "Glens Falls", "pop": 126403, "phds": 30, "per10k": 3.2, "residual": -0.076}, {"name": "Akron, OH", "short": "Akron", "pop": 699420, "phds": 472, "per10k": 9.6, "residual": 0.161}, {"name": "Reading, PA", "short": "Reading", "pop": 430151, "phds": 37, "per10k": 1.3, "residual": -0.672}, {"name": "East Stroudsburg, PA", "short": "East Stroudsburg", "pop": 167777, "phds": 6, "per10k": 0.5, "residual": -0.933}, {"name": "Jackson, TN", "short": "Jackson", "pop": 116223, "phds": 63, "per10k": 8.1, "residual": 0.294}, {"name": "Cleveland, TN", "short": "Cleveland", "pop": 127203, "phds": 13, "per10k": 1.5, "residual": -0.442}, {"name": "Odessa, TX", "short": "Odessa", "pop": 163205, "phds": 13, "per10k": 1.3, "residual": -0.582}, {"name": "Birmingham, AL", "short": "Birmingham", "pop": 1158705, "phds": 709, "per10k": 9.0, "residual": 0.055}, {"name": "Anniston-Oxford, AL", "short": "Anniston", "pop": 116198, "phds": 11, "per10k": 1.4, "residual": -0.464}, {"name": "Wenatchee-East Wenatchee, WA", "short": "Wenatchee", "pop": 123112, "phds": 37, "per10k": 4.4, "residual": 0.03}, {"name": "Ogden, UT", "short": "Ogden", "pop": 633136, "phds": 237, "per10k": 6.1, "residual": -0.082}, {"name": "Michigan City-La Porte, IN", "short": "Michigan City", "pop": 112133, "phds": 13, "per10k": 1.6, "residual": -0.372}, {"name": "Racine-Mount Pleasant, WI", "short": "Racine", "pop": 197021, "phds": 21, "per10k": 1.5, "residual": -0.48}, {"name": "Modesto, CA", "short": "Modesto", "pop": 551956, "phds": 84, "per10k": 2.4, "residual": -0.455}, {"name": "Yuba City, CA", "short": "Yuba City", "pop": 182056, "phds": 146, "per10k": 12.4, "residual": 0.407}, {"name": "Deltona-Daytona Beach-Ormond Beach, FL", "short": "Deltona", "pop": 689761, "phds": 126, "per10k": 2.4, "residual": -0.404}, {"name": "Gainesville, FL", "short": "Gainesville", "pop": 281423, "phds": 779, "per10k": 45.3, "residual": 0.89}, {"name": "Midland, TX", "short": "Midland", "pop": 171508, "phds": 53, "per10k": 4.9, "residual": 0.0}, {"name": "Monroe, MI", "short": "Monroe", "pop": 154973, "phds": 33, "per10k": 3.0, "residual": -0.149}, {"name": "Charleston-North Charleston, SC", "short": "Charleston", "pop": 818071, "phds": 706, "per10k": 12.4, "residual": 0.248}, {"name": "Sumter, SC", "short": "Sumter", "pop": 121757, "phds": 36, "per10k": 4.4, "residual": 0.025}, {"name": "Grand Junction, CO", "short": "Grand Junction", "pop": 140546, "phds": 10, "per10k": 1.0, "residual": -0.612}, {"name": "Atlanta-Sandy Springs-Roswell, GA", "short": "Atlanta", "pop": 6144525, "phds": 4874, "per10k": 11.8, "residual": -0.044}, {"name": "Worcester, MA", "short": "Worcester", "pop": 970563, "phds": 1584, "per10k": 23.2, "residual": 0.503}, {"name": "Pittsfield, MA", "short": "Pittsfield", "pop": 128058, "phds": 128, "per10k": 13.4, "residual": 0.547}, {"name": "Houston-Pasadena-The Woodlands, TX", "short": "Houston", "pop": 7156107, "phds": 5494, "per10k": 11.8, "residual": -0.077}, {"name": "Brownsville-Harlingen, TX", "short": "Brownsville", "pop": 423186, "phds": 49, "per10k": 1.9, "residual": -0.54}, {"name": "Amarillo, TX", "short": "Amarillo", "pop": 260555, "phds": 103, "per10k": 6.1, "residual": 0.054}, {"name": "Mobile, AL", "short": "Mobile", "pop": 413144, "phds": 106, "per10k": 3.8, "residual": -0.192}, {"name": "Jonesboro, AR", "short": "Jonesboro", "pop": 135092, "phds": 40, "per10k": 4.5, "residual": 0.012}, {"name": "Lansing-East Lansing, MI", "short": "E. Lansing", "pop": 470255, "phds": 1001, "per10k": 32.5, "residual": 0.711}, {"name": "Niles, MI", "short": "Niles", "pop": 153323, "phds": 176, "per10k": 16.3, "residual": 0.584}, {"name": "Bridgeport-Stamford-Danbury, CT", "short": "Bridgeport", "pop": 947369, "phds": 1301, "per10k": 19.9, "residual": 0.431}, {"name": "Lafayette-West Lafayette, IN", "short": "Lafayette", "pop": 187292, "phds": 433, "per10k": 41.4, "residual": 0.863}, {"name": "Denver-Aurora-Centennial, CO", "short": "Denver", "pop": 3010532, "phds": 2689, "per10k": 12.7, "residual": 0.098}, {"name": "Baltimore-Columbia-Towson, MD", "short": "Baltimore", "pop": 2789207, "phds": 4519, "per10k": 23.3, "residual": 0.366}, {"name": "Phoenix-Mesa-Chandler, AZ", "short": "Phoenix", "pop": 4929954, "phds": 3273, "per10k": 9.7, "residual": -0.093}, {"name": "Los Angeles-Long Beach-Anaheim, CA", "short": "Los Angeles", "pop": 13011058, "phds": 11723, "per10k": 12.9, "residual": -0.084}, {"name": "San Luis Obispo-Paso Robles, CA", "short": "San Luis Obispo", "pop": 282472, "phds": 184, "per10k": 9.7, "residual": 0.261}, {"name": "Port St. Lucie, FL", "short": "Port St. Lucie", "pop": 506948, "phds": 71, "per10k": 1.9, "residual": -0.481}, {"name": "Utica-Rome, NY", "short": "Utica", "pop": 271662, "phds": 225, "per10k": 11.9, "residual": 0.37}, {"name": "Canton-Massillon, OH", "short": "Canton", "pop": 400483, "phds": 61, "per10k": 2.2, "residual": -0.414}, {"name": "Knoxville, TN", "short": "Knoxville", "pop": 882060, "phds": 1493, "per10k": 24.3, "residual": 0.531}, {"name": "Johnson City, TN", "short": "Johnson City", "pop": 226963, "phds": 91, "per10k": 5.6, "residual": 0.078}, {"name": "Harrisonburg, VA", "short": "Harrisonburg", "pop": 136010, "phds": 111, "per10k": 13.2, "residual": 0.451}, {"name": "Little Rock-North Little Rock-Conway, AR", "short": "Little Rock", "pop": 753737, "phds": 239, "per10k": 4.7, "residual": -0.176}, {"name": "Fayetteville-Springdale-Rogers, AR", "short": "Fayetteville", "pop": 546827, "phds": 350, "per10k": 10.0, "residual": 0.17}, {"name": "Santa Fe, NM", "short": "Santa Fe", "pop": 144235, "phds": 431, "per10k": 39.1, "residual": 1.008}, {"name": "Norwich-New London-Willimantic, CT", "short": "Norwich", "pop": 277842, "phds": 115, "per10k": 5.8, "residual": 0.066}, {"name": "Olympia-Lacey-Tumwater, WA", "short": "Olympia", "pop": 296629, "phds": 115, "per10k": 5.4, "residual": 0.029}, {"name": "Myrtle Beach-Conway-North Myrtle Beach, SC", "short": "Myrtle Beach", "pop": 463259, "phds": 169, "per10k": 4.7, "residual": -0.054}, {"name": "Indianapolis-Carmel-Greenwood, IN", "short": "Indianapolis", "pop": 2127695, "phds": 826, "per10k": 5.8, "residual": -0.22}, {"name": "Greeley, CO", "short": "Greeley", "pop": 341467, "phds": 167, "per10k": 7.5, "residual": 0.112}, {"name": "Charleston, WV", "short": "Charleston", "pop": 178321, "phds": 82, "per10k": 6.3, "residual": 0.168}, {"name": "Oxnard-Thousand Oaks-Ventura, CA", "short": "Oxnard", "pop": 838268, "phds": 542, "per10k": 9.4, "residual": 0.12}, {"name": "Bakersfield-Delano, CA", "short": "Bakersfield", "pop": 910561, "phds": 194, "per10k": 3.5, "residual": -0.373}, {"name": "Salinas, CA", "short": "Salinas", "pop": 501233, "phds": 340, "per10k": 10.5, "residual": 0.206}, {"name": "Santa Cruz-Watsonville, CA", "short": "Santa Cruz", "pop": 266565, "phds": 896, "per10k": 49.8, "residual": 0.981}, {"name": "Syracuse, NY", "short": "Syracuse", "pop": 669946, "phds": 547, "per10k": 12.0, "residual": 0.25}, {"name": "York-Hanover, PA", "short": "York", "pop": 458992, "phds": 108, "per10k": 3.4, "residual": -0.243}, {"name": "Austin-Round Rock-San Marcos, TX", "short": "Austin", "pop": 2400159, "phds": 4165, "per10k": 25.3, "residual": 0.415}, {"name": "Tuscaloosa, AL", "short": "Tuscaloosa", "pop": 234471, "phds": 168, "per10k": 11.6, "residual": 0.326}, {"name": "Detroit-Warren-Dearborn, MI", "short": "Detroit", "pop": 4420960, "phds": 2705, "per10k": 8.7, "residual": -0.115}, {"name": "Salt Lake City-Murray, UT", "short": "Salt Lake City", "pop": 1320898, "phds": 1095, "per10k": 13.0, "residual": 0.17}, {"name": "Burlington, NC", "short": "Burlington", "pop": 174026, "phds": 70, "per10k": 6.0, "residual": 0.113}, {"name": "Redding, CA", "short": "Redding", "pop": 181316, "phds": 35, "per10k": 2.7, "residual": -0.211}, {"name": "Panama City-Panama City Beach, FL", "short": "Panama City", "pop": 183300, "phds": 221, "per10k": 16.8, "residual": 0.583}, {"name": "Gainesville, GA", "short": "Gainesville", "pop": 208753, "phds": 31, "per10k": 2.2, "residual": -0.343}, {"name": "Warner Robins, GA", "short": "Warner Robins", "pop": 176846, "phds": 17, "per10k": 1.4, "residual": -0.511}, {"name": "Springfield, IL", "short": "Springfield", "pop": 194733, "phds": 29, "per10k": 2.1, "residual": -0.333}, {"name": "Youngstown-Warren, OH", "short": "Youngstown", "pop": 538298, "phds": 25, "per10k": 0.6, "residual": -0.968}, {"name": "Beaumont-Port Arthur, TX", "short": "Beaumont", "pop": 396285, "phds": 25, "per10k": 0.9, "residual": -0.796}, {"name": "Lubbock, TX", "short": "Lubbock", "pop": 314479, "phds": 306, "per10k": 16.2, "residual": 0.422}, {"name": "Lafayette, LA", "short": "Lafayette", "pop": 480360, "phds": 164, "per10k": 5.1, "residual": -0.087}, {"name": "Anchorage, AK", "short": "Anchorage", "pop": 459730, "phds": 131, "per10k": 4.3, "residual": -0.16}, {"name": "Portland-Vancouver-Hillsboro, OR-WA", "short": "Portland", "pop": 2444214, "phds": 4989, "per10k": 28.6, "residual": 0.483}, {"name": "Coeur d'Alene, ID", "short": "Coeur d'Alene", "pop": 172296, "phds": 16, "per10k": 1.3, "residual": -0.522}, {"name": "Provo-Orem-Lehi, UT", "short": "Provo", "pop": 683262, "phds": 276, "per10k": 7.9, "residual": -0.059}, {"name": "Wilmington, NC", "short": "Wilmington", "pop": 294972, "phds": 116, "per10k": 5.6, "residual": 0.036}, {"name": "Elkhart-Goshen, IN", "short": "Elkhart", "pop": 206886, "phds": 57, "per10k": 4.4, "residual": -0.073}, {"name": "Bangor, ME", "short": "Bangor", "pop": 131476, "phds": 134, "per10k": 14.3, "residual": 0.552}, {"name": "Tulsa, OK", "short": "Tulsa", "pop": 1155561, "phds": 276, "per10k": 3.6, "residual": -0.353}, {"name": "Pueblo, CO", "short": "Pueblo", "pop": 156992, "phds": 57, "per10k": 5.2, "residual": 0.082}, {"name": "Reno, NV", "short": "Reno", "pop": 491746, "phds": 308, "per10k": 8.9, "residual": 0.174}, {"name": "Bismarck, ND", "short": "Bismarck", "pop": 132224, "phds": 56, "per10k": 6.2, "residual": 0.17}, {"name": "San Diego-Chula Vista-Carlsbad, CA", "short": "San Diego", "pop": 3283122, "phds": 5993, "per10k": 26.4, "residual": 0.398}, {"name": "Santa Maria-Santa Barbara, CA", "short": "Santa Maria", "pop": 444935, "phds": 1107, "per10k": 39.7, "residual": 0.785}, {"name": "MSA 45540", "short": "", "pop": 135199, "phds": 45, "per10k": 3.7, "residual": 0.063}, {"name": "Corpus Christi, TX", "short": "Corpus Christi", "pop": 484613, "phds": 57, "per10k": 1.8, "residual": -0.551}, {"name": "Laredo, TX", "short": "Laredo", "pop": 267699, "phds": 25, "per10k": 1.6, "residual": -0.576}, {"name": "Lynchburg, VA", "short": "Lynchburg", "pop": 262169, "phds": 115, "per10k": 6.5, "residual": 0.099}, {"name": "Minneapolis-St. Paul-Bloomington, MN-WI", "short": "Minneapolis", "pop": 3656687, "phds": 2877, "per10k": 11.5, "residual": 0.018}, {"name": "Seattle-Tacoma-Bellevue, WA", "short": "Seattle", "pop": 4021498, "phds": 11460, "per10k": 40.2, "residual": 0.565}, {"name": "Mount Vernon-Anacortes, WA", "short": "Mount Vernon", "pop": 131031, "phds": 33, "per10k": 3.5, "residual": -0.054}, {"name": "Hickory-Lenoir-Morganton, NC", "short": "Hickory", "pop": 411809, "phds": 83, "per10k": 2.8, "residual": -0.296}, {"name": "Janesville-Beloit, WI", "short": "Janesville", "pop": 163787, "phds": 8, "per10k": 0.7, "residual": -0.795}, {"name": "Corvallis, OR", "short": "Corvallis", "pop": 106776, "phds": 224, "per10k": 33.0, "residual": 0.892}, {"name": "Flagstaff, AZ", "short": "Flagstaff", "pop": 145008, "phds": 122, "per10k": 14.0, "residual": 0.457}, {"name": "Lakeland-Winter Haven, FL", "short": "Lakeland", "pop": 760922, "phds": 94, "per10k": 1.8, "residual": -0.587}, {"name": "MSA 36140", "short": "", "pop": 106054, "phds": 6, "per10k": 0.7, "residual": -0.676}, {"name": "Pittsburgh, PA", "short": "Pittsburgh", "pop": 2298700, "phds": 2908, "per10k": 17.3, "residual": 0.283}, {"name": "Washington-Arlington-Alexandria, DC-VA-MD-WV", "short": "Washington DC", "pop": 6364805, "phds": 15640, "per10k": 35.8, "residual": 0.443}, {"name": "New Orleans-Metairie, LA", "short": "New Orleans", "pop": 1257503, "phds": 750, "per10k": 8.5, "residual": 0.033}, {"name": "Baton Rouge, LA", "short": "Baton Rouge", "pop": 850410, "phds": 574, "per10k": 10.4, "residual": 0.137}, {"name": "Ann Arbor, MI", "short": "Ann Arbor", "pop": 368495, "phds": 1347, "per10k": 57.1, "residual": 0.976}, {"name": "Kalamazoo-Portage, MI", "short": "Kalamazoo", "pop": 389079, "phds": 132, "per10k": 5.2, "residual": -0.063}, {"name": "New Haven, CT", "short": "New Haven", "pop": 841793, "phds": 1104, "per10k": 18.7, "residual": 0.426}, {"name": "Bremerton-Silverdale-Port Orchard, WA", "short": "Bremerton", "pop": 276811, "phds": 88, "per10k": 4.5, "residual": -0.048}, {"name": "Topeka, KS", "short": "Topeka", "pop": 266166, "phds": 44, "per10k": 2.4, "residual": -0.327}, {"name": "Dover, DE", "short": "Dover", "pop": 184880, "phds": 56, "per10k": 4.5, "residual": -0.018}, {"name": "Fayetteville, NC", "short": "Fayetteville", "pop": 335883, "phds": 104, "per10k": 5.0, "residual": -0.084}, {"name": "Fort Wayne, IN", "short": "Fort Wayne", "pop": 388802, "phds": 157, "per10k": 6.2, "residual": 0.013}, {"name": "Oklahoma City, OK", "short": "Oklahoma City", "pop": 1386040, "phds": 639, "per10k": 7.1, "residual": -0.091}, {"name": "Milwaukee-Waukesha, WI", "short": "Milwaukee", "pop": 1566695, "phds": 605, "per10k": 5.6, "residual": -0.183}, {"name": "Albany, OR", "short": "Albany", "pop": 119480, "phds": 4, "per10k": 0.5, "residual": -0.919}, {"name": "Cheyenne, WY", "short": "Cheyenne", "pop": 101356, "phds": 10, "per10k": 1.5, "residual": -0.429}, {"name": "Bay Area (SF + SJ)", "short": "Bay Area", "pop": 6556620, "phds": 44321, "per10k": 93.5, "residual": 0.878}], "trend": [{"pop": 101356, "phds": 26.8}, {"pop": 112963, "phds": 30.9}, {"pop": 125899, "phds": 35.5}, {"pop": 140317, "phds": 40.9}, {"pop": 156385, "phds": 47.0}, {"pop": 174294, "phds": 54.1}, {"pop": 194253, "phds": 62.2}, {"pop": 216498, "phds": 71.6}, {"pop": 241291, "phds": 82.3}, {"pop": 268923, "phds": 94.7}, {"pop": 299719, "phds": 108.9}, {"pop": 334042, "phds": 125.3}, {"pop": 372295, "phds": 144.1}, {"pop": 414929, "phds": 165.8}, {"pop": 462445, "phds": 190.7}, {"pop": 515402, "phds": 219.4}, {"pop": 574424, "phds": 252.4}, {"pop": 640205, "phds": 290.3}, {"pop": 713519, "phds": 334.0}, {"pop": 795229, "phds": 384.2}, {"pop": 886296, "phds": 442.0}, {"pop": 987791, "phds": 508.4}, {"pop": 1100910, "phds": 584.9}, {"pop": 1226982, "phds": 672.8}, {"pop": 1367491, "phds": 774.0}, {"pop": 1524091, "phds": 890.3}, {"pop": 1698625, "phds": 1024.2}, {"pop": 1893145, "phds": 1178.1}, {"pop": 2109941, "phds": 1355.3}, {"pop": 2351564, "phds": 1559.0}, {"pop": 2620857, "phds": 1793.4}, {"pop": 2920988, "phds": 2063.0}, {"pop": 3255489, "phds": 2373.2}, {"pop": 3628296, "phds": 2730.0}, {"pop": 4043795, "phds": 3140.4}, {"pop": 4506876, "phds": 3612.6}, {"pop": 5022988, "phds": 4155.7}, {"pop": 5598202, "phds": 4780.5}, {"pop": 6239288, "phds": 5499.2}, {"pop": 6953789, "phds": 6326.0}, {"pop": 7750112, "phds": 7277.0}, {"pop": 8637626, "phds": 8371.1}, {"pop": 9626776, "phds": 9629.6}, {"pop": 10729200, "phds": 11077.4}, {"pop": 11957869, "phds": 12742.8}, {"pop": 13327241, "phds": 14658.6}, {"pop": 14853429, "phds": 16862.4}, {"pop": 16554390, "phds": 19397.5}, {"pop": 18450139, "phds": 22313.8}, {"pop": 20562983, "phds": 25668.6}], "slope": 1.292, "intercept": -5.038};
+{
+
+  const metros = data.metros;
+  const trend = data.trend;
+
+  const xScale = d3.scaleLinear()
+    .domain([0, d3.max(metros, d => d.pop) * 1.05])
+    .range([0, w]);
+
+  const yScale = d3.scaleLinear()
+    .domain([0, d3.max(metros, d => d.phds) * 1.1])
+    .range([h, 0]);
+
+  // Gridlines
+  const yTicks = yScale.ticks(6);
+  g.selectAll('.grid-y')
+    .data(yTicks)
+    .enter().append('line')
+    .attr('x1', 0).attr('x2', w)
+    .attr('y1', d => yScale(d)).attr('y2', d => yScale(d))
+    .attr('stroke', '#DDDDD8').attr('stroke-width', 0.5);
+
+  const xTicks = xScale.ticks(6);
+  g.selectAll('.grid-x')
+    .data(xTicks)
+    .enter().append('line')
+    .attr('y1', 0).attr('y2', h)
+    .attr('x1', d => xScale(d)).attr('x2', d => xScale(d))
+    .attr('stroke', '#EEEEE8').attr('stroke-width', 0.3);
+
+  // Trend line
+  const trendLine = d3.line()
+    .x(d => xScale(d.pop))
+    .y(d => yScale(d.phds));
+
+  g.append('path')
+    .datum(trend.filter(d => xScale(d.pop) >= 0 && xScale(d.pop) <= w))
+    .attr('d', trendLine)
+    .attr('fill', 'none')
+    .attr('stroke', '#CCCCCC')
+    .attr('stroke-width', 1.5)
+    .attr('stroke-dasharray', '6,4');
+
+  // Dots
+  const tooltip = d3.select('#tooltip');
+
+  g.selectAll('circle.dot')
+    .data(metros)
+    .enter().append('circle')
+    .attr('class', 'dot')
+    .attr('cx', d => xScale(d.pop))
+    .attr('cy', d => yScale(d.phds))
+    .attr('r', 5)
+    .attr('fill', BLUE)
+    .attr('opacity', 0.6)
+    .attr('stroke', 'none')
+    .on('mouseover', function(event, d) {
+      d3.select(this)
+        .attr('r', 8)
+        .attr('opacity', 1)
+        .attr('stroke', BLACK)
+        .attr('stroke-width', 1.5);
+
+      const fmtPop = d.pop >= 1e6 ? (d.pop / 1e6).toFixed(1) + 'M' : Math.round(d.pop / 1e3) + 'k';
+      const fmtPhds = d.phds >= 1e3 ? (d.phds / 1e3).toFixed(1) + 'k' : d.phds;
+
+      tooltip.html(`
+        <div class="name">${d.short}</div>
+        <div class="stat">Population: ${fmtPop}</div>
+        <div class="stat">Technical PhDs: <span class="highlight">${fmtPhds.toLocaleString()}</span></div>
+        <div class="stat">Per 10k adults: <span class="highlight">${d.per10k}</span></div>
+      `);
+      tooltip.style('opacity', 1);
+    })
+    .on('mousemove', function(event) {
+      const rect = document.getElementById('chart').getBoundingClientRect();
+      tooltip
+        .style('left', (event.clientX - rect.left + 15) + 'px')
+        .style('top', (event.clientY - rect.top - 10) + 'px');
+    })
+    .on('mouseout', function() {
+      d3.select(this)
+        .attr('r', 5)
+        .attr('opacity', 0.6)
+        .attr('stroke', 'none');
+      tooltip.style('opacity', 0);
+    });
+
+  // Permanent labels for key outliers
+  const labelMetros = [
+    'Bay Area', 'Boston', 'Seattle', 'Washington DC', 'New York',
+    'Los Angeles', 'Chicago', 'Ithaca', 'Ann Arbor', 'Princeton',
+    'Albuquerque', 'Santa Barbara', 'Portland', 'San Diego',
+    'State College', 'Gainesville', 'Santa Cruz'
+  ];
+
+  const offsets = {
+    'Bay Area':      { dx: -12, dy: -14 },
+    'New York':      { dx: 10, dy: -10 },
+    'Los Angeles':   { dx: 10, dy: 8 },
+    'Chicago':       { dx: 10, dy: -8 },
+    'Washington DC': { dx: 10, dy: 8 },
+    'Boston':        { dx: 10, dy: -10 },
+    'Seattle':       { dx: -12, dy: -10 },
+    'San Diego':     { dx: 10, dy: -8 },
+    'Portland':      { dx: -12, dy: 8 },
+    'Ithaca':        { dx: 10, dy: -10 },
+    'Ann Arbor':     { dx: 10, dy: 10 },
+    'Princeton':     { dx: 10, dy: 8 },
+    'Albuquerque':   { dx: 10, dy: -10 },
+    'Santa Barbara': { dx: -12, dy: 10 },
+    'State College': { dx: 10, dy: -10 },
+    'Gainesville':   { dx: 10, dy: 8 },
+    'Santa Cruz':    { dx: -12, dy: -8 },
+  };
+
+  const labeled = metros.filter(d => labelMetros.includes(d.short));
+
+  // Leader lines
+  g.selectAll('line.leader')
+    .data(labeled)
+    .enter().append('line')
+    .attr('x1', d => xScale(d.pop))
+    .attr('y1', d => yScale(d.phds))
+    .attr('x2', d => xScale(d.pop) + (offsets[d.short]?.dx || 10) * 2)
+    .attr('y2', d => yScale(d.phds) + (offsets[d.short]?.dy || -10) * 2)
+    .attr('stroke', BLACK)
+    .attr('stroke-width', 0.4)
+    .attr('opacity', 0.3);
+
+  // Label text
+  g.selectAll('text.label')
+    .data(labeled)
+    .enter().append('text')
+    .attr('class', 'label-text')
+    .attr('x', d => xScale(d.pop) + (offsets[d.short]?.dx || 10) * 2.2)
+    .attr('y', d => yScale(d.phds) + (offsets[d.short]?.dy || -10) * 2.2)
+    .attr('text-anchor', d => (offsets[d.short]?.dx || 10) < 0 ? 'end' : 'start')
+    .attr('dominant-baseline', 'middle')
+    .text(d => d.short);
+
+  // Highlight labeled dots
+  g.selectAll('circle.highlight')
+    .data(labeled)
+    .enter().append('circle')
+    .attr('cx', d => xScale(d.pop))
+    .attr('cy', d => yScale(d.phds))
+    .attr('r', 5)
+    .attr('fill', BLUE)
+    .attr('opacity', 0.85)
+    .attr('stroke', BLACK)
+    .attr('stroke-width', 0.8)
+    .style('pointer-events', 'none');
+
+  // X axis
+  const xAxis = d3.axisBottom(xScale)
+    .ticks(6)
+    .tickFormat(d => d === 0 ? '0' : d >= 1e6 ? (d/1e6) + 'M' : (d/1e3) + 'k');
+
+  g.append('g')
+    .attr('transform', `translate(0,${h})`)
+    .call(xAxis)
+    .call(g => g.select('.domain').attr('stroke', '#CCC'))
+    .call(g => g.selectAll('.tick line').attr('stroke', '#CCC'))
+    .call(g => g.selectAll('.tick text')
+      .style('font-family', 'ABC Oracle, sans-serif')
+      .style('font-size', '10px')
+      .style('font-weight', '300')
+      .style('fill', '#888'));
+
+  g.append('text')
+    .attr('x', w / 2).attr('y', h + 45)
+    .attr('text-anchor', 'middle')
+    .style('font-family', 'ABC Oracle, sans-serif')
+    .style('font-size', '12px')
+    .style('font-weight', '500')
+    .style('fill', BLACK)
+    .text('Metro population');
+
+  // Y axis
+  const yAxis = d3.axisLeft(yScale)
+    .ticks(6)
+    .tickFormat(d => d >= 1e3 ? (d/1e3) + 'k' : d);
+
+  g.append('g')
+    .call(yAxis)
+    .call(g => g.select('.domain').remove())
+    .call(g => g.selectAll('.tick line').remove())
+    .call(g => g.selectAll('.tick text')
+      .style('font-family', 'ABC Oracle, sans-serif')
+      .style('font-size', '10px')
+      .style('font-weight', '300')
+      .style('fill', '#888'));
+
+  g.append('text')
+    .attr('transform', 'rotate(-90)')
+    .attr('x', -h / 2).attr('y', -50)
+    .attr('text-anchor', 'middle')
+    .style('font-family', 'ABC Oracle, sans-serif')
+    .style('font-size', '12px')
+    .style('font-weight', '500')
+    .style('fill', BLACK)
+    .text('Technical PhDs');
+
+  // Title
+  svg.append('text')
+    .attr('x', WIDTH / 2).attr('y', 28)
+    .attr('text-anchor', 'middle')
+    .style('font-family', 'ABC Oracle, sans-serif')
+    .style('font-size', '18px')
+    .style('font-weight', '700')
+    .style('fill', BLACK)
+    .text('Metro Population vs. Technical PhDs');
+
+  svg.append('text')
+    .attr('x', WIDTH / 2).attr('y', 50)
+    .attr('text-anchor', 'middle')
+    .style('font-family', 'ABC Oracle, sans-serif')
+    .style('font-size', '11px')
+    .style('font-weight', '300')
+    .style('fill', '#888')
+    .text('Each dot is a metro area. Dashed line = power-law fit. Hover for details.');
+
+  // Source
+  svg.append('text')
+    .attr('x', WIDTH - 10).attr('y', HEIGHT - 8)
+    .attr('text-anchor', 'end')
+    .style('font-family', 'ABC Oracle, sans-serif')
+    .style('font-size', '9px')
+    .style('font-weight', '300')
+    .style('font-style', 'italic')
+    .style('fill', '#aaa')
+    .text('Source: ACS 5-Year (2019–2023) via IPUMS. CS, math, EE, physics doctoral holders.');
+}
+</script>
+</body>
+</html>
