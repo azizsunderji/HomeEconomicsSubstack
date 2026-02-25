@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Why DC Rents Barely Grew in 2025</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+
+        @font-face {
+            font-family: 'ABC Oracle Edu';
+            src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf') format('opentype');
+            font-weight: 300;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'ABC Oracle Edu';
+            src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf') format('opentype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'ABC Oracle Edu';
+            src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf') format('opentype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'ABC Oracle Edu';
+            src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf') format('opentype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'ABC Oracle Edu', system-ui, sans-serif;
+    background: #F6F7F3;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.chart-container {
+    width: 900px;
+    background: #F6F7F3;
+}
+
+.chart-title {
+    font-size: 23px;
+    font-weight: 500;
+    color: #3D3733;
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+.chart-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    color: #3D3733;
+    opacity: 0.7;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.chart-source {
+    font-size: 11px;
+    font-weight: 300;
+    color: #999;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+.tooltip {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 13px;
+    font-family: 'ABC Oracle Edu', system-ui, sans-serif;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    color: #3D3733;
+}
+
+
+.axis text { font-size: 12px; fill: #3D3733; font-family: 'ABC Oracle Edu', system-ui; white-space: pre-line; }
+.grid line { stroke: #D0D0D0; stroke-width: 0.5; opacity: 0.7; }
+.grid .domain { display: none; }
+
+</style>
+</head>
+<body>
+<div class="chart-container">
+    <div class="chart-title">Why DC Rents Barely Grew in 2025</div>
+    <div class="chart-subtitle">Decomposing DC's 2025 rent change: national trend minus local headwinds. Each bar = model coefficient x DC's value.</div>
+    
+    <div class="chart-source">Source: Zillow ZORI, BLS CES, Census BPS, ACS 1-Year. OLS with year FEs, clustered SEs, ~50 metros.</div>
+</div>
+<div class="tooltip" id="tooltip"></div>
+<script>
+
+const BARS = [{"label": "National\ntrend", "value": 4.4, "type": "absolute", "color": "#0BB4FF"}, {"label": "New apartment\nsupply", "value": -0.4, "type": "delta", "color": "#C6DCCB"}, {"label": "Employment\ndecline", "value": -1.0, "type": "delta", "color": "#FEC439"}, {"label": "Remote work\n(WFH share)", "value": -2.8, "type": "delta", "color": "#67A275"}, {"label": "Unexplained", "value": 0.5, "type": "delta", "color": "#FBCAB5"}, {"label": "DC actual\nrent growth", "value": 0.7, "type": "total", "color": "#F4743B"}];
+const WIDTH = 900, HEIGHT = 650;
+const MARGIN = {top: 30, right: 30, bottom: 90, left: 60};
+const innerW = WIDTH - MARGIN.left - MARGIN.right;
+const innerH = HEIGHT - MARGIN.top - MARGIN.bottom;
+
+const svg = d3.select(".chart-container").append("svg").attr("width", WIDTH).attr("height", HEIGHT);
+const g = svg.append("g").attr("transform", `translate(${MARGIN.left},${MARGIN.top})`);
+
+// Calculate positions
+let cumulative = 0;
+BARS.forEach((bar, i) => {
+    if (bar.type === "absolute") {
+        bar.start = 0;
+        bar.end = bar.value;
+        cumulative = bar.value;
+    } else if (bar.type === "delta") {
+        bar.start = cumulative;
+        bar.end = cumulative + bar.value;
+        cumulative = bar.end;
+    } else if (bar.type === "total") {
+        bar.start = 0;
+        bar.end = bar.value;
+    }
+});
+
+const x = d3.scaleBand()
+    .domain(BARS.map(d => d.label))
+    .range([0, innerW])
+    .padding(0.3);
+
+const allVals = BARS.flatMap(b => [b.start, b.end]);
+const y = d3.scaleLinear()
+    .domain([Math.min(0, d3.min(allVals)) - 5, d3.max(allVals) + 5])
+    .range([innerH, 0]);
+
+// Grid
+g.append("g").attr("class", "grid").call(d3.axisLeft(y).tickSize(-innerW).tickFormat(""));
+
+// Zero line
+g.append("line").attr("x1", 0).attr("x2", innerW)
+    .attr("y1", y(0)).attr("y2", y(0))
+    .attr("stroke", "#999").attr("stroke-width", 1);
+
+// Axes
+g.append("g").attr("class", "axis").attr("transform", `translate(0,${innerH})`)
+    .call(d3.axisBottom(x).tickSize(0))
+    .selectAll("text")
+    .attr("font-size", 11)
+    .style("text-anchor", "middle");
+
+const yAx = g.append("g").attr("class", "axis")
+    .call(d3.axisLeft(y).ticks(8).tickSize(0).tickFormat((d, i, ticks) =>
+        i === ticks.length - 1 ? d + "%" : d
+    ));
+yAx.select(".domain").remove();
+
+// Bars
+g.selectAll(".bar").data(BARS).join("rect").attr("class", "bar")
+    .attr("x", d => x(d.label))
+    .attr("y", d => y(Math.max(d.start, d.end)))
+    .attr("width", x.bandwidth())
+    .attr("height", d => Math.abs(y(d.start) - y(d.end)))
+    .attr("fill", d => d.color)
+    .attr("rx", 2);
+
+// Connector lines between bars
+BARS.forEach((bar, i) => {
+    if (i > 0 && i < BARS.length - 1 && bar.type === "delta") {
+        g.append("line")
+            .attr("x1", x(BARS[i].label) + x.bandwidth())
+            .attr("x2", x(BARS[i + 1] ? BARS[i + 1].label : BARS[i].label) + x.bandwidth())
+            .attr("y1", y(bar.end))
+            .attr("y2", y(bar.end))
+            .attr("stroke", "#999")
+            .attr("stroke-width", 0.5)
+            .attr("stroke-dasharray", "3,2");
+    }
+});
+
+// Value labels on bars
+BARS.forEach(bar => {
+    const mid = (bar.start + bar.end) / 2;
+    const isSmall = Math.abs(bar.end - bar.start) < 3;
+    const prefix = bar.type === "delta" && bar.value > 0 ? "+" : "";
+    g.append("text")
+        .attr("x", x(bar.label) + x.bandwidth() / 2)
+        .attr("y", isSmall ? y(Math.max(bar.start, bar.end)) - 8 : y(mid))
+        .attr("text-anchor", "middle")
+        .attr("dy", isSmall ? 0 : "0.35em")
+        .attr("font-size", 13)
+        .attr("font-weight", 500)
+        .attr("fill", isSmall ? "#3D3733" : "white")
+        .text(prefix + bar.value.toFixed(1) + "%");
+});
+
+</script>
+</body>
+</html>

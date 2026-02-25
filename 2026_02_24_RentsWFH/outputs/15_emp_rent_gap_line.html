@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>D.C. jobs and rents vs. national</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf') format('opentype');
+    font-weight: 300; font-style: normal;
+}
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf') format('opentype');
+    font-weight: 400; font-style: normal;
+}
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf') format('opentype');
+    font-weight: 500; font-style: normal;
+}
+@font-face {
+    font-family: 'ABC Oracle Edu';
+    src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf') format('opentype');
+    font-weight: 700; font-style: normal;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'ABC Oracle Edu', system-ui, sans-serif;
+    background: #F6F7F3;
+    display: flex; justify-content: center; padding: 20px;
+}
+.chart-container { width: 900px; background: #F6F7F3; }
+.chart-title { font-size: 23px; font-weight: 500; color: #3D3733; margin-bottom: 4px; line-height: 1.2; }
+.chart-subtitle { font-size: 14px; font-weight: 300; color: #3D3733; opacity: 0.7; margin-bottom: 16px; line-height: 1.3; }
+.chart-source { font-size: 11px; font-weight: 300; color: #999; font-style: italic; margin-top: 8px; }
+.tooltip {
+    position: absolute; background: white; border: 1px solid #ddd; border-radius: 4px;
+    padding: 8px 12px; font-size: 13px; font-family: 'ABC Oracle Edu', system-ui, sans-serif;
+    pointer-events: none; opacity: 0; transition: opacity 0.15s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); color: #3D3733;
+}
+</style>
+</head>
+<body>
+<div class="chart-container">
+    <div class="chart-title">D.C. jobs and rents track each other, not supply</div>
+    <div class="chart-subtitle">Both series: D.C. minus national YoY growth (percentage points)</div>
+    <div id="chart"></div>
+    <div class="chart-source">Source: Zillow ZORI, BLS/FRED (WASH911NA, PAYEMS)</div>
+</div>
+<div class="tooltip" id="tooltip"></div>
+<script>
+
+const DATA = [{"month": "2016-01", "rent_gap": -3.27, "dc_rent_yoy": 2.15, "nat_rent_yoy": 5.42, "emp_gap": -0.16, "dc_emp_yoy": 1.72, "us_emp_yoy": 1.88}, {"month": "2016-02", "rent_gap": -2.72, "dc_rent_yoy": 2.62, "nat_rent_yoy": 5.34, "emp_gap": -0.17, "dc_emp_yoy": 1.66, "us_emp_yoy": 1.83}, {"month": "2016-03", "rent_gap": -4.86, "dc_rent_yoy": -0.04, "nat_rent_yoy": 4.81, "emp_gap": 0.14, "dc_emp_yoy": 2.09, "us_emp_yoy": 1.94}, {"month": "2016-04", "rent_gap": -4.45, "dc_rent_yoy": -0.39, "nat_rent_yoy": 4.06, "emp_gap": 0.4, "dc_emp_yoy": 2.29, "us_emp_yoy": 1.88}, {"month": "2016-05", "rent_gap": -4.23, "dc_rent_yoy": -0.33, "nat_rent_yoy": 3.89, "emp_gap": 0.18, "dc_emp_yoy": 1.85, "us_emp_yoy": 1.67}, {"month": "2016-06", "rent_gap": -4.09, "dc_rent_yoy": -0.37, "nat_rent_yoy": 3.73, "emp_gap": -0.18, "dc_emp_yoy": 1.54, "us_emp_yoy": 1.72}, {"month": "2016-07", "rent_gap": -4.28, "dc_rent_yoy": -0.47, "nat_rent_yoy": 3.82, "emp_gap": -0.09, "dc_emp_yoy": 1.69, "us_emp_yoy": 1.78}, {"month": "2016-08", "rent_gap": -3.6, "dc_rent_yoy": -0.02, "nat_rent_yoy": 3.58, "emp_gap": 0.07, "dc_emp_yoy": 1.85, "us_emp_yoy": 1.78}, {"month": "2016-09", "rent_gap": -3.34, "dc_rent_yoy": 0.13, "nat_rent_yoy": 3.47, "emp_gap": 0.1, "dc_emp_yoy": 1.99, "us_emp_yoy": 1.89}, {"month": "2016-10", "rent_gap": -2.96, "dc_rent_yoy": 0.26, "nat_rent_yoy": 3.22, "emp_gap": -0.15, "dc_emp_yoy": 1.59, "us_emp_yoy": 1.74}, {"month": "2016-11", "rent_gap": -0.45, "dc_rent_yoy": 1.99, "nat_rent_yoy": 2.44, "emp_gap": 0.06, "dc_emp_yoy": 1.72, "us_emp_yoy": 1.66}, {"month": "2016-12", "rent_gap": 0.99, "dc_rent_yoy": 3.81, "nat_rent_yoy": 2.82, "emp_gap": -0.04, "dc_emp_yoy": 1.59, "us_emp_yoy": 1.63}, {"month": "2017-01", "rent_gap": 1.23, "dc_rent_yoy": 3.76, "nat_rent_yoy": 2.54, "emp_gap": 0.27, "dc_emp_yoy": 1.96, "us_emp_yoy": 1.69}, {"month": "2017-02", "rent_gap": 0.51, "dc_rent_yoy": 3.44, "nat_rent_yoy": 2.93, "emp_gap": 0.39, "dc_emp_yoy": 2.1, "us_emp_yoy": 1.7}, {"month": "2017-03", "rent_gap": 0.01, "dc_rent_yoy": 3.43, "nat_rent_yoy": 3.42, "emp_gap": 0.49, "dc_emp_yoy": 2.09, "us_emp_yoy": 1.61}, {"month": "2017-04", "rent_gap": -0.56, "dc_rent_yoy": 3.68, "nat_rent_yoy": 4.24, "emp_gap": -0.02, "dc_emp_yoy": 1.59, "us_emp_yoy": 1.61}, {"month": "2017-05", "rent_gap": -1.55, "dc_rent_yoy": 3.42, "nat_rent_yoy": 4.97, "emp_gap": 0.07, "dc_emp_yoy": 1.79, "us_emp_yoy": 1.72}, {"month": "2017-06", "rent_gap": -1.36, "dc_rent_yoy": 3.61, "nat_rent_yoy": 4.97, "emp_gap": 0.19, "dc_emp_yoy": 1.88, "us_emp_yoy": 1.69}, {"month": "2017-07", "rent_gap": -1.52, "dc_rent_yoy": 3.37, "nat_rent_yoy": 4.89, "emp_gap": -0.13, "dc_emp_yoy": 1.42, "us_emp_yoy": 1.56}, {"month": "2017-08", "rent_gap": -1.64, "dc_rent_yoy": 3.3, "nat_rent_yoy": 4.94, "emp_gap": -0.36, "dc_emp_yoy": 1.2, "us_emp_yoy": 1.56}, {"month": "2017-09", "rent_gap": -2.33, "dc_rent_yoy": 3.28, "nat_rent_yoy": 5.6, "emp_gap": -0.31, "dc_emp_yoy": 1.1, "us_emp_yoy": 1.41}, {"month": "2017-10", "rent_gap": -2.91, "dc_rent_yoy": 3.61, "nat_rent_yoy": 6.52, "emp_gap": -0.15, "dc_emp_yoy": 1.28, "us_emp_yoy": 1.44}, {"month": "2017-11", "rent_gap": -3.59, "dc_rent_yoy": 3.21, "nat_rent_yoy": 6.8, "emp_gap": -0.4, "dc_emp_yoy": 1.11, "us_emp_yoy": 1.51}, {"month": "2017-12", "rent_gap": -4.93, "dc_rent_yoy": 1.98, "nat_rent_yoy": 6.91, "emp_gap": -0.47, "dc_emp_yoy": 0.98, "us_emp_yoy": 1.45}, {"month": "2018-01", "rent_gap": -4.07, "dc_rent_yoy": 2.48, "nat_rent_yoy": 6.55, "emp_gap": -0.16, "dc_emp_yoy": 1.24, "us_emp_yoy": 1.4}, {"month": "2018-02", "rent_gap": -4.77, "dc_rent_yoy": 1.65, "nat_rent_yoy": 6.41, "emp_gap": -0.12, "dc_emp_yoy": 1.39, "us_emp_yoy": 1.51}, {"month": "2018-03", "rent_gap": -4.9, "dc_rent_yoy": 1.02, "nat_rent_yoy": 5.92, "emp_gap": -0.44, "dc_emp_yoy": 1.15, "us_emp_yoy": 1.58}, {"month": "2018-04", "rent_gap": -4.93, "dc_rent_yoy": 0.68, "nat_rent_yoy": 5.61, "emp_gap": -0.28, "dc_emp_yoy": 1.25, "us_emp_yoy": 1.54}, {"month": "2018-05", "rent_gap": -4.49, "dc_rent_yoy": 0.54, "nat_rent_yoy": 5.03, "emp_gap": -0.33, "dc_emp_yoy": 1.29, "us_emp_yoy": 1.61}, {"month": "2018-06", "rent_gap": -4.6, "dc_rent_yoy": 0.44, "nat_rent_yoy": 5.03, "emp_gap": -0.38, "dc_emp_yoy": 1.24, "us_emp_yoy": 1.62}, {"month": "2018-07", "rent_gap": -4.42, "dc_rent_yoy": 0.8, "nat_rent_yoy": 5.22, "emp_gap": -0.06, "dc_emp_yoy": 1.48, "us_emp_yoy": 1.53}, {"month": "2018-08", "rent_gap": -4.69, "dc_rent_yoy": 0.75, "nat_rent_yoy": 5.44, "emp_gap": -0.16, "dc_emp_yoy": 1.44, "us_emp_yoy": 1.6}, {"month": "2018-09", "rent_gap": -4.4, "dc_rent_yoy": 0.5, "nat_rent_yoy": 4.9, "emp_gap": -0.25, "dc_emp_yoy": 1.35, "us_emp_yoy": 1.6}, {"month": "2018-10", "rent_gap": -3.61, "dc_rent_yoy": 0.12, "nat_rent_yoy": 3.73, "emp_gap": -0.37, "dc_emp_yoy": 1.24, "us_emp_yoy": 1.62}, {"month": "2018-11", "rent_gap": -3.55, "dc_rent_yoy": 0.59, "nat_rent_yoy": 4.15, "emp_gap": -0.28, "dc_emp_yoy": 1.24, "us_emp_yoy": 1.52}, {"month": "2018-12", "rent_gap": -3.9, "dc_rent_yoy": 0.33, "nat_rent_yoy": 4.23, "emp_gap": -0.25, "dc_emp_yoy": 1.3, "us_emp_yoy": 1.55}, {"month": "2019-01", "rent_gap": -3.97, "dc_rent_yoy": 0.52, "nat_rent_yoy": 4.5, "emp_gap": -0.42, "dc_emp_yoy": 1.21, "us_emp_yoy": 1.63}, {"month": "2019-02", "rent_gap": -3.29, "dc_rent_yoy": 1.11, "nat_rent_yoy": 4.4, "emp_gap": -0.31, "dc_emp_yoy": 1.05, "us_emp_yoy": 1.36}, {"month": "2019-03", "rent_gap": -2.94, "dc_rent_yoy": 1.65, "nat_rent_yoy": 4.59, "emp_gap": -0.07, "dc_emp_yoy": 1.29, "us_emp_yoy": 1.36}, {"month": "2019-04", "rent_gap": -2.63, "dc_rent_yoy": 1.93, "nat_rent_yoy": 4.55, "emp_gap": -0.19, "dc_emp_yoy": 1.27, "us_emp_yoy": 1.46}, {"month": "2019-05", "rent_gap": -2.23, "dc_rent_yoy": 2.44, "nat_rent_yoy": 4.67, "emp_gap": 0.0, "dc_emp_yoy": 1.26, "us_emp_yoy": 1.26}, {"month": "2019-06", "rent_gap": -2.0, "dc_rent_yoy": 2.67, "nat_rent_yoy": 4.66, "emp_gap": 0.19, "dc_emp_yoy": 1.45, "us_emp_yoy": 1.26}, {"month": "2019-07", "rent_gap": -2.11, "dc_rent_yoy": 2.63, "nat_rent_yoy": 4.74, "emp_gap": -0.12, "dc_emp_yoy": 1.17, "us_emp_yoy": 1.29}, {"month": "2019-08", "rent_gap": -1.88, "dc_rent_yoy": 2.54, "nat_rent_yoy": 4.42, "emp_gap": -0.39, "dc_emp_yoy": 0.88, "us_emp_yoy": 1.27}, {"month": "2019-09", "rent_gap": -1.53, "dc_rent_yoy": 2.7, "nat_rent_yoy": 4.23, "emp_gap": -0.28, "dc_emp_yoy": 1.06, "us_emp_yoy": 1.34}, {"month": "2019-10", "rent_gap": -1.74, "dc_rent_yoy": 2.68, "nat_rent_yoy": 4.41, "emp_gap": 0.05, "dc_emp_yoy": 1.34, "us_emp_yoy": 1.29}, {"month": "2019-11", "rent_gap": -1.38, "dc_rent_yoy": 2.67, "nat_rent_yoy": 4.05, "emp_gap": 0.07, "dc_emp_yoy": 1.44, "us_emp_yoy": 1.37}, {"month": "2019-12", "rent_gap": -0.98, "dc_rent_yoy": 3.14, "nat_rent_yoy": 4.12, "emp_gap": 0.12, "dc_emp_yoy": 1.44, "us_emp_yoy": 1.33}, {"month": "2020-01", "rent_gap": -0.64, "dc_rent_yoy": 3.45, "nat_rent_yoy": 4.09, "emp_gap": 0.08, "dc_emp_yoy": 1.39, "us_emp_yoy": 1.31}, {"month": "2020-02", "rent_gap": -0.68, "dc_rent_yoy": 3.42, "nat_rent_yoy": 4.1, "emp_gap": -0.05, "dc_emp_yoy": 1.43, "us_emp_yoy": 1.48}, {"month": "2020-03", "rent_gap": -0.61, "dc_rent_yoy": 3.21, "nat_rent_yoy": 3.81, "emp_gap": 0.07, "dc_emp_yoy": 0.47, "us_emp_yoy": 0.4}, {"month": "2020-04", "rent_gap": -0.75, "dc_rent_yoy": 2.51, "nat_rent_yoy": 3.26, "emp_gap": 1.95, "dc_emp_yoy": -11.44, "us_emp_yoy": -13.39}, {"month": "2020-05", "rent_gap": -1.06, "dc_rent_yoy": 1.6, "nat_rent_yoy": 2.66, "emp_gap": 0.46, "dc_emp_yoy": -11.21, "us_emp_yoy": -11.67}, {"month": "2020-06", "rent_gap": -1.25, "dc_rent_yoy": 0.7, "nat_rent_yoy": 1.95, "emp_gap": -1.44, "dc_emp_yoy": -10.16, "us_emp_yoy": -8.73}, {"month": "2020-07", "rent_gap": -1.53, "dc_rent_yoy": 0.35, "nat_rent_yoy": 1.88, "emp_gap": -0.92, "dc_emp_yoy": -8.66, "us_emp_yoy": -7.74}, {"month": "2020-08", "rent_gap": -1.31, "dc_rent_yoy": 0.36, "nat_rent_yoy": 1.68, "emp_gap": -0.27, "dc_emp_yoy": -7.11, "us_emp_yoy": -6.85}, {"month": "2020-09", "rent_gap": -1.67, "dc_rent_yoy": -0.04, "nat_rent_yoy": 1.63, "emp_gap": -0.12, "dc_emp_yoy": -6.46, "us_emp_yoy": -6.34}, {"month": "2020-10", "rent_gap": -1.81, "dc_rent_yoy": -0.59, "nat_rent_yoy": 1.23, "emp_gap": -0.74, "dc_emp_yoy": -6.69, "us_emp_yoy": -5.94}, {"month": "2020-11", "rent_gap": -2.71, "dc_rent_yoy": -1.57, "nat_rent_yoy": 1.14, "emp_gap": -0.84, "dc_emp_yoy": -6.73, "us_emp_yoy": -5.89}, {"month": "2020-12", "rent_gap": -2.81, "dc_rent_yoy": -2.13, "nat_rent_yoy": 0.68, "emp_gap": -0.55, "dc_emp_yoy": -6.64, "us_emp_yoy": -6.09}, {"month": "2021-01", "rent_gap": -3.13, "dc_rent_yoy": -2.98, "nat_rent_yoy": 0.15, "emp_gap": -0.68, "dc_emp_yoy": -6.71, "us_emp_yoy": -6.03}, {"month": "2021-02", "rent_gap": -3.2, "dc_rent_yoy": -3.43, "nat_rent_yoy": -0.23, "emp_gap": -0.91, "dc_emp_yoy": -6.76, "us_emp_yoy": -5.85}, {"month": "2021-03", "rent_gap": -3.82, "dc_rent_yoy": -4.26, "nat_rent_yoy": -0.43, "emp_gap": -1.3, "dc_emp_yoy": -5.72, "us_emp_yoy": -4.42}, {"month": "2021-04", "rent_gap": -4.26, "dc_rent_yoy": -3.4, "nat_rent_yoy": 0.86, "emp_gap": -3.55, "dc_emp_yoy": 7.31, "us_emp_yoy": 10.86}, {"month": "2021-05", "rent_gap": -4.23, "dc_rent_yoy": -1.96, "nat_rent_yoy": 2.27, "emp_gap": -1.7, "dc_emp_yoy": 7.33, "us_emp_yoy": 9.04}, {"month": "2021-06", "rent_gap": -3.92, "dc_rent_yoy": 0.14, "nat_rent_yoy": 4.06, "emp_gap": 0.24, "dc_emp_yoy": 6.16, "us_emp_yoy": 5.92}, {"month": "2021-07", "rent_gap": -3.69, "dc_rent_yoy": 1.98, "nat_rent_yoy": 5.66, "emp_gap": -0.17, "dc_emp_yoy": 5.22, "us_emp_yoy": 5.39}, {"month": "2021-08", "rent_gap": -3.95, "dc_rent_yoy": 3.4, "nat_rent_yoy": 7.35, "emp_gap": -0.43, "dc_emp_yoy": 4.18, "us_emp_yoy": 4.61}, {"month": "2021-09", "rent_gap": -3.82, "dc_rent_yoy": 4.94, "nat_rent_yoy": 8.76, "emp_gap": -0.82, "dc_emp_yoy": 3.42, "us_emp_yoy": 4.23}, {"month": "2021-10", "rent_gap": -3.73, "dc_rent_yoy": 5.86, "nat_rent_yoy": 9.59, "emp_gap": -0.26, "dc_emp_yoy": 4.04, "us_emp_yoy": 4.29}, {"month": "2021-11", "rent_gap": -2.29, "dc_rent_yoy": 7.76, "nat_rent_yoy": 10.05, "emp_gap": -0.38, "dc_emp_yoy": 4.17, "us_emp_yoy": 4.55}, {"month": "2021-12", "rent_gap": -1.61, "dc_rent_yoy": 8.64, "nat_rent_yoy": 10.25, "emp_gap": -0.7, "dc_emp_yoy": 4.4, "us_emp_yoy": 5.1}, {"month": "2022-01", "rent_gap": -2.73, "dc_rent_yoy": 7.9, "nat_rent_yoy": 10.63, "emp_gap": -1.47, "dc_emp_yoy": 3.53, "us_emp_yoy": 5.0}, {"month": "2022-02", "rent_gap": -2.43, "dc_rent_yoy": 8.68, "nat_rent_yoy": 11.11, "emp_gap": -1.02, "dc_emp_yoy": 4.18, "us_emp_yoy": 5.19}, {"month": "2022-03", "rent_gap": -1.24, "dc_rent_yoy": 10.32, "nat_rent_yoy": 11.55, "emp_gap": -1.19, "dc_emp_yoy": 3.73, "us_emp_yoy": 4.91}, {"month": "2022-04", "rent_gap": -0.38, "dc_rent_yoy": 10.76, "nat_rent_yoy": 11.14, "emp_gap": -1.17, "dc_emp_yoy": 3.7, "us_emp_yoy": 4.87}, {"month": "2022-05", "rent_gap": 0.08, "dc_rent_yoy": 10.73, "nat_rent_yoy": 10.65, "emp_gap": -1.2, "dc_emp_yoy": 3.53, "us_emp_yoy": 4.73}, {"month": "2022-06", "rent_gap": -0.02, "dc_rent_yoy": 9.87, "nat_rent_yoy": 9.89, "emp_gap": -1.82, "dc_emp_yoy": 2.66, "us_emp_yoy": 4.48}, {"month": "2022-07", "rent_gap": 0.45, "dc_rent_yoy": 9.0, "nat_rent_yoy": 8.56, "emp_gap": -1.1, "dc_emp_yoy": 3.2, "us_emp_yoy": 4.3}, {"month": "2022-08", "rent_gap": 0.54, "dc_rent_yoy": 7.65, "nat_rent_yoy": 7.12, "emp_gap": -1.16, "dc_emp_yoy": 2.94, "us_emp_yoy": 4.11}, {"month": "2022-09", "rent_gap": 0.9, "dc_rent_yoy": 6.7, "nat_rent_yoy": 5.8, "emp_gap": -1.04, "dc_emp_yoy": 2.89, "us_emp_yoy": 3.93}, {"month": "2022-10", "rent_gap": 1.29, "dc_rent_yoy": 6.02, "nat_rent_yoy": 4.73, "emp_gap": -1.55, "dc_emp_yoy": 2.06, "us_emp_yoy": 3.61}, {"month": "2022-11", "rent_gap": 1.19, "dc_rent_yoy": 5.05, "nat_rent_yoy": 3.87, "emp_gap": -1.31, "dc_emp_yoy": 2.04, "us_emp_yoy": 3.36}, {"month": "2022-12", "rent_gap": 0.58, "dc_rent_yoy": 4.31, "nat_rent_yoy": 3.73, "emp_gap": -1.53, "dc_emp_yoy": 1.49, "us_emp_yoy": 3.02}, {"month": "2023-01", "rent_gap": 2.08, "dc_rent_yoy": 5.42, "nat_rent_yoy": 3.34, "emp_gap": -0.52, "dc_emp_yoy": 2.66, "us_emp_yoy": 3.18}, {"month": "2023-02", "rent_gap": 1.89, "dc_rent_yoy": 4.76, "nat_rent_yoy": 2.87, "emp_gap": -0.68, "dc_emp_yoy": 2.13, "us_emp_yoy": 2.81}, {"month": "2023-03", "rent_gap": 2.28, "dc_rent_yoy": 4.98, "nat_rent_yoy": 2.71, "emp_gap": -0.21, "dc_emp_yoy": 2.32, "us_emp_yoy": 2.52}, {"month": "2023-04", "rent_gap": 2.46, "dc_rent_yoy": 4.62, "nat_rent_yoy": 2.16, "emp_gap": -0.33, "dc_emp_yoy": 2.14, "us_emp_yoy": 2.47}, {"month": "2023-05", "rent_gap": 2.58, "dc_rent_yoy": 4.1, "nat_rent_yoy": 1.51, "emp_gap": -0.36, "dc_emp_yoy": 2.09, "us_emp_yoy": 2.46}, {"month": "2023-06", "rent_gap": 3.09, "dc_rent_yoy": 3.74, "nat_rent_yoy": 0.65, "emp_gap": 0.38, "dc_emp_yoy": 2.69, "us_emp_yoy": 2.31}, {"month": "2023-07", "rent_gap": 3.04, "dc_rent_yoy": 3.39, "nat_rent_yoy": 0.35, "emp_gap": -0.5, "dc_emp_yoy": 1.44, "us_emp_yoy": 1.94}, {"month": "2023-08", "rent_gap": 2.97, "dc_rent_yoy": 3.67, "nat_rent_yoy": 0.7, "emp_gap": -0.51, "dc_emp_yoy": 1.38, "us_emp_yoy": 1.89}, {"month": "2023-09", "rent_gap": 3.25, "dc_rent_yoy": 4.08, "nat_rent_yoy": 0.83, "emp_gap": -0.65, "dc_emp_yoy": 1.2, "us_emp_yoy": 1.85}, {"month": "2023-10", "rent_gap": 3.06, "dc_rent_yoy": 4.35, "nat_rent_yoy": 1.29, "emp_gap": -0.28, "dc_emp_yoy": 1.43, "us_emp_yoy": 1.71}, {"month": "2023-11", "rent_gap": 3.03, "dc_rent_yoy": 4.59, "nat_rent_yoy": 1.56, "emp_gap": -0.36, "dc_emp_yoy": 1.23, "us_emp_yoy": 1.6}, {"month": "2023-12", "rent_gap": 3.4, "dc_rent_yoy": 4.95, "nat_rent_yoy": 1.55, "emp_gap": -0.04, "dc_emp_yoy": 1.59, "us_emp_yoy": 1.63}, {"month": "2024-01", "rent_gap": 2.43, "dc_rent_yoy": 4.23, "nat_rent_yoy": 1.79, "emp_gap": 0.14, "dc_emp_yoy": 1.6, "us_emp_yoy": 1.46}, {"month": "2024-02", "rent_gap": 3.39, "dc_rent_yoy": 5.38, "nat_rent_yoy": 1.99, "emp_gap": 0.03, "dc_emp_yoy": 1.43, "us_emp_yoy": 1.4}, {"month": "2024-03", "rent_gap": 2.86, "dc_rent_yoy": 4.83, "nat_rent_yoy": 1.97, "emp_gap": -0.04, "dc_emp_yoy": 1.47, "us_emp_yoy": 1.5}, {"month": "2024-04", "rent_gap": 2.65, "dc_rent_yoy": 4.72, "nat_rent_yoy": 2.06, "emp_gap": -0.2, "dc_emp_yoy": 1.19, "us_emp_yoy": 1.39}, {"month": "2024-05", "rent_gap": 2.59, "dc_rent_yoy": 4.79, "nat_rent_yoy": 2.2, "emp_gap": -0.07, "dc_emp_yoy": 1.18, "us_emp_yoy": 1.25}, {"month": "2024-06", "rent_gap": 2.54, "dc_rent_yoy": 5.13, "nat_rent_yoy": 2.59, "emp_gap": 0.16, "dc_emp_yoy": 1.32, "us_emp_yoy": 1.16}, {"month": "2024-07", "rent_gap": 2.61, "dc_rent_yoy": 5.03, "nat_rent_yoy": 2.42, "emp_gap": 0.49, "dc_emp_yoy": 1.58, "us_emp_yoy": 1.09}, {"month": "2024-08", "rent_gap": 2.08, "dc_rent_yoy": 4.98, "nat_rent_yoy": 2.9, "emp_gap": 0.45, "dc_emp_yoy": 1.41, "us_emp_yoy": 0.96}, {"month": "2024-09", "rent_gap": 1.66, "dc_rent_yoy": 4.45, "nat_rent_yoy": 2.79, "emp_gap": 0.74, "dc_emp_yoy": 1.69, "us_emp_yoy": 0.96}, {"month": "2024-10", "rent_gap": 1.58, "dc_rent_yoy": 4.27, "nat_rent_yoy": 2.68, "emp_gap": 0.61, "dc_emp_yoy": 1.49, "us_emp_yoy": 0.87}, {"month": "2024-11", "rent_gap": 2.09, "dc_rent_yoy": 4.3, "nat_rent_yoy": 2.22, "emp_gap": 0.68, "dc_emp_yoy": 1.56, "us_emp_yoy": 0.88}, {"month": "2024-12", "rent_gap": 0.96, "dc_rent_yoy": 4.22, "nat_rent_yoy": 3.26, "emp_gap": 0.6, "dc_emp_yoy": 1.53, "us_emp_yoy": 0.93}, {"month": "2025-01", "rent_gap": 1.9, "dc_rent_yoy": 5.04, "nat_rent_yoy": 3.14, "emp_gap": 0.25, "dc_emp_yoy": 1.04, "us_emp_yoy": 0.79}, {"month": "2025-02", "rent_gap": 1.45, "dc_rent_yoy": 4.57, "nat_rent_yoy": 3.12, "emp_gap": 0.29, "dc_emp_yoy": 0.97, "us_emp_yoy": 0.68}, {"month": "2025-03", "rent_gap": 1.39, "dc_rent_yoy": 4.85, "nat_rent_yoy": 3.46, "emp_gap": 0.21, "dc_emp_yoy": 0.78, "us_emp_yoy": 0.58}, {"month": "2025-04", "rent_gap": 1.03, "dc_rent_yoy": 4.38, "nat_rent_yoy": 3.36, "emp_gap": 0.41, "dc_emp_yoy": 1.02, "us_emp_yoy": 0.61}, {"month": "2025-05", "rent_gap": 1.28, "dc_rent_yoy": 3.89, "nat_rent_yoy": 2.6, "emp_gap": 0.3, "dc_emp_yoy": 0.87, "us_emp_yoy": 0.56}, {"month": "2025-06", "rent_gap": -0.25, "dc_rent_yoy": 2.74, "nat_rent_yoy": 2.98, "emp_gap": -0.06, "dc_emp_yoy": 0.44, "us_emp_yoy": 0.5}, {"month": "2025-07", "rent_gap": -0.39, "dc_rent_yoy": 2.53, "nat_rent_yoy": 2.93, "emp_gap": -0.29, "dc_emp_yoy": 0.22, "us_emp_yoy": 0.5}, {"month": "2025-08", "rent_gap": -0.27, "dc_rent_yoy": 2.09, "nat_rent_yoy": 2.37, "emp_gap": -0.35, "dc_emp_yoy": 0.1, "us_emp_yoy": 0.45}, {"month": "2025-09", "rent_gap": -0.22, "dc_rent_yoy": 2.08, "nat_rent_yoy": 2.29, "emp_gap": -0.74, "dc_emp_yoy": -0.34, "us_emp_yoy": 0.4}, {"month": "2025-10", "rent_gap": -0.08, "dc_rent_yoy": 2.68, "nat_rent_yoy": 2.76, "emp_gap": -1.44, "dc_emp_yoy": -1.14, "us_emp_yoy": 0.29}, {"month": "2025-11", "rent_gap": -0.88, "dc_rent_yoy": 2.31, "nat_rent_yoy": 3.19, "emp_gap": -1.51, "dc_emp_yoy": -1.27, "us_emp_yoy": 0.23}, {"month": "2025-12", "rent_gap": 0.83, "dc_rent_yoy": 2.89, "nat_rent_yoy": 2.06, "emp_gap": -1.67, "dc_emp_yoy": -1.56, "us_emp_yoy": 0.11}];
+
+const W = 900, H = 750;
+const margin = {top: 50, right: 60, bottom: 50, left: 55};
+const plotW = W - margin.left - margin.right;
+const plotH = H - margin.top - margin.bottom;
+
+const parseMonth = d3.timeParse("%Y-%m");
+DATA.forEach(d => { d.date = parseMonth(d.month); });
+
+const svg = d3.select("#chart").append("svg")
+    .attr("width", W).attr("height", H);
+
+const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+// Y scale: encompass both series
+const allVals = DATA.flatMap(d => [d.emp_gap, d.rent_gap]);
+const yMin = d3.min(allVals);
+const yMax = d3.max(allVals);
+const yPad = (yMax - yMin) * 0.1;
+
+const x = d3.scaleTime()
+    .domain(d3.extent(DATA, d => d.date))
+    .range([0, plotW]);
+
+const y = d3.scaleLinear()
+    .domain([yMin - yPad, yMax + yPad])
+    .range([plotH, 0]);
+
+// Gridlines
+const yTicks = y.ticks(8);
+yTicks.forEach(t => {
+    g.append("line")
+        .attr("x1", 0).attr("x2", plotW)
+        .attr("y1", y(t)).attr("y2", y(t))
+        .attr("stroke", "#D8DAD1").attr("stroke-width", 0.5);
+});
+
+// Zero line
+g.append("line")
+    .attr("x1", 0).attr("x2", plotW)
+    .attr("y1", y(0)).attr("y2", y(0))
+    .attr("stroke", "#3D3733").attr("stroke-width", 1).attr("opacity", 0.4);
+
+// Employment gap bars
+const barWidth = Math.max(plotW / DATA.length - 1, 1.5);
+g.selectAll(".emp-bar")
+    .data(DATA)
+    .join("rect")
+    .attr("class", "emp-bar")
+    .attr("x", d => x(d.date) - barWidth / 2)
+    .attr("y", d => d.emp_gap >= 0 ? y(d.emp_gap) : y(0))
+    .attr("width", barWidth)
+    .attr("height", d => Math.abs(y(d.emp_gap) - y(0)))
+    .attr("fill", d => d.emp_gap >= 0 ? "#0BB4FF" : "#3D3733")
+    .attr("opacity", 0.5);
+
+// Rent gap line
+const rentLine = d3.line()
+    .x(d => x(d.date))
+    .y(d => y(d.rent_gap))
+    .curve(d3.curveMonotoneX);
+
+g.append("path")
+    .datum(DATA)
+    .attr("d", rentLine)
+    .attr("fill", "none")
+    .attr("stroke", "#F4743B")
+    .attr("stroke-width", 2.5);
+
+// X axis
+const xAxis = d3.axisBottom(x)
+    .ticks(d3.timeYear.every(1))
+    .tickFormat(d3.timeFormat("'%y"))
+    .tickSize(4);
+g.append("g")
+    .attr("transform", `translate(0,${plotH})`)
+    .call(xAxis)
+    .call(g => g.select(".domain").attr("stroke", "#ccc"))
+    .call(g => g.selectAll("text").attr("fill", "#3D3733").attr("font-size", 11).style("font-family", "'ABC Oracle Edu', system-ui, sans-serif"));
+
+// Y axis
+const yAxisFn = d3.axisLeft(y).ticks(8).tickSize(0)
+    .tickFormat((d, i, nodes) => {
+        if (i === nodes.length - 1) return d + "pp";
+        return d;
+    });
+g.append("g")
+    .call(yAxisFn)
+    .call(g => g.select(".domain").remove())
+    .call(g => g.selectAll("text").attr("fill", "#3D3733").attr("font-size", 11).style("font-family", "'ABC Oracle Edu', system-ui, sans-serif"));
+
+// End labels on right edge
+const lastD = DATA[DATA.length - 1];
+const lastRentY = y(lastD.rent_gap);
+const lastEmpY = y(lastD.emp_gap);
+
+g.append("text")
+    .attr("x", plotW + 6).attr("y", lastRentY + 4)
+    .attr("font-size", 11).attr("font-weight", 500)
+    .attr("fill", "#F4743B")
+    .style("font-family", "'ABC Oracle Edu', system-ui, sans-serif")
+    .text("Rent gap");
+
+g.append("text")
+    .attr("x", plotW + 6).attr("y", lastEmpY + 4)
+    .attr("font-size", 11).attr("font-weight", 500)
+    .attr("fill", "#3D3733")
+    .style("font-family", "'ABC Oracle Edu', system-ui, sans-serif")
+    .text("Jobs gap");
+
+// Legend
+const leg = svg.append("g").attr("transform", `translate(${margin.left + 10}, 20)`);
+
+leg.append("line").attr("x1", 0).attr("y1", 6).attr("x2", 18).attr("y2", 6)
+    .attr("stroke", "#F4743B").attr("stroke-width", 2.5);
+leg.append("text").attr("x", 24).attr("y", 10)
+    .attr("font-size", 11).attr("fill", "#3D3733")
+    .style("font-family", "'ABC Oracle Edu', system-ui, sans-serif")
+    .text("D.C. rent growth minus national (pp)");
+
+leg.append("rect").attr("x", 270).attr("y", 0).attr("width", 12).attr("height", 12)
+    .attr("fill", "#0BB4FF").attr("opacity", 0.5);
+leg.append("rect").attr("x", 286).attr("y", 0).attr("width", 12).attr("height", 12)
+    .attr("fill", "#3D3733").attr("opacity", 0.5);
+leg.append("text").attr("x", 304).attr("y", 10)
+    .attr("font-size", 11).attr("fill", "#3D3733")
+    .style("font-family", "'ABC Oracle Edu', system-ui, sans-serif")
+    .text("D.C. employment growth minus national (pp)");
+
+// Tooltip
+const tooltip = d3.select("#tooltip");
+svg.on("mousemove", function(event) {
+    const [mx, my] = d3.pointer(event);
+    const px = mx - margin.left;
+    const py = my - margin.top;
+    if (px < 0 || px > plotW || py < 0 || py > plotH) {
+        tooltip.style("opacity", 0);
+        return;
+    }
+    const dateAtMouse = x.invert(px);
+    const bisect = d3.bisector(d => d.date).left;
+    const idx = Math.min(bisect(DATA, dateAtMouse), DATA.length - 1);
+    const d = DATA[idx];
+    tooltip.html(
+        `<strong>${d3.timeFormat("%b %Y")(d.date)}</strong><br>` +
+        `Rent gap: ${d.rent_gap > 0 ? "+" : ""}${d.rent_gap.toFixed(1)}pp<br>` +
+        `Employment gap: ${d.emp_gap > 0 ? "+" : ""}${d.emp_gap.toFixed(1)}pp`
+    )
+    .style("left", (event.pageX + 14) + "px")
+    .style("top", (event.pageY - 30) + "px")
+    .style("opacity", 1);
+}).on("mouseout", () => tooltip.style("opacity", 0));
+
+</script>
+</body>
+</html>
