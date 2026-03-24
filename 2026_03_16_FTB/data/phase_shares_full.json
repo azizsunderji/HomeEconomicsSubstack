@@ -1,0 +1,101 @@
+[
+  {
+    "year": 1976,
+    "children": 31.0,
+    "adult_dependent": 12.2,
+    "unmarried_renter": 6.5,
+    "unmarried_owner": 5.3,
+    "married_renter": 11.0,
+    "married_owner": 34.2
+  },
+  {
+    "year": 1980,
+    "children": 28.4,
+    "adult_dependent": 13.3,
+    "unmarried_renter": 7.0,
+    "unmarried_owner": 6.8,
+    "married_renter": 8.9,
+    "married_owner": 35.6
+  },
+  {
+    "year": 1985,
+    "children": 26.8,
+    "adult_dependent": 14.7,
+    "unmarried_renter": 8.2,
+    "unmarried_owner": 7.0,
+    "married_renter": 9.8,
+    "married_owner": 33.5
+  },
+  {
+    "year": 1990,
+    "children": 26.1,
+    "adult_dependent": 14.7,
+    "unmarried_renter": 8.7,
+    "unmarried_owner": 7.6,
+    "married_renter": 9.6,
+    "married_owner": 33.3
+  },
+  {
+    "year": 1995,
+    "children": 26.9,
+    "adult_dependent": 14.8,
+    "unmarried_renter": 8.9,
+    "unmarried_owner": 7.9,
+    "married_renter": 8.7,
+    "married_owner": 32.9
+  },
+  {
+    "year": 2000,
+    "children": 26.4,
+    "adult_dependent": 15.3,
+    "unmarried_renter": 8.7,
+    "unmarried_owner": 8.8,
+    "married_renter": 7.5,
+    "married_owner": 33.4
+  },
+  {
+    "year": 2005,
+    "children": 25.3,
+    "adult_dependent": 15.8,
+    "unmarried_renter": 8.5,
+    "unmarried_owner": 9.8,
+    "married_renter": 6.6,
+    "married_owner": 33.9
+  },
+  {
+    "year": 2010,
+    "children": 24.5,
+    "adult_dependent": 17.3,
+    "unmarried_renter": 9.1,
+    "unmarried_owner": 9.9,
+    "married_renter": 7.3,
+    "married_owner": 32.1
+  },
+  {
+    "year": 2015,
+    "children": 23.4,
+    "adult_dependent": 18.3,
+    "unmarried_renter": 10.1,
+    "unmarried_owner": 9.6,
+    "married_renter": 8.2,
+    "married_owner": 30.5
+  },
+  {
+    "year": 2020,
+    "children": 22.8,
+    "adult_dependent": 19.2,
+    "unmarried_renter": 9.4,
+    "unmarried_owner": 10.0,
+    "married_renter": 7.2,
+    "married_owner": 31.5
+  },
+  {
+    "year": 2025,
+    "children": 21.6,
+    "adult_dependent": 19.9,
+    "unmarried_renter": 10.3,
+    "unmarried_owner": 10.3,
+    "married_renter": 7.0,
+    "married_owner": 31.1
+  }
+]

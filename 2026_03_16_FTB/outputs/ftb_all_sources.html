@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<style>
+  body { margin:0; background:#F6F7F3; font-family:'ABC Oracle Edu',system-ui,sans-serif; }
+  .title { font-size:18px; font-weight:700; fill:#3D3733; }
+  .subtitle { font-size:12.5px; fill:#3D3733; opacity:0.8; }
+  .source { font-size:9.5px; fill:#999; font-style:italic; }
+  .axis text { font-size:11px; fill:#3D3733; }
+  .grid line { stroke:#fff; stroke-width:1; }
+  .grid path { stroke:none; }
+  .label { font-size:10.5px; font-weight:600; }
+  .dot { stroke:#fff; stroke-width:1; }
+  .annotation { font-size:9.5px; fill:#999; font-style:italic; }
+</style>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+</head><body>
+<script>
+const ahs = [{"year":1985,"age":30},{"year":1987,"age":31},{"year":1989,"age":31},{"year":1991,"age":31},{"year":1993,"age":32},{"year":1995,"age":32},{"year":2001,"age":31},{"year":2003,"age":31},{"year":2005,"age":30},{"year":2007,"age":30},{"year":2009,"age":30},{"year":2011,"age":30},{"year":2013,"age":30},{"year":2015,"age":32},{"year":2017,"age":32},{"year":2019,"age":32},{"year":2021,"age":33},{"year":2023,"age":34}];
+const nyfed = [{"year":2000,"age":35},{"year":2007,"age":33},{"year":2016,"age":32},{"year":2019,"age":33},{"year":2024,"age":33},{"year":2025,"age":34}];
+const nar = [{"year":1981,"age":29},{"year":1991,"age":28},{"year":1993,"age":32},{"year":1997,"age":32},{"year":2000,"age":32},{"year":2003,"age":32},{"year":2005,"age":32},{"year":2007,"age":30},{"year":2009,"age":30},{"year":2010,"age":30},{"year":2011,"age":31},{"year":2012,"age":31},{"year":2013,"age":31},{"year":2014,"age":31},{"year":2015,"age":30},{"year":2016,"age":32},{"year":2017,"age":32},{"year":2018,"age":32},{"year":2019,"age":33},{"year":2020,"age":33},{"year":2021,"age":33},{"year":2022,"age":36},{"year":2023,"age":35},{"year":2024,"age":38},{"year":2025,"age":40}];
+const cfpb = [{"year":2002,"age":32},{"year":2003,"age":31},{"year":2004,"age":31},{"year":2005,"age":31},{"year":2006,"age":30},{"year":2007,"age":30},{"year":2008,"age":30},{"year":2009,"age":30},{"year":2010,"age":30},{"year":2011,"age":30},{"year":2012,"age":30},{"year":2013,"age":30},{"year":2014,"age":30},{"year":2015,"age":31},{"year":2016,"age":31},{"year":2017,"age":32},{"year":2018,"age":32}];
+const redfin = [{"year":2008,"age":33},{"year":2009,"age":33},{"year":2010,"age":33},{"year":2011,"age":34},{"year":2012,"age":34},{"year":2013,"age":35},{"year":2014,"age":35},{"year":2015,"age":35},{"year":2016,"age":36},{"year":2017,"age":37},{"year":2018,"age":38},{"year":2019,"age":37},{"year":2020,"age":36},{"year":2021,"age":35},{"year":2022,"age":36},{"year":2023,"age":36},{"year":2024,"age":36},{"year":2025,"age":35}];
+
+const W = 900, H = 520;
+const m = {top:75, right:110, bottom:55, left:50};
+const w = W-m.left-m.right, h = H-m.top-m.bottom;
+
+const svg = d3.select("body").append("svg").attr("width",W).attr("height",H)
+  .style("background","#F6F7F3");
+const g = svg.append("g").attr("transform",`translate(${m.left},${m.top})`);
+
+svg.append("text").attr("class","title").attr("x",m.left).attr("y",25)
+  .text("Median age of first-time homebuyers, by data source");
+svg.append("text").attr("class","subtitle").attr("x",m.left).attr("y",46)
+  .text("Five independent measures tell different stories about whether FTBs are getting older.");
+
+const x = d3.scaleLinear().domain([1980,2027]).range([0,w]);
+const y = d3.scaleLinear().domain([26,42]).range([h,0]);
+
+// Grid
+g.append("g").attr("class","grid")
+  .call(d3.axisLeft(y).tickSize(-w).tickFormat("").ticks(8));
+
+// X axis
+g.append("g").attr("class","axis").attr("transform",`translate(0,${h})`)
+  .call(d3.axisBottom(x).tickFormat(d3.format("d"))
+    .tickValues([1985,1990,1995,2000,2005,2010,2015,2020,2025]));
+
+// Y axis
+const yAx = g.append("g").attr("class","axis")
+  .call(d3.axisLeft(y).ticks(8).tickSize(0)
+    .tickFormat((d,i,nodes) => i===nodes.length-1 ? d+" yrs" : d));
+yAx.select(".domain").remove();
+
+const line = d3.line().x(d=>x(d.year)).y(d=>y(d.age));
+
+const BLUE = "#0BB4FF";
+const RED = "#F4743B";
+const GREEN = "#67A275";
+const YELLOW = "#FEC439";
+const LIGHTRED = "#FBCAB5";
+
+// Helper: draw segmented line (gap at 1996-2000 for AHS)
+function drawLine(data, color, dash, width) {
+  // Split AHS at gap
+  if (data === ahs) {
+    const pre = data.filter(d=>d.year<=1995);
+    const post = data.filter(d=>d.year>=2001);
+    [pre,post].forEach(seg => {
+      g.append("path").datum(seg).attr("d",line)
+        .attr("fill","none").attr("stroke",color)
+        .attr("stroke-width",width).attr("stroke-dasharray",dash||"none");
+    });
+  } else {
+    g.append("path").datum(data).attr("d",line)
+      .attr("fill","none").attr("stroke",color)
+      .attr("stroke-width",width).attr("stroke-dasharray",dash||"none");
+  }
+  data.forEach(d => {
+    g.append("circle").attr("class","dot")
+      .attr("cx",x(d.year)).attr("cy",y(d.age))
+      .attr("r",2.5).attr("fill",color);
+  });
+}
+
+// Draw in order: background first, foreground last
+drawLine(cfpb, GREEN, "4,3", 2);
+drawLine(redfin, LIGHTRED, null, 2);
+drawLine(nyfed, YELLOW, null, 2.5);
+drawLine(ahs, BLUE, null, 2.5);
+drawLine(nar, RED, null, 2);
+
+// No end labels — legend only
+
+// AHS gap annotation
+g.append("text").attr("class","annotation")
+  .attr("x",(x(1995)+x(2001))/2).attr("y",y(33)-6)
+  .attr("text-anchor","middle").text("AHS gap");
+
+// Source
+svg.append("text").attr("class","source")
+  .attr("x",m.left).attr("y",H-30)
+  .text("Sources: AHS (Census/HUD); NY Fed CCP/Equifax; NAR Profile of Home Buyers & Sellers; Redfin (CPS March Supplement);");
+svg.append("text").attr("class","source")
+  .attr("x",m.left).attr("y",H-17)
+  .text("CFPB National Mortgage Database. All series show median age.");
+
+// Legend
+const legend = svg.append("g").attr("transform",`translate(${m.left+10},${m.top-15})`);
+const items = [
+  {color:BLUE, label:"AHS (Census)", dash:null},
+  {color:YELLOW, label:"NY Fed CCP", dash:null},
+  {color:RED, label:"NAR Survey", dash:null},
+  {color:LIGHTRED, label:"Redfin (CPS)", dash:null},
+  {color:GREEN, label:"CFPB/NMDB", dash:"4,3"},
+];
+items.forEach((it,i) => {
+  const gx = i * 130;
+  legend.append("line").attr("x1",gx).attr("x2",gx+20)
+    .attr("y1",0).attr("y2",0).attr("stroke",it.color)
+    .attr("stroke-width",2.5).attr("stroke-dasharray",it.dash||"none");
+  legend.append("text").attr("x",gx+25).attr("y",4)
+    .attr("font-size","10.5px").attr("fill","#3D3733").text(it.label);
+});
+</script>
+</body></html>

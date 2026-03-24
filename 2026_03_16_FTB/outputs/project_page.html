@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>First-Time Buyers — Chart Dashboard</title>
+<style>
+@font-face { font-family: 'ABC Oracle Edu'; src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf') format('opentype'); font-weight: 300; }
+@font-face { font-family: 'ABC Oracle Edu'; src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf') format('opentype'); font-weight: 400; }
+@font-face { font-family: 'ABC Oracle Edu'; src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf') format('opentype'); font-weight: 500; }
+@font-face { font-family: 'ABC Oracle Edu'; src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf') format('opentype'); font-weight: 700; }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+    --bg: #F6F7F3;
+    --card-bg: #fff;
+    --border: #e5e7e0;
+    --text: #3D3733;
+    --text-light: #999;
+    --blue: #0BB4FF;
+    --yellow: #FEC439;
+    --red: #F4743B;
+    --green: #67A275;
+    --sidebar-width: 260px;
+}
+
+body {
+    font-family: 'ABC Oracle Edu', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ── Sidebar ── */
+.sidebar {
+    width: var(--sidebar-width);
+    background: #fff;
+    border-right: 1px solid var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    z-index: 10;
+    padding: 20px 0;
+}
+
+.sidebar-header {
+    padding: 0 16px 16px;
+    border-bottom: 1px solid var(--border);
+}
+
+.sidebar-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.3;
+}
+
+.sidebar-subtitle {
+    font-size: 11px;
+    font-weight: 300;
+    color: var(--text-light);
+    margin-top: 4px;
+}
+
+.sidebar-filters {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 4px 10px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.filter-btn:hover { border-color: var(--blue); color: var(--blue); }
+.filter-btn.active { background: var(--blue); color: white; border-color: var(--blue); }
+
+.sidebar-search {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+}
+.sidebar-search input {
+    width: 100%;
+    font-family: inherit;
+    font-size: 12px;
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    outline: none;
+}
+.sidebar-search input:focus { border-color: var(--blue); }
+
+.sidebar-nav {
+    padding: 8px 0;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text);
+    transition: background 0.1s;
+    text-decoration: none;
+}
+.nav-item:hover { background: var(--bg); }
+.nav-item.active { background: #EBF7FF; color: var(--blue); }
+
+.nav-star {
+    font-size: 12px;
+    opacity: 0.2;
+    flex-shrink: 0;
+}
+.nav-star.starred { opacity: 1; color: var(--yellow); }
+
+.nav-label {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nav-type {
+    font-size: 9px;
+    padding: 2px 5px;
+    border-radius: 4px;
+    background: var(--bg);
+    color: var(--text-light);
+    flex-shrink: 0;
+}
+
+/* ── Main Content ── */
+.main {
+    margin-left: var(--sidebar-width);
+    flex: 1;
+    padding: 30px 40px;
+    max-width: 1100px;
+}
+
+.main-header {
+    margin-bottom: 30px;
+}
+.main-title {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--text);
+}
+.main-subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-light);
+    margin-top: 4px;
+}
+.chart-count {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-top: 8px;
+}
+
+/* ── Chart Cards ── */
+.chart-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+}
+.chart-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.chart-card.collapsed .card-body { display: none; }
+
+.card-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    cursor: pointer;
+    user-select: none;
+    gap: 10px;
+}
+
+.card-chevron {
+    font-size: 12px;
+    color: var(--text-light);
+    transition: transform 0.2s;
+    flex-shrink: 0;
+    width: 16px;
+    text-align: center;
+}
+.chart-card.collapsed .card-chevron { transform: rotate(-90deg); }
+
+.card-title {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card-star {
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0.2;
+    transition: opacity 0.15s;
+    flex-shrink: 0;
+}
+.card-star:hover { opacity: 0.6; }
+.card-star.starred { opacity: 1; color: var(--yellow); }
+
+.card-open {
+    font-size: 11px;
+    color: var(--blue);
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+.card-open:hover { background: #EBF7FF; }
+
+.card-body {
+    border-top: 1px solid var(--border);
+}
+
+.card-iframe-container {
+    width: 100%;
+    background: var(--bg);
+    position: relative;
+    overflow: hidden;
+}
+.card-source {
+    font-size: 11px;
+    font-weight: 300;
+    color: #999;
+    font-style: italic;
+    line-height: 1.5;
+    padding: 8px 16px 4px;
+    background: var(--bg);
+}
+.card-iframe-container {
+    overflow: hidden;
+    position: relative;
+}
+.card-iframe-container iframe {
+    border: none;
+    display: block;
+    width: 960px;
+    transform-origin: top left;
+    transform: scale(0.75);
+}
+.card-iframe-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-comment {
+    padding: 10px 16px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.card-comment-icon {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+.card-comment textarea {
+    flex: 1;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--text);
+    border: none;
+    background: transparent;
+    resize: none;
+    outline: none;
+    min-height: 20px;
+    line-height: 1.5;
+    overflow: hidden;
+}
+.card-comment textarea::placeholder { color: #ccc; }
+
+.card-meta {
+    padding: 6px 16px 10px;
+    font-size: 10px;
+    color: var(--text-light);
+    display: flex;
+    gap: 16px;
+}
+
+/* ── Empty / filter state ── */
+.no-results {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+/* ── Sessions bar ── */
+.sessions-bar {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+}
+.sessions-title {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+.session-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 4px 0;
+    font-size: 12px;
+}
+.session-date {
+    font-weight: 500;
+    color: var(--text);
+    white-space: nowrap;
+    min-width: 80px;
+}
+.session-summary {
+    color: var(--text-light);
+    font-weight: 300;
+    flex: 1;
+}
+.session-resume {
+    font-family: 'SFMono-Regular', 'Consolas', monospace;
+    font-size: 10px;
+    color: var(--blue);
+    background: #EBF7FF;
+    padding: 2px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: all;
+    flex-shrink: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="sidebar-header">
+        <div class="sidebar-title">First-Time Buyers</div>
+        <div class="sidebar-subtitle">2026-03-04 — Chart Dashboard</div>
+    </div>
+    <div class="sidebar-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="starred">Starred</button>
+        <button class="filter-btn" data-filter="commented">With Notes</button>
+    </div>
+    <div class="sidebar-search">
+        <input type="text" id="search" placeholder="Search charts...">
+    </div>
+    <div class="sidebar-nav" id="nav"></div>
+</div>
+
+<div class="main">
+    <div class="main-header">
+        <div class="main-title">First-Time Buyers Project</div>
+        <div class="main-subtitle">All charts and visualizations</div>
+        <div class="chart-count" id="chartCount"></div>
+    </div>
+    <div class="sessions-bar" id="sessionsBar"></div>
+    <div id="cards"></div>
+</div>
+
+<script src="sessions.js"></script>
+<script src="charts.js"></script>
+<script>
+// ── Chart Registry ──
+// Loaded from charts.js via <script> tag (works on file://)
+let charts = [];
+
+// ── State (persisted to localStorage) ──
+const STORAGE_KEY = "ftb_project_page";
+
+function loadState() {
+    try {
+        return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+    } catch { return {}; }
+}
+
+function saveState(state) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+}
+
+let state = loadState();
+if (!state.stars) state.stars = {};
+if (!state.comments) state.comments = {};
+if (!state.collapsed) state.collapsed = {};
+
+// ── Render ──
+const navEl = document.getElementById("nav");
+const cardsEl = document.getElementById("cards");
+const searchEl = document.getElementById("search");
+const countEl = document.getElementById("chartCount");
+
+let activeFilter = "all";
+
+function isStarred(id) { return !!state.stars[id]; }
+function hasComment(id) { return !!(state.comments[id] && state.comments[id].trim()); }
+function isCollapsed(id) { return !!state.collapsed[id]; }
+
+function toggleStar(id) {
+    state.stars[id] = !state.stars[id];
+    saveState(state);
+    render();
+}
+
+function toggleCollapse(id) {
+    state.collapsed[id] = !state.collapsed[id];
+    saveState(state);
+    render();
+}
+
+function autoResize(el) {
+    el.style.height = 'auto';
+    el.style.height = el.scrollHeight + 'px';
+}
+
+function updateComment(id, text) {
+    state.comments[id] = text;
+    saveState(state);
+    renderNav();  // Update "with notes" count
+}
+
+function getFilteredCharts() {
+    const query = searchEl.value.toLowerCase().trim();
+    return charts
+        .filter(c => {
+            if (activeFilter === "starred" && !isStarred(c.id)) return false;
+            if (activeFilter === "commented" && !hasComment(c.id)) return false;
+            if (query) {
+                const searchable = (c.title + " " + c.subtitle + " " + c.tags.join(" ")).toLowerCase();
+                if (!searchable.includes(query)) return false;
+            }
+            return true;
+        })
+        .sort((a, b) => b.date.localeCompare(a.date));
+}
+
+function renderNav() {
+    const filtered = getFilteredCharts();
+    navEl.innerHTML = filtered.map(c => `
+        <a class="nav-item" href="#card-${c.id}" onclick="event.preventDefault(); document.getElementById('card-${c.id}').scrollIntoView({behavior:'smooth', block:'start'})">
+            <span class="nav-star ${isStarred(c.id) ? 'starred' : ''}">★</span>
+            <span class="nav-label">${c.title}</span>
+        </a>
+    `).join("");
+    countEl.textContent = `${filtered.length} of ${charts.length} charts`;
+}
+
+function renderCards() {
+    const filtered = getFilteredCharts();
+    if (filtered.length === 0) {
+        cardsEl.innerHTML = '<div class="no-results">No charts match your filter.</div>';
+        return;
+    }
+
+    cardsEl.innerHTML = filtered.map(c => {
+        const collapsed = isCollapsed(c.id);
+        const starred = isStarred(c.id);
+        const comment = state.comments[c.id] || "";
+
+        const contentHtml = c.isImage
+            ? `<div class="card-iframe-container"><img src="${c.file}" /></div>`
+            : `<div class="card-iframe-container" data-chart-id="${c.id}" data-native-width="960" data-native-height="${c.height}"><iframe src="${c.file}" height="${c.height}" loading="lazy"></iframe></div>`;
+
+        const sourceHtml = c.source ? `<div class="card-source">${c.source}</div>` : '';
+
+        return `
+        <div class="chart-card ${collapsed ? 'collapsed' : ''}" id="card-${c.id}">
+            <div class="card-header">
+                <span class="card-chevron" onclick="toggleCollapse('${c.id}')">▼</span>
+                <span class="card-title" onclick="toggleCollapse('${c.id}')">${c.title}</span>
+                <span class="card-star ${starred ? 'starred' : ''}" onclick="event.stopPropagation(); toggleStar('${c.id}')">★</span>
+                <a class="card-open" href="${c.file}" target="_blank" onclick="event.stopPropagation()">Open ↗</a>
+            </div>
+            <div class="card-body">
+                ${contentHtml}
+                ${sourceHtml}
+                <div class="card-comment">
+                    <svg class="card-comment-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="#bbb" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.5 1.5l3 3-9 9H2.5v-3l9-9z"/><path d="M9.5 3.5l3 3"/></svg>
+                    <textarea placeholder="Add a note..." oninput="autoResize(this); updateComment('${c.id}', this.value)">${comment}</textarea>
+                </div>
+                <div class="card-meta">
+                    <span style="font-family:monospace;opacity:0.6">${c.file}</span>
+                    <span>${c.date}</span>
+                    <span>${c.tags.map(t => '#' + t).join(' ')}</span>
+                </div>
+            </div>
+        </div>`;
+    }).join("");
+}
+
+function render() {
+    renderNav();
+    renderCards();
+    // Auto-resize all textareas with existing content
+    document.querySelectorAll('.card-comment textarea').forEach(ta => {
+        if (ta.value) autoResize(ta);
+    });
+}
+
+// ── Filter buttons ──
+document.querySelectorAll(".filter-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        activeFilter = btn.dataset.filter;
+        render();
+    });
+});
+
+// ── Search ──
+searchEl.addEventListener("input", () => render());
+
+// ── Scale iframes to fit container width, auto-detect content height ──
+function scaleIframes() {
+    document.querySelectorAll('.card-iframe-container[data-native-width]').forEach(container => {
+        const iframe = container.querySelector('iframe');
+        if (!iframe) return;
+        const nativeW = parseInt(container.dataset.nativeWidth);
+        let nativeH = parseInt(container.dataset.nativeHeight);
+        // Auto-detect actual content height if accessible
+        try {
+            const doc = iframe.contentDocument || iframe.contentWindow.document;
+            if (doc && doc.body) {
+                const contentH = doc.body.scrollHeight;
+                if (contentH > nativeH) nativeH = contentH;
+            }
+        } catch(e) { /* cross-origin, use declared height */ }
+        const containerW = container.clientWidth;
+        const scale = Math.min(0.75, containerW / nativeW);
+        iframe.style.transform = `scale(${scale})`;
+        iframe.style.width = nativeW + 'px';
+        iframe.style.height = nativeH + 'px';
+        container.style.height = (nativeH * scale) + 'px';
+    });
+}
+
+const resizeObserver = new ResizeObserver(() => scaleIframes());
+
+// Override render to also scale, and re-scale when iframes load
+const origRender = render;
+render = function() {
+    origRender();
+    requestAnimationFrame(() => {
+        scaleIframes();
+        document.querySelectorAll('.card-iframe-container[data-native-width]').forEach(c => {
+            resizeObserver.observe(c);
+        });
+        // Re-scale after each iframe loads (content height now known)
+        document.querySelectorAll('.card-iframe-container iframe').forEach(iframe => {
+            iframe.addEventListener('load', () => scaleIframes(), {once: true});
+        });
+    });
+};
+
+// ── Load sessions ──
+const sessions = (typeof SESSIONS_DATA !== 'undefined') ? SESSIONS_DATA : [];
+const sessionsBar = document.getElementById('sessionsBar');
+if (sessions.length > 0) {
+    sessionsBar.innerHTML = '<div class="sessions-title">Sessions</div>' +
+        sessions.slice().reverse().map(s =>
+            `<div class="session-row">
+                <span class="session-date">${s.date}</span>
+                <span class="session-summary">${s.summary}</span>
+                <span class="session-resume" title="Copy and run: claude -r ${s.id}">claude -r ${s.id.slice(0,8)}…</span>
+            </div>`
+        ).join('');
+    // Click to copy full resume command
+    sessionsBar.querySelectorAll('.session-resume').forEach((el, i) => {
+        const s = sessions.slice().reverse()[i];
+        el.addEventListener('click', () => {
+            navigator.clipboard.writeText('claude -r ' + s.id).then(() => {
+                el.textContent = 'Copied!';
+                setTimeout(() => { el.textContent = 'claude -r ' + s.id.slice(0,8) + '…'; }, 1500);
+            });
+        });
+    });
+} else {
+    sessionsBar.style.display = 'none';
+}
+
+// ── Load chart registry and render ──
+charts = (typeof CHARTS_DATA !== 'undefined') ? CHARTS_DATA : [];
+render();
+</script>
+</body>
+</html>

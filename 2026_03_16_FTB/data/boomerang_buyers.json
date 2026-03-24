@@ -1,0 +1,218 @@
+[
+  {
+    "year": 1984,
+    "true_ftb_n": 333,
+    "boomerang_n": 0,
+    "boomerang_pct": 0.0,
+    "ftb_median_age": 30,
+    "boomerang_median_age": null
+  },
+  {
+    "year": 1985,
+    "true_ftb_n": 392,
+    "boomerang_n": 41,
+    "boomerang_pct": 9.5,
+    "ftb_median_age": 29.0,
+    "boomerang_median_age": 37
+  },
+  {
+    "year": 1986,
+    "true_ftb_n": 290,
+    "boomerang_n": 60,
+    "boomerang_pct": 17.1,
+    "ftb_median_age": 29.0,
+    "boomerang_median_age": 35.0
+  },
+  {
+    "year": 1987,
+    "true_ftb_n": 267,
+    "boomerang_n": 87,
+    "boomerang_pct": 24.6,
+    "ftb_median_age": 30,
+    "boomerang_median_age": 38
+  },
+  {
+    "year": 1988,
+    "true_ftb_n": 255,
+    "boomerang_n": 104,
+    "boomerang_pct": 29.0,
+    "ftb_median_age": 30,
+    "boomerang_median_age": 37.0
+  },
+  {
+    "year": 1989,
+    "true_ftb_n": 293,
+    "boomerang_n": 103,
+    "boomerang_pct": 26.0,
+    "ftb_median_age": 30,
+    "boomerang_median_age": 37
+  },
+  {
+    "year": 1990,
+    "true_ftb_n": 259,
+    "boomerang_n": 102,
+    "boomerang_pct": 28.3,
+    "ftb_median_age": 31,
+    "boomerang_median_age": 37.0
+  },
+  {
+    "year": 1991,
+    "true_ftb_n": 342,
+    "boomerang_n": 118,
+    "boomerang_pct": 25.7,
+    "ftb_median_age": 31.0,
+    "boomerang_median_age": 35.0
+  },
+  {
+    "year": 1992,
+    "true_ftb_n": 326,
+    "boomerang_n": 124,
+    "boomerang_pct": 27.6,
+    "ftb_median_age": 31.0,
+    "boomerang_median_age": 39.0
+  },
+  {
+    "year": 1993,
+    "true_ftb_n": 424,
+    "boomerang_n": 242,
+    "boomerang_pct": 36.3,
+    "ftb_median_age": 32.0,
+    "boomerang_median_age": 38.0
+  },
+  {
+    "year": 1994,
+    "true_ftb_n": 480,
+    "boomerang_n": 274,
+    "boomerang_pct": 36.3,
+    "ftb_median_age": 33.0,
+    "boomerang_median_age": 39.0
+  },
+  {
+    "year": 1995,
+    "true_ftb_n": 308,
+    "boomerang_n": 215,
+    "boomerang_pct": 41.1,
+    "ftb_median_age": 32.5,
+    "boomerang_median_age": 37
+  },
+  {
+    "year": 1996,
+    "true_ftb_n": 282,
+    "boomerang_n": 171,
+    "boomerang_pct": 37.7,
+    "ftb_median_age": 32.0,
+    "boomerang_median_age": 39
+  },
+  {
+    "year": 1997,
+    "true_ftb_n": 229,
+    "boomerang_n": 135,
+    "boomerang_pct": 37.1,
+    "ftb_median_age": 31,
+    "boomerang_median_age": 37
+  },
+  {
+    "year": 1999,
+    "true_ftb_n": 460,
+    "boomerang_n": 214,
+    "boomerang_pct": 31.8,
+    "ftb_median_age": 32.0,
+    "boomerang_median_age": 40.0
+  },
+  {
+    "year": 2001,
+    "true_ftb_n": 500,
+    "boomerang_n": 227,
+    "boomerang_pct": 31.2,
+    "ftb_median_age": 32.0,
+    "boomerang_median_age": 42
+  },
+  {
+    "year": 2003,
+    "true_ftb_n": 509,
+    "boomerang_n": 243,
+    "boomerang_pct": 32.3,
+    "ftb_median_age": 32,
+    "boomerang_median_age": 42
+  },
+  {
+    "year": 2005,
+    "true_ftb_n": 471,
+    "boomerang_n": 220,
+    "boomerang_pct": 31.8,
+    "ftb_median_age": 31,
+    "boomerang_median_age": 42.5
+  },
+  {
+    "year": 2007,
+    "true_ftb_n": 447,
+    "boomerang_n": 217,
+    "boomerang_pct": 32.7,
+    "ftb_median_age": 31,
+    "boomerang_median_age": 43
+  },
+  {
+    "year": 2009,
+    "true_ftb_n": 349,
+    "boomerang_n": 208,
+    "boomerang_pct": 37.3,
+    "ftb_median_age": 30,
+    "boomerang_median_age": 42.0
+  },
+  {
+    "year": 2011,
+    "true_ftb_n": 355,
+    "boomerang_n": 190,
+    "boomerang_pct": 34.9,
+    "ftb_median_age": 30,
+    "boomerang_median_age": 44.0
+  },
+  {
+    "year": 2013,
+    "true_ftb_n": 358,
+    "boomerang_n": 240,
+    "boomerang_pct": 40.1,
+    "ftb_median_age": 31.0,
+    "boomerang_median_age": 45.0
+  },
+  {
+    "year": 2015,
+    "true_ftb_n": 365,
+    "boomerang_n": 273,
+    "boomerang_pct": 42.8,
+    "ftb_median_age": 31,
+    "boomerang_median_age": 45
+  },
+  {
+    "year": 2017,
+    "true_ftb_n": 507,
+    "boomerang_n": 290,
+    "boomerang_pct": 36.4,
+    "ftb_median_age": 32,
+    "boomerang_median_age": 44.5
+  },
+  {
+    "year": 2019,
+    "true_ftb_n": 505,
+    "boomerang_n": 262,
+    "boomerang_pct": 34.2,
+    "ftb_median_age": 33,
+    "boomerang_median_age": 43.0
+  },
+  {
+    "year": 2021,
+    "true_ftb_n": 587,
+    "boomerang_n": 292,
+    "boomerang_pct": 33.2,
+    "ftb_median_age": 34,
+    "boomerang_median_age": 45.5
+  },
+  {
+    "year": 2023,
+    "true_ftb_n": 444,
+    "boomerang_n": 247,
+    "boomerang_pct": 35.7,
+    "ftb_median_age": 33.0,
+    "boomerang_median_age": 47
+  }
+]

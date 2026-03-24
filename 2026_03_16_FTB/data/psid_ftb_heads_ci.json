@@ -1,0 +1,372 @@
+[
+  {
+    "year": 1974,
+    "median": 26.69,
+    "ci_lo": 25.67,
+    "ci_hi": 28.43,
+    "n": 93,
+    "smoothed": 27.75,
+    "ci_lo_smooth": 26.37,
+    "ci_hi_smooth": 29.13
+  },
+  {
+    "year": 1975,
+    "median": 28.62,
+    "ci_lo": 27.37,
+    "ci_hi": 31.0,
+    "n": 101,
+    "smoothed": 27.7,
+    "ci_lo_smooth": 25.88,
+    "ci_hi_smooth": 29.52
+  },
+  {
+    "year": 1976,
+    "median": 27.85,
+    "ci_lo": 26.63,
+    "ci_hi": 29.11,
+    "n": 98,
+    "smoothed": 27.76,
+    "ci_lo_smooth": 26.52,
+    "ci_hi_smooth": 29.0
+  },
+  {
+    "year": 1977,
+    "median": 27.58,
+    "ci_lo": 26.65,
+    "ci_hi": 29.37,
+    "n": 100,
+    "smoothed": 28.03,
+    "ci_lo_smooth": 26.67,
+    "ci_hi_smooth": 29.39
+  },
+  {
+    "year": 1978,
+    "median": 27.98,
+    "ci_lo": 25.91,
+    "ci_hi": 29.25,
+    "n": 102,
+    "smoothed": 28.12,
+    "ci_lo_smooth": 26.45,
+    "ci_hi_smooth": 29.79
+  },
+  {
+    "year": 1979,
+    "median": 28.09,
+    "ci_lo": 26.01,
+    "ci_hi": 29.25,
+    "n": 101,
+    "smoothed": 28.17,
+    "ci_lo_smooth": 26.55,
+    "ci_hi_smooth": 29.79
+  },
+  {
+    "year": 1980,
+    "median": 28.99,
+    "ci_lo": 27.65,
+    "ci_hi": 30.3,
+    "n": 110,
+    "smoothed": 28.71,
+    "ci_lo_smooth": 27.38,
+    "ci_hi_smooth": 30.04
+  },
+  {
+    "year": 1981,
+    "median": 28.11,
+    "ci_lo": 26.56,
+    "ci_hi": 29.31,
+    "n": 89,
+    "smoothed": 28.75,
+    "ci_lo_smooth": 27.38,
+    "ci_hi_smooth": 30.12
+  },
+  {
+    "year": 1982,
+    "median": 30.6,
+    "ci_lo": 29.12,
+    "ci_hi": 32.43,
+    "n": 85,
+    "smoothed": 28.96,
+    "ci_lo_smooth": 27.3,
+    "ci_hi_smooth": 30.62
+  },
+  {
+    "year": 1983,
+    "median": 27.91,
+    "ci_lo": 26.49,
+    "ci_hi": 29.96,
+    "n": 74,
+    "smoothed": 29.09,
+    "ci_lo_smooth": 27.35,
+    "ci_hi_smooth": 30.83
+  },
+  {
+    "year": 1984,
+    "median": 29.05,
+    "ci_lo": 27.42,
+    "ci_hi": 30.0,
+    "n": 102,
+    "smoothed": 29.76,
+    "ci_lo_smooth": 28.47,
+    "ci_hi_smooth": 31.05
+  },
+  {
+    "year": 1985,
+    "median": 29.52,
+    "ci_lo": 28.58,
+    "ci_hi": 31.3,
+    "n": 116,
+    "smoothed": 29.9,
+    "ci_lo_smooth": 28.54,
+    "ci_hi_smooth": 31.26
+  },
+  {
+    "year": 1986,
+    "median": 31.39,
+    "ci_lo": 28.07,
+    "ci_hi": 32.38,
+    "n": 103,
+    "smoothed": 30.19,
+    "ci_lo_smooth": 28.04,
+    "ci_hi_smooth": 32.34
+  },
+  {
+    "year": 1987,
+    "median": 31.13,
+    "ci_lo": 28.65,
+    "ci_hi": 33.3,
+    "n": 100,
+    "smoothed": 30.34,
+    "ci_lo_smooth": 28.02,
+    "ci_hi_smooth": 32.66
+  },
+  {
+    "year": 1988,
+    "median": 29.92,
+    "ci_lo": 28.56,
+    "ci_hi": 31.49,
+    "n": 96,
+    "smoothed": 30.66,
+    "ci_lo_smooth": 29.2,
+    "ci_hi_smooth": 32.12
+  },
+  {
+    "year": 1989,
+    "median": 29.8,
+    "ci_lo": 28.59,
+    "ci_hi": 33.26,
+    "n": 97,
+    "smoothed": 30.6,
+    "ci_lo_smooth": 28.27,
+    "ci_hi_smooth": 32.94
+  },
+  {
+    "year": 1990,
+    "median": 30.94,
+    "ci_lo": 28.95,
+    "ci_hi": 31.84,
+    "n": 107,
+    "smoothed": 30.91,
+    "ci_lo_smooth": 29.46,
+    "ci_hi_smooth": 32.36
+  },
+  {
+    "year": 1991,
+    "median": 31.14,
+    "ci_lo": 29.99,
+    "ci_hi": 33.31,
+    "n": 100,
+    "smoothed": 30.76,
+    "ci_lo_smooth": 29.1,
+    "ci_hi_smooth": 32.42
+  },
+  {
+    "year": 1992,
+    "median": 32.72,
+    "ci_lo": 30.62,
+    "ci_hi": 34.38,
+    "n": 97,
+    "smoothed": 31.83,
+    "ci_lo_smooth": 29.95,
+    "ci_hi_smooth": 33.71
+  },
+  {
+    "year": 1993,
+    "median": 29.62,
+    "ci_lo": 28.81,
+    "ci_hi": 32.24,
+    "n": 136,
+    "smoothed": 31.77,
+    "ci_lo_smooth": 30.05,
+    "ci_hi_smooth": 33.48
+  },
+  {
+    "year": 1994,
+    "median": 33.64,
+    "ci_lo": 30.84,
+    "ci_hi": 35.38,
+    "n": 209,
+    "smoothed": 32.02,
+    "ci_lo_smooth": 29.75,
+    "ci_hi_smooth": 34.29
+  },
+  {
+    "year": 1995,
+    "median": 30.66,
+    "ci_lo": 28.73,
+    "ci_hi": 32.97,
+    "n": 115,
+    "smoothed": 31.82,
+    "ci_lo_smooth": 29.7,
+    "ci_hi_smooth": 33.94
+  },
+  {
+    "year": 1996,
+    "median": 32.67,
+    "ci_lo": 29.94,
+    "ci_hi": 34.35,
+    "n": 114,
+    "smoothed": 32.76,
+    "ci_lo_smooth": 30.55,
+    "ci_hi_smooth": 34.96
+  },
+  {
+    "year": 1997,
+    "median": 31.41,
+    "ci_lo": 27.98,
+    "ci_hi": 34.61,
+    "n": 102,
+    "smoothed": 32.29,
+    "ci_lo_smooth": 28.98,
+    "ci_hi_smooth": 35.6
+  },
+  {
+    "year": 1999,
+    "median": 33.78,
+    "ci_lo": 32.26,
+    "ci_hi": 35.47,
+    "n": 202,
+    "smoothed": 32.59,
+    "ci_lo_smooth": 30.99,
+    "ci_hi_smooth": 34.2
+  },
+  {
+    "year": 2001,
+    "median": 31.98,
+    "ci_lo": 31.48,
+    "ci_hi": 33.42,
+    "n": 209,
+    "smoothed": 32.6,
+    "ci_lo_smooth": 31.63,
+    "ci_hi_smooth": 33.57
+  },
+  {
+    "year": 2003,
+    "median": 32.6,
+    "ci_lo": 31.0,
+    "ci_hi": 35.7,
+    "n": 213,
+    "smoothed": 33.17,
+    "ci_lo_smooth": 30.82,
+    "ci_hi_smooth": 35.52
+  },
+  {
+    "year": 2005,
+    "median": 32.64,
+    "ci_lo": 31.66,
+    "ci_hi": 34.48,
+    "n": 231,
+    "smoothed": 33.14,
+    "ci_lo_smooth": 31.73,
+    "ci_hi_smooth": 34.55
+  },
+  {
+    "year": 2007,
+    "median": 34.91,
+    "ci_lo": 32.57,
+    "ci_hi": 36.6,
+    "n": 211,
+    "smoothed": 33.08,
+    "ci_lo_smooth": 31.06,
+    "ci_hi_smooth": 35.09
+  },
+  {
+    "year": 2009,
+    "median": 33.76,
+    "ci_lo": 31.77,
+    "ci_hi": 36.93,
+    "n": 162,
+    "smoothed": 33.23,
+    "ci_lo_smooth": 30.65,
+    "ci_hi_smooth": 35.81
+  },
+  {
+    "year": 2011,
+    "median": 31.41,
+    "ci_lo": 29.73,
+    "ci_hi": 32.48,
+    "n": 177,
+    "smoothed": 33.23,
+    "ci_lo_smooth": 31.85,
+    "ci_hi_smooth": 34.6
+  },
+  {
+    "year": 2013,
+    "median": 33.32,
+    "ci_lo": 31.63,
+    "ci_hi": 35.27,
+    "n": 168,
+    "smoothed": 33.0,
+    "ci_lo_smooth": 31.18,
+    "ci_hi_smooth": 34.82
+  },
+  {
+    "year": 2015,
+    "median": 32.41,
+    "ci_lo": 31.22,
+    "ci_hi": 33.47,
+    "n": 165,
+    "smoothed": 33.44,
+    "ci_lo_smooth": 32.31,
+    "ci_hi_smooth": 34.56
+  },
+  {
+    "year": 2017,
+    "median": 33.9,
+    "ci_lo": 31.94,
+    "ci_hi": 35.5,
+    "n": 221,
+    "smoothed": 34.46,
+    "ci_lo_smooth": 32.68,
+    "ci_hi_smooth": 36.24
+  },
+  {
+    "year": 2019,
+    "median": 35.23,
+    "ci_lo": 32.77,
+    "ci_hi": 35.9,
+    "n": 250,
+    "smoothed": 34.76,
+    "ci_lo_smooth": 33.2,
+    "ci_hi_smooth": 36.32
+  },
+  {
+    "year": 2021,
+    "median": 36.08,
+    "ci_lo": 33.83,
+    "ci_hi": 37.04,
+    "n": 282,
+    "smoothed": 35.16,
+    "ci_lo_smooth": 33.55,
+    "ci_hi_smooth": 36.77
+  },
+  {
+    "year": 2023,
+    "median": 35.16,
+    "ci_lo": 32.69,
+    "ci_hi": 36.29,
+    "n": 221,
+    "smoothed": 35.53,
+    "ci_lo_smooth": 33.73,
+    "ci_hi_smooth": 37.33
+  }
+]

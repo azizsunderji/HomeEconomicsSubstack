@@ -1,0 +1,210 @@
+[
+  {
+    "year": 2000,
+    "obs_median": 35,
+    "obs_mean": 37.9,
+    "contam_rate": 35.9,
+    "cash_share": 3.0,
+    "corrected_median": 32.5
+  },
+  {
+    "year": 2001,
+    "obs_median": 35,
+    "obs_mean": 37.9,
+    "contam_rate": 30.2,
+    "cash_share": 3.7,
+    "corrected_median": 33.2
+  },
+  {
+    "year": 2002,
+    "obs_median": 34,
+    "obs_mean": 37.3,
+    "contam_rate": 25.4,
+    "cash_share": 4.5,
+    "corrected_median": 33.0
+  },
+  {
+    "year": 2003,
+    "obs_median": 34,
+    "obs_mean": 37.7,
+    "contam_rate": 21.4,
+    "cash_share": 5.2,
+    "corrected_median": 33.9
+  },
+  {
+    "year": 2004,
+    "obs_median": 34,
+    "obs_mean": 37.5,
+    "contam_rate": 18.0,
+    "cash_share": 5.9,
+    "corrected_median": 34.0
+  },
+  {
+    "year": 2005,
+    "obs_median": 34,
+    "obs_mean": 37.3,
+    "contam_rate": 15.1,
+    "cash_share": 6.7,
+    "corrected_median": 34.1
+  },
+  {
+    "year": 2006,
+    "obs_median": 34,
+    "obs_mean": 37.5,
+    "contam_rate": 12.7,
+    "cash_share": 7.4,
+    "corrected_median": 34.5
+  },
+  {
+    "year": 2007,
+    "obs_median": 34,
+    "obs_mean": 37.3,
+    "contam_rate": 10.7,
+    "cash_share": 8.1,
+    "corrected_median": 34.5
+  },
+  {
+    "year": 2008,
+    "obs_median": 33,
+    "obs_mean": 37.0,
+    "contam_rate": 9.0,
+    "cash_share": 8.9,
+    "corrected_median": 34.4
+  },
+  {
+    "year": 2009,
+    "obs_median": 32,
+    "obs_mean": 36.3,
+    "contam_rate": 7.6,
+    "cash_share": 9.6,
+    "corrected_median": 33.9
+  },
+  {
+    "year": 2010,
+    "obs_median": 32,
+    "obs_mean": 35.7,
+    "contam_rate": 6.3,
+    "cash_share": 10.3,
+    "corrected_median": 33.5
+  },
+  {
+    "year": 2011,
+    "obs_median": 32,
+    "obs_mean": 36.8,
+    "contam_rate": 5.3,
+    "cash_share": 11.1,
+    "corrected_median": 34.7
+  },
+  {
+    "year": 2012,
+    "obs_median": 32,
+    "obs_mean": 36.1,
+    "contam_rate": 4.5,
+    "cash_share": 11.8,
+    "corrected_median": 34.2
+  },
+  {
+    "year": 2013,
+    "obs_median": 32,
+    "obs_mean": 36.3,
+    "contam_rate": 3.8,
+    "cash_share": 12.5,
+    "corrected_median": 34.5
+  },
+  {
+    "year": 2014,
+    "obs_median": 32,
+    "obs_mean": 36.3,
+    "contam_rate": 3.2,
+    "cash_share": 13.2,
+    "corrected_median": 34.6
+  },
+  {
+    "year": 2015,
+    "obs_median": 32,
+    "obs_mean": 35.7,
+    "contam_rate": 2.7,
+    "cash_share": 14.0,
+    "corrected_median": 34.1
+  },
+  {
+    "year": 2016,
+    "obs_median": 32,
+    "obs_mean": 35.7,
+    "contam_rate": 2.2,
+    "cash_share": 14.7,
+    "corrected_median": 34.3
+  },
+  {
+    "year": 2017,
+    "obs_median": 32,
+    "obs_mean": 35.5,
+    "contam_rate": 1.9,
+    "cash_share": 15.4,
+    "corrected_median": 34.2
+  },
+  {
+    "year": 2018,
+    "obs_median": 33,
+    "obs_mean": 35.8,
+    "contam_rate": 1.6,
+    "cash_share": 16.2,
+    "corrected_median": 34.5
+  },
+  {
+    "year": 2019,
+    "obs_median": 33,
+    "obs_mean": 35.8,
+    "contam_rate": 1.3,
+    "cash_share": 16.9,
+    "corrected_median": 34.6
+  },
+  {
+    "year": 2020,
+    "obs_median": 33,
+    "obs_mean": 36.4,
+    "contam_rate": 1.1,
+    "cash_share": 17.6,
+    "corrected_median": 35.2
+  },
+  {
+    "year": 2021,
+    "obs_median": 34,
+    "obs_mean": 36.4,
+    "contam_rate": 0.9,
+    "cash_share": 18.4,
+    "corrected_median": 35.3
+  },
+  {
+    "year": 2022,
+    "obs_median": 34,
+    "obs_mean": 36.4,
+    "contam_rate": 0.8,
+    "cash_share": 19.1,
+    "corrected_median": 35.4
+  },
+  {
+    "year": 2023,
+    "obs_median": 33,
+    "obs_mean": 35.8,
+    "contam_rate": 0.7,
+    "cash_share": 19.8,
+    "corrected_median": 35.0
+  },
+  {
+    "year": 2024,
+    "obs_median": 33,
+    "obs_mean": 36.1,
+    "contam_rate": 0.6,
+    "cash_share": 20.6,
+    "corrected_median": 35.3
+  },
+  {
+    "year": 2025,
+    "obs_median": 34,
+    "obs_mean": 36.2,
+    "contam_rate": 0.5,
+    "cash_share": 21.3,
+    "corrected_median": 35.5
+  }
+]

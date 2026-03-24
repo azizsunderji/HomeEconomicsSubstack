@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family:'ABC Oracle Edu'; src:url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Thin.otf'); font-weight:200; }
+  @font-face { font-family:'ABC Oracle Edu'; src:url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf'); font-weight:300; }
+  @font-face { font-family:'ABC Oracle Edu'; src:url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Book.otf'); font-weight:350; }
+  @font-face { font-family:'ABC Oracle Edu'; src:url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf'); font-weight:400; }
+  @font-face { font-family:'ABC Oracle Edu'; src:url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf'); font-weight:500; }
+  @font-face { font-family:'ABC Oracle Edu'; src:url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf'); font-weight:700; }
+  body { margin: 0; background: #FFFFFF; display: flex; justify-content: center; padding: 20px; }
+</style>
+</head>
+<body>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+
+// --- DATA ---
+const ccpData = [
+  { year: 2000, obs_median: 35, corrected_median: 32.5 },
+  { year: 2001, obs_median: 35, corrected_median: 33.2 },
+  { year: 2002, obs_median: 34, corrected_median: 33.0 },
+  { year: 2003, obs_median: 34, corrected_median: 33.9 },
+  { year: 2004, obs_median: 34, corrected_median: 34.0 },
+  { year: 2005, obs_median: 34, corrected_median: 34.1 },
+  { year: 2006, obs_median: 34, corrected_median: 34.5 },
+  { year: 2007, obs_median: 34, corrected_median: 34.5 },
+  { year: 2008, obs_median: 33, corrected_median: 34.4 },
+  { year: 2009, obs_median: 32, corrected_median: 33.9 },
+  { year: 2010, obs_median: 32, corrected_median: 33.5 },
+  { year: 2011, obs_median: 32, corrected_median: 34.7 },
+  { year: 2012, obs_median: 32, corrected_median: 34.2 },
+  { year: 2013, obs_median: 32, corrected_median: 34.5 },
+  { year: 2014, obs_median: 32, corrected_median: 34.6 },
+  { year: 2015, obs_median: 32, corrected_median: 34.1 },
+  { year: 2016, obs_median: 32, corrected_median: 34.3 },
+  { year: 2017, obs_median: 32, corrected_median: 34.2 },
+  { year: 2018, obs_median: 33, corrected_median: 34.5 },
+  { year: 2019, obs_median: 33, corrected_median: 34.6 },
+  { year: 2020, obs_median: 33, corrected_median: 35.2 },
+  { year: 2021, obs_median: 34, corrected_median: 35.3 },
+  { year: 2022, obs_median: 34, corrected_median: 35.4 },
+  { year: 2023, obs_median: 33, corrected_median: 35.0 },
+  { year: 2024, obs_median: 33, corrected_median: 35.3 },
+  { year: 2025, obs_median: 34, corrected_median: 35.5 }
+];
+
+const psidData = [
+  { year: 1999, smoothed: 32.59 },
+  { year: 2001, smoothed: 32.60 },
+  { year: 2003, smoothed: 33.17 },
+  { year: 2005, smoothed: 33.14 },
+  { year: 2007, smoothed: 33.08 },
+  { year: 2009, smoothed: 33.23 },
+  { year: 2011, smoothed: 33.23 },
+  { year: 2013, smoothed: 33.00 },
+  { year: 2015, smoothed: 33.44 },
+  { year: 2017, smoothed: 34.46 },
+  { year: 2019, smoothed: 34.76 },
+  { year: 2021, smoothed: 35.16 },
+  { year: 2023, smoothed: 35.53 }
+];
+
+// --- DIMENSIONS ---
+const W = 960, H = 987;
+const buffer = 40;
+const gridLeftEdge = buffer;
+const gridRightEdge = W - buffer;
+
+// Layout system
+const titleY = 40 + 32;
+const subtitleY = titleY + 34;
+const gapSubtitleToChart = 75;
+const chartTop = subtitleY + gapSubtitleToChart;
+
+// Source block from bottom
+const sourceLineH = 18;
+const sourceLines = 2;
+const sourceBlockH = sourceLineH * sourceLines;
+const sourceBottom = H - buffer;
+const sourceTop = sourceBottom - sourceBlockH;
+
+const gapXaxisToSource = 45;
+const chartBottom = sourceTop - gapXaxisToSource - 40; // 40 for x-axis labels+ticks
+
+// --- SCALES ---
+const xScale = d3.scaleLinear()
+  .domain([1999, 2026])
+  .range([gridLeftEdge, gridRightEdge]);
+
+const yScale = d3.scaleLinear()
+  .domain([30, 38])
+  .range([chartBottom, chartTop]);
+
+// --- SVG ---
+const svg = d3.select("body").append("svg")
+  .attr("width", W)
+  .attr("height", H)
+  .attr("viewBox", `0 0 ${W} ${H}`);
+
+// Background
+svg.append("rect")
+  .attr("width", W)
+  .attr("height", H)
+  .attr("fill", "#F6F7F3");
+
+// --- TITLE ---
+svg.append("text")
+  .attr("x", gridLeftEdge)
+  .attr("y", titleY)
+  .attr("font-family", "ABC Oracle Edu")
+  .attr("font-size", "32px")
+  .attr("font-weight", 500)
+  .attr("fill", "#3D3733")
+  .text("Correcting the Fed\u2019s FTB age estimate");
+
+// --- SUBTITLE ---
+svg.append("text")
+  .attr("x", gridLeftEdge)
+  .attr("y", subtitleY)
+  .attr("font-family", "ABC Oracle Edu")
+  .attr("font-size", "23px")
+  .attr("font-weight", 400)
+  .attr("fill", "#7F7570")
+  .text("CCP observed vs. corrected for misclassification and cash buyer exclusion");
+
+// --- GRIDLINES ---
+const yTicks = [30, 32, 34, 36, 38];
+const gridG = svg.append("g").attr("id", "grid-lines");
+yTicks.forEach(t => {
+  gridG.append("line")
+    .attr("x1", gridLeftEdge)
+    .attr("x2", gridRightEdge)
+    .attr("y1", yScale(t))
+    .attr("y2", yScale(t))
+    .attr("stroke", "#e1e2e3")
+    .attr("stroke-width", 1);
+});
+
+// --- Y-AXIS LABELS ---
+const yLabelsG = svg.append("g").attr("id", "y-axis-labels");
+yTicks.forEach((t, i) => {
+  const label = (i === yTicks.length - 1) ? t + " yrs" : String(t);
+  yLabelsG.append("text")
+    .attr("x", gridLeftEdge)
+    .attr("y", yScale(t))
+    .attr("dy", "-0.35em")
+    .attr("font-family", "ABC Oracle Edu")
+    .attr("font-size", "22px")
+    .attr("font-weight", 300)
+    .attr("fill", "#333")
+    .attr("text-anchor", "start")
+    .text(label);
+});
+
+// --- X-AXIS ---
+const xTicks = [2000, 2005, 2010, 2015, 2020, 2025];
+const xTickLabels = ["2000", "\u201905", "\u201910", "\u201915", "\u201920", "\u201925"];
+
+const xTicksG = svg.append("g").attr("id", "x-axis-ticks");
+const xLabelsG = svg.append("g").attr("id", "x-axis-labels");
+
+xTicks.forEach((t, i) => {
+  const x = xScale(t);
+  xTicksG.append("line")
+    .attr("x1", x)
+    .attr("x2", x)
+    .attr("y1", chartBottom)
+    .attr("y2", chartBottom + 12)
+    .attr("stroke", "#3D3733")
+    .attr("stroke-width", 0.5);
+
+  xLabelsG.append("text")
+    .attr("x", x)
+    .attr("y", chartBottom + 12)
+    .attr("dy", "1.5em")
+    .attr("font-family", "ABC Oracle Edu")
+    .attr("font-size", "22px")
+    .attr("font-weight", 300)
+    .attr("fill", "#333")
+    .attr("text-anchor", "middle")
+    .text(xTickLabels[i]);
+});
+
+// --- LINE GENERATORS ---
+const lineGen = d3.line()
+  .x(d => xScale(d.year))
+  .curve(d3.curveMonotoneX);
+
+// --- DATA SERIES ---
+const seriesG = svg.append("g").attr("id", "data-series");
+
+// CCP Observed
+seriesG.append("path")
+  .datum(ccpData)
+  .attr("d", lineGen.y(d => yScale(d.obs_median)))
+  .attr("fill", "none")
+  .attr("stroke", "#F4743B")
+  .attr("stroke-width", 2.5)
+  .style("mix-blend-mode", "multiply");
+
+// CCP Corrected
+seriesG.append("path")
+  .datum(ccpData)
+  .attr("d", lineGen.y(d => yScale(d.corrected_median)))
+  .attr("fill", "none")
+  .attr("stroke", "#0BB4FF")
+  .attr("stroke-width", 2.5)
+  .style("mix-blend-mode", "multiply");
+
+// PSID (dashed)
+seriesG.append("path")
+  .datum(psidData)
+  .attr("d", lineGen.y(d => yScale(d.smoothed)))
+  .attr("fill", "none")
+  .attr("stroke", "#3D3733")
+  .attr("stroke-width", 2.5)
+  .attr("stroke-dasharray", "8,5")
+  .style("mix-blend-mode", "multiply");
+
+// --- INLINE LABELS ---
+function addLabel(id, text, x, y, color) {
+  const g = svg.append("g").attr("id", id);
+  // Halo
+  g.append("text")
+    .attr("x", x)
+    .attr("y", y)
+    .attr("font-family", "ABC Oracle Edu")
+    .attr("font-size", "16px")
+    .attr("font-weight", 500)
+    .attr("fill", "#F6F7F3")
+    .attr("stroke", "#F6F7F3")
+    .attr("stroke-width", 5)
+    .attr("stroke-linejoin", "round")
+    .attr("paint-order", "stroke")
+    .text(text);
+  // Text
+  g.append("text")
+    .attr("x", x)
+    .attr("y", y)
+    .attr("font-family", "ABC Oracle Edu")
+    .attr("font-size", "16px")
+    .attr("font-weight", 500)
+    .attr("fill", color)
+    .text(text);
+}
+
+// Position labels near right end of each line
+// CCP observed: last point is (2025, 34)
+const obsLastY = yScale(ccpData[ccpData.length - 1].obs_median);
+const corrLastY = yScale(ccpData[ccpData.length - 1].corrected_median);
+const psidLastY = yScale(psidData[psidData.length - 1].smoothed);
+
+// Place labels to the left of the last data point, offset vertically for readability
+const labelX = xScale(2021);
+
+addLabel("label-ccp-observed", "CCP observed", labelX, obsLastY + 20, "#F4743B");
+addLabel("label-ccp-corrected", "CCP corrected", labelX - 30, corrLastY - 12, "#0BB4FF");
+addLabel("label-psid", "PSID", labelX + 100, psidLastY - 14, "#3D3733");
+
+// --- SOURCE NOTE ---
+const sourceG = svg.append("g").attr("id", "source");
+const sourceText = sourceG.append("text")
+  .attr("x", gridLeftEdge)
+  .attr("y", sourceTop)
+  .attr("font-family", "ABC Oracle Edu")
+  .attr("font-size", "15px")
+  .attr("font-weight", 200)
+  .attr("fill", "#3D3733");
+
+sourceText.append("tspan")
+  .attr("x", gridLeftEdge)
+  .text("Sources: NY Fed Consumer Credit Panel/Equifax (observed); PSID (weighted median, 5-survey rolling avg).");
+
+sourceText.append("tspan")
+  .attr("x", gridLeftEdge)
+  .attr("dy", sourceLineH)
+  .text("CCP corrected for misclassified prior owners (~36% in 2000, decaying) and cash buyer exclusion (~21% in 2025).");
+
+// --- LOGO ---
+const logoWidth = 130;
+const logoAspect = 1022 / 254; // approximate from the PNG dimensions
+const logoHeight = logoWidth / logoAspect;
+const logoX = gridRightEdge - logoWidth;
+const logoY = sourceTop + sourceBlockH - logoHeight;
+
+svg.append("g").attr("id", "logo")
+  .append("image")
+  .attr("x", logoX)
+  .attr("y", logoY)
+  .attr("width", logoWidth)
+  .attr("height", logoHeight)
+  .attr("opacity", 0.6)
+  .attr("href", "data:image/png;base64,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");
+
+</script>
+</body>
+</html>

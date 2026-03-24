@@ -1,0 +1,34 @@
+[
+  {
+    "age": 18,
+    "year": 2011,
+    "with_parents": 95,
+    "head_unmarried": 2,
+    "married_renting": 0,
+    "owning": 2
+  },
+  {
+    "age": 22,
+    "year": 2015,
+    "with_parents": 70,
+    "head_unmarried": 18,
+    "married_renting": 5,
+    "owning": 7
+  },
+  {
+    "age": 26,
+    "year": 2019,
+    "with_parents": 48,
+    "head_unmarried": 21,
+    "married_renting": 13,
+    "owning": 17
+  },
+  {
+    "age": 30,
+    "year": 2023,
+    "with_parents": 36,
+    "head_unmarried": 17,
+    "married_renting": 14,
+    "owning": 33
+  }
+]

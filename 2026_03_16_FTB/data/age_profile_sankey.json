@@ -1,0 +1,822 @@
+{
+  "1976": [
+    {
+      "age": 15,
+      "with_parents": 99.7,
+      "unm_rent": 0.0,
+      "unm_own": 0.1,
+      "marr_rent": 0.1,
+      "marr_own": 0.1
+    },
+    {
+      "age": 16,
+      "with_parents": 98.8,
+      "unm_rent": 0.1,
+      "unm_own": 0.1,
+      "marr_rent": 0.7,
+      "marr_own": 0.3
+    },
+    {
+      "age": 17,
+      "with_parents": 96.9,
+      "unm_rent": 0.4,
+      "unm_own": 0.0,
+      "marr_rent": 2.0,
+      "marr_own": 0.6
+    },
+    {
+      "age": 18,
+      "with_parents": 90.3,
+      "unm_rent": 1.9,
+      "unm_own": 0.0,
+      "marr_rent": 5.9,
+      "marr_own": 1.8
+    },
+    {
+      "age": 19,
+      "with_parents": 79.4,
+      "unm_rent": 4.4,
+      "unm_own": 0.2,
+      "marr_rent": 11.3,
+      "marr_own": 4.8
+    },
+    {
+      "age": 20,
+      "with_parents": 68.8,
+      "unm_rent": 7.1,
+      "unm_own": 0.6,
+      "marr_rent": 17.3,
+      "marr_own": 6.1
+    },
+    {
+      "age": 21,
+      "with_parents": 56.7,
+      "unm_rent": 9.8,
+      "unm_own": 0.9,
+      "marr_rent": 22.7,
+      "marr_own": 9.9
+    },
+    {
+      "age": 22,
+      "with_parents": 45.2,
+      "unm_rent": 12.3,
+      "unm_own": 1.1,
+      "marr_rent": 28.4,
+      "marr_own": 13.0
+    },
+    {
+      "age": 23,
+      "with_parents": 36.9,
+      "unm_rent": 13.1,
+      "unm_own": 1.0,
+      "marr_rent": 30.3,
+      "marr_own": 18.7
+    },
+    {
+      "age": 24,
+      "with_parents": 27.9,
+      "unm_rent": 13.8,
+      "unm_own": 1.9,
+      "marr_rent": 30.6,
+      "marr_own": 25.7
+    },
+    {
+      "age": 25,
+      "with_parents": 22.4,
+      "unm_rent": 14.0,
+      "unm_own": 2.1,
+      "marr_rent": 32.7,
+      "marr_own": 28.9
+    },
+    {
+      "age": 26,
+      "with_parents": 19.1,
+      "unm_rent": 12.2,
+      "unm_own": 2.9,
+      "marr_rent": 30.7,
+      "marr_own": 35.1
+    },
+    {
+      "age": 27,
+      "with_parents": 13.5,
+      "unm_rent": 12.3,
+      "unm_own": 2.9,
+      "marr_rent": 27.9,
+      "marr_own": 43.4
+    },
+    {
+      "age": 28,
+      "with_parents": 12.5,
+      "unm_rent": 12.5,
+      "unm_own": 2.4,
+      "marr_rent": 25.6,
+      "marr_own": 47.0
+    },
+    {
+      "age": 29,
+      "with_parents": 10.7,
+      "unm_rent": 10.3,
+      "unm_own": 3.2,
+      "marr_rent": 25.1,
+      "marr_own": 50.8
+    },
+    {
+      "age": 30,
+      "with_parents": 11.5,
+      "unm_rent": 9.8,
+      "unm_own": 3.9,
+      "marr_rent": 21.1,
+      "marr_own": 53.6
+    },
+    {
+      "age": 31,
+      "with_parents": 9.9,
+      "unm_rent": 10.0,
+      "unm_own": 3.3,
+      "marr_rent": 19.9,
+      "marr_own": 56.8
+    },
+    {
+      "age": 32,
+      "with_parents": 7.7,
+      "unm_rent": 9.0,
+      "unm_own": 3.8,
+      "marr_rent": 19.2,
+      "marr_own": 60.4
+    },
+    {
+      "age": 33,
+      "with_parents": 7.3,
+      "unm_rent": 9.0,
+      "unm_own": 3.9,
+      "marr_rent": 18.1,
+      "marr_own": 61.8
+    },
+    {
+      "age": 34,
+      "with_parents": 6.9,
+      "unm_rent": 9.2,
+      "unm_own": 4.9,
+      "marr_rent": 15.5,
+      "marr_own": 63.5
+    },
+    {
+      "age": 35,
+      "with_parents": 6.5,
+      "unm_rent": 8.5,
+      "unm_own": 4.1,
+      "marr_rent": 16.4,
+      "marr_own": 64.5
+    },
+    {
+      "age": 36,
+      "with_parents": 5.4,
+      "unm_rent": 8.5,
+      "unm_own": 4.1,
+      "marr_rent": 16.9,
+      "marr_own": 65.1
+    },
+    {
+      "age": 37,
+      "with_parents": 6.2,
+      "unm_rent": 6.4,
+      "unm_own": 5.0,
+      "marr_rent": 16.7,
+      "marr_own": 65.5
+    },
+    {
+      "age": 38,
+      "with_parents": 6.4,
+      "unm_rent": 7.5,
+      "unm_own": 5.6,
+      "marr_rent": 13.8,
+      "marr_own": 66.8
+    },
+    {
+      "age": 39,
+      "with_parents": 5.2,
+      "unm_rent": 9.2,
+      "unm_own": 4.4,
+      "marr_rent": 12.9,
+      "marr_own": 68.3
+    },
+    {
+      "age": 40,
+      "with_parents": 7.0,
+      "unm_rent": 7.3,
+      "unm_own": 6.8,
+      "marr_rent": 14.2,
+      "marr_own": 64.7
+    },
+    {
+      "age": 41,
+      "with_parents": 5.4,
+      "unm_rent": 7.4,
+      "unm_own": 4.5,
+      "marr_rent": 14.0,
+      "marr_own": 68.6
+    },
+    {
+      "age": 42,
+      "with_parents": 6.2,
+      "unm_rent": 5.7,
+      "unm_own": 5.2,
+      "marr_rent": 12.5,
+      "marr_own": 70.4
+    },
+    {
+      "age": 43,
+      "with_parents": 6.8,
+      "unm_rent": 6.7,
+      "unm_own": 5.2,
+      "marr_rent": 14.9,
+      "marr_own": 66.4
+    },
+    {
+      "age": 44,
+      "with_parents": 5.6,
+      "unm_rent": 6.4,
+      "unm_own": 5.4,
+      "marr_rent": 10.8,
+      "marr_own": 71.8
+    },
+    {
+      "age": 45,
+      "with_parents": 5.3,
+      "unm_rent": 7.1,
+      "unm_own": 5.8,
+      "marr_rent": 10.9,
+      "marr_own": 70.9
+    },
+    {
+      "age": 46,
+      "with_parents": 5.1,
+      "unm_rent": 6.1,
+      "unm_own": 5.8,
+      "marr_rent": 12.1,
+      "marr_own": 70.9
+    },
+    {
+      "age": 47,
+      "with_parents": 4.4,
+      "unm_rent": 6.1,
+      "unm_own": 6.8,
+      "marr_rent": 12.0,
+      "marr_own": 70.7
+    },
+    {
+      "age": 48,
+      "with_parents": 5.8,
+      "unm_rent": 5.2,
+      "unm_own": 6.8,
+      "marr_rent": 11.2,
+      "marr_own": 71.0
+    },
+    {
+      "age": 49,
+      "with_parents": 5.3,
+      "unm_rent": 8.2,
+      "unm_own": 6.7,
+      "marr_rent": 10.0,
+      "marr_own": 69.8
+    },
+    {
+      "age": 50,
+      "with_parents": 6.8,
+      "unm_rent": 6.9,
+      "unm_own": 7.2,
+      "marr_rent": 11.2,
+      "marr_own": 67.8
+    },
+    {
+      "age": 51,
+      "with_parents": 6.3,
+      "unm_rent": 6.7,
+      "unm_own": 6.7,
+      "marr_rent": 10.2,
+      "marr_own": 70.1
+    },
+    {
+      "age": 52,
+      "with_parents": 4.7,
+      "unm_rent": 7.2,
+      "unm_own": 7.4,
+      "marr_rent": 12.2,
+      "marr_own": 68.5
+    },
+    {
+      "age": 53,
+      "with_parents": 5.6,
+      "unm_rent": 6.6,
+      "unm_own": 6.9,
+      "marr_rent": 12.0,
+      "marr_own": 69.0
+    },
+    {
+      "age": 54,
+      "with_parents": 4.7,
+      "unm_rent": 6.3,
+      "unm_own": 8.1,
+      "marr_rent": 11.4,
+      "marr_own": 69.5
+    },
+    {
+      "age": 55,
+      "with_parents": 6.7,
+      "unm_rent": 7.4,
+      "unm_own": 10.0,
+      "marr_rent": 9.1,
+      "marr_own": 66.8
+    },
+    {
+      "age": 56,
+      "with_parents": 6.2,
+      "unm_rent": 7.3,
+      "unm_own": 10.2,
+      "marr_rent": 10.2,
+      "marr_own": 66.1
+    },
+    {
+      "age": 57,
+      "with_parents": 5.6,
+      "unm_rent": 6.3,
+      "unm_own": 11.2,
+      "marr_rent": 11.0,
+      "marr_own": 65.8
+    },
+    {
+      "age": 58,
+      "with_parents": 5.2,
+      "unm_rent": 6.8,
+      "unm_own": 10.7,
+      "marr_rent": 10.3,
+      "marr_own": 67.0
+    },
+    {
+      "age": 59,
+      "with_parents": 7.1,
+      "unm_rent": 7.8,
+      "unm_own": 9.9,
+      "marr_rent": 10.6,
+      "marr_own": 64.6
+    },
+    {
+      "age": 60,
+      "with_parents": 4.9,
+      "unm_rent": 8.8,
+      "unm_own": 11.1,
+      "marr_rent": 11.4,
+      "marr_own": 63.8
+    },
+    {
+      "age": 61,
+      "with_parents": 4.8,
+      "unm_rent": 7.8,
+      "unm_own": 12.2,
+      "marr_rent": 11.9,
+      "marr_own": 63.4
+    },
+    {
+      "age": 62,
+      "with_parents": 5.6,
+      "unm_rent": 8.6,
+      "unm_own": 12.5,
+      "marr_rent": 13.1,
+      "marr_own": 60.2
+    },
+    {
+      "age": 63,
+      "with_parents": 5.3,
+      "unm_rent": 7.8,
+      "unm_own": 14.0,
+      "marr_rent": 11.4,
+      "marr_own": 61.6
+    },
+    {
+      "age": 64,
+      "with_parents": 5.9,
+      "unm_rent": 8.8,
+      "unm_own": 14.9,
+      "marr_rent": 11.2,
+      "marr_own": 59.3
+    },
+    {
+      "age": 65,
+      "with_parents": 6.3,
+      "unm_rent": 11.7,
+      "unm_own": 13.8,
+      "marr_rent": 11.2,
+      "marr_own": 57.1
+    }
+  ],
+  "2025": [
+    {
+      "age": 15,
+      "with_parents": 99.8,
+      "unm_rent": 0.1,
+      "unm_own": 0.1,
+      "marr_rent": 0.0,
+      "marr_own": 0.0
+    },
+    {
+      "age": 16,
+      "with_parents": 98.8,
+      "unm_rent": 0.7,
+      "unm_own": 0.5,
+      "marr_rent": 0.0,
+      "marr_own": 0.0
+    },
+    {
+      "age": 17,
+      "with_parents": 97.4,
+      "unm_rent": 1.7,
+      "unm_own": 0.9,
+      "marr_rent": 0.0,
+      "marr_own": 0.1
+    },
+    {
+      "age": 18,
+      "with_parents": 95.5,
+      "unm_rent": 2.7,
+      "unm_own": 1.6,
+      "marr_rent": 0.2,
+      "marr_own": 0.0
+    },
+    {
+      "age": 19,
+      "with_parents": 90.0,
+      "unm_rent": 6.4,
+      "unm_own": 2.5,
+      "marr_rent": 0.7,
+      "marr_own": 0.4
+    },
+    {
+      "age": 20,
+      "with_parents": 84.0,
+      "unm_rent": 11.2,
+      "unm_own": 2.7,
+      "marr_rent": 1.4,
+      "marr_own": 0.7
+    },
+    {
+      "age": 21,
+      "with_parents": 80.1,
+      "unm_rent": 13.9,
+      "unm_own": 2.8,
+      "marr_rent": 2.2,
+      "marr_own": 0.9
+    },
+    {
+      "age": 22,
+      "with_parents": 73.8,
+      "unm_rent": 16.2,
+      "unm_own": 3.9,
+      "marr_rent": 4.1,
+      "marr_own": 2.0
+    },
+    {
+      "age": 23,
+      "with_parents": 69.3,
+      "unm_rent": 18.1,
+      "unm_own": 4.9,
+      "marr_rent": 4.5,
+      "marr_own": 3.1
+    },
+    {
+      "age": 24,
+      "with_parents": 58.5,
+      "unm_rent": 22.5,
+      "unm_own": 6.1,
+      "marr_rent": 8.2,
+      "marr_own": 4.7
+    },
+    {
+      "age": 25,
+      "with_parents": 54.5,
+      "unm_rent": 23.5,
+      "unm_own": 6.9,
+      "marr_rent": 9.4,
+      "marr_own": 5.7
+    },
+    {
+      "age": 26,
+      "with_parents": 48.5,
+      "unm_rent": 24.9,
+      "unm_own": 5.6,
+      "marr_rent": 11.9,
+      "marr_own": 9.0
+    },
+    {
+      "age": 27,
+      "with_parents": 42.6,
+      "unm_rent": 23.5,
+      "unm_own": 6.7,
+      "marr_rent": 13.2,
+      "marr_own": 13.9
+    },
+    {
+      "age": 28,
+      "with_parents": 36.4,
+      "unm_rent": 23.2,
+      "unm_own": 8.7,
+      "marr_rent": 13.7,
+      "marr_own": 18.0
+    },
+    {
+      "age": 29,
+      "with_parents": 30.8,
+      "unm_rent": 22.6,
+      "unm_own": 9.3,
+      "marr_rent": 14.4,
+      "marr_own": 23.0
+    },
+    {
+      "age": 30,
+      "with_parents": 33.1,
+      "unm_rent": 20.8,
+      "unm_own": 7.6,
+      "marr_rent": 16.9,
+      "marr_own": 21.6
+    },
+    {
+      "age": 31,
+      "with_parents": 29.9,
+      "unm_rent": 19.5,
+      "unm_own": 8.4,
+      "marr_rent": 16.0,
+      "marr_own": 26.1
+    },
+    {
+      "age": 32,
+      "with_parents": 31.0,
+      "unm_rent": 17.8,
+      "unm_own": 8.2,
+      "marr_rent": 15.0,
+      "marr_own": 27.9
+    },
+    {
+      "age": 33,
+      "with_parents": 25.9,
+      "unm_rent": 16.0,
+      "unm_own": 8.4,
+      "marr_rent": 15.1,
+      "marr_own": 34.7
+    },
+    {
+      "age": 34,
+      "with_parents": 24.7,
+      "unm_rent": 15.3,
+      "unm_own": 7.5,
+      "marr_rent": 16.6,
+      "marr_own": 35.9
+    },
+    {
+      "age": 35,
+      "with_parents": 23.3,
+      "unm_rent": 14.9,
+      "unm_own": 8.7,
+      "marr_rent": 16.5,
+      "marr_own": 36.6
+    },
+    {
+      "age": 36,
+      "with_parents": 18.4,
+      "unm_rent": 16.9,
+      "unm_own": 8.8,
+      "marr_rent": 16.6,
+      "marr_own": 39.4
+    },
+    {
+      "age": 37,
+      "with_parents": 19.3,
+      "unm_rent": 15.4,
+      "unm_own": 6.3,
+      "marr_rent": 15.1,
+      "marr_own": 43.9
+    },
+    {
+      "age": 38,
+      "with_parents": 18.6,
+      "unm_rent": 12.2,
+      "unm_own": 8.9,
+      "marr_rent": 14.6,
+      "marr_own": 45.6
+    },
+    {
+      "age": 39,
+      "with_parents": 18.5,
+      "unm_rent": 13.0,
+      "unm_own": 8.6,
+      "marr_rent": 14.1,
+      "marr_own": 45.9
+    },
+    {
+      "age": 40,
+      "with_parents": 18.8,
+      "unm_rent": 13.0,
+      "unm_own": 10.1,
+      "marr_rent": 12.9,
+      "marr_own": 45.2
+    },
+    {
+      "age": 41,
+      "with_parents": 19.0,
+      "unm_rent": 12.4,
+      "unm_own": 8.9,
+      "marr_rent": 13.8,
+      "marr_own": 45.8
+    },
+    {
+      "age": 42,
+      "with_parents": 18.4,
+      "unm_rent": 11.9,
+      "unm_own": 9.5,
+      "marr_rent": 12.9,
+      "marr_own": 47.4
+    },
+    {
+      "age": 43,
+      "with_parents": 18.2,
+      "unm_rent": 12.2,
+      "unm_own": 9.9,
+      "marr_rent": 12.0,
+      "marr_own": 47.8
+    },
+    {
+      "age": 44,
+      "with_parents": 16.0,
+      "unm_rent": 10.9,
+      "unm_own": 10.0,
+      "marr_rent": 12.4,
+      "marr_own": 50.6
+    },
+    {
+      "age": 45,
+      "with_parents": 17.7,
+      "unm_rent": 12.0,
+      "unm_own": 11.5,
+      "marr_rent": 9.7,
+      "marr_own": 49.1
+    },
+    {
+      "age": 46,
+      "with_parents": 16.4,
+      "unm_rent": 9.0,
+      "unm_own": 10.9,
+      "marr_rent": 11.5,
+      "marr_own": 52.2
+    },
+    {
+      "age": 47,
+      "with_parents": 17.6,
+      "unm_rent": 12.0,
+      "unm_own": 10.2,
+      "marr_rent": 10.3,
+      "marr_own": 49.9
+    },
+    {
+      "age": 48,
+      "with_parents": 18.0,
+      "unm_rent": 9.2,
+      "unm_own": 10.9,
+      "marr_rent": 10.8,
+      "marr_own": 51.1
+    },
+    {
+      "age": 49,
+      "with_parents": 13.8,
+      "unm_rent": 10.4,
+      "unm_own": 10.6,
+      "marr_rent": 12.0,
+      "marr_own": 53.1
+    },
+    {
+      "age": 50,
+      "with_parents": 16.7,
+      "unm_rent": 11.7,
+      "unm_own": 11.0,
+      "marr_rent": 10.6,
+      "marr_own": 49.9
+    },
+    {
+      "age": 51,
+      "with_parents": 17.4,
+      "unm_rent": 10.5,
+      "unm_own": 13.1,
+      "marr_rent": 9.6,
+      "marr_own": 49.5
+    },
+    {
+      "age": 52,
+      "with_parents": 15.5,
+      "unm_rent": 10.7,
+      "unm_own": 12.4,
+      "marr_rent": 7.7,
+      "marr_own": 53.7
+    },
+    {
+      "age": 53,
+      "with_parents": 14.9,
+      "unm_rent": 10.9,
+      "unm_own": 13.3,
+      "marr_rent": 8.5,
+      "marr_own": 52.3
+    },
+    {
+      "age": 54,
+      "with_parents": 14.3,
+      "unm_rent": 10.0,
+      "unm_own": 14.5,
+      "marr_rent": 8.1,
+      "marr_own": 53.1
+    },
+    {
+      "age": 55,
+      "with_parents": 15.5,
+      "unm_rent": 10.0,
+      "unm_own": 13.7,
+      "marr_rent": 6.8,
+      "marr_own": 53.9
+    },
+    {
+      "age": 56,
+      "with_parents": 16.3,
+      "unm_rent": 10.7,
+      "unm_own": 14.5,
+      "marr_rent": 7.1,
+      "marr_own": 51.4
+    },
+    {
+      "age": 57,
+      "with_parents": 14.2,
+      "unm_rent": 11.2,
+      "unm_own": 15.7,
+      "marr_rent": 6.3,
+      "marr_own": 52.5
+    },
+    {
+      "age": 58,
+      "with_parents": 17.3,
+      "unm_rent": 9.6,
+      "unm_own": 13.6,
+      "marr_rent": 6.9,
+      "marr_own": 52.6
+    },
+    {
+      "age": 59,
+      "with_parents": 14.9,
+      "unm_rent": 11.2,
+      "unm_own": 14.6,
+      "marr_rent": 6.9,
+      "marr_own": 52.4
+    },
+    {
+      "age": 60,
+      "with_parents": 13.4,
+      "unm_rent": 9.7,
+      "unm_own": 18.1,
+      "marr_rent": 7.1,
+      "marr_own": 51.8
+    },
+    {
+      "age": 61,
+      "with_parents": 11.9,
+      "unm_rent": 10.3,
+      "unm_own": 16.3,
+      "marr_rent": 6.6,
+      "marr_own": 54.8
+    },
+    {
+      "age": 62,
+      "with_parents": 13.3,
+      "unm_rent": 9.7,
+      "unm_own": 17.6,
+      "marr_rent": 5.4,
+      "marr_own": 54.0
+    },
+    {
+      "age": 63,
+      "with_parents": 12.7,
+      "unm_rent": 9.0,
+      "unm_own": 18.1,
+      "marr_rent": 4.6,
+      "marr_own": 55.5
+    },
+    {
+      "age": 64,
+      "with_parents": 10.6,
+      "unm_rent": 12.6,
+      "unm_own": 17.2,
+      "marr_rent": 5.7,
+      "marr_own": 53.9
+    },
+    {
+      "age": 65,
+      "with_parents": 9.6,
+      "unm_rent": 9.8,
+      "unm_own": 17.5,
+      "marr_rent": 5.3,
+      "marr_own": 57.7
+    }
+  ]
+}

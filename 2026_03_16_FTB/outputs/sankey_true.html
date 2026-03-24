@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family:'ABC Oracle Edu'; src:url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Thin.otf'); font-weight:200; }
+  @font-face { font-family:'ABC Oracle Edu'; src:url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf'); font-weight:300; }
+  @font-face { font-family:'ABC Oracle Edu'; src:url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf'); font-weight:400; }
+  @font-face { font-family:'ABC Oracle Edu'; src:url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf'); font-weight:500; }
+  @font-face { font-family:'ABC Oracle Edu'; src:url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf'); font-weight:700; }
+  body { margin:20px; background:#fff; font-family:'ABC Oracle Edu',system-ui,sans-serif; }
+  .chart-container { margin-bottom: 50px; }
+</style>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+</head><body>
+<div id="chart1976" class="chart-container"></div>
+<div id="chart2025" class="chart-container"></div>
+<script>
+const COLORS = {
+  parents: "#C6DCCB",
+  heads: "#67A275",
+  unm_head: "#67A275",
+  unm_rent: "#67A275",
+  unm_own: "#0077CC",
+  married: "#F4743B",
+  marr_rent: "#F4743B",
+  marr_own: "#0BB4FF",
+};
+
+function drawSankey(containerId, yearLabel, d) {
+  const W = 960, H = 500;
+  const pad = 40;
+  const chartLeft = 80, chartRight = W - 60;
+  const chartW = chartRight - chartLeft;
+  const chartTop = 100, chartBottom = H - 80;
+  const chartH = chartBottom - chartTop;
+
+  const svg = d3.select("#"+containerId).append("svg").attr("width",W).attr("height",H)
+    .attr("font-family","ABC Oracle Edu");
+  svg.append("rect").attr("width",W).attr("height",H).attr("fill","#F6F7F3");
+
+  svg.append("text").attr("x",pad).attr("y",50)
+    .attr("font-size","28px").attr("font-weight","500").attr("fill","#3D3733")
+    .text("The path to homeownership, " + yearLabel);
+  svg.append("text").attr("x",pad).attr("y",78)
+    .attr("font-size","20px").attr("font-weight","400").attr("fill","#7F7570")
+    .text("Population flows between life stages");
+
+  // X scale: age 15 to 50
+  const x = d3.scaleLinear().domain([15, 50]).range([chartLeft, chartRight]);
+  // Y scale: 0 to 100 (% of population), going downward
+  const yScale = chartH / 100;
+
+  // Age axis
+  [15, 20, 25, 30, 35, 40, 45, 50].forEach(a => {
+    svg.append("line").attr("x1",x(a)).attr("x2",x(a))
+      .attr("y1",chartBottom).attr("y2",chartBottom+8)
+      .attr("stroke","#3D3733").attr("stroke-width",0.5);
+    svg.append("text").attr("x",x(a)).attr("y",chartBottom+25)
+      .attr("text-anchor","middle").attr("font-size","16px").attr("fill","#333")
+      .attr("font-weight","300").text(a === 50 ? a+" yrs" : a);
+  });
+
+  // Milestone age markers
+  [d.head_age, d.marr_age, d.own_age].forEach(age => {
+    svg.append("line").attr("x1",x(age)).attr("x2",x(age))
+      .attr("y1",chartTop-5).attr("y2",chartBottom)
+      .attr("stroke","#ccc").attr("stroke-width",1).attr("stroke-dasharray","4,3");
+  });
+
+  // Draw Sankey-style flows using bezier curves
+  // Each flow: from (x0, y0_top, y0_bottom) to (x1, y1_top, y1_bottom)
+  function drawFlow(x0, y0Top, y0H, x1, y1Top, y1H, color) {
+    const path = d3.path();
+    const cx = (x0 + x1) / 2;
+    // Top edge
+    path.moveTo(x0, chartTop + y0Top * yScale);
+    path.bezierCurveTo(cx, chartTop + y0Top * yScale, cx, chartTop + y1Top * yScale, x1, chartTop + y1Top * yScale);
+    // Bottom edge (reverse)
+    path.lineTo(x1, chartTop + (y1Top + y1H) * yScale);
+    path.bezierCurveTo(cx, chartTop + (y1Top + y1H) * yScale, cx, chartTop + (y0Top + y0H) * yScale, x0, chartTop + (y0Top + y0H) * yScale);
+    path.closePath();
+    svg.append("path").attr("d", path.toString())
+      .attr("fill", color).attr("opacity", 0.6);
+  }
+
+  // Stage 1: Age 15 → headship age
+  // 100% parents at 15 → splits into parents + heads at headship age
+  const ha = d.at_head;
+  drawFlow(x(15), 0, 100, x(d.head_age), 0, ha.parents, COLORS.parents);
+  drawFlow(x(15), 0, 100, x(d.head_age), ha.parents, ha.heads, COLORS.heads);
+
+  // Stage 2: headship age → marriage age
+  const ma = d.at_marr;
+  // Parents stream continues
+  drawFlow(x(d.head_age), 0, ha.parents, x(d.marr_age), 0, ma.parents, COLORS.parents);
+  // Heads split into unmarried heads + married
+  drawFlow(x(d.head_age), ha.parents, ha.heads, x(d.marr_age), ma.parents, ma.unm_head, COLORS.unm_head);
+  drawFlow(x(d.head_age), ha.parents, ha.heads, x(d.marr_age), ma.parents + ma.unm_head, ma.married, COLORS.married);
+
+  // Stage 3: marriage age → ownership age
+  const oa = d.at_own;
+  // Parents continues
+  drawFlow(x(d.marr_age), 0, ma.parents, x(d.own_age), 0, oa.parents, COLORS.parents);
+  // Unmarried heads continue
+  drawFlow(x(d.marr_age), ma.parents, ma.unm_head, x(d.own_age), oa.parents, oa.unm_head, COLORS.unm_head);
+  // Married split into renting + owning
+  drawFlow(x(d.marr_age), ma.parents + ma.unm_head, ma.married, x(d.own_age), oa.parents + oa.unm_head, oa.marr_rent, COLORS.marr_rent);
+  drawFlow(x(d.marr_age), ma.parents + ma.unm_head, ma.married, x(d.own_age), oa.parents + oa.unm_head + oa.marr_rent, oa.marr_own, COLORS.marr_own);
+
+  // Stage 4: ownership age → end (45)
+  const ea = d.at_end;
+  drawFlow(x(d.own_age), 0, oa.parents, x(45), 0, ea.parents, COLORS.parents);
+  drawFlow(x(d.own_age), oa.parents, oa.unm_head, x(45), ea.parents, ea.unm_rent + ea.unm_own, COLORS.unm_head);
+  drawFlow(x(d.own_age), oa.parents + oa.unm_head, oa.marr_rent, x(45), ea.parents + ea.unm_rent + ea.unm_own, ea.marr_rent, COLORS.marr_rent);
+  drawFlow(x(d.own_age), oa.parents + oa.unm_head + oa.marr_rent, oa.marr_own, x(45), ea.parents + ea.unm_rent + ea.unm_own + ea.marr_rent, ea.marr_own, COLORS.marr_own);
+
+  // Labels at end (age 45)
+  let cy = chartTop;
+  const endStreams = [
+    {label: "With parents " + ea.parents + "%", h: ea.parents, color: "#3D3733"},
+    {label: "Unmarried " + (ea.unm_rent+ea.unm_own) + "%", h: ea.unm_rent+ea.unm_own, color: "#3D3733"},
+    {label: "Married, renting " + ea.marr_rent + "%", h: ea.marr_rent, color: "#3D3733"},
+    {label: "Married, owning " + ea.marr_own + "%", h: ea.marr_own, color: "#3D3733"},
+  ];
+  let cumY = 0;
+  endStreams.forEach(s => {
+    if (s.h > 5) {
+      svg.append("text")
+        .attr("x", x(45) + 8)
+        .attr("y", chartTop + (cumY + s.h/2) * yScale + 4)
+        .attr("font-size","12px").attr("font-weight","400")
+        .attr("fill", s.color).text(s.label);
+    }
+    cumY += s.h;
+  });
+
+  // Milestone labels
+  svg.append("text").attr("x",x(d.head_age)).attr("y",chartTop-12)
+    .attr("text-anchor","middle").attr("font-size","13px").attr("font-weight","500")
+    .attr("fill","#67A275").text("Headship " + d.head_age);
+  svg.append("text").attr("x",x(d.marr_age)).attr("y",chartTop-12)
+    .attr("text-anchor","middle").attr("font-size","13px").attr("font-weight","500")
+    .attr("fill","#F4743B").text("Marriage " + d.marr_age);
+  svg.append("text").attr("x",x(d.own_age)).attr("y",chartTop-12)
+    .attr("text-anchor","middle").attr("font-size","13px").attr("font-weight","500")
+    .attr("fill","#0BB4FF").text("Ownership " + d.own_age);
+}
+
+const sd = {"1976": {"head_age": 21, "marr_age": 22, "own_age": 28, "at_head": {"parents": 57, "heads": 43}, "at_marr": {"parents": 45, "unm_head": 13, "married": 42}, "at_own": {"parents": 13, "unm_head": 15, "marr_rent": 25, "marr_own": 47}, "at_end": {"parents": 5, "unm_rent": 7, "unm_own": 6, "marr_rent": 11, "marr_own": 71}}, "2025": {"head_age": 24, "marr_age": 28, "own_age": 34, "at_head": {"parents": 59, "heads": 41}, "at_marr": {"parents": 36, "unm_head": 32, "married": 32}, "at_own": {"parents": 25, "unm_head": 23, "marr_rent": 17, "marr_own": 36}, "at_end": {"parents": 18, "unm_rent": 12, "unm_own": 12, "marr_rent": 10, "marr_own": 49}}};
+drawSankey("chart1976", "1976", sd["1976"]);
+drawSankey("chart2025", "2025", sd["2025"]);
+</script>
+</body></html>

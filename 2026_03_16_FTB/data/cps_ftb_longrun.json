@@ -1,0 +1,317 @@
+[
+  {
+    "year": 1976,
+    "median": 32,
+    "mean": 36.8,
+    "weighted_n": 7519745,
+    "method": "crude"
+  },
+  {
+    "year": 1981,
+    "median": 33,
+    "mean": 36.8,
+    "weighted_n": 7575785,
+    "method": "crude"
+  },
+  {
+    "year": 1982,
+    "median": 34,
+    "mean": 38.3,
+    "weighted_n": 7029837,
+    "method": "crude"
+  },
+  {
+    "year": 1983,
+    "median": 34,
+    "mean": 38.1,
+    "weighted_n": 6208821,
+    "method": "crude"
+  },
+  {
+    "year": 1984,
+    "median": 34,
+    "mean": 37.9,
+    "weighted_n": 7124155,
+    "method": "crude"
+  },
+  {
+    "year": 1986,
+    "median": 35,
+    "mean": 38.6,
+    "weighted_n": 8155008,
+    "method": "crude"
+  },
+  {
+    "year": 1987,
+    "median": 36,
+    "mean": 39.3,
+    "weighted_n": 8679209,
+    "method": "crude"
+  },
+  {
+    "year": 1988,
+    "median": 36,
+    "mean": 39.2,
+    "weighted_n": 8121353,
+    "method": "crude"
+  },
+  {
+    "year": 1989,
+    "median": 36,
+    "mean": 39.6,
+    "weighted_n": 8133958,
+    "method": "crude"
+  },
+  {
+    "year": 1990,
+    "median": 36,
+    "mean": 40.0,
+    "weighted_n": 7927687,
+    "method": "crude"
+  },
+  {
+    "year": 1991,
+    "median": 37,
+    "mean": 40.5,
+    "weighted_n": 7543658,
+    "method": "crude"
+  },
+  {
+    "year": 1992,
+    "median": 38,
+    "mean": 41.2,
+    "weighted_n": 7772727,
+    "method": "crude"
+  },
+  {
+    "year": 1993,
+    "median": 38,
+    "mean": 41.6,
+    "weighted_n": 8317543,
+    "method": "crude"
+  },
+  {
+    "year": 1994,
+    "median": 37,
+    "mean": 40.9,
+    "weighted_n": 7687171,
+    "method": "crude"
+  },
+  {
+    "year": 1995,
+    "median": 38,
+    "mean": 41.2,
+    "weighted_n": 31519046,
+    "method": "crude"
+  },
+  {
+    "year": 1996,
+    "median": 37,
+    "mean": 40.2,
+    "weighted_n": 7385025,
+    "method": "crude"
+  },
+  {
+    "year": 1997,
+    "median": 38,
+    "mean": 40.1,
+    "weighted_n": 7572127,
+    "method": "crude"
+  },
+  {
+    "year": 1998,
+    "median": 38,
+    "mean": 40.7,
+    "weighted_n": 7588171,
+    "method": "crude"
+  },
+  {
+    "year": 1999,
+    "median": 34,
+    "mean": 36.6,
+    "weighted_n": 2341499,
+    "method": "redfin"
+  },
+  {
+    "year": 2000,
+    "median": 34,
+    "mean": 36.4,
+    "weighted_n": 2894022,
+    "method": "redfin"
+  },
+  {
+    "year": 2001,
+    "median": 34,
+    "mean": 36.6,
+    "weighted_n": 2692571,
+    "method": "redfin"
+  },
+  {
+    "year": 2002,
+    "median": 33,
+    "mean": 35.6,
+    "weighted_n": 2816207,
+    "method": "redfin"
+  },
+  {
+    "year": 2003,
+    "median": 33,
+    "mean": 36.2,
+    "weighted_n": 2464460,
+    "method": "redfin"
+  },
+  {
+    "year": 2004,
+    "median": 33,
+    "mean": 36.2,
+    "weighted_n": 2448455,
+    "method": "redfin"
+  },
+  {
+    "year": 2005,
+    "median": 32,
+    "mean": 34.9,
+    "weighted_n": 2423783,
+    "method": "redfin"
+  },
+  {
+    "year": 2006,
+    "median": 32,
+    "mean": 35.7,
+    "weighted_n": 2316312,
+    "method": "redfin"
+  },
+  {
+    "year": 2007,
+    "median": 32,
+    "mean": 36.1,
+    "weighted_n": 1956376,
+    "method": "redfin"
+  },
+  {
+    "year": 2008,
+    "median": 31,
+    "mean": 34.7,
+    "weighted_n": 1715088,
+    "method": "redfin"
+  },
+  {
+    "year": 2009,
+    "median": 32,
+    "mean": 35.6,
+    "weighted_n": 1702149,
+    "method": "redfin"
+  },
+  {
+    "year": 2010,
+    "median": 33,
+    "mean": 36.2,
+    "weighted_n": 1570214,
+    "method": "redfin"
+  },
+  {
+    "year": 2011,
+    "median": 34,
+    "mean": 38.2,
+    "weighted_n": 1237222,
+    "method": "redfin"
+  },
+  {
+    "year": 2012,
+    "median": 35,
+    "mean": 38.8,
+    "weighted_n": 1439184,
+    "method": "redfin"
+  },
+  {
+    "year": 2013,
+    "median": 33,
+    "mean": 37.1,
+    "weighted_n": 1661156,
+    "method": "redfin"
+  },
+  {
+    "year": 2014,
+    "median": 34,
+    "mean": 38.2,
+    "weighted_n": 3595546,
+    "method": "redfin"
+  },
+  {
+    "year": 2015,
+    "median": 35,
+    "mean": 39.1,
+    "weighted_n": 1628287,
+    "method": "redfin"
+  },
+  {
+    "year": 2016,
+    "median": 36,
+    "mean": 38.9,
+    "weighted_n": 1790722,
+    "method": "redfin"
+  },
+  {
+    "year": 2017,
+    "median": 35,
+    "mean": 38.7,
+    "weighted_n": 2161225,
+    "method": "redfin"
+  },
+  {
+    "year": 2018,
+    "median": 38,
+    "mean": 40.0,
+    "weighted_n": 2004853,
+    "method": "redfin"
+  },
+  {
+    "year": 2019,
+    "median": 37,
+    "mean": 40.3,
+    "weighted_n": 1879216,
+    "method": "redfin"
+  },
+  {
+    "year": 2020,
+    "median": 36,
+    "mean": 38.4,
+    "weighted_n": 1860500,
+    "method": "redfin"
+  },
+  {
+    "year": 2021,
+    "median": 35,
+    "mean": 38.3,
+    "weighted_n": 1854175,
+    "method": "redfin"
+  },
+  {
+    "year": 2022,
+    "median": 35,
+    "mean": 39.5,
+    "weighted_n": 2236194,
+    "method": "redfin"
+  },
+  {
+    "year": 2023,
+    "median": 36,
+    "mean": 40.1,
+    "weighted_n": 1516995,
+    "method": "redfin"
+  },
+  {
+    "year": 2024,
+    "median": 36,
+    "mean": 40.9,
+    "weighted_n": 1269169,
+    "method": "redfin"
+  },
+  {
+    "year": 2025,
+    "median": 35,
+    "mean": 38.7,
+    "weighted_n": 1669665,
+    "method": "redfin"
+  }
+]

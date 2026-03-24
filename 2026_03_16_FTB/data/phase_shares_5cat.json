@@ -1,0 +1,90 @@
+[
+  {
+    "year": 1976,
+    "with_parents": 43.1,
+    "unmarried_renter": 6.5,
+    "married_renter": 11.0,
+    "married_owner": 34.2,
+    "unmarried_owner": 5.3
+  },
+  {
+    "year": 1980,
+    "with_parents": 41.6,
+    "unmarried_renter": 7.0,
+    "married_renter": 8.9,
+    "married_owner": 35.6,
+    "unmarried_owner": 6.8
+  },
+  {
+    "year": 1985,
+    "with_parents": 41.4,
+    "unmarried_renter": 8.2,
+    "married_renter": 9.8,
+    "married_owner": 33.5,
+    "unmarried_owner": 7.0
+  },
+  {
+    "year": 1990,
+    "with_parents": 40.8,
+    "unmarried_renter": 8.7,
+    "married_renter": 9.6,
+    "married_owner": 33.3,
+    "unmarried_owner": 7.6
+  },
+  {
+    "year": 1995,
+    "with_parents": 41.6,
+    "unmarried_renter": 8.9,
+    "married_renter": 8.7,
+    "married_owner": 32.9,
+    "unmarried_owner": 7.9
+  },
+  {
+    "year": 2000,
+    "with_parents": 41.6,
+    "unmarried_renter": 8.7,
+    "married_renter": 7.5,
+    "married_owner": 33.4,
+    "unmarried_owner": 8.8
+  },
+  {
+    "year": 2005,
+    "with_parents": 41.1,
+    "unmarried_renter": 8.5,
+    "married_renter": 6.6,
+    "married_owner": 33.9,
+    "unmarried_owner": 9.8
+  },
+  {
+    "year": 2010,
+    "with_parents": 41.7,
+    "unmarried_renter": 9.1,
+    "married_renter": 7.3,
+    "married_owner": 32.1,
+    "unmarried_owner": 9.9
+  },
+  {
+    "year": 2015,
+    "with_parents": 41.6,
+    "unmarried_renter": 10.1,
+    "married_renter": 8.2,
+    "married_owner": 30.5,
+    "unmarried_owner": 9.6
+  },
+  {
+    "year": 2020,
+    "with_parents": 41.9,
+    "unmarried_renter": 9.4,
+    "married_renter": 7.2,
+    "married_owner": 31.5,
+    "unmarried_owner": 10.0
+  },
+  {
+    "year": 2025,
+    "with_parents": 41.4,
+    "unmarried_renter": 10.3,
+    "married_renter": 7.0,
+    "married_owner": 31.1,
+    "unmarried_owner": 10.3
+  }
+]

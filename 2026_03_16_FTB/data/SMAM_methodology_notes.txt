@@ -1,0 +1,274 @@
+METHODOLOGY NOTES: Census Bureau's "Estimated Median Age at First Marriage" (Table MS-2)
+and the Hajnal Singulate Mean Age at Marriage (SMAM)
+===================================================================================
+Compiled from Census Bureau documentation, UN metadata, and demographic literature.
+
+## CRITICAL DISTINCTION: TWO DIFFERENT METHODS
+
+The Census Bureau's Table MS-2 uses a DIFFERENT method from SMAM, though both
+rely on the same input data (cross-sectional proportions never-married by age).
+
+------------------------------------------------------------------------
+METHOD 1: CENSUS BUREAU'S INDIRECT MEDIAN (used in Table MS-2 for CPS data)
+------------------------------------------------------------------------
+
+Source: Census Bureau CPS Subject Definitions; Shryock & Siegel (1971)
+"The Methods and Materials of Demography", Vol. 1, pp. 291-296.
+
+Official Census Bureau definition:
+"The estimated median age at first marriage is an approximation derived
+indirectly from tabulations of marital status and age. In computing this
+median, several steps are involved:
+  1. First, the expected proportion of young people who will ever marry
+     during their lifetime is computed.
+  2. Second, one-half of this expected proportion is calculated.
+  3. And third, the current age of young people who are at this halfway
+     mark is computed."
+
+STEP-BY-STEP ALGORITHM:
+
+Step 1: Tabulate proportion never-married (single) by age group from CPS.
+  - Use 5-year age groups: 15-19, 20-24, 25-29, ..., 45-49, 50-54
+  - Denote S_a = proportion never-married in age group a
+
+Step 2: Estimate the proportion who will EVENTUALLY marry.
+  - Use the proportion ever-married among the oldest age group (typically
+    ages 45-54) as the estimate: P_ever_marry = 1 - S_{45-54}
+  - This assumes that marriage after age 45-54 is negligible, so the
+    observed ever-married proportion at these ages approximates the
+    lifetime proportion who will ever marry.
+  - Example from Census 2000: 90.6% for men, 92.5% for women.
+
+Step 3: Compute one-half of P_ever_marry.
+  - half_P = P_ever_marry / 2
+  - This is the target: find the age at which half of those who will
+    ever marry have already married.
+
+Step 4: Find the age at which the cumulative proportion ever-married
+  equals half_P by interpolation through the never-married schedule.
+  - Convert the never-married proportions to ever-married: E_a = 1 - S_a
+  - Walk through age groups from youngest to oldest.
+  - Find the two adjacent age groups a_low and a_high where:
+      E_{a_low} < half_P <= E_{a_high}
+  - Linearly interpolate to find the exact age:
+      median_age = a_low + width * (half_P - E_{a_low}) / (E_{a_high} - E_{a_low})
+  - Shryock & Siegel originally described "osculatory interpolation"
+    (smoother than linear), but in practice linear interpolation through
+    the schedule is standard.
+
+KEY ASSUMPTION: SYNTHETIC COHORT / STATIONARITY
+  - The cross-sectional age-specific never-married proportions are treated
+    as if they represent a single cohort's marriage trajectory over time.
+  - This means: the proportion of 25-year-olds who are never-married in
+    2020 is assumed to equal what today's 20-year-olds will look like at
+    age 25 -- i.e., marriage patterns are assumed constant across cohorts.
+  - The Census Bureau itself notes: "the method makes the assumption that
+    younger cohorts will marry at the same age as older cohorts have in
+    the past."
+  - This assumption is VIOLATED whenever marriage timing is changing
+    across generations (which it has been, continuously, since ~1960).
+
+NOTE ON ACS vs CPS:
+  - The ACS (since ~2008) asks directly about year of first marriage, so
+    the ACS-based median age at first marriage (Table B12007) is a DIRECT
+    estimate from reported ages at first marriage, not an indirect estimate.
+  - The CPS indirect method is what produces Table MS-2's historical series.
+  - The two methods produce slightly different estimates (e.g., 2020 CPS:
+    men 30.5, women 28.1; 2020 ACS: men 29.7, women 28.3).
+
+
+------------------------------------------------------------------------
+METHOD 2: HAJNAL'S SINGULATE MEAN AGE AT MARRIAGE (SMAM)
+------------------------------------------------------------------------
+
+Source: Hajnal, J. (1953). "Age at Marriage and Proportions Marrying."
+Population Studies, Vol. 7, No. 2, pp. 111-136.
+
+WHAT IT COMPUTES:
+  SMAM = the average number of years lived in the never-married state
+  among those who marry before age 50.
+
+  NOTE: This is a MEAN, not a MEDIAN. It is conceptually different from
+  the Census Bureau's "estimated median age at first marriage."
+
+THE LIFE TABLE ANALOGY:
+  Hajnal's key insight: the cross-sectional proportion never-married at
+  each age is analogous to l(x) in a life table -- the proportion
+  "surviving" (remaining single) to age x.
+
+  Just as in a life table:
+    - e(0) = integral of l(x) dx / l(0) = mean age at death
+
+  For marriage:
+    - SMAM = integral of S(x) dx from 15 to 50, adjusted for those who
+      never marry = mean age at first marriage among those who do marry
+
+THE FORMULA:
+
+  Given S_a = proportion never-married (single) in 5-year age group a:
+
+  Step 1: Compute A = total person-years lived in the single state
+          from age 15 to age 50.
+
+    A = 5 * [S_{15-19} + S_{20-24} + S_{25-29} + S_{30-34} + S_{35-39} + S_{40-44} + S_{45-49}]
+
+    (If using single-year data, A = sum of S_x from x=15 to x=49)
+
+    Note: Everyone is single from age 0 to 15, contributing 15 person-years
+    each. So total person-years from birth = 15 + A. But since we want
+    age at marriage (not years lived single from birth), the formula
+    accounts for this below.
+
+  Step 2: Estimate B = proportion who remain permanently single
+          (never marry by age 50).
+
+    B = (S_{45-49} + S_{50-54}) / 2
+
+    If S_{50-54} is not available, B = S_{45-49}.
+
+  Step 3: Compute C = proportion who ever marry by age 50.
+
+    C = 1 - B
+
+  Step 4: Compute D = person-years lived single by those who NEVER marry
+          (from age 15 to 50).
+
+    D = 50 * B
+
+    (These people contribute a full 50 person-years each to the single
+    state between ages 0 and 50. But since we're measuring from age 15,
+    it's really 35*B, but the standard formula uses the version below.)
+
+  Step 5: Compute SMAM.
+
+    SMAM = (15 + A - D) / C
+
+    Equivalently (from Germán Rodríguez, Princeton):
+
+    SMAM = 15 + (5 * sum(S_{15-19} ... S_{45-49}) - 35 * B) / C
+
+    Which simplifies to:
+
+    SMAM = [15 + A - 50*B] / (1 - B)
+
+    Or equivalently:
+
+    SMAM = [15 + A - 50*B] / C
+
+WORKED EXAMPLE (Turkish Males 1990, from Princeton):
+  s_50 = 0.0233 (2.33% remain permanently single)
+  SMAM = 25.00 years
+
+
+------------------------------------------------------------------------
+ASSUMPTIONS AND LIMITATIONS (BOTH METHODS)
+------------------------------------------------------------------------
+
+1. STATIONARITY (SYNTHETIC COHORT ASSUMPTION):
+   Both methods treat cross-sectional data as if it represents a cohort's
+   lifecycle. The 30-year-olds and 25-year-olds in the same survey are
+   different birth cohorts, but the method assumes their marriage patterns
+   are identical. If marriage timing is shifting across cohorts (which it
+   has been in the US since ~1960), this assumption is violated.
+
+   Effect: When marriage age is RISING across cohorts, both methods
+   OVERESTIMATE the true cohort median/mean because the older cohorts
+   (who married younger) make it look like a higher proportion has married
+   by each age than will actually be true for younger cohorts.
+
+   Wait -- actually the opposite: when marriage age is rising, younger
+   cohorts show HIGHER never-married proportions at each age than older
+   cohorts did. The synthetic cohort method uses the young cohorts' high
+   never-married rates for young ages and the old cohorts' low never-married
+   rates for old ages. This creates a schedule where marriage looks like
+   it happens LATER than it actually did for ANY real cohort. The indirect
+   median will be HIGHER than any real cohort's median.
+
+2. NO ADJUSTMENT FOR MORTALITY / SURVIVORSHIP BIAS:
+   Neither method adjusts for differential mortality by marital status.
+   If married people have lower mortality than never-married people
+   (which is empirically true), then at older ages, the proportion
+   never-married is slightly inflated (because more of the never-married
+   died). This would slightly bias SMAM upward.
+
+   Per the academia.edu paper on relaxing SMAM assumptions: "Relaxing
+   mortality and migration assumptions leads to inflated SMAM estimates,
+   potentially by up to six months, particularly in small populations
+   with higher mortality rates."
+
+3. NO ADJUSTMENT FOR MIGRATION:
+   In populations with significant immigration/emigration, the age
+   structure of never-married proportions reflects migration patterns,
+   not just marriage patterns. "In populations with high levels of male
+   emigration, SMAM becomes unreliable for estimating male age at
+   marriage, necessitating correction methods for accuracy."
+
+4. COHORT MIXING IS INHERENT, NOT "HANDLED":
+   Neither method attempts to decompose the cross-sectional data into
+   true cohort trajectories. The synthetic cohort assumption IS the
+   method -- there is no correction for cohort mixing. That's the
+   fundamental limitation.
+
+
+------------------------------------------------------------------------
+APPLICATION TO HEADSHIP DATA (INSTEAD OF MARRIAGE)
+------------------------------------------------------------------------
+
+The same methods can be applied to ANY absorbing-state transition measured
+by current status:
+
+  Replace: "proportion never married" at age a
+  With:    "proportion never-been-a-householder" at age a (or whatever
+            the relevant status is)
+
+For SMAM-analog (mean age at first headship):
+  - S_a = proportion who have NEVER been a householder at age a
+  - A = 5 * sum of S_a across age groups
+  - B = proportion who never become householders (from oldest age group)
+  - SMAM_headship = (15 + A - 50*B) / (1 - B)
+
+For Census-median-analog (median age at first headship):
+  - Tabulate proportion who are NOT currently householders by age
+  - Estimate proportion who will ever become householders (from oldest ages)
+  - Find age where half of eventual householders have become householders
+  - Interpolate
+
+CRITICAL DIFFERENCE FOR HEADSHIP:
+  - Marriage is (mostly) an absorbing state: once married, you're
+    "ever-married" forever, even if divorced/widowed.
+  - Headship is NOT an absorbing state: you can be a householder at 30,
+    then not at 35 (moved back with parents, etc.), then again at 40.
+  - This means "proportion who have NEVER been a householder" is not
+    directly observable from a cross-section that only reports CURRENT
+    status. You would need survey data on "have you EVER been a
+    householder?" (which doesn't exist).
+  - Using CURRENT headship status as a proxy is reasonable but
+    introduces additional error from people cycling in and out of
+    headship.
+
+
+------------------------------------------------------------------------
+KEY REFERENCES
+------------------------------------------------------------------------
+
+1. Hajnal, J. (1953). "Age at Marriage and Proportions Marrying."
+   Population Studies, 7(2), 111-136.
+
+2. Shryock, H.S. & Siegel, J.S. (1971). The Methods and Materials of
+   Demography. U.S. Bureau of the Census. Vol. 1, pp. 291-296.
+
+3. Simmons, T. (2004). "What Has Happened to Median Age at First
+   Marriage Data?" Census Bureau Working Paper.
+   https://www.census.gov/content/dam/Census/library/working-papers/2004/acs/2004_Simmons_01.pdf
+
+4. Kreider, R.M. & Ellis, R. (2012). "Historical Marriage Trends from
+   1890-2010: A Focus on Race Differences." SEHSD Working Paper 2012-12.
+   https://www.census.gov/content/dam/Census/library/working-papers/2012/demo/SEHSD-WP2012-12.pdf
+
+5. Census Bureau CPS Subject Definitions: "Estimated Median Age at
+   First Marriage"
+   https://www.census.gov/programs-surveys/cps/technical-documentation/subject-definitions.html
+
+6. Rodríguez, G. Princeton demography course notes on current status
+   life tables and SMAM.
+   https://grodri.github.io/demography/cstatus
