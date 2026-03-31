@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('../../Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Thin.otf'); font-weight: 200; }
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('../../Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf'); font-weight: 300; }
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('../../Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf'); font-weight: 400; }
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('../../Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf'); font-weight: 500; }
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('../../Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf'); font-weight: 700; }
+  body { margin: 0; background: #FFFFFF; display: flex; justify-content: center; padding: 20px; }
+</style>
+</head>
+<body>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+
+const W = 960, H = 987;
+const gridLeft = 40, gridRight = 920 - 150; // room for labels
+const labelLeft = gridRight + 12;
+const titleY = 40 + 32;
+const subtitleY = titleY + 34;
+const chartTop = subtitleY + 75;
+const sourceBottomY = H - 40;
+const xAxisLabelsY = sourceBottomY - 80;
+const chartBottom = xAxisLabelsY - 30;
+
+const svg = d3.select("body").append("svg")
+  .attr("width", W).attr("height", H).attr("viewBox", `0 0 ${W} ${H}`);
+svg.append("rect").attr("width", W).attr("height", H).attr("fill", "#F6F7F3");
+
+const years = [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
+
+// Net migration in thousands — stack order matters (largest on bottom for readability)
+const countries = [
+  { name: "United States", mig: [720, 569, 20, 376, 1672, 2264, 2734, 1262], color: "#0BB4FF" },
+  { name: "Canada",        mig: [438, 495, 69, 444, 918, 1197, 816, -134],   color: "#F4743B" },
+  { name: "UK",            mig: [216, 224, 111, 251, 681, 924, 649, 204],     color: "#3D3733" },
+  { name: "Germany",       mig: [400, 327, 220, 329, 1462, 663, 430, 240],   color: "#FEC439" },
+  { name: "Australia",     mig: [238, 241, 193, -85, 208, 538, 429, 305],    color: "#67A275" },
+  { name: "Netherlands",   mig: [86, 108, 68, 107, 224, 137, 108, 95],       color: "#E67E22" },
+  { name: "Ireland",       mig: [44, 44, 45, 22, 52, 78, 79, 60],           color: "#005C99" },
+  { name: "New Zealand",   mig: [49, 52, 85, -7, -18, 108, 70, 14],         color: "#9B59B6" },
+];
+
+// Compute stacked data (only positive values stack; negatives shown below)
+const stackData = years.map((yr, yi) => {
+  let posSum = 0;
+  const segments = [];
+  // Stack from bottom to top
+  countries.forEach(c => {
+    const val = c.mig[yi];
+    if (val > 0) {
+      segments.push({ country: c.name, color: c.color, y0: posSum, y1: posSum + val });
+      posSum += val;
+    }
+  });
+  // Negative values below zero
+  let negSum = 0;
+  countries.forEach(c => {
+    const val = c.mig[yi];
+    if (val < 0) {
+      segments.push({ country: c.name, color: c.color, y0: negSum + val, y1: negSum });
+      negSum += val;
+    }
+  });
+  return { year: yr, segments, total: posSum, negTotal: negSum };
+});
+
+// Scales
+const xScale = d3.scaleBand()
+  .domain(years)
+  .range([gridLeft, gridRight])
+  .padding(0.3);
+
+const yMax = d3.max(stackData, d => d.total) + 200;
+const yMin = d3.min(stackData, d => d.negTotal) - 50;
+
+const yScale = d3.scaleLinear()
+  .domain([yMin, yMax])
+  .range([chartBottom, chartTop]);
+
+// Title
+svg.append("text").attr("x", gridLeft).attr("y", titleY)
+  .attr("font-family", "ABC Oracle Edu").attr("font-size", 32)
+  .attr("font-weight", 500).attr("fill", "#3D3733")
+  .text("The Global Migration Surge and Collapse");
+
+svg.append("text").attr("x", gridLeft).attr("y", subtitleY)
+  .attr("font-family", "ABC Oracle Edu").attr("font-size", 23)
+  .attr("font-weight", 400).attr("fill", "#7F7570")
+  .text("Net international migration, thousands");
+
+// Gridlines
+const gridVals = [0, 1000, 2000, 3000, 4000, 5000, 6000, 7000];
+gridVals.forEach(v => {
+  if (yScale(v) < chartTop || yScale(v) > chartBottom) return;
+  svg.append("line")
+    .attr("x1", gridLeft).attr("x2", gridRight)
+    .attr("y1", yScale(v)).attr("y2", yScale(v))
+    .attr("stroke", v === 0 ? "#bbb" : "#e1e2e3")
+    .attr("stroke-width", v === 0 ? 1.5 : 1);
+
+  const label = v === 0 ? "0" : `${(v/1000).toFixed(0)}M`;
+  svg.append("text")
+    .attr("x", gridLeft).attr("y", yScale(v) - 6)
+    .attr("font-family", "ABC Oracle Edu").attr("font-size", 22)
+    .attr("font-weight", 300).attr("fill", "#333")
+    .text(label);
+});
+
+// Draw stacked bars
+stackData.forEach(d => {
+  d.segments.forEach(s => {
+    svg.append("rect")
+      .attr("x", xScale(d.year))
+      .attr("y", yScale(s.y1))
+      .attr("width", xScale.bandwidth())
+      .attr("height", Math.abs(yScale(s.y0) - yScale(s.y1)))
+      .attr("fill", s.color)
+      .attr("fill-opacity", 0.85);
+  });
+
+  // Total label on top
+  svg.append("text")
+    .attr("x", xScale(d.year) + xScale.bandwidth() / 2)
+    .attr("y", yScale(d.total) - 8)
+    .attr("text-anchor", "middle")
+    .attr("font-family", "ABC Oracle Edu").attr("font-size", 16)
+    .attr("font-weight", 500).attr("fill", "#3D3733")
+    .text(`${(d.total/1000).toFixed(1)}M`);
+});
+
+// X-axis labels
+years.forEach(yr => {
+  svg.append("line")
+    .attr("x1", xScale(yr) + xScale.bandwidth()/2)
+    .attr("x2", xScale(yr) + xScale.bandwidth()/2)
+    .attr("y1", chartBottom).attr("y2", chartBottom + 12)
+    .attr("stroke", "#3D3733").attr("stroke-width", 0.5);
+
+  svg.append("text")
+    .attr("x", xScale(yr) + xScale.bandwidth() / 2)
+    .attr("y", xAxisLabelsY)
+    .attr("text-anchor", "middle")
+    .attr("font-family", "ABC Oracle Edu").attr("font-size", 22)
+    .attr("font-weight", 300).attr("fill", "#333")
+    .text(yr);
+});
+
+// Inline labels on 2025 bar (last bar) — label each segment
+const lastBar = stackData[stackData.length - 1];
+const labelData = [];
+lastBar.segments.forEach(s => {
+  if (s.y1 - s.y0 < 30) return; // skip tiny segments
+  labelData.push({
+    country: s.country,
+    color: s.color,
+    midY: yScale((s.y0 + s.y1) / 2),
+    naturalY: yScale((s.y0 + s.y1) / 2),
+  });
+});
+
+// Also add labels for all countries via legend on right side
+// Use the 2023 bar (peak year) positions for label placement
+const peakBar = stackData.find(d => d.year === 2023);
+const legendItems = [];
+countries.forEach(c => {
+  const seg = peakBar.segments.find(s => s.country === c.name);
+  if (seg) {
+    legendItems.push({
+      country: c.name, color: c.color,
+      naturalY: yScale((seg.y0 + seg.y1) / 2),
+      adjustedY: yScale((seg.y0 + seg.y1) / 2),
+    });
+  }
+});
+
+// Collision detection for legend
+legendItems.sort((a, b) => a.naturalY - b.naturalY);
+const minGap = 22;
+for (let i = 1; i < legendItems.length; i++) {
+  if (legendItems[i].adjustedY - legendItems[i-1].adjustedY < minGap) {
+    legendItems[i].adjustedY = legendItems[i-1].adjustedY + minGap;
+  }
+}
+
+// Draw legend labels with leader lines
+legendItems.forEach(d => {
+  // Leader line from 2023 bar to label
+  svg.append("line")
+    .attr("x1", xScale(2023) + xScale.bandwidth() + 3)
+    .attr("y1", d.naturalY)
+    .attr("x2", labelLeft - 4)
+    .attr("y2", d.adjustedY)
+    .attr("stroke", d.color).attr("stroke-width", 1).attr("stroke-opacity", 0.5);
+
+  svg.append("rect")
+    .attr("x", labelLeft).attr("y", d.adjustedY - 7)
+    .attr("width", 12).attr("height", 12)
+    .attr("fill", d.color).attr("rx", 2);
+
+  svg.append("text")
+    .attr("x", labelLeft + 18).attr("y", d.adjustedY + 1)
+    .attr("dominant-baseline", "middle")
+    .attr("font-family", "ABC Oracle Edu").attr("font-size", 16)
+    .attr("font-weight", 500).attr("fill", d.color)
+    .text(d.country);
+});
+
+// Source
+svg.append("text").attr("x", gridLeft).attr("y", sourceBottomY)
+  .attr("font-family", "ABC Oracle Edu").attr("font-size", 15)
+  .attr("font-weight", 200).attr("fill", "#3D3733")
+  .selectAll("tspan")
+  .data([
+    "Sources: Statistics Canada, Stats NZ, ABS, Destatis, CSO, ONS, CBS, Census Bureau.",
+    "Negative values (Canada 2025, Australia/NZ 2021) shown below zero line."
+  ])
+  .enter().append("tspan").attr("x", gridLeft).attr("dy", (d,i) => i===0?0:18).text(d=>d);
+
+// Logo
+svg.append("image")
+  .attr("xlink:href", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAxsAAAD+CAYAAABSvxhlAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAADiZSURBVHgB7d27clvJlqDhxTsj2mh2d3TEeAcyRCqCRpHeeAV544nyxhPojSfyCQhaY1LyxiP0BKKsMQU9gViGIkqUIdQDnHN4jBPBu3otKrcaYvEC5G1f8H8RKEAsXrA3cufOlZkrc0qAimq1WkuLi4trl5eXz6anpze+ffvWkubqHh0d7QoAAECDzAhQQU+ePOlogPH/NcD4P1NTU/9Tv7Qkzdb+j//4D/nrX//6QQAAABqCYAOVokFGSxvdbzXI2NJ/LspkIeAAAACNQrCBylheXt7RIKOnL5/I5CLgAAAAjUGwgdLpaEb73//939/qy/8tkzeacRsCDgAA0AgEGyiNJYD/53/+5//Vl/9PH/9DMIyAAwAA1B7BBkqxvLy8MTs7a6MZ/0twFxvx+eNvf/vboQAAANTQrAAZWQL4t2/f9vXR1ofgflNTUy0BAACoqWkBMllZWXl5dXX10QINAQAAQOMxsoHkLAFcg4w9DTLWBAAAABONYAPJWAL43NzcjgYaWwIAAICJQ7CBJGw0w+VmtAQAAAATiWADURUJ4Dqa0RYAAABMNIINROMSwLv6ckkym5qaOtAg58309PSxVJC+tx0S4wEAwKQh2ECw1dXVtYuLi70SG9ODz58/P5cKa7Vah/Pz81+lhEAMAACgLCx9C2+WAP748eO98/Pzspez7UvFDQaDYx19YXM+AAAwURjZgBcSwAEAAPAQgg2MxUYzFhYWLAF8QwAAAIB7MI0KI7MEcMs70NEMAg0AAAA8iJENPChHAvjU1FRfn44JZAAAAJqDYAN3silTOpLx8vz8vCvpWICxfXR01LN/LC8vv9UnAg4AAIAGINjArXIkgOvvfm2BjK3UNPTlfwgAAAAagWADP3GjGXtXV1cdSWcwPT29+fvvv/cFAAAAjUWwgR8sAVxHG7qSbuM5G8F4fXZ29urGaAYAAAAaiGBjwhUJ4FdXV1uScDRDg4zdz58/vxIAAABMFIKNCZVpB/De2dnZNlOmAAAAJhPBxoSx0Yy5ubkdN5qRCgngAAAAINiYJDqa0dEgY0/STZkyuySAAwAAwBBsTIAiAVwDjbYkYgngs7Oz258+fToUAAAAQAg2Gm95eXmHBHAAAACUgWCjoXIkgGuQcXB6errJlCkAAADchmCjYUgABwAAQFUQbDTI8vLyhj7tS8IEcB0peX1+ft5lNAMAAAAPIdhogFw7gJMADgAAgHEQbNScjWZcXV2lHM0gARwAAABeCDZqTgOBPR3RSBJo2GiGPiw3YyAAAADAmAg2asyWtU202hQJ4AAAAAg2Lagly9PQp+grTlkC+NnZ2TqBBgAAAEIxslFTV1dXOxI3T+NQRzO2CTIAAAAQC8FGDdmohgYbHYmDBHAAAAAkQbBRQ7ECDRLAAQAAkBLBxmSyDfk2dTTjQAAAAIBESBCfMC4B/NHR0RGBBgAAAJJiZGOCTE9PPyUBHAAAALkwsjEhLD+DQAMAAAA5EWwAAAAASIJgAwAAAEASBBsAAAAAkiDYAAAAAJAEwQYAAACAJAg2AAAAACRBsAEAAAAgCYINAAAAAEkQbAAAAABIgmADAAAAQBIEGwAAAACSINgAAAAAkATBBgAAAIAkCDYAAAAAJEGwAQAAAGCsaQEAAAAwiGADAAAAQBIEGwAAAACSINgAAAAAkATBBgAAAIAkCDYAAAAAJEGwAQAAACAJpgUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHAXpgUA")
+  .attr("x", 920 - 40 - 130).attr("y", sourceBottomY - 30).attr("width", 130).attr("opacity", 0.6);
+
+</script>
+</body>
+</html>

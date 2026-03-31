@@ -1,0 +1,1878 @@
+nationality_code,nationality_name,destination,year,inflows
+IND,India,SVK,2018,1
+IND,India,SVK,2019,3
+IND,India,SVK,2020,5
+IND,India,SVK,2021,2
+IND,India,SVK,2022,7
+IND,India,SVK,2023,21
+IND,India,CHL,2018,215
+IND,India,CHL,2019,219
+IND,India,CHL,2020,158
+IND,India,CHL,2021,64
+IND,India,CHL,2022,217
+IND,India,CHL,2023,206
+IND,India,ISR,2018,350
+IND,India,ISR,2019,30
+IND,India,ISR,2020,51
+IND,India,ISR,2021,313
+IND,India,ISR,2022,69
+IND,India,ISR,2023,21
+IND,India,LVA,2018,936
+IND,India,LVA,2019,831
+IND,India,LVA,2020,422
+IND,India,LVA,2021,513
+IND,India,LVA,2022,917
+IND,India,LVA,2023,1241
+IND,India,PRT,2018,4094
+IND,India,PRT,2019,6267
+IND,India,PRT,2020,7172
+IND,India,PRT,2021,7407
+IND,India,PRT,2022,7414
+IND,India,PRT,2023,12185
+IND,India,SVN,2018,63
+IND,India,SVN,2019,52
+IND,India,SVN,2020,79
+IND,India,SVN,2021,54
+IND,India,SVN,2022,122
+IND,India,SVN,2023,241
+IND,India,ESP,2018,6993
+IND,India,ESP,2019,7171
+IND,India,ESP,2020,3026
+IND,India,ESP,2021,5797
+IND,India,ESP,2022,8120
+IND,India,ESP,2023,10063
+IND,India,ISL,2018,38
+IND,India,ISL,2019,42
+IND,India,ISL,2020,67
+IND,India,ISL,2021,127
+IND,India,ISL,2022,180
+IND,India,ISL,2023,158
+IND,India,LTU,2018,363
+IND,India,LTU,2019,302
+IND,India,LTU,2020,330
+IND,India,LTU,2021,307
+IND,India,LTU,2022,396
+IND,India,LTU,2023,2392
+IND,India,EST,2018,172
+IND,India,EST,2019,296
+IND,India,EST,2020,202
+IND,India,EST,2021,252
+IND,India,EST,2022,347
+IND,India,EST,2023,278
+IND,India,MEX,2018,286
+IND,India,MEX,2019,329
+IND,India,MEX,2020,463
+IND,India,MEX,2021,552
+IND,India,MEX,2022,415
+IND,India,MEX,2023,553
+IND,India,NZL,2018,14295
+IND,India,NZL,2019,15123
+IND,India,NZL,2020,9177
+IND,India,NZL,2021,3654
+IND,India,NZL,2022,13977
+IND,India,NZL,2023,47163
+IND,India,CZE,2018,1158
+IND,India,CZE,2019,1519
+IND,India,CZE,2020,862
+IND,India,CZE,2021,1245
+IND,India,CZE,2022,2000
+IND,India,CZE,2023,1900
+IND,India,LUX,2018,664
+IND,India,LUX,2019,775
+IND,India,LUX,2020,537
+IND,India,LUX,2021,985
+IND,India,LUX,2022,1286
+IND,India,LUX,2023,889
+IND,India,FIN,2018,1046
+IND,India,FIN,2019,1432
+IND,India,FIN,2020,986
+IND,India,FIN,2021,1387
+IND,India,FIN,2022,2638
+IND,India,FIN,2023,3065
+IND,India,NOR,2018,2037
+IND,India,NOR,2019,2360
+IND,India,NOR,2020,1034
+IND,India,NOR,2021,1334
+IND,India,NOR,2022,2567
+IND,India,NOR,2023,2113
+IND,India,DNK,2018,3043
+IND,India,DNK,2019,3139
+IND,India,DNK,2020,1653
+IND,India,DNK,2021,2110
+IND,India,DNK,2022,3499
+IND,India,DNK,2023,3376
+IND,India,HUN,2018,1357
+IND,India,HUN,2019,1207
+IND,India,HUN,2020,911
+IND,India,HUN,2021,1265
+IND,India,HUN,2022,2307
+IND,India,HUN,2023,2914
+IND,India,POL,2018,4452
+IND,India,POL,2019,4853
+IND,India,POL,2020,4873
+IND,India,POL,2021,5260
+IND,India,TUR,2018,1212
+IND,India,TUR,2019,1083
+IND,India,TUR,2020,606
+IND,India,TUR,2021,1716
+IND,India,TUR,2022,2511
+IND,India,TUR,2023,3434
+IND,India,JPN,2018,9617
+IND,India,JPN,2019,10989
+IND,India,JPN,2020,3683
+IND,India,JPN,2021,1252
+IND,India,JPN,2022,11708
+IND,India,JPN,2023,10547
+IND,India,AUT,2018,1457
+IND,India,AUT,2019,1680
+IND,India,AUT,2020,1166
+IND,India,AUT,2021,1776
+IND,India,AUT,2022,3302
+IND,India,AUT,2023,2568
+IND,India,KOR,2018,3482
+IND,India,KOR,2019,3419
+IND,India,KOR,2020,2846
+IND,India,KOR,2021,2727
+IND,India,KOR,2022,4510
+IND,India,KOR,2023,4033
+IND,India,SWE,2018,7298
+IND,India,SWE,2019,7366
+IND,India,SWE,2020,4030
+IND,India,SWE,2021,6015
+IND,India,SWE,2022,7978
+IND,India,SWE,2023,7461
+IND,India,AUS,2018,33065
+IND,India,AUS,2019,32630
+IND,India,AUS,2020,24498
+IND,India,AUS,2021,26400
+IND,India,AUS,2022,44472
+IND,India,AUS,2023,55277
+IND,India,CHE,2018,3070
+IND,India,CHE,2019,2976
+IND,India,CHE,2020,2522
+IND,India,CHE,2021,2850
+IND,India,CHE,2022,3199
+IND,India,CHE,2023,3514
+IND,India,ITA,2018,11070
+IND,India,ITA,2019,11966
+IND,India,ITA,2020,7260
+IND,India,ITA,2021,11348
+IND,India,ITA,2022,12997
+IND,India,ITA,2023,13691
+IND,India,NLD,2018,10588
+IND,India,NLD,2019,12331
+IND,India,NLD,2020,5907
+IND,India,NLD,2021,9815
+IND,India,NLD,2022,14578
+IND,India,NLD,2023,12073
+IND,India,BEL,2018,3337
+IND,India,BEL,2019,3326
+IND,India,BEL,2020,1961
+IND,India,BEL,2021,2821
+IND,India,BEL,2022,3455
+IND,India,BEL,2023,3603
+IND,India,FRA,2018,4121
+IND,India,FRA,2019,4221
+IND,India,FRA,2020,2173
+IND,India,FRA,2021,2911
+IND,India,FRA,2022,4382
+IND,India,FRA,2023,2774
+IND,India,DEU,2018,33678
+IND,India,DEU,2019,39103
+IND,India,DEU,2020,20510
+IND,India,DEU,2021,34137
+IND,India,DEU,2022,53377
+IND,India,DEU,2023,54123
+IND,India,CAN,2018,69985
+IND,India,CAN,2019,85590
+IND,India,CAN,2020,42875
+IND,India,CAN,2021,127945
+IND,India,CAN,2022,118250
+IND,India,CAN,2023,139785
+IND,India,USA,2018,58863
+IND,India,USA,2019,53787
+IND,India,USA,2020,45805
+IND,India,USA,2021,92580
+IND,India,USA,2022,125130
+IND,India,USA,2023,68420
+IND,India,GBR,2018,62301
+IND,India,GBR,2019,92000
+CHN,China (People’s Republic of),SVK,2018,18
+CHN,China (People’s Republic of),SVK,2019,17
+CHN,China (People’s Republic of),SVK,2020,10
+CHN,China (People’s Republic of),SVK,2021,3
+CHN,China (People’s Republic of),SVK,2022,20
+CHN,China (People’s Republic of),SVK,2023,47
+CHN,China (People’s Republic of),ISR,2022,3
+CHN,China (People’s Republic of),ISR,2023,10
+CHN,China (People’s Republic of),CHL,2018,3334
+CHN,China (People’s Republic of),CHL,2019,2849
+CHN,China (People’s Republic of),CHL,2020,1649
+CHN,China (People’s Republic of),CHL,2021,733
+CHN,China (People’s Republic of),CHL,2022,1460
+CHN,China (People’s Republic of),CHL,2023,1632
+CHN,China (People’s Republic of),LVA,2018,72
+CHN,China (People’s Republic of),LVA,2019,69
+CHN,China (People’s Republic of),LVA,2020,47
+CHN,China (People’s Republic of),LVA,2021,58
+CHN,China (People’s Republic of),LVA,2022,43
+CHN,China (People’s Republic of),LVA,2023,56
+CHN,China (People’s Republic of),PRT,2018,2335
+CHN,China (People’s Republic of),PRT,2019,2164
+CHN,China (People’s Republic of),PRT,2020,1378
+CHN,China (People’s Republic of),PRT,2021,1356
+CHN,China (People’s Republic of),PRT,2022,1115
+CHN,China (People’s Republic of),PRT,2023,1454
+CHN,China (People’s Republic of),SVN,2018,135
+CHN,China (People’s Republic of),SVN,2019,172
+CHN,China (People’s Republic of),SVN,2020,138
+CHN,China (People’s Republic of),SVN,2021,83
+CHN,China (People’s Republic of),SVN,2022,116
+CHN,China (People’s Republic of),SVN,2023,170
+CHN,China (People’s Republic of),ESP,2018,11945
+CHN,China (People’s Republic of),ESP,2019,12097
+CHN,China (People’s Republic of),ESP,2020,5064
+CHN,China (People’s Republic of),ESP,2021,18249
+CHN,China (People’s Republic of),ESP,2022,14320
+CHN,China (People’s Republic of),ESP,2023,20471
+CHN,China (People’s Republic of),ISL,2018,106
+CHN,China (People’s Republic of),ISL,2019,80
+CHN,China (People’s Republic of),ISL,2020,81
+CHN,China (People’s Republic of),ISL,2021,87
+CHN,China (People’s Republic of),ISL,2022,77
+CHN,China (People’s Republic of),ISL,2023,99
+CHN,China (People’s Republic of),LTU,2018,103
+CHN,China (People’s Republic of),LTU,2019,130
+CHN,China (People’s Republic of),LTU,2020,124
+CHN,China (People’s Republic of),LTU,2021,123
+CHN,China (People’s Republic of),LTU,2022,16
+CHN,China (People’s Republic of),LTU,2023,53
+CHN,China (People’s Republic of),EST,2018,83
+CHN,China (People’s Republic of),EST,2019,56
+CHN,China (People’s Republic of),EST,2020,43
+CHN,China (People’s Republic of),EST,2021,59
+CHN,China (People’s Republic of),EST,2022,47
+CHN,China (People’s Republic of),EST,2023,67
+CHN,China (People’s Republic of),MEX,2018,1835
+CHN,China (People’s Republic of),MEX,2019,1877
+CHN,China (People’s Republic of),MEX,2020,1719
+CHN,China (People’s Republic of),MEX,2021,1547
+CHN,China (People’s Republic of),MEX,2022,1857
+CHN,China (People’s Republic of),MEX,2023,1979
+CHN,China (People’s Republic of),NZL,2018,15717
+CHN,China (People’s Republic of),NZL,2019,16134
+CHN,China (People’s Republic of),NZL,2020,4572
+CHN,China (People’s Republic of),NZL,2021,3165
+CHN,China (People’s Republic of),NZL,2022,11556
+CHN,China (People’s Republic of),NZL,2023,26214
+CHN,China (People’s Republic of),CZE,2018,1123
+CHN,China (People’s Republic of),CZE,2019,1043
+CHN,China (People’s Republic of),CZE,2020,546
+CHN,China (People’s Republic of),CZE,2021,565
+CHN,China (People’s Republic of),CZE,2022,653
+CHN,China (People’s Republic of),CZE,2023,1114
+CHN,China (People’s Republic of),LUX,2018,508
+CHN,China (People’s Republic of),LUX,2019,464
+CHN,China (People’s Republic of),LUX,2020,308
+CHN,China (People’s Republic of),LUX,2021,380
+CHN,China (People’s Republic of),LUX,2022,397
+CHN,China (People’s Republic of),LUX,2023,477
+CHN,China (People’s Republic of),FIN,2018,818
+CHN,China (People’s Republic of),FIN,2019,984
+CHN,China (People’s Republic of),FIN,2020,876
+CHN,China (People’s Republic of),FIN,2021,1132
+CHN,China (People’s Republic of),FIN,2022,1243
+CHN,China (People’s Republic of),FIN,2023,2060
+CHN,China (People’s Republic of),NOR,2018,719
+CHN,China (People’s Republic of),NOR,2019,779
+CHN,China (People’s Republic of),NOR,2020,423
+CHN,China (People’s Republic of),NOR,2021,494
+CHN,China (People’s Republic of),NOR,2022,773
+CHN,China (People’s Republic of),NOR,2023,606
+CHN,China (People’s Republic of),DNK,2018,2027
+CHN,China (People’s Republic of),DNK,2019,2274
+CHN,China (People’s Republic of),DNK,2020,1417
+CHN,China (People’s Republic of),DNK,2021,1380
+CHN,China (People’s Republic of),DNK,2022,1550
+CHN,China (People’s Republic of),DNK,2023,2049
+CHN,China (People’s Republic of),HUN,2018,1993
+CHN,China (People’s Republic of),HUN,2019,2354
+CHN,China (People’s Republic of),HUN,2020,1189
+CHN,China (People’s Republic of),HUN,2021,1311
+CHN,China (People’s Republic of),HUN,2022,1651
+CHN,China (People’s Republic of),HUN,2023,3423
+CHN,China (People’s Republic of),POL,2018,2942
+CHN,China (People’s Republic of),POL,2019,2556
+CHN,China (People’s Republic of),POL,2020,2279
+CHN,China (People’s Republic of),POL,2021,2086
+CHN,China (People’s Republic of),TUR,2018,5105
+CHN,China (People’s Republic of),TUR,2019,7328
+CHN,China (People’s Republic of),TUR,2020,3755
+CHN,China (People’s Republic of),TUR,2021,5239
+CHN,China (People’s Republic of),TUR,2022,2995
+CHN,China (People’s Republic of),TUR,2023,2445
+CHN,China (People’s Republic of),JPN,2018,117071
+CHN,China (People’s Republic of),JPN,2019,133936
+CHN,China (People’s Republic of),JPN,2020,46338
+CHN,China (People’s Republic of),JPN,2021,15333
+CHN,China (People’s Republic of),JPN,2022,98983
+CHN,China (People’s Republic of),JPN,2023,106717
+CHN,China (People’s Republic of),AUT,2018,1953
+CHN,China (People’s Republic of),AUT,2019,2148
+CHN,China (People’s Republic of),AUT,2020,1060
+CHN,China (People’s Republic of),AUT,2021,1322
+CHN,China (People’s Republic of),AUT,2022,1633
+CHN,China (People’s Republic of),AUT,2023,2394
+CHN,China (People’s Republic of),KOR,2018,170213
+CHN,China (People’s Republic of),KOR,2019,139425
+CHN,China (People’s Republic of),KOR,2020,96980
+CHN,China (People’s Republic of),KOR,2021,95497
+CHN,China (People’s Republic of),KOR,2022,95888
+CHN,China (People’s Republic of),KOR,2023,132855
+CHN,China (People’s Republic of),SWE,2018,2880
+CHN,China (People’s Republic of),SWE,2019,2763
+CHN,China (People’s Republic of),SWE,2020,1694
+CHN,China (People’s Republic of),SWE,2021,1876
+CHN,China (People’s Republic of),SWE,2022,1944
+CHN,China (People’s Republic of),SWE,2023,2617
+CHN,China (People’s Republic of),AUS,2018,27664
+CHN,China (People’s Republic of),AUS,2019,27188
+CHN,China (People’s Republic of),AUS,2020,20107
+CHN,China (People’s Republic of),AUS,2021,20988
+CHN,China (People’s Republic of),AUS,2022,35727
+CHN,China (People’s Republic of),AUS,2023,36349
+CHN,China (People’s Republic of),CHE,2018,3077
+CHN,China (People’s Republic of),CHE,2019,3344
+CHN,China (People’s Republic of),CHE,2020,3119
+CHN,China (People’s Republic of),CHE,2021,3432
+CHN,China (People’s Republic of),CHE,2022,3246
+CHN,China (People’s Republic of),CHE,2023,3526
+CHN,China (People’s Republic of),ITA,2018,10025
+CHN,China (People’s Republic of),ITA,2019,10788
+CHN,China (People’s Republic of),ITA,2020,4926
+CHN,China (People’s Republic of),ITA,2021,6158
+CHN,China (People’s Republic of),ITA,2022,8152
+CHN,China (People’s Republic of),ITA,2023,8062
+CHN,China (People’s Republic of),NLD,2018,6826
+CHN,China (People’s Republic of),NLD,2019,7489
+CHN,China (People’s Republic of),NLD,2020,4398
+CHN,China (People’s Republic of),NLD,2021,5984
+CHN,China (People’s Republic of),NLD,2022,6050
+CHN,China (People’s Republic of),NLD,2023,7991
+CHN,China (People’s Republic of),BEL,2018,1471
+CHN,China (People’s Republic of),BEL,2019,1697
+CHN,China (People’s Republic of),BEL,2020,935
+CHN,China (People’s Republic of),BEL,2021,1456
+CHN,China (People’s Republic of),BEL,2022,1457
+CHN,China (People’s Republic of),BEL,2023,1627
+CHN,China (People’s Republic of),FRA,2018,4625
+CHN,China (People’s Republic of),FRA,2019,5444
+CHN,China (People’s Republic of),FRA,2020,3562
+CHN,China (People’s Republic of),FRA,2021,3669
+CHN,China (People’s Republic of),FRA,2022,4639
+CHN,China (People’s Republic of),FRA,2023,5830
+CHN,China (People’s Republic of),DEU,2018,25902
+CHN,China (People’s Republic of),DEU,2019,25593
+CHN,China (People’s Republic of),DEU,2020,11368
+CHN,China (People’s Republic of),DEU,2021,15749
+CHN,China (People’s Republic of),DEU,2022,15265
+CHN,China (People’s Republic of),DEU,2023,20866
+CHN,China (People’s Republic of),CAN,2018,31270
+CHN,China (People’s Republic of),CAN,2019,31815
+CHN,China (People’s Republic of),CAN,2020,17585
+CHN,China (People’s Republic of),CAN,2021,33330
+CHN,China (People’s Republic of),CAN,2022,35575
+CHN,China (People’s Republic of),CAN,2023,39350
+CHN,China (People’s Republic of),USA,2018,67763
+CHN,China (People’s Republic of),USA,2019,62344
+CHN,China (People’s Republic of),USA,2020,41749
+CHN,China (People’s Republic of),USA,2021,49690
+CHN,China (People’s Republic of),USA,2022,68100
+CHN,China (People’s Republic of),USA,2023,57240
+CHN,China (People’s Republic of),GBR,2018,63900
+CHN,China (People’s Republic of),GBR,2019,82000
+NGA,Nigeria,SVK,2018,1
+NGA,Nigeria,SVK,2019,3
+NGA,Nigeria,SVK,2022,6
+NGA,Nigeria,SVK,2023,3
+NGA,Nigeria,SVN,2018,10
+NGA,Nigeria,SVN,2019,11
+NGA,Nigeria,SVN,2020,11
+NGA,Nigeria,SVN,2021,4
+NGA,Nigeria,SVN,2022,10
+NGA,Nigeria,SVN,2023,17
+NGA,Nigeria,CHL,2018,5
+NGA,Nigeria,CHL,2019,14
+NGA,Nigeria,CHL,2020,19
+NGA,Nigeria,CHL,2021,5
+NGA,Nigeria,CHL,2022,8
+NGA,Nigeria,CHL,2023,20
+NGA,Nigeria,LVA,2018,7
+NGA,Nigeria,LVA,2019,19
+NGA,Nigeria,LVA,2020,6
+NGA,Nigeria,LVA,2021,12
+NGA,Nigeria,LVA,2023,10
+NGA,Nigeria,ESP,2018,1656
+NGA,Nigeria,ESP,2019,1640
+NGA,Nigeria,ESP,2020,1184
+NGA,Nigeria,ESP,2021,3251
+NGA,Nigeria,ESP,2022,3196
+NGA,Nigeria,ESP,2023,3326
+NGA,Nigeria,ISL,2018,24
+NGA,Nigeria,ISL,2019,34
+NGA,Nigeria,ISL,2020,67
+NGA,Nigeria,ISL,2021,44
+NGA,Nigeria,ISL,2022,47
+NGA,Nigeria,ISL,2023,86
+NGA,Nigeria,LTU,2018,27
+NGA,Nigeria,LTU,2019,53
+NGA,Nigeria,LTU,2020,108
+NGA,Nigeria,LTU,2021,151
+NGA,Nigeria,LTU,2022,103
+NGA,Nigeria,LTU,2023,112
+NGA,Nigeria,EST,2018,163
+NGA,Nigeria,EST,2019,217
+NGA,Nigeria,EST,2020,106
+NGA,Nigeria,EST,2021,198
+NGA,Nigeria,EST,2022,187
+NGA,Nigeria,EST,2023,108
+NGA,Nigeria,MEX,2018,97
+NGA,Nigeria,MEX,2019,87
+NGA,Nigeria,MEX,2020,110
+NGA,Nigeria,MEX,2021,121
+NGA,Nigeria,MEX,2022,1
+NGA,Nigeria,MEX,2023,131
+NGA,Nigeria,NZL,2018,90
+NGA,Nigeria,NZL,2019,120
+NGA,Nigeria,NZL,2020,51
+NGA,Nigeria,NZL,2021,45
+NGA,Nigeria,NZL,2022,81
+NGA,Nigeria,NZL,2023,330
+NGA,Nigeria,CZE,2018,78
+NGA,Nigeria,CZE,2019,77
+NGA,Nigeria,CZE,2020,66
+NGA,Nigeria,CZE,2021,123
+NGA,Nigeria,CZE,2022,178
+NGA,Nigeria,CZE,2023,218
+NGA,Nigeria,LUX,2018,44
+NGA,Nigeria,LUX,2019,64
+NGA,Nigeria,LUX,2020,40
+NGA,Nigeria,LUX,2021,83
+NGA,Nigeria,LUX,2022,90
+NGA,Nigeria,LUX,2023,74
+NGA,Nigeria,FIN,2018,210
+NGA,Nigeria,FIN,2019,188
+NGA,Nigeria,FIN,2020,235
+NGA,Nigeria,FIN,2021,449
+NGA,Nigeria,FIN,2022,503
+NGA,Nigeria,FIN,2023,1020
+NGA,Nigeria,NOR,2018,107
+NGA,Nigeria,NOR,2019,156
+NGA,Nigeria,NOR,2020,82
+NGA,Nigeria,NOR,2021,207
+NGA,Nigeria,NOR,2022,239
+NGA,Nigeria,NOR,2023,175
+NGA,Nigeria,DNK,2018,83
+NGA,Nigeria,DNK,2019,117
+NGA,Nigeria,DNK,2020,89
+NGA,Nigeria,DNK,2021,94
+NGA,Nigeria,DNK,2022,136
+NGA,Nigeria,DNK,2023,157
+NGA,Nigeria,HUN,2018,206
+NGA,Nigeria,HUN,2019,180
+NGA,Nigeria,HUN,2020,154
+NGA,Nigeria,HUN,2021,266
+NGA,Nigeria,HUN,2022,397
+NGA,Nigeria,HUN,2023,313
+NGA,Nigeria,POL,2018,285
+NGA,Nigeria,POL,2019,319
+NGA,Nigeria,POL,2020,363
+NGA,Nigeria,POL,2021,685
+NGA,Nigeria,TUR,2018,1483
+NGA,Nigeria,TUR,2019,4298
+NGA,Nigeria,TUR,2020,2445
+NGA,Nigeria,TUR,2021,5973
+NGA,Nigeria,TUR,2022,1875
+NGA,Nigeria,TUR,2023,1100
+NGA,Nigeria,JPN,2018,430
+NGA,Nigeria,JPN,2019,605
+NGA,Nigeria,JPN,2020,150
+NGA,Nigeria,JPN,2021,142
+NGA,Nigeria,JPN,2022,458
+NGA,Nigeria,JPN,2023,538
+NGA,Nigeria,AUT,2018,738
+NGA,Nigeria,AUT,2019,591
+NGA,Nigeria,AUT,2020,488
+NGA,Nigeria,AUT,2021,552
+NGA,Nigeria,AUT,2022,665
+NGA,Nigeria,AUT,2023,701
+NGA,Nigeria,KOR,2018,381
+NGA,Nigeria,KOR,2019,411
+NGA,Nigeria,KOR,2020,206
+NGA,Nigeria,KOR,2021,276
+NGA,Nigeria,KOR,2022,347
+NGA,Nigeria,KOR,2023,301
+NGA,Nigeria,SWE,2018,671
+NGA,Nigeria,SWE,2019,696
+NGA,Nigeria,SWE,2020,586
+NGA,Nigeria,SWE,2021,755
+NGA,Nigeria,SWE,2022,813
+NGA,Nigeria,SWE,2023,777
+NGA,Nigeria,AUS,2018,755
+NGA,Nigeria,AUS,2019,777
+NGA,Nigeria,AUS,2020,819
+NGA,Nigeria,AUS,2021,985
+NGA,Nigeria,AUS,2022,1422
+NGA,Nigeria,AUS,2023,1394
+NGA,Nigeria,CHE,2018,174
+NGA,Nigeria,CHE,2019,200
+NGA,Nigeria,CHE,2020,163
+NGA,Nigeria,CHE,2021,190
+NGA,Nigeria,CHE,2022,216
+NGA,Nigeria,CHE,2023,225
+NGA,Nigeria,ITA,2018,17866
+NGA,Nigeria,ITA,2019,5652
+NGA,Nigeria,ITA,2020,7204
+NGA,Nigeria,ITA,2021,7647
+NGA,Nigeria,ITA,2022,7451
+NGA,Nigeria,ITA,2023,6182
+NGA,Nigeria,NLD,2018,637
+NGA,Nigeria,NLD,2019,1091
+NGA,Nigeria,NLD,2020,652
+NGA,Nigeria,NLD,2021,1246
+NGA,Nigeria,NLD,2022,2619
+NGA,Nigeria,NLD,2023,1518
+NGA,Nigeria,BEL,2018,404
+NGA,Nigeria,BEL,2019,470
+NGA,Nigeria,BEL,2020,382
+NGA,Nigeria,BEL,2021,539
+NGA,Nigeria,BEL,2022,649
+NGA,Nigeria,BEL,2023,585
+NGA,Nigeria,FRA,2018,1066
+NGA,Nigeria,FRA,2019,1326
+NGA,Nigeria,FRA,2020,1204
+NGA,Nigeria,FRA,2021,1530
+NGA,Nigeria,FRA,2022,1762
+NGA,Nigeria,FRA,2023,1797
+NGA,Nigeria,DEU,2018,12642
+NGA,Nigeria,DEU,2019,12367
+NGA,Nigeria,DEU,2020,5123
+NGA,Nigeria,DEU,2021,5007
+NGA,Nigeria,DEU,2022,9003
+NGA,Nigeria,DEU,2023,6368
+NGA,Nigeria,CAN,2018,10920
+NGA,Nigeria,CAN,2019,12600
+NGA,Nigeria,CAN,2020,6360
+NGA,Nigeria,CAN,2021,15595
+NGA,Nigeria,CAN,2022,22130
+NGA,Nigeria,CAN,2023,17465
+NGA,Nigeria,USA,2018,13770
+NGA,Nigeria,USA,2019,15693
+NGA,Nigeria,USA,2020,12247
+NGA,Nigeria,USA,2021,12940
+NGA,Nigeria,USA,2022,12116
+NGA,Nigeria,USA,2023,16330
+NGA,Nigeria,GBR,2018,10416
+NGA,Nigeria,GBR,2019,10416
+UKR,Ukraine,CHL,2018,69
+UKR,Ukraine,CHL,2019,61
+UKR,Ukraine,CHL,2020,56
+UKR,Ukraine,CHL,2021,29
+UKR,Ukraine,CHL,2022,46
+UKR,Ukraine,CHL,2023,14
+UKR,Ukraine,ISR,2018,6355
+UKR,Ukraine,ISR,2019,6190
+UKR,Ukraine,ISR,2020,2937
+UKR,Ukraine,ISR,2021,3059
+UKR,Ukraine,ISR,2022,14656
+UKR,Ukraine,ISR,2023,2091
+UKR,Ukraine,LVA,2018,1421
+UKR,Ukraine,LVA,2019,1556
+UKR,Ukraine,LVA,2020,1129
+UKR,Ukraine,LVA,2021,1507
+UKR,Ukraine,LVA,2022,958
+UKR,Ukraine,LVA,2023,429
+UKR,Ukraine,PRT,2018,1547
+UKR,Ukraine,PRT,2019,1829
+UKR,Ukraine,PRT,2020,1216
+UKR,Ukraine,PRT,2021,1158
+UKR,Ukraine,PRT,2022,1125
+UKR,Ukraine,PRT,2023,1179
+UKR,Ukraine,SVK,2018,237
+UKR,Ukraine,SVK,2019,283
+UKR,Ukraine,SVK,2020,309
+UKR,Ukraine,SVK,2021,208
+UKR,Ukraine,SVK,2022,178
+UKR,Ukraine,SVK,2023,457
+UKR,Ukraine,SVN,2018,309
+UKR,Ukraine,SVN,2019,260
+UKR,Ukraine,SVN,2020,253
+UKR,Ukraine,SVN,2021,222
+UKR,Ukraine,SVN,2022,6223
+UKR,Ukraine,SVN,2023,1967
+UKR,Ukraine,ESP,2018,8156
+UKR,Ukraine,ESP,2019,8063
+UKR,Ukraine,ESP,2020,4231
+UKR,Ukraine,ESP,2021,9923
+UKR,Ukraine,ESP,2022,91621
+UKR,Ukraine,ESP,2023,34385
+UKR,Ukraine,ISL,2018,42
+UKR,Ukraine,ISL,2019,38
+UKR,Ukraine,ISL,2020,34
+UKR,Ukraine,ISL,2021,45
+UKR,Ukraine,ISL,2022,2275
+UKR,Ukraine,ISL,2023,1659
+UKR,Ukraine,LTU,2018,5732
+UKR,Ukraine,LTU,2019,8867
+UKR,Ukraine,LTU,2020,9309
+UKR,Ukraine,LTU,2021,6306
+UKR,Ukraine,LTU,2022,61511
+UKR,Ukraine,LTU,2023,10539
+UKR,Ukraine,EST,2018,1513
+UKR,Ukraine,EST,2019,1785
+UKR,Ukraine,EST,2020,2374
+UKR,Ukraine,EST,2021,3047
+UKR,Ukraine,EST,2022,33217
+UKR,Ukraine,EST,2023,13082
+UKR,Ukraine,MEX,2018,82
+UKR,Ukraine,MEX,2019,81
+UKR,Ukraine,MEX,2020,119
+UKR,Ukraine,MEX,2021,146
+UKR,Ukraine,MEX,2022,151
+UKR,Ukraine,MEX,2023,168
+UKR,Ukraine,NZL,2018,135
+UKR,Ukraine,NZL,2019,135
+UKR,Ukraine,NZL,2020,66
+UKR,Ukraine,NZL,2021,30
+UKR,Ukraine,NZL,2022,414
+UKR,Ukraine,NZL,2023,147
+UKR,Ukraine,CZE,2018,16747
+UKR,Ukraine,CZE,2019,22812
+UKR,Ukraine,CZE,2020,21071
+UKR,Ukraine,CZE,2021,32146
+UKR,Ukraine,CZE,2022,311020
+UKR,Ukraine,CZE,2023,105952
+UKR,Ukraine,LUX,2018,153
+UKR,Ukraine,LUX,2019,161
+UKR,Ukraine,LUX,2020,128
+UKR,Ukraine,LUX,2021,159
+UKR,Ukraine,LUX,2022,4268
+UKR,Ukraine,LUX,2023,807
+UKR,Ukraine,FIN,2018,740
+UKR,Ukraine,FIN,2019,757
+UKR,Ukraine,FIN,2020,949
+UKR,Ukraine,FIN,2021,1526
+UKR,Ukraine,FIN,2022,1541
+UKR,Ukraine,FIN,2023,19917
+UKR,Ukraine,NOR,2018,434
+UKR,Ukraine,NOR,2019,691
+UKR,Ukraine,NOR,2020,393
+UKR,Ukraine,NOR,2021,435
+UKR,Ukraine,NOR,2022,32297
+UKR,Ukraine,NOR,2023,32935
+UKR,Ukraine,DNK,2018,2424
+UKR,Ukraine,DNK,2019,2334
+UKR,Ukraine,DNK,2020,1542
+UKR,Ukraine,DNK,2021,1875
+UKR,Ukraine,DNK,2022,31076
+UKR,Ukraine,DNK,2023,8215
+UKR,Ukraine,HUN,2018,16699
+UKR,Ukraine,HUN,2019,21185
+UKR,Ukraine,HUN,2020,8907
+UKR,Ukraine,HUN,2021,15423
+UKR,Ukraine,HUN,2022,14941
+UKR,Ukraine,HUN,2023,4273
+UKR,Ukraine,POL,2018,88740
+UKR,Ukraine,POL,2019,108396
+UKR,Ukraine,POL,2020,111020
+UKR,Ukraine,POL,2021,154831
+UKR,Ukraine,TUR,2018,5905
+UKR,Ukraine,TUR,2019,6641
+UKR,Ukraine,TUR,2020,4083
+UKR,Ukraine,TUR,2021,8545
+UKR,Ukraine,TUR,2022,32465
+UKR,Ukraine,TUR,2023,8499
+UKR,Ukraine,JPN,2018,927
+UKR,Ukraine,JPN,2019,1041
+UKR,Ukraine,JPN,2020,268
+UKR,Ukraine,JPN,2021,100
+UKR,Ukraine,JPN,2022,599
+UKR,Ukraine,JPN,2023,890
+UKR,Ukraine,AUT,2018,1639
+UKR,Ukraine,AUT,2019,1756
+UKR,Ukraine,AUT,2020,1495
+UKR,Ukraine,AUT,2021,1959
+UKR,Ukraine,AUT,2022,78439
+UKR,Ukraine,AUT,2023,15739
+UKR,Ukraine,KOR,2018,1362
+UKR,Ukraine,KOR,2019,1199
+UKR,Ukraine,KOR,2020,715
+UKR,Ukraine,KOR,2021,1055
+UKR,Ukraine,KOR,2022,1625
+UKR,Ukraine,KOR,2023,571
+UKR,Ukraine,SWE,2018,1203
+UKR,Ukraine,SWE,2019,1183
+UKR,Ukraine,SWE,2020,895
+UKR,Ukraine,SWE,2021,963
+UKR,Ukraine,SWE,2022,837
+UKR,Ukraine,SWE,2023,388
+UKR,Ukraine,AUS,2018,374
+UKR,Ukraine,AUS,2019,380
+UKR,Ukraine,AUS,2020,296
+UKR,Ukraine,AUS,2021,417
+UKR,Ukraine,AUS,2022,382
+UKR,Ukraine,AUS,2023,439
+UKR,Ukraine,CHE,2018,692
+UKR,Ukraine,CHE,2019,738
+UKR,Ukraine,CHE,2020,660
+UKR,Ukraine,CHE,2021,714
+UKR,Ukraine,CHE,2022,833
+UKR,Ukraine,CHE,2023,660
+UKR,Ukraine,ITA,2018,7689
+UKR,Ukraine,ITA,2019,6593
+UKR,Ukraine,ITA,2020,5154
+UKR,Ukraine,ITA,2021,8692
+UKR,Ukraine,ITA,2022,29938
+UKR,Ukraine,ITA,2023,33897
+UKR,Ukraine,NLD,2018,1302
+UKR,Ukraine,NLD,2019,1443
+UKR,Ukraine,NLD,2020,1056
+UKR,Ukraine,NLD,2021,1367
+UKR,Ukraine,NLD,2022,104511
+UKR,Ukraine,NLD,2023,38497
+UKR,Ukraine,BEL,2018,686
+UKR,Ukraine,BEL,2019,764
+UKR,Ukraine,BEL,2020,608
+UKR,Ukraine,BEL,2021,767
+UKR,Ukraine,BEL,2022,49222
+UKR,Ukraine,BEL,2023,11972
+UKR,Ukraine,FRA,2018,1482
+UKR,Ukraine,FRA,2019,1695
+UKR,Ukraine,FRA,2020,1340
+UKR,Ukraine,FRA,2021,1818
+UKR,Ukraine,FRA,2022,1533
+UKR,Ukraine,FRA,2023,1534
+UKR,Ukraine,DEU,2018,14230
+UKR,Ukraine,DEU,2019,15839
+UKR,Ukraine,DEU,2020,11822
+UKR,Ukraine,DEU,2021,12379
+UKR,Ukraine,DEU,2022,1073173
+UKR,Ukraine,DEU,2023,283631
+UKR,Ukraine,CAN,2018,3135
+UKR,Ukraine,CAN,2019,2995
+UKR,Ukraine,CAN,2020,1675
+UKR,Ukraine,CAN,2021,3190
+UKR,Ukraine,CAN,2022,3575
+UKR,Ukraine,CAN,2023,3110
+UKR,Ukraine,USA,2018,11836
+UKR,Ukraine,USA,2019,11718
+UKR,Ukraine,USA,2020,9861
+UKR,Ukraine,USA,2021,7563
+UKR,Ukraine,USA,2022,11719
+UKR,Ukraine,USA,2023,10680
+PHL,Philippines,ISR,2022,4
+PHL,Philippines,ISR,2023,2
+PHL,Philippines,LVA,2018,89
+PHL,Philippines,LVA,2019,12
+PHL,Philippines,LVA,2020,3
+PHL,Philippines,LVA,2021,5
+PHL,Philippines,LVA,2023,86
+PHL,Philippines,SVK,2018,6
+PHL,Philippines,SVK,2019,1
+PHL,Philippines,SVK,2020,3
+PHL,Philippines,SVK,2021,4
+PHL,Philippines,SVK,2022,8
+PHL,Philippines,SVK,2023,7
+PHL,Philippines,CHL,2018,86
+PHL,Philippines,CHL,2019,74
+PHL,Philippines,CHL,2020,39
+PHL,Philippines,CHL,2021,20
+PHL,Philippines,CHL,2022,133
+PHL,Philippines,CHL,2023,101
+PHL,Philippines,SVN,2018,24
+PHL,Philippines,SVN,2019,28
+PHL,Philippines,SVN,2020,19
+PHL,Philippines,SVN,2021,20
+PHL,Philippines,SVN,2022,23
+PHL,Philippines,SVN,2023,40
+PHL,Philippines,ESP,2018,2745
+PHL,Philippines,ESP,2019,3248
+PHL,Philippines,ESP,2020,1825
+PHL,Philippines,ESP,2021,3580
+PHL,Philippines,ESP,2022,4105
+PHL,Philippines,ESP,2023,4979
+PHL,Philippines,ISL,2018,285
+PHL,Philippines,ISL,2019,207
+PHL,Philippines,ISL,2020,172
+PHL,Philippines,ISL,2021,181
+PHL,Philippines,ISL,2022,247
+PHL,Philippines,ISL,2023,304
+PHL,Philippines,LTU,2019,48
+PHL,Philippines,LTU,2020,15
+PHL,Philippines,LTU,2021,29
+PHL,Philippines,LTU,2022,102
+PHL,Philippines,LTU,2023,230
+PHL,Philippines,EST,2018,20
+PHL,Philippines,EST,2019,36
+PHL,Philippines,EST,2020,29
+PHL,Philippines,EST,2021,29
+PHL,Philippines,EST,2022,56
+PHL,Philippines,EST,2023,86
+PHL,Philippines,MEX,2018,60
+PHL,Philippines,MEX,2019,70
+PHL,Philippines,MEX,2020,85
+PHL,Philippines,MEX,2021,86
+PHL,Philippines,MEX,2022,74
+PHL,Philippines,MEX,2023,83
+PHL,Philippines,NZL,2018,9081
+PHL,Philippines,NZL,2019,10605
+PHL,Philippines,NZL,2020,3096
+PHL,Philippines,NZL,2021,2238
+PHL,Philippines,NZL,2022,13077
+PHL,Philippines,NZL,2023,38838
+PHL,Philippines,CZE,2018,512
+PHL,Philippines,CZE,2019,844
+PHL,Philippines,CZE,2020,545
+PHL,Philippines,CZE,2021,546
+PHL,Philippines,CZE,2022,1399
+PHL,Philippines,CZE,2023,2335
+PHL,Philippines,LUX,2018,110
+PHL,Philippines,LUX,2019,134
+PHL,Philippines,LUX,2020,104
+PHL,Philippines,LUX,2021,89
+PHL,Philippines,LUX,2022,155
+PHL,Philippines,LUX,2023,144
+PHL,Philippines,FIN,2018,451
+PHL,Philippines,FIN,2019,827
+PHL,Philippines,FIN,2020,637
+PHL,Philippines,FIN,2021,740
+PHL,Philippines,FIN,2022,2940
+PHL,Philippines,FIN,2023,3537
+PHL,Philippines,NOR,2018,1791
+PHL,Philippines,NOR,2019,1767
+PHL,Philippines,NOR,2020,850
+PHL,Philippines,NOR,2021,697
+PHL,Philippines,NOR,2022,1631
+PHL,Philippines,NOR,2023,1210
+PHL,Philippines,DNK,2018,1230
+PHL,Philippines,DNK,2019,1054
+PHL,Philippines,DNK,2020,758
+PHL,Philippines,DNK,2021,839
+PHL,Philippines,DNK,2022,873
+PHL,Philippines,DNK,2023,862
+PHL,Philippines,HUN,2018,133
+PHL,Philippines,HUN,2019,162
+PHL,Philippines,HUN,2020,121
+PHL,Philippines,HUN,2021,549
+PHL,Philippines,HUN,2022,1945
+PHL,Philippines,HUN,2023,6022
+PHL,Philippines,POL,2018,352
+PHL,Philippines,POL,2019,593
+PHL,Philippines,POL,2020,824
+PHL,Philippines,POL,2021,1144
+PHL,Philippines,TUR,2018,1023
+PHL,Philippines,TUR,2019,1195
+PHL,Philippines,TUR,2020,490
+PHL,Philippines,TUR,2021,1203
+PHL,Philippines,TUR,2022,771
+PHL,Philippines,TUR,2023,1028
+PHL,Philippines,JPN,2018,31324
+PHL,Philippines,JPN,2019,34720
+PHL,Philippines,JPN,2020,12684
+PHL,Philippines,JPN,2021,4864
+PHL,Philippines,JPN,2022,34372
+PHL,Philippines,JPN,2023,37338
+PHL,Philippines,AUT,2018,348
+PHL,Philippines,AUT,2019,387
+PHL,Philippines,AUT,2020,252
+PHL,Philippines,AUT,2021,345
+PHL,Philippines,AUT,2022,633
+PHL,Philippines,AUT,2023,617
+PHL,Philippines,KOR,2018,10053
+PHL,Philippines,KOR,2019,9149
+PHL,Philippines,KOR,2020,2939
+PHL,Philippines,KOR,2021,1847
+PHL,Philippines,KOR,2022,13612
+PHL,Philippines,KOR,2023,17458
+PHL,Philippines,SWE,2018,798
+PHL,Philippines,SWE,2019,787
+PHL,Philippines,SWE,2020,416
+PHL,Philippines,SWE,2021,601
+PHL,Philippines,SWE,2022,604
+PHL,Philippines,SWE,2023,642
+PHL,Philippines,AUS,2018,10916
+PHL,Philippines,AUS,2019,9184
+PHL,Philippines,AUS,2020,8514
+PHL,Philippines,AUS,2021,9806
+PHL,Philippines,AUS,2022,13262
+PHL,Philippines,AUS,2023,13083
+PHL,Philippines,CHE,2018,520
+PHL,Philippines,CHE,2019,610
+PHL,Philippines,CHE,2020,528
+PHL,Philippines,CHE,2021,480
+PHL,Philippines,CHE,2022,530
+PHL,Philippines,CHE,2023,630
+PHL,Philippines,ITA,2018,2545
+PHL,Philippines,ITA,2019,2453
+PHL,Philippines,ITA,2020,1494
+PHL,Philippines,ITA,2021,1761
+PHL,Philippines,ITA,2022,2379
+PHL,Philippines,ITA,2023,2455
+PHL,Philippines,NLD,2018,1271
+PHL,Philippines,NLD,2019,1418
+PHL,Philippines,NLD,2020,1111
+PHL,Philippines,NLD,2021,1363
+PHL,Philippines,NLD,2022,1655
+PHL,Philippines,NLD,2023,1934
+PHL,Philippines,BEL,2018,459
+PHL,Philippines,BEL,2019,501
+PHL,Philippines,BEL,2020,378
+PHL,Philippines,BEL,2021,377
+PHL,Philippines,BEL,2022,688
+PHL,Philippines,BEL,2023,587
+PHL,Philippines,FRA,2018,1528
+PHL,Philippines,FRA,2019,1306
+PHL,Philippines,FRA,2020,1004
+PHL,Philippines,FRA,2021,1062
+PHL,Philippines,FRA,2022,1183
+PHL,Philippines,FRA,2023,1070
+PHL,Philippines,DEU,2018,3999
+PHL,Philippines,DEU,2019,4760
+PHL,Philippines,DEU,2020,4210
+PHL,Philippines,DEU,2021,6350
+PHL,Philippines,DEU,2022,6709
+PHL,Philippines,DEU,2023,8811
+PHL,Philippines,CAN,2018,35050
+PHL,Philippines,CAN,2019,27820
+PHL,Philippines,CAN,2020,10975
+PHL,Philippines,CAN,2021,18020
+PHL,Philippines,CAN,2022,22095
+PHL,Philippines,CAN,2023,26965
+PHL,Philippines,USA,2018,46889
+PHL,Philippines,USA,2019,45595
+PHL,Philippines,USA,2020,25209
+PHL,Philippines,USA,2021,27458
+PHL,Philippines,USA,2022,36313
+PHL,Philippines,USA,2023,48690
+PHL,Philippines,GBR,2018,5000
+PHL,Philippines,GBR,2019,12000
+PAK,Pakistan,SVK,2018,2
+PAK,Pakistan,SVK,2019,1
+PAK,Pakistan,SVK,2020,3
+PAK,Pakistan,SVK,2021,1
+PAK,Pakistan,SVK,2022,1
+PAK,Pakistan,SVK,2023,1
+PAK,Pakistan,SVN,2018,6
+PAK,Pakistan,SVN,2019,12
+PAK,Pakistan,SVN,2020,8
+PAK,Pakistan,SVN,2021,8
+PAK,Pakistan,SVN,2022,11
+PAK,Pakistan,SVN,2023,19
+PAK,Pakistan,CHL,2018,153
+PAK,Pakistan,CHL,2019,193
+PAK,Pakistan,CHL,2020,118
+PAK,Pakistan,CHL,2021,42
+PAK,Pakistan,CHL,2022,52
+PAK,Pakistan,CHL,2023,79
+PAK,Pakistan,LVA,2018,165
+PAK,Pakistan,LVA,2019,110
+PAK,Pakistan,LVA,2020,36
+PAK,Pakistan,LVA,2021,48
+PAK,Pakistan,LVA,2022,48
+PAK,Pakistan,LVA,2023,70
+PAK,Pakistan,PRT,2018,1269
+PAK,Pakistan,PRT,2019,1037
+PAK,Pakistan,PRT,2020,1343
+PAK,Pakistan,PRT,2021,2006
+PAK,Pakistan,PRT,2022,3997
+PAK,Pakistan,PRT,2023,6869
+PAK,Pakistan,ESP,2018,8728
+PAK,Pakistan,ESP,2019,11704
+PAK,Pakistan,ESP,2020,7386
+PAK,Pakistan,ESP,2021,15890
+PAK,Pakistan,ESP,2022,16599
+PAK,Pakistan,ESP,2023,18175
+PAK,Pakistan,ISL,2018,23
+PAK,Pakistan,ISL,2019,17
+PAK,Pakistan,ISL,2020,21
+PAK,Pakistan,ISL,2021,20
+PAK,Pakistan,ISL,2022,21
+PAK,Pakistan,ISL,2023,53
+PAK,Pakistan,LTU,2018,20
+PAK,Pakistan,LTU,2019,34
+PAK,Pakistan,LTU,2020,39
+PAK,Pakistan,LTU,2021,49
+PAK,Pakistan,LTU,2022,66
+PAK,Pakistan,LTU,2023,378
+PAK,Pakistan,EST,2018,87
+PAK,Pakistan,EST,2019,148
+PAK,Pakistan,EST,2020,83
+PAK,Pakistan,EST,2021,111
+PAK,Pakistan,EST,2022,142
+PAK,Pakistan,EST,2023,124
+PAK,Pakistan,MEX,2018,44
+PAK,Pakistan,MEX,2019,54
+PAK,Pakistan,MEX,2020,67
+PAK,Pakistan,MEX,2021,75
+PAK,Pakistan,MEX,2022,75
+PAK,Pakistan,MEX,2023,112
+PAK,Pakistan,NZL,2018,726
+PAK,Pakistan,NZL,2019,549
+PAK,Pakistan,NZL,2020,231
+PAK,Pakistan,NZL,2021,222
+PAK,Pakistan,NZL,2022,588
+PAK,Pakistan,NZL,2023,1404
+PAK,Pakistan,CZE,2018,47
+PAK,Pakistan,CZE,2019,69
+PAK,Pakistan,CZE,2020,67
+PAK,Pakistan,CZE,2021,143
+PAK,Pakistan,CZE,2022,174
+PAK,Pakistan,CZE,2023,201
+PAK,Pakistan,LUX,2018,43
+PAK,Pakistan,LUX,2019,64
+PAK,Pakistan,LUX,2020,67
+PAK,Pakistan,LUX,2021,75
+PAK,Pakistan,LUX,2022,216
+PAK,Pakistan,LUX,2023,190
+PAK,Pakistan,FIN,2018,239
+PAK,Pakistan,FIN,2019,365
+PAK,Pakistan,FIN,2020,309
+PAK,Pakistan,FIN,2021,355
+PAK,Pakistan,FIN,2022,960
+PAK,Pakistan,FIN,2023,1433
+PAK,Pakistan,NOR,2018,495
+PAK,Pakistan,NOR,2019,597
+PAK,Pakistan,NOR,2020,456
+PAK,Pakistan,NOR,2021,794
+PAK,Pakistan,NOR,2022,1054
+PAK,Pakistan,NOR,2023,980
+PAK,Pakistan,DNK,2018,518
+PAK,Pakistan,DNK,2019,433
+PAK,Pakistan,DNK,2020,286
+PAK,Pakistan,DNK,2021,423
+PAK,Pakistan,DNK,2022,402
+PAK,Pakistan,DNK,2023,653
+PAK,Pakistan,HUN,2018,326
+PAK,Pakistan,HUN,2019,329
+PAK,Pakistan,HUN,2020,467
+PAK,Pakistan,HUN,2021,569
+PAK,Pakistan,HUN,2022,579
+PAK,Pakistan,HUN,2023,716
+PAK,Pakistan,POL,2018,577
+PAK,Pakistan,POL,2019,407
+PAK,Pakistan,POL,2020,377
+PAK,Pakistan,POL,2021,428
+PAK,Pakistan,TUR,2018,2680
+PAK,Pakistan,TUR,2019,4532
+PAK,Pakistan,TUR,2020,2658
+PAK,Pakistan,TUR,2021,11900
+PAK,Pakistan,TUR,2022,5039
+PAK,Pakistan,TUR,2023,2770
+PAK,Pakistan,JPN,2018,1763
+PAK,Pakistan,JPN,2019,1901
+PAK,Pakistan,JPN,2020,1248
+PAK,Pakistan,JPN,2021,535
+PAK,Pakistan,JPN,2022,3577
+PAK,Pakistan,JPN,2023,3831
+PAK,Pakistan,AUT,2018,484
+PAK,Pakistan,AUT,2019,424
+PAK,Pakistan,AUT,2020,336
+PAK,Pakistan,AUT,2021,481
+PAK,Pakistan,AUT,2022,735
+PAK,Pakistan,AUT,2023,1056
+PAK,Pakistan,KOR,2018,3161
+PAK,Pakistan,KOR,2019,2623
+PAK,Pakistan,KOR,2020,1133
+PAK,Pakistan,KOR,2021,1214
+PAK,Pakistan,KOR,2022,3636
+PAK,Pakistan,KOR,2023,3417
+PAK,Pakistan,SWE,2018,2469
+PAK,Pakistan,SWE,2019,3119
+PAK,Pakistan,SWE,2020,2373
+PAK,Pakistan,SWE,2021,3200
+PAK,Pakistan,SWE,2022,3295
+PAK,Pakistan,SWE,2023,2383
+PAK,Pakistan,AUS,2018,6286
+PAK,Pakistan,AUS,2019,4651
+PAK,Pakistan,AUS,2020,3814
+PAK,Pakistan,AUS,2021,4680
+PAK,Pakistan,AUS,2022,5487
+PAK,Pakistan,AUS,2023,7521
+PAK,Pakistan,CHE,2018,231
+PAK,Pakistan,CHE,2019,165
+PAK,Pakistan,CHE,2020,172
+PAK,Pakistan,CHE,2021,180
+PAK,Pakistan,CHE,2022,181
+PAK,Pakistan,CHE,2023,233
+PAK,Pakistan,ITA,2018,13245
+PAK,Pakistan,ITA,2019,9931
+PAK,Pakistan,ITA,2020,9694
+PAK,Pakistan,ITA,2021,14328
+PAK,Pakistan,ITA,2022,16717
+PAK,Pakistan,ITA,2023,20402
+PAK,Pakistan,NLD,2018,883
+PAK,Pakistan,NLD,2019,1097
+PAK,Pakistan,NLD,2020,813
+PAK,Pakistan,NLD,2021,1238
+PAK,Pakistan,NLD,2022,1686
+PAK,Pakistan,NLD,2023,1929
+PAK,Pakistan,BEL,2018,642
+PAK,Pakistan,BEL,2019,724
+PAK,Pakistan,BEL,2020,571
+PAK,Pakistan,BEL,2021,656
+PAK,Pakistan,BEL,2022,838
+PAK,Pakistan,BEL,2023,1026
+PAK,Pakistan,FRA,2018,1759
+PAK,Pakistan,FRA,2019,1834
+PAK,Pakistan,FRA,2020,1443
+PAK,Pakistan,FRA,2021,1585
+PAK,Pakistan,FRA,2022,2064
+PAK,Pakistan,FRA,2023,1964
+PAK,Pakistan,DEU,2018,9821
+PAK,Pakistan,DEU,2019,10108
+PAK,Pakistan,DEU,2020,6922
+PAK,Pakistan,DEU,2021,9235
+PAK,Pakistan,DEU,2022,11408
+PAK,Pakistan,DEU,2023,14432
+PAK,Pakistan,CAN,2018,9490
+PAK,Pakistan,CAN,2019,10795
+PAK,Pakistan,CAN,2020,6230
+PAK,Pakistan,CAN,2021,8480
+PAK,Pakistan,CAN,2022,11600
+PAK,Pakistan,CAN,2023,11860
+PAK,Pakistan,USA,2018,15426
+PAK,Pakistan,USA,2019,13582
+PAK,Pakistan,USA,2020,10164
+PAK,Pakistan,USA,2021,9615
+PAK,Pakistan,USA,2022,11384
+PAK,Pakistan,USA,2023,11410
+PAK,Pakistan,GBR,2018,9873
+PAK,Pakistan,GBR,2019,16000
+BGD,Bangladesh,CHL,2018,10
+BGD,Bangladesh,CHL,2019,9
+BGD,Bangladesh,CHL,2020,5
+BGD,Bangladesh,CHL,2021,1
+BGD,Bangladesh,CHL,2022,2
+BGD,Bangladesh,CHL,2023,10
+BGD,Bangladesh,LVA,2018,12
+BGD,Bangladesh,LVA,2019,7
+BGD,Bangladesh,LVA,2020,1
+BGD,Bangladesh,LVA,2021,3
+BGD,Bangladesh,ISL,2018,11
+BGD,Bangladesh,ISL,2019,18
+BGD,Bangladesh,ISL,2020,14
+BGD,Bangladesh,ISL,2021,7
+BGD,Bangladesh,ISL,2022,8
+BGD,Bangladesh,ISL,2023,7
+BGD,Bangladesh,LTU,2018,24
+BGD,Bangladesh,LTU,2019,15
+BGD,Bangladesh,LTU,2020,10
+BGD,Bangladesh,LTU,2021,7
+BGD,Bangladesh,LTU,2022,25
+BGD,Bangladesh,LTU,2023,176
+BGD,Bangladesh,PRT,2018,1954
+BGD,Bangladesh,PRT,2019,2396
+BGD,Bangladesh,PRT,2020,2154
+BGD,Bangladesh,PRT,2021,2132
+BGD,Bangladesh,PRT,2022,6153
+BGD,Bangladesh,PRT,2023,10077
+BGD,Bangladesh,SVN,2018,8
+BGD,Bangladesh,SVN,2019,4
+BGD,Bangladesh,SVN,2020,22
+BGD,Bangladesh,SVN,2021,16
+BGD,Bangladesh,SVN,2022,21
+BGD,Bangladesh,SVN,2023,63
+BGD,Bangladesh,ESP,2018,2521
+BGD,Bangladesh,ESP,2019,2546
+BGD,Bangladesh,ESP,2020,1240
+BGD,Bangladesh,ESP,2021,2091
+BGD,Bangladesh,ESP,2022,2558
+BGD,Bangladesh,ESP,2023,3559
+BGD,Bangladesh,EST,2018,90
+BGD,Bangladesh,EST,2019,138
+BGD,Bangladesh,EST,2020,48
+BGD,Bangladesh,EST,2021,56
+BGD,Bangladesh,EST,2022,57
+BGD,Bangladesh,EST,2023,33
+BGD,Bangladesh,MEX,2018,5
+BGD,Bangladesh,MEX,2019,12
+BGD,Bangladesh,MEX,2020,15
+BGD,Bangladesh,MEX,2021,27
+BGD,Bangladesh,MEX,2022,19
+BGD,Bangladesh,MEX,2023,17
+BGD,Bangladesh,NZL,2018,309
+BGD,Bangladesh,NZL,2019,294
+BGD,Bangladesh,NZL,2020,111
+BGD,Bangladesh,NZL,2021,54
+BGD,Bangladesh,NZL,2022,390
+BGD,Bangladesh,NZL,2023,1467
+BGD,Bangladesh,CZE,2018,196
+BGD,Bangladesh,CZE,2019,178
+BGD,Bangladesh,CZE,2020,84
+BGD,Bangladesh,CZE,2021,92
+BGD,Bangladesh,CZE,2022,181
+BGD,Bangladesh,CZE,2023,281
+BGD,Bangladesh,LUX,2018,33
+BGD,Bangladesh,LUX,2019,26
+BGD,Bangladesh,LUX,2020,26
+BGD,Bangladesh,LUX,2021,17
+BGD,Bangladesh,LUX,2022,12
+BGD,Bangladesh,LUX,2023,13
+BGD,Bangladesh,FIN,2018,304
+BGD,Bangladesh,FIN,2019,343
+BGD,Bangladesh,FIN,2020,206
+BGD,Bangladesh,FIN,2021,263
+BGD,Bangladesh,FIN,2022,1172
+BGD,Bangladesh,FIN,2023,2503
+BGD,Bangladesh,NOR,2018,132
+BGD,Bangladesh,NOR,2019,140
+BGD,Bangladesh,NOR,2020,99
+BGD,Bangladesh,NOR,2021,335
+BGD,Bangladesh,NOR,2022,508
+BGD,Bangladesh,NOR,2023,143
+BGD,Bangladesh,DNK,2018,231
+BGD,Bangladesh,DNK,2019,250
+BGD,Bangladesh,DNK,2020,220
+BGD,Bangladesh,DNK,2021,269
+BGD,Bangladesh,DNK,2022,579
+BGD,Bangladesh,DNK,2023,1613
+BGD,Bangladesh,HUN,2018,129
+BGD,Bangladesh,HUN,2019,150
+BGD,Bangladesh,HUN,2020,146
+BGD,Bangladesh,HUN,2021,187
+BGD,Bangladesh,HUN,2022,285
+BGD,Bangladesh,HUN,2023,547
+BGD,Bangladesh,POL,2018,603
+BGD,Bangladesh,POL,2019,875
+BGD,Bangladesh,POL,2020,838
+BGD,Bangladesh,POL,2021,888
+BGD,Bangladesh,TUR,2018,387
+BGD,Bangladesh,TUR,2019,592
+BGD,Bangladesh,TUR,2020,261
+BGD,Bangladesh,TUR,2021,591
+BGD,Bangladesh,TUR,2022,502
+BGD,Bangladesh,TUR,2023,275
+BGD,Bangladesh,JPN,2018,2554
+BGD,Bangladesh,JPN,2019,2529
+BGD,Bangladesh,JPN,2020,1444
+BGD,Bangladesh,JPN,2021,698
+BGD,Bangladesh,JPN,2022,6083
+BGD,Bangladesh,JPN,2023,6475
+BGD,Bangladesh,AUT,2018,181
+BGD,Bangladesh,AUT,2019,144
+BGD,Bangladesh,AUT,2020,125
+BGD,Bangladesh,AUT,2021,148
+BGD,Bangladesh,AUT,2022,246
+BGD,Bangladesh,AUT,2023,320
+BGD,Bangladesh,KOR,2018,3346
+BGD,Bangladesh,KOR,2019,2844
+BGD,Bangladesh,KOR,2020,1138
+BGD,Bangladesh,KOR,2021,1048
+BGD,Bangladesh,KOR,2022,7283
+BGD,Bangladesh,KOR,2023,6622
+BGD,Bangladesh,SWE,2018,1490
+BGD,Bangladesh,SWE,2019,1663
+BGD,Bangladesh,SWE,2020,968
+BGD,Bangladesh,SWE,2021,817
+BGD,Bangladesh,SWE,2022,1103
+BGD,Bangladesh,SWE,2023,956
+BGD,Bangladesh,AUS,2018,1781
+BGD,Bangladesh,AUS,2019,1448
+BGD,Bangladesh,AUS,2020,1860
+BGD,Bangladesh,AUS,2021,1878
+BGD,Bangladesh,AUS,2022,2378
+BGD,Bangladesh,AUS,2023,2336
+BGD,Bangladesh,CHE,2018,106
+BGD,Bangladesh,CHE,2019,87
+BGD,Bangladesh,CHE,2020,47
+BGD,Bangladesh,CHE,2021,82
+BGD,Bangladesh,CHE,2022,68
+BGD,Bangladesh,CHE,2023,79
+BGD,Bangladesh,ITA,2018,13400
+BGD,Bangladesh,ITA,2019,11755
+BGD,Bangladesh,ITA,2020,7779
+BGD,Bangladesh,ITA,2021,14584
+BGD,Bangladesh,ITA,2022,21060
+BGD,Bangladesh,ITA,2023,25969
+BGD,Bangladesh,NLD,2018,224
+BGD,Bangladesh,NLD,2019,280
+BGD,Bangladesh,NLD,2020,369
+BGD,Bangladesh,NLD,2021,730
+BGD,Bangladesh,NLD,2022,990
+BGD,Bangladesh,NLD,2023,801
+BGD,Bangladesh,BEL,2018,125
+BGD,Bangladesh,BEL,2019,154
+BGD,Bangladesh,BEL,2020,101
+BGD,Bangladesh,BEL,2021,141
+BGD,Bangladesh,BEL,2022,303
+BGD,Bangladesh,BEL,2023,270
+BGD,Bangladesh,FRA,2018,2568
+BGD,Bangladesh,FRA,2019,2724
+BGD,Bangladesh,FRA,2020,2342
+BGD,Bangladesh,FRA,2021,3260
+BGD,Bangladesh,FRA,2022,3222
+BGD,Bangladesh,FRA,2023,3367
+BGD,Bangladesh,DEU,2018,2374
+BGD,Bangladesh,DEU,2019,3263
+BGD,Bangladesh,DEU,2020,1871
+BGD,Bangladesh,DEU,2021,2825
+BGD,Bangladesh,DEU,2022,3010
+BGD,Bangladesh,DEU,2023,3441
+BGD,Bangladesh,CAN,2018,3205
+BGD,Bangladesh,CAN,2019,3395
+BGD,Bangladesh,CAN,2020,1620
+BGD,Bangladesh,CAN,2021,3000
+BGD,Bangladesh,CAN,2022,4055
+BGD,Bangladesh,CAN,2023,5020
+BGD,Bangladesh,USA,2018,15580
+BGD,Bangladesh,USA,2019,15023
+BGD,Bangladesh,USA,2020,9149
+BGD,Bangladesh,USA,2021,6313
+BGD,Bangladesh,USA,2022,10501
+BGD,Bangladesh,USA,2023,17820
+BGD,Bangladesh,SVK,2022,1
+NPL,Nepal,MEX,2018,8
+NPL,Nepal,MEX,2019,2
+NPL,Nepal,MEX,2020,1
+NPL,Nepal,MEX,2021,3
+NPL,Nepal,MEX,2022,9
+NPL,Nepal,MEX,2023,4
+NPL,Nepal,SVK,2018,1
+NPL,Nepal,SVK,2020,2
+NPL,Nepal,SVK,2022,1
+NPL,Nepal,SVK,2023,3
+NPL,Nepal,SVN,2018,3
+NPL,Nepal,SVN,2019,7
+NPL,Nepal,SVN,2020,3
+NPL,Nepal,SVN,2021,4
+NPL,Nepal,SVN,2022,6
+NPL,Nepal,SVN,2023,97
+NPL,Nepal,ISL,2018,18
+NPL,Nepal,ISL,2019,19
+NPL,Nepal,ISL,2020,5
+NPL,Nepal,ISL,2021,6
+NPL,Nepal,ISL,2022,22
+NPL,Nepal,ISL,2023,23
+NPL,Nepal,LVA,2018,19
+NPL,Nepal,LVA,2019,26
+NPL,Nepal,LVA,2020,4
+NPL,Nepal,LVA,2021,6
+NPL,Nepal,LVA,2023,14
+NPL,Nepal,LTU,2018,7
+NPL,Nepal,LTU,2019,4
+NPL,Nepal,LTU,2020,14
+NPL,Nepal,LTU,2021,8
+NPL,Nepal,LTU,2022,20
+NPL,Nepal,LTU,2023,111
+NPL,Nepal,PRT,2018,4211
+NPL,Nepal,PRT,2019,5010
+NPL,Nepal,PRT,2020,3880
+NPL,Nepal,PRT,2021,2759
+NPL,Nepal,PRT,2022,3858
+NPL,Nepal,EST,2018,53
+NPL,Nepal,EST,2019,37
+NPL,Nepal,EST,2020,24
+NPL,Nepal,EST,2021,16
+NPL,Nepal,EST,2022,24
+NPL,Nepal,EST,2023,24
+NPL,Nepal,NZL,2018,945
+NPL,Nepal,NZL,2019,945
+NPL,Nepal,NZL,2020,465
+NPL,Nepal,NZL,2021,72
+NPL,Nepal,NZL,2022,795
+NPL,Nepal,NZL,2023,2811
+NPL,Nepal,CZE,2018,612
+NPL,Nepal,CZE,2019,237
+NPL,Nepal,CZE,2020,67
+NPL,Nepal,CZE,2021,108
+NPL,Nepal,CZE,2022,180
+NPL,Nepal,CZE,2023,127
+NPL,Nepal,LUX,2018,62
+NPL,Nepal,LUX,2019,30
+NPL,Nepal,LUX,2020,12
+NPL,Nepal,LUX,2021,25
+NPL,Nepal,LUX,2022,28
+NPL,Nepal,LUX,2023,37
+NPL,Nepal,FIN,2018,213
+NPL,Nepal,FIN,2019,329
+NPL,Nepal,FIN,2020,271
+NPL,Nepal,FIN,2021,352
+NPL,Nepal,FIN,2022,724
+NPL,Nepal,FIN,2023,1319
+NPL,Nepal,NOR,2018,229
+NPL,Nepal,NOR,2019,247
+NPL,Nepal,NOR,2020,112
+NPL,Nepal,NOR,2021,314
+NPL,Nepal,NOR,2022,395
+NPL,Nepal,NOR,2023,267
+NPL,Nepal,DNK,2018,570
+NPL,Nepal,DNK,2019,423
+NPL,Nepal,DNK,2020,234
+NPL,Nepal,DNK,2021,652
+NPL,Nepal,DNK,2022,981
+NPL,Nepal,DNK,2023,2149
+NPL,Nepal,HUN,2018,39
+NPL,Nepal,HUN,2019,40
+NPL,Nepal,HUN,2020,26
+NPL,Nepal,HUN,2021,25
+NPL,Nepal,HUN,2022,175
+NPL,Nepal,HUN,2023,279
+NPL,Nepal,POL,2018,853
+NPL,Nepal,POL,2019,1374
+NPL,Nepal,POL,2020,800
+NPL,Nepal,POL,2021,823
+NPL,Nepal,TUR,2018,2340
+NPL,Nepal,TUR,2019,1204
+NPL,Nepal,TUR,2020,436
+NPL,Nepal,TUR,2021,804
+NPL,Nepal,TUR,2022,278
+NPL,Nepal,JPN,2018,13012
+NPL,Nepal,JPN,2019,13102
+NPL,Nepal,JPN,2020,4192
+NPL,Nepal,JPN,2021,1466
+NPL,Nepal,JPN,2022,44499
+NPL,Nepal,JPN,2023,39564
+NPL,Nepal,AUT,2018,91
+NPL,Nepal,AUT,2019,97
+NPL,Nepal,AUT,2020,53
+NPL,Nepal,AUT,2021,65
+NPL,Nepal,AUT,2022,139
+NPL,Nepal,AUT,2023,250
+NPL,Nepal,KOR,2018,9845
+NPL,Nepal,KOR,2019,8804
+NPL,Nepal,KOR,2020,3005
+NPL,Nepal,KOR,2021,999
+NPL,Nepal,KOR,2022,15990
+NPL,Nepal,KOR,2023,20147
+NPL,Nepal,SWE,2018,116
+NPL,Nepal,SWE,2019,147
+NPL,Nepal,SWE,2020,89
+NPL,Nepal,SWE,2021,123
+NPL,Nepal,SWE,2022,137
+NPL,Nepal,SWE,2023,216
+NPL,Nepal,AUS,2018,2994
+NPL,Nepal,AUS,2019,3844
+NPL,Nepal,AUS,2020,4681
+NPL,Nepal,AUS,2021,6790
+NPL,Nepal,AUS,2022,13417
+NPL,Nepal,AUS,2023,13771
+NPL,Nepal,CHE,2018,50
+NPL,Nepal,CHE,2019,57
+NPL,Nepal,CHE,2020,42
+NPL,Nepal,CHE,2021,54
+NPL,Nepal,CHE,2022,67
+NPL,Nepal,CHE,2023,85
+NPL,Nepal,ITA,2018,213
+NPL,Nepal,ITA,2019,143
+NPL,Nepal,ITA,2020,91
+NPL,Nepal,ITA,2021,111
+NPL,Nepal,ITA,2022,129
+NPL,Nepal,ITA,2023,231
+NPL,Nepal,NLD,2018,154
+NPL,Nepal,NLD,2019,162
+NPL,Nepal,NLD,2020,109
+NPL,Nepal,NLD,2021,153
+NPL,Nepal,NLD,2022,223
+NPL,Nepal,NLD,2023,321
+NPL,Nepal,BEL,2018,158
+NPL,Nepal,BEL,2019,179
+NPL,Nepal,BEL,2020,173
+NPL,Nepal,BEL,2021,328
+NPL,Nepal,BEL,2022,393
+NPL,Nepal,BEL,2023,427
+NPL,Nepal,FRA,2018,109
+NPL,Nepal,FRA,2019,148
+NPL,Nepal,FRA,2020,111
+NPL,Nepal,FRA,2021,176
+NPL,Nepal,FRA,2022,208
+NPL,Nepal,FRA,2023,272
+NPL,Nepal,DEU,2018,1201
+NPL,Nepal,DEU,2019,1273
+NPL,Nepal,DEU,2020,754
+NPL,Nepal,DEU,2021,1039
+NPL,Nepal,DEU,2022,1223
+NPL,Nepal,DEU,2023,1470
+NPL,Nepal,CAN,2018,1400
+NPL,Nepal,CAN,2019,1410
+NPL,Nepal,CAN,2020,565
+NPL,Nepal,CAN,2021,1020
+NPL,Nepal,CAN,2022,1440
+NPL,Nepal,CAN,2023,1760
+NPL,Nepal,USA,2018,9935
+NPL,Nepal,USA,2019,8810
+NPL,Nepal,USA,2020,6718
+NPL,Nepal,USA,2021,7174
+NPL,Nepal,USA,2022,11794
+NPL,Nepal,USA,2023,11150
+NPL,Nepal,CHL,2018,25
+NPL,Nepal,CHL,2019,15
+NPL,Nepal,CHL,2020,8
+NPL,Nepal,CHL,2021,1
+NPL,Nepal,CHL,2022,18
+NPL,Nepal,CHL,2023,32
+NPL,Nepal,ESP,2018,886
+NPL,Nepal,ESP,2019,634
+SYR,Syrian Arab Republic,EST,2018,24
+SYR,Syrian Arab Republic,EST,2019,10
+SYR,Syrian Arab Republic,EST,2020,15
+SYR,Syrian Arab Republic,EST,2021,16
+SYR,Syrian Arab Republic,EST,2022,4
+SYR,Syrian Arab Republic,EST,2023,2
+SYR,Syrian Arab Republic,SVK,2018,9
+SYR,Syrian Arab Republic,SVK,2019,6
+SYR,Syrian Arab Republic,SVK,2020,4
+SYR,Syrian Arab Republic,SVK,2021,1
+SYR,Syrian Arab Republic,SVK,2022,1
+SYR,Syrian Arab Republic,SVK,2023,2
+SYR,Syrian Arab Republic,LVA,2018,3
+SYR,Syrian Arab Republic,LVA,2019,2
+SYR,Syrian Arab Republic,LVA,2020,2
+SYR,Syrian Arab Republic,LVA,2021,2
+SYR,Syrian Arab Republic,MEX,2018,11
+SYR,Syrian Arab Republic,MEX,2019,11
+SYR,Syrian Arab Republic,MEX,2020,14
+SYR,Syrian Arab Republic,MEX,2021,5
+SYR,Syrian Arab Republic,MEX,2022,21
+SYR,Syrian Arab Republic,MEX,2023,20
+SYR,Syrian Arab Republic,CHL,2018,121
+SYR,Syrian Arab Republic,CHL,2019,78
+SYR,Syrian Arab Republic,CHL,2020,47
+SYR,Syrian Arab Republic,CHL,2021,24
+SYR,Syrian Arab Republic,CHL,2022,32
+SYR,Syrian Arab Republic,CHL,2023,41
+SYR,Syrian Arab Republic,SVN,2018,48
+SYR,Syrian Arab Republic,SVN,2019,30
+SYR,Syrian Arab Republic,SVN,2020,32
+SYR,Syrian Arab Republic,SVN,2021,16
+SYR,Syrian Arab Republic,SVN,2022,14
+SYR,Syrian Arab Republic,SVN,2023,40
+SYR,Syrian Arab Republic,ISL,2018,51
+SYR,Syrian Arab Republic,ISL,2019,75
+SYR,Syrian Arab Republic,ISL,2020,65
+SYR,Syrian Arab Republic,ISL,2021,83
+SYR,Syrian Arab Republic,ISL,2022,115
+SYR,Syrian Arab Republic,ISL,2023,128
+SYR,Syrian Arab Republic,LTU,2018,83
+SYR,Syrian Arab Republic,LTU,2019,14
+SYR,Syrian Arab Republic,LTU,2020,11
+SYR,Syrian Arab Republic,LTU,2021,67
+SYR,Syrian Arab Republic,LTU,2022,65
+SYR,Syrian Arab Republic,LTU,2023,22
+SYR,Syrian Arab Republic,NZL,2018,288
+SYR,Syrian Arab Republic,NZL,2019,138
+SYR,Syrian Arab Republic,NZL,2020,72
+SYR,Syrian Arab Republic,NZL,2021,45
+SYR,Syrian Arab Republic,NZL,2022,234
+SYR,Syrian Arab Republic,NZL,2023,366
+SYR,Syrian Arab Republic,CZE,2018,134
+SYR,Syrian Arab Republic,CZE,2019,87
+SYR,Syrian Arab Republic,CZE,2020,101
+SYR,Syrian Arab Republic,CZE,2021,119
+SYR,Syrian Arab Republic,CZE,2022,142
+SYR,Syrian Arab Republic,CZE,2023,148
+SYR,Syrian Arab Republic,LUX,2018,209
+SYR,Syrian Arab Republic,LUX,2019,292
+SYR,Syrian Arab Republic,LUX,2020,303
+SYR,Syrian Arab Republic,LUX,2021,394
+SYR,Syrian Arab Republic,LUX,2022,857
+SYR,Syrian Arab Republic,LUX,2023,770
+SYR,Syrian Arab Republic,FIN,2018,697
+SYR,Syrian Arab Republic,FIN,2019,745
+SYR,Syrian Arab Republic,FIN,2020,432
+SYR,Syrian Arab Republic,FIN,2021,548
+SYR,Syrian Arab Republic,FIN,2022,904
+SYR,Syrian Arab Republic,FIN,2023,503
+SYR,Syrian Arab Republic,NOR,2018,3834
+SYR,Syrian Arab Republic,NOR,2019,1484
+SYR,Syrian Arab Republic,NOR,2020,1455
+SYR,Syrian Arab Republic,NOR,2021,2203
+SYR,Syrian Arab Republic,NOR,2022,2360
+SYR,Syrian Arab Republic,NOR,2023,3116
+SYR,Syrian Arab Republic,DNK,2018,1040
+SYR,Syrian Arab Republic,DNK,2019,505
+SYR,Syrian Arab Republic,DNK,2020,539
+SYR,Syrian Arab Republic,DNK,2021,460
+SYR,Syrian Arab Republic,DNK,2022,431
+SYR,Syrian Arab Republic,DNK,2023,463
+SYR,Syrian Arab Republic,HUN,2018,294
+SYR,Syrian Arab Republic,HUN,2019,250
+SYR,Syrian Arab Republic,HUN,2020,297
+SYR,Syrian Arab Republic,HUN,2021,387
+SYR,Syrian Arab Republic,HUN,2022,436
+SYR,Syrian Arab Republic,HUN,2023,484
+SYR,Syrian Arab Republic,POL,2018,286
+SYR,Syrian Arab Republic,POL,2019,259
+SYR,Syrian Arab Republic,POL,2020,220
+SYR,Syrian Arab Republic,POL,2021,255
+SYR,Syrian Arab Republic,TUR,2018,38997
+SYR,Syrian Arab Republic,TUR,2019,43190
+SYR,Syrian Arab Republic,TUR,2020,14653
+SYR,Syrian Arab Republic,TUR,2021,37044
+SYR,Syrian Arab Republic,TUR,2022,12571
+SYR,Syrian Arab Republic,TUR,2023,3330
+SYR,Syrian Arab Republic,JPN,2018,118
+SYR,Syrian Arab Republic,JPN,2019,128
+SYR,Syrian Arab Republic,JPN,2020,59
+SYR,Syrian Arab Republic,JPN,2021,53
+SYR,Syrian Arab Republic,JPN,2022,100
+SYR,Syrian Arab Republic,JPN,2023,98
+SYR,Syrian Arab Republic,AUT,2018,2134
+SYR,Syrian Arab Republic,AUT,2019,1647
+SYR,Syrian Arab Republic,AUT,2020,3729
+SYR,Syrian Arab Republic,AUT,2021,13365
+SYR,Syrian Arab Republic,AUT,2022,15103
+SYR,Syrian Arab Republic,AUT,2023,15246
+SYR,Syrian Arab Republic,KOR,2018,171
+SYR,Syrian Arab Republic,KOR,2019,203
+SYR,Syrian Arab Republic,KOR,2020,235
+SYR,Syrian Arab Republic,KOR,2021,53
+SYR,Syrian Arab Republic,KOR,2022,316
+SYR,Syrian Arab Republic,KOR,2023,313
+SYR,Syrian Arab Republic,SWE,2018,13933
+SYR,Syrian Arab Republic,SWE,2019,6036
+SYR,Syrian Arab Republic,SWE,2020,3240
+SYR,Syrian Arab Republic,SWE,2021,3630
+SYR,Syrian Arab Republic,SWE,2022,3894
+SYR,Syrian Arab Republic,SWE,2023,2515
+SYR,Syrian Arab Republic,AUS,2018,3323
+SYR,Syrian Arab Republic,AUS,2019,203
+SYR,Syrian Arab Republic,AUS,2020,161
+SYR,Syrian Arab Republic,AUS,2021,264
+SYR,Syrian Arab Republic,AUS,2022,195
+SYR,Syrian Arab Republic,AUS,2023,203
+SYR,Syrian Arab Republic,CHE,2018,2065
+SYR,Syrian Arab Republic,CHE,2019,2050
+SYR,Syrian Arab Republic,CHE,2020,1868
+SYR,Syrian Arab Republic,CHE,2021,1652
+SYR,Syrian Arab Republic,CHE,2022,2034
+SYR,Syrian Arab Republic,CHE,2023,1745
+SYR,Syrian Arab Republic,ITA,2018,1073
+SYR,Syrian Arab Republic,ITA,2019,858
+SYR,Syrian Arab Republic,ITA,2020,626
+SYR,Syrian Arab Republic,ITA,2021,354
+SYR,Syrian Arab Republic,ITA,2022,557
+SYR,Syrian Arab Republic,ITA,2023,591
+SYR,Syrian Arab Republic,NLD,2018,5285
+SYR,Syrian Arab Republic,NLD,2019,5680
+SYR,Syrian Arab Republic,NLD,2020,5749
+SYR,Syrian Arab Republic,NLD,2021,11890
+SYR,Syrian Arab Republic,NLD,2022,17079
+SYR,Syrian Arab Republic,NLD,2023,19551
+SYR,Syrian Arab Republic,BEL,2018,3609
+SYR,Syrian Arab Republic,BEL,2019,2790
+SYR,Syrian Arab Republic,BEL,2020,1667
+SYR,Syrian Arab Republic,BEL,2021,3282
+SYR,Syrian Arab Republic,BEL,2022,3557
+SYR,Syrian Arab Republic,BEL,2023,5496
+SYR,Syrian Arab Republic,FRA,2018,3717
+SYR,Syrian Arab Republic,FRA,2019,3510
+SYR,Syrian Arab Republic,FRA,2020,2251
+SYR,Syrian Arab Republic,FRA,2021,2687
+SYR,Syrian Arab Republic,FRA,2022,2528
+SYR,Syrian Arab Republic,FRA,2023,3381
+SYR,Syrian Arab Republic,DEU,2018,48951
+SYR,Syrian Arab Republic,DEU,2019,44073
+SYR,Syrian Arab Republic,DEU,2020,31145
+SYR,Syrian Arab Republic,DEU,2021,58779
+SYR,Syrian Arab Republic,DEU,2022,92291
+SYR,Syrian Arab Republic,DEU,2023,128742
+SYR,Syrian Arab Republic,CAN,2018,12045
+SYR,Syrian Arab Republic,CAN,2019,10120
+SYR,Syrian Arab Republic,CAN,2020,4880
+SYR,Syrian Arab Republic,CAN,2021,5590
+SYR,Syrian Arab Republic,CAN,2022,8510
+SYR,Syrian Arab Republic,CAN,2023,9345
+SYR,Syrian Arab Republic,USA,2018,15971
+SYR,Syrian Arab Republic,USA,2019,6289
+SYR,Syrian Arab Republic,USA,2020,3204
+SYR,Syrian Arab Republic,USA,2021,1728
+SYR,Syrian Arab Republic,USA,2022,3142
+SYR,Syrian Arab Republic,USA,2023,4250
+SYR,Syrian Arab Republic,ESP,2018,1304
+SYR,Syrian Arab Republic,ESP,2019,1296
+MEX,Mexico,MEX,2019,0
+MEX,Mexico,SVK,2018,6
+MEX,Mexico,SVK,2019,3
+MEX,Mexico,SVK,2020,5
+MEX,Mexico,SVK,2021,2
+MEX,Mexico,SVK,2022,2
+MEX,Mexico,SVK,2023,4
+MEX,Mexico,LVA,2018,6
+MEX,Mexico,LVA,2019,6
+MEX,Mexico,LVA,2020,5
+MEX,Mexico,LVA,2021,4
+MEX,Mexico,CHL,2018,848
+MEX,Mexico,CHL,2019,827
+MEX,Mexico,CHL,2020,714
+MEX,Mexico,CHL,2021,469
+MEX,Mexico,CHL,2022,817
+MEX,Mexico,CHL,2023,832
+MEX,Mexico,COL,2018,524
+MEX,Mexico,COL,2019,710
+MEX,Mexico,COL,2020,514
+MEX,Mexico,COL,2021,811
+MEX,Mexico,ISR,2018,93
+MEX,Mexico,ISR,2019,133
+MEX,Mexico,ISR,2020,174
+MEX,Mexico,ISR,2021,293
+MEX,Mexico,ISR,2022,141
+MEX,Mexico,ISR,2023,142
+MEX,Mexico,SVN,2018,16
+MEX,Mexico,SVN,2019,9
+MEX,Mexico,SVN,2020,8
+MEX,Mexico,SVN,2021,15
+MEX,Mexico,SVN,2022,18
+MEX,Mexico,SVN,2023,24
+MEX,Mexico,ESP,2018,5339
+MEX,Mexico,ESP,2019,6169
+MEX,Mexico,ESP,2020,3653
+MEX,Mexico,ESP,2021,7161
+MEX,Mexico,ESP,2022,8735
+MEX,Mexico,ESP,2023,9597
+MEX,Mexico,ISL,2018,23
+MEX,Mexico,ISL,2019,13
+MEX,Mexico,ISL,2020,19
+MEX,Mexico,ISL,2021,26
+MEX,Mexico,ISL,2022,15
+MEX,Mexico,ISL,2023,32
+MEX,Mexico,LTU,2018,13
+MEX,Mexico,LTU,2019,30
+MEX,Mexico,LTU,2020,25
+MEX,Mexico,LTU,2021,24
+MEX,Mexico,LTU,2022,36
+MEX,Mexico,LTU,2023,29
+MEX,Mexico,EST,2018,30
+MEX,Mexico,EST,2019,25
+MEX,Mexico,EST,2020,27
+MEX,Mexico,EST,2021,21
+MEX,Mexico,EST,2022,35
+MEX,Mexico,EST,2023,28
+MEX,Mexico,NZL,2018,264
+MEX,Mexico,NZL,2019,270
+MEX,Mexico,NZL,2020,135
+MEX,Mexico,NZL,2021,39
+MEX,Mexico,NZL,2022,195
+MEX,Mexico,NZL,2023,456
+MEX,Mexico,CZE,2018,168
+MEX,Mexico,CZE,2019,185
+MEX,Mexico,CZE,2020,141
+MEX,Mexico,CZE,2021,200
+MEX,Mexico,CZE,2022,186
+MEX,Mexico,CZE,2023,189
+MEX,Mexico,LUX,2018,36
+MEX,Mexico,LUX,2019,55
+MEX,Mexico,LUX,2020,41
+MEX,Mexico,LUX,2021,94
+MEX,Mexico,LUX,2022,81
+MEX,Mexico,LUX,2023,64
+MEX,Mexico,FIN,2018,80
+MEX,Mexico,FIN,2019,84
+MEX,Mexico,FIN,2020,85
+MEX,Mexico,FIN,2021,119
+MEX,Mexico,FIN,2022,97
+MEX,Mexico,FIN,2023,110
+MEX,Mexico,NOR,2018,138
+MEX,Mexico,NOR,2019,176
+MEX,Mexico,NOR,2020,103
+MEX,Mexico,NOR,2021,138
+MEX,Mexico,NOR,2022,145
+MEX,Mexico,NOR,2023,116
+MEX,Mexico,DNK,2018,234
+MEX,Mexico,DNK,2019,258
+MEX,Mexico,DNK,2020,186
+MEX,Mexico,DNK,2021,248
+MEX,Mexico,DNK,2022,361
+MEX,Mexico,DNK,2023,374
+MEX,Mexico,HUN,2018,173
+MEX,Mexico,HUN,2019,224
+MEX,Mexico,HUN,2020,118
+MEX,Mexico,HUN,2021,115
+MEX,Mexico,HUN,2022,109
+MEX,Mexico,HUN,2023,181
+MEX,Mexico,POL,2018,215
+MEX,Mexico,POL,2019,255
+MEX,Mexico,POL,2020,297
+MEX,Mexico,POL,2021,312
+MEX,Mexico,TUR,2018,124
+MEX,Mexico,TUR,2019,166
+MEX,Mexico,TUR,2021,229
+MEX,Mexico,TUR,2022,167
+MEX,Mexico,TUR,2023,123
+MEX,Mexico,JPN,2018,1174
+MEX,Mexico,JPN,2019,1155
+MEX,Mexico,JPN,2020,389
+MEX,Mexico,JPN,2021,184
+MEX,Mexico,JPN,2022,916
+MEX,Mexico,JPN,2023,1052
+MEX,Mexico,AUT,2018,349
+MEX,Mexico,AUT,2019,383
+MEX,Mexico,AUT,2020,291
+MEX,Mexico,AUT,2021,354
+MEX,Mexico,AUT,2022,435
+MEX,Mexico,AUT,2023,404
+MEX,Mexico,KOR,2018,416
+MEX,Mexico,KOR,2019,527
+MEX,Mexico,KOR,2020,357
+MEX,Mexico,KOR,2021,450
+MEX,Mexico,KOR,2022,739
+MEX,Mexico,KOR,2023,567
+MEX,Mexico,SWE,2018,263
+MEX,Mexico,SWE,2019,269
+MEX,Mexico,SWE,2020,178
+MEX,Mexico,SWE,2021,280
+MEX,Mexico,SWE,2022,285
+MEX,Mexico,SWE,2023,299
+MEX,Mexico,AUS,2018,245
+MEX,Mexico,AUS,2019,278
+MEX,Mexico,AUS,2020,265
+MEX,Mexico,AUS,2021,373
+MEX,Mexico,AUS,2022,400
+MEX,Mexico,AUS,2023,245
+MEX,Mexico,CHE,2018,510
+MEX,Mexico,CHE,2019,549
+MEX,Mexico,CHE,2020,501
+MEX,Mexico,CHE,2021,587
+MEX,Mexico,CHE,2022,552
+MEX,Mexico,CHE,2023,636
+MEX,Mexico,ITA,2018,463
+MEX,Mexico,ITA,2019,521
+MEX,Mexico,ITA,2020,425
+MEX,Mexico,ITA,2021,544
+MEX,Mexico,ITA,2022,578
+MEX,Mexico,ITA,2023,638
+MEX,Mexico,NLD,2018,898
+MEX,Mexico,NLD,2019,879
+MEX,Mexico,NLD,2020,710
+MEX,Mexico,NLD,2021,832
+MEX,Mexico,NLD,2022,1098
+MEX,Mexico,NLD,2023,985
+MEX,Mexico,BEL,2018,396
+MEX,Mexico,BEL,2019,360
+MEX,Mexico,BEL,2020,209
+MEX,Mexico,BEL,2021,237
+MEX,Mexico,BEL,2022,294
+MEX,Mexico,BEL,2023,329
+MEX,Mexico,FRA,2018,903
+MEX,Mexico,FRA,2019,1262
+MEX,Mexico,FRA,2020,757
+MEX,Mexico,FRA,2021,1060
+MEX,Mexico,FRA,2022,1243
+MEX,Mexico,FRA,2023,942
+MEX,Mexico,DEU,2018,4994
+MEX,Mexico,DEU,2019,4952
+MEX,Mexico,DEU,2020,2513
+MEX,Mexico,DEU,2021,3698
+MEX,Mexico,DEU,2022,5129
+MEX,Mexico,DEU,2023,4902
+MEX,Mexico,CAN,2018,3310
+MEX,Mexico,CAN,2019,3460
+MEX,Mexico,CAN,2020,2430
+MEX,Mexico,CAN,2021,5145
+MEX,Mexico,CAN,2022,5220
+MEX,Mexico,CAN,2023,5735
+MEX,Mexico,USA,2018,161584
+MEX,Mexico,USA,2019,155710
+MEX,Mexico,USA,2020,100046
+MEX,Mexico,USA,2021,106994
+MEX,Mexico,USA,2022,138723
+MEX,Mexico,USA,2023,190560

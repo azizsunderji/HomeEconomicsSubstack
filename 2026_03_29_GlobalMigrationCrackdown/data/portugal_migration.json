@@ -1,0 +1,150 @@
+{
+  "source": "Eurostat",
+  "retrieved": "2026-03-26",
+  "notes": [
+    "Immigration/Emigration from MIGR_IMM1CTZ / MIGR_EMI1CTZ (age=TOTAL, sex=T, agedef=COMPLET)",
+    "Net migration from DEMO_GIND (CNMIGRAT = net migration plus statistical adjustment)",
+    "First residence permits from MIGR_RESFIRST (reason=TOTAL, duration=TOTAL)",
+    "Immigration for 2024 not yet released in MIGR_IMM1CTZ; implied from net migration + emigration",
+    "Population is Jan 1 of each year from DEMO_GIND (JAN indicator)"
+  ],
+  "population_jan1": {
+    "2018": 10335770,
+    "2019": 10333496,
+    "2020": 10375395,
+    "2021": 10394297,
+    "2022": 10421117,
+    "2023": 10516621,
+    "2024": 10639726,
+    "2025": 10749635
+  },
+  "immigration": {
+    "2018": 55357,
+    "2019": 95382,
+    "2020": 83654,
+    "2021": 97119,
+    "2022": 167098,
+    "2023": 189367,
+    "2024": null
+  },
+  "emigration": {
+    "2018": 31600,
+    "2019": 28219,
+    "2020": 25886,
+    "2021": 25079,
+    "2022": 30954,
+    "2023": 33666,
+    "2024": 33916
+  },
+  "net_migration_eurostat": {
+    "2018": 23757,
+    "2019": 67113,
+    "2020": 57768,
+    "2021": 72079,
+    "2022": 136194,
+    "2023": 155701,
+    "2024": 143641
+  },
+  "first_residence_permits_total": {
+    "2018": 61741,
+    "2019": 93475,
+    "2020": 84397,
+    "2021": 84805,
+    "2022": 108684,
+    "2023": 135907,
+    "2024": 121872
+  },
+  "first_residence_permits_by_nationality": {
+    "2018": {
+      "Brazil": 28210,
+      "Nepal": 4211,
+      "India": 4094,
+      "Angola": 2877,
+      "Cabo Verde": 2565,
+      "Bangladesh": 1954,
+      "Guinea-Bissau": 1907,
+      "Pakistan": 1269
+    },
+    "2019": {
+      "Brazil": 48796,
+      "India": 6267,
+      "Nepal": 5010,
+      "Angola": 4478,
+      "Cabo Verde": 4380,
+      "Guinea-Bissau": 3457,
+      "Bangladesh": 2396,
+      "Pakistan": 1037
+    },
+    "2020": {
+      "Brazil": 42245,
+      "India": 7172,
+      "Angola": 4829,
+      "Cabo Verde": 4224,
+      "Nepal": 3880,
+      "Guinea-Bissau": 3378,
+      "Bangladesh": 2154,
+      "Pakistan": 1343
+    },
+    "2021": {
+      "Brazil": 39456,
+      "India": 7407,
+      "Angola": 4597,
+      "Cabo Verde": 3889,
+      "Guinea-Bissau": 3746,
+      "Nepal": 2759,
+      "Bangladesh": 2132,
+      "Pakistan": 2006
+    },
+    "2022": {
+      "Brazil": 46734,
+      "India": 7358,
+      "Angola": 6698,
+      "Bangladesh": 6131,
+      "Cabo Verde": 4490,
+      "Pakistan": 3978,
+      "Nepal": 3854,
+      "Guinea-Bissau": 3672,
+      "United States": 3275,
+      "Sao Tome and Principe": 2709,
+      "United Kingdom": 1777,
+      "Venezuela": 1560,
+      "Russia": 1412,
+      "China": 1175,
+      "Mozambique": 1163
+    },
+    "2023": {
+      "Brazil": 38686,
+      "India": 12113,
+      "Bangladesh": 10072,
+      "Angola": 8527,
+      "Cabo Verde": 8050,
+      "Nepal": 7837,
+      "Pakistan": 6817,
+      "Guinea-Bissau": 5436,
+      "United States": 4743,
+      "Russia": 4731,
+      "Sao Tome and Principe": 3555,
+      "United Kingdom": 2565,
+      "Venezuela": 1442,
+      "China": 1431,
+      "Mozambique": 1333
+    },
+    "2024": {
+      "Brazil": 29752,
+      "India": 10562,
+      "Bangladesh": 10389,
+      "Cabo Verde": 7470,
+      "Pakistan": 6640,
+      "Angola": 6590,
+      "Nepal": 5931,
+      "Guinea-Bissau": 5626,
+      "Russia": 5038,
+      "United States": 4345,
+      "United Kingdom": 2587,
+      "Sao Tome and Principe": 2486,
+      "Morocco": 2208,
+      "Algeria": 1835,
+      "Ukraine": 1606
+    }
+  }
+}

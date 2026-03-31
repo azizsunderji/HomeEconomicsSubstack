@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('../../Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Thin.otf'); font-weight: 200; }
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('../../Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf'); font-weight: 300; }
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('../../Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf'); font-weight: 400; }
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('../../Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf'); font-weight: 500; }
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('../../Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf'); font-weight: 700; }
+  body { margin: 0; background: #FFFFFF; display: flex; justify-content: center; padding: 20px; }
+</style>
+</head>
+<body>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+
+const W = 960, H = 880;
+const gridLeft = 40, gridRight = W - 40;
+const titleY = 40 + 28, subtitleY = titleY + 28, sourceY = H - 40;
+
+const svg = d3.select("body").append("svg")
+  .attr("width", W).attr("height", H).attr("viewBox", `0 0 ${W} ${H}`);
+svg.append("rect").attr("width", W).attr("height", H).attr("fill", "#F6F7F3");
+
+// Net migration in thousands, population in millions (2020)
+// US uses Census Bureau Vintage 2025 estimates (revised Dec 2024 to capture undocumented)
+const countries = [
+  { name:"Canada",        pop:38.03, mig:{2018:438,2019:495,2020:69,2021:444,2022:918,2023:1197,2024:816,2025:-134} },
+  { name:"New Zealand",   pop:5.07,  mig:{2018:49,2019:52,2020:85,2021:-7,2022:-18,2023:108,2024:70,2025:14} },
+  { name:"Australia",     pop:25.65, mig:{2018:238,2019:241,2020:193,2021:-85,2022:208,2023:538,2024:429,2025:305} },
+  { name:"Germany",       pop:83.16, mig:{2018:400,2019:327,2020:220,2021:329,2022:1462,2023:663,2024:430,2025:240} },
+  { name:"Portugal",      pop:10.34, mig:{2018:24,2019:67,2020:58,2021:72,2022:136,2023:156,2024:144,2025:80} },
+  { name:"Ireland",       pop:4.96,  mig:{2018:44,2019:44,2020:45,2021:22,2022:52,2023:78,2024:79,2025:60} },
+  { name:"UK",            pop:66.74, mig:{2018:216,2019:224,2020:111,2021:251,2022:681,2023:924,2024:649,2025:204} },
+  { name:"Netherlands",   pop:17.41, mig:{2018:86,2019:108,2020:68,2021:107,2022:224,2023:137,2024:108,2025:95} },
+  { name:"United States", pop:331.0, mig:{2018:720,2019:569,2020:20,2021:1500,2022:2800,2023:3400,2024:2200,2025:410} },
+];
+
+const years = [2018,2019,2020,2021,2022,2023,2024,2025];
+
+// Compute per-1000 rates
+countries.forEach(c => {
+  c.series = []; c.peakRate = 0;
+  for (const yr of years) {
+    if (c.mig[yr] === undefined) continue;
+    const rate = c.mig[yr] / c.pop;
+    c.series.push({ year: yr, rate });
+    if (rate > c.peakRate) { c.peakRate = rate; c.peakYear = yr; }
+  }
+});
+countries.sort((a,b) => b.peakRate - a.peakRate);
+
+// Layout: 3x3
+const nCols = 3, nRows = 3;
+const panelGapX = 28, panelGapY = 50;
+const panelTop = subtitleY + 40;
+const panelAreaBottom = sourceY - 45;
+const panelW = (gridRight - gridLeft - panelGapX * (nCols-1)) / nCols;
+const panelH = (panelAreaBottom - panelTop - panelGapY * (nRows-1)) / nRows;
+const yMin = -5, yMax = 35;
+const hGridVals = [0, 5, 10, 15, 20, 25, 30, 35];
+const barPadding = 0.25;
+
+// Title
+svg.append("text").attr("x", gridLeft).attr("y", titleY)
+  .attr("font-family", "ABC Oracle Edu").attr("font-size", 28)
+  .attr("font-weight", 500).attr("fill", "#3D3733")
+  .text("Every Country Saw the Same Boom and Bust");
+svg.append("text").attr("x", gridLeft).attr("y", subtitleY)
+  .attr("font-family", "ABC Oracle Edu").attr("font-size", 18)
+  .attr("font-weight", 400).attr("fill", "#7F7570")
+  .text("Net migration per 1,000 population, 2018–2025. Sorted by peak rate.");
+
+// Draw panels
+countries.forEach((c, idx) => {
+  const col = idx % nCols, row = Math.floor(idx / nCols);
+  const px = gridLeft + col * (panelW + panelGapX);
+  const py = panelTop + row * (panelH + panelGapY);
+  const xS = d3.scaleBand().domain(years).range([px, px + panelW]).padding(barPadding);
+  const yS = d3.scaleLinear().domain([yMin, yMax]).range([py + panelH, py]);
+
+  // Panel bg
+  svg.append("rect").attr("x", px).attr("y", py).attr("width", panelW).attr("height", panelH)
+    .attr("fill", "#EDEEE9").attr("rx", 4);
+
+  // H gridlines
+  hGridVals.forEach(v => {
+    if (yS(v) < py || yS(v) > py + panelH) return;
+    svg.append("line").attr("x1", px).attr("x2", px + panelW)
+      .attr("y1", yS(v)).attr("y2", yS(v))
+      .attr("stroke", v === 0 ? "#bbb" : "#ddd").attr("stroke-width", v === 0 ? 1.2 : 0.75);
+  });
+
+  // V gridlines
+  years.forEach(yr => {
+    svg.append("line")
+      .attr("x1", xS(yr) + xS.bandwidth()/2).attr("x2", xS(yr) + xS.bandwidth()/2)
+      .attr("y1", py).attr("y2", py + panelH)
+      .attr("stroke", "#e1e2e3").attr("stroke-width", 0.5);
+  });
+
+  // Bars
+  c.series.forEach(d => {
+    if (d.rate < 0) {
+      svg.append("rect").attr("x", xS(d.year)).attr("y", yS(0))
+        .attr("width", xS.bandwidth()).attr("height", Math.abs(yS(0) - yS(d.rate)))
+        .attr("fill", "#F4743B").attr("fill-opacity", 0.7).attr("rx", 1);
+    } else {
+      svg.append("rect").attr("x", xS(d.year)).attr("y", yS(d.rate))
+        .attr("width", xS.bandwidth()).attr("height", yS(0) - yS(d.rate))
+        .attr("fill", "#0BB4FF").attr("fill-opacity", 0.7).attr("rx", 1);
+    }
+  });
+
+  // Country name
+  svg.append("text").attr("x", px + panelW/2).attr("y", py - 10)
+    .attr("text-anchor", "middle").attr("font-family", "ABC Oracle Edu").attr("font-size", 14)
+    .attr("font-weight", 500).attr("fill", "#3D3733").text(c.name);
+
+  // X-axis labels
+  years.forEach(yr => {
+    svg.append("text").attr("x", xS(yr) + xS.bandwidth()/2).attr("y", py + panelH + 14)
+      .attr("text-anchor", "middle").attr("font-family", "ABC Oracle Edu").attr("font-size", 9)
+      .attr("font-weight", 300).attr("fill", "#999").text(`'${String(yr).slice(2)}`);
+  });
+
+  // Y-axis labels on left panels
+  if (col === 0) {
+    hGridVals.forEach(v => {
+      if (yS(v) < py || yS(v) > py + panelH) return;
+      svg.append("text").attr("x", px - 5).attr("y", yS(v) + 3)
+        .attr("text-anchor", "end").attr("font-family", "ABC Oracle Edu").attr("font-size", 10)
+        .attr("font-weight", 300).attr("fill", "#999").text(v);
+    });
+  }
+
+  // Peak label: show absolute migrants in millions (rounded, no decimal)
+  const pp = c.series.find(d => d.year === c.peakYear);
+  if (pp) {
+    const peakMig = c.mig[c.peakYear];
+    const label = Math.abs(peakMig) >= 1000
+      ? `${Math.round(peakMig / 1000)}M`
+      : `${Math.round(peakMig)}K`;
+    svg.append("text").attr("x", xS(c.peakYear) + xS.bandwidth()/2)
+      .attr("y", yS(pp.rate) - 5).attr("text-anchor", "middle")
+      .attr("font-family", "ABC Oracle Edu").attr("font-size", 10)
+      .attr("font-weight", 700).attr("fill", "#3D3733")
+      .text(label);
+  }
+});
+
+// Source
+svg.append("text").attr("x", gridLeft).attr("y", sourceY)
+  .attr("font-family", "ABC Oracle Edu").attr("font-size", 12)
+  .attr("font-weight", 200).attr("fill", "#7F7570")
+  .selectAll("tspan")
+  .data([
+    "Sources: Statistics Canada, Stats NZ, ABS, Destatis, Eurostat, CSO, ONS, CBS, Census Bureau.",
+    "US: Census Bureau (2018–20), CBO (2021–25, includes undocumented). Reference periods vary by country."
+  ])
+  .enter().append("tspan").attr("x", gridLeft).attr("dy", (d,i) => i===0?0:14).text(d=>d);
+
+</script>
+</body>
+</html>

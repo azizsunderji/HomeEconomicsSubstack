@@ -1,0 +1,28 @@
+Rank,Country,Pop (M),Net Rate 2022 (/1000),Net Rate 2023 (/1000),Gross Immig Rate 2023 (/1000),Peak Net Rate (/1000),Peak Year,Post-Pandemic Surge,Notes
+1,Canada,40.1,15.0,31.7,,31.7,2023,True,Net intl migration ~1.27M (471K permanent + 805K NPRs). 97.6% of pop growth. Pre-pandemic norm ~8/1000
+2,Andorra,0.08,17.0,28.1,,28.1,2023,True,Microstate; data volatile
+3,Malta,0.54,27.4,25.8,76.0,27.4,2022,True,Gross immigration 76/1000 in 2023. Sustained high levels
+4,New Zealand,5.13,5.0,24.6,,24.6,2023,True,Net 126K (calendar 2023). OECD: 23/1000 permanent. Pre-pandemic ~2/1000
+5,Iceland,0.39,20.1,17.4,35.0,20.1,2022,True,"Net 6,790 in 2023. OECD: 35/1000 permanent. Tiny population amplifies rate"
+6,Australia,26.5,12.0,20.0,,20.0,2023,True,Net 518-538K in FY2022-23. 737K arrivals. Pre-pandemic ~6-7/1000
+7,Czech Republic,10.8,19.4,4.5,,19.4,2022,True,"46.6/1000 Ukrainian refugee stock. 2022 surge, sharp falloff"
+8,Germany,84.5,17.3,7.9,,17.3,2022,True,Net +1.46M in 2022 (1.1M Ukrainians). Fell to +663K in 2023. Eurostat crude rate distorted by 2022 census correction
+9,Estonia,1.37,16.9,4.3,,16.9,2022,True,50.5/1000 Ukrainian refugee stock. Sharp 2022 spike
+10,Luxembourg,0.66,15.7,11.2,40.0,15.7,2022,True,OECD: 42/1000 permanent. Structural high-migration economy
+11,Ireland,5.28,15.0,10.1,,15.0,2022,True,"Net 77,600 in 2023; 141,600 immigrants. 70K Ukrainians. Pre-pandemic ~4/1000"
+12,Cyprus,0.92,13.7,12.0,43.0,13.7,2022,True,Sustained high. Gross immigration 43/1000
+13,United Kingdom,67.7,11.3,12.7,,12.7,2023,True,Net 906K (mid-2023 peak). OECD: 750K permanent record. Pre-pandemic ~4-5/1000
+14,Lithuania,2.86,12.1,6.7,,12.1,2022,True,"Ukrainian refugees. 2022 spike, normalizing"
+15,Switzerland,8.9,5.8,11.0,17.0,11.0,2023,True,OECD: 17/1000 permanent. Steady increase
+16,Austria,9.1,9.3,3.9,,9.3,2022,True,"Net +137K in 2022, fell to +67K in 2023"
+17,Spain,48.0,8.3,7.4,,8.3,2022,True,"1.25M immigrants in 2023, net +642K. Sustained high flows"
+18,Netherlands,17.9,8.3,4.9,,8.3,2022,True,"Net 224K in 2022, fell to 145K in 2023. 100K+ Ukrainians in 2022"
+19,Norway,5.5,7.8,7.4,,7.8,2022,True,Sustained moderately high
+20,Portugal,10.4,6.1,7.7,,7.7,2023,True,Foreign pop surpassed 1M for first time. +33.6% foreign residents in 2023
+21,Belgium,11.7,7.1,4.2,,7.1,2022,True,
+22,Denmark,5.9,6.7,3.2,,6.7,2022,True,
+23,Israel,9.5,5.3,1.1,,5.3,2022,True,"74K aliyah in 2022 (Russia/Ukraine), collapsed to 38K in 2023"
+24,Finland,5.6,1.9,4.8,,4.8,2023,True,Late surge: +46.5% increase in immigration in 2023 vs 2022
+25,Sweden,10.5,4.4,1.9,,4.4,2022,True,Already declining; tightening immigration policy
+26,United States,335.0,3.0,3.6,,3.6,2023,True,OECD: 1.2M permanent. CBO est ~3.3M total in FY2023 including undocumented
+27,France,68.2,1.8,1.9,6.0,1.9,2023,False,Low relative to peers. Gross 6/1000

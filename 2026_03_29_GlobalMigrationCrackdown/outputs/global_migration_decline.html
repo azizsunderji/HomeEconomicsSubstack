@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('../../Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Thin.otf'); font-weight: 200; }
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('../../Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf'); font-weight: 300; }
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('../../Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf'); font-weight: 400; }
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('../../Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf'); font-weight: 500; }
+  @font-face { font-family: 'ABC Oracle Edu'; src: url('../../Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf'); font-weight: 700; }
+  body { margin: 0; background: #FFFFFF; display: flex; justify-content: center; padding: 20px; }
+  .series-group { cursor: pointer; }
+  .series-group .series-line { transition: opacity 0.2s; }
+  .series-group .series-label { transition: opacity 0.2s; }
+</style>
+</head>
+<body>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+
+const W = 960, H = 987;
+const gridLeft = 40;
+const gridRight = 760;
+const labelAreaLeft = gridRight + 10;
+const titleY = 40 + 32;
+const subtitleY = titleY + 34;
+const chartTop = subtitleY + 75;
+const sourceBottomY = H - 40;
+const sourceTopY = sourceBottomY - 36;
+const xAxisLabelsY = sourceTopY - 45;
+const chartBottom = xAxisLabelsY - 35;
+
+const svg = d3.select("body").append("svg")
+  .attr("width", W).attr("height", H)
+  .attr("viewBox", `0 0 ${W} ${H}`);
+
+svg.append("rect").attr("width", W).attr("height", H).attr("fill", "#F6F7F3");
+
+// Population in millions
+const raw = {
+  "Canada":         { 2018: 37.07, 2019: 37.62, 2020: 38.03, 2021: 38.24, 2022: 38.95, 2023: 40.05, 2024: 41.26, 2025: 41.65 },
+  "New Zealand":    { 2018: 4.90,  2019: 4.97,  2020: 5.07,  2021: 5.08,  2022: 5.08,  2023: 5.20,  2024: 5.29,  2025: 5.32 },
+  "Germany":        { 2018: 82.89, 2019: 83.02, 2020: 83.16, 2021: 83.24, 2022: 83.12, 2023: 83.46, 2024: 83.58, 2025: 83.50 },
+  "United Kingdom": { 2018: 66.29, 2019: 66.63, 2020: 66.74, 2021: 66.98, 2022: 67.64, 2023: 68.53, 2024: 69.28, 2025: 69.49 },
+  "Netherlands":    { 2018: 17.18, 2019: 17.28, 2020: 17.41, 2021: 17.48, 2022: 17.59, 2023: 17.81, 2024: 17.94, 2025: 18.04 },
+  "Australia":      { 2018: 24.96, 2019: 25.33, 2020: 25.65, 2021: 25.69, 2022: 26.02, 2023: 26.64, 2024: 27.20, 2025: 27.61 },
+  "Ireland":        { 2018: 4.85,  2019: 4.88,  2020: 4.96,  2021: 5.03,  2022: 5.07,  2023: 5.18,  2024: 5.28,  2025: 5.46 },
+};
+
+const baseYear = 2020;
+const years = [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
+
+// Index to baseYear = 100
+const series = {};
+for (const [country, vals] of Object.entries(raw)) {
+  const base = vals[baseYear];
+  series[country] = [];
+  for (const yr of years) {
+    if (vals[yr] !== undefined) {
+      series[country].push({ year: yr, value: (vals[yr] / base) * 100 });
+    }
+  }
+}
+
+const colors = {
+  "Canada":         "#F4743B",
+  "United Kingdom": "#0BB4FF",
+  "Germany":        "#3D3733",
+  "Australia":      "#67A275",
+  "New Zealand":    "#9B59B6",
+  "Netherlands":    "#E67E22",
+  "Ireland":        "#005C99",
+};
+
+const shortNames = {
+  "Canada": "Canada",
+  "United Kingdom": "UK",
+  "Germany": "Germany",
+  "Australia": "Australia",
+  "New Zealand": "New Zealand",
+  "Netherlands": "Netherlands",
+  "Ireland": "Ireland",
+};
+
+// Scales
+const x = d3.scaleLinear()
+  .domain([2018, 2025])
+  .range([gridLeft, gridRight]);
+
+let allVals = [];
+for (const pts of Object.values(series)) {
+  pts.forEach(p => allVals.push(p.value));
+}
+const yMin = d3.min(allVals) - 0.5;
+const yMax = d3.max(allVals) + 0.5;
+
+const y = d3.scaleLinear()
+  .domain([yMin, yMax])
+  .range([chartBottom, chartTop]);
+
+// Title
+svg.append("text")
+  .attr("x", gridLeft).attr("y", titleY)
+  .attr("font-family", "ABC Oracle Edu").attr("font-size", 32)
+  .attr("font-weight", 500).attr("fill", "#3D3733")
+  .text("Population Growth Has Stalled");
+
+svg.append("text")
+  .attr("x", gridLeft).attr("y", subtitleY)
+  .attr("font-family", "ABC Oracle Edu").attr("font-size", 23)
+  .attr("font-weight", 400).attr("fill", "#7F7570")
+  .text("Total population indexed to 2020 = 100");
+
+// Gridlines — pick nice round values
+const yTickValues = [];
+for (let t = Math.floor(yMin); t <= Math.ceil(yMax); t++) {
+  if (t % 2 === 0) yTickValues.push(t);
+}
+yTickValues.forEach(tick => {
+  svg.append("line")
+    .attr("x1", gridLeft).attr("x2", gridRight)
+    .attr("y1", y(tick)).attr("y2", y(tick))
+    .attr("stroke", "#e1e2e3").attr("stroke-width", 1);
+
+  svg.append("text")
+    .attr("x", gridLeft).attr("y", y(tick) - 6)
+    .attr("font-family", "ABC Oracle Edu").attr("font-size", 22)
+    .attr("font-weight", 300).attr("fill", "#333")
+    .attr("text-anchor", "start")
+    .text(`${tick}`);
+});
+
+// Dashed baseline at 100
+svg.append("line")
+  .attr("x1", gridLeft).attr("x2", gridRight)
+  .attr("y1", y(100)).attr("y2", y(100))
+  .attr("stroke", "#999").attr("stroke-width", 1.5)
+  .attr("stroke-dasharray", "6,4");
+
+// X-axis
+years.forEach(yr => {
+  svg.append("line")
+    .attr("x1", x(yr)).attr("x2", x(yr))
+    .attr("y1", chartBottom).attr("y2", chartBottom + 12)
+    .attr("stroke", "#3D3733").attr("stroke-width", 0.5);
+
+  const label = yr === 2018 ? "2018" : `'${String(yr).slice(2)}`;
+  svg.append("text")
+    .attr("x", x(yr)).attr("y", xAxisLabelsY)
+    .attr("text-anchor", "middle")
+    .attr("font-family", "ABC Oracle Edu").attr("font-size", 22)
+    .attr("font-weight", 300).attr("fill", "#333")
+    .text(label);
+});
+
+// Line generator
+const lineGen = d3.line()
+  .x(d => x(d.year))
+  .y(d => y(d.value))
+  .curve(d3.curveMonotoneX);
+
+// Collision detection for labels
+const labelData = [];
+for (const [country, pts] of Object.entries(series)) {
+  const last = pts[pts.length - 1];
+  labelData.push({
+    country,
+    value: last.value,
+    naturalY: y(last.value),
+    adjustedY: y(last.value),
+    color: colors[country]
+  });
+}
+labelData.sort((a, b) => a.naturalY - b.naturalY);
+
+const minGap = 20;
+for (let i = 1; i < labelData.length; i++) {
+  if (labelData[i].adjustedY - labelData[i-1].adjustedY < minGap) {
+    labelData[i].adjustedY = labelData[i-1].adjustedY + minGap;
+  }
+}
+
+// Series groups
+const seriesGroups = {};
+const countries = Object.keys(series);
+
+countries.forEach(country => {
+  const g = svg.append("g")
+    .attr("class", "series-group")
+    .attr("data-country", country);
+  seriesGroups[country] = g;
+
+  g.append("path")
+    .datum(series[country])
+    .attr("class", "series-line")
+    .attr("d", lineGen)
+    .attr("fill", "none")
+    .attr("stroke", colors[country])
+    .attr("stroke-width", 2.5)
+    .style("mix-blend-mode", "multiply");
+
+  // Wider invisible hit area
+  g.append("path")
+    .datum(series[country])
+    .attr("d", lineGen)
+    .attr("fill", "none")
+    .attr("stroke", "transparent")
+    .attr("stroke-width", 16);
+});
+
+// Labels
+labelData.forEach(d => {
+  const g = seriesGroups[d.country];
+  const lx = labelAreaLeft;
+  const name = shortNames[d.country];
+
+  // Leader line
+  g.append("line")
+    .attr("class", "series-label")
+    .attr("x1", x(2025) + 3)
+    .attr("y1", d.naturalY)
+    .attr("x2", lx - 4)
+    .attr("y2", d.adjustedY)
+    .attr("stroke", colors[d.country])
+    .attr("stroke-width", 1)
+    .attr("stroke-opacity", 0.4);
+
+  // Endpoint dot
+  g.append("circle")
+    .attr("class", "series-label")
+    .attr("cx", x(2025))
+    .attr("cy", d.naturalY)
+    .attr("r", 4)
+    .attr("fill", colors[d.country]);
+
+  // Label
+  g.append("text")
+    .attr("class", "series-label")
+    .attr("x", lx)
+    .attr("y", d.adjustedY)
+    .attr("dominant-baseline", "middle")
+    .attr("font-family", "ABC Oracle Edu").attr("font-size", 16)
+    .attr("font-weight", 500)
+    .attr("fill", colors[d.country])
+    .text(name);
+});
+
+// Hover
+const allGroups = svg.selectAll(".series-group");
+
+allGroups.on("mouseenter", function() {
+  const hovered = d3.select(this).attr("data-country");
+  allGroups.each(function() {
+    const c = d3.select(this).attr("data-country");
+    if (c !== hovered) {
+      d3.select(this).selectAll(".series-line, .series-label")
+        .style("opacity", 0.12);
+    } else {
+      d3.select(this).select(".series-line")
+        .attr("stroke-width", 4);
+    }
+  });
+});
+
+allGroups.on("mouseleave", function() {
+  allGroups.each(function() {
+    d3.select(this).selectAll(".series-line, .series-label")
+      .style("opacity", null);
+    d3.select(this).select(".series-line")
+      .attr("stroke-width", 2.5);
+  });
+});
+
+// Source
+svg.append("text")
+  .attr("x", gridLeft).attr("y", sourceBottomY)
+  .attr("font-family", "ABC Oracle Edu").attr("font-size", 15)
+  .attr("font-weight", 200).attr("fill", "#3D3733")
+  .selectAll("tspan")
+  .data([
+    "Sources: Statistics Canada, Stats NZ, Destatis, ONS, CBS, ABS, CSO.",
+    "Reference dates vary (mid-year or Jan 1). Germany and Canada populations declined in late 2025."
+  ])
+  .enter().append("tspan")
+  .attr("x", gridLeft)
+  .attr("dy", (d, i) => i === 0 ? 0 : 18)
+  .text(d => d);
+
+// Logo
+svg.append("image")
+  .attr("xlink:href", "data:image/png;base64,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")
+  .attr("x", W - 40 - 130)
+  .attr("y", sourceBottomY - 30)
+  .attr("width", 130)
+  .attr("opacity", 0.6);
+
+</script>
+</body>
+</html>
