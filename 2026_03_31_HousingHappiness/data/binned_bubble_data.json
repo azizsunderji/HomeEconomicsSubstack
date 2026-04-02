@@ -1,0 +1,335 @@
+[
+  {
+    "country": "Romania",
+    "pti_change": -49.8,
+    "happiness_change": 1.451,
+    "anglo": false,
+    "population": 19.0,
+    "bin": 0,
+    "bin_label": "-50 to -10"
+  },
+  {
+    "country": "Republic of Korea",
+    "pti_change": -24.7,
+    "happiness_change": 0.397,
+    "anglo": false,
+    "population": 51.7,
+    "bin": 0,
+    "bin_label": "-50 to -10"
+  },
+  {
+    "country": "Finland",
+    "pti_change": -19.9,
+    "happiness_change": 0.185,
+    "anglo": false,
+    "population": 5.6,
+    "bin": 0,
+    "bin_label": "-50 to -10"
+  },
+  {
+    "country": "Italy",
+    "pti_change": -18.7,
+    "happiness_change": -0.004,
+    "anglo": false,
+    "population": 58.9,
+    "bin": 0,
+    "bin_label": "-50 to -10"
+  },
+  {
+    "country": "Colombia",
+    "pti_change": -11.6,
+    "happiness_change": -0.162,
+    "anglo": false,
+    "population": 52.1,
+    "bin": 0,
+    "bin_label": "-50 to -10"
+  },
+  {
+    "country": "Bulgaria",
+    "pti_change": -10.0,
+    "happiness_change": 1.814,
+    "anglo": false,
+    "population": 6.5,
+    "bin": 0,
+    "bin_label": "-50 to -10"
+  },
+  {
+    "country": "South Africa",
+    "pti_change": -9.9,
+    "happiness_change": -0.092,
+    "anglo": false,
+    "population": 60.4,
+    "bin": 0,
+    "bin_label": "-50 to -10"
+  },
+  {
+    "country": "France",
+    "pti_change": -6.5,
+    "happiness_change": -0.16,
+    "anglo": false,
+    "population": 68.2,
+    "bin": 1,
+    "bin_label": "-6 to +5"
+  },
+  {
+    "country": "Croatia",
+    "pti_change": -3.7,
+    "happiness_change": 0.386,
+    "anglo": false,
+    "population": 3.9,
+    "bin": 1,
+    "bin_label": "-6 to +5"
+  },
+  {
+    "country": "Belgium",
+    "pti_change": -3.5,
+    "happiness_change": -0.187,
+    "anglo": false,
+    "population": 11.7,
+    "bin": 1,
+    "bin_label": "-6 to +5"
+  },
+  {
+    "country": "Poland",
+    "pti_change": -2.4,
+    "happiness_change": 0.965,
+    "anglo": false,
+    "population": 36.8,
+    "bin": 1,
+    "bin_label": "-6 to +5"
+  },
+  {
+    "country": "Latvia",
+    "pti_change": 2.4,
+    "happiness_change": 1.603,
+    "anglo": false,
+    "population": 1.8,
+    "bin": 1,
+    "bin_label": "-6 to +5"
+  },
+  {
+    "country": "Sweden",
+    "pti_change": 4.2,
+    "happiness_change": -0.124,
+    "anglo": false,
+    "population": 10.5,
+    "bin": 1,
+    "bin_label": "-6 to +5"
+  },
+  {
+    "country": "Norway",
+    "pti_change": 4.6,
+    "happiness_change": -0.282,
+    "anglo": false,
+    "population": 5.5,
+    "bin": 1,
+    "bin_label": "-6 to +5"
+  },
+  {
+    "country": "Denmark",
+    "pti_change": 5.7,
+    "happiness_change": -0.317,
+    "anglo": false,
+    "population": 5.9,
+    "bin": 2,
+    "bin_label": "+6 to +13"
+  },
+  {
+    "country": "Slovakia",
+    "pti_change": 5.9,
+    "happiness_change": 0.598,
+    "anglo": false,
+    "population": 5.4,
+    "bin": 2,
+    "bin_label": "+6 to +13"
+  },
+  {
+    "country": "Greece",
+    "pti_change": 7.3,
+    "happiness_change": -0.436,
+    "anglo": false,
+    "population": 10.4,
+    "bin": 2,
+    "bin_label": "+6 to +13"
+  },
+  {
+    "country": "United Kingdom",
+    "pti_change": 9.2,
+    "happiness_change": -0.242,
+    "anglo": true,
+    "population": 67.7,
+    "bin": 2,
+    "bin_label": "+6 to +13"
+  },
+  {
+    "country": "Germany",
+    "pti_change": 11.6,
+    "happiness_change": 0.31,
+    "anglo": false,
+    "population": 84.5,
+    "bin": 2,
+    "bin_label": "+6 to +13"
+  },
+  {
+    "country": "Lithuania",
+    "pti_change": 12.3,
+    "happiness_change": 1.116,
+    "anglo": false,
+    "population": 2.9,
+    "bin": 2,
+    "bin_label": "+6 to +13"
+  },
+  {
+    "country": "Estonia",
+    "pti_change": 12.8,
+    "happiness_change": 1.08,
+    "anglo": false,
+    "population": 1.4,
+    "bin": 2,
+    "bin_label": "+6 to +13"
+  },
+  {
+    "country": "Japan",
+    "pti_change": 15.2,
+    "happiness_change": 0.071,
+    "anglo": false,
+    "population": 123.3,
+    "bin": 3,
+    "bin_label": "+15 to +22"
+  },
+  {
+    "country": "Slovenia",
+    "pti_change": 15.7,
+    "happiness_change": 0.946,
+    "anglo": false,
+    "population": 2.1,
+    "bin": 3,
+    "bin_label": "+15 to +22"
+  },
+  {
+    "country": "New Zealand",
+    "pti_change": 16.6,
+    "happiness_change": -0.377,
+    "anglo": true,
+    "population": 5.2,
+    "bin": 3,
+    "bin_label": "+15 to +22"
+  },
+  {
+    "country": "Spain",
+    "pti_change": 17.0,
+    "happiness_change": -0.221,
+    "anglo": false,
+    "population": 48.1,
+    "bin": 3,
+    "bin_label": "+15 to +22"
+  },
+  {
+    "country": "Chile",
+    "pti_change": 20.8,
+    "happiness_change": 0.174,
+    "anglo": false,
+    "population": 19.6,
+    "bin": 3,
+    "bin_label": "+15 to +22"
+  },
+  {
+    "country": "Austria",
+    "pti_change": 21.1,
+    "happiness_change": -0.382,
+    "anglo": false,
+    "population": 9.1,
+    "bin": 3,
+    "bin_label": "+15 to +22"
+  },
+  {
+    "country": "Hungary",
+    "pti_change": 22.3,
+    "happiness_change": 0.994,
+    "anglo": false,
+    "population": 9.6,
+    "bin": 3,
+    "bin_label": "+15 to +22"
+  },
+  {
+    "country": "Czechia",
+    "pti_change": 22.8,
+    "happiness_change": 0.461,
+    "anglo": false,
+    "population": 10.8,
+    "bin": 4,
+    "bin_label": "+23 to +54"
+  },
+  {
+    "country": "Switzerland",
+    "pti_change": 23.3,
+    "happiness_change": -0.481,
+    "anglo": false,
+    "population": 8.8,
+    "bin": 4,
+    "bin_label": "+23 to +54"
+  },
+  {
+    "country": "Australia",
+    "pti_change": 25.1,
+    "happiness_change": -0.429,
+    "anglo": true,
+    "population": 26.4,
+    "bin": 4,
+    "bin_label": "+23 to +54"
+  },
+  {
+    "country": "Ireland",
+    "pti_change": 25.8,
+    "happiness_change": -0.356,
+    "anglo": true,
+    "population": 5.2,
+    "bin": 4,
+    "bin_label": "+23 to +54"
+  },
+  {
+    "country": "United States",
+    "pti_change": 29.0,
+    "happiness_change": -0.454,
+    "anglo": true,
+    "population": 334.9,
+    "bin": 4,
+    "bin_label": "+23 to +54"
+  },
+  {
+    "country": "Luxembourg",
+    "pti_change": 29.6,
+    "happiness_change": 0.012,
+    "anglo": false,
+    "population": 0.66,
+    "bin": 4,
+    "bin_label": "+23 to +54"
+  },
+  {
+    "country": "Netherlands",
+    "pti_change": 30.2,
+    "happiness_change": -0.289,
+    "anglo": false,
+    "population": 17.8,
+    "bin": 4,
+    "bin_label": "+23 to +54"
+  },
+  {
+    "country": "Canada",
+    "pti_change": 37.1,
+    "happiness_change": -0.758,
+    "anglo": true,
+    "population": 40.1,
+    "bin": 4,
+    "bin_label": "+23 to +54"
+  },
+  {
+    "country": "Portugal",
+    "pti_change": 53.5,
+    "happiness_change": 0.702,
+    "anglo": false,
+    "population": 10.4,
+    "bin": 4,
+    "bin_label": "+23 to +54"
+  }
+]

@@ -1,0 +1,224 @@
+[
+  {
+    "country": "Portugal",
+    "pti_change": 53.5,
+    "happiness_change": 0.702,
+    "anglo": false
+  },
+  {
+    "country": "Canada",
+    "pti_change": 37.1,
+    "happiness_change": -0.758,
+    "anglo": true
+  },
+  {
+    "country": "Netherlands",
+    "pti_change": 30.2,
+    "happiness_change": -0.289,
+    "anglo": false
+  },
+  {
+    "country": "Luxembourg",
+    "pti_change": 29.6,
+    "happiness_change": 0.012,
+    "anglo": false
+  },
+  {
+    "country": "United States",
+    "pti_change": 29.0,
+    "happiness_change": -0.454,
+    "anglo": true
+  },
+  {
+    "country": "Ireland",
+    "pti_change": 25.8,
+    "happiness_change": -0.356,
+    "anglo": true
+  },
+  {
+    "country": "Australia",
+    "pti_change": 25.1,
+    "happiness_change": -0.429,
+    "anglo": true
+  },
+  {
+    "country": "Switzerland",
+    "pti_change": 23.3,
+    "happiness_change": -0.481,
+    "anglo": false
+  },
+  {
+    "country": "Czechia",
+    "pti_change": 22.8,
+    "happiness_change": 0.461,
+    "anglo": false
+  },
+  {
+    "country": "Hungary",
+    "pti_change": 22.3,
+    "happiness_change": 0.994,
+    "anglo": false
+  },
+  {
+    "country": "Austria",
+    "pti_change": 21.1,
+    "happiness_change": -0.382,
+    "anglo": false
+  },
+  {
+    "country": "Chile",
+    "pti_change": 20.8,
+    "happiness_change": 0.174,
+    "anglo": false
+  },
+  {
+    "country": "Spain",
+    "pti_change": 17.0,
+    "happiness_change": -0.221,
+    "anglo": false
+  },
+  {
+    "country": "New Zealand",
+    "pti_change": 16.6,
+    "happiness_change": -0.377,
+    "anglo": true
+  },
+  {
+    "country": "Slovenia",
+    "pti_change": 15.7,
+    "happiness_change": 0.946,
+    "anglo": false
+  },
+  {
+    "country": "Japan",
+    "pti_change": 15.2,
+    "happiness_change": 0.071,
+    "anglo": false
+  },
+  {
+    "country": "Estonia",
+    "pti_change": 12.8,
+    "happiness_change": 1.08,
+    "anglo": false
+  },
+  {
+    "country": "Lithuania",
+    "pti_change": 12.3,
+    "happiness_change": 1.116,
+    "anglo": false
+  },
+  {
+    "country": "Germany",
+    "pti_change": 11.6,
+    "happiness_change": 0.31,
+    "anglo": false
+  },
+  {
+    "country": "United Kingdom",
+    "pti_change": 9.2,
+    "happiness_change": -0.242,
+    "anglo": true
+  },
+  {
+    "country": "Greece",
+    "pti_change": 7.3,
+    "happiness_change": -0.436,
+    "anglo": false
+  },
+  {
+    "country": "Slovakia",
+    "pti_change": 5.9,
+    "happiness_change": 0.598,
+    "anglo": false
+  },
+  {
+    "country": "Denmark",
+    "pti_change": 5.7,
+    "happiness_change": -0.317,
+    "anglo": false
+  },
+  {
+    "country": "Norway",
+    "pti_change": 4.6,
+    "happiness_change": -0.282,
+    "anglo": false
+  },
+  {
+    "country": "Sweden",
+    "pti_change": 4.2,
+    "happiness_change": -0.124,
+    "anglo": false
+  },
+  {
+    "country": "Latvia",
+    "pti_change": 2.4,
+    "happiness_change": 1.603,
+    "anglo": false
+  },
+  {
+    "country": "Poland",
+    "pti_change": -2.4,
+    "happiness_change": 0.965,
+    "anglo": false
+  },
+  {
+    "country": "Belgium",
+    "pti_change": -3.5,
+    "happiness_change": -0.187,
+    "anglo": false
+  },
+  {
+    "country": "Croatia",
+    "pti_change": -3.7,
+    "happiness_change": 0.386,
+    "anglo": false
+  },
+  {
+    "country": "France",
+    "pti_change": -6.5,
+    "happiness_change": -0.16,
+    "anglo": false
+  },
+  {
+    "country": "South Africa",
+    "pti_change": -9.9,
+    "happiness_change": -0.092,
+    "anglo": false
+  },
+  {
+    "country": "Bulgaria",
+    "pti_change": -10.0,
+    "happiness_change": 1.814,
+    "anglo": false
+  },
+  {
+    "country": "Colombia",
+    "pti_change": -11.6,
+    "happiness_change": -0.162,
+    "anglo": false
+  },
+  {
+    "country": "Italy",
+    "pti_change": -18.7,
+    "happiness_change": -0.004,
+    "anglo": false
+  },
+  {
+    "country": "Finland",
+    "pti_change": -19.9,
+    "happiness_change": 0.185,
+    "anglo": false
+  },
+  {
+    "country": "Republic of Korea",
+    "pti_change": -24.7,
+    "happiness_change": 0.397,
+    "anglo": false
+  },
+  {
+    "country": "Romania",
+    "pti_change": -49.8,
+    "happiness_change": 1.451,
+    "anglo": false
+  }
+]
