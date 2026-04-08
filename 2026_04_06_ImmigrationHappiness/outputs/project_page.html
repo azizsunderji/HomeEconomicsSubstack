@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Immigration and Happiness — Chart Dashboard</title>
+<style>
+@font-face { font-family: 'ABC Oracle Edu'; src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Light.otf') format('opentype'); font-weight: 300; }
+@font-face { font-family: 'ABC Oracle Edu'; src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Regular.otf') format('opentype'); font-weight: 400; }
+@font-face { font-family: 'ABC Oracle Edu'; src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Medium.otf') format('opentype'); font-weight: 500; }
+@font-face { font-family: 'ABC Oracle Edu'; src: url('/Users/azizsunderji/Dropbox/Home Economics/Brand Assets/OracleFont/Oracle Aziz Sunderji/Desktop/ABCOracle-Bold.otf') format('opentype'); font-weight: 700; }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+    --bg: #F6F7F3;
+    --card-bg: #fff;
+    --border: #e5e7e0;
+    --text: #3D3733;
+    --text-light: #999;
+    --blue: #0BB4FF;
+    --yellow: #FEC439;
+    --red: #F4743B;
+    --green: #67A275;
+}
+
+body {
+    font-family: 'ABC Oracle Edu', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+}
+
+/* ── Top Bar ── */
+.topbar {
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 16px 24px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.topbar-header {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    margin-bottom: 10px;
+}
+
+.topbar-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text);
+    white-space: nowrap;
+}
+
+.topbar-subtitle {
+    font-size: 11px;
+    font-weight: 300;
+    color: var(--text-light);
+}
+
+.chart-count {
+    font-size: 11px;
+    color: var(--text-light);
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+.topbar-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 10px;
+}
+
+.topbar-filters {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.filter-btn {
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 4px 10px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text);
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.filter-btn:hover { border-color: var(--blue); color: var(--blue); }
+.filter-btn.active { background: var(--blue); color: white; border-color: var(--blue); }
+
+.topbar-search {
+    flex-shrink: 0;
+}
+.topbar-search input {
+    font-family: inherit;
+    font-size: 12px;
+    padding: 5px 10px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg);
+    outline: none;
+    width: 180px;
+}
+.topbar-search input:focus { border-color: var(--blue); }
+
+/* ── Chart Nav (horizontal scrollable) ── */
+.topbar-nav {
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+    flex: 1;
+    min-width: 0;
+}
+.topbar-nav::-webkit-scrollbar { height: 4px; }
+.topbar-nav::-webkit-scrollbar-track { background: transparent; }
+.topbar-nav::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+.nav-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--text);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: all 0.15s;
+    flex-shrink: 0;
+}
+.nav-pill:hover { border-color: var(--blue); color: var(--blue); }
+.nav-pill .pill-star { font-size: 10px; opacity: 0.2; }
+.nav-pill .pill-star.starred { opacity: 1; color: var(--yellow); }
+
+/* ── Sessions bar ── */
+.sessions-bar {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+}
+.sessions-title {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+.session-row {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 4px 0;
+    font-size: 12px;
+}
+.session-date {
+    font-weight: 500;
+    color: var(--text);
+    white-space: nowrap;
+    min-width: 80px;
+}
+.session-summary {
+    color: var(--text-light);
+    font-weight: 300;
+    flex: 1;
+}
+.session-resume {
+    font-family: 'SFMono-Regular', 'Consolas', monospace;
+    font-size: 10px;
+    color: var(--blue);
+    background: #EBF7FF;
+    padding: 2px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: all;
+    flex-shrink: 0;
+}
+
+/* ── Main Content ── */
+.main {
+    padding: 20px 24px;
+    max-width: 100%;
+}
+
+/* ── Chart Cards ── */
+.chart-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+}
+.chart-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.chart-card.collapsed .card-body { display: none; }
+
+.card-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    cursor: pointer;
+    user-select: none;
+    gap: 10px;
+}
+
+.card-chevron {
+    font-size: 12px;
+    color: var(--text-light);
+    transition: transform 0.2s;
+    flex-shrink: 0;
+    width: 16px;
+    text-align: center;
+}
+.chart-card.collapsed .card-chevron { transform: rotate(-90deg); }
+
+.card-title {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card-star {
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0.2;
+    transition: opacity 0.15s;
+    flex-shrink: 0;
+}
+.card-star:hover { opacity: 0.6; }
+.card-star.starred { opacity: 1; color: var(--yellow); }
+
+.card-open {
+    font-size: 11px;
+    color: var(--blue);
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+.card-open:hover { background: #EBF7FF; }
+
+.card-body {
+    border-top: 1px solid var(--border);
+}
+
+.card-iframe-container {
+    width: 100%;
+    background: var(--bg);
+    position: relative;
+    overflow: hidden;
+}
+.card-source {
+    font-size: 11px;
+    font-weight: 300;
+    color: #999;
+    font-style: italic;
+    line-height: 1.5;
+    padding: 8px 16px 4px;
+    background: var(--bg);
+}
+.card-iframe-container iframe {
+    border: none;
+    display: block;
+    transform-origin: top left;
+    overflow: hidden;
+}
+.card-iframe-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-comment {
+    padding: 10px 16px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+.card-comment-icon {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+.card-comment textarea {
+    flex: 1;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--text);
+    border: none;
+    background: transparent;
+    resize: none;
+    outline: none;
+    min-height: 20px;
+    line-height: 1.5;
+    overflow: hidden;
+}
+.card-comment textarea::placeholder { color: #ccc; }
+
+.card-meta {
+    padding: 6px 16px 10px;
+    font-size: 10px;
+    color: var(--text-light);
+    display: flex;
+    gap: 16px;
+}
+
+/* ── Empty / filter state ── */
+.no-results {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-light);
+    font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+    <div class="topbar-header">
+        <div class="topbar-title">Immigration Happiness</div>
+        <div class="topbar-subtitle">2026-04-06 — Chart Dashboard</div>
+        <div class="chart-count" id="chartCount"></div>
+    </div>
+    <div class="topbar-controls">
+        <div class="topbar-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="starred">Starred</button>
+            <button class="filter-btn" data-filter="commented">With Notes</button>
+        </div>
+        <div class="topbar-search">
+            <input type="text" id="search" placeholder="Search charts...">
+        </div>
+        <div class="topbar-nav" id="nav"></div>
+    </div>
+</div>
+
+<div class="main">
+    <div class="sessions-bar" id="sessionsBar"></div>
+    <div id="cards"></div>
+</div>
+
+<script src="sessions.js"></script>
+<script src="charts.js"></script>
+<script>
+// ── Chart Registry ──
+let charts = [];
+
+// ── State (persisted to localStorage) ──
+const STORAGE_KEY = "immigration_happiness_project_page";
+
+function loadState() {
+    try {
+        return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+    } catch { return {}; }
+}
+
+function saveState(state) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+}
+
+let state = loadState();
+if (!state.stars) state.stars = {};
+if (!state.comments) state.comments = {};
+if (!state.collapsed) state.collapsed = {};
+
+// ── Render ──
+const navEl = document.getElementById("nav");
+const cardsEl = document.getElementById("cards");
+const searchEl = document.getElementById("search");
+const countEl = document.getElementById("chartCount");
+
+let activeFilter = "all";
+
+function isStarred(id) { return !!state.stars[id]; }
+function hasComment(id) { return !!(state.comments[id] && state.comments[id].trim()); }
+function isCollapsed(id) { return !!state.collapsed[id]; }
+
+function toggleStar(id) {
+    state.stars[id] = !state.stars[id];
+    saveState(state);
+    render();
+}
+
+function toggleCollapse(id) {
+    state.collapsed[id] = !state.collapsed[id];
+    saveState(state);
+    render();
+}
+
+function autoResize(el) {
+    el.style.height = 'auto';
+    el.style.height = el.scrollHeight + 'px';
+}
+
+function updateComment(id, text) {
+    state.comments[id] = text;
+    saveState(state);
+    renderNav();
+}
+
+function getFilteredCharts() {
+    const query = searchEl.value.toLowerCase().trim();
+    return charts
+        .filter(c => {
+            if (activeFilter === "starred" && !isStarred(c.id)) return false;
+            if (activeFilter === "commented" && !hasComment(c.id)) return false;
+            if (query) {
+                const searchable = (c.title + " " + c.subtitle + " " + c.tags.join(" ")).toLowerCase();
+                if (!searchable.includes(query)) return false;
+            }
+            return true;
+        })
+        .sort((a, b) => b.date.localeCompare(a.date));
+}
+
+function renderNav() {
+    const filtered = getFilteredCharts();
+    navEl.innerHTML = filtered.map(c => `
+        <a class="nav-pill" href="#card-${c.id}" onclick="event.preventDefault(); document.getElementById('card-${c.id}').scrollIntoView({behavior:'smooth', block:'start'})">
+            <span class="pill-star ${isStarred(c.id) ? 'starred' : ''}">★</span>
+            <span>${c.title}</span>
+        </a>
+    `).join("");
+    countEl.textContent = `${filtered.length} of ${charts.length} charts`;
+}
+
+function renderCards() {
+    const filtered = getFilteredCharts();
+    if (filtered.length === 0) {
+        cardsEl.innerHTML = '<div class="no-results">No charts match your filter.</div>';
+        return;
+    }
+
+    cardsEl.innerHTML = filtered.map(c => {
+        const collapsed = isCollapsed(c.id);
+        const starred = isStarred(c.id);
+        const comment = state.comments[c.id] || "";
+        const nativeW = c.width || 960;
+        const nativeH = c.height || 987;
+
+        const contentHtml = c.isImage
+            ? `<div class="card-iframe-container"><img src="${c.file}" /></div>`
+            : `<div class="card-iframe-container" data-chart-id="${c.id}" data-native-width="${nativeW}" data-native-height="${nativeH}"><iframe src="${c.file}" width="${nativeW}" height="${nativeH}" loading="lazy" scrolling="no" style="overflow:hidden"></iframe></div>`;
+
+        const sourceHtml = c.source ? `<div class="card-source">${c.source}</div>` : '';
+
+        return `
+        <div class="chart-card ${collapsed ? 'collapsed' : ''}" id="card-${c.id}">
+            <div class="card-header">
+                <span class="card-chevron" onclick="toggleCollapse('${c.id}')">▼</span>
+                <span class="card-title" onclick="toggleCollapse('${c.id}')">${c.title}</span>
+                <span class="card-star ${starred ? 'starred' : ''}" onclick="event.stopPropagation(); toggleStar('${c.id}')">★</span>
+                <a class="card-open" href="${c.file}" target="_blank" onclick="event.stopPropagation()">Open ↗</a>
+            </div>
+            <div class="card-body">
+                ${contentHtml}
+                ${sourceHtml}
+                <div class="card-comment">
+                    <svg class="card-comment-icon" width="20" height="20" viewBox="0 0 16 16" fill="none" stroke="#bbb" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.5 1.5l3 3-9 9H2.5v-3l9-9z"/><path d="M9.5 3.5l3 3"/></svg>
+                    <textarea placeholder="Add a note..." oninput="autoResize(this); updateComment('${c.id}', this.value)">${comment}</textarea>
+                </div>
+                <div class="card-meta">
+                    <span style="font-family:monospace;opacity:0.6">${c.file}</span>
+                    <span>${c.date}</span>
+                    <span>${c.tags.map(t => '#' + t).join(' ')}</span>
+                </div>
+            </div>
+        </div>`;
+    }).join("");
+}
+
+function render() {
+    renderNav();
+    renderCards();
+    document.querySelectorAll('.card-comment textarea').forEach(ta => {
+        if (ta.value) autoResize(ta);
+    });
+}
+
+// ── Filter buttons ──
+document.querySelectorAll(".filter-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        activeFilter = btn.dataset.filter;
+        render();
+    });
+});
+
+// ── Search ──
+searchEl.addEventListener("input", () => render());
+
+// ── Scale iframes to fit container width ──
+function scaleIframes() {
+    document.querySelectorAll('.card-iframe-container[data-native-width]').forEach(container => {
+        const iframe = container.querySelector('iframe');
+        if (!iframe) return;
+        const nativeW = parseInt(container.dataset.nativeWidth);
+        const nativeH = parseInt(container.dataset.nativeHeight);
+        const containerW = container.clientWidth;
+        const scale = Math.min(1, containerW / nativeW);
+        iframe.style.transform = `scale(${scale})`;
+        iframe.style.width = nativeW + 'px';
+        iframe.style.height = nativeH + 'px';
+        container.style.height = (nativeH * scale) + 'px';
+    });
+}
+
+const resizeObserver = new ResizeObserver(() => scaleIframes());
+
+const origRender = render;
+render = function() {
+    origRender();
+    requestAnimationFrame(() => {
+        scaleIframes();
+        document.querySelectorAll('.card-iframe-container[data-native-width]').forEach(c => {
+            resizeObserver.observe(c);
+        });
+        document.querySelectorAll('.card-iframe-container iframe').forEach(iframe => {
+            iframe.addEventListener('load', () => {
+                scaleIframes();
+                setTimeout(scaleIframes, 500);
+                setTimeout(scaleIframes, 1500);
+            }, {once: true});
+        });
+    });
+};
+
+// ── Load sessions ──
+const sessions = (typeof SESSIONS_DATA !== 'undefined') ? SESSIONS_DATA : [];
+const sessionsBar = document.getElementById('sessionsBar');
+if (sessions.length > 0) {
+    sessionsBar.innerHTML = '<div class="sessions-title">Sessions</div>' +
+        sessions.slice().reverse().map(s => {
+            const fullCmd = 'claude -r ' + s.id;
+            return `<div class="session-row">
+                <span class="session-date">${s.date}</span>
+                <span class="session-summary">${s.summary || s.name || ''}</span>
+                <span class="session-resume" data-cmd="${fullCmd}" title="${fullCmd}">${fullCmd}</span>
+            </div>`;
+        }).join('');
+    sessionsBar.querySelectorAll('.session-resume').forEach(el => {
+        el.addEventListener('click', () => {
+            const cmd = el.dataset.cmd;
+            navigator.clipboard.writeText(cmd).then(() => {
+                el.textContent = 'Copied!';
+                setTimeout(() => { el.textContent = cmd; }, 1500);
+            });
+        });
+    });
+} else {
+    sessionsBar.style.display = 'none';
+}
+
+// ── Load chart registry and render ──
+charts = (typeof CHARTS_DATA !== 'undefined') ? CHARTS_DATA : [];
+render();
+</script>
+</body>
+</html>
