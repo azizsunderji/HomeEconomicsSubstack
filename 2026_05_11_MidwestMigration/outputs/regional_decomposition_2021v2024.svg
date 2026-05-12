@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="742.790625pt" height="394.47pt" viewBox="0 0 742.790625 394.47" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-05-11T12:38:02.265858</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 394.47 
+L 742.790625 394.47 
+L 742.790625 0 
+L 0 0 
+z
+" style="fill: #f6f7f3"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 78.48 335.88 
+L 720 335.88 
+L 720 78.48 
+L 78.48 78.48 
+z
+" style="fill: #f6f7f3"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 130.84898 335.88 
+L 130.84898 78.48 
+" clip-path="url(#pfbb0145177)" style="fill: none; stroke: #dadfce; stroke-opacity: 0.7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="130.84898" y="73.03" transform="rotate(-0 130.84898 73.03)">-250K</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 196.310204 335.88 
+L 196.310204 78.48 
+" clip-path="url(#pfbb0145177)" style="fill: none; stroke: #dadfce; stroke-opacity: 0.7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="196.310204" y="73.03" transform="rotate(-0 196.310204 73.03)">-200K</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 261.771429 335.88 
+L 261.771429 78.48 
+" clip-path="url(#pfbb0145177)" style="fill: none; stroke: #dadfce; stroke-opacity: 0.7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="261.771429" y="73.03" transform="rotate(-0 261.771429 73.03)">-150K</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 327.232653 335.88 
+L 327.232653 78.48 
+" clip-path="url(#pfbb0145177)" style="fill: none; stroke: #dadfce; stroke-opacity: 0.7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="327.232653" y="73.03" transform="rotate(-0 327.232653 73.03)">-100K</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 392.693878 335.88 
+L 392.693878 78.48 
+" clip-path="url(#pfbb0145177)" style="fill: none; stroke: #dadfce; stroke-opacity: 0.7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_5">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="392.693878" y="73.03" transform="rotate(-0 392.693878 73.03)">-50K</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 458.155102 335.88 
+L 458.155102 78.48 
+" clip-path="url(#pfbb0145177)" style="fill: none; stroke: #dadfce; stroke-opacity: 0.7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12"/>
+     <g id="text_6">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="458.155102" y="73.03" transform="rotate(-0 458.155102 73.03)">0K</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_13">
+      <path d="M 523.616327 335.88 
+L 523.616327 78.48 
+" clip-path="url(#pfbb0145177)" style="fill: none; stroke: #dadfce; stroke-opacity: 0.7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14"/>
+     <g id="text_7">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="523.616327" y="73.03" transform="rotate(-0 523.616327 73.03)">+50K</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_15">
+      <path d="M 589.077551 335.88 
+L 589.077551 78.48 
+" clip-path="url(#pfbb0145177)" style="fill: none; stroke: #dadfce; stroke-opacity: 0.7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16"/>
+     <g id="text_8">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="589.077551" y="73.03" transform="rotate(-0 589.077551 73.03)">+100K</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_17">
+      <path d="M 654.538776 335.88 
+L 654.538776 78.48 
+" clip-path="url(#pfbb0145177)" style="fill: none; stroke: #dadfce; stroke-opacity: 0.7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18"/>
+     <g id="text_9">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="654.538776" y="73.03" transform="rotate(-0 654.538776 73.03)">+150K</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_19">
+      <path d="M 720 335.88 
+L 720 78.48 
+" clip-path="url(#pfbb0145177)" style="fill: none; stroke: #dadfce; stroke-opacity: 0.7; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_20"/>
+     <g id="text_10">
+      <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: middle" x="720" y="73.03" transform="rotate(-0 720 73.03)">+200K</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_21"/>
+     <g id="text_11">
+      <text style="fill: #3d3733; font: 700 12px 'ABC Oracle Edu'; text-anchor: end" x="74.98" y="117.025161" transform="rotate(-0 74.98 117.025161)">Midwest</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_22"/>
+     <g id="text_12">
+      <text style="fill: #3d3733; font: 700 12px 'ABC Oracle Edu'; text-anchor: end" x="74.98" y="179.928387" transform="rotate(-0 74.98 179.928387)">Northeast</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_23"/>
+     <g id="text_13">
+      <text style="fill: #3d3733; font: 700 12px 'ABC Oracle Edu'; text-anchor: end" x="74.98" y="242.831613" transform="rotate(-0 74.98 242.831613)">West</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_24"/>
+     <g id="text_14">
+      <text style="fill: #3d3733; font: 700 12px 'ABC Oracle Edu'; text-anchor: end" x="74.98" y="305.734839" transform="rotate(-0 74.98 305.734839)">South</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 458.155102 93.954194 
+L 621.808163 93.954194 
+L 621.808163 131.696129 
+L 458.155102 131.696129 
+z
+" clip-path="url(#pfbb0145177)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 458.155102 93.954194 
+L 430.661388 93.954194 
+L 430.661388 131.696129 
+L 458.155102 131.696129 
+z
+" clip-path="url(#pfbb0145177)" style="fill: #0bb4ff"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 458.155102 156.857419 
+L 625.735837 156.857419 
+L 625.735837 194.599355 
+L 458.155102 194.599355 
+z
+" clip-path="url(#pfbb0145177)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 458.155102 156.857419 
+L 412.332245 156.857419 
+L 412.332245 194.599355 
+L 458.155102 194.599355 
+z
+" clip-path="url(#pfbb0145177)" style="fill: #0bb4ff"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 458.155102 219.760645 
+L 666.321796 219.760645 
+L 666.321796 257.502581 
+L 458.155102 257.502581 
+z
+" clip-path="url(#pfbb0145177)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 458.155102 219.760645 
+L 357.344816 219.760645 
+L 357.344816 257.502581 
+L 458.155102 257.502581 
+z
+" clip-path="url(#pfbb0145177)" style="fill: #0bb4ff"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 458.155102 282.663871 
+L 454.227429 282.663871 
+L 454.227429 320.405806 
+L 458.155102 320.405806 
+z
+" clip-path="url(#pfbb0145177)" style="fill: #67a275"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 454.227429 282.663871 
+L 90.26302 282.663871 
+L 90.26302 320.405806 
+L 454.227429 320.405806 
+z
+" clip-path="url(#pfbb0145177)" style="fill: #0bb4ff"/>
+   </g>
+   <g id="text_15">
+    <text style="fill: #3d3733; font: 700 12px 'ABC Oracle Edu'; text-anchor: start" x="629.66351" y="115.855161" transform="rotate(-0 629.66351 115.855161)">+104K</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: #3d3733; font: 700 12px 'ABC Oracle Edu'; text-anchor: start" x="633.591184" y="178.758387" transform="rotate(-0 633.591184 178.758387)">+93K</text>
+   </g>
+   <g id="text_17">
+    <text style="fill: #3d3733; font: 700 12px 'ABC Oracle Edu'; text-anchor: start" x="674.177143" y="241.661613" transform="rotate(-0 674.177143 241.661613)">+82K</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: #3d3733; font: 700 12px 'ABC Oracle Edu'; text-anchor: end" x="82.407673" y="304.564839" transform="rotate(-0 82.407673 304.564839)">-281K</text>
+   </g>
+   <g id="line2d_25">
+    <path d="M 458.155102 335.88 
+L 458.155102 78.48 
+" clip-path="url(#pfbb0145177)" style="fill: none; stroke: #3d3733; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_26">
+    <path d="M 594.314449 90.18 
+L 594.314449 135.470323 
+" clip-path="url(#pfbb0145177)" style="fill: none; stroke: #3d3733; stroke-width: 2.2"/>
+   </g>
+   <g id="line2d_27">
+    <path d="M 579.91298 153.083226 
+L 579.91298 198.373548 
+" clip-path="url(#pfbb0145177)" style="fill: none; stroke: #3d3733; stroke-width: 2.2"/>
+   </g>
+   <g id="line2d_28">
+    <path d="M 565.51151 215.986452 
+L 565.51151 261.276774 
+" clip-path="url(#pfbb0145177)" style="fill: none; stroke: #3d3733; stroke-width: 2.2"/>
+   </g>
+   <g id="line2d_29">
+    <path d="M 90.26302 278.889677 
+L 90.26302 324.18 
+" clip-path="url(#pfbb0145177)" style="fill: none; stroke: #3d3733; stroke-width: 2.2"/>
+   </g>
+  </g>
+  <g id="patch_11">
+   <path d="M 54.72 371.52 
+L 65.016 371.52 
+L 65.016 363.6 
+L 54.72 363.6 
+z
+" style="fill: #67a275"/>
+  </g>
+  <g id="patch_12">
+   <path d="M 308.16 371.52 
+L 318.456 371.52 
+L 318.456 363.6 
+L 308.16 363.6 
+z
+" style="fill: #0bb4ff"/>
+  </g>
+  <g id="text_19">
+   <text style="fill: #3d3733; font: 700 16px 'ABC Oracle Edu'; text-anchor: start" x="7.2" y="18.64" transform="rotate(-0 7.2 18.64)">The Sun Belt boom is unwinding</text>
+  </g>
+  <g id="text_20">
+   <text style="fill: #3d3733; opacity: 0.78; font: 10.5px 'ABC Oracle Edu'" transform="translate(7.2 34.77)">Change in annual net migration, 2021 to 2024 (in thousands).</text>
+   <text style="fill: #3d3733; opacity: 0.78; font: 10.5px 'ABC Oracle Edu'" transform="translate(7.2 45.984)">Three of four regions improved because outflows collapsed. The South's mirror loss came from fewer arrivals.</text>
+  </g>
+  <g id="text_21">
+   <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: start" x="68.976" y="370.21" transform="rotate(-0 68.976 370.21)">Outflow drop (fewer leaving)</text>
+  </g>
+  <g id="text_22">
+   <text style="fill: #3d3733; font: 10px 'ABC Oracle Edu'; text-anchor: start" x="322.416" y="370.080312" transform="rotate(-0 322.416 370.080312)">Inflow change</text>
+  </g>
+  <g id="text_23">
+   <text style="fill: #3d3733; font: 700 10px 'ABC Oracle Edu'; text-anchor: start" x="498.24" y="370.199844" transform="rotate(-0 498.24 370.199844)">|  Net change</text>
+  </g>
+  <g id="text_24">
+   <text style="fill: #3d3733; opacity: 0.55; font: 9px 'ABC Oracle Edu'; text-anchor: start" x="7.2" y="385.38" transform="rotate(-0 7.2 385.38)">Source: Census Bureau ACS state-to-state migration matrix · inter-region moves only · single-year change (2021 to 2024).</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pfbb0145177">
+   <rect x="78.48" y="78.48" width="641.52" height="257.4"/>
+  </clipPath>
+ </defs>
+</svg>
