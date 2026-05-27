@@ -1,0 +1,109 @@
+Loaded 126 counties across 10 CBSAs
+
+=== Snapshot 2000: Decennial 2000 SF1 (dec/sf1/2000) ===
+   [2000] county 10/126
+   [2000] county 20/126
+   [2000] county 30/126
+   [2000] county 40/126
+   [2000] county 50/126
+   [2000] county 60/126
+   [2000] county 70/126
+   [2000] county 80/126
+   [2000] county 90/126
+   [2000] county 100/126
+   [2000] county 110/126
+   [2000] county 120/126
+   [2000] county 126/126
+   -> 15857 tracts
+
+=== Snapshot 2005: ACS 5-yr 2005-2009 (acs/acs5/2009) ===
+   [2005] county 10/126
+   [2005] county 20/126
+   [2005] county 30/126
+   [2005] county 40/126
+   [2005] county 50/126
+   [2005] county 60/126
+   [2005] county 70/126
+   [2005] county 80/126
+   [2005] county 90/126
+   [2005] county 100/126
+   [2005] county 110/126
+   [2005] county 120/126
+   [2005] county 126/126
+   -> 15857 tracts
+
+=== Snapshot 2010: Decennial 2010 SF1 (dec/sf1/2010) ===
+   [2010] county 10/126
+   [2010] county 20/126
+   [2010] county 30/126
+   [2010] county 40/126
+   [2010] county 50/126
+   [2010] county 60/126
+   [2010] county 70/126
+   [2010] county 80/126
+   [2010] county 90/126
+   [2010] county 100/126
+   [2010] county 110/126
+   [2010] county 120/126
+   [2010] county 126/126
+   -> 18000 tracts
+
+=== Snapshot 2015: ACS 5-yr 2010-2014 (acs/acs5/2014) ===
+   [2015] county 10/126
+   [2015] county 20/126
+   [2015] county 30/126
+   [2015] county 40/126
+   [2015] county 50/126
+   [2015] county 60/126
+   [2015] county 70/126
+   [2015] county 80/126
+   [2015] county 90/126
+   [2015] county 100/126
+   [2015] county 110/126
+   [2015] county 120/126
+   [2015] county 126/126
+   -> 17999 tracts
+
+=== Snapshot 2020: Decennial 2020 DHC (dec/dhc/2020) ===
+   [2020] county 10/126
+   [2020] county 20/126
+   [2020] county 30/126
+   [2020] county 40/126
+   [2020] county 50/126
+   [2020] county 60/126
+   [2020] county 70/126
+   [2020] county 80/126
+   [2020] county 90/126
+   [2020] county 100/126
+   [2020] county 110/126
+   [2020] county 120/126
+   [2020] county 126/126
+   -> 20776 tracts
+
+=== Snapshot 2024: ACS 5-yr 2019-2023 (acs/acs5/2023) ===
+   [2024] county 10/126
+   [2024] county 20/126
+   [2024] county 30/126
+   [2024] county 40/126
+   [2024] county 50/126
+   [2024] county 60/126
+   [2024] county 70/126
+   [2024] county 80/126
+   [2024] county 90/126
+   [2024] county 100/126
+   [2024] county 110/126
+   [2024] county 120/126
+   [2024] county 126/126
+   -> 20762 tracts
+
+Wrote long: /Users/azizsunderji/Dropbox/Home Economics/2026_05_18_KidsLeavingCity/data/tract_under18_metro10_long.csv
+Union of GEOIDs across snapshots: 26569
+Wrote wide: /Users/azizsunderji/Dropbox/Home Economics/2026_05_18_KidsLeavingCity/data/tract_under18_metro10_snapshots.csv
+
+=== Snapshot summary ===
+  2000: 15857 tracts, 15857 with data, sum under18 = 18,999,518
+  2005: 15857 tracts, 15857 with data, sum under18 = 20,045,282
+  2010: 18000 tracts, 18000 with data, sum under18 = 19,637,113
+  2015: 17999 tracts, 17999 with data, sum under18 = 19,621,467
+  2020: 20776 tracts, 20776 with data, sum under18 = 19,301,661
+  2024: 20762 tracts, 20762 with data, sum under18 = 19,495,995

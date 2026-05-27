@@ -1,0 +1,200 @@
+csa_code,csa_short,CSA Title,County/County Equivalent,State Name,state_fips,county_fips,fips_5,is_inner,pop_under18,pop_under18_2024,delta_under18,delta_pct
+206,Dallas,"Dallas-Fort Worth, TX-OK",Henderson County,Texas,48,213,48213,False,17771.0,18599.0,828.0,4.659276349108097
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Clarke County,Georgia,13,59,13059,False,20584.0,21155.0,571.0,2.7739992226972405
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Madison County,Georgia,13,195,13195,False,6716.0,7642.0,926.0,13.787969029184039
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Oconee County,Georgia,13,219,13219,False,9187.0,11257.0,2070.0,22.531838467399588
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Oglethorpe County,Georgia,13,221,13221,False,3424.0,3512.0,88.0,2.570093457943925
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Barrow County,Georgia,13,13,13013,False,19554.0,23700.0,4146.0,21.202822951825713
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Butts County,Georgia,13,35,13035,False,5218.0,5641.0,423.0,8.10655423533921
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Carroll County,Georgia,13,45,13045,False,27843.0,30575.0,2732.0,9.812161045864311
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Clayton County,Georgia,13,63,13063,False,75058.0,76197.0,1139.0,1.5174931386394521
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Coweta County,Georgia,13,77,13077,False,34787.0,35682.0,895.0,2.572800183976773
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Dawson County,Georgia,13,85,13085,False,4968.0,6862.0,1894.0,38.12399355877617
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",DeKalb County,Georgia,13,89,13089,True,165972.0,171001.0,5029.0,3.030029161545321
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Douglas County,Georgia,13,97,13097,False,37022.0,37527.0,505.0,1.3640538058451732
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Fayette County,Georgia,13,113,13113,False,27279.0,27209.0,-70.0,-0.25660764690787785
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Forsyth County,Georgia,13,117,13117,False,54732.0,69171.0,14439.0,26.381276035957026
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Fulton County,Georgia,13,121,13121,True,224080.0,222302.0,-1778.0,-0.7934666190646198
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Gwinnett County,Georgia,13,135,13135,False,236567.0,252809.0,16242.0,6.865708234876378
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Heard County,Georgia,13,149,13149,False,2947.0,2725.0,-222.0,-7.533084492704445
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Henry County,Georgia,13,151,13151,False,58981.0,63828.0,4847.0,8.21790067987996
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Jasper County,Georgia,13,159,13159,False,3445.0,3979.0,534.0,15.500725689404934
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Lumpkin County,Georgia,13,187,13187,False,6113.0,5957.0,-156.0,-2.551938491738917
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Meriwether County,Georgia,13,199,13199,False,4987.0,4393.0,-594.0,-11.910968518147182
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Morgan County,Georgia,13,211,13211,False,4355.0,4812.0,457.0,10.493685419058552
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Newton County,Georgia,13,217,13217,False,28403.0,30587.0,2184.0,7.689328592050136
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Pickens County,Georgia,13,227,13227,False,6443.0,6700.0,257.0,3.988825081483781
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Pike County,Georgia,13,231,13231,False,4688.0,4732.0,44.0,0.938566552901024
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Rockdale County,Georgia,13,247,13247,False,22463.0,22534.0,71.0,0.3160753238659128
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Spalding County,Georgia,13,255,13255,False,15991.0,16130.0,139.0,0.8692389469076356
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Walton County,Georgia,13,297,13297,False,22494.0,25771.0,3277.0,14.568329332266384
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Bartow County,Georgia,13,15,13015,False,26323.0,26491.0,168.0,0.6382251263153895
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Cherokee County,Georgia,13,57,13057,False,59184.0,63700.0,4516.0,7.63044065963774
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Cobb County,Georgia,13,67,13067,False,176159.0,172421.0,-3738.0,-2.1219466504691784
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Haralson County,Georgia,13,143,13143,False,7108.0,7776.0,668.0,9.39786156443444
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Paulding County,Georgia,13,223,13223,False,42447.0,46930.0,4483.0,10.561405988644662
+428,Philadelphia,"Philadelphia-Reading-Camden, PA-NJ-DE-MD",Atlantic County,New Jersey,34,1,34001,False,62957.0,56729.0,-6228.0,-9.892466286513017
+428,Philadelphia,"Philadelphia-Reading-Camden, PA-NJ-DE-MD",Cape May County,New Jersey,34,9,34009,False,17803.0,15647.0,-2156.0,-12.110318485648486
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Anne Arundel County,Maryland,24,3,24003,False,126048.0,133079.0,7031.0,5.578033764914953
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Baltimore County,Maryland,24,5,24005,False,177476.0,183904.0,6428.0,3.62189817214722
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Carroll County,Maryland,24,13,24013,False,39918.0,39019.0,-899.0,-2.252116839521018
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Harford County,Maryland,24,25,24025,False,59423.0,58265.0,-1158.0,-1.9487403867189474
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Howard County,Maryland,24,27,24027,False,74927.0,78547.0,3620.0,4.831369199354038
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Queen Anne's County,Maryland,24,35,24035,False,11277.0,11079.0,-198.0,-1.7557861133280128
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Baltimore city,Maryland,24,510,24510,True,131583.0,118191.0,-13392.0,-10.177606529718885
+288,Houston,"Houston-Pasadena, TX",Matagorda County,Texas,48,321,48321,False,9519.0,9431.0,-88.0,-0.9244668557621599
+206,Dallas,"Dallas-Fort Worth, TX-OK",Fannin County,Texas,48,147,48147,False,7470.0,8009.0,539.0,7.215528781793842
+288,Houston,"Houston-Pasadena, TX",Washington County,Texas,48,477,48477,False,7431.0,7776.0,345.0,4.642712959224869
+408,New York,"New York-Newark, NY-NJ-CT-PA",Greater Bridgeport Planning Region,Connecticut,09,120,09120,False,,73108.0,,
+408,New York,"New York-Newark, NY-NJ-CT-PA",Western Connecticut Planning Region,Connecticut,09,190,09190,False,,136684.0,,
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Gordon County,Georgia,13,129,13129,False,14727.0,13822.0,-905.0,-6.145175527941875
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Dorchester County,Maryland,24,19,24019,False,6997.0,6806.0,-191.0,-2.729741317707589
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Polk County,Georgia,13,233,13233,False,10934.0,11166.0,232.0,2.1218218401316995
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Franklin County,Pennsylvania,42,55,42055,False,35672.0,34416.0,-1256.0,-3.5209688270912762
+176,Chicago,"Chicago-Naperville, IL-IN-WI",Cook County,Illinois,17,31,17031,True,1221148.0,1053196.0,-167952.0,-13.753615450379478
+176,Chicago,"Chicago-Naperville, IL-IN-WI",DuPage County,Illinois,17,43,17043,False,225503.0,203122.0,-22381.0,-9.924923393480354
+176,Chicago,"Chicago-Naperville, IL-IN-WI",Grundy County,Illinois,17,63,17063,False,13431.0,12700.0,-731.0,-5.442632715359988
+176,Chicago,"Chicago-Naperville, IL-IN-WI",McHenry County,Illinois,17,111,17111,False,81970.0,69840.0,-12130.0,-14.7980968647066
+176,Chicago,"Chicago-Naperville, IL-IN-WI",Will County,Illinois,17,197,17197,False,192683.0,161584.0,-31099.0,-16.139981212665365
+176,Chicago,"Chicago-Naperville, IL-IN-WI",DeKalb County,Illinois,17,37,17037,False,23261.0,21383.0,-1878.0,-8.073599587292033
+176,Chicago,"Chicago-Naperville, IL-IN-WI",Kane County,Illinois,17,89,17089,False,147772.0,119191.0,-28581.0,-19.341282516308908
+176,Chicago,"Chicago-Naperville, IL-IN-WI",Kendall County,Illinois,17,93,17093,False,36182.0,37416.0,1234.0,3.410535625449118
+176,Chicago,"Chicago-Naperville, IL-IN-WI",Lake County,Illinois,17,97,17097,False,188421.0,162161.0,-26260.0,-13.936875401361846
+176,Chicago,"Chicago-Naperville, IL-IN-WI",Jasper County,Indiana,18,73,18073,False,8419.0,7494.0,-925.0,-10.98705309419171
+176,Chicago,"Chicago-Naperville, IL-IN-WI",Lake County,Indiana,18,89,18089,False,125261.0,114054.0,-11207.0,-8.946918833475703
+176,Chicago,"Chicago-Naperville, IL-IN-WI",Newton County,Indiana,18,111,18111,False,3164.0,2977.0,-187.0,-5.910240202275601
+176,Chicago,"Chicago-Naperville, IL-IN-WI",Porter County,Indiana,18,127,18127,False,39398.0,36557.0,-2841.0,-7.211025940403067
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Habersham County,Georgia,13,137,13137,False,10228.0,10728.0,500.0,4.888541259288228
+206,Dallas,"Dallas-Fort Worth, TX-OK",Navarro County,Texas,48,349,48349,False,12868.0,14954.0,2086.0,16.210755362138638
+206,Dallas,"Dallas-Fort Worth, TX-OK",Collin County,Texas,48,85,48085,False,230022.0,301180.0,71158.0,30.935301840693498
+206,Dallas,"Dallas-Fort Worth, TX-OK",Dallas County,Texas,48,113,48113,True,660186.0,651464.0,-8722.0,-1.3211428294450351
+206,Dallas,"Dallas-Fort Worth, TX-OK",Denton County,Texas,48,121,48121,False,186012.0,235469.0,49457.0,26.588069586908368
+206,Dallas,"Dallas-Fort Worth, TX-OK",Ellis County,Texas,48,139,48139,False,43309.0,60523.0,17214.0,39.74693481724353
+206,Dallas,"Dallas-Fort Worth, TX-OK",Hunt County,Texas,48,231,48231,False,21378.0,29384.0,8006.0,37.44971465993077
+206,Dallas,"Dallas-Fort Worth, TX-OK",Kaufman County,Texas,48,257,48257,False,29948.0,57044.0,27096.0,90.4768264992654
+206,Dallas,"Dallas-Fort Worth, TX-OK",Rockwall County,Texas,48,397,48397,False,23643.0,35636.0,11993.0,50.725373260584526
+206,Dallas,"Dallas-Fort Worth, TX-OK",Johnson County,Texas,48,251,48251,False,40913.0,53353.0,12440.0,30.405983428250188
+206,Dallas,"Dallas-Fort Worth, TX-OK",Parker County,Texas,48,367,48367,False,29601.0,43688.0,14087.0,47.589608459173675
+206,Dallas,"Dallas-Fort Worth, TX-OK",Tarrant County,Texas,48,439,48439,True,513110.0,551303.0,38193.0,7.4434331819687785
+206,Dallas,"Dallas-Fort Worth, TX-OK",Wise County,Texas,48,497,48497,False,15516.0,19799.0,4283.0,27.603763856664088
+428,Philadelphia,"Philadelphia-Reading-Camden, PA-NJ-DE-MD",Kent County,Delaware,10,1,10001,False,40463.0,43282.0,2819.0,6.966858611571065
+206,Dallas,"Dallas-Fort Worth, TX-OK",Bryan County,Oklahoma,40,13,40013,False,9999.0,11926.0,1927.0,19.27192719271927
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Talbot County,Maryland,24,41,24041,False,7295.0,6986.0,-309.0,-4.235777930089101
+288,Houston,"Houston-Pasadena, TX",Wharton County,Texas,48,481,48481,False,10905.0,10544.0,-361.0,-3.3104080696928015
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Hall County,Georgia,13,139,13139,False,50392.0,51342.0,950.0,1.8852198761708208
+206,Dallas,"Dallas-Fort Worth, TX-OK",Cooke County,Texas,48,97,48097,False,9642.0,10124.0,482.0,4.998962870773698
+206,Dallas,"Dallas-Fort Worth, TX-OK",Hood County,Texas,48,221,48221,False,10872.0,13835.0,2963.0,27.25349521707138
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Washington County,Maryland,24,43,24043,False,33659.0,33714.0,55.0,0.16340354734246412
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Berkeley County,West Virginia,54,3,54003,False,26138.0,31190.0,5052.0,19.328181192134057
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Morgan County,West Virginia,54,65,54065,False,3493.0,2940.0,-553.0,-15.831663326653306
+408,New York,"New York-Newark, NY-NJ-CT-PA",Pike County,Pennsylvania,42,103,42103,False,12514.0,10536.0,-1978.0,-15.806296947418891
+288,Houston,"Houston-Pasadena, TX",Austin County,Texas,48,15,48015,False,7085.0,7635.0,550.0,7.762879322512351
+288,Houston,"Houston-Pasadena, TX",Brazoria County,Texas,48,39,48039,False,87843.0,103250.0,15407.0,17.539246155072117
+288,Houston,"Houston-Pasadena, TX",Chambers County,Texas,48,71,48071,False,10028.0,15413.0,5385.0,53.699641005185484
+288,Houston,"Houston-Pasadena, TX",Fort Bend County,Texas,48,157,48157,False,176335.0,248961.0,72626.0,41.186378200584116
+288,Houston,"Houston-Pasadena, TX",Galveston County,Texas,48,167,48167,False,74286.0,84636.0,10350.0,13.932638720620306
+288,Houston,"Houston-Pasadena, TX",Harris County,Texas,48,201,48201,True,1159880.0,1272618.0,112738.0,9.719798599855158
+288,Houston,"Houston-Pasadena, TX",Liberty County,Texas,48,291,48291,False,19242.0,35266.0,16024.0,83.27616671863632
+288,Houston,"Houston-Pasadena, TX",Montgomery County,Texas,48,339,48339,False,128982.0,190255.0,61273.0,47.5050782279698
+288,Houston,"Houston-Pasadena, TX",San Jacinto County,Texas,48,407,48407,False,6326.0,6184.0,-142.0,-2.2447043945621243
+288,Houston,"Houston-Pasadena, TX",Waller County,Texas,48,473,48473,False,10764.0,15486.0,4722.0,43.86845039018952
+288,Houston,"Houston-Pasadena, TX",Walker County,Texas,48,471,48471,False,11147.0,12217.0,1070.0,9.598995245357496
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Jackson County,Georgia,13,157,13157,False,15924.0,23253.0,7329.0,46.02486812358704
+176,Chicago,"Chicago-Naperville, IL-IN-WI",Kankakee County,Illinois,17,91,17091,False,28314.0,23688.0,-4626.0,-16.338207247298158
+176,Chicago,"Chicago-Naperville, IL-IN-WI",Kenosha County,Wisconsin,55,59,55059,False,42209.0,35378.0,-6831.0,-16.183752280319364
+370,Miami,"Miami-Port St. Lucie-Fort Lauderdale, FL",Monroe County,Florida,12,87,12087,False,11278.0,12646.0,1368.0,12.129810250044335
+408,New York,"New York-Newark, NY-NJ-CT-PA",Ulster County,New York,36,111,36111,False,35769.0,30203.0,-5566.0,-15.56096060834801
+408,New York,"New York-Newark, NY-NJ-CT-PA",Dutchess County,New York,36,27,36027,False,64198.0,53757.0,-10441.0,-16.263746534159942
+408,New York,"New York-Newark, NY-NJ-CT-PA",Orange County,New York,36,71,36071,False,100273.0,104759.0,4486.0,4.473786562683872
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Chambers County,Alabama,01,17,01017,False,7495.0,7093.0,-402.0,-5.363575717144763
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Troup County,Georgia,13,285,13285,False,17701.0,17389.0,-312.0,-1.7626122817919891
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Orange County,Virginia,51,137,51137,False,7716.0,8573.0,857.0,11.106791083462934
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Calvert County,Maryland,24,9,24009,False,22799.0,21542.0,-1257.0,-5.513399710513619
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",St. Mary's County,Maryland,24,37,24037,False,27788.0,27602.0,-186.0,-0.6693536778465524
+348,Los Angeles,"Los Angeles-Long Beach, CA",Orange County,California,06,59,06059,False,732740.0,642905.0,-89835.0,-12.26014684608456
+348,Los Angeles,"Los Angeles-Long Beach, CA",Los Angeles County,California,06,37,06037,True,2368374.0,1944946.0,-423428.0,-17.878426295846854
+370,Miami,"Miami-Port St. Lucie-Fort Lauderdale, FL",Broward County,Florida,12,11,12011,False,395110.0,415514.0,20404.0,5.164131507681406
+370,Miami,"Miami-Port St. Lucie-Fort Lauderdale, FL",Miami-Dade County,Florida,12,86,12086,True,547850.0,560291.0,12441.0,2.2708770648900245
+370,Miami,"Miami-Port St. Lucie-Fort Lauderdale, FL",Palm Beach County,Florida,12,99,12099,False,269287.0,296112.0,26825.0,9.961490900043449
+176,Chicago,"Chicago-Naperville, IL-IN-WI",LaPorte County,Indiana,18,91,18091,False,24935.0,23206.0,-1729.0,-6.934028474032485
+206,Dallas,"Dallas-Fort Worth, TX-OK",Palo Pinto County,Texas,48,363,48363,False,6877.0,6916.0,39.0,0.5671077504725899
+408,New York,"New York-Newark, NY-NJ-CT-PA",Sullivan County,New York,36,105,36105,False,17023.0,17223.0,200.0,1.1748810432943664
+408,New York,"New York-Newark, NY-NJ-CT-PA",Middlesex County,New Jersey,34,23,34023,False,184822.0,187435.0,2613.0,1.4137927303026696
+408,New York,"New York-Newark, NY-NJ-CT-PA",Monmouth County,New Jersey,34,25,34025,False,146790.0,132733.0,-14057.0,-9.576265413175285
+408,New York,"New York-Newark, NY-NJ-CT-PA",Ocean County,New Jersey,34,29,34029,False,135875.0,166276.0,30401.0,22.374241030358785
+408,New York,"New York-Newark, NY-NJ-CT-PA",Somerset County,New Jersey,34,35,34035,False,79988.0,73710.0,-6278.0,-7.848677301595239
+408,New York,"New York-Newark, NY-NJ-CT-PA",Nassau County,New York,36,59,36059,False,308094.0,295441.0,-12653.0,-4.106863489714178
+408,New York,"New York-Newark, NY-NJ-CT-PA",Suffolk County,New York,36,103,36103,False,351829.0,314488.0,-37341.0,-10.613394575205568
+408,New York,"New York-Newark, NY-NJ-CT-PA",Essex County,New Jersey,34,13,34013,False,193233.0,205811.0,12578.0,6.509240140141694
+408,New York,"New York-Newark, NY-NJ-CT-PA",Hunterdon County,New Jersey,34,19,34019,False,29141.0,24967.0,-4174.0,-14.323461789231667
+408,New York,"New York-Newark, NY-NJ-CT-PA",Morris County,New Jersey,34,27,34027,False,115800.0,106446.0,-9354.0,-8.077720207253886
+408,New York,"New York-Newark, NY-NJ-CT-PA",Sussex County,New Jersey,34,37,34037,False,34331.0,28630.0,-5701.0,-16.6059829308788
+408,New York,"New York-Newark, NY-NJ-CT-PA",Union County,New Jersey,34,39,34039,False,130856.0,139069.0,8213.0,6.276364859081738
+408,New York,"New York-Newark, NY-NJ-CT-PA",Bergen County,New Jersey,34,3,34003,False,203792.0,201694.0,-2098.0,-1.029481039491246
+408,New York,"New York-Newark, NY-NJ-CT-PA",Hudson County,New Jersey,34,17,34017,False,133551.0,141223.0,7672.0,5.744621904740511
+408,New York,"New York-Newark, NY-NJ-CT-PA",Passaic County,New Jersey,34,31,34031,False,124184.0,123669.0,-515.0,-0.4147072086581202
+408,New York,"New York-Newark, NY-NJ-CT-PA",Bronx County,New York,36,5,36005,True,367236.0,332553.0,-34683.0,-9.444335522661177
+408,New York,"New York-Newark, NY-NJ-CT-PA",Kings County,New York,36,47,36047,True,600913.0,562076.0,-38837.0,-6.46299880348736
+408,New York,"New York-Newark, NY-NJ-CT-PA",New York County,New York,36,61,36061,True,236564.0,220513.0,-16051.0,-6.785056052484739
+408,New York,"New York-Newark, NY-NJ-CT-PA",Putnam County,New York,36,79,36079,False,23020.0,18840.0,-4180.0,-18.158123370981755
+408,New York,"New York-Newark, NY-NJ-CT-PA",Queens County,New York,36,81,36081,True,465639.0,439104.0,-26535.0,-5.698620605232809
+408,New York,"New York-Newark, NY-NJ-CT-PA",Richmond County,New York,36,85,36085,True,108320.0,105407.0,-2913.0,-2.6892540620384047
+408,New York,"New York-Newark, NY-NJ-CT-PA",Rockland County,New York,36,87,36087,False,87981.0,105541.0,17560.0,19.958854752730705
+408,New York,"New York-Newark, NY-NJ-CT-PA",Westchester County,New York,36,119,36119,False,226394.0,208740.0,-17654.0,-7.7979098385999635
+370,Miami,"Miami-Port St. Lucie-Fort Lauderdale, FL",Okeechobee County,Florida,12,93,12093,False,9401.0,9127.0,-274.0,-2.9145835549409638
+176,Chicago,"Chicago-Naperville, IL-IN-WI",Bureau County,Illinois,17,11,17011,False,7884.0,6514.0,-1370.0,-17.376966007102993
+176,Chicago,"Chicago-Naperville, IL-IN-WI",LaSalle County,Illinois,17,99,17099,False,25862.0,22660.0,-3202.0,-12.381099682932488
+176,Chicago,"Chicago-Naperville, IL-IN-WI",Putnam County,Illinois,17,155,17155,False,1244.0,1051.0,-193.0,-15.514469453376206
+348,Los Angeles,"Los Angeles-Long Beach, CA",Ventura County,California,06,111,06111,False,209808.0,176417.0,-33391.0,-15.915027072370929
+429,Phoenix,"Phoenix-Mesa, AZ",Gila County,Arizona,04,7,04007,False,11292.0,10040.0,-1252.0,-11.087495572086432
+428,Philadelphia,"Philadelphia-Reading-Camden, PA-NJ-DE-MD",Burlington County,New Jersey,34,5,34005,False,102554.0,96272.0,-6282.0,-6.12555336700665
+428,Philadelphia,"Philadelphia-Reading-Camden, PA-NJ-DE-MD",Camden County,New Jersey,34,7,34007,False,122786.0,119827.0,-2959.0,-2.409883862981122
+428,Philadelphia,"Philadelphia-Reading-Camden, PA-NJ-DE-MD",Gloucester County,New Jersey,34,15,34015,False,69400.0,65160.0,-4240.0,-6.109510086455332
+428,Philadelphia,"Philadelphia-Reading-Camden, PA-NJ-DE-MD",Bucks County,Pennsylvania,42,17,42017,False,140606.0,127178.0,-13428.0,-9.550090323314794
+428,Philadelphia,"Philadelphia-Reading-Camden, PA-NJ-DE-MD",Chester County,Pennsylvania,42,29,42029,False,122828.0,119637.0,-3191.0,-2.597941837366073
+428,Philadelphia,"Philadelphia-Reading-Camden, PA-NJ-DE-MD",Montgomery County,Pennsylvania,42,91,42091,False,182401.0,183319.0,918.0,0.5032867144368726
+428,Philadelphia,"Philadelphia-Reading-Camden, PA-NJ-DE-MD",Delaware County,Pennsylvania,42,45,42045,False,128716.0,127662.0,-1054.0,-0.8188570185524722
+428,Philadelphia,"Philadelphia-Reading-Camden, PA-NJ-DE-MD",Philadelphia County,Pennsylvania,42,101,42101,True,344749.0,326963.0,-17786.0,-5.15911576248227
+428,Philadelphia,"Philadelphia-Reading-Camden, PA-NJ-DE-MD",New Castle County,Delaware,10,3,10003,False,123760.0,122635.0,-1125.0,-0.9090174531351003
+428,Philadelphia,"Philadelphia-Reading-Camden, PA-NJ-DE-MD",Cecil County,Maryland,24,15,24015,False,24964.0,23312.0,-1652.0,-6.617529242108637
+428,Philadelphia,"Philadelphia-Reading-Camden, PA-NJ-DE-MD",Salem County,New Jersey,34,33,34033,False,15179.0,14449.0,-730.0,-4.809275973384281
+429,Phoenix,"Phoenix-Mesa, AZ",Maricopa County,Arizona,04,13,04013,True,1003357.0,1014730.0,11373.0,1.1334948577624913
+429,Phoenix,"Phoenix-Mesa, AZ",Pinal County,Arizona,04,21,04021,False,97182.0,108429.0,11247.0,11.573130826696302
+370,Miami,"Miami-Port St. Lucie-Fort Lauderdale, FL",Martin County,Florida,12,85,12085,False,25747.0,26179.0,432.0,1.6778653823746457
+370,Miami,"Miami-Port St. Lucie-Fort Lauderdale, FL",St. Lucie County,Florida,12,111,12111,False,61433.0,76165.0,14732.0,23.98059674767633
+428,Philadelphia,"Philadelphia-Reading-Camden, PA-NJ-DE-MD",Berks County,Pennsylvania,42,11,42011,False,96891.0,95197.0,-1694.0,-1.7483564004912737
+348,Los Angeles,"Los Angeles-Long Beach, CA",Riverside County,California,06,65,06065,False,618808.0,591596.0,-27212.0,-4.397486781037091
+348,Los Angeles,"Los Angeles-Long Beach, CA",San Bernardino County,California,06,71,06071,False,590289.0,549148.0,-41141.0,-6.96963690666775
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Floyd County,Georgia,13,115,13115,False,23060.0,22793.0,-267.0,-1.157849089332177
+370,Miami,"Miami-Port St. Lucie-Fort Lauderdale, FL",Indian River County,Florida,12,61,12061,False,25724.0,25372.0,-352.0,-1.3683719483750583
+206,Dallas,"Dallas-Fort Worth, TX-OK",Grayson County,Texas,48,181,48181,False,28922.0,35818.0,6896.0,23.843440979185395
+206,Dallas,"Dallas-Fort Worth, TX-OK",Hopkins County,Texas,48,223,48223,False,8977.0,9303.0,326.0,3.6315027291968365
+122,Atlanta,"Atlanta--Athens-Clarke County--Sandy Springs, GA-AL",Upson County,Georgia,13,293,13293,False,6257.0,6408.0,151.0,2.413297107239891
+408,New York,"New York-Newark, NY-NJ-CT-PA",Mercer County,New Jersey,34,21,34021,False,82122.0,86317.0,4195.0,5.108253573950951
+428,Philadelphia,"Philadelphia-Reading-Camden, PA-NJ-DE-MD",Cumberland County,New Jersey,34,11,34011,False,37502.0,37710.0,208.0,0.5546370860220788
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Arlington County,Virginia,51,13,51013,True,34639.0,42416.0,7777.0,22.451571927596063
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Clarke County,Virginia,51,43,51043,False,3161.0,3016.0,-145.0,-4.587155963302752
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Culpeper County,Virginia,51,47,51047,False,12087.0,13895.0,1808.0,14.958219574749732
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Fairfax County,Virginia,51,59,51059,False,267021.0,258034.0,-8987.0,-3.3656528887241075
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Fauquier County,Virginia,51,61,51061,False,16410.0,17455.0,1045.0,6.368068251066424
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Loudoun County,Virginia,51,107,51107,False,99162.0,113295.0,14133.0,14.252435408725116
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Prince William County,Virginia,51,153,51153,False,119679.0,128386.0,8707.0,7.275294746780972
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Rappahannock County,Virginia,51,157,51157,False,1467.0,1234.0,-233.0,-15.882753919563736
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Spotsylvania County,Virginia,51,177,51177,False,33598.0,36430.0,2832.0,8.429073159116614
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Stafford County,Virginia,51,179,51179,False,37364.0,43878.0,6514.0,17.43389358741034
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Warren County,Virginia,51,187,51187,False,8917.0,9161.0,244.0,2.736346304811035
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Alexandria city,Virginia,51,510,51510,True,25031.0,28286.0,3255.0,13.0038751947585
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Fairfax city,Virginia,51,600,51600,False,4498.0,6948.0,2450.0,54.468652734548684
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Falls Church city,Virginia,51,610,51610,False,3147.0,3545.0,398.0,12.646965363838577
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Fredericksburg city,Virginia,51,630,51630,False,5262.0,6385.0,1123.0,21.341695172938046
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Manassas city,Virginia,51,683,51683,False,10832.0,11621.0,789.0,7.28397341211226
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Manassas Park city,Virginia,51,685,51685,False,4255.0,3498.0,-757.0,-17.79083431257344
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Jefferson County,West Virginia,54,37,54037,False,12804.0,12480.0,-324.0,-2.530459231490159
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Frederick County,Maryland,24,21,24021,False,58889.0,69133.0,10244.0,17.395438876530424
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Montgomery County,Maryland,24,31,24031,False,236415.0,243481.0,7066.0,2.9888120466129475
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",District of Columbia,District of Columbia,11,1,11001,True,103895.0,129831.0,25936.0,24.963665238943165
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Charles County,Maryland,24,17,24017,False,38712.0,40860.0,2148.0,5.548667079975202
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Prince George's County,Maryland,24,33,24033,False,204276.0,210097.0,5821.0,2.849576063756878
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Frederick County,Virginia,51,69,51069,False,19656.0,21642.0,1986.0,10.103785103785103
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Winchester city,Virginia,51,840,51840,False,6031.0,6278.0,247.0,4.09550654949428
+548,Washington,"Washington-Baltimore-Arlington, DC-MD-VA-WV-PA",Hampshire County,West Virginia,54,27,54027,False,5173.0,4232.0,-941.0,-18.19060506475933

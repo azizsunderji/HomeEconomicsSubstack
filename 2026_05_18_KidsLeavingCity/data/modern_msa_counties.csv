@@ -1,0 +1,1253 @@
+county_fips,county_name,state_name,cbsa_code,cbsa_title,central_or_outlying,in_modern_msa
+48059,Callahan County,Texas,10180,"Abilene, TX",Outlying,True
+48253,Jones County,Texas,10180,"Abilene, TX",Outlying,True
+48441,Taylor County,Texas,10180,"Abilene, TX",Central,True
+72003,Aguada Municipio,Puerto Rico,10380,"Aguadilla, PR",Central,True
+72005,Aguadilla Municipio,Puerto Rico,10380,"Aguadilla, PR",Central,True
+72011,Añasco Municipio,Puerto Rico,10380,"Aguadilla, PR",Central,True
+72071,Isabela Municipio,Puerto Rico,10380,"Aguadilla, PR",Central,True
+72099,Moca Municipio,Puerto Rico,10380,"Aguadilla, PR",Central,True
+72117,Rincón Municipio,Puerto Rico,10380,"Aguadilla, PR",Central,True
+72131,San Sebastián Municipio,Puerto Rico,10380,"Aguadilla, PR",Central,True
+39133,Portage County,Ohio,10420,"Akron, OH",Central,True
+39153,Summit County,Ohio,10420,"Akron, OH",Central,True
+13095,Dougherty County,Georgia,10500,"Albany, GA",Central,True
+13177,Lee County,Georgia,10500,"Albany, GA",Central,True
+13273,Terrell County,Georgia,10500,"Albany, GA",Outlying,True
+13321,Worth County,Georgia,10500,"Albany, GA",Outlying,True
+41043,Linn County,Oregon,10540,"Albany, OR",Central,True
+36001,Albany County,New York,10580,"Albany-Schenectady-Troy, NY",Central,True
+36083,Rensselaer County,New York,10580,"Albany-Schenectady-Troy, NY",Central,True
+36091,Saratoga County,New York,10580,"Albany-Schenectady-Troy, NY",Outlying,True
+36093,Schenectady County,New York,10580,"Albany-Schenectady-Troy, NY",Central,True
+36095,Schoharie County,New York,10580,"Albany-Schenectady-Troy, NY",Outlying,True
+35001,Bernalillo County,New Mexico,10740,"Albuquerque, NM",Central,True
+35043,Sandoval County,New Mexico,10740,"Albuquerque, NM",Central,True
+35057,Torrance County,New Mexico,10740,"Albuquerque, NM",Outlying,True
+35061,Valencia County,New Mexico,10740,"Albuquerque, NM",Outlying,True
+22043,Grant Parish,Louisiana,10780,"Alexandria, LA",Outlying,True
+22079,Rapides Parish,Louisiana,10780,"Alexandria, LA",Central,True
+34041,Warren County,New Jersey,10900,"Allentown-Bethlehem-Easton, PA-NJ",Central,True
+42025,Carbon County,Pennsylvania,10900,"Allentown-Bethlehem-Easton, PA-NJ",Outlying,True
+42077,Lehigh County,Pennsylvania,10900,"Allentown-Bethlehem-Easton, PA-NJ",Central,True
+42095,Northampton County,Pennsylvania,10900,"Allentown-Bethlehem-Easton, PA-NJ",Central,True
+42013,Blair County,Pennsylvania,11020,"Altoona, PA",Central,True
+48011,Armstrong County,Texas,11100,"Amarillo, TX",Outlying,True
+48065,Carson County,Texas,11100,"Amarillo, TX",Outlying,True
+48359,Oldham County,Texas,11100,"Amarillo, TX",Outlying,True
+48375,Potter County,Texas,11100,"Amarillo, TX",Central,True
+48381,Randall County,Texas,11100,"Amarillo, TX",Central,True
+19015,Boone County,Iowa,11180,"Ames, IA",Outlying,True
+19169,Story County,Iowa,11180,"Ames, IA",Central,True
+25015,Hampshire County,Massachusetts,11200,"Amherst Town-Northampton, MA",Central,True
+02020,Anchorage Municipality,Alaska,11260,"Anchorage, AK",Central,True
+02170,Matanuska-Susitna Borough,Alaska,11260,"Anchorage, AK",Outlying,True
+26161,Washtenaw County,Michigan,11460,"Ann Arbor, MI",Central,True
+01015,Calhoun County,Alabama,11500,"Anniston-Oxford, AL",Central,True
+55015,Calumet County,Wisconsin,11540,"Appleton, WI",Central,True
+55087,Outagamie County,Wisconsin,11540,"Appleton, WI",Central,True
+72013,Arecibo Municipio,Puerto Rico,11640,"Arecibo, PR",Central,True
+72027,Camuy Municipio,Puerto Rico,11640,"Arecibo, PR",Central,True
+72065,Hatillo Municipio,Puerto Rico,11640,"Arecibo, PR",Central,True
+72115,Quebradillas Municipio,Puerto Rico,11640,"Arecibo, PR",Central,True
+37021,Buncombe County,North Carolina,11700,"Asheville, NC",Central,True
+37089,Henderson County,North Carolina,11700,"Asheville, NC",Central,True
+37115,Madison County,North Carolina,11700,"Asheville, NC",Outlying,True
+13059,Clarke County,Georgia,12020,"Athens-Clarke County, GA",Central,True
+13195,Madison County,Georgia,12020,"Athens-Clarke County, GA",Outlying,True
+13219,Oconee County,Georgia,12020,"Athens-Clarke County, GA",Central,True
+13221,Oglethorpe County,Georgia,12020,"Athens-Clarke County, GA",Outlying,True
+13013,Barrow County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13035,Butts County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13045,Carroll County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13063,Clayton County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13077,Coweta County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13085,Dawson County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13089,DeKalb County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13097,Douglas County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13113,Fayette County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13117,Forsyth County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13121,Fulton County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13135,Gwinnett County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13149,Heard County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13151,Henry County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13159,Jasper County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13187,Lumpkin County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13199,Meriwether County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13211,Morgan County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13217,Newton County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13227,Pickens County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13231,Pike County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13247,Rockdale County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13255,Spalding County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13297,Walton County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13015,Bartow County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13057,Cherokee County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13067,Cobb County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13143,Haralson County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13223,Paulding County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+34001,Atlantic County,New Jersey,12100,"Atlantic City-Hammonton, NJ",Central,True
+34009,Cape May County,New Jersey,12100,"Atlantic City-Hammonton, NJ",Central,True
+01081,Lee County,Alabama,12220,"Auburn-Opelika, AL",Central,True
+01087,Macon County,Alabama,12220,"Auburn-Opelika, AL",Outlying,True
+13033,Burke County,Georgia,12260,"Augusta-Richmond County, GA-SC",Outlying,True
+13073,Columbia County,Georgia,12260,"Augusta-Richmond County, GA-SC",Central,True
+13181,Lincoln County,Georgia,12260,"Augusta-Richmond County, GA-SC",Outlying,True
+13189,McDuffie County,Georgia,12260,"Augusta-Richmond County, GA-SC",Outlying,True
+13245,Richmond County,Georgia,12260,"Augusta-Richmond County, GA-SC",Central,True
+45003,Aiken County,South Carolina,12260,"Augusta-Richmond County, GA-SC",Central,True
+45037,Edgefield County,South Carolina,12260,"Augusta-Richmond County, GA-SC",Outlying,True
+48021,Bastrop County,Texas,12420,"Austin-Round Rock-San Marcos, TX",Outlying,True
+48055,Caldwell County,Texas,12420,"Austin-Round Rock-San Marcos, TX",Outlying,True
+48209,Hays County,Texas,12420,"Austin-Round Rock-San Marcos, TX",Central,True
+48453,Travis County,Texas,12420,"Austin-Round Rock-San Marcos, TX",Central,True
+48491,Williamson County,Texas,12420,"Austin-Round Rock-San Marcos, TX",Central,True
+06029,Kern County,California,12540,"Bakersfield-Delano, CA",Central,True
+24003,Anne Arundel County,Maryland,12580,"Baltimore-Columbia-Towson, MD",Central,True
+24005,Baltimore County,Maryland,12580,"Baltimore-Columbia-Towson, MD",Central,True
+24013,Carroll County,Maryland,12580,"Baltimore-Columbia-Towson, MD",Outlying,True
+24025,Harford County,Maryland,12580,"Baltimore-Columbia-Towson, MD",Outlying,True
+24027,Howard County,Maryland,12580,"Baltimore-Columbia-Towson, MD",Central,True
+24035,Queen Anne's County,Maryland,12580,"Baltimore-Columbia-Towson, MD",Outlying,True
+24510,Baltimore city,Maryland,12580,"Baltimore-Columbia-Towson, MD",Central,True
+23019,Penobscot County,Maine,12620,"Bangor, ME",Central,True
+25001,Barnstable County,Massachusetts,12700,"Barnstable Town, MA",Central,True
+22005,Ascension Parish,Louisiana,12940,"Baton Rouge, LA",Central,True
+22007,Assumption Parish,Louisiana,12940,"Baton Rouge, LA",Outlying,True
+22033,East Baton Rouge Parish,Louisiana,12940,"Baton Rouge, LA",Central,True
+22037,East Feliciana Parish,Louisiana,12940,"Baton Rouge, LA",Outlying,True
+22047,Iberville Parish,Louisiana,12940,"Baton Rouge, LA",Central,True
+22063,Livingston Parish,Louisiana,12940,"Baton Rouge, LA",Central,True
+22077,Pointe Coupee Parish,Louisiana,12940,"Baton Rouge, LA",Outlying,True
+22091,St. Helena Parish,Louisiana,12940,"Baton Rouge, LA",Outlying,True
+22121,West Baton Rouge Parish,Louisiana,12940,"Baton Rouge, LA",Central,True
+22125,West Feliciana Parish,Louisiana,12940,"Baton Rouge, LA",Outlying,True
+26025,Calhoun County,Michigan,12980,"Battle Creek, MI",Central,True
+26017,Bay County,Michigan,13020,"Bay City, MI",Central,True
+48199,Hardin County,Texas,13140,"Beaumont-Port Arthur, TX",Outlying,True
+48245,Jefferson County,Texas,13140,"Beaumont-Port Arthur, TX",Central,True
+48361,Orange County,Texas,13140,"Beaumont-Port Arthur, TX",Outlying,True
+54019,Fayette County,West Virginia,13220,"Beckley, WV",Central,True
+54081,Raleigh County,West Virginia,13220,"Beckley, WV",Central,True
+53073,Whatcom County,Washington,13380,"Bellingham, WA",Central,True
+41013,Crook County,Oregon,13460,"Bend, OR",Outlying,True
+41017,Deschutes County,Oregon,13460,"Bend, OR",Central,True
+41031,Jefferson County,Oregon,13460,"Bend, OR",Outlying,True
+30009,Carbon County,Montana,13740,"Billings, MT",Outlying,True
+30095,Stillwater County,Montana,13740,"Billings, MT",Outlying,True
+30111,Yellowstone County,Montana,13740,"Billings, MT",Central,True
+36007,Broome County,New York,13780,"Binghamton, NY",Central,True
+36107,Tioga County,New York,13780,"Binghamton, NY",Central,True
+01007,Bibb County,Alabama,13820,"Birmingham, AL",Outlying,True
+01009,Blount County,Alabama,13820,"Birmingham, AL",Outlying,True
+01021,Chilton County,Alabama,13820,"Birmingham, AL",Outlying,True
+01073,Jefferson County,Alabama,13820,"Birmingham, AL",Central,True
+01115,St. Clair County,Alabama,13820,"Birmingham, AL",Central,True
+01117,Shelby County,Alabama,13820,"Birmingham, AL",Central,True
+01127,Walker County,Alabama,13820,"Birmingham, AL",Outlying,True
+38015,Burleigh County,North Dakota,13900,"Bismarck, ND",Central,True
+38059,Morton County,North Dakota,13900,"Bismarck, ND",Central,True
+38065,Oliver County,North Dakota,13900,"Bismarck, ND",Outlying,True
+51063,Floyd County,Virginia,13980,"Blacksburg-Christiansburg-Radford, VA",Outlying,True
+51071,Giles County,Virginia,13980,"Blacksburg-Christiansburg-Radford, VA",Outlying,True
+51121,Montgomery County,Virginia,13980,"Blacksburg-Christiansburg-Radford, VA",Central,True
+51155,Pulaski County,Virginia,13980,"Blacksburg-Christiansburg-Radford, VA",Outlying,True
+51750,Radford city,Virginia,13980,"Blacksburg-Christiansburg-Radford, VA",Central,True
+17113,McLean County,Illinois,14010,"Bloomington, IL",Central,True
+18105,Monroe County,Indiana,14020,"Bloomington, IN",Central,True
+18119,Owen County,Indiana,14020,"Bloomington, IN",Outlying,True
+16001,Ada County,Idaho,14260,"Boise City, ID",Central,True
+16015,Boise County,Idaho,14260,"Boise City, ID",Outlying,True
+16027,Canyon County,Idaho,14260,"Boise City, ID",Outlying,True
+16045,Gem County,Idaho,14260,"Boise City, ID",Outlying,True
+16073,Owyhee County,Idaho,14260,"Boise City, ID",Outlying,True
+25021,Norfolk County,Massachusetts,14460,"Boston-Cambridge-Newton, MA-NH",Central,True
+25023,Plymouth County,Massachusetts,14460,"Boston-Cambridge-Newton, MA-NH",Central,True
+25025,Suffolk County,Massachusetts,14460,"Boston-Cambridge-Newton, MA-NH",Central,True
+25009,Essex County,Massachusetts,14460,"Boston-Cambridge-Newton, MA-NH",Central,True
+25017,Middlesex County,Massachusetts,14460,"Boston-Cambridge-Newton, MA-NH",Central,True
+33015,Rockingham County,New Hampshire,14460,"Boston-Cambridge-Newton, MA-NH",Central,True
+33017,Strafford County,New Hampshire,14460,"Boston-Cambridge-Newton, MA-NH",Outlying,True
+08013,Boulder County,Colorado,14500,"Boulder, CO",Central,True
+21003,Allen County,Kentucky,14540,"Bowling Green, KY",Outlying,True
+21031,Butler County,Kentucky,14540,"Bowling Green, KY",Outlying,True
+21061,Edmonson County,Kentucky,14540,"Bowling Green, KY",Outlying,True
+21227,Warren County,Kentucky,14540,"Bowling Green, KY",Central,True
+30031,Gallatin County,Montana,14580,"Bozeman, MT",Central,True
+53035,Kitsap County,Washington,14740,"Bremerton-Silverdale-Port Orchard, WA",Central,True
+09120,Greater Bridgeport Planning Region,Connecticut,14860,"Bridgeport-Stamford-Danbury, CT",Central,True
+09190,Western Connecticut Planning Region,Connecticut,14860,"Bridgeport-Stamford-Danbury, CT",Central,True
+48061,Cameron County,Texas,15180,"Brownsville-Harlingen, TX",Central,True
+13025,Brantley County,Georgia,15260,"Brunswick-St. Simons, GA",Outlying,True
+13127,Glynn County,Georgia,15260,"Brunswick-St. Simons, GA",Central,True
+13191,McIntosh County,Georgia,15260,"Brunswick-St. Simons, GA",Outlying,True
+36029,Erie County,New York,15380,"Buffalo-Cheektowaga, NY",Central,True
+36063,Niagara County,New York,15380,"Buffalo-Cheektowaga, NY",Central,True
+37001,Alamance County,North Carolina,15500,"Burlington, NC",Central,True
+50007,Chittenden County,Vermont,15540,"Burlington-South Burlington, VT",Central,True
+50011,Franklin County,Vermont,15540,"Burlington-South Burlington, VT",Outlying,True
+50013,Grand Isle County,Vermont,15540,"Burlington-South Burlington, VT",Outlying,True
+39019,Carroll County,Ohio,15940,"Canton-Massillon, OH",Outlying,True
+39151,Stark County,Ohio,15940,"Canton-Massillon, OH",Central,True
+12071,Lee County,Florida,15980,"Cape Coral-Fort Myers, FL",Central,True
+17003,Alexander County,Illinois,16020,"Cape Girardeau, MO-IL",Outlying,True
+29017,Bollinger County,Missouri,16020,"Cape Girardeau, MO-IL",Outlying,True
+29031,Cape Girardeau County,Missouri,16020,"Cape Girardeau, MO-IL",Central,True
+32510,Carson City,Nevada,16180,"Carson City, NV",Central,True
+56025,Natrona County,Wyoming,16220,"Casper, WY",Central,True
+19011,Benton County,Iowa,16300,"Cedar Rapids, IA",Outlying,True
+19105,Jones County,Iowa,16300,"Cedar Rapids, IA",Outlying,True
+19113,Linn County,Iowa,16300,"Cedar Rapids, IA",Central,True
+42055,Franklin County,Pennsylvania,16540,"Chambersburg, PA",Central,True
+17019,Champaign County,Illinois,16580,"Champaign-Urbana, IL",Central,True
+17053,Ford County,Illinois,16580,"Champaign-Urbana, IL",Outlying,True
+17147,Piatt County,Illinois,16580,"Champaign-Urbana, IL",Outlying,True
+54005,Boone County,West Virginia,16620,"Charleston, WV",Outlying,True
+54015,Clay County,West Virginia,16620,"Charleston, WV",Outlying,True
+54039,Kanawha County,West Virginia,16620,"Charleston, WV",Central,True
+45015,Berkeley County,South Carolina,16700,"Charleston-North Charleston, SC",Central,True
+45019,Charleston County,South Carolina,16700,"Charleston-North Charleston, SC",Central,True
+45035,Dorchester County,South Carolina,16700,"Charleston-North Charleston, SC",Central,True
+37007,Anson County,North Carolina,16740,"Charlotte-Concord-Gastonia, NC-SC",Outlying,True
+37025,Cabarrus County,North Carolina,16740,"Charlotte-Concord-Gastonia, NC-SC",Outlying,True
+37071,Gaston County,North Carolina,16740,"Charlotte-Concord-Gastonia, NC-SC",Outlying,True
+37097,Iredell County,North Carolina,16740,"Charlotte-Concord-Gastonia, NC-SC",Central,True
+37109,Lincoln County,North Carolina,16740,"Charlotte-Concord-Gastonia, NC-SC",Outlying,True
+37119,Mecklenburg County,North Carolina,16740,"Charlotte-Concord-Gastonia, NC-SC",Central,True
+37159,Rowan County,North Carolina,16740,"Charlotte-Concord-Gastonia, NC-SC",Outlying,True
+37179,Union County,North Carolina,16740,"Charlotte-Concord-Gastonia, NC-SC",Central,True
+45023,Chester County,South Carolina,16740,"Charlotte-Concord-Gastonia, NC-SC",Outlying,True
+45057,Lancaster County,South Carolina,16740,"Charlotte-Concord-Gastonia, NC-SC",Outlying,True
+45091,York County,South Carolina,16740,"Charlotte-Concord-Gastonia, NC-SC",Outlying,True
+51003,Albemarle County,Virginia,16820,"Charlottesville, VA",Central,True
+51065,Fluvanna County,Virginia,16820,"Charlottesville, VA",Outlying,True
+51079,Greene County,Virginia,16820,"Charlottesville, VA",Outlying,True
+51125,Nelson County,Virginia,16820,"Charlottesville, VA",Outlying,True
+51540,Charlottesville city,Virginia,16820,"Charlottesville, VA",Central,True
+13047,Catoosa County,Georgia,16860,"Chattanooga, TN-GA",Central,True
+13083,Dade County,Georgia,16860,"Chattanooga, TN-GA",Outlying,True
+13295,Walker County,Georgia,16860,"Chattanooga, TN-GA",Central,True
+47065,Hamilton County,Tennessee,16860,"Chattanooga, TN-GA",Central,True
+47115,Marion County,Tennessee,16860,"Chattanooga, TN-GA",Outlying,True
+47153,Sequatchie County,Tennessee,16860,"Chattanooga, TN-GA",Outlying,True
+56021,Laramie County,Wyoming,16940,"Cheyenne, WY",Central,True
+17031,Cook County,Illinois,16980,"Chicago-Naperville-Elgin, IL-IN",Central,True
+17043,DuPage County,Illinois,16980,"Chicago-Naperville-Elgin, IL-IN",Central,True
+17063,Grundy County,Illinois,16980,"Chicago-Naperville-Elgin, IL-IN",Outlying,True
+17111,McHenry County,Illinois,16980,"Chicago-Naperville-Elgin, IL-IN",Central,True
+17197,Will County,Illinois,16980,"Chicago-Naperville-Elgin, IL-IN",Central,True
+17037,DeKalb County,Illinois,16980,"Chicago-Naperville-Elgin, IL-IN",Outlying,True
+17089,Kane County,Illinois,16980,"Chicago-Naperville-Elgin, IL-IN",Central,True
+17093,Kendall County,Illinois,16980,"Chicago-Naperville-Elgin, IL-IN",Central,True
+17097,Lake County,Illinois,16980,"Chicago-Naperville-Elgin, IL-IN",Central,True
+18073,Jasper County,Indiana,16980,"Chicago-Naperville-Elgin, IL-IN",Outlying,True
+18089,Lake County,Indiana,16980,"Chicago-Naperville-Elgin, IL-IN",Central,True
+18111,Newton County,Indiana,16980,"Chicago-Naperville-Elgin, IL-IN",Outlying,True
+18127,Porter County,Indiana,16980,"Chicago-Naperville-Elgin, IL-IN",Central,True
+06007,Butte County,California,17020,"Chico, CA",Central,True
+18029,Dearborn County,Indiana,17140,"Cincinnati, OH-KY-IN",Outlying,True
+18047,Franklin County,Indiana,17140,"Cincinnati, OH-KY-IN",Outlying,True
+18115,Ohio County,Indiana,17140,"Cincinnati, OH-KY-IN",Outlying,True
+21015,Boone County,Kentucky,17140,"Cincinnati, OH-KY-IN",Central,True
+21023,Bracken County,Kentucky,17140,"Cincinnati, OH-KY-IN",Outlying,True
+21037,Campbell County,Kentucky,17140,"Cincinnati, OH-KY-IN",Central,True
+21077,Gallatin County,Kentucky,17140,"Cincinnati, OH-KY-IN",Outlying,True
+21081,Grant County,Kentucky,17140,"Cincinnati, OH-KY-IN",Outlying,True
+21117,Kenton County,Kentucky,17140,"Cincinnati, OH-KY-IN",Central,True
+21191,Pendleton County,Kentucky,17140,"Cincinnati, OH-KY-IN",Outlying,True
+39015,Brown County,Ohio,17140,"Cincinnati, OH-KY-IN",Outlying,True
+39017,Butler County,Ohio,17140,"Cincinnati, OH-KY-IN",Central,True
+39025,Clermont County,Ohio,17140,"Cincinnati, OH-KY-IN",Central,True
+39061,Hamilton County,Ohio,17140,"Cincinnati, OH-KY-IN",Central,True
+39165,Warren County,Ohio,17140,"Cincinnati, OH-KY-IN",Central,True
+21047,Christian County,Kentucky,17300,"Clarksville, TN-KY",Outlying,True
+21221,Trigg County,Kentucky,17300,"Clarksville, TN-KY",Outlying,True
+47125,Montgomery County,Tennessee,17300,"Clarksville, TN-KY",Central,True
+47161,Stewart County,Tennessee,17300,"Clarksville, TN-KY",Outlying,True
+39007,Ashtabula County,Ohio,17410,"Cleveland, OH",Outlying,True
+39035,Cuyahoga County,Ohio,17410,"Cleveland, OH",Central,True
+39055,Geauga County,Ohio,17410,"Cleveland, OH",Central,True
+39085,Lake County,Ohio,17410,"Cleveland, OH",Central,True
+39093,Lorain County,Ohio,17410,"Cleveland, OH",Outlying,True
+39103,Medina County,Ohio,17410,"Cleveland, OH",Central,True
+47011,Bradley County,Tennessee,17420,"Cleveland, TN",Central,True
+47139,Polk County,Tennessee,17420,"Cleveland, TN",Outlying,True
+16055,Kootenai County,Idaho,17660,"Coeur d'Alene, ID",Central,True
+48041,Brazos County,Texas,17780,"College Station-Bryan, TX",Central,True
+48051,Burleson County,Texas,17780,"College Station-Bryan, TX",Outlying,True
+48395,Robertson County,Texas,17780,"College Station-Bryan, TX",Outlying,True
+08041,El Paso County,Colorado,17820,"Colorado Springs, CO",Central,True
+08119,Teller County,Colorado,17820,"Colorado Springs, CO",Outlying,True
+29019,Boone County,Missouri,17860,"Columbia, MO",Central,True
+29053,Cooper County,Missouri,17860,"Columbia, MO",Outlying,True
+29089,Howard County,Missouri,17860,"Columbia, MO",Outlying,True
+45017,Calhoun County,South Carolina,17900,"Columbia, SC",Outlying,True
+45039,Fairfield County,South Carolina,17900,"Columbia, SC",Outlying,True
+45055,Kershaw County,South Carolina,17900,"Columbia, SC",Outlying,True
+45063,Lexington County,South Carolina,17900,"Columbia, SC",Central,True
+45079,Richland County,South Carolina,17900,"Columbia, SC",Central,True
+45081,Saluda County,South Carolina,17900,"Columbia, SC",Outlying,True
+01113,Russell County,Alabama,17980,"Columbus, GA-AL",Central,True
+13053,Chattahoochee County,Georgia,17980,"Columbus, GA-AL",Central,True
+13145,Harris County,Georgia,17980,"Columbus, GA-AL",Outlying,True
+13197,Marion County,Georgia,17980,"Columbus, GA-AL",Outlying,True
+13215,Muscogee County,Georgia,17980,"Columbus, GA-AL",Central,True
+13259,Stewart County,Georgia,17980,"Columbus, GA-AL",Outlying,True
+13263,Talbot County,Georgia,17980,"Columbus, GA-AL",Outlying,True
+18005,Bartholomew County,Indiana,18020,"Columbus, IN",Central,True
+39041,Delaware County,Ohio,18140,"Columbus, OH",Central,True
+39045,Fairfield County,Ohio,18140,"Columbus, OH",Central,True
+39049,Franklin County,Ohio,18140,"Columbus, OH",Central,True
+39073,Hocking County,Ohio,18140,"Columbus, OH",Outlying,True
+39089,Licking County,Ohio,18140,"Columbus, OH",Outlying,True
+39097,Madison County,Ohio,18140,"Columbus, OH",Outlying,True
+39117,Morrow County,Ohio,18140,"Columbus, OH",Outlying,True
+39127,Perry County,Ohio,18140,"Columbus, OH",Outlying,True
+39129,Pickaway County,Ohio,18140,"Columbus, OH",Outlying,True
+39159,Union County,Ohio,18140,"Columbus, OH",Outlying,True
+48007,Aransas County,Texas,18580,"Corpus Christi, TX",Outlying,True
+48355,Nueces County,Texas,18580,"Corpus Christi, TX",Central,True
+48409,San Patricio County,Texas,18580,"Corpus Christi, TX",Central,True
+41003,Benton County,Oregon,18700,"Corvallis, OR",Central,True
+12091,Okaloosa County,Florida,18880,"Crestview-Fort Walton Beach-Destin, FL",Central,True
+12131,Walton County,Florida,18880,"Crestview-Fort Walton Beach-Destin, FL",Central,True
+48085,Collin County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Central,True
+48113,Dallas County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Central,True
+48121,Denton County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Outlying,True
+48139,Ellis County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Central,True
+48231,Hunt County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Outlying,True
+48257,Kaufman County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Outlying,True
+48397,Rockwall County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Central,True
+48251,Johnson County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Central,True
+48367,Parker County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Outlying,True
+48439,Tarrant County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Central,True
+48497,Wise County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Outlying,True
+13213,Murray County,Georgia,19140,"Dalton, GA",Outlying,True
+13313,Whitfield County,Georgia,19140,"Dalton, GA",Central,True
+01003,Baldwin County,Alabama,19300,"Daphne-Fairhope-Foley, AL",Central,True
+17073,Henry County,Illinois,19340,"Davenport-Moline-Rock Island, IA-IL",Outlying,True
+17131,Mercer County,Illinois,19340,"Davenport-Moline-Rock Island, IA-IL",Outlying,True
+17161,Rock Island County,Illinois,19340,"Davenport-Moline-Rock Island, IA-IL",Central,True
+19163,Scott County,Iowa,19340,"Davenport-Moline-Rock Island, IA-IL",Central,True
+39057,Greene County,Ohio,19430,"Dayton-Kettering-Beavercreek, OH",Central,True
+39109,Miami County,Ohio,19430,"Dayton-Kettering-Beavercreek, OH",Outlying,True
+39113,Montgomery County,Ohio,19430,"Dayton-Kettering-Beavercreek, OH",Central,True
+01079,Lawrence County,Alabama,19460,"Decatur, AL",Outlying,True
+01103,Morgan County,Alabama,19460,"Decatur, AL",Central,True
+17115,Macon County,Illinois,19500,"Decatur, IL",Central,True
+12035,Flagler County,Florida,19660,"Deltona-Daytona Beach-Ormond Beach, FL",Central,True
+12127,Volusia County,Florida,19660,"Deltona-Daytona Beach-Ormond Beach, FL",Central,True
+08001,Adams County,Colorado,19740,"Denver-Aurora-Centennial, CO",Central,True
+08005,Arapahoe County,Colorado,19740,"Denver-Aurora-Centennial, CO",Central,True
+08014,Broomfield County,Colorado,19740,"Denver-Aurora-Centennial, CO",Central,True
+08019,Clear Creek County,Colorado,19740,"Denver-Aurora-Centennial, CO",Outlying,True
+08031,Denver County,Colorado,19740,"Denver-Aurora-Centennial, CO",Central,True
+08035,Douglas County,Colorado,19740,"Denver-Aurora-Centennial, CO",Central,True
+08039,Elbert County,Colorado,19740,"Denver-Aurora-Centennial, CO",Outlying,True
+08047,Gilpin County,Colorado,19740,"Denver-Aurora-Centennial, CO",Outlying,True
+08059,Jefferson County,Colorado,19740,"Denver-Aurora-Centennial, CO",Central,True
+08093,Park County,Colorado,19740,"Denver-Aurora-Centennial, CO",Outlying,True
+19049,Dallas County,Iowa,19780,"Des Moines-West Des Moines, IA",Central,True
+19077,Guthrie County,Iowa,19780,"Des Moines-West Des Moines, IA",Outlying,True
+19099,Jasper County,Iowa,19780,"Des Moines-West Des Moines, IA",Outlying,True
+19121,Madison County,Iowa,19780,"Des Moines-West Des Moines, IA",Outlying,True
+19153,Polk County,Iowa,19780,"Des Moines-West Des Moines, IA",Central,True
+19181,Warren County,Iowa,19780,"Des Moines-West Des Moines, IA",Outlying,True
+26163,Wayne County,Michigan,19820,"Detroit-Warren-Dearborn, MI",Central,True
+26087,Lapeer County,Michigan,19820,"Detroit-Warren-Dearborn, MI",Outlying,True
+26093,Livingston County,Michigan,19820,"Detroit-Warren-Dearborn, MI",Outlying,True
+26099,Macomb County,Michigan,19820,"Detroit-Warren-Dearborn, MI",Central,True
+26125,Oakland County,Michigan,19820,"Detroit-Warren-Dearborn, MI",Central,True
+26147,St. Clair County,Michigan,19820,"Detroit-Warren-Dearborn, MI",Outlying,True
+01061,Geneva County,Alabama,20020,"Dothan, AL",Outlying,True
+01067,Henry County,Alabama,20020,"Dothan, AL",Outlying,True
+01069,Houston County,Alabama,20020,"Dothan, AL",Central,True
+10001,Kent County,Delaware,20100,"Dover, DE",Central,True
+19061,Dubuque County,Iowa,20220,"Dubuque, IA",Central,True
+27017,Carlton County,Minnesota,20260,"Duluth, MN-WI",Outlying,True
+27137,St. Louis County,Minnesota,20260,"Duluth, MN-WI",Central,True
+55031,Douglas County,Wisconsin,20260,"Duluth, MN-WI",Central,True
+37037,Chatham County,North Carolina,20500,"Durham-Chapel Hill, NC",Central,True
+37063,Durham County,North Carolina,20500,"Durham-Chapel Hill, NC",Central,True
+37135,Orange County,North Carolina,20500,"Durham-Chapel Hill, NC",Central,True
+37145,Person County,North Carolina,20500,"Durham-Chapel Hill, NC",Outlying,True
+48323,Maverick County,Texas,20580,"Eagle Pass, TX",Central,True
+55017,Chippewa County,Wisconsin,20740,"Eau Claire, WI",Central,True
+55035,Eau Claire County,Wisconsin,20740,"Eau Claire, WI",Central,True
+06025,Imperial County,California,20940,"El Centro, CA",Central,True
+21093,Hardin County,Kentucky,21060,"Elizabethtown, KY",Central,True
+21123,Larue County,Kentucky,21060,"Elizabethtown, KY",Outlying,True
+18039,Elkhart County,Indiana,21140,"Elkhart-Goshen, IN",Central,True
+36015,Chemung County,New York,21300,"Elmira, NY",Central,True
+48141,El Paso County,Texas,21340,"El Paso, TX",Central,True
+48229,Hudspeth County,Texas,21340,"El Paso, TX",Outlying,True
+40047,Garfield County,Oklahoma,21420,"Enid, OK",Central,True
+42049,Erie County,Pennsylvania,21500,"Erie, PA",Central,True
+41039,Lane County,Oregon,21660,"Eugene-Springfield, OR",Central,True
+18129,Posey County,Indiana,21780,"Evansville, IN",Outlying,True
+18163,Vanderburgh County,Indiana,21780,"Evansville, IN",Central,True
+18173,Warrick County,Indiana,21780,"Evansville, IN",Central,True
+02090,Fairbanks North Star Borough,Alaska,21820,"Fairbanks-College, AK",Central,True
+27027,Clay County,Minnesota,22020,"Fargo, ND-MN",Central,True
+38017,Cass County,North Dakota,22020,"Fargo, ND-MN",Central,True
+35045,San Juan County,New Mexico,22140,"Farmington, NM",Central,True
+37051,Cumberland County,North Carolina,22180,"Fayetteville, NC",Central,True
+37093,Hoke County,North Carolina,22180,"Fayetteville, NC",Central,True
+05007,Benton County,Arkansas,22220,"Fayetteville-Springdale-Rogers, AR",Central,True
+05087,Madison County,Arkansas,22220,"Fayetteville-Springdale-Rogers, AR",Outlying,True
+05143,Washington County,Arkansas,22220,"Fayetteville-Springdale-Rogers, AR",Central,True
+04005,Coconino County,Arizona,22380,"Flagstaff, AZ",Central,True
+26049,Genesee County,Michigan,22420,"Flint, MI",Central,True
+45031,Darlington County,South Carolina,22500,"Florence, SC",Outlying,True
+45041,Florence County,South Carolina,22500,"Florence, SC",Central,True
+01033,Colbert County,Alabama,22520,"Florence-Muscle Shoals, AL",Central,True
+01077,Lauderdale County,Alabama,22520,"Florence-Muscle Shoals, AL",Central,True
+55039,Fond du Lac County,Wisconsin,22540,"Fond du Lac, WI",Central,True
+08069,Larimer County,Colorado,22660,"Fort Collins-Loveland, CO",Central,True
+05033,Crawford County,Arkansas,22900,"Fort Smith, AR-OK",Central,True
+05131,Sebastian County,Arkansas,22900,"Fort Smith, AR-OK",Central,True
+40135,Sequoyah County,Oklahoma,22900,"Fort Smith, AR-OK",Outlying,True
+18003,Allen County,Indiana,23060,"Fort Wayne, IN",Central,True
+18179,Wells County,Indiana,23060,"Fort Wayne, IN",Outlying,True
+18183,Whitley County,Indiana,23060,"Fort Wayne, IN",Outlying,True
+06019,Fresno County,California,23420,"Fresno, CA",Central,True
+06039,Madera County,California,23420,"Fresno, CA",Outlying,True
+01055,Etowah County,Alabama,23460,"Gadsden, AL",Central,True
+12001,Alachua County,Florida,23540,"Gainesville, FL",Central,True
+12041,Gilchrist County,Florida,23540,"Gainesville, FL",Outlying,True
+12075,Levy County,Florida,23540,"Gainesville, FL",Outlying,True
+13139,Hall County,Georgia,23580,"Gainesville, GA",Central,True
+42001,Adams County,Pennsylvania,23900,"Gettysburg, PA",Central,True
+36113,Warren County,New York,24020,"Glens Falls, NY",Central,True
+36115,Washington County,New York,24020,"Glens Falls, NY",Central,True
+37191,Wayne County,North Carolina,24140,"Goldsboro, NC",Central,True
+27119,Polk County,Minnesota,24220,"Grand Forks, ND-MN",Central,True
+38035,Grand Forks County,North Dakota,24220,"Grand Forks, ND-MN",Central,True
+31079,Hall County,Nebraska,24260,"Grand Island, NE",Central,True
+31093,Howard County,Nebraska,24260,"Grand Island, NE",Outlying,True
+31121,Merrick County,Nebraska,24260,"Grand Island, NE",Outlying,True
+08077,Mesa County,Colorado,24300,"Grand Junction, CO",Central,True
+26015,Barry County,Michigan,24340,"Grand Rapids-Wyoming-Kentwood, MI",Outlying,True
+26067,Ionia County,Michigan,24340,"Grand Rapids-Wyoming-Kentwood, MI",Outlying,True
+26081,Kent County,Michigan,24340,"Grand Rapids-Wyoming-Kentwood, MI",Central,True
+26117,Montcalm County,Michigan,24340,"Grand Rapids-Wyoming-Kentwood, MI",Outlying,True
+26139,Ottawa County,Michigan,24340,"Grand Rapids-Wyoming-Kentwood, MI",Outlying,True
+41033,Josephine County,Oregon,24420,"Grants Pass, OR",Central,True
+30013,Cascade County,Montana,24500,"Great Falls, MT",Central,True
+08123,Weld County,Colorado,24540,"Greeley, CO",Central,True
+55009,Brown County,Wisconsin,24580,"Green Bay, WI",Central,True
+55061,Kewaunee County,Wisconsin,24580,"Green Bay, WI",Outlying,True
+55083,Oconto County,Wisconsin,24580,"Green Bay, WI",Outlying,True
+37081,Guilford County,North Carolina,24660,"Greensboro-High Point, NC",Central,True
+37151,Randolph County,North Carolina,24660,"Greensboro-High Point, NC",Outlying,True
+37157,Rockingham County,North Carolina,24660,"Greensboro-High Point, NC",Outlying,True
+37147,Pitt County,North Carolina,24780,"Greenville, NC",Central,True
+45007,Anderson County,South Carolina,24860,"Greenville-Anderson-Greer, SC",Outlying,True
+45045,Greenville County,South Carolina,24860,"Greenville-Anderson-Greer, SC",Central,True
+45059,Laurens County,South Carolina,24860,"Greenville-Anderson-Greer, SC",Outlying,True
+45077,Pickens County,South Carolina,24860,"Greenville-Anderson-Greer, SC",Central,True
+72015,Arroyo Municipio,Puerto Rico,25020,"Guayama, PR",Central,True
+72057,Guayama Municipio,Puerto Rico,25020,"Guayama, PR",Central,True
+72109,Patillas Municipio,Puerto Rico,25020,"Guayama, PR",Central,True
+28045,Hancock County,Mississippi,25060,"Gulfport-Biloxi, MS",Central,True
+28047,Harrison County,Mississippi,25060,"Gulfport-Biloxi, MS",Central,True
+28059,Jackson County,Mississippi,25060,"Gulfport-Biloxi, MS",Outlying,True
+28131,Stone County,Mississippi,25060,"Gulfport-Biloxi, MS",Outlying,True
+24043,Washington County,Maryland,25180,"Hagerstown-Martinsburg, MD-WV",Central,True
+54003,Berkeley County,West Virginia,25180,"Hagerstown-Martinsburg, MD-WV",Central,True
+54065,Morgan County,West Virginia,25180,"Hagerstown-Martinsburg, MD-WV",Outlying,True
+22105,Tangipahoa Parish,Louisiana,25220,"Hammond, LA",Central,True
+06031,Kings County,California,25260,"Hanford-Corcoran, CA",Central,True
+42041,Cumberland County,Pennsylvania,25420,"Harrisburg-Carlisle, PA",Central,True
+42043,Dauphin County,Pennsylvania,25420,"Harrisburg-Carlisle, PA",Central,True
+42099,Perry County,Pennsylvania,25420,"Harrisburg-Carlisle, PA",Outlying,True
+51165,Rockingham County,Virginia,25500,"Harrisonburg, VA",Central,True
+51660,Harrisonburg city,Virginia,25500,"Harrisonburg, VA",Central,True
+09110,Capitol Planning Region,Connecticut,25540,"Hartford-West Hartford-East Hartford, CT",Central,True
+09130,Lower Connecticut River Valley Planning Region,Connecticut,25540,"Hartford-West Hartford-East Hartford, CT",Central,True
+28035,Forrest County,Mississippi,25620,"Hattiesburg, MS",Central,True
+28073,Lamar County,Mississippi,25620,"Hattiesburg, MS",Central,True
+28111,Perry County,Mississippi,25620,"Hattiesburg, MS",Outlying,True
+30007,Broadwater County,Montana,25740,"Helena, MT",Outlying,True
+30043,Jefferson County,Montana,25740,"Helena, MT",Outlying,True
+30049,Lewis and Clark County,Montana,25740,"Helena, MT",Central,True
+37003,Alexander County,North Carolina,25860,"Hickory-Lenoir-Morganton, NC",Outlying,True
+37023,Burke County,North Carolina,25860,"Hickory-Lenoir-Morganton, NC",Central,True
+37027,Caldwell County,North Carolina,25860,"Hickory-Lenoir-Morganton, NC",Central,True
+37035,Catawba County,North Carolina,25860,"Hickory-Lenoir-Morganton, NC",Central,True
+45013,Beaufort County,South Carolina,25940,"Hilton Head Island-Bluffton-Port Royal, SC",Central,True
+45053,Jasper County,South Carolina,25940,"Hilton Head Island-Bluffton-Port Royal, SC",Outlying,True
+13179,Liberty County,Georgia,25980,"Hinesville, GA",Central,True
+13183,Long County,Georgia,25980,"Hinesville, GA",Outlying,True
+12017,Citrus County,Florida,26140,"Homosassa Springs, FL",Central,True
+05051,Garland County,Arkansas,26300,"Hot Springs, AR",Central,True
+22057,Lafourche Parish,Louisiana,26380,"Houma-Bayou Cane-Thibodaux, LA",Central,True
+22109,Terrebonne Parish,Louisiana,26380,"Houma-Bayou Cane-Thibodaux, LA",Central,True
+48015,Austin County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Outlying,True
+48039,Brazoria County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Central,True
+48071,Chambers County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Outlying,True
+48157,Fort Bend County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Central,True
+48167,Galveston County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Outlying,True
+48201,Harris County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Central,True
+48291,Liberty County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Outlying,True
+48339,Montgomery County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Outlying,True
+48407,San Jacinto County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Outlying,True
+48473,Waller County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Central,True
+21019,Boyd County,Kentucky,26580,"Huntington-Ashland, WV-KY-OH",Central,True
+21043,Carter County,Kentucky,26580,"Huntington-Ashland, WV-KY-OH",Outlying,True
+21089,Greenup County,Kentucky,26580,"Huntington-Ashland, WV-KY-OH",Central,True
+21127,Lawrence County,Kentucky,26580,"Huntington-Ashland, WV-KY-OH",Outlying,True
+39087,Lawrence County,Ohio,26580,"Huntington-Ashland, WV-KY-OH",Central,True
+54011,Cabell County,West Virginia,26580,"Huntington-Ashland, WV-KY-OH",Central,True
+54079,Putnam County,West Virginia,26580,"Huntington-Ashland, WV-KY-OH",Central,True
+54099,Wayne County,West Virginia,26580,"Huntington-Ashland, WV-KY-OH",Central,True
+01083,Limestone County,Alabama,26620,"Huntsville, AL",Central,True
+01089,Madison County,Alabama,26620,"Huntsville, AL",Central,True
+16019,Bonneville County,Idaho,26820,"Idaho Falls, ID",Central,True
+16023,Butte County,Idaho,26820,"Idaho Falls, ID",Outlying,True
+16051,Jefferson County,Idaho,26820,"Idaho Falls, ID",Outlying,True
+18011,Boone County,Indiana,26900,"Indianapolis-Carmel-Greenwood, IN",Central,True
+18013,Brown County,Indiana,26900,"Indianapolis-Carmel-Greenwood, IN",Outlying,True
+18057,Hamilton County,Indiana,26900,"Indianapolis-Carmel-Greenwood, IN",Central,True
+18059,Hancock County,Indiana,26900,"Indianapolis-Carmel-Greenwood, IN",Central,True
+18063,Hendricks County,Indiana,26900,"Indianapolis-Carmel-Greenwood, IN",Central,True
+18081,Johnson County,Indiana,26900,"Indianapolis-Carmel-Greenwood, IN",Central,True
+18095,Madison County,Indiana,26900,"Indianapolis-Carmel-Greenwood, IN",Outlying,True
+18097,Marion County,Indiana,26900,"Indianapolis-Carmel-Greenwood, IN",Central,True
+18109,Morgan County,Indiana,26900,"Indianapolis-Carmel-Greenwood, IN",Central,True
+18145,Shelby County,Indiana,26900,"Indianapolis-Carmel-Greenwood, IN",Outlying,True
+18159,Tipton County,Indiana,26900,"Indianapolis-Carmel-Greenwood, IN",Outlying,True
+19103,Johnson County,Iowa,26980,"Iowa City, IA",Central,True
+19183,Washington County,Iowa,26980,"Iowa City, IA",Outlying,True
+36109,Tompkins County,New York,27060,"Ithaca, NY",Central,True
+26075,Jackson County,Michigan,27100,"Jackson, MI",Central,True
+28029,Copiah County,Mississippi,27140,"Jackson, MS",Outlying,True
+28049,Hinds County,Mississippi,27140,"Jackson, MS",Central,True
+28051,Holmes County,Mississippi,27140,"Jackson, MS",Outlying,True
+28089,Madison County,Mississippi,27140,"Jackson, MS",Central,True
+28121,Rankin County,Mississippi,27140,"Jackson, MS",Central,True
+28123,Scott County,Mississippi,27140,"Jackson, MS",Outlying,True
+28127,Simpson County,Mississippi,27140,"Jackson, MS",Outlying,True
+28163,Yazoo County,Mississippi,27140,"Jackson, MS",Outlying,True
+47023,Chester County,Tennessee,27180,"Jackson, TN",Outlying,True
+47033,Crockett County,Tennessee,27180,"Jackson, TN",Outlying,True
+47053,Gibson County,Tennessee,27180,"Jackson, TN",Outlying,True
+47113,Madison County,Tennessee,27180,"Jackson, TN",Central,True
+12003,Baker County,Florida,27260,"Jacksonville, FL",Outlying,True
+12019,Clay County,Florida,27260,"Jacksonville, FL",Central,True
+12031,Duval County,Florida,27260,"Jacksonville, FL",Central,True
+12089,Nassau County,Florida,27260,"Jacksonville, FL",Outlying,True
+12109,St. Johns County,Florida,27260,"Jacksonville, FL",Central,True
+37133,Onslow County,North Carolina,27340,"Jacksonville, NC",Central,True
+55105,Rock County,Wisconsin,27500,"Janesville-Beloit, WI",Central,True
+29027,Callaway County,Missouri,27620,"Jefferson City, MO",Outlying,True
+29051,Cole County,Missouri,27620,"Jefferson City, MO",Central,True
+29135,Moniteau County,Missouri,27620,"Jefferson City, MO",Outlying,True
+29151,Osage County,Missouri,27620,"Jefferson City, MO",Outlying,True
+47019,Carter County,Tennessee,27740,"Johnson City, TN",Central,True
+47171,Unicoi County,Tennessee,27740,"Johnson City, TN",Outlying,True
+47179,Washington County,Tennessee,27740,"Johnson City, TN",Central,True
+42021,Cambria County,Pennsylvania,27780,"Johnstown, PA",Central,True
+05031,Craighead County,Arkansas,27860,"Jonesboro, AR",Central,True
+05111,Poinsett County,Arkansas,27860,"Jonesboro, AR",Outlying,True
+20021,Cherokee County,Kansas,27900,"Joplin, MO-KS",Outlying,True
+29097,Jasper County,Missouri,27900,"Joplin, MO-KS",Central,True
+29145,Newton County,Missouri,27900,"Joplin, MO-KS",Outlying,True
+15005,Kalawao County,Hawaii,27980,"Kahului-Wailuku, HI",Outlying,True
+15009,Maui County,Hawaii,27980,"Kahului-Wailuku, HI",Central,True
+26077,Kalamazoo County,Michigan,28020,"Kalamazoo-Portage, MI",Central,True
+17091,Kankakee County,Illinois,28100,"Kankakee, IL",Central,True
+20091,Johnson County,Kansas,28140,"Kansas City, MO-KS",Central,True
+20103,Leavenworth County,Kansas,28140,"Kansas City, MO-KS",Outlying,True
+20107,Linn County,Kansas,28140,"Kansas City, MO-KS",Outlying,True
+20121,Miami County,Kansas,28140,"Kansas City, MO-KS",Outlying,True
+20209,Wyandotte County,Kansas,28140,"Kansas City, MO-KS",Central,True
+29013,Bates County,Missouri,28140,"Kansas City, MO-KS",Outlying,True
+29025,Caldwell County,Missouri,28140,"Kansas City, MO-KS",Outlying,True
+29037,Cass County,Missouri,28140,"Kansas City, MO-KS",Central,True
+29047,Clay County,Missouri,28140,"Kansas City, MO-KS",Central,True
+29049,Clinton County,Missouri,28140,"Kansas City, MO-KS",Outlying,True
+29095,Jackson County,Missouri,28140,"Kansas City, MO-KS",Central,True
+29107,Lafayette County,Missouri,28140,"Kansas City, MO-KS",Outlying,True
+29165,Platte County,Missouri,28140,"Kansas City, MO-KS",Central,True
+29177,Ray County,Missouri,28140,"Kansas City, MO-KS",Outlying,True
+53005,Benton County,Washington,28420,"Kennewick-Richland, WA",Central,True
+53021,Franklin County,Washington,28420,"Kennewick-Richland, WA",Central,True
+55059,Kenosha County,Wisconsin,28450,"Kenosha, WI",Central,True
+48027,Bell County,Texas,28660,"Killeen-Temple, TX",Central,True
+48099,Coryell County,Texas,28660,"Killeen-Temple, TX",Central,True
+48281,Lampasas County,Texas,28660,"Killeen-Temple, TX",Outlying,True
+47073,Hawkins County,Tennessee,28700,"Kingsport-Bristol, TN-VA",Central,True
+47163,Sullivan County,Tennessee,28700,"Kingsport-Bristol, TN-VA",Central,True
+51169,Scott County,Virginia,28700,"Kingsport-Bristol, TN-VA",Outlying,True
+51191,Washington County,Virginia,28700,"Kingsport-Bristol, TN-VA",Outlying,True
+51520,Bristol city,Virginia,28700,"Kingsport-Bristol, TN-VA",Outlying,True
+36111,Ulster County,New York,28740,"Kingston, NY",Central,True
+36027,Dutchess County,New York,28880,"Kiryas Joel-Poughkeepsie-Newburgh, NY",Central,True
+36071,Orange County,New York,28880,"Kiryas Joel-Poughkeepsie-Newburgh, NY",Central,True
+47001,Anderson County,Tennessee,28940,"Knoxville, TN",Central,True
+47009,Blount County,Tennessee,28940,"Knoxville, TN",Central,True
+47013,Campbell County,Tennessee,28940,"Knoxville, TN",Outlying,True
+47057,Grainger County,Tennessee,28940,"Knoxville, TN",Outlying,True
+47093,Knox County,Tennessee,28940,"Knoxville, TN",Central,True
+47105,Loudon County,Tennessee,28940,"Knoxville, TN",Central,True
+47129,Morgan County,Tennessee,28940,"Knoxville, TN",Outlying,True
+47145,Roane County,Tennessee,28940,"Knoxville, TN",Outlying,True
+47173,Union County,Tennessee,28940,"Knoxville, TN",Outlying,True
+18067,Howard County,Indiana,29020,"Kokomo, IN",Central,True
+27055,Houston County,Minnesota,29100,"La Crosse-Onalaska, WI-MN",Central,True
+55063,La Crosse County,Wisconsin,29100,"La Crosse-Onalaska, WI-MN",Central,True
+55123,Vernon County,Wisconsin,29100,"La Crosse-Onalaska, WI-MN",Outlying,True
+22001,Acadia Parish,Louisiana,29180,"Lafayette, LA",Outlying,True
+22055,Lafayette Parish,Louisiana,29180,"Lafayette, LA",Central,True
+22099,St. Martin Parish,Louisiana,29180,"Lafayette, LA",Outlying,True
+22113,Vermilion Parish,Louisiana,29180,"Lafayette, LA",Outlying,True
+18007,Benton County,Indiana,29200,"Lafayette-West Lafayette, IN",Outlying,True
+18015,Carroll County,Indiana,29200,"Lafayette-West Lafayette, IN",Outlying,True
+18157,Tippecanoe County,Indiana,29200,"Lafayette-West Lafayette, IN",Central,True
+18171,Warren County,Indiana,29200,"Lafayette-West Lafayette, IN",Outlying,True
+22019,Calcasieu Parish,Louisiana,29340,"Lake Charles, LA",Central,True
+22023,Cameron Parish,Louisiana,29340,"Lake Charles, LA",Outlying,True
+22053,Jefferson Davis Parish,Louisiana,29340,"Lake Charles, LA",Outlying,True
+04015,Mohave County,Arizona,29420,"Lake Havasu City-Kingman, AZ",Central,True
+12105,Polk County,Florida,29460,"Lakeland-Winter Haven, FL",Central,True
+42071,Lancaster County,Pennsylvania,29540,"Lancaster, PA",Central,True
+26037,Clinton County,Michigan,29620,"Lansing-East Lansing, MI",Central,True
+26045,Eaton County,Michigan,29620,"Lansing-East Lansing, MI",Central,True
+26065,Ingham County,Michigan,29620,"Lansing-East Lansing, MI",Central,True
+48479,Webb County,Texas,29700,"Laredo, TX",Central,True
+35013,Doña Ana County,New Mexico,29740,"Las Cruces, NM",Central,True
+32003,Clark County,Nevada,29820,"Las Vegas-Henderson-North Las Vegas, NV",Central,True
+20045,Douglas County,Kansas,29940,"Lawrence, KS",Central,True
+40031,Comanche County,Oklahoma,30020,"Lawton, OK",Central,True
+40033,Cotton County,Oklahoma,30020,"Lawton, OK",Outlying,True
+42075,Lebanon County,Pennsylvania,30140,"Lebanon, PA",Central,True
+16069,Nez Perce County,Idaho,30300,"Lewiston, ID-WA",Central,True
+53003,Asotin County,Washington,30300,"Lewiston, ID-WA",Central,True
+23001,Androscoggin County,Maine,30340,"Lewiston-Auburn, ME",Central,True
+21017,Bourbon County,Kentucky,30460,"Lexington-Fayette, KY",Outlying,True
+21049,Clark County,Kentucky,30460,"Lexington-Fayette, KY",Outlying,True
+21067,Fayette County,Kentucky,30460,"Lexington-Fayette, KY",Central,True
+21113,Jessamine County,Kentucky,30460,"Lexington-Fayette, KY",Outlying,True
+21209,Scott County,Kentucky,30460,"Lexington-Fayette, KY",Outlying,True
+21239,Woodford County,Kentucky,30460,"Lexington-Fayette, KY",Outlying,True
+24009,Calvert County,Maryland,30500,"Lexington Park, MD",Central,True
+24037,St. Mary's County,Maryland,30500,"Lexington Park, MD",Central,True
+39003,Allen County,Ohio,30620,"Lima, OH",Central,True
+31109,Lancaster County,Nebraska,30700,"Lincoln, NE",Central,True
+31159,Seward County,Nebraska,30700,"Lincoln, NE",Outlying,True
+05045,Faulkner County,Arkansas,30780,"Little Rock-North Little Rock-Conway, AR",Outlying,True
+05053,Grant County,Arkansas,30780,"Little Rock-North Little Rock-Conway, AR",Outlying,True
+05085,Lonoke County,Arkansas,30780,"Little Rock-North Little Rock-Conway, AR",Central,True
+05105,Perry County,Arkansas,30780,"Little Rock-North Little Rock-Conway, AR",Outlying,True
+05119,Pulaski County,Arkansas,30780,"Little Rock-North Little Rock-Conway, AR",Central,True
+05125,Saline County,Arkansas,30780,"Little Rock-North Little Rock-Conway, AR",Central,True
+16041,Franklin County,Idaho,30860,"Logan, UT-ID",Outlying,True
+49005,Cache County,Utah,30860,"Logan, UT-ID",Central,True
+48183,Gregg County,Texas,30980,"Longview, TX",Central,True
+48203,Harrison County,Texas,30980,"Longview, TX",Outlying,True
+48401,Rusk County,Texas,30980,"Longview, TX",Outlying,True
+48459,Upshur County,Texas,30980,"Longview, TX",Outlying,True
+53015,Cowlitz County,Washington,31020,"Longview-Kelso, WA",Central,True
+06059,Orange County,California,31080,"Los Angeles-Long Beach-Anaheim, CA",Central,True
+06037,Los Angeles County,California,31080,"Los Angeles-Long Beach-Anaheim, CA",Central,True
+18019,Clark County,Indiana,31140,"Louisville/Jefferson County, KY-IN",Central,True
+18043,Floyd County,Indiana,31140,"Louisville/Jefferson County, KY-IN",Central,True
+18061,Harrison County,Indiana,31140,"Louisville/Jefferson County, KY-IN",Outlying,True
+18175,Washington County,Indiana,31140,"Louisville/Jefferson County, KY-IN",Outlying,True
+21029,Bullitt County,Kentucky,31140,"Louisville/Jefferson County, KY-IN",Central,True
+21103,Henry County,Kentucky,31140,"Louisville/Jefferson County, KY-IN",Outlying,True
+21111,Jefferson County,Kentucky,31140,"Louisville/Jefferson County, KY-IN",Central,True
+21163,Meade County,Kentucky,31140,"Louisville/Jefferson County, KY-IN",Outlying,True
+21179,Nelson County,Kentucky,31140,"Louisville/Jefferson County, KY-IN",Outlying,True
+21185,Oldham County,Kentucky,31140,"Louisville/Jefferson County, KY-IN",Central,True
+21211,Shelby County,Kentucky,31140,"Louisville/Jefferson County, KY-IN",Outlying,True
+21215,Spencer County,Kentucky,31140,"Louisville/Jefferson County, KY-IN",Outlying,True
+48079,Cochran County,Texas,31180,"Lubbock, TX",Outlying,True
+48107,Crosby County,Texas,31180,"Lubbock, TX",Outlying,True
+48169,Garza County,Texas,31180,"Lubbock, TX",Outlying,True
+48219,Hockley County,Texas,31180,"Lubbock, TX",Outlying,True
+48303,Lubbock County,Texas,31180,"Lubbock, TX",Central,True
+48305,Lynn County,Texas,31180,"Lubbock, TX",Outlying,True
+51009,Amherst County,Virginia,31340,"Lynchburg, VA",Central,True
+51011,Appomattox County,Virginia,31340,"Lynchburg, VA",Outlying,True
+51019,Bedford County,Virginia,31340,"Lynchburg, VA",Central,True
+51031,Campbell County,Virginia,31340,"Lynchburg, VA",Central,True
+51680,Lynchburg city,Virginia,31340,"Lynchburg, VA",Central,True
+13021,Bibb County,Georgia,31420,"Macon-Bibb County, GA",Central,True
+13079,Crawford County,Georgia,31420,"Macon-Bibb County, GA",Outlying,True
+13169,Jones County,Georgia,31420,"Macon-Bibb County, GA",Outlying,True
+13207,Monroe County,Georgia,31420,"Macon-Bibb County, GA",Outlying,True
+13289,Twiggs County,Georgia,31420,"Macon-Bibb County, GA",Outlying,True
+55021,Columbia County,Wisconsin,31540,"Madison, WI",Outlying,True
+55025,Dane County,Wisconsin,31540,"Madison, WI",Central,True
+55045,Green County,Wisconsin,31540,"Madison, WI",Outlying,True
+55049,Iowa County,Wisconsin,31540,"Madison, WI",Outlying,True
+33011,Hillsborough County,New Hampshire,31700,"Manchester-Nashua, NH",Central,True
+20061,Geary County,Kansas,31740,"Manhattan, KS",Outlying,True
+20149,Pottawatomie County,Kansas,31740,"Manhattan, KS",Outlying,True
+20161,Riley County,Kansas,31740,"Manhattan, KS",Central,True
+27013,Blue Earth County,Minnesota,31860,"Mankato, MN",Central,True
+27103,Nicollet County,Minnesota,31860,"Mankato, MN",Central,True
+39139,Richland County,Ohio,31900,"Mansfield, OH",Central,True
+72023,Cabo Rojo Municipio,Puerto Rico,32420,"Mayagüez, PR",Central,True
+72067,Hormigueros Municipio,Puerto Rico,32420,"Mayagüez, PR",Outlying,True
+72079,Lajas Municipio,Puerto Rico,32420,"Mayagüez, PR",Central,True
+72097,Mayagüez Municipio,Puerto Rico,32420,"Mayagüez, PR",Outlying,True
+72121,Sabana Grande Municipio,Puerto Rico,32420,"Mayagüez, PR",Central,True
+72125,San Germán Municipio,Puerto Rico,32420,"Mayagüez, PR",Central,True
+48215,Hidalgo County,Texas,32580,"McAllen-Edinburg-Mission, TX",Central,True
+41029,Jackson County,Oregon,32780,"Medford, OR",Central,True
+05035,Crittenden County,Arkansas,32820,"Memphis, TN-MS-AR",Central,True
+28009,Benton County,Mississippi,32820,"Memphis, TN-MS-AR",Outlying,True
+28033,DeSoto County,Mississippi,32820,"Memphis, TN-MS-AR",Central,True
+28093,Marshall County,Mississippi,32820,"Memphis, TN-MS-AR",Outlying,True
+28137,Tate County,Mississippi,32820,"Memphis, TN-MS-AR",Outlying,True
+28143,Tunica County,Mississippi,32820,"Memphis, TN-MS-AR",Outlying,True
+47047,Fayette County,Tennessee,32820,"Memphis, TN-MS-AR",Outlying,True
+47157,Shelby County,Tennessee,32820,"Memphis, TN-MS-AR",Central,True
+47167,Tipton County,Tennessee,32820,"Memphis, TN-MS-AR",Outlying,True
+06047,Merced County,California,32900,"Merced, CA",Central,True
+12011,Broward County,Florida,33100,"Miami-Fort Lauderdale-West Palm Beach, FL",Central,True
+12086,Miami-Dade County,Florida,33100,"Miami-Fort Lauderdale-West Palm Beach, FL",Central,True
+12099,Palm Beach County,Florida,33100,"Miami-Fort Lauderdale-West Palm Beach, FL",Central,True
+18091,LaPorte County,Indiana,33140,"Michigan City-La Porte, IN",Central,True
+26111,Midland County,Michigan,33220,"Midland, MI",Central,True
+48317,Martin County,Texas,33260,"Midland, TX",Outlying,True
+48329,Midland County,Texas,33260,"Midland, TX",Central,True
+55079,Milwaukee County,Wisconsin,33340,"Milwaukee-Waukesha, WI",Central,True
+55089,Ozaukee County,Wisconsin,33340,"Milwaukee-Waukesha, WI",Outlying,True
+55131,Washington County,Wisconsin,33340,"Milwaukee-Waukesha, WI",Outlying,True
+55133,Waukesha County,Wisconsin,33340,"Milwaukee-Waukesha, WI",Central,True
+27003,Anoka County,Minnesota,33460,"Minneapolis-St. Paul-Bloomington, MN-WI",Central,True
+27019,Carver County,Minnesota,33460,"Minneapolis-St. Paul-Bloomington, MN-WI",Central,True
+27025,Chisago County,Minnesota,33460,"Minneapolis-St. Paul-Bloomington, MN-WI",Outlying,True
+27037,Dakota County,Minnesota,33460,"Minneapolis-St. Paul-Bloomington, MN-WI",Central,True
+27053,Hennepin County,Minnesota,33460,"Minneapolis-St. Paul-Bloomington, MN-WI",Central,True
+27059,Isanti County,Minnesota,33460,"Minneapolis-St. Paul-Bloomington, MN-WI",Outlying,True
+27079,Le Sueur County,Minnesota,33460,"Minneapolis-St. Paul-Bloomington, MN-WI",Outlying,True
+27095,Mille Lacs County,Minnesota,33460,"Minneapolis-St. Paul-Bloomington, MN-WI",Outlying,True
+27123,Ramsey County,Minnesota,33460,"Minneapolis-St. Paul-Bloomington, MN-WI",Central,True
+27139,Scott County,Minnesota,33460,"Minneapolis-St. Paul-Bloomington, MN-WI",Central,True
+27141,Sherburne County,Minnesota,33460,"Minneapolis-St. Paul-Bloomington, MN-WI",Central,True
+27163,Washington County,Minnesota,33460,"Minneapolis-St. Paul-Bloomington, MN-WI",Central,True
+27171,Wright County,Minnesota,33460,"Minneapolis-St. Paul-Bloomington, MN-WI",Central,True
+55093,Pierce County,Wisconsin,33460,"Minneapolis-St. Paul-Bloomington, MN-WI",Outlying,True
+55109,St. Croix County,Wisconsin,33460,"Minneapolis-St. Paul-Bloomington, MN-WI",Outlying,True
+38049,McHenry County,North Dakota,33500,"Minot, ND",Outlying,True
+38075,Renville County,North Dakota,33500,"Minot, ND",Outlying,True
+38101,Ward County,North Dakota,33500,"Minot, ND",Central,True
+30061,Mineral County,Montana,33540,"Missoula, MT",Outlying,True
+30063,Missoula County,Montana,33540,"Missoula, MT",Central,True
+01097,Mobile County,Alabama,33660,"Mobile, AL",Central,True
+06099,Stanislaus County,California,33700,"Modesto, CA",Central,True
+22067,Morehouse Parish,Louisiana,33740,"Monroe, LA",Outlying,True
+22073,Ouachita Parish,Louisiana,33740,"Monroe, LA",Central,True
+22083,Richland Parish,Louisiana,33740,"Monroe, LA",Outlying,True
+22111,Union Parish,Louisiana,33740,"Monroe, LA",Outlying,True
+26115,Monroe County,Michigan,33780,"Monroe, MI",Central,True
+01001,Autauga County,Alabama,33860,"Montgomery, AL",Central,True
+01051,Elmore County,Alabama,33860,"Montgomery, AL",Central,True
+01085,Lowndes County,Alabama,33860,"Montgomery, AL",Outlying,True
+01101,Montgomery County,Alabama,33860,"Montgomery, AL",Central,True
+54061,Monongalia County,West Virginia,34060,"Morgantown, WV",Central,True
+54077,Preston County,West Virginia,34060,"Morgantown, WV",Outlying,True
+47063,Hamblen County,Tennessee,34100,"Morristown, TN",Central,True
+47089,Jefferson County,Tennessee,34100,"Morristown, TN",Central,True
+53057,Skagit County,Washington,34580,"Mount Vernon-Anacortes, WA",Central,True
+18035,Delaware County,Indiana,34620,"Muncie, IN",Central,True
+26121,Muskegon County,Michigan,34740,"Muskegon-Norton Shores, MI",Central,True
+45051,Horry County,South Carolina,34820,"Myrtle Beach-Conway-North Myrtle Beach, SC",Central,True
+06055,Napa County,California,34900,"Napa, CA",Central,True
+12021,Collier County,Florida,34940,"Naples-Marco Island, FL",Central,True
+47015,Cannon County,Tennessee,34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",Outlying,True
+47021,Cheatham County,Tennessee,34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",Outlying,True
+47037,Davidson County,Tennessee,34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",Central,True
+47043,Dickson County,Tennessee,34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",Outlying,True
+47081,Hickman County,Tennessee,34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",Outlying,True
+47111,Macon County,Tennessee,34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",Outlying,True
+47119,Maury County,Tennessee,34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",Outlying,True
+47147,Robertson County,Tennessee,34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",Outlying,True
+47149,Rutherford County,Tennessee,34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",Outlying,True
+47159,Smith County,Tennessee,34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",Outlying,True
+47165,Sumner County,Tennessee,34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",Central,True
+47169,Trousdale County,Tennessee,34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",Outlying,True
+47187,Williamson County,Tennessee,34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",Central,True
+47189,Wilson County,Tennessee,34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",Central,True
+09170,South Central Connecticut Planning Region,Connecticut,35300,"New Haven, CT",Central,True
+22051,Jefferson Parish,Louisiana,35380,"New Orleans-Metairie, LA",Central,True
+22071,Orleans Parish,Louisiana,35380,"New Orleans-Metairie, LA",Central,True
+22075,Plaquemines Parish,Louisiana,35380,"New Orleans-Metairie, LA",Central,True
+22087,St. Bernard Parish,Louisiana,35380,"New Orleans-Metairie, LA",Central,True
+22089,St. Charles Parish,Louisiana,35380,"New Orleans-Metairie, LA",Central,True
+22093,St. James Parish,Louisiana,35380,"New Orleans-Metairie, LA",Central,True
+22095,St. John the Baptist Parish,Louisiana,35380,"New Orleans-Metairie, LA",Central,True
+34023,Middlesex County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34025,Monmouth County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34029,Ocean County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34035,Somerset County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36059,Nassau County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36103,Suffolk County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34013,Essex County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34019,Hunterdon County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Outlying,True
+34027,Morris County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34037,Sussex County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Outlying,True
+34039,Union County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34003,Bergen County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34017,Hudson County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34031,Passaic County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36005,Bronx County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36047,Kings County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36061,New York County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36079,Putnam County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36081,Queens County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36085,Richmond County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36087,Rockland County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36119,Westchester County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+26021,Berrien County,Michigan,35660,"Niles, MI",Central,True
+12081,Manatee County,Florida,35840,"North Port-Bradenton-Sarasota, FL",Central,True
+12115,Sarasota County,Florida,35840,"North Port-Bradenton-Sarasota, FL",Central,True
+09180,Southeastern Connecticut Planning Region,Connecticut,35980,"Norwich-New London-Willimantic, CT",Central,True
+12083,Marion County,Florida,36100,"Ocala, FL",Central,True
+48135,Ector County,Texas,36220,"Odessa, TX",Central,True
+49011,Davis County,Utah,36260,"Ogden, UT",Central,True
+49029,Morgan County,Utah,36260,"Ogden, UT",Outlying,True
+49057,Weber County,Utah,36260,"Ogden, UT",Central,True
+40017,Canadian County,Oklahoma,36420,"Oklahoma City, OK",Central,True
+40027,Cleveland County,Oklahoma,36420,"Oklahoma City, OK",Central,True
+40051,Grady County,Oklahoma,36420,"Oklahoma City, OK",Outlying,True
+40081,Lincoln County,Oklahoma,36420,"Oklahoma City, OK",Outlying,True
+40083,Logan County,Oklahoma,36420,"Oklahoma City, OK",Central,True
+40087,McClain County,Oklahoma,36420,"Oklahoma City, OK",Outlying,True
+40109,Oklahoma County,Oklahoma,36420,"Oklahoma City, OK",Central,True
+53067,Thurston County,Washington,36500,"Olympia-Lacey-Tumwater, WA",Central,True
+19085,Harrison County,Iowa,36540,"Omaha, NE-IA",Outlying,True
+19129,Mills County,Iowa,36540,"Omaha, NE-IA",Outlying,True
+19155,Pottawattamie County,Iowa,36540,"Omaha, NE-IA",Central,True
+31025,Cass County,Nebraska,36540,"Omaha, NE-IA",Outlying,True
+31055,Douglas County,Nebraska,36540,"Omaha, NE-IA",Central,True
+31153,Sarpy County,Nebraska,36540,"Omaha, NE-IA",Central,True
+31155,Saunders County,Nebraska,36540,"Omaha, NE-IA",Outlying,True
+31177,Washington County,Nebraska,36540,"Omaha, NE-IA",Outlying,True
+12069,Lake County,Florida,36740,"Orlando-Kissimmee-Sanford, FL",Outlying,True
+12095,Orange County,Florida,36740,"Orlando-Kissimmee-Sanford, FL",Central,True
+12097,Osceola County,Florida,36740,"Orlando-Kissimmee-Sanford, FL",Outlying,True
+12117,Seminole County,Florida,36740,"Orlando-Kissimmee-Sanford, FL",Central,True
+55139,Winnebago County,Wisconsin,36780,"Oshkosh-Neenah, WI",Central,True
+21059,Daviess County,Kentucky,36980,"Owensboro, KY",Central,True
+21149,McLean County,Kentucky,36980,"Owensboro, KY",Outlying,True
+06111,Ventura County,California,37100,"Oxnard-Thousand Oaks-Ventura, CA",Central,True
+17127,Massac County,Illinois,37140,"Paducah, KY-IL",Outlying,True
+21007,Ballard County,Kentucky,37140,"Paducah, KY-IL",Outlying,True
+21039,Carlisle County,Kentucky,37140,"Paducah, KY-IL",Outlying,True
+21139,Livingston County,Kentucky,37140,"Paducah, KY-IL",Outlying,True
+21145,McCracken County,Kentucky,37140,"Paducah, KY-IL",Central,True
+12009,Brevard County,Florida,37340,"Palm Bay-Melbourne-Titusville, FL",Central,True
+12005,Bay County,Florida,37460,"Panama City-Panama City Beach, FL",Central,True
+12133,Washington County,Florida,37460,"Panama City-Panama City Beach, FL",Outlying,True
+54105,Wirt County,West Virginia,37620,"Parkersburg-Vienna, WV",Outlying,True
+54107,Wood County,West Virginia,37620,"Parkersburg-Vienna, WV",Central,True
+12033,Escambia County,Florida,37860,"Pensacola-Ferry Pass-Brent, FL",Central,True
+12113,Santa Rosa County,Florida,37860,"Pensacola-Ferry Pass-Brent, FL",Central,True
+17123,Marshall County,Illinois,37900,"Peoria, IL",Outlying,True
+17143,Peoria County,Illinois,37900,"Peoria, IL",Central,True
+17175,Stark County,Illinois,37900,"Peoria, IL",Outlying,True
+17179,Tazewell County,Illinois,37900,"Peoria, IL",Central,True
+17203,Woodford County,Illinois,37900,"Peoria, IL",Central,True
+34005,Burlington County,New Jersey,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+34007,Camden County,New Jersey,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+34015,Gloucester County,New Jersey,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+42017,Bucks County,Pennsylvania,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+42029,Chester County,Pennsylvania,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+42091,Montgomery County,Pennsylvania,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+42045,Delaware County,Pennsylvania,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+42101,Philadelphia County,Pennsylvania,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+10003,New Castle County,Delaware,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+24015,Cecil County,Maryland,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+34033,Salem County,New Jersey,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+04013,Maricopa County,Arizona,38060,"Phoenix-Mesa-Chandler, AZ",Central,True
+04021,Pinal County,Arizona,38060,"Phoenix-Mesa-Chandler, AZ",Central,True
+37125,Moore County,North Carolina,38240,"Pinehurst-Southern Pines, NC",Central,True
+42003,Allegheny County,Pennsylvania,38300,"Pittsburgh, PA",Central,True
+42005,Armstrong County,Pennsylvania,38300,"Pittsburgh, PA",Outlying,True
+42007,Beaver County,Pennsylvania,38300,"Pittsburgh, PA",Central,True
+42019,Butler County,Pennsylvania,38300,"Pittsburgh, PA",Central,True
+42051,Fayette County,Pennsylvania,38300,"Pittsburgh, PA",Outlying,True
+42073,Lawrence County,Pennsylvania,38300,"Pittsburgh, PA",Outlying,True
+42125,Washington County,Pennsylvania,38300,"Pittsburgh, PA",Central,True
+42129,Westmoreland County,Pennsylvania,38300,"Pittsburgh, PA",Central,True
+25003,Berkshire County,Massachusetts,38340,"Pittsfield, MA",Central,True
+16005,Bannock County,Idaho,38540,"Pocatello, ID",Central,True
+72059,Guayanilla Municipio,Puerto Rico,38660,"Ponce, PR",Outlying,True
+72075,Juana Díaz Municipio,Puerto Rico,38660,"Ponce, PR",Outlying,True
+72111,Peñuelas Municipio,Puerto Rico,38660,"Ponce, PR",Outlying,True
+72113,Ponce Municipio,Puerto Rico,38660,"Ponce, PR",Central,True
+72149,Villalba Municipio,Puerto Rico,38660,"Ponce, PR",Outlying,True
+72153,Yauco Municipio,Puerto Rico,38660,"Ponce, PR",Outlying,True
+23005,Cumberland County,Maine,38860,"Portland-South Portland, ME",Central,True
+23023,Sagadahoc County,Maine,38860,"Portland-South Portland, ME",Outlying,True
+23031,York County,Maine,38860,"Portland-South Portland, ME",Central,True
+41005,Clackamas County,Oregon,38900,"Portland-Vancouver-Hillsboro, OR-WA",Central,True
+41009,Columbia County,Oregon,38900,"Portland-Vancouver-Hillsboro, OR-WA",Outlying,True
+41051,Multnomah County,Oregon,38900,"Portland-Vancouver-Hillsboro, OR-WA",Central,True
+41067,Washington County,Oregon,38900,"Portland-Vancouver-Hillsboro, OR-WA",Central,True
+41071,Yamhill County,Oregon,38900,"Portland-Vancouver-Hillsboro, OR-WA",Outlying,True
+53011,Clark County,Washington,38900,"Portland-Vancouver-Hillsboro, OR-WA",Central,True
+53059,Skamania County,Washington,38900,"Portland-Vancouver-Hillsboro, OR-WA",Outlying,True
+12085,Martin County,Florida,38940,"Port St. Lucie, FL",Central,True
+12111,St. Lucie County,Florida,38940,"Port St. Lucie, FL",Central,True
+04025,Yavapai County,Arizona,39150,"Prescott Valley-Prescott, AZ",Central,True
+25005,Bristol County,Massachusetts,39300,"Providence-Warwick, RI-MA",Central,True
+44001,Bristol County,Rhode Island,39300,"Providence-Warwick, RI-MA",Central,True
+44003,Kent County,Rhode Island,39300,"Providence-Warwick, RI-MA",Central,True
+44005,Newport County,Rhode Island,39300,"Providence-Warwick, RI-MA",Central,True
+44007,Providence County,Rhode Island,39300,"Providence-Warwick, RI-MA",Central,True
+44009,Washington County,Rhode Island,39300,"Providence-Warwick, RI-MA",Central,True
+49023,Juab County,Utah,39340,"Provo-Orem-Lehi, UT",Outlying,True
+49049,Utah County,Utah,39340,"Provo-Orem-Lehi, UT",Central,True
+08101,Pueblo County,Colorado,39380,"Pueblo, CO",Central,True
+12015,Charlotte County,Florida,39460,"Punta Gorda, FL",Central,True
+55101,Racine County,Wisconsin,39540,"Racine-Mount Pleasant, WI",Central,True
+37069,Franklin County,North Carolina,39580,"Raleigh-Cary, NC",Central,True
+37101,Johnston County,North Carolina,39580,"Raleigh-Cary, NC",Outlying,True
+37183,Wake County,North Carolina,39580,"Raleigh-Cary, NC",Central,True
+46033,Custer County,South Dakota,39660,"Rapid City, SD",Outlying,True
+46093,Meade County,South Dakota,39660,"Rapid City, SD",Outlying,True
+46103,Pennington County,South Dakota,39660,"Rapid City, SD",Central,True
+42011,Berks County,Pennsylvania,39740,"Reading, PA",Central,True
+06089,Shasta County,California,39820,"Redding, CA",Central,True
+32019,Lyon County,Nevada,39900,"Reno, NV",Outlying,True
+32029,Storey County,Nevada,39900,"Reno, NV",Outlying,True
+32031,Washoe County,Nevada,39900,"Reno, NV",Central,True
+51007,Amelia County,Virginia,40060,"Richmond, VA",Outlying,True
+51036,Charles City County,Virginia,40060,"Richmond, VA",Outlying,True
+51041,Chesterfield County,Virginia,40060,"Richmond, VA",Central,True
+51053,Dinwiddie County,Virginia,40060,"Richmond, VA",Central,True
+51075,Goochland County,Virginia,40060,"Richmond, VA",Outlying,True
+51085,Hanover County,Virginia,40060,"Richmond, VA",Central,True
+51087,Henrico County,Virginia,40060,"Richmond, VA",Central,True
+51097,King and Queen County,Virginia,40060,"Richmond, VA",Outlying,True
+51101,King William County,Virginia,40060,"Richmond, VA",Outlying,True
+51127,New Kent County,Virginia,40060,"Richmond, VA",Outlying,True
+51145,Powhatan County,Virginia,40060,"Richmond, VA",Outlying,True
+51149,Prince George County,Virginia,40060,"Richmond, VA",Central,True
+51183,Sussex County,Virginia,40060,"Richmond, VA",Outlying,True
+51570,Colonial Heights city,Virginia,40060,"Richmond, VA",Central,True
+51670,Hopewell city,Virginia,40060,"Richmond, VA",Central,True
+51730,Petersburg city,Virginia,40060,"Richmond, VA",Central,True
+51760,Richmond city,Virginia,40060,"Richmond, VA",Central,True
+06065,Riverside County,California,40140,"Riverside-San Bernardino-Ontario, CA",Central,True
+06071,San Bernardino County,California,40140,"Riverside-San Bernardino-Ontario, CA",Central,True
+51023,Botetourt County,Virginia,40220,"Roanoke, VA",Central,True
+51045,Craig County,Virginia,40220,"Roanoke, VA",Outlying,True
+51067,Franklin County,Virginia,40220,"Roanoke, VA",Outlying,True
+51161,Roanoke County,Virginia,40220,"Roanoke, VA",Central,True
+51770,Roanoke city,Virginia,40220,"Roanoke, VA",Central,True
+51775,Salem city,Virginia,40220,"Roanoke, VA",Central,True
+27039,Dodge County,Minnesota,40340,"Rochester, MN",Outlying,True
+27045,Fillmore County,Minnesota,40340,"Rochester, MN",Outlying,True
+27109,Olmsted County,Minnesota,40340,"Rochester, MN",Central,True
+27157,Wabasha County,Minnesota,40340,"Rochester, MN",Outlying,True
+36051,Livingston County,New York,40380,"Rochester, NY",Outlying,True
+36055,Monroe County,New York,40380,"Rochester, NY",Central,True
+36069,Ontario County,New York,40380,"Rochester, NY",Central,True
+36073,Orleans County,New York,40380,"Rochester, NY",Outlying,True
+36117,Wayne County,New York,40380,"Rochester, NY",Outlying,True
+17007,Boone County,Illinois,40420,"Rockford, IL",Central,True
+17201,Winnebago County,Illinois,40420,"Rockford, IL",Central,True
+37065,Edgecombe County,North Carolina,40580,"Rocky Mount, NC",Central,True
+37127,Nash County,North Carolina,40580,"Rocky Mount, NC",Central,True
+13115,Floyd County,Georgia,40660,"Rome, GA",Central,True
+06017,El Dorado County,California,40900,"Sacramento-Roseville-Folsom, CA",Central,True
+06061,Placer County,California,40900,"Sacramento-Roseville-Folsom, CA",Central,True
+06067,Sacramento County,California,40900,"Sacramento-Roseville-Folsom, CA",Central,True
+06113,Yolo County,California,40900,"Sacramento-Roseville-Folsom, CA",Outlying,True
+26145,Saginaw County,Michigan,40980,"Saginaw, MI",Central,True
+27009,Benton County,Minnesota,41060,"St. Cloud, MN",Central,True
+27145,Stearns County,Minnesota,41060,"St. Cloud, MN",Central,True
+49053,Washington County,Utah,41100,"St. George, UT",Central,True
+20043,Doniphan County,Kansas,41140,"St. Joseph, MO-KS",Outlying,True
+29003,Andrew County,Missouri,41140,"St. Joseph, MO-KS",Outlying,True
+29021,Buchanan County,Missouri,41140,"St. Joseph, MO-KS",Central,True
+29063,DeKalb County,Missouri,41140,"St. Joseph, MO-KS",Outlying,True
+17005,Bond County,Illinois,41180,"St. Louis, MO-IL",Outlying,True
+17013,Calhoun County,Illinois,41180,"St. Louis, MO-IL",Outlying,True
+17027,Clinton County,Illinois,41180,"St. Louis, MO-IL",Outlying,True
+17083,Jersey County,Illinois,41180,"St. Louis, MO-IL",Outlying,True
+17117,Macoupin County,Illinois,41180,"St. Louis, MO-IL",Outlying,True
+17119,Madison County,Illinois,41180,"St. Louis, MO-IL",Central,True
+17133,Monroe County,Illinois,41180,"St. Louis, MO-IL",Central,True
+17163,St. Clair County,Illinois,41180,"St. Louis, MO-IL",Central,True
+29071,Franklin County,Missouri,41180,"St. Louis, MO-IL",Outlying,True
+29099,Jefferson County,Missouri,41180,"St. Louis, MO-IL",Central,True
+29113,Lincoln County,Missouri,41180,"St. Louis, MO-IL",Outlying,True
+29183,St. Charles County,Missouri,41180,"St. Louis, MO-IL",Central,True
+29189,St. Louis County,Missouri,41180,"St. Louis, MO-IL",Central,True
+29219,Warren County,Missouri,41180,"St. Louis, MO-IL",Outlying,True
+29510,St. Louis city,Missouri,41180,"St. Louis, MO-IL",Central,True
+41047,Marion County,Oregon,41420,"Salem, OR",Central,True
+41053,Polk County,Oregon,41420,"Salem, OR",Central,True
+06053,Monterey County,California,41500,"Salinas, CA",Central,True
+24039,Somerset County,Maryland,41540,"Salisbury, MD",Outlying,True
+24045,Wicomico County,Maryland,41540,"Salisbury, MD",Central,True
+49035,Salt Lake County,Utah,41620,"Salt Lake City-Murray, UT",Central,True
+49045,Tooele County,Utah,41620,"Salt Lake City-Murray, UT",Outlying,True
+48235,Irion County,Texas,41660,"San Angelo, TX",Outlying,True
+48451,Tom Green County,Texas,41660,"San Angelo, TX",Central,True
+48013,Atascosa County,Texas,41700,"San Antonio-New Braunfels, TX",Outlying,True
+48019,Bandera County,Texas,41700,"San Antonio-New Braunfels, TX",Outlying,True
+48029,Bexar County,Texas,41700,"San Antonio-New Braunfels, TX",Central,True
+48091,Comal County,Texas,41700,"San Antonio-New Braunfels, TX",Outlying,True
+48187,Guadalupe County,Texas,41700,"San Antonio-New Braunfels, TX",Central,True
+48259,Kendall County,Texas,41700,"San Antonio-New Braunfels, TX",Outlying,True
+48325,Medina County,Texas,41700,"San Antonio-New Braunfels, TX",Outlying,True
+48493,Wilson County,Texas,41700,"San Antonio-New Braunfels, TX",Outlying,True
+06073,San Diego County,California,41740,"San Diego-Chula Vista-Carlsbad, CA",Central,True
+39043,Erie County,Ohio,41780,"Sandusky, OH",Central,True
+39123,Ottawa County,Ohio,41780,"Sandusky, OH",Central,True
+06001,Alameda County,California,41860,"San Francisco-Oakland-Fremont, CA",Central,True
+06013,Contra Costa County,California,41860,"San Francisco-Oakland-Fremont, CA",Outlying,True
+06075,San Francisco County,California,41860,"San Francisco-Oakland-Fremont, CA",Central,True
+06081,San Mateo County,California,41860,"San Francisco-Oakland-Fremont, CA",Central,True
+06041,Marin County,California,41860,"San Francisco-Oakland-Fremont, CA",Central,True
+06069,San Benito County,California,41940,"San Jose-Sunnyvale-Santa Clara, CA",Outlying,True
+06085,Santa Clara County,California,41940,"San Jose-Sunnyvale-Santa Clara, CA",Central,True
+72007,Aguas Buenas Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72009,Aibonito Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Outlying,True
+72017,Barceloneta Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Outlying,True
+72019,Barranquitas Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72021,Bayamón Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72025,Caguas Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72029,Canóvanas Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72031,Carolina Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72033,Cataño Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72035,Cayey Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72037,Ceiba Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Outlying,True
+72039,Ciales Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Outlying,True
+72041,Cidra Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72045,Comerío Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72047,Corozal Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72051,Dorado Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72053,Fajardo Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Outlying,True
+72054,Florida Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Outlying,True
+72061,Guaynabo Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72063,Gurabo Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72069,Humacao Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72077,Juncos Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72085,Las Piedras Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72087,Loíza Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Outlying,True
+72089,Luquillo Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Outlying,True
+72091,Manatí Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72095,Maunabo Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72101,Morovis Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72103,Naguabo Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Outlying,True
+72105,Naranjito Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72107,Orocovis Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72119,Río Grande Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72127,San Juan Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72129,San Lorenzo Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72135,Toa Alta Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72137,Toa Baja Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72139,Trujillo Alto Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72143,Vega Alta Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72145,Vega Baja Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+72151,Yabucoa Municipio,Puerto Rico,41980,"San Juan-Bayamón-Caguas, PR",Central,True
+06079,San Luis Obispo County,California,42020,"San Luis Obispo-Paso Robles, CA",Central,True
+06087,Santa Cruz County,California,42100,"Santa Cruz-Watsonville, CA",Central,True
+35049,Santa Fe County,New Mexico,42140,"Santa Fe, NM",Central,True
+06083,Santa Barbara County,California,42200,"Santa Maria-Santa Barbara, CA",Central,True
+06097,Sonoma County,California,42220,"Santa Rosa-Petaluma, CA",Central,True
+13029,Bryan County,Georgia,42340,"Savannah, GA",Central,True
+13051,Chatham County,Georgia,42340,"Savannah, GA",Central,True
+13103,Effingham County,Georgia,42340,"Savannah, GA",Outlying,True
+42069,Lackawanna County,Pennsylvania,42540,"Scranton--Wilkes-Barre, PA",Central,True
+42079,Luzerne County,Pennsylvania,42540,"Scranton--Wilkes-Barre, PA",Central,True
+42131,Wyoming County,Pennsylvania,42540,"Scranton--Wilkes-Barre, PA",Outlying,True
+53061,Snohomish County,Washington,42660,"Seattle-Tacoma-Bellevue, WA",Central,True
+53033,King County,Washington,42660,"Seattle-Tacoma-Bellevue, WA",Central,True
+53053,Pierce County,Washington,42660,"Seattle-Tacoma-Bellevue, WA",Central,True
+12061,Indian River County,Florida,42680,"Sebastian-Vero Beach-West Vero Corridor, FL",Central,True
+12055,Highlands County,Florida,42700,"Sebring, FL",Central,True
+55117,Sheboygan County,Wisconsin,43100,"Sheboygan, WI",Central,True
+48181,Grayson County,Texas,43300,"Sherman-Denison, TX",Central,True
+22015,Bossier Parish,Louisiana,43340,"Shreveport-Bossier City, LA",Central,True
+22017,Caddo Parish,Louisiana,43340,"Shreveport-Bossier City, LA",Central,True
+22031,De Soto Parish,Louisiana,43340,"Shreveport-Bossier City, LA",Outlying,True
+04003,Cochise County,Arizona,43420,"Sierra Vista-Douglas, AZ",Central,True
+19193,Woodbury County,Iowa,43580,"Sioux City, IA-NE-SD",Central,True
+31043,Dakota County,Nebraska,43580,"Sioux City, IA-NE-SD",Central,True
+46127,Union County,South Dakota,43580,"Sioux City, IA-NE-SD",Central,True
+27133,Rock County,Minnesota,43620,"Sioux Falls, SD-MN",Outlying,True
+46083,Lincoln County,South Dakota,43620,"Sioux Falls, SD-MN",Central,True
+46087,McCook County,South Dakota,43620,"Sioux Falls, SD-MN",Outlying,True
+46099,Minnehaha County,South Dakota,43620,"Sioux Falls, SD-MN",Central,True
+46125,Turner County,South Dakota,43620,"Sioux Falls, SD-MN",Outlying,True
+22103,St. Tammany Parish,Louisiana,43640,"Slidell-Mandeville-Covington, LA",Central,True
+18141,St. Joseph County,Indiana,43780,"South Bend-Mishawaka, IN-MI",Central,True
+26027,Cass County,Michigan,43780,"South Bend-Mishawaka, IN-MI",Central,True
+45083,Spartanburg County,South Carolina,43900,"Spartanburg, SC",Central,True
+45087,Union County,South Carolina,43900,"Spartanburg, SC",Outlying,True
+53063,Spokane County,Washington,44060,"Spokane-Spokane Valley, WA",Central,True
+53065,Stevens County,Washington,44060,"Spokane-Spokane Valley, WA",Outlying,True
+17129,Menard County,Illinois,44100,"Springfield, IL",Outlying,True
+17167,Sangamon County,Illinois,44100,"Springfield, IL",Central,True
+25013,Hampden County,Massachusetts,44140,"Springfield, MA",Central,True
+29043,Christian County,Missouri,44180,"Springfield, MO",Central,True
+29059,Dallas County,Missouri,44180,"Springfield, MO",Outlying,True
+29077,Greene County,Missouri,44180,"Springfield, MO",Central,True
+29167,Polk County,Missouri,44180,"Springfield, MO",Outlying,True
+29225,Webster County,Missouri,44180,"Springfield, MO",Outlying,True
+39023,Clark County,Ohio,44220,"Springfield, OH",Central,True
+42027,Centre County,Pennsylvania,44300,"State College, PA",Central,True
+51015,Augusta County,Virginia,44420,"Staunton-Stuarts Draft, VA",Central,True
+51790,Staunton city,Virginia,44420,"Staunton-Stuarts Draft, VA",Central,True
+51820,Waynesboro city,Virginia,44420,"Staunton-Stuarts Draft, VA",Central,True
+06077,San Joaquin County,California,44700,"Stockton-Lodi, CA",Central,True
+45085,Sumter County,South Carolina,44940,"Sumter, SC",Central,True
+36053,Madison County,New York,45060,"Syracuse, NY",Outlying,True
+36067,Onondaga County,New York,45060,"Syracuse, NY",Central,True
+36075,Oswego County,New York,45060,"Syracuse, NY",Outlying,True
+12039,Gadsden County,Florida,45220,"Tallahassee, FL",Outlying,True
+12065,Jefferson County,Florida,45220,"Tallahassee, FL",Outlying,True
+12073,Leon County,Florida,45220,"Tallahassee, FL",Central,True
+12129,Wakulla County,Florida,45220,"Tallahassee, FL",Outlying,True
+12103,Pinellas County,Florida,45300,"Tampa-St. Petersburg-Clearwater, FL",Central,True
+12053,Hernando County,Florida,45300,"Tampa-St. Petersburg-Clearwater, FL",Outlying,True
+12057,Hillsborough County,Florida,45300,"Tampa-St. Petersburg-Clearwater, FL",Central,True
+12101,Pasco County,Florida,45300,"Tampa-St. Petersburg-Clearwater, FL",Central,True
+18021,Clay County,Indiana,45460,"Terre Haute, IN",Outlying,True
+18153,Sullivan County,Indiana,45460,"Terre Haute, IN",Outlying,True
+18165,Vermillion County,Indiana,45460,"Terre Haute, IN",Outlying,True
+18167,Vigo County,Indiana,45460,"Terre Haute, IN",Central,True
+05081,Little River County,Arkansas,45500,"Texarkana, TX-AR",Outlying,True
+05091,Miller County,Arkansas,45500,"Texarkana, TX-AR",Central,True
+48037,Bowie County,Texas,45500,"Texarkana, TX-AR",Central,True
+39051,Fulton County,Ohio,45780,"Toledo, OH",Outlying,True
+39095,Lucas County,Ohio,45780,"Toledo, OH",Central,True
+39173,Wood County,Ohio,45780,"Toledo, OH",Central,True
+20085,Jackson County,Kansas,45820,"Topeka, KS",Outlying,True
+20087,Jefferson County,Kansas,45820,"Topeka, KS",Outlying,True
+20139,Osage County,Kansas,45820,"Topeka, KS",Outlying,True
+20177,Shawnee County,Kansas,45820,"Topeka, KS",Central,True
+20197,Wabaunsee County,Kansas,45820,"Topeka, KS",Outlying,True
+26019,Benzie County,Michigan,45900,"Traverse City, MI",Outlying,True
+26055,Grand Traverse County,Michigan,45900,"Traverse City, MI",Central,True
+26079,Kalkaska County,Michigan,45900,"Traverse City, MI",Outlying,True
+26089,Leelanau County,Michigan,45900,"Traverse City, MI",Outlying,True
+34021,Mercer County,New Jersey,45940,"Trenton-Princeton, NJ",Central,True
+04019,Pima County,Arizona,46060,"Tucson, AZ",Central,True
+40037,Creek County,Oklahoma,46140,"Tulsa, OK",Central,True
+40111,Okmulgee County,Oklahoma,46140,"Tulsa, OK",Outlying,True
+40113,Osage County,Oklahoma,46140,"Tulsa, OK",Central,True
+40117,Pawnee County,Oklahoma,46140,"Tulsa, OK",Outlying,True
+40131,Rogers County,Oklahoma,46140,"Tulsa, OK",Outlying,True
+40143,Tulsa County,Oklahoma,46140,"Tulsa, OK",Central,True
+40145,Wagoner County,Oklahoma,46140,"Tulsa, OK",Central,True
+01063,Greene County,Alabama,46220,"Tuscaloosa, AL",Outlying,True
+01065,Hale County,Alabama,46220,"Tuscaloosa, AL",Outlying,True
+01107,Pickens County,Alabama,46220,"Tuscaloosa, AL",Outlying,True
+01125,Tuscaloosa County,Alabama,46220,"Tuscaloosa, AL",Central,True
+16053,Jerome County,Idaho,46300,"Twin Falls, ID",Outlying,True
+16083,Twin Falls County,Idaho,46300,"Twin Falls, ID",Central,True
+48423,Smith County,Texas,46340,"Tyler, TX",Central,True
+15003,Honolulu County,Hawaii,46520,"Urban Honolulu, HI",Central,True
+36043,Herkimer County,New York,46540,"Utica-Rome, NY",Outlying,True
+36065,Oneida County,New York,46540,"Utica-Rome, NY",Central,True
+13027,Brooks County,Georgia,46660,"Valdosta, GA",Outlying,True
+13101,Echols County,Georgia,46660,"Valdosta, GA",Outlying,True
+13173,Lanier County,Georgia,46660,"Valdosta, GA",Outlying,True
+13185,Lowndes County,Georgia,46660,"Valdosta, GA",Central,True
+06095,Solano County,California,46700,"Vallejo, CA",Central,True
+48175,Goliad County,Texas,47020,"Victoria, TX",Outlying,True
+48469,Victoria County,Texas,47020,"Victoria, TX",Central,True
+34011,Cumberland County,New Jersey,47220,"Vineland, NJ",Central,True
+37029,Camden County,North Carolina,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",Outlying,True
+37053,Currituck County,North Carolina,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",Outlying,True
+37073,Gates County,North Carolina,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",Outlying,True
+51073,Gloucester County,Virginia,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",Central,True
+51093,Isle of Wight County,Virginia,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",Central,True
+51095,James City County,Virginia,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",Outlying,True
+51115,Mathews County,Virginia,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",Outlying,True
+51181,Surry County,Virginia,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",Outlying,True
+51199,York County,Virginia,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",Central,True
+51550,Chesapeake city,Virginia,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",Central,True
+51650,Hampton city,Virginia,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",Central,True
+51700,Newport News city,Virginia,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",Central,True
+51710,Norfolk city,Virginia,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",Central,True
+51735,Poquoson city,Virginia,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",Central,True
+51740,Portsmouth city,Virginia,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",Central,True
+51800,Suffolk city,Virginia,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",Outlying,True
+51810,Virginia Beach city,Virginia,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",Central,True
+51830,Williamsburg city,Virginia,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",Outlying,True
+06107,Tulare County,California,47300,"Visalia, CA",Central,True
+48035,Bosque County,Texas,47380,"Waco, TX",Outlying,True
+48145,Falls County,Texas,47380,"Waco, TX",Outlying,True
+48309,McLennan County,Texas,47380,"Waco, TX",Central,True
+53071,Walla Walla County,Washington,47460,"Walla Walla, WA",Central,True
+13153,Houston County,Georgia,47580,"Warner Robins, GA",Central,True
+13225,Peach County,Georgia,47580,"Warner Robins, GA",Central,True
+51013,Arlington County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+51043,Clarke County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+51047,Culpeper County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+51059,Fairfax County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+51061,Fauquier County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+51107,Loudoun County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+51153,Prince William County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+51157,Rappahannock County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+51177,Spotsylvania County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+51179,Stafford County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+51187,Warren County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+51510,Alexandria city,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+51600,Fairfax city,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+51610,Falls Church city,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+51630,Fredericksburg city,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+51683,Manassas city,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+51685,Manassas Park city,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+54037,Jefferson County,West Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+24021,Frederick County,Maryland,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+24031,Montgomery County,Maryland,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+11001,District of Columbia,District of Columbia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+24017,Charles County,Maryland,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+24033,Prince George's County,Maryland,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+09140,Naugatuck Valley Planning Region,Connecticut,47930,"Waterbury-Shelton, CT",Central,True
+19013,Black Hawk County,Iowa,47940,"Waterloo-Cedar Falls, IA",Central,True
+19017,Bremer County,Iowa,47940,"Waterloo-Cedar Falls, IA",Outlying,True
+19075,Grundy County,Iowa,47940,"Waterloo-Cedar Falls, IA",Outlying,True
+36045,Jefferson County,New York,48060,"Watertown-Fort Drum, NY",Central,True
+55073,Marathon County,Wisconsin,48140,"Wausau, WI",Central,True
+39081,Jefferson County,Ohio,48260,"Weirton-Steubenville, WV-OH",Central,True
+54009,Brooke County,West Virginia,48260,"Weirton-Steubenville, WV-OH",Central,True
+54029,Hancock County,West Virginia,48260,"Weirton-Steubenville, WV-OH",Central,True
+53007,Chelan County,Washington,48300,"Wenatchee-East Wenatchee, WA",Central,True
+53017,Douglas County,Washington,48300,"Wenatchee-East Wenatchee, WA",Central,True
+39013,Belmont County,Ohio,48540,"Wheeling, WV-OH",Central,True
+54051,Marshall County,West Virginia,48540,"Wheeling, WV-OH",Outlying,True
+54069,Ohio County,West Virginia,48540,"Wheeling, WV-OH",Central,True
+20015,Butler County,Kansas,48620,"Wichita, KS",Central,True
+20079,Harvey County,Kansas,48620,"Wichita, KS",Outlying,True
+20173,Sedgwick County,Kansas,48620,"Wichita, KS",Central,True
+20191,Sumner County,Kansas,48620,"Wichita, KS",Outlying,True
+48009,Archer County,Texas,48660,"Wichita Falls, TX",Outlying,True
+48077,Clay County,Texas,48660,"Wichita Falls, TX",Outlying,True
+48485,Wichita County,Texas,48660,"Wichita Falls, TX",Central,True
+12119,Sumter County,Florida,48680,"Wildwood-The Villages, FL",Central,True
+42081,Lycoming County,Pennsylvania,48700,"Williamsport, PA",Central,True
+37019,Brunswick County,North Carolina,48900,"Wilmington, NC",Central,True
+37129,New Hanover County,North Carolina,48900,"Wilmington, NC",Central,True
+37141,Pender County,North Carolina,48900,"Wilmington, NC",Outlying,True
+51069,Frederick County,Virginia,49020,"Winchester, VA-WV",Central,True
+51840,Winchester city,Virginia,49020,"Winchester, VA-WV",Central,True
+54027,Hampshire County,West Virginia,49020,"Winchester, VA-WV",Outlying,True
+37057,Davidson County,North Carolina,49180,"Winston-Salem, NC",Central,True
+37059,Davie County,North Carolina,49180,"Winston-Salem, NC",Central,True
+37067,Forsyth County,North Carolina,49180,"Winston-Salem, NC",Central,True
+37169,Stokes County,North Carolina,49180,"Winston-Salem, NC",Central,True
+37197,Yadkin County,North Carolina,49180,"Winston-Salem, NC",Outlying,True
+25027,Worcester County,Massachusetts,49340,"Worcester, MA",Central,True
+53077,Yakima County,Washington,49420,"Yakima, WA",Central,True
+42133,York County,Pennsylvania,49620,"York-Hanover, PA",Central,True
+39099,Mahoning County,Ohio,49660,"Youngstown-Warren, OH",Central,True
+39155,Trumbull County,Ohio,49660,"Youngstown-Warren, OH",Central,True
+06101,Sutter County,California,49700,"Yuba City, CA",Central,True
+06115,Yuba County,California,49700,"Yuba City, CA",Central,True
+04027,Yuma County,Arizona,49740,"Yuma, AZ",Central,True

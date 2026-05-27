@@ -1,0 +1,38 @@
+{
+  "number": 121,
+  "status": "completed",
+  "email": "aziz.sunderji@gmail.com",
+  "downloadLinks": {
+    "codebookPreview": {
+      "url": "https://api.ipums.org/downloads/nhgis/api/v1/extracts/2914300/nhgis0121_csv_PREVIEW.zip",
+      "bytes": 4627,
+      "sha256": null
+    },
+    "tableData": {
+      "url": "https://api.ipums.org/downloads/nhgis/api/v1/extracts/2914300/nhgis0121_csv.zip",
+      "bytes": 352235,
+      "sha256": null
+    }
+  },
+  "extractDefinition": {
+    "dataFormat": "csv_no_header",
+    "description": "Under-18 by county, decennial 1970-2010 (KidsLeavingCity)",
+    "timeSeriesTables": {
+      "D08": {
+        "geogLevels": [
+          "county"
+        ],
+        "years": [
+          "1970",
+          "1980",
+          "1990",
+          "2000",
+          "2010"
+        ]
+      }
+    },
+    "timeSeriesTableLayout": "time_by_row_layout",
+    "version": 2,
+    "collection": "nhgis"
+  }
+}

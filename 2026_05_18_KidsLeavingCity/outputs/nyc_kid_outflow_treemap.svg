@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1300" width="1200" height="1300" style="background:#FFFFFF;font-family:'ABC Oracle Edu',Arial,sans-serif">
+<rect x="24" y="20" width="40" height="3" fill="#D03A2E"/>
+<text x="24" y="48" font-size="24" font-weight="700" fill="#3D3733">Where the kids went: county-level destinations of NYC out-migrant children</text>
+<text x="24" y="72" font-size="13" fill="#7F7570">Persons under 18 who lived in a NYC borough one year prior, by destination county. IPUMS USA ACS 1-year PUMS pooled 2021 + 2022 + 2023 + 2024.</text>
+<rect x="25" y="112" width="410.5511868280268" height="625.7906645072397" fill="#0BB4FF" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="27" y="139" width="406.5511868280268" height="289.22855333608135" fill="#0BB4FF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="32" y="154" font-size="11" font-weight="700" fill="#1A1A1A">Nassau NY</text>
+<text x="32" y="168" font-size="10.5" fill="#1A1A1A">11,198 · 9.7%</text>
+<rect x="27" y="430.22855333608135" width="189.52715361816638" height="305.5621111711584" fill="#2CBEFF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="32" y="445.22855333608135" font-size="11" font-weight="700" fill="#1A1A1A">Westchester NY</text>
+<text x="32" y="459.22855333608135" font-size="10.5" fill="#1A1A1A">5,544 · 4.8%</text>
+<rect x="218.52715361816638" y="430.22855333608135" width="215.02403320986042" height="226.19768740230387" fill="#4EC8FF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="223.52715361816638" y="445.22855333608135" font-size="11" font-weight="700" fill="#1A1A1A">Suffolk NY</text>
+<text x="223.52715361816638" y="459.22855333608135" font-size="10.5" fill="#1A1A1A">4,661 · 4.0%</text>
+<rect x="218.52715361816638" y="658.4262407383852" width="197.88210135611791" height="77.36442376885452" fill="#6FD2FF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="223.52715361816638" y="673.4262407383852" font-size="11" font-weight="700" fill="#1A1A1A">Rockland NY</text>
+<text x="223.52715361816638" y="687.4262407383852" font-size="10.5" fill="#1A1A1A">1,493 · 1.3%</text>
+<rect x="418.4092549742843" y="658.4262407383852" width="15.141931853742506" height="77.36442376885383" fill="#91DDFF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="33" y="130" font-size="13" font-weight="700" fill="#FFFFFF">NY MSA suburb</text>
+<text x="427.5511868280268" y="130" font-size="11" fill="#FFFFFF" text-anchor="end">23,024 · 19.9%</text>
+<rect x="25" y="739.7906645072397" width="410.5511868280268" height="498.20933549276026" fill="#7BC2E0" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="27" y="766.7906645072397" width="226.9914614899592" height="171.86841057238996" fill="#7BC2E0" stroke="#FFFFFF" stroke-width="1"/>
+<text x="32" y="781.7906645072397" font-size="11" font-weight="700" fill="#1A1A1A">Bergen NJ</text>
+<text x="32" y="795.7906645072397" font-size="10.5" fill="#1A1A1A">3,794 · 3.3%</text>
+<rect x="255.9914614899592" y="766.7906645072397" width="177.55972533806766" height="171.86841057238996" fill="#83C5E1" stroke="#FFFFFF" stroke-width="1"/>
+<text x="260.9914614899592" y="781.7906645072397" font-size="11" font-weight="700" fill="#1A1A1A">Hudson NJ</text>
+<text x="260.9914614899592" y="795.7906645072397" font-size="10.5" fill="#1A1A1A">2,975 · 2.6%</text>
+<rect x="27" y="940.6590750796297" width="173.58242523060068" height="165.10858815625232" fill="#8BC9E3" stroke="#FFFFFF" stroke-width="1"/>
+<text x="32" y="955.6590750796297" font-size="11" font-weight="700" fill="#1A1A1A">Essex NJ</text>
+<text x="32" y="969.6590750796297" font-size="10.5" fill="#1A1A1A">2,796 · 2.4%</text>
+<rect x="27" y="1107.767663235882" width="173.58242523060068" height="128.23233676411797" fill="#93CDE5" stroke="#FFFFFF" stroke-width="1"/>
+<text x="32" y="1122.767663235882" font-size="11" font-weight="700" fill="#1A1A1A">Middlesex NJ</text>
+<text x="32" y="1136.767663235882" font-size="10.5" fill="#1A1A1A">2,179 · 1.9%</text>
+<rect x="202.58242523060068" y="940.6590750796297" width="119.4863359828407" height="143.8101157350763" fill="#9BD0E7" stroke="#FFFFFF" stroke-width="1"/>
+<text x="207.58242523060068" y="955.6590750796297" font-size="11" font-weight="700" fill="#1A1A1A">Union NJ</text>
+<text x="207.58242523060068" y="969.6590750796297" font-size="10.5" fill="#1A1A1A">1,688 · 1.5%</text>
+<rect x="324.06876121344135" y="940.6590750796297" width="109.48242561458544" height="143.8101157350763" fill="#A3D4E9" stroke="#FFFFFF" stroke-width="1"/>
+<text x="329.06876121344135" y="955.6590750796297" font-size="11" font-weight="700" fill="#1A1A1A">Ocean NJ</text>
+<text x="329.06876121344135" y="969.6590750796297" font-size="10.5" fill="#1A1A1A">1,549 · 1.3%</text>
+<rect x="202.58242523060068" y="1086.469190814706" width="78.61106970850298" height="149.530809185294" fill="#ABD8EB" stroke="#FFFFFF" stroke-width="1"/>
+<text x="207.58242523060068" y="1101.469190814706" font-size="11" font-weight="700" fill="#1A1A1A">Monmouth NJ</text>
+<text x="207.58242523060068" y="1115.469190814706" font-size="10.5" fill="#1A1A1A">1,164 · 1.0%</text>
+<rect x="283.19349493910363" y="1086.469190814706" width="126.1882216756349" height="80.35548030275837" fill="#B3DCED" stroke="#FFFFFF" stroke-width="1"/>
+<text x="288.19349493910363" y="1101.469190814706" font-size="11" font-weight="700" fill="#1A1A1A">Passaic NJ</text>
+<text x="288.19349493910363" y="1115.469190814706" font-size="10.5" fill="#1A1A1A">1,006 · 0.9%</text>
+<rect x="283.19349493910363" y="1168.8246711174645" width="126.1882216756349" height="67.17532888253562" fill="#BBDFEF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="288.19349493910363" y="1183.8246711174645" font-size="11" font-weight="700" fill="#1A1A1A">Morris NJ</text>
+<text x="288.19349493910363" y="1197.8246711174645" font-size="10.5" fill="#1A1A1A">845 · 0.7%</text>
+<rect x="411.38171661473854" y="1086.469190814706" width="22.169470213288236" height="149.53080918529417" fill="#C3E3F1" stroke="#FFFFFF" stroke-width="1"/>
+<text x="33" y="757.7906645072397" font-size="13" font-weight="700" fill="#1A1A1A">NJ MSA suburb</text>
+<text x="427.5511868280268" y="757.7906645072397" font-size="11" fill="#1A1A1A" text-anchor="end">18,345 · 15.9%</text>
+<rect x="437.5511868280268" y="112" width="368.20066377183116" height="375.9117182969427" fill="#E8806C" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="439.5511868280268" y="139" width="160.37275931143716" height="346.9117182969427" fill="#E8806C" stroke="#FFFFFF" stroke-width="1"/>
+<text x="444.5511868280268" y="154" font-size="11" font-weight="700" fill="#1A1A1A">Other (Other Southeast)</text>
+<text x="444.5511868280268" y="168" font-size="10.5" fill="#1A1A1A">5,514 · 4.8%</text>
+<rect x="601.923946139464" y="139" width="201.827904460394" height="117.19344413870714" fill="#EA8D7C" stroke="#FFFFFF" stroke-width="1"/>
+<text x="606.923946139464" y="154" font-size="11" font-weight="700" fill="#1A1A1A">Durham NC</text>
+<text x="606.923946139464" y="168" font-size="10.5" fill="#1A1A1A">2,365 · 2.0%</text>
+<rect x="601.923946139464" y="258.19344413870715" width="130.50194737787805" height="146.77760976636935" fill="#ED9B8C" stroke="#FFFFFF" stroke-width="1"/>
+<text x="606.923946139464" y="273.19344413870715" font-size="11" font-weight="700" fill="#1A1A1A">DeKalb GA</text>
+<text x="606.923946139464" y="287.19344413870715" font-size="10.5" fill="#1A1A1A">1,919 · 1.7%</text>
+<rect x="734.425893517342" y="258.19344413870715" width="69.32595708251591" height="146.77760976636935" fill="#EFA99C" stroke="#FFFFFF" stroke-width="1"/>
+<text x="738.425893517342" y="270.19344413870715" font-size="9.5" font-weight="700" fill="#1A1A1A">Fulton GA</text>
+<text x="738.425893517342" y="281.19344413870715" font-size="9" fill="#1A1A1A">0.9%</text>
+<rect x="601.923946139464" y="406.9710539050765" width="103.46761432539697" height="78.94066439186619" fill="#F2B7AC" stroke="#FFFFFF" stroke-width="1"/>
+<text x="606.923946139464" y="421.9710539050765" font-size="11" font-weight="700" fill="#1A1A1A">Wake NC</text>
+<text x="606.923946139464" y="435.9710539050765" font-size="10.5" fill="#1A1A1A">831 · 0.7%</text>
+<rect x="707.391560464861" y="406.9710539050765" width="96.36029013499717" height="78.94066439186619" fill="#F4C5BC" stroke="#FFFFFF" stroke-width="1"/>
+<text x="712.391560464861" y="421.9710539050765" font-size="11" font-weight="700" fill="#1A1A1A">Cumberland NC</text>
+<text x="712.391560464861" y="435.9710539050765" font-size="10.5" fill="#1A1A1A">775 · 0.7%</text>
+<text x="445.5511868280268" y="130" font-size="13" font-weight="700" fill="#1A1A1A">Other Southeast</text>
+<text x="797.751850599858" y="130" font-size="11" fill="#1A1A1A" text-anchor="end">12,437 · 10.8%</text>
+<rect x="807.751850599858" y="112" width="367.2481494001419" height="375.9117182969427" fill="#67A275" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="809.751850599858" y="139" width="170.67381863322998" height="220.43518009369083" fill="#67A275" stroke="#FFFFFF" stroke-width="1"/>
+<text x="814.751850599858" y="154" font-size="11" font-weight="700" fill="#1A1A1A">Other (Other New York State)</text>
+<text x="814.751850599858" y="168" font-size="10.5" fill="#1A1A1A">3,739 · 3.2%</text>
+<rect x="809.751850599858" y="361.43518009369086" width="170.67381863322998" height="124.47653820325188" fill="#74AA81" stroke="#FFFFFF" stroke-width="1"/>
+<text x="814.751850599858" y="376.43518009369086" font-size="11" font-weight="700" fill="#1A1A1A">Erie NY</text>
+<text x="814.751850599858" y="390.43518009369086" font-size="10.5" fill="#1A1A1A">2,126 · 1.8%</text>
+<rect x="982.425669233088" y="139" width="190.57433076691194" height="109.32616663896215" fill="#82B38E" stroke="#FFFFFF" stroke-width="1"/>
+<text x="987.425669233088" y="154" font-size="11" font-weight="700" fill="#1A1A1A">Orange NY</text>
+<text x="987.425669233088" y="168" font-size="10.5" fill="#1A1A1A">2,087 · 1.8%</text>
+<rect x="982.425669233088" y="250.32616663896215" width="190.57433076691194" height="99.19105803263594" fill="#90BB9A" stroke="#FFFFFF" stroke-width="1"/>
+<text x="987.425669233088" y="265.32616663896215" font-size="11" font-weight="700" fill="#1A1A1A">Oneida NY</text>
+<text x="987.425669233088" y="279.32616663896215" font-size="10.5" fill="#1A1A1A">1,897 · 1.6%</text>
+<rect x="982.425669233088" y="351.5172246715981" width="73.68767096451674" height="134.3944936253446" fill="#9EC4A7" stroke="#FFFFFF" stroke-width="1"/>
+<text x="987.425669233088" y="366.5172246715981" font-size="11" font-weight="700" fill="#1A1A1A">Dutchess NY</text>
+<text x="987.425669233088" y="380.5172246715981" font-size="10.5" fill="#1A1A1A">1,004 · 0.9%</text>
+<rect x="1058.1133401976047" y="351.5172246715981" width="114.88665980239519" height="73.40420106803977" fill="#ACCCB4" stroke="#FFFFFF" stroke-width="1"/>
+<text x="1063.1133401976047" y="366.5172246715981" font-size="11" font-weight="700" fill="#1A1A1A">Monroe NY</text>
+<text x="1063.1133401976047" y="380.5172246715981" font-size="10.5" fill="#1A1A1A">858 · 0.7%</text>
+<rect x="1058.1133401976047" y="426.92142573963787" width="114.88665980239539" height="58.99029255730484" fill="#BAD5C0" stroke="#FFFFFF" stroke-width="1"/>
+<text x="1063.1133401976047" y="441.92142573963787" font-size="11" font-weight="700" fill="#1A1A1A">Sullivan NY</text>
+<text x="1063.1133401976047" y="455.92142573963787" font-size="10.5" fill="#1A1A1A">693 · 0.6%</text>
+<text x="815.751850599858" y="130" font-size="13" font-weight="700" fill="#1A1A1A">Other New York State</text>
+<text x="1167.0" y="130" font-size="11" fill="#1A1A1A" text-anchor="end">12,405 · 10.7%</text>
+<rect x="437.5511868280268" y="489.9117182969427" width="375.47225827618223" height="290.5537498819944" fill="#FEC439" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="439.5511868280268" y="516.9117182969427" width="164.744311706683" height="155.12205075100417" fill="#FEC439" stroke="#FFFFFF" stroke-width="1"/>
+<text x="444.5511868280268" y="531.9117182969427" font-size="11" font-weight="700" fill="#1A1A1A">Berks PA</text>
+<text x="444.5511868280268" y="545.9117182969427" font-size="10.5" fill="#1A1A1A">2,613 · 2.3%</text>
+<rect x="439.5511868280268" y="674.0337690479469" width="164.744311706683" height="104.4316991309902" fill="#FEC94B" stroke="#FFFFFF" stroke-width="1"/>
+<text x="444.5511868280268" y="689.0337690479469" font-size="11" font-weight="700" fill="#1A1A1A">Other (Pennsylvania)</text>
+<text x="444.5511868280268" y="703.0337690479469" font-size="10.5" fill="#1A1A1A">1,770 · 1.5%</text>
+<rect x="606.2954985347098" y="516.9117182969427" width="103.51820539185886" height="125.99380676087287" fill="#FECE5D" stroke="#FFFFFF" stroke-width="1"/>
+<text x="611.2954985347098" y="531.9117182969427" font-size="11" font-weight="700" fill="#1A1A1A">Lehigh PA</text>
+<text x="611.2954985347098" y="545.9117182969427" font-size="10.5" fill="#1A1A1A">1,347 · 1.2%</text>
+<rect x="711.8137039265687" y="516.9117182969427" width="99.20974117764041" height="125.99380676087287" fill="#FED46F" stroke="#FFFFFF" stroke-width="1"/>
+<text x="716.8137039265687" y="531.9117182969427" font-size="11" font-weight="700" fill="#1A1A1A">Luzerne PA</text>
+<text x="716.8137039265687" y="545.9117182969427" font-size="10.5" fill="#1A1A1A">1,292 · 1.1%</text>
+<rect x="606.2954985347098" y="644.9055250578156" width="67.08189699317077" height="133.55994312112153" fill="#FED981" stroke="#FFFFFF" stroke-width="1"/>
+<text x="610.2954985347098" y="656.9055250578156" font-size="9.5" font-weight="700" fill="#1A1A1A">Philadelphia PA</text>
+<text x="610.2954985347098" y="667.9055250578156" font-size="9" fill="#1A1A1A">0.8%</text>
+<rect x="675.3773955278806" y="644.9055250578156" width="66.93397001888133" height="133.55994312112153" fill="#FEDF93" stroke="#FFFFFF" stroke-width="1"/>
+<text x="679.3773955278806" y="656.9055250578156" font-size="9.5" font-weight="700" fill="#1A1A1A">York PA</text>
+<text x="679.3773955278806" y="667.9055250578156" font-size="9" fill="#1A1A1A">0.8%</text>
+<rect x="744.3113655467619" y="644.9055250578156" width="66.71207955744714" height="133.55994312112156" fill="#FEE4A5" stroke="#FFFFFF" stroke-width="1"/>
+<text x="748.3113655467619" y="656.9055250578156" font-size="9.5" font-weight="700" fill="#1A1A1A">Monroe PA</text>
+<text x="748.3113655467619" y="667.9055250578156" font-size="9" fill="#1A1A1A">0.8%</text>
+<text x="445.5511868280268" y="507.9117182969427" font-size="13" font-weight="700" fill="#1A1A1A">Pennsylvania</text>
+<text x="805.023445104209" y="507.9117182969427" font-size="11" fill="#1A1A1A" text-anchor="end">9,817 · 8.5%</text>
+<rect x="815.023445104209" y="489.9117182969427" width="359.9765548957909" height="290.5537498819944" fill="#D03A2E" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="817.023445104209" y="516.9117182969427" width="138.35388401533504" height="261.5537498819944" fill="#D03A2E" stroke="#FFFFFF" stroke-width="1"/>
+<text x="822.023445104209" y="531.9117182969427" font-size="11" font-weight="700" fill="#1A1A1A">Other (Florida)</text>
+<text x="822.023445104209" y="545.9117182969427" font-size="10.5" fill="#1A1A1A">3,691 · 3.2%</text>
+<rect x="957.3773291195441" y="516.9117182969427" width="215.62267088045587" height="155.31253007109785" fill="#D85E54" stroke="#FFFFFF" stroke-width="1"/>
+<text x="962.3773291195441" y="531.9117182969427" font-size="11" font-weight="700" fill="#1A1A1A">Miami-Dade FL</text>
+<text x="962.3773291195441" y="545.9117182969427" font-size="10.5" fill="#1A1A1A">3,416 · 3.0%</text>
+<rect x="957.3773291195441" y="674.2242483680405" width="114.12202334366762" height="104.24121981089655" fill="#E1827A" stroke="#FFFFFF" stroke-width="1"/>
+<text x="962.3773291195441" y="689.2242483680405" font-size="11" font-weight="700" fill="#1A1A1A">Orange FL</text>
+<text x="962.3773291195441" y="703.2242483680405" font-size="10.5" fill="#1A1A1A">1,231 · 1.1%</text>
+<rect x="1073.4993524632118" y="674.2242483680405" width="99.50064753678825" height="104.24121981089658" fill="#E9A6A0" stroke="#FFFFFF" stroke-width="1"/>
+<text x="1078.4993524632118" y="689.2242483680405" font-size="11" font-weight="700" fill="#1A1A1A">Broward FL</text>
+<text x="1078.4993524632118" y="703.2242483680405" font-size="10.5" fill="#1A1A1A">1,076 · 0.9%</text>
+<text x="823.023445104209" y="507.9117182969427" font-size="13" font-weight="700" fill="#FFFFFF">Florida</text>
+<text x="1167.0" y="507.9117182969427" font-size="11" fill="#FFFFFF" text-anchor="end">9,414 · 8.1%</text>
+<rect x="437.5511868280268" y="782.465468178937" width="318.42945810846953" height="240.05482980942443" fill="#9CB39E" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="439.5511868280268" y="809.465468178937" width="168.52171932592054" height="211.05482980942443" fill="#9CB39E" stroke="#FFFFFF" stroke-width="1"/>
+<text x="444.5511868280268" y="824.465468178937" font-size="11" font-weight="700" fill="#1A1A1A">Fairfield CT</text>
+<text x="444.5511868280268" y="838.465468178937" font-size="10.5" fill="#1A1A1A">3,715 · 3.2%</text>
+<rect x="610.0729061539473" y="809.465468178937" width="143.907738782549" height="105.17419926267476" fill="#B7C7B8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="615.0729061539473" y="824.465468178937" font-size="11" font-weight="700" fill="#1A1A1A">New Haven CT</text>
+<text x="615.0729061539473" y="838.465468178937" font-size="10.5" fill="#1A1A1A">1,599 · 1.4%</text>
+<rect x="610.0729061539473" y="916.6396674416118" width="143.90773878254902" height="103.88063054674967" fill="#D2DCD3" stroke="#FFFFFF" stroke-width="1"/>
+<text x="615.0729061539473" y="931.6396674416118" font-size="11" font-weight="700" fill="#1A1A1A">Other (Connecticut)</text>
+<text x="615.0729061539473" y="945.6396674416118" font-size="10.5" fill="#1A1A1A">1,580 · 1.4%</text>
+<text x="445.5511868280268" y="800.465468178937" font-size="13" font-weight="700" fill="#1A1A1A">Connecticut</text>
+<text x="747.9806449364963" y="800.465468178937" font-size="11" fill="#1A1A1A" text-anchor="end">6,895 · 6.0%</text>
+<rect x="437.5511868280268" y="1024.5202979883616" width="318.42945810846953" height="213.47970201163847" fill="#7E89C7" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="439.5511868280268" y="1051.5202979883616" width="153.81786650191282" height="184.47970201163847" fill="#7E89C7" stroke="#FFFFFF" stroke-width="1"/>
+<text x="444.5511868280268" y="1066.5202979883616" font-size="11" font-weight="700" fill="#1A1A1A">Other (Other West)</text>
+<text x="444.5511868280268" y="1080.5202979883616" font-size="10.5" fill="#1A1A1A">3,022 · 2.6%</text>
+<rect x="595.3690533299396" y="1051.5202979883616" width="158.61159160655671" height="77.77453234323303" fill="#959ED1" stroke="#FFFFFF" stroke-width="1"/>
+<text x="600.3690533299396" y="1066.5202979883616" font-size="11" font-weight="700" fill="#1A1A1A">Boulder CO</text>
+<text x="600.3690533299396" y="1080.5202979883616" font-size="10.5" fill="#1A1A1A">1,333 · 1.2%</text>
+<rect x="595.3690533299396" y="1131.2948303315945" width="88.25957082993263" height="104.70516966840543" fill="#ADB4DB" stroke="#FFFFFF" stroke-width="1"/>
+<text x="600.3690533299396" y="1146.2948303315945" font-size="11" font-weight="700" fill="#1A1A1A">Salt Lake UT</text>
+<text x="600.3690533299396" y="1160.2948303315945" font-size="10.5" fill="#1A1A1A">1,002 · 0.9%</text>
+<rect x="685.6286241598722" y="1131.2948303315945" width="68.35202077662409" height="104.70516966840552" fill="#C4C9E5" stroke="#FFFFFF" stroke-width="1"/>
+<text x="689.6286241598722" y="1143.2948303315945" font-size="9.5" font-weight="700" fill="#1A1A1A">Bernalillo NM</text>
+<text x="689.6286241598722" y="1154.2948303315945" font-size="9" fill="#1A1A1A">0.7%</text>
+<text x="445.5511868280268" y="1042.5202979883616" font-size="13" font-weight="700" fill="#1A1A1A">Other West</text>
+<text x="747.9806449364963" y="1042.5202979883616" font-size="11" fill="#1A1A1A" text-anchor="end">6,138 · 5.3%</text>
+<rect x="757.9806449364963" y="782.465468178937" width="213.72022148796583" height="202.67307813200642" fill="#1E5A8C" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="759.9806449364963" y="809.465468178937" width="127.51343994716075" height="173.67307813200642" fill="#1E5A8C" stroke="#FFFFFF" stroke-width="1"/>
+<text x="764.9806449364963" y="824.465468178937" font-size="11" font-weight="700" fill="#1A1A1A">Other (California)</text>
+<text x="764.9806449364963" y="838.465468178937" font-size="10.5" fill="#1A1A1A">2,401 · 2.1%</text>
+<rect x="889.494084883657" y="809.465468178937" width="80.20678154080508" height="173.67307813200642" fill="#99B4CB" stroke="#FFFFFF" stroke-width="1"/>
+<text x="894.494084883657" y="824.465468178937" font-size="11" font-weight="700" fill="#1A1A1A">Los Angeles CA</text>
+<text x="894.494084883657" y="838.465468178937" font-size="10.5" fill="#1A1A1A">1,524 · 1.3%</text>
+<text x="765.9806449364963" y="800.465468178937" font-size="13" font-weight="700" fill="#FFFFFF">California</text>
+<text x="963.7008664244622" y="800.465468178937" font-size="11" fill="#FFFFFF" text-anchor="end">3,925 · 3.4%</text>
+<rect x="973.7008664244622" y="782.465468178937" width="201.29913357553775" height="202.67307813200642" fill="#A0531D" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="975.7008664244622" y="809.465468178937" width="98.64633185160976" height="173.67307813200642" fill="#A0531D" stroke="#FFFFFF" stroke-width="1"/>
+<text x="980.7008664244622" y="824.465468178937" font-size="11" font-weight="700" fill="#1A1A1A">Other (Texas)</text>
+<text x="980.7008664244622" y="838.465468178937" font-size="10.5" fill="#1A1A1A">1,868 · 1.6%</text>
+<rect x="1076.347198276072" y="809.465468178937" width="96.652801723928" height="96.9180467253406" fill="#BA825B" stroke="#FFFFFF" stroke-width="1"/>
+<text x="1081.347198276072" y="824.465468178937" font-size="11" font-weight="700" fill="#1A1A1A">Travis TX</text>
+<text x="1081.347198276072" y="838.465468178937" font-size="10.5" fill="#1A1A1A">1,031 · 0.9%</text>
+<rect x="1076.347198276072" y="908.3835149042776" width="96.65280172392801" height="74.75503140666582" fill="#D4B199" stroke="#FFFFFF" stroke-width="1"/>
+<text x="1081.347198276072" y="923.3835149042776" font-size="11" font-weight="700" fill="#1A1A1A">Harris TX</text>
+<text x="1081.347198276072" y="937.3835149042776" font-size="10.5" fill="#1A1A1A">800 · 0.7%</text>
+<text x="981.7008664244622" y="800.465468178937" font-size="13" font-weight="700" fill="#FFFFFF">Texas</text>
+<text x="1167.0" y="800.465468178937" font-size="11" fill="#FFFFFF" text-anchor="end">3,699 · 3.2%</text>
+<rect x="757.9806449364963" y="987.1385463109434" width="155.6160500042462" height="250.86145368905648" fill="#C6DCCB" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="759.9806449364963" y="1014.1385463109434" width="82.77300518733546" height="119.25038939579436" fill="#C6DCCB" stroke="#FFFFFF" stroke-width="1"/>
+<text x="764.9806449364963" y="1029.1385463109434" font-size="11" font-weight="700" fill="#1A1A1A">Other (Other New Jersey)</text>
+<text x="764.9806449364963" y="1043.1385463109434" font-size="10.5" fill="#1A1A1A">1,059 · 0.9%</text>
+<rect x="844.7536501238318" y="1014.1385463109434" width="66.84304481691075" height="119.25038939579436" fill="#D0E2D4" stroke="#FFFFFF" stroke-width="1"/>
+<text x="848.7536501238318" y="1026.1385463109434" font-size="9.5" font-weight="700" fill="#1A1A1A">Burlington NJ</text>
+<text x="848.7536501238318" y="1037.1385463109434" font-size="9" fill="#1A1A1A">0.7%</text>
+<rect x="759.9806449364963" y="1135.3889357067378" width="76.13230129526318" height="100.61106429326212" fill="#DAE8DE" stroke="#FFFFFF" stroke-width="1"/>
+<text x="764.9806449364963" y="1150.3889357067378" font-size="11" font-weight="700" fill="#1A1A1A">Mercer NJ</text>
+<text x="764.9806449364963" y="1164.3889357067378" font-size="10.5" fill="#1A1A1A">826 · 0.7%</text>
+<rect x="838.1129462317595" y="1135.3889357067378" width="73.48374870898303" height="100.61106429326216" fill="#E5EFE7" stroke="#FFFFFF" stroke-width="1"/>
+<text x="843.1129462317595" y="1150.3889357067378" font-size="11" font-weight="700" fill="#1A1A1A">Gloucester NJ</text>
+<text x="843.1129462317595" y="1164.3889357067378" font-size="10.5" fill="#1A1A1A">798 · 0.7%</text>
+<text x="765.9806449364963" y="1005.1385463109434" font-size="13" font-weight="700" fill="#1A1A1A">Other New Jersey</text>
+<text x="905.5966949407425" y="1005.1385463109434" font-size="11" fill="#1A1A1A" text-anchor="end">3,543 · 3.1%</text>
+<rect x="915.5966949407425" y="987.1385463109434" width="135.99745614258302" height="250.8614536890565" fill="#B9A78A" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="917.5966949407425" y="1014.1385463109434" width="131.99745614258302" height="221.8614536890565" fill="#B9A78A" stroke="#FFFFFF" stroke-width="1"/>
+<text x="922.5966949407425" y="1029.1385463109434" font-size="11" font-weight="700" fill="#1A1A1A">Other (Midwest)</text>
+<text x="922.5966949407425" y="1043.1385463109434" font-size="10.5" fill="#1A1A1A">3,102 · 2.7%</text>
+<text x="923.5966949407425" y="1005.1385463109434" font-size="13" font-weight="700" fill="#1A1A1A">Midwest</text>
+<text x="1043.5941510833254" y="1005.1385463109434" font-size="11" fill="#1A1A1A" text-anchor="end">3,102 · 2.7%</text>
+<rect x="1053.5941510833254" y="987.1385463109434" width="121.40584891667436" height="239.55834617015222" fill="#9CA68F" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="1055.5941510833254" y="1014.1385463109434" width="117.40584891667437" height="150.10194784893406" fill="#9CA68F" stroke="#FFFFFF" stroke-width="1"/>
+<text x="1060.5941510833254" y="1029.1385463109434" font-size="11" font-weight="700" fill="#1A1A1A">Other (Other Northeast)</text>
+<text x="1060.5941510833254" y="1043.1385463109434" font-size="10.5" fill="#1A1A1A">1,896 · 1.6%</text>
+<rect x="1055.5941510833254" y="1166.2404941598775" width="117.40584891667429" height="58.45639832121816" fill="#D2D6CC" stroke="#FFFFFF" stroke-width="1"/>
+<text x="1060.5941510833254" y="1181.2404941598775" font-size="11" font-weight="700" fill="#1A1A1A">Kent RI</text>
+<text x="1060.5941510833254" y="1195.2404941598775" font-size="10.5" fill="#1A1A1A">754 · 0.7%</text>
+<text x="1061.5941510833254" y="1005.1385463109434" font-size="13" font-weight="700" fill="#1A1A1A">Other Northeast</text>
+<text x="1166.9999999999998" y="1005.1385463109434" font-size="11" fill="#1A1A1A" text-anchor="end">2,650 · 2.3%</text>
+<rect x="1053.5941510833254" y="1228.6968924810956" width="121.40584891668504" height="9.303107518904255" fill="#BAB3AC" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1058.5941510833254" y="1242.6968924810956" font-size="10" font-weight="700" fill="#1A1A1A">Other US</text>
+<text x="600.0" y="1274" font-size="15" font-weight="700" fill="#3D3733" text-anchor="middle">115,521 weighted kid movers leaving the 5 NYC boroughs · ACS PUMS 2021 + 2022 + 2023 + 2024 pooled</text>
+<text x="24" y="1292" font-size="9" fill="#7F7570" font-style="italic">Source: U.S. Census Bureau ACS 1-year via IPUMS USA. PUMS persons aged 0-17 with MIGPLAC1=NY and MIGPUMA1 in NYC borough (3700-4100). Counties computed via PUMA-county crosswalk with allocation factors for cross-county PUMAs; 2021 (2010-vintage) PUMAs harmonized to 2020 vintage first.</text>
+</svg>

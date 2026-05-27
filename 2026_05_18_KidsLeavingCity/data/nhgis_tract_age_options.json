@@ -1,0 +1,4315 @@
+{
+  "D08": {
+    "desc": "Persons by Age [2]: Children and Adults",
+    "standardized": "Nominal",
+    "years": [
+      "1970",
+      "1980",
+      "1990",
+      "2000",
+      "2010",
+      "105",
+      "115",
+      "125",
+      "135",
+      "145",
+      "155",
+      "165",
+      "175",
+      "185",
+      "195",
+      "2020",
+      "205",
+      "215",
+      "225",
+      "235",
+      "245"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "nation",
+      "region",
+      "division",
+      "state",
+      "county",
+      "tract",
+      "cty_sub",
+      "place"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Under 18 years"
+      ],
+      [
+        "AB",
+        "Persons: 18 years and over"
+      ]
+    ]
+  },
+  "D06": {
+    "desc": "Persons by Age [2]: Children and Adults",
+    "standardized": "Standardized to 2010",
+    "years": [
+      "1990",
+      "2000",
+      "2010",
+      "2020"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "state",
+      "county",
+      "tract",
+      "blck_grp",
+      "cty_sub",
+      "place",
+      "cd111th",
+      "cbsa",
+      "urb_area",
+      "zcta"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Under 18 years"
+      ],
+      [
+        "AB",
+        "Persons: 18 years and over"
+      ]
+    ]
+  },
+  "B57": {
+    "desc": "Persons by Age [18]",
+    "standardized": "Nominal",
+    "years": [
+      "1970",
+      "1980",
+      "1990",
+      "2000",
+      "2010",
+      "105",
+      "115",
+      "125",
+      "135",
+      "145",
+      "155",
+      "165",
+      "175",
+      "185",
+      "195",
+      "2020",
+      "205",
+      "215",
+      "225",
+      "235",
+      "245"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "nation",
+      "region",
+      "division",
+      "state",
+      "county",
+      "tract",
+      "cty_sub",
+      "place"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Under 5 years"
+      ],
+      [
+        "AB",
+        "Persons: 5 to 9 years"
+      ],
+      [
+        "AC",
+        "Persons: 10 to 14 years"
+      ],
+      [
+        "AD",
+        "Persons: 15 to 17 years"
+      ],
+      [
+        "AE",
+        "Persons: 18 and 19 years"
+      ],
+      [
+        "AF",
+        "Persons: 20 years"
+      ],
+      [
+        "AG",
+        "Persons: 21 years"
+      ],
+      [
+        "AH",
+        "Persons: 22 to 24 years"
+      ],
+      [
+        "AI",
+        "Persons: 25 to 29 years"
+      ],
+      [
+        "AJ",
+        "Persons: 30 to 34 years"
+      ],
+      [
+        "AK",
+        "Persons: 35 to 44 years"
+      ],
+      [
+        "AL",
+        "Persons: 45 to 54 years"
+      ],
+      [
+        "AM",
+        "Persons: 55 to 59 years"
+      ],
+      [
+        "AN",
+        "Persons: 60 and 61 years"
+      ],
+      [
+        "AO",
+        "Persons: 62 to 64 years"
+      ],
+      [
+        "AP",
+        "Persons: 65 to 74 years"
+      ],
+      [
+        "AQ",
+        "Persons: 75 to 84 years"
+      ],
+      [
+        "AR",
+        "Persons: 85 years and over"
+      ]
+    ]
+  },
+  "AX8": {
+    "desc": "Persons by Age [22]",
+    "standardized": "Nominal",
+    "years": [
+      "1970",
+      "1990",
+      "2000",
+      "2010",
+      "105",
+      "115",
+      "125",
+      "135",
+      "145",
+      "155",
+      "165",
+      "175",
+      "185",
+      "195",
+      "2020",
+      "205",
+      "215",
+      "225",
+      "235",
+      "245"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "nation",
+      "region",
+      "division",
+      "state",
+      "county",
+      "tract",
+      "cty_sub",
+      "place"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Under 5 years"
+      ],
+      [
+        "AB",
+        "Persons: 5 to 9 years"
+      ],
+      [
+        "AC",
+        "Persons: 10 to 14 years"
+      ],
+      [
+        "AD",
+        "Persons: 15 to 17 years"
+      ],
+      [
+        "AE",
+        "Persons: 18 and 19 years"
+      ],
+      [
+        "AF",
+        "Persons: 20 years"
+      ],
+      [
+        "AG",
+        "Persons: 21 years"
+      ],
+      [
+        "AH",
+        "Persons: 22 to 24 years"
+      ],
+      [
+        "AI",
+        "Persons: 25 to 29 years"
+      ],
+      [
+        "AJ",
+        "Persons: 30 to 34 years"
+      ],
+      [
+        "AK",
+        "Persons: 35 to 39 years"
+      ],
+      [
+        "AL",
+        "Persons: 40 to 44 years"
+      ],
+      [
+        "AM",
+        "Persons: 45 to 49 years"
+      ],
+      [
+        "AN",
+        "Persons: 50 to 54 years"
+      ],
+      [
+        "AO",
+        "Persons: 55 to 59 years"
+      ],
+      [
+        "AP",
+        "Persons: 60 and 61 years"
+      ],
+      [
+        "AQ",
+        "Persons: 62 to 64 years"
+      ],
+      [
+        "AR",
+        "Persons: 65 to 69 years"
+      ],
+      [
+        "AS",
+        "Persons: 70 to 74 years"
+      ],
+      [
+        "AT",
+        "Persons: 75 to 79 years"
+      ],
+      [
+        "AU",
+        "Persons: 80 to 84 years"
+      ],
+      [
+        "AV",
+        "Persons: 85 years and over"
+      ]
+    ]
+  },
+  "CW3": {
+    "desc": "Persons by Age [22]",
+    "standardized": "Standardized to 2010",
+    "years": [
+      "1990",
+      "2000",
+      "2010",
+      "2020"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "state",
+      "county",
+      "tract",
+      "blck_grp",
+      "cty_sub",
+      "place",
+      "cd111th",
+      "cbsa",
+      "urb_area",
+      "zcta"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Under 5 years"
+      ],
+      [
+        "AB",
+        "Persons: 5 to 9 years"
+      ],
+      [
+        "AC",
+        "Persons: 10 to 14 years"
+      ],
+      [
+        "AD",
+        "Persons: 15 to 17 years"
+      ],
+      [
+        "AE",
+        "Persons: 18 and 19 years"
+      ],
+      [
+        "AF",
+        "Persons: 20 years"
+      ],
+      [
+        "AG",
+        "Persons: 21 years"
+      ],
+      [
+        "AH",
+        "Persons: 22 to 24 years"
+      ],
+      [
+        "AI",
+        "Persons: 25 to 29 years"
+      ],
+      [
+        "AJ",
+        "Persons: 30 to 34 years"
+      ],
+      [
+        "AK",
+        "Persons: 35 to 39 years"
+      ],
+      [
+        "AL",
+        "Persons: 40 to 44 years"
+      ],
+      [
+        "AM",
+        "Persons: 45 to 49 years"
+      ],
+      [
+        "AN",
+        "Persons: 50 to 54 years"
+      ],
+      [
+        "AO",
+        "Persons: 55 to 59 years"
+      ],
+      [
+        "AP",
+        "Persons: 60 and 61 years"
+      ],
+      [
+        "AQ",
+        "Persons: 62 to 64 years"
+      ],
+      [
+        "AR",
+        "Persons: 65 to 69 years"
+      ],
+      [
+        "AS",
+        "Persons: 70 to 74 years"
+      ],
+      [
+        "AT",
+        "Persons: 75 to 79 years"
+      ],
+      [
+        "AU",
+        "Persons: 80 to 84 years"
+      ],
+      [
+        "AV",
+        "Persons: 85 years and over"
+      ]
+    ]
+  },
+  "CN5": {
+    "desc": "Persons by Age [23]",
+    "standardized": "Standardized to 2010",
+    "years": [
+      "2000",
+      "2010",
+      "2020"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "state",
+      "county",
+      "tract",
+      "blck_grp",
+      "cty_sub",
+      "place",
+      "cd111th",
+      "cbsa",
+      "urb_area",
+      "zcta"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Under 5 years"
+      ],
+      [
+        "AB",
+        "Persons: 5 to 9 years"
+      ],
+      [
+        "AC",
+        "Persons: 10 to 14 years"
+      ],
+      [
+        "AD",
+        "Persons: 15 to 17 years"
+      ],
+      [
+        "AE",
+        "Persons: 18 and 19 years"
+      ],
+      [
+        "AF",
+        "Persons: 20 years"
+      ],
+      [
+        "AG",
+        "Persons: 21 years"
+      ],
+      [
+        "AH",
+        "Persons: 22 to 24 years"
+      ],
+      [
+        "AI",
+        "Persons: 25 to 29 years"
+      ],
+      [
+        "AJ",
+        "Persons: 30 to 34 years"
+      ],
+      [
+        "AK",
+        "Persons: 35 to 39 years"
+      ],
+      [
+        "AL",
+        "Persons: 40 to 44 years"
+      ],
+      [
+        "AM",
+        "Persons: 45 to 49 years"
+      ],
+      [
+        "AN",
+        "Persons: 50 to 54 years"
+      ],
+      [
+        "AO",
+        "Persons: 55 to 59 years"
+      ],
+      [
+        "AP",
+        "Persons: 60 and 61 years"
+      ],
+      [
+        "AQ",
+        "Persons: 62 to 64 years"
+      ],
+      [
+        "AR",
+        "Persons: 65 and 66 years"
+      ],
+      [
+        "AS",
+        "Persons: 67 to 69 years"
+      ],
+      [
+        "AT",
+        "Persons: 70 to 74 years"
+      ],
+      [
+        "AU",
+        "Persons: 75 to 79 years"
+      ],
+      [
+        "AV",
+        "Persons: 80 to 84 years"
+      ],
+      [
+        "AW",
+        "Persons: 85 years and over"
+      ]
+    ]
+  },
+  "A38": {
+    "desc": "Persons by Detailed Age [101]",
+    "standardized": "Nominal",
+    "years": [
+      "1970",
+      "1980",
+      "1990",
+      "2000",
+      "2010",
+      "2020"
+    ],
+    "has_tract": false,
+    "geog_levels": [
+      "nation",
+      "region",
+      "division",
+      "state",
+      "county",
+      "cty_sub"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Under 1 year"
+      ],
+      [
+        "AB",
+        "Persons: 1 year"
+      ],
+      [
+        "AC",
+        "Persons: 2 years"
+      ],
+      [
+        "AD",
+        "Persons: 3 years"
+      ],
+      [
+        "AE",
+        "Persons: 4 years"
+      ],
+      [
+        "AF",
+        "Persons: 5 years"
+      ],
+      [
+        "AG",
+        "Persons: 6 years"
+      ],
+      [
+        "AH",
+        "Persons: 7 years"
+      ],
+      [
+        "AI",
+        "Persons: 8 years"
+      ],
+      [
+        "AJ",
+        "Persons: 9 years"
+      ],
+      [
+        "AK",
+        "Persons: 10 years"
+      ],
+      [
+        "AL",
+        "Persons: 11 years"
+      ],
+      [
+        "AM",
+        "Persons: 12 years"
+      ],
+      [
+        "AN",
+        "Persons: 13 years"
+      ],
+      [
+        "AO",
+        "Persons: 14 years"
+      ],
+      [
+        "AP",
+        "Persons: 15 years"
+      ],
+      [
+        "AQ",
+        "Persons: 16 years"
+      ],
+      [
+        "AR",
+        "Persons: 17 years"
+      ],
+      [
+        "AS",
+        "Persons: 18 years"
+      ],
+      [
+        "AT",
+        "Persons: 19 years"
+      ],
+      [
+        "AU",
+        "Persons: 20 years"
+      ],
+      [
+        "AV",
+        "Persons: 21 years"
+      ],
+      [
+        "AW",
+        "Persons: 22 years"
+      ],
+      [
+        "AX",
+        "Persons: 23 years"
+      ],
+      [
+        "AY",
+        "Persons: 24 years"
+      ],
+      [
+        "AZ",
+        "Persons: 25 years"
+      ],
+      [
+        "BA",
+        "Persons: 26 years"
+      ],
+      [
+        "BB",
+        "Persons: 27 years"
+      ],
+      [
+        "BC",
+        "Persons: 28 years"
+      ],
+      [
+        "BD",
+        "Persons: 29 years"
+      ],
+      [
+        "BE",
+        "Persons: 30 years"
+      ],
+      [
+        "BF",
+        "Persons: 31 years"
+      ],
+      [
+        "BG",
+        "Persons: 32 years"
+      ],
+      [
+        "BH",
+        "Persons: 33 years"
+      ],
+      [
+        "BI",
+        "Persons: 34 years"
+      ],
+      [
+        "BJ",
+        "Persons: 35 years"
+      ],
+      [
+        "BK",
+        "Persons: 36 years"
+      ],
+      [
+        "BL",
+        "Persons: 37 years"
+      ],
+      [
+        "BM",
+        "Persons: 38 years"
+      ],
+      [
+        "BN",
+        "Persons: 39 years"
+      ],
+      [
+        "BO",
+        "Persons: 40 years"
+      ],
+      [
+        "BP",
+        "Persons: 41 years"
+      ],
+      [
+        "BQ",
+        "Persons: 42 years"
+      ],
+      [
+        "BR",
+        "Persons: 43 years"
+      ],
+      [
+        "BS",
+        "Persons: 44 years"
+      ],
+      [
+        "BT",
+        "Persons: 45 years"
+      ],
+      [
+        "BU",
+        "Persons: 46 years"
+      ],
+      [
+        "BV",
+        "Persons: 47 years"
+      ],
+      [
+        "BW",
+        "Persons: 48 years"
+      ],
+      [
+        "BX",
+        "Persons: 49 years"
+      ],
+      [
+        "BY",
+        "Persons: 50 years"
+      ],
+      [
+        "BZ",
+        "Persons: 51 years"
+      ],
+      [
+        "CA",
+        "Persons: 52 years"
+      ],
+      [
+        "CB",
+        "Persons: 53 years"
+      ],
+      [
+        "CC",
+        "Persons: 54 years"
+      ],
+      [
+        "CD",
+        "Persons: 55 years"
+      ],
+      [
+        "CE",
+        "Persons: 56 years"
+      ],
+      [
+        "CF",
+        "Persons: 57 years"
+      ],
+      [
+        "CG",
+        "Persons: 58 years"
+      ],
+      [
+        "CH",
+        "Persons: 59 years"
+      ],
+      [
+        "CI",
+        "Persons: 60 years"
+      ],
+      [
+        "CJ",
+        "Persons: 61 years"
+      ],
+      [
+        "CK",
+        "Persons: 62 years"
+      ],
+      [
+        "CL",
+        "Persons: 63 years"
+      ],
+      [
+        "CM",
+        "Persons: 64 years"
+      ],
+      [
+        "CN",
+        "Persons: 65 years"
+      ],
+      [
+        "CO",
+        "Persons: 66 years"
+      ],
+      [
+        "CP",
+        "Persons: 67 years"
+      ],
+      [
+        "CQ",
+        "Persons: 68 years"
+      ],
+      [
+        "CR",
+        "Persons: 69 years"
+      ],
+      [
+        "CS",
+        "Persons: 70 years"
+      ],
+      [
+        "CT",
+        "Persons: 71 years"
+      ],
+      [
+        "CU",
+        "Persons: 72 years"
+      ],
+      [
+        "CV",
+        "Persons: 73 years"
+      ],
+      [
+        "CW",
+        "Persons: 74 years"
+      ],
+      [
+        "CX",
+        "Persons: 75 years"
+      ],
+      [
+        "CY",
+        "Persons: 76 years"
+      ],
+      [
+        "CZ",
+        "Persons: 77 years"
+      ],
+      [
+        "DA",
+        "Persons: 78 years"
+      ],
+      [
+        "DB",
+        "Persons: 79 years"
+      ],
+      [
+        "DC",
+        "Persons: 80 years"
+      ],
+      [
+        "DD",
+        "Persons: 81 years"
+      ],
+      [
+        "DE",
+        "Persons: 82 years"
+      ],
+      [
+        "DF",
+        "Persons: 83 years"
+      ],
+      [
+        "DG",
+        "Persons: 84 years"
+      ],
+      [
+        "DH",
+        "Persons: 85 years"
+      ],
+      [
+        "DI",
+        "Persons: 86 years"
+      ],
+      [
+        "DJ",
+        "Persons: 87 years"
+      ],
+      [
+        "DK",
+        "Persons: 88 years"
+      ],
+      [
+        "DL",
+        "Persons: 89 years"
+      ],
+      [
+        "DM",
+        "Persons: 90 years"
+      ],
+      [
+        "DN",
+        "Persons: 91 years"
+      ],
+      [
+        "DO",
+        "Persons: 92 years"
+      ],
+      [
+        "DP",
+        "Persons: 93 years"
+      ],
+      [
+        "DQ",
+        "Persons: 94 years"
+      ],
+      [
+        "DR",
+        "Persons: 95 years"
+      ],
+      [
+        "DS",
+        "Persons: 96 years"
+      ],
+      [
+        "DT",
+        "Persons: 97 years"
+      ],
+      [
+        "DU",
+        "Persons: 98 years"
+      ],
+      [
+        "DV",
+        "Persons: 99 years"
+      ],
+      [
+        "DW",
+        "Persons: 100 years and over"
+      ]
+    ]
+  },
+  "AT3": {
+    "desc": "Persons by Detailed Age [103]",
+    "standardized": "Nominal",
+    "years": [
+      "1980",
+      "1990",
+      "2000",
+      "2010",
+      "2020"
+    ],
+    "has_tract": false,
+    "geog_levels": [
+      "nation",
+      "region",
+      "division",
+      "state",
+      "county",
+      "cty_sub"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Under 1 year"
+      ],
+      [
+        "AB",
+        "Persons: 1 year"
+      ],
+      [
+        "AC",
+        "Persons: 2 years"
+      ],
+      [
+        "AD",
+        "Persons: 3 years"
+      ],
+      [
+        "AE",
+        "Persons: 4 years"
+      ],
+      [
+        "AF",
+        "Persons: 5 years"
+      ],
+      [
+        "AG",
+        "Persons: 6 years"
+      ],
+      [
+        "AH",
+        "Persons: 7 years"
+      ],
+      [
+        "AI",
+        "Persons: 8 years"
+      ],
+      [
+        "AJ",
+        "Persons: 9 years"
+      ],
+      [
+        "AK",
+        "Persons: 10 years"
+      ],
+      [
+        "AL",
+        "Persons: 11 years"
+      ],
+      [
+        "AM",
+        "Persons: 12 years"
+      ],
+      [
+        "AN",
+        "Persons: 13 years"
+      ],
+      [
+        "AO",
+        "Persons: 14 years"
+      ],
+      [
+        "AP",
+        "Persons: 15 years"
+      ],
+      [
+        "AQ",
+        "Persons: 16 years"
+      ],
+      [
+        "AR",
+        "Persons: 17 years"
+      ],
+      [
+        "AS",
+        "Persons: 18 years"
+      ],
+      [
+        "AT",
+        "Persons: 19 years"
+      ],
+      [
+        "AU",
+        "Persons: 20 years"
+      ],
+      [
+        "AV",
+        "Persons: 21 years"
+      ],
+      [
+        "AW",
+        "Persons: 22 years"
+      ],
+      [
+        "AX",
+        "Persons: 23 years"
+      ],
+      [
+        "AY",
+        "Persons: 24 years"
+      ],
+      [
+        "AZ",
+        "Persons: 25 years"
+      ],
+      [
+        "BA",
+        "Persons: 26 years"
+      ],
+      [
+        "BB",
+        "Persons: 27 years"
+      ],
+      [
+        "BC",
+        "Persons: 28 years"
+      ],
+      [
+        "BD",
+        "Persons: 29 years"
+      ],
+      [
+        "BE",
+        "Persons: 30 years"
+      ],
+      [
+        "BF",
+        "Persons: 31 years"
+      ],
+      [
+        "BG",
+        "Persons: 32 years"
+      ],
+      [
+        "BH",
+        "Persons: 33 years"
+      ],
+      [
+        "BI",
+        "Persons: 34 years"
+      ],
+      [
+        "BJ",
+        "Persons: 35 years"
+      ],
+      [
+        "BK",
+        "Persons: 36 years"
+      ],
+      [
+        "BL",
+        "Persons: 37 years"
+      ],
+      [
+        "BM",
+        "Persons: 38 years"
+      ],
+      [
+        "BN",
+        "Persons: 39 years"
+      ],
+      [
+        "BO",
+        "Persons: 40 years"
+      ],
+      [
+        "BP",
+        "Persons: 41 years"
+      ],
+      [
+        "BQ",
+        "Persons: 42 years"
+      ],
+      [
+        "BR",
+        "Persons: 43 years"
+      ],
+      [
+        "BS",
+        "Persons: 44 years"
+      ],
+      [
+        "BT",
+        "Persons: 45 years"
+      ],
+      [
+        "BU",
+        "Persons: 46 years"
+      ],
+      [
+        "BV",
+        "Persons: 47 years"
+      ],
+      [
+        "BW",
+        "Persons: 48 years"
+      ],
+      [
+        "BX",
+        "Persons: 49 years"
+      ],
+      [
+        "BY",
+        "Persons: 50 years"
+      ],
+      [
+        "BZ",
+        "Persons: 51 years"
+      ],
+      [
+        "CA",
+        "Persons: 52 years"
+      ],
+      [
+        "CB",
+        "Persons: 53 years"
+      ],
+      [
+        "CC",
+        "Persons: 54 years"
+      ],
+      [
+        "CD",
+        "Persons: 55 years"
+      ],
+      [
+        "CE",
+        "Persons: 56 years"
+      ],
+      [
+        "CF",
+        "Persons: 57 years"
+      ],
+      [
+        "CG",
+        "Persons: 58 years"
+      ],
+      [
+        "CH",
+        "Persons: 59 years"
+      ],
+      [
+        "CI",
+        "Persons: 60 years"
+      ],
+      [
+        "CJ",
+        "Persons: 61 years"
+      ],
+      [
+        "CK",
+        "Persons: 62 years"
+      ],
+      [
+        "CL",
+        "Persons: 63 years"
+      ],
+      [
+        "CM",
+        "Persons: 64 years"
+      ],
+      [
+        "CN",
+        "Persons: 65 years"
+      ],
+      [
+        "CO",
+        "Persons: 66 years"
+      ],
+      [
+        "CP",
+        "Persons: 67 years"
+      ],
+      [
+        "CQ",
+        "Persons: 68 years"
+      ],
+      [
+        "CR",
+        "Persons: 69 years"
+      ],
+      [
+        "CS",
+        "Persons: 70 years"
+      ],
+      [
+        "CT",
+        "Persons: 71 years"
+      ],
+      [
+        "CU",
+        "Persons: 72 years"
+      ],
+      [
+        "CV",
+        "Persons: 73 years"
+      ],
+      [
+        "CW",
+        "Persons: 74 years"
+      ],
+      [
+        "CX",
+        "Persons: 75 years"
+      ],
+      [
+        "CY",
+        "Persons: 76 years"
+      ],
+      [
+        "CZ",
+        "Persons: 77 years"
+      ],
+      [
+        "DA",
+        "Persons: 78 years"
+      ],
+      [
+        "DB",
+        "Persons: 79 years"
+      ],
+      [
+        "DC",
+        "Persons: 80 years"
+      ],
+      [
+        "DD",
+        "Persons: 81 years"
+      ],
+      [
+        "DE",
+        "Persons: 82 years"
+      ],
+      [
+        "DF",
+        "Persons: 83 years"
+      ],
+      [
+        "DG",
+        "Persons: 84 years"
+      ],
+      [
+        "DH",
+        "Persons: 85 years"
+      ],
+      [
+        "DI",
+        "Persons: 86 years"
+      ],
+      [
+        "DJ",
+        "Persons: 87 years"
+      ],
+      [
+        "DK",
+        "Persons: 88 years"
+      ],
+      [
+        "DL",
+        "Persons: 89 years"
+      ],
+      [
+        "DM",
+        "Persons: 90 years"
+      ],
+      [
+        "DN",
+        "Persons: 91 years"
+      ],
+      [
+        "DO",
+        "Persons: 92 years"
+      ],
+      [
+        "DP",
+        "Persons: 93 years"
+      ],
+      [
+        "DQ",
+        "Persons: 94 years"
+      ],
+      [
+        "DR",
+        "Persons: 95 years"
+      ],
+      [
+        "DS",
+        "Persons: 96 years"
+      ],
+      [
+        "DT",
+        "Persons: 97 years"
+      ],
+      [
+        "DU",
+        "Persons: 98 years"
+      ],
+      [
+        "DV",
+        "Persons: 99 years"
+      ],
+      [
+        "DW",
+        "Persons: 100 to 104 years"
+      ],
+      [
+        "DX",
+        "Persons: 105 to 109 years"
+      ],
+      [
+        "DY",
+        "Persons: 110 years and over"
+      ]
+    ]
+  },
+  "CW4": {
+    "desc": "Persons Under 20 Years by Age [14]",
+    "standardized": "Standardized to 2010",
+    "years": [
+      "1990",
+      "2000",
+      "2010",
+      "2020"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "state",
+      "county",
+      "tract",
+      "blck_grp",
+      "cty_sub",
+      "place",
+      "cd111th",
+      "cbsa",
+      "urb_area",
+      "zcta"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Under 1 year"
+      ],
+      [
+        "AB",
+        "Persons: 1 and 2 years"
+      ],
+      [
+        "AC",
+        "Persons: 3 and 4 years"
+      ],
+      [
+        "AD",
+        "Persons: 5 years"
+      ],
+      [
+        "AE",
+        "Persons: 6 years"
+      ],
+      [
+        "AF",
+        "Persons: 7 to 9 years"
+      ],
+      [
+        "AG",
+        "Persons: 10 and 11 years"
+      ],
+      [
+        "AH",
+        "Persons: 12 and 13 years"
+      ],
+      [
+        "AI",
+        "Persons: 14 years"
+      ],
+      [
+        "AJ",
+        "Persons: 15 years"
+      ],
+      [
+        "AK",
+        "Persons: 16 years"
+      ],
+      [
+        "AL",
+        "Persons: 17 years"
+      ],
+      [
+        "AM",
+        "Persons: 18 years"
+      ],
+      [
+        "AN",
+        "Persons: 19 years"
+      ]
+    ]
+  },
+  "CN6": {
+    "desc": "Persons Under 20 Years by Age [20]",
+    "standardized": "Standardized to 2010",
+    "years": [
+      "2000",
+      "2010",
+      "2020"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "state",
+      "county",
+      "tract",
+      "blck_grp",
+      "cty_sub",
+      "place",
+      "cd111th",
+      "cbsa",
+      "urb_area",
+      "zcta"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Under 1 year"
+      ],
+      [
+        "AB",
+        "Persons: 1 year"
+      ],
+      [
+        "AC",
+        "Persons: 2 years"
+      ],
+      [
+        "AD",
+        "Persons: 3 years"
+      ],
+      [
+        "AE",
+        "Persons: 4 years"
+      ],
+      [
+        "AF",
+        "Persons: 5 years"
+      ],
+      [
+        "AG",
+        "Persons: 6 years"
+      ],
+      [
+        "AH",
+        "Persons: 7 years"
+      ],
+      [
+        "AI",
+        "Persons: 8 years"
+      ],
+      [
+        "AJ",
+        "Persons: 9 years"
+      ],
+      [
+        "AK",
+        "Persons: 10 years"
+      ],
+      [
+        "AL",
+        "Persons: 11 years"
+      ],
+      [
+        "AM",
+        "Persons: 12 years"
+      ],
+      [
+        "AN",
+        "Persons: 13 years"
+      ],
+      [
+        "AO",
+        "Persons: 14 years"
+      ],
+      [
+        "AP",
+        "Persons: 15 years"
+      ],
+      [
+        "AQ",
+        "Persons: 16 years"
+      ],
+      [
+        "AR",
+        "Persons: 17 years"
+      ],
+      [
+        "AS",
+        "Persons: 18 years"
+      ],
+      [
+        "AT",
+        "Persons: 19 years"
+      ]
+    ]
+  },
+  "AC9": {
+    "desc": "Persons Who Are Native Hawaiian and Other Pacific Islander Alone by Age [23]",
+    "standardized": "Nominal",
+    "years": [
+      "2000",
+      "2010",
+      "2020"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "nation",
+      "region",
+      "division",
+      "state",
+      "county",
+      "tract",
+      "cty_sub",
+      "place"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ Under 5 years"
+      ],
+      [
+        "AB",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 5 to 9 years"
+      ],
+      [
+        "AC",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 10 to 14 years"
+      ],
+      [
+        "AD",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 15 to 17 years"
+      ],
+      [
+        "AE",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 18 and 19 years"
+      ],
+      [
+        "AF",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 20 years"
+      ],
+      [
+        "AG",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 21 years"
+      ],
+      [
+        "AH",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 22 to 24 years"
+      ],
+      [
+        "AI",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 25 to 29 years"
+      ],
+      [
+        "AJ",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 30 to 34 years"
+      ],
+      [
+        "AK",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 35 to 39 years"
+      ],
+      [
+        "AL",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 40 to 44 years"
+      ],
+      [
+        "AM",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 45 to 49 years"
+      ],
+      [
+        "AN",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 50 to 54 years"
+      ],
+      [
+        "AO",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 55 to 59 years"
+      ],
+      [
+        "AP",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 60 and 61 years"
+      ],
+      [
+        "AQ",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 62 to 64 years"
+      ],
+      [
+        "AR",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 65 and 66 years"
+      ],
+      [
+        "AS",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 67 to 69 years"
+      ],
+      [
+        "AT",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 70 to 74 years"
+      ],
+      [
+        "AU",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 75 to 79 years"
+      ],
+      [
+        "AV",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 80 to 84 years"
+      ],
+      [
+        "AW",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 85 years and over"
+      ]
+    ]
+  },
+  "CO4": {
+    "desc": "Persons Who Are Native Hawaiian and Other Pacific Islander Alone by Age [23]",
+    "standardized": "Standardized to 2010",
+    "years": [
+      "2000",
+      "2010",
+      "2020"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "state",
+      "county",
+      "tract",
+      "blck_grp",
+      "cty_sub",
+      "place",
+      "cd111th",
+      "cbsa",
+      "urb_area",
+      "zcta"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ Under 5 years"
+      ],
+      [
+        "AB",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 5 to 9 years"
+      ],
+      [
+        "AC",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 10 to 14 years"
+      ],
+      [
+        "AD",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 15 to 17 years"
+      ],
+      [
+        "AE",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 18 and 19 years"
+      ],
+      [
+        "AF",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 20 years"
+      ],
+      [
+        "AG",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 21 years"
+      ],
+      [
+        "AH",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 22 to 24 years"
+      ],
+      [
+        "AI",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 25 to 29 years"
+      ],
+      [
+        "AJ",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 30 to 34 years"
+      ],
+      [
+        "AK",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 35 to 39 years"
+      ],
+      [
+        "AL",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 40 to 44 years"
+      ],
+      [
+        "AM",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 45 to 49 years"
+      ],
+      [
+        "AN",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 50 to 54 years"
+      ],
+      [
+        "AO",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 55 to 59 years"
+      ],
+      [
+        "AP",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 60 and 61 years"
+      ],
+      [
+        "AQ",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 62 to 64 years"
+      ],
+      [
+        "AR",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 65 and 66 years"
+      ],
+      [
+        "AS",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 67 to 69 years"
+      ],
+      [
+        "AT",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 70 to 74 years"
+      ],
+      [
+        "AU",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 75 to 79 years"
+      ],
+      [
+        "AV",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 80 to 84 years"
+      ],
+      [
+        "AW",
+        "Persons: Native Hawaiian and Other Pacific Islander alone ~ 85 years and over"
+      ]
+    ]
+  },
+  "AZ4": {
+    "desc": "Persons Who Are Native Hawaiian and Other Pacific Islander Alone by Detailed Age [103]",
+    "standardized": "Nominal",
+    "years": [
+      "2000",
+      "2010",
+      "2020"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "nation",
+      "region",
+      "division",
+      "state",
+      "county",
+      "tract",
+      "cty_sub",
+      "place"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ Under 1 year"
+      ],
+      [
+        "AB",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 1 year"
+      ],
+      [
+        "AC",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 2 years"
+      ],
+      [
+        "AD",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 3 years"
+      ],
+      [
+        "AE",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 4 years"
+      ],
+      [
+        "AF",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 5 years"
+      ],
+      [
+        "AG",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 6 years"
+      ],
+      [
+        "AH",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 7 years"
+      ],
+      [
+        "AI",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 8 years"
+      ],
+      [
+        "AJ",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 9 years"
+      ],
+      [
+        "AK",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 10 years"
+      ],
+      [
+        "AL",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 11 years"
+      ],
+      [
+        "AM",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 12 years"
+      ],
+      [
+        "AN",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 13 years"
+      ],
+      [
+        "AO",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 14 years"
+      ],
+      [
+        "AP",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 15 years"
+      ],
+      [
+        "AQ",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 16 years"
+      ],
+      [
+        "AR",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 17 years"
+      ],
+      [
+        "AS",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 18 years"
+      ],
+      [
+        "AT",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 19 years"
+      ],
+      [
+        "AU",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 20 years"
+      ],
+      [
+        "AV",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 21 years"
+      ],
+      [
+        "AW",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 22 years"
+      ],
+      [
+        "AX",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 23 years"
+      ],
+      [
+        "AY",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 24 years"
+      ],
+      [
+        "AZ",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 25 years"
+      ],
+      [
+        "BA",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 26 years"
+      ],
+      [
+        "BB",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 27 years"
+      ],
+      [
+        "BC",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 28 years"
+      ],
+      [
+        "BD",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 29 years"
+      ],
+      [
+        "BE",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 30 years"
+      ],
+      [
+        "BF",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 31 years"
+      ],
+      [
+        "BG",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 32 years"
+      ],
+      [
+        "BH",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 33 years"
+      ],
+      [
+        "BI",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 34 years"
+      ],
+      [
+        "BJ",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 35 years"
+      ],
+      [
+        "BK",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 36 years"
+      ],
+      [
+        "BL",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 37 years"
+      ],
+      [
+        "BM",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 38 years"
+      ],
+      [
+        "BN",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 39 years"
+      ],
+      [
+        "BO",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 40 years"
+      ],
+      [
+        "BP",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 41 years"
+      ],
+      [
+        "BQ",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 42 years"
+      ],
+      [
+        "BR",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 43 years"
+      ],
+      [
+        "BS",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 44 years"
+      ],
+      [
+        "BT",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 45 years"
+      ],
+      [
+        "BU",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 46 years"
+      ],
+      [
+        "BV",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 47 years"
+      ],
+      [
+        "BW",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 48 years"
+      ],
+      [
+        "BX",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 49 years"
+      ],
+      [
+        "BY",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 50 years"
+      ],
+      [
+        "BZ",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 51 years"
+      ],
+      [
+        "CA",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 52 years"
+      ],
+      [
+        "CB",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 53 years"
+      ],
+      [
+        "CC",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 54 years"
+      ],
+      [
+        "CD",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 55 years"
+      ],
+      [
+        "CE",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 56 years"
+      ],
+      [
+        "CF",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 57 years"
+      ],
+      [
+        "CG",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 58 years"
+      ],
+      [
+        "CH",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 59 years"
+      ],
+      [
+        "CI",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 60 years"
+      ],
+      [
+        "CJ",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 61 years"
+      ],
+      [
+        "CK",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 62 years"
+      ],
+      [
+        "CL",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 63 years"
+      ],
+      [
+        "CM",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 64 years"
+      ],
+      [
+        "CN",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 65 years"
+      ],
+      [
+        "CO",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 66 years"
+      ],
+      [
+        "CP",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 67 years"
+      ],
+      [
+        "CQ",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 68 years"
+      ],
+      [
+        "CR",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 69 years"
+      ],
+      [
+        "CS",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 70 years"
+      ],
+      [
+        "CT",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 71 years"
+      ],
+      [
+        "CU",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 72 years"
+      ],
+      [
+        "CV",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 73 years"
+      ],
+      [
+        "CW",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 74 years"
+      ],
+      [
+        "CX",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 75 years"
+      ],
+      [
+        "CY",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 76 years"
+      ],
+      [
+        "CZ",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 77 years"
+      ],
+      [
+        "DA",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 78 years"
+      ],
+      [
+        "DB",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 79 years"
+      ],
+      [
+        "DC",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 80 years"
+      ],
+      [
+        "DD",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 81 years"
+      ],
+      [
+        "DE",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 82 years"
+      ],
+      [
+        "DF",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 83 years"
+      ],
+      [
+        "DG",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 84 years"
+      ],
+      [
+        "DH",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 85 years"
+      ],
+      [
+        "DI",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 86 years"
+      ],
+      [
+        "DJ",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 87 years"
+      ],
+      [
+        "DK",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 88 years"
+      ],
+      [
+        "DL",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 89 years"
+      ],
+      [
+        "DM",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 90 years"
+      ],
+      [
+        "DN",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 91 years"
+      ],
+      [
+        "DO",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 92 years"
+      ],
+      [
+        "DP",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 93 years"
+      ],
+      [
+        "DQ",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 94 years"
+      ],
+      [
+        "DR",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 95 years"
+      ],
+      [
+        "DS",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 96 years"
+      ],
+      [
+        "DT",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 97 years"
+      ],
+      [
+        "DU",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 98 years"
+      ],
+      [
+        "DV",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 99 years"
+      ],
+      [
+        "DW",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 100 to 104 years"
+      ],
+      [
+        "DX",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 105 to 109 years"
+      ],
+      [
+        "DY",
+        "Persons: Native Hawaiian and Other Pacific Islander (single race) ~ 110 years and over"
+      ]
+    ]
+  },
+  "CU2": {
+    "desc": "Own Children by Family Type [4] and (for 3 Family Types) by Age [2]",
+    "standardized": "Nominal",
+    "years": [
+      "1970",
+      "1980",
+      "1990",
+      "2000",
+      "2010"
+    ],
+    "has_tract": false,
+    "geog_levels": [
+      "nation",
+      "region",
+      "division",
+      "state",
+      "county",
+      "cty_sub"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Own child ~ In husband-wife families ~ Under 18 years"
+      ],
+      [
+        "AB",
+        "Persons: Own child ~ In husband-wife families ~ Under 18 years--Under 6 years"
+      ],
+      [
+        "AC",
+        "Persons: Own child ~ In husband-wife families ~ Under 18 years--6 to 17 years"
+      ],
+      [
+        "AD",
+        "Persons: Own child ~ In other families ~ Under 18 years"
+      ],
+      [
+        "AE",
+        "Persons: Own child ~ In other families--Male householder, no wife present ~ Under 18 years"
+      ],
+      [
+        "AF",
+        "Persons: Own child ~ In other families--Male householder, no wife present ~ Under 18 years--Under 6 years"
+      ],
+      [
+        "AG",
+        "Persons: Own child ~ In other families--Male householder, no wife present ~ Under 18 years--6 to 17 years"
+      ],
+      [
+        "AH",
+        "Persons: Own child ~ In other families--Female householder, no husband present ~ Under 18 years"
+      ],
+      [
+        "AI",
+        "Persons: Own child ~ In other families--Female householder, no husband present ~ Under 18 years--Under 6 years"
+      ],
+      [
+        "AJ",
+        "Persons: Own child ~ In other families--Female householder, no husband present ~ Under 18 years--6 to 17 years"
+      ]
+    ]
+  },
+  "B66": {
+    "desc": "Own Children by Family Type [4] and (for 3 Family Types) by Age [5]",
+    "standardized": "Nominal",
+    "years": [
+      "2000",
+      "2010"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "nation",
+      "region",
+      "division",
+      "state",
+      "county",
+      "tract",
+      "cty_sub",
+      "place"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Own child ~ In husband-wife families ~ Under 18 years"
+      ],
+      [
+        "AB",
+        "Persons: Own child ~ In husband-wife families ~ Under 18 years--Under 3 years"
+      ],
+      [
+        "AC",
+        "Persons: Own child ~ In husband-wife families ~ Under 18 years--3 and 4 years"
+      ],
+      [
+        "AD",
+        "Persons: Own child ~ In husband-wife families ~ Under 18 years--5 years"
+      ],
+      [
+        "AE",
+        "Persons: Own child ~ In husband-wife families ~ Under 18 years--6 to 11 years"
+      ],
+      [
+        "AF",
+        "Persons: Own child ~ In husband-wife families ~ Under 18 years--12 to 17 years"
+      ],
+      [
+        "AG",
+        "Persons: Own child ~ In other families ~ Under 18 years"
+      ],
+      [
+        "AH",
+        "Persons: Own child ~ In other families--Male householder, no wife present ~ Under 18 years"
+      ],
+      [
+        "AI",
+        "Persons: Own child ~ In other families--Male householder, no wife present ~ Under 18 years--Under 3 years"
+      ],
+      [
+        "AJ",
+        "Persons: Own child ~ In other families--Male householder, no wife present ~ Under 18 years--3 and 4 years"
+      ],
+      [
+        "AK",
+        "Persons: Own child ~ In other families--Male householder, no wife present ~ Under 18 years--5 years"
+      ],
+      [
+        "AL",
+        "Persons: Own child ~ In other families--Male householder, no wife present ~ Under 18 years--6 to 11 years"
+      ],
+      [
+        "AM",
+        "Persons: Own child ~ In other families--Male householder, no wife present ~ Under 18 years--12 to 17 years"
+      ],
+      [
+        "AN",
+        "Persons: Own child ~ In other families--Female householder, no husband present ~ Under 18 years"
+      ],
+      [
+        "AO",
+        "Persons: Own child ~ In other families--Female householder, no husband present ~ Under 18 years--Under 3 years"
+      ],
+      [
+        "AP",
+        "Persons: Own child ~ In other families--Female householder, no husband present ~ Under 18 years--3 and 4 years"
+      ],
+      [
+        "AQ",
+        "Persons: Own child ~ In other families--Female householder, no husband present ~ Under 18 years--5 years"
+      ],
+      [
+        "AR",
+        "Persons: Own child ~ In other families--Female householder, no husband present ~ Under 18 years--6 to 11 years"
+      ],
+      [
+        "AS",
+        "Persons: Own child ~ In other families--Female householder, no husband present ~ Under 18 years--12 to 17 years"
+      ]
+    ]
+  },
+  "CU3": {
+    "desc": "Own Children by Family Type [4] and (for 3 Family Types) by Age [5]",
+    "standardized": "Standardized to 2010",
+    "years": [
+      "2000",
+      "2010"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "state",
+      "county",
+      "tract",
+      "blck_grp",
+      "cty_sub",
+      "place",
+      "cd111th",
+      "cbsa",
+      "urb_area",
+      "zcta"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Own child ~ In husband-wife families ~ Under 18 years"
+      ],
+      [
+        "AB",
+        "Persons: Own child ~ In husband-wife families ~ Under 18 years--Under 3 years"
+      ],
+      [
+        "AC",
+        "Persons: Own child ~ In husband-wife families ~ Under 18 years--3 and 4 years"
+      ],
+      [
+        "AD",
+        "Persons: Own child ~ In husband-wife families ~ Under 18 years--5 years"
+      ],
+      [
+        "AE",
+        "Persons: Own child ~ In husband-wife families ~ Under 18 years--6 to 11 years"
+      ],
+      [
+        "AF",
+        "Persons: Own child ~ In husband-wife families ~ Under 18 years--12 to 17 years"
+      ],
+      [
+        "AG",
+        "Persons: Own child ~ In other families ~ Under 18 years"
+      ],
+      [
+        "AH",
+        "Persons: Own child ~ In other families--Male householder, no wife present ~ Under 18 years"
+      ],
+      [
+        "AI",
+        "Persons: Own child ~ In other families--Male householder, no wife present ~ Under 18 years--Under 3 years"
+      ],
+      [
+        "AJ",
+        "Persons: Own child ~ In other families--Male householder, no wife present ~ Under 18 years--3 and 4 years"
+      ],
+      [
+        "AK",
+        "Persons: Own child ~ In other families--Male householder, no wife present ~ Under 18 years--5 years"
+      ],
+      [
+        "AL",
+        "Persons: Own child ~ In other families--Male householder, no wife present ~ Under 18 years--6 to 11 years"
+      ],
+      [
+        "AM",
+        "Persons: Own child ~ In other families--Male householder, no wife present ~ Under 18 years--12 to 17 years"
+      ],
+      [
+        "AN",
+        "Persons: Own child ~ In other families--Female householder, no husband present ~ Under 18 years"
+      ],
+      [
+        "AO",
+        "Persons: Own child ~ In other families--Female householder, no husband present ~ Under 18 years--Under 3 years"
+      ],
+      [
+        "AP",
+        "Persons: Own child ~ In other families--Female householder, no husband present ~ Under 18 years--3 and 4 years"
+      ],
+      [
+        "AQ",
+        "Persons: Own child ~ In other families--Female householder, no husband present ~ Under 18 years--5 years"
+      ],
+      [
+        "AR",
+        "Persons: Own child ~ In other families--Female householder, no husband present ~ Under 18 years--6 to 11 years"
+      ],
+      [
+        "AS",
+        "Persons: Own child ~ In other families--Female householder, no husband present ~ Under 18 years--12 to 17 years"
+      ]
+    ]
+  },
+  "AG4": {
+    "desc": "Families by Family Type [3] by Presence and Age of Own Children [4]",
+    "standardized": "Nominal",
+    "years": [
+      "1970",
+      "1980",
+      "1990",
+      "2000",
+      "2010",
+      "2020"
+    ],
+    "has_tract": false,
+    "geog_levels": [
+      "nation",
+      "region",
+      "division",
+      "state",
+      "county",
+      "cty_sub"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Families: Married-couple family ~ With own children under 18 years"
+      ],
+      [
+        "AB",
+        "Families: Married-couple family ~ With own children under 18 years ~ One or more under 6 years"
+      ],
+      [
+        "AC",
+        "Families: Married-couple family ~ With own children under 18 years ~ 6 to 17 years only"
+      ],
+      [
+        "AD",
+        "Families: Married-couple family ~ No own children under 18 years"
+      ],
+      [
+        "AE",
+        "Families: Male householder, no spouse present ~ With own children under 18 years"
+      ],
+      [
+        "AF",
+        "Families: Male householder, no spouse present ~ With own children under 18 years ~ One or more under 6 years"
+      ],
+      [
+        "AG",
+        "Families: Male householder, no spouse present ~ With own children under 18 years ~ 6 to 17 years only"
+      ],
+      [
+        "AH",
+        "Families: Male householder, no spouse present ~ No own children under 18 years"
+      ],
+      [
+        "AI",
+        "Families: Female householder, no spouse present ~ With own children under 18 years"
+      ],
+      [
+        "AJ",
+        "Families: Female householder, no spouse present ~ With own children under 18 years ~ One or more under 6 years"
+      ],
+      [
+        "AK",
+        "Families: Female householder, no spouse present ~ With own children under 18 years ~ 6 to 17 years only"
+      ],
+      [
+        "AL",
+        "Families: Female householder, no spouse present ~ No own children under 18 years"
+      ]
+    ]
+  },
+  "AG5": {
+    "desc": "Families by Family Type [3] by Presence and Age of Own Children [5]",
+    "standardized": "Nominal",
+    "years": [
+      "1980",
+      "1990",
+      "2000",
+      "2010",
+      "2020"
+    ],
+    "has_tract": false,
+    "geog_levels": [
+      "nation",
+      "region",
+      "division",
+      "state",
+      "county",
+      "cty_sub"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Families: Married-couple family ~ With own children under 18 years"
+      ],
+      [
+        "AB",
+        "Families: Married-couple family ~ With own children under 18 years ~ Under 6 years only"
+      ],
+      [
+        "AC",
+        "Families: Married-couple family ~ With own children under 18 years ~ Under 6 years and 6 to 17 years"
+      ],
+      [
+        "AD",
+        "Families: Married-couple family ~ With own children under 18 years ~ 6 to 17 years only"
+      ],
+      [
+        "AE",
+        "Families: Married-couple family ~ No own children under 18 years"
+      ],
+      [
+        "AF",
+        "Families: Male householder, no spouse present ~ With own children under 18 years"
+      ],
+      [
+        "AG",
+        "Families: Male householder, no spouse present ~ With own children under 18 years ~ Under 6 years only"
+      ],
+      [
+        "AH",
+        "Families: Male householder, no spouse present ~ With own children under 18 years ~ Under 6 years and 6 to 17 years"
+      ],
+      [
+        "AI",
+        "Families: Male householder, no spouse present ~ With own children under 18 years ~ 6 to 17 years only"
+      ],
+      [
+        "AJ",
+        "Families: Male householder, no spouse present ~ No own children under 18 years"
+      ],
+      [
+        "AK",
+        "Families: Female householder, no spouse present ~ With own children under 18 years"
+      ],
+      [
+        "AL",
+        "Families: Female householder, no spouse present ~ With own children under 18 years ~ Under 6 years only"
+      ],
+      [
+        "AM",
+        "Families: Female householder, no spouse present ~ With own children under 18 years ~ Under 6 years and 6 to 17 years"
+      ],
+      [
+        "AN",
+        "Families: Female householder, no spouse present ~ With own children under 18 years ~ 6 to 17 years only"
+      ],
+      [
+        "AO",
+        "Families: Female householder, no spouse present ~ No own children under 18 years"
+      ]
+    ]
+  },
+  "CS5": {
+    "desc": "Families by Family Type [3] by Presence and Age of Own Children [5]",
+    "standardized": "Standardized to 2010",
+    "years": [
+      "2000",
+      "2010"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "state",
+      "county",
+      "tract",
+      "blck_grp",
+      "cty_sub",
+      "place",
+      "cd111th",
+      "cbsa",
+      "urb_area",
+      "zcta"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Families: Married-couple family ~ With own children under 18 years"
+      ],
+      [
+        "AB",
+        "Families: Married-couple family ~ With own children under 18 years ~ Under 6 years only"
+      ],
+      [
+        "AC",
+        "Families: Married-couple family ~ With own children under 18 years ~ Under 6 years and 6 to 17 years"
+      ],
+      [
+        "AD",
+        "Families: Married-couple family ~ With own children under 18 years ~ 6 to 17 years only"
+      ],
+      [
+        "AE",
+        "Families: Married-couple family ~ No own children under 18 years"
+      ],
+      [
+        "AF",
+        "Families: Male householder, no spouse present ~ With own children under 18 years"
+      ],
+      [
+        "AG",
+        "Families: Male householder, no spouse present ~ With own children under 18 years ~ Under 6 years only"
+      ],
+      [
+        "AH",
+        "Families: Male householder, no spouse present ~ With own children under 18 years ~ Under 6 years and 6 to 17 years"
+      ],
+      [
+        "AI",
+        "Families: Male householder, no spouse present ~ With own children under 18 years ~ 6 to 17 years only"
+      ],
+      [
+        "AJ",
+        "Families: Male householder, no spouse present ~ No own children under 18 years"
+      ],
+      [
+        "AK",
+        "Families: Female householder, no spouse present ~ With own children under 18 years"
+      ],
+      [
+        "AL",
+        "Families: Female householder, no spouse present ~ With own children under 18 years ~ Under 6 years only"
+      ],
+      [
+        "AM",
+        "Families: Female householder, no spouse present ~ With own children under 18 years ~ Under 6 years and 6 to 17 years"
+      ],
+      [
+        "AN",
+        "Families: Female householder, no spouse present ~ With own children under 18 years ~ 6 to 17 years only"
+      ],
+      [
+        "AO",
+        "Families: Female householder, no spouse present ~ No own children under 18 years"
+      ]
+    ]
+  },
+  "A63": {
+    "desc": "Persons 16 Years and Over in Labor Force by Age [6]",
+    "standardized": "Nominal",
+    "years": [
+      "1970",
+      "1980",
+      "1990",
+      "2000",
+      "105",
+      "115",
+      "125",
+      "135",
+      "145",
+      "155",
+      "165",
+      "175",
+      "185",
+      "195",
+      "205",
+      "215",
+      "225",
+      "235",
+      "245"
+    ],
+    "has_tract": false,
+    "geog_levels": [
+      "state",
+      "county"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: 16 to 19 years ~ In labor force"
+      ],
+      [
+        "AB",
+        "Persons: 20 to 24 years ~ In labor force"
+      ],
+      [
+        "AC",
+        "Persons: 25 to 34 years ~ In labor force"
+      ],
+      [
+        "AD",
+        "Persons: 35 to 44 years ~ In labor force"
+      ],
+      [
+        "AE",
+        "Persons: 45 to 64 years ~ In labor force"
+      ],
+      [
+        "AF",
+        "Persons: 65 years and over ~ In labor force"
+      ]
+    ]
+  },
+  "A64": {
+    "desc": "Persons 16 Years and Over by Age [9] by Labor Force and Employment Status [6]",
+    "standardized": "Nominal",
+    "years": [
+      "1980",
+      "1990",
+      "2000",
+      "105",
+      "115",
+      "125",
+      "135",
+      "145",
+      "155",
+      "165",
+      "175",
+      "185",
+      "195",
+      "205",
+      "215",
+      "225",
+      "235",
+      "245"
+    ],
+    "has_tract": false,
+    "geog_levels": [
+      "state",
+      "county"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: 16 to 19 years ~ In labor force"
+      ],
+      [
+        "AB",
+        "Persons: 16 to 19 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "AC",
+        "Persons: 16 to 19 years ~ In labor force--Civilian"
+      ],
+      [
+        "AD",
+        "Persons: 16 to 19 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "AE",
+        "Persons: 16 to 19 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "AF",
+        "Persons: 16 to 19 years ~ Not in labor force"
+      ],
+      [
+        "AG",
+        "Persons: 20 to 24 years ~ In labor force"
+      ],
+      [
+        "AH",
+        "Persons: 20 to 24 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "AI",
+        "Persons: 20 to 24 years ~ In labor force--Civilian"
+      ],
+      [
+        "AJ",
+        "Persons: 20 to 24 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "AK",
+        "Persons: 20 to 24 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "AL",
+        "Persons: 20 to 24 years ~ Not in labor force"
+      ],
+      [
+        "AM",
+        "Persons: 25 to 29 years ~ In labor force"
+      ],
+      [
+        "AN",
+        "Persons: 25 to 29 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "AO",
+        "Persons: 25 to 29 years ~ In labor force--Civilian"
+      ],
+      [
+        "AP",
+        "Persons: 25 to 29 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "AQ",
+        "Persons: 25 to 29 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "AR",
+        "Persons: 25 to 29 years ~ Not in labor force"
+      ],
+      [
+        "AS",
+        "Persons: 30 to 34 years ~ In labor force"
+      ],
+      [
+        "AT",
+        "Persons: 30 to 34 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "AU",
+        "Persons: 30 to 34 years ~ In labor force--Civilian"
+      ],
+      [
+        "AV",
+        "Persons: 30 to 34 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "AW",
+        "Persons: 30 to 34 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "AX",
+        "Persons: 30 to 34 years ~ Not in labor force"
+      ],
+      [
+        "AY",
+        "Persons: 35 to 44 years ~ In labor force"
+      ],
+      [
+        "AZ",
+        "Persons: 35 to 44 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "BA",
+        "Persons: 35 to 44 years ~ In labor force--Civilian"
+      ],
+      [
+        "BB",
+        "Persons: 35 to 44 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "BC",
+        "Persons: 35 to 44 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "BD",
+        "Persons: 35 to 44 years ~ Not in labor force"
+      ],
+      [
+        "BE",
+        "Persons: 45 to 54 years ~ In labor force"
+      ],
+      [
+        "BF",
+        "Persons: 45 to 54 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "BG",
+        "Persons: 45 to 54 years ~ In labor force--Civilian"
+      ],
+      [
+        "BH",
+        "Persons: 45 to 54 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "BI",
+        "Persons: 45 to 54 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "BJ",
+        "Persons: 45 to 54 years ~ Not in labor force"
+      ],
+      [
+        "BK",
+        "Persons: 55 to 59 years ~ In labor force"
+      ],
+      [
+        "BL",
+        "Persons: 55 to 59 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "BM",
+        "Persons: 55 to 59 years ~ In labor force--Civilian"
+      ],
+      [
+        "BN",
+        "Persons: 55 to 59 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "BO",
+        "Persons: 55 to 59 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "BP",
+        "Persons: 55 to 59 years ~ Not in labor force"
+      ],
+      [
+        "BQ",
+        "Persons: 60 to 64 years ~ In labor force"
+      ],
+      [
+        "BR",
+        "Persons: 60 to 64 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "BS",
+        "Persons: 60 to 64 years ~ In labor force--Civilian"
+      ],
+      [
+        "BT",
+        "Persons: 60 to 64 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "BU",
+        "Persons: 60 to 64 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "BV",
+        "Persons: 60 to 64 years ~ Not in labor force"
+      ],
+      [
+        "BW",
+        "Persons: 65 years and over ~ In labor force"
+      ],
+      [
+        "BX",
+        "Persons: 65 years and over ~ In labor force--In Armed Forces"
+      ],
+      [
+        "BY",
+        "Persons: 65 years and over ~ In labor force--Civilian"
+      ],
+      [
+        "BZ",
+        "Persons: 65 years and over ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "CA",
+        "Persons: 65 years and over ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "CB",
+        "Persons: 65 years and over ~ Not in labor force"
+      ]
+    ]
+  },
+  "AF9": {
+    "desc": "Persons 16 Years and Over by Age [12] by Labor Force and Employment Status [6]",
+    "standardized": "Nominal",
+    "years": [
+      "1990",
+      "2000",
+      "105",
+      "115",
+      "125",
+      "135",
+      "145",
+      "155",
+      "165",
+      "175",
+      "185",
+      "195",
+      "205",
+      "215",
+      "225",
+      "235",
+      "245"
+    ],
+    "has_tract": false,
+    "geog_levels": [
+      "nation",
+      "region",
+      "division",
+      "state",
+      "county"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: 16 to 19 years ~ In labor force"
+      ],
+      [
+        "AB",
+        "Persons: 16 to 19 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "AC",
+        "Persons: 16 to 19 years ~ In labor force--Civilian"
+      ],
+      [
+        "AD",
+        "Persons: 16 to 19 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "AE",
+        "Persons: 16 to 19 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "AF",
+        "Persons: 16 to 19 years ~ Not in labor force"
+      ],
+      [
+        "AG",
+        "Persons: 20 to 24 years ~ In labor force"
+      ],
+      [
+        "AH",
+        "Persons: 20 to 24 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "AI",
+        "Persons: 20 to 24 years ~ In labor force--Civilian"
+      ],
+      [
+        "AJ",
+        "Persons: 20 to 24 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "AK",
+        "Persons: 20 to 24 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "AL",
+        "Persons: 20 to 24 years ~ Not in labor force"
+      ],
+      [
+        "AM",
+        "Persons: 25 to 29 years ~ In labor force"
+      ],
+      [
+        "AN",
+        "Persons: 25 to 29 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "AO",
+        "Persons: 25 to 29 years ~ In labor force--Civilian"
+      ],
+      [
+        "AP",
+        "Persons: 25 to 29 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "AQ",
+        "Persons: 25 to 29 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "AR",
+        "Persons: 25 to 29 years ~ Not in labor force"
+      ],
+      [
+        "AS",
+        "Persons: 30 to 34 years ~ In labor force"
+      ],
+      [
+        "AT",
+        "Persons: 30 to 34 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "AU",
+        "Persons: 30 to 34 years ~ In labor force--Civilian"
+      ],
+      [
+        "AV",
+        "Persons: 30 to 34 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "AW",
+        "Persons: 30 to 34 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "AX",
+        "Persons: 30 to 34 years ~ Not in labor force"
+      ],
+      [
+        "AY",
+        "Persons: 35 to 44 years ~ In labor force"
+      ],
+      [
+        "AZ",
+        "Persons: 35 to 44 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "BA",
+        "Persons: 35 to 44 years ~ In labor force--Civilian"
+      ],
+      [
+        "BB",
+        "Persons: 35 to 44 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "BC",
+        "Persons: 35 to 44 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "BD",
+        "Persons: 35 to 44 years ~ Not in labor force"
+      ],
+      [
+        "BE",
+        "Persons: 45 to 54 years ~ In labor force"
+      ],
+      [
+        "BF",
+        "Persons: 45 to 54 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "BG",
+        "Persons: 45 to 54 years ~ In labor force--Civilian"
+      ],
+      [
+        "BH",
+        "Persons: 45 to 54 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "BI",
+        "Persons: 45 to 54 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "BJ",
+        "Persons: 45 to 54 years ~ Not in labor force"
+      ],
+      [
+        "BK",
+        "Persons: 55 to 59 years ~ In labor force"
+      ],
+      [
+        "BL",
+        "Persons: 55 to 59 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "BM",
+        "Persons: 55 to 59 years ~ In labor force--Civilian"
+      ],
+      [
+        "BN",
+        "Persons: 55 to 59 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "BO",
+        "Persons: 55 to 59 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "BP",
+        "Persons: 55 to 59 years ~ Not in labor force"
+      ],
+      [
+        "BQ",
+        "Persons: 60 and 61 years ~ In labor force"
+      ],
+      [
+        "BR",
+        "Persons: 60 and 61 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "BS",
+        "Persons: 60 and 61 years ~ In labor force--Civilian"
+      ],
+      [
+        "BT",
+        "Persons: 60 and 61 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "BU",
+        "Persons: 60 and 61 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "BV",
+        "Persons: 60 and 61 years ~ Not in labor force"
+      ],
+      [
+        "BW",
+        "Persons: 62 to 64 years ~ In labor force"
+      ],
+      [
+        "BX",
+        "Persons: 62 to 64 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "BY",
+        "Persons: 62 to 64 years ~ In labor force--Civilian"
+      ],
+      [
+        "BZ",
+        "Persons: 62 to 64 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "CA",
+        "Persons: 62 to 64 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "CB",
+        "Persons: 62 to 64 years ~ Not in labor force"
+      ],
+      [
+        "CC",
+        "Persons: 65 to 69 years ~ In labor force"
+      ],
+      [
+        "CD",
+        "Persons: 65 to 69 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "CE",
+        "Persons: 65 to 69 years ~ In labor force--Civilian"
+      ],
+      [
+        "CF",
+        "Persons: 65 to 69 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "CG",
+        "Persons: 65 to 69 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "CH",
+        "Persons: 65 to 69 years ~ Not in labor force"
+      ],
+      [
+        "CI",
+        "Persons: 70 to 74 years ~ In labor force"
+      ],
+      [
+        "CJ",
+        "Persons: 70 to 74 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "CK",
+        "Persons: 70 to 74 years ~ In labor force--Civilian"
+      ],
+      [
+        "CL",
+        "Persons: 70 to 74 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "CM",
+        "Persons: 70 to 74 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "CN",
+        "Persons: 70 to 74 years ~ Not in labor force"
+      ],
+      [
+        "CO",
+        "Persons: 75 years and over ~ In labor force"
+      ],
+      [
+        "CP",
+        "Persons: 75 years and over ~ In labor force--In Armed Forces"
+      ],
+      [
+        "CQ",
+        "Persons: 75 years and over ~ In labor force--Civilian"
+      ],
+      [
+        "CR",
+        "Persons: 75 years and over ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "CS",
+        "Persons: 75 years and over ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "CT",
+        "Persons: 75 years and over ~ Not in labor force"
+      ]
+    ]
+  },
+  "BT7": {
+    "desc": "Persons 16 Years and Over by Age [13] by Labor Force and Employment Status [6]",
+    "standardized": "Nominal",
+    "years": [
+      "2000",
+      "105",
+      "115",
+      "125",
+      "135",
+      "145",
+      "155",
+      "165",
+      "175",
+      "185",
+      "195",
+      "205",
+      "215",
+      "225",
+      "235",
+      "245"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "nation",
+      "region",
+      "division",
+      "state",
+      "county",
+      "tract",
+      "cty_sub",
+      "place"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: 16 to 19 years ~ In labor force"
+      ],
+      [
+        "AB",
+        "Persons: 16 to 19 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "AC",
+        "Persons: 16 to 19 years ~ In labor force--Civilian"
+      ],
+      [
+        "AD",
+        "Persons: 16 to 19 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "AE",
+        "Persons: 16 to 19 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "AF",
+        "Persons: 16 to 19 years ~ Not in labor force"
+      ],
+      [
+        "AG",
+        "Persons: 20 to 21 years ~ In labor force"
+      ],
+      [
+        "AH",
+        "Persons: 20 to 21 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "AI",
+        "Persons: 20 to 21 years ~ In labor force--Civilian"
+      ],
+      [
+        "AJ",
+        "Persons: 20 to 21 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "AK",
+        "Persons: 20 to 21 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "AL",
+        "Persons: 20 to 21 years ~ Not in labor force"
+      ],
+      [
+        "AM",
+        "Persons: 22 to 24 years ~ In labor force"
+      ],
+      [
+        "AN",
+        "Persons: 22 to 24 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "AO",
+        "Persons: 22 to 24 years ~ In labor force--Civilian"
+      ],
+      [
+        "AP",
+        "Persons: 22 to 24 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "AQ",
+        "Persons: 22 to 24 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "AR",
+        "Persons: 22 to 24 years ~ Not in labor force"
+      ],
+      [
+        "AS",
+        "Persons: 25 to 29 years ~ In labor force"
+      ],
+      [
+        "AT",
+        "Persons: 25 to 29 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "AU",
+        "Persons: 25 to 29 years ~ In labor force--Civilian"
+      ],
+      [
+        "AV",
+        "Persons: 25 to 29 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "AW",
+        "Persons: 25 to 29 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "AX",
+        "Persons: 25 to 29 years ~ Not in labor force"
+      ],
+      [
+        "AY",
+        "Persons: 30 to 34 years ~ In labor force"
+      ],
+      [
+        "AZ",
+        "Persons: 30 to 34 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "BA",
+        "Persons: 30 to 34 years ~ In labor force--Civilian"
+      ],
+      [
+        "BB",
+        "Persons: 30 to 34 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "BC",
+        "Persons: 30 to 34 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "BD",
+        "Persons: 30 to 34 years ~ Not in labor force"
+      ],
+      [
+        "BE",
+        "Persons: 35 to 44 years ~ In labor force"
+      ],
+      [
+        "BF",
+        "Persons: 35 to 44 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "BG",
+        "Persons: 35 to 44 years ~ In labor force--Civilian"
+      ],
+      [
+        "BH",
+        "Persons: 35 to 44 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "BI",
+        "Persons: 35 to 44 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "BJ",
+        "Persons: 35 to 44 years ~ Not in labor force"
+      ],
+      [
+        "BK",
+        "Persons: 45 to 54 years ~ In labor force"
+      ],
+      [
+        "BL",
+        "Persons: 45 to 54 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "BM",
+        "Persons: 45 to 54 years ~ In labor force--Civilian"
+      ],
+      [
+        "BN",
+        "Persons: 45 to 54 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "BO",
+        "Persons: 45 to 54 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "BP",
+        "Persons: 45 to 54 years ~ Not in labor force"
+      ],
+      [
+        "BQ",
+        "Persons: 55 to 59 years ~ In labor force"
+      ],
+      [
+        "BR",
+        "Persons: 55 to 59 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "BS",
+        "Persons: 55 to 59 years ~ In labor force--Civilian"
+      ],
+      [
+        "BT",
+        "Persons: 55 to 59 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "BU",
+        "Persons: 55 to 59 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "BV",
+        "Persons: 55 to 59 years ~ Not in labor force"
+      ],
+      [
+        "BW",
+        "Persons: 60 and 61 years ~ In labor force"
+      ],
+      [
+        "BX",
+        "Persons: 60 and 61 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "BY",
+        "Persons: 60 and 61 years ~ In labor force--Civilian"
+      ],
+      [
+        "BZ",
+        "Persons: 60 and 61 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "CA",
+        "Persons: 60 and 61 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "CB",
+        "Persons: 60 and 61 years ~ Not in labor force"
+      ],
+      [
+        "CC",
+        "Persons: 62 to 64 years ~ In labor force"
+      ],
+      [
+        "CD",
+        "Persons: 62 to 64 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "CE",
+        "Persons: 62 to 64 years ~ In labor force--Civilian"
+      ],
+      [
+        "CF",
+        "Persons: 62 to 64 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "CG",
+        "Persons: 62 to 64 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "CH",
+        "Persons: 62 to 64 years ~ Not in labor force"
+      ],
+      [
+        "CI",
+        "Persons: 65 to 69 years ~ In labor force"
+      ],
+      [
+        "CJ",
+        "Persons: 65 to 69 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "CK",
+        "Persons: 65 to 69 years ~ In labor force--Civilian"
+      ],
+      [
+        "CL",
+        "Persons: 65 to 69 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "CM",
+        "Persons: 65 to 69 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "CN",
+        "Persons: 65 to 69 years ~ Not in labor force"
+      ],
+      [
+        "CO",
+        "Persons: 70 to 74 years ~ In labor force"
+      ],
+      [
+        "CP",
+        "Persons: 70 to 74 years ~ In labor force--In Armed Forces"
+      ],
+      [
+        "CQ",
+        "Persons: 70 to 74 years ~ In labor force--Civilian"
+      ],
+      [
+        "CR",
+        "Persons: 70 to 74 years ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "CS",
+        "Persons: 70 to 74 years ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "CT",
+        "Persons: 70 to 74 years ~ Not in labor force"
+      ],
+      [
+        "CU",
+        "Persons: 75 years and over ~ In labor force"
+      ],
+      [
+        "CV",
+        "Persons: 75 years and over ~ In labor force--In Armed Forces"
+      ],
+      [
+        "CW",
+        "Persons: 75 years and over ~ In labor force--Civilian"
+      ],
+      [
+        "CX",
+        "Persons: 75 years and over ~ In labor force--Civilian--Employed"
+      ],
+      [
+        "CY",
+        "Persons: 75 years and over ~ In labor force--Civilian--Unemployed"
+      ],
+      [
+        "CZ",
+        "Persons: 75 years and over ~ Not in labor force"
+      ]
+    ]
+  },
+  "C54": {
+    "desc": "Workers of Working Age* by Means of Transportation to Work [9]",
+    "standardized": "Nominal",
+    "years": [
+      "1970",
+      "1980",
+      "1990",
+      "2000",
+      "105",
+      "115",
+      "125",
+      "135",
+      "145",
+      "155",
+      "165",
+      "175",
+      "185",
+      "195",
+      "205",
+      "215",
+      "225",
+      "235",
+      "245"
+    ],
+    "has_tract": false,
+    "geog_levels": [
+      "state",
+      "county",
+      "cty_sub",
+      "place"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Worker ~ Of working age* ~ Private auto (1970) or car, truck, or van (since 1980)"
+      ],
+      [
+        "AB",
+        "Persons: Worker ~ Of working age* ~ Public transportation (excluding ferryboat)"
+      ],
+      [
+        "AC",
+        "Persons: Worker ~ Of working age* ~ Public transportation (excluding ferryboat)--Bus, streetcar, or (since 2019) light rail"
+      ],
+      [
+        "AD",
+        "Persons: Worker ~ Of working age* ~ Public transportation (excluding ferryboat)--Subway or elevated rail"
+      ],
+      [
+        "AE",
+        "Persons: Worker ~ Of working age* ~ Public transportation (excluding ferryboat)--Railroad (until 2018) or long-distance train or commuter rail (since 2019)"
+      ],
+      [
+        "AF",
+        "Persons: Worker ~ Of working age* ~ Taxi or (since 2024) ride-hailing services"
+      ],
+      [
+        "AG",
+        "Persons: Worker ~ Of working age* ~ Walked"
+      ],
+      [
+        "AH",
+        "Persons: Worker ~ Of working age* ~ Other means (including ferryboat, motorcycle, and bicycle)"
+      ],
+      [
+        "AI",
+        "Persons: Worker ~ Of working age* ~ Worked from home"
+      ]
+    ]
+  },
+  "BV6": {
+    "desc": "Persons* by Poverty Status in Previous Year [2] by Age [4]",
+    "standardized": "Nominal",
+    "years": [
+      "1980",
+      "1990"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "nation",
+      "region",
+      "division",
+      "state",
+      "county",
+      "tract",
+      "cty_sub",
+      "place"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ Under 55 years"
+      ],
+      [
+        "AB",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 55 to 59 years"
+      ],
+      [
+        "AC",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 60 to 64 years"
+      ],
+      [
+        "AD",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 65 years and over"
+      ],
+      [
+        "AE",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ Under 55 years"
+      ],
+      [
+        "AF",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 55 to 59 years"
+      ],
+      [
+        "AG",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 60 to 64 years"
+      ],
+      [
+        "AH",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 65 years and over"
+      ]
+    ]
+  },
+  "BV3": {
+    "desc": "Persons* by Poverty Status in Previous Year [2] by Age [5]",
+    "standardized": "Nominal",
+    "years": [
+      "1980",
+      "1990",
+      "2000",
+      "105",
+      "115",
+      "125",
+      "135",
+      "145",
+      "155",
+      "165",
+      "175",
+      "185",
+      "195",
+      "205",
+      "215",
+      "225",
+      "235",
+      "245"
+    ],
+    "has_tract": false,
+    "geog_levels": [
+      "state",
+      "county",
+      "cty_sub",
+      "place"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ Under 18 years"
+      ],
+      [
+        "AB",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 18 to 54 years"
+      ],
+      [
+        "AC",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 55 to 64 years"
+      ],
+      [
+        "AD",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 65 to 74 years"
+      ],
+      [
+        "AE",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 75 years and over"
+      ],
+      [
+        "AF",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ Under 18 years"
+      ],
+      [
+        "AG",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 18 to 54 years"
+      ],
+      [
+        "AH",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 55 to 64 years"
+      ],
+      [
+        "AI",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 65 to 74 years"
+      ],
+      [
+        "AJ",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 75 years and over"
+      ]
+    ]
+  },
+  "BV5": {
+    "desc": "Persons* by Poverty Status in Previous Year [2] by Age [6]",
+    "standardized": "Nominal",
+    "years": [
+      "1980",
+      "2000",
+      "105",
+      "115",
+      "125",
+      "135",
+      "145",
+      "155",
+      "165",
+      "175",
+      "185",
+      "195",
+      "205",
+      "215",
+      "225",
+      "235",
+      "245"
+    ],
+    "has_tract": false,
+    "geog_levels": [
+      "state",
+      "county",
+      "cty_sub",
+      "place"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ Under 16 years"
+      ],
+      [
+        "AB",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 16 and 17 years"
+      ],
+      [
+        "AC",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 18 to 54 years"
+      ],
+      [
+        "AD",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 55 to 64 years"
+      ],
+      [
+        "AE",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 65 to 74 years"
+      ],
+      [
+        "AF",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 75 years and over"
+      ],
+      [
+        "AG",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ Under 16 years"
+      ],
+      [
+        "AH",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 16 and 17 years"
+      ],
+      [
+        "AI",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 18 to 54 years"
+      ],
+      [
+        "AJ",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 55 to 64 years"
+      ],
+      [
+        "AK",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 65 to 74 years"
+      ],
+      [
+        "AL",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 75 years and over"
+      ]
+    ]
+  },
+  "BV7": {
+    "desc": "Persons* by Poverty Status in Previous Year [2] by Age [11]",
+    "standardized": "Nominal",
+    "years": [
+      "1990",
+      "2000",
+      "105",
+      "115",
+      "125",
+      "135",
+      "145",
+      "155",
+      "165",
+      "175",
+      "185",
+      "195",
+      "205",
+      "215",
+      "225",
+      "235",
+      "245"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "nation",
+      "region",
+      "division",
+      "state",
+      "county",
+      "tract",
+      "cty_sub",
+      "place"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ Under 5 years"
+      ],
+      [
+        "AB",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 5 years"
+      ],
+      [
+        "AC",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 6 to 11 years"
+      ],
+      [
+        "AD",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 12 to 17 years"
+      ],
+      [
+        "AE",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 18 to 24 years"
+      ],
+      [
+        "AF",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 25 to 34 years"
+      ],
+      [
+        "AG",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 35 to 44 years"
+      ],
+      [
+        "AH",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 45 to 54 years"
+      ],
+      [
+        "AI",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 55 to 64 years"
+      ],
+      [
+        "AJ",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 65 to 74 years"
+      ],
+      [
+        "AK",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 75 years and over"
+      ],
+      [
+        "AL",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ Under 5 years"
+      ],
+      [
+        "AM",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 5 years"
+      ],
+      [
+        "AN",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 6 to 11 years"
+      ],
+      [
+        "AO",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 12 to 17 years"
+      ],
+      [
+        "AP",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 18 to 24 years"
+      ],
+      [
+        "AQ",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 25 to 34 years"
+      ],
+      [
+        "AR",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 35 to 44 years"
+      ],
+      [
+        "AS",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 45 to 54 years"
+      ],
+      [
+        "AT",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 55 to 64 years"
+      ],
+      [
+        "AU",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 65 to 74 years"
+      ],
+      [
+        "AV",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 75 years and over"
+      ]
+    ]
+  },
+  "BV4": {
+    "desc": "Persons* by Poverty Status in Previous Year [2] by Age [13]",
+    "standardized": "Nominal",
+    "years": [
+      "2000",
+      "105",
+      "115",
+      "125",
+      "135",
+      "145",
+      "155",
+      "165",
+      "175",
+      "185",
+      "195",
+      "205",
+      "215",
+      "225",
+      "235",
+      "245"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "nation",
+      "region",
+      "division",
+      "state",
+      "county",
+      "tract",
+      "cty_sub",
+      "place"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ Under 5 years"
+      ],
+      [
+        "AB",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 5 years"
+      ],
+      [
+        "AC",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 6 to 11 years"
+      ],
+      [
+        "AD",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 12 to 14 years"
+      ],
+      [
+        "AE",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 15 years"
+      ],
+      [
+        "AF",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 16 and 17 years"
+      ],
+      [
+        "AG",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 18 to 24 years"
+      ],
+      [
+        "AH",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 25 to 34 years"
+      ],
+      [
+        "AI",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 35 to 44 years"
+      ],
+      [
+        "AJ",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 45 to 54 years"
+      ],
+      [
+        "AK",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 55 to 64 years"
+      ],
+      [
+        "AL",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 65 to 74 years"
+      ],
+      [
+        "AM",
+        "Persons: Poverty status is determined ~ Income below poverty level ~ 75 years and over"
+      ],
+      [
+        "AN",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ Under 5 years"
+      ],
+      [
+        "AO",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 5 years"
+      ],
+      [
+        "AP",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 6 to 11 years"
+      ],
+      [
+        "AQ",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 12 to 14 years"
+      ],
+      [
+        "AR",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 15 years"
+      ],
+      [
+        "AS",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 16 and 17 years"
+      ],
+      [
+        "AT",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 18 to 24 years"
+      ],
+      [
+        "AU",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 25 to 34 years"
+      ],
+      [
+        "AV",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 35 to 44 years"
+      ],
+      [
+        "AW",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 45 to 54 years"
+      ],
+      [
+        "AX",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 55 to 64 years"
+      ],
+      [
+        "AY",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 65 to 74 years"
+      ],
+      [
+        "AZ",
+        "Persons: Poverty status is determined ~ Income at or above poverty level ~ 75 years and over"
+      ]
+    ]
+  },
+  "B80": {
+    "desc": "Occupied Housing Units by Tenure and Mortgage Status [3]",
+    "standardized": "Nominal",
+    "years": [
+      "1990",
+      "2000",
+      "2010",
+      "105",
+      "115",
+      "125",
+      "135",
+      "145",
+      "155",
+      "165",
+      "175",
+      "185",
+      "195",
+      "2020",
+      "205",
+      "215",
+      "225",
+      "235",
+      "245"
+    ],
+    "has_tract": true,
+    "geog_levels": [
+      "nation",
+      "region",
+      "division",
+      "state",
+      "county",
+      "tract",
+      "cty_sub",
+      "place"
+    ],
+    "time_series": [
+      [
+        "AA",
+        "Housing units: Owner occupied--With a mortgage, contract to purchase, or similar debt"
+      ],
+      [
+        "AB",
+        "Housing units: Owner occupied--Without a mortgage"
+      ],
+      [
+        "AC",
+        "Housing units: Renter occupied"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>U.S. under-18 population by fixed-geography classification, 1950–2020</title>
+<style>
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracle-Thin.otf') format('opentype'); font-weight:200; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracle-Light.otf') format('opentype'); font-weight:300; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracle-Regular.otf') format('opentype'); font-weight:400; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracle-Medium.otf') format('opentype'); font-weight:500; }
+body { margin:0; background:#fff; font-family:'ABC Oracle Edu',sans-serif; }
+svg { display:block; margin:20px auto; }
+</style></head><body>
+<svg id="chart" viewBox="0 0 960 987" xmlns="http://www.w3.org/2000/svg"></svg>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const P = {"years": [1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020], "series": [{"id": "A_city_core", "name": "City core (1950 SMA central county)", "color": "#F4743B", "values": [19.65, 29.32, 31.79, 27.0, 26.92, 29.7, 29.71, 29.05]}, {"id": "B_original_suburb", "name": "Original suburb (1950 SMA outlying county)", "color": "#0BB4FF", "values": [4.28, 8.09, 10.07, 8.74, 8.39, 9.83, 9.94, 9.59]}, {"id": "C_newly_added_msa", "name": "Added to MSA after 1950", "color": "#FEC439", "values": [9.72, 13.15, 15.06, 15.97, 17.2, 21.43, 24.63, 25.0]}, {"id": "D_persistent_nonmetro", "name": "Never in an MSA", "color": "#67A275", "values": [12.92, 13.64, 12.74, 12.05, 11.09, 11.33, 10.8, 10.02]}], "mode": "level", "title": "U.S. under-18 population by fixed-geography classification, 1950\u20132020", "subtitle": "Every U.S. county is classified once by its 1950 SMA status and current MSA status, then held fixed across decades. This separates real population shifts from MSA-boundary expansions: the yellow line is entirely the latter."};
+const BG='#F6F7F3', TEXT='#3D3733', SUBTEXT='#7F7570', GRID='#e1e2e3';
+const W=960, H=987, PAD=40;
+const svg = d3.select('#chart');
+svg.append('rect').attr('width',W).attr('height',H).attr('fill',BG);
+
+svg.append('text').attr('x',PAD).attr('y',PAD+32)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',28).attr('font-weight',500).attr('fill',TEXT)
+  .text(P.title);
+
+const subLines = [];
+{
+  const words = P.subtitle.split(/\s+/);
+  let line = '';
+  const maxChars = 95;
+  for (const w of words) {
+    if ((line + ' ' + w).length > maxChars) { subLines.push(line.trim()); line = w; }
+    else { line += ' ' + w; }
+  }
+  if (line.trim()) subLines.push(line.trim());
+}
+const subT = svg.append('text').attr('x',PAD).attr('y',PAD+32+34)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',19).attr('font-weight',400).attr('fill',SUBTEXT);
+subLines.forEach((l,i) => subT.append('tspan').attr('x',PAD).attr('dy', i===0 ? 0 : 24).text(l));
+
+const chartTop = PAD + 32 + 34 + 24*subLines.length + 60;
+const chartBottom = H - PAD - 180;
+const chartLeft = PAD + 80;
+const chartRight = W - PAD - 245;
+
+const xs = P.years;
+const x = d3.scaleLinear().domain(d3.extent(xs)).range([chartLeft, chartRight]);
+const flat = P.series.flatMap(s => s.values.filter(v => v !== null));
+const ymax = d3.max(flat) * 1.08;
+const y = d3.scaleLinear().domain([0, ymax]).range([chartBottom, chartTop]);
+
+const yTicks = y.ticks(7);
+const gridG = svg.append('g').attr('id','grid');
+yTicks.forEach(t => {
+  gridG.append('line').attr('x1',chartLeft).attr('x2',chartRight)
+    .attr('y1',y(t)).attr('y2',y(t)).attr('stroke',GRID).attr('stroke-width',0.5);
+});
+const yLabG = svg.append('g').attr('id','y-labels');
+yTicks.forEach((t,i) => {
+  const isTop = (i === yTicks.length - 1);
+  let lbl = (P.mode === 'indexed') ? String(Math.round(t)) : String(t.toFixed(0));
+  if (isTop && P.mode !== 'indexed') lbl = lbl + 'M';
+  yLabG.append('text').attr('x',chartLeft-8).attr('y',y(t)).attr('text-anchor','end').attr('dy','0.32em')
+    .attr('font-family','ABC Oracle Edu').attr('font-size',16).attr('font-weight',300).attr('fill','#333')
+    .text(lbl);
+});
+
+const xTickG = svg.append('g').attr('id','x-ticks');
+const xLabG  = svg.append('g').attr('id','x-labels');
+xs.forEach(yr => {
+  xTickG.append('line').attr('x1',x(yr)).attr('x2',x(yr))
+    .attr('y1',chartBottom).attr('y2',chartBottom+10).attr('stroke',TEXT).attr('stroke-width',0.5);
+  let lbl = String(yr);
+  if (yr !== 1950 && yr !== 2000 && yr !== 2020) lbl = String(yr).slice(2);
+  xLabG.append('text').attr('x',x(yr)).attr('y',chartBottom+30).attr('text-anchor','middle')
+    .attr('font-family','ABC Oracle Edu').attr('font-size',16).attr('font-weight',300).attr('fill','#333')
+    .text(lbl);
+});
+
+const lineFn = d3.line().defined(v => v !== null).x((_,i)=>x(xs[i])).y(v=>y(v));
+const linesG = svg.append('g').attr('id','lines');
+P.series.forEach(s => {
+  linesG.append('path').attr('d',lineFn(s.values))
+    .attr('fill','none').attr('stroke',s.color).attr('stroke-width',2.5)
+    .attr('style','mix-blend-mode: multiply');
+  // Endpoint dots
+  xs.forEach((yr, i) => {
+    if (s.values[i] !== null)
+      linesG.append('circle').attr('cx', x(yr)).attr('cy', y(s.values[i]))
+        .attr('r', 3.5).attr('fill', s.color);
+  });
+});
+
+// Right-side labels — multi-line for long names, collision-avoided
+function wrapLabel(name, maxChars) {
+  const words = name.split(' ');
+  const lines = [];
+  let cur = '';
+  for (const w of words) {
+    if ((cur + ' ' + w).length > maxChars) { lines.push(cur.trim()); cur = w; }
+    else { cur += ' ' + w; }
+  }
+  if (cur.trim()) lines.push(cur.trim());
+  return lines;
+}
+
+const lastIdx = xs.length - 1;
+const labels = P.series.map(s => {
+  const lines = wrapLabel(s.name, 22);
+  let lv = s.values[lastIdx];
+  // if last value null, find last non-null
+  if (lv === null) {
+    for (let i = lastIdx; i >= 0; i--) { if (s.values[i] !== null) { lv = s.values[i]; break; } }
+  }
+  return { color: s.color, y: y(lv), v: lv, lines };
+});
+labels.sort((a,b) => a.y - b.y);
+// Space lines: each label needs lines.length * 16 + 6 padding
+for (let i = 1; i < labels.length; i++) {
+  const minGap = (labels[i-1].lines.length * 16) + 10;
+  if (labels[i].y - labels[i-1].y < minGap) labels[i].y = labels[i-1].y + minGap;
+}
+const labG = svg.append('g').attr('id','labels');
+labels.forEach(d => {
+  d.lines.forEach((line, i) => {
+    labG.append('text').attr('x',chartRight+12).attr('y', d.y + i*16).attr('dy','0.32em')
+      .attr('font-family','ABC Oracle Edu').attr('font-size',14).attr('font-weight',500).attr('fill',d.color)
+      .text(line);
+  });
+});
+
+// Source note
+const srcLines = [
+  'Sources: County under-18 from NHGIS decennial census tabulations 1950-2020 (Manson, Schroeder, Van Riper et al.).',
+  '1950 SMA county membership and central-county designation from Census Bureau report P-23-23 (1967). Modern',
+  'MSA membership from OMB Bulletin 23-01 (2023 CBSA delineation). Each county is classified ONCE by its 1950 SMA',
+  'and current MSA status, then held fixed across decades. "Original suburb" = outlying county of a 1950 SMA;',
+  '"Added to MSA after 1950" = county not in any 1950 SMA but in a 2023 MSA — the part of "suburban growth" that',
+  'is reclassification rather than migration.',
+];
+const srcG = svg.append('g').attr('id','source');
+const srcStart = H - PAD - 15 - (srcLines.length - 1) * 16;
+const srcT = srcG.append('text').attr('font-family','ABC Oracle Edu').attr('font-size',13)
+  .attr('font-weight',200).attr('fill',TEXT);
+srcLines.forEach((l,i) => srcT.append('tspan').attr('x',PAD).attr('y', srcStart + i*16).text(l));
+</script>
+</body></html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>NYC vs suburbs: under-18 population, 1980-2024</title>
+<style>
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracle-Light.otf') format('opentype'); font-weight:300; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracle-Regular.otf') format('opentype'); font-weight:400; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracle-Medium.otf') format('opentype'); font-weight:500; }
+body { margin:0; padding:32px; background:#F6F7F3; font-family:'ABC Oracle Edu',sans-serif; color:#3D3733; }
+h1 { font-size:28px; font-weight:500; margin:0 0 6px; }
+.sub { color:#7F7570; font-size:15px; margin-bottom:20px; max-width:1000px; line-height:1.5; }
+.chartwrap { background:#fff; border:0.5px solid #e1e2e3; padding:22px 26px; max-width:1000px; }
+.source { color:#7F7570; font-size:12px; max-width:1000px; margin-top:16px; line-height:1.5; }
+</style></head>
+<body>
+<h1>Under-18 population: NYC proper vs surrounding suburbs, 1980–2024</h1>
+<div class="sub">Annual July-1 estimates summed across two groups within the NY-Newark-Jersey City MSA (CBSA 35620): <span style="color:#0BB4FF;font-weight:500">NYC proper</span> = 5 boroughs (Bronx, Brooklyn, Manhattan, Queens, Staten Island); <span style="color:#3D3733;font-weight:500">Suburbs</span> = the other 17 MSA counties (Long Island + Westchester/Hudson Valley + 12 northern NJ counties). Same stitched PEP+NHGIS series as the per-county chart.</div>
+
+<div class="chartwrap">
+  <svg id="chart" viewBox="0 0 940 540" width="100%" preserveAspectRatio="xMidYMid meet"></svg>
+</div>
+
+<div class="source">
+Source: Stitched U.S. Census Bureau PEP — pe-02 intercensal 1980-1989 + cany/canj postcensal 1990-1999 (drift-corrected) + co-est00int 2000-2010 + cc-est2020int 2010-2020 + V2024 2020-2024 (scaled). Per-county correction factors linearly interpolated within each decade so each county series passes exactly through NHGIS Decennial Census anchors at 1980, 1990, 2000, 2010.
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const P = {"nyc": [{"y": 1980, "v": 1765467}, {"y": 1981, "v": 1733732}, {"y": 1982, "v": 1712552}, {"y": 1983, "v": 1712220}, {"y": 1984, "v": 1704769}, {"y": 1985, "v": 1697598}, {"y": 1986, "v": 1687790}, {"y": 1987, "v": 1689762}, {"y": 1988, "v": 1696421}, {"y": 1989, "v": 1706721}, {"y": 1990, "v": 1686718}, {"y": 1991, "v": 1724264}, {"y": 1992, "v": 1765026}, {"y": 1993, "v": 1803228}, {"y": 1994, "v": 1838888}, {"y": 1995, "v": 1868230}, {"y": 1996, "v": 1886786}, {"y": 1997, "v": 1902586}, {"y": 1998, "v": 1907445}, {"y": 1999, "v": 1914913}, {"y": 2000, "v": 1934133}, {"y": 2001, "v": 1915640}, {"y": 2002, "v": 1904176}, {"y": 2003, "v": 1879572}, {"y": 2004, "v": 1846245}, {"y": 2005, "v": 1807731}, {"y": 2006, "v": 1775702}, {"y": 2007, "v": 1753765}, {"y": 2008, "v": 1751624}, {"y": 2009, "v": 1760313}, {"y": 2010, "v": 1771005}, {"y": 2011, "v": 1783975}, {"y": 2012, "v": 1791405}, {"y": 2013, "v": 1796162}, {"y": 2014, "v": 1798704}, {"y": 2015, "v": 1804328}, {"y": 2016, "v": 1802620}, {"y": 2017, "v": 1790460}, {"y": 2018, "v": 1774792}, {"y": 2019, "v": 1755691}, {"y": 2020, "v": 1728623}, {"y": 2021, "v": 1655402}, {"y": 2022, "v": 1605446}, {"y": 2023, "v": 1580814}, {"y": 2024, "v": 1579314}], "suburbs": [{"y": 1980, "v": 2520742}, {"y": 1981, "v": 2446941}, {"y": 1982, "v": 2383040}, {"y": 1983, "v": 2341289}, {"y": 1984, "v": 2300007}, {"y": 1985, "v": 2259682}, {"y": 1986, "v": 2220423}, {"y": 1987, "v": 2204243}, {"y": 1988, "v": 2200063}, {"y": 1989, "v": 2199120}, {"y": 1990, "v": 2173583}, {"y": 1991, "v": 2221377}, {"y": 1992, "v": 2279459}, {"y": 1993, "v": 2333262}, {"y": 1994, "v": 2386146}, {"y": 1995, "v": 2428777}, {"y": 1996, "v": 2459362}, {"y": 1997, "v": 2481531}, {"y": 1998, "v": 2499977}, {"y": 1999, "v": 2523143}, {"y": 2000, "v": 2559723}, {"y": 2001, "v": 2583693}, {"y": 2002, "v": 2601739}, {"y": 2003, "v": 2604350}, {"y": 2004, "v": 2597306}, {"y": 2005, "v": 2575489}, {"y": 2006, "v": 2547501}, {"y": 2007, "v": 2523888}, {"y": 2008, "v": 2517889}, {"y": 2009, "v": 2521783}, {"y": 2010, "v": 2528551}, {"y": 2011, "v": 2520176}, {"y": 2012, "v": 2505461}, {"y": 2013, "v": 2493560}, {"y": 2014, "v": 2484226}, {"y": 2015, "v": 2475311}, {"y": 2016, "v": 2467975}, {"y": 2017, "v": 2464960}, {"y": 2018, "v": 2459165}, {"y": 2019, "v": 2453667}, {"y": 2020, "v": 2443756}, {"y": 2021, "v": 2417418}, {"y": 2022, "v": 2405970}, {"y": 2023, "v": 2408419}, {"y": 2024, "v": 2418805}], "year_min": 1980, "year_max": 2024};
+const svg = d3.select('#chart');
+const W = 940, H = 540, M = {t:24, r:160, b:38, l:60};
+const iw = W - M.l - M.r;
+const ih = H - M.t - M.b;
+
+const x = d3.scaleLinear().domain([P.year_min, P.year_max]).range([M.l, M.l + iw]);
+
+const all = P.nyc.concat(P.suburbs);
+const ymin = d3.min(all, d => d.v);
+const ymax = d3.max(all, d => d.v);
+const pad = (ymax - ymin) * 0.08;
+const y = d3.scaleLinear().domain([Math.max(0, ymin - pad), ymax + pad]).range([M.t + ih, M.t]);
+
+// Y gridlines + labels (round step)
+const span = (ymax + pad) - Math.max(0, ymin - pad);
+const step = span > 2000000 ? 500000 : span > 1000000 ? 250000 : span > 500000 ? 200000 : 100000;
+const yTicks = [];
+for (let v = Math.ceil(y.domain()[0] / step) * step; v <= y.domain()[1]; v += step) yTicks.push(v);
+svg.append('g').selectAll('line').data(yTicks).join('line')
+  .attr('x1', M.l).attr('x2', M.l + iw)
+  .attr('y1', d => y(d)).attr('y2', d => y(d))
+  .attr('stroke', '#EEEEE6').attr('stroke-width', 0.5);
+svg.append('g').selectAll('text').data(yTicks).join('text')
+  .attr('x', M.l - 8).attr('y', d => y(d) + 4)
+  .attr('text-anchor', 'end')
+  .style('font-size', '11.5px').style('fill', '#9D958F')
+  .text(d => (d / 1e6).toFixed(d < 1e6 ? 2 : 1) + 'M');
+
+// X ticks
+const xTicks = [1980, 1985, 1990, 1995, 2000, 2005, 2010, 2015, 2020, 2024];
+svg.append('g').selectAll('text').data(xTicks).join('text')
+  .attr('x', d => x(d)).attr('y', M.t + ih + 18)
+  .attr('text-anchor', d => d === P.year_min ? 'start' : (d === P.year_max ? 'end' : 'middle'))
+  .style('font-size', '11.5px').style('fill', '#9D958F')
+  .text(d => "'" + String(d).slice(2));
+
+const line = d3.line().x(d => x(d.y)).y(d => y(d.v)).curve(d3.curveMonotoneX);
+
+const SERIES = [
+  {key: 'suburbs', label: 'Suburbs (17 counties)', color: '#3D3733', data: P.suburbs},
+  {key: 'nyc',     label: 'NYC proper (5 boroughs)', color: '#0BB4FF', data: P.nyc},
+];
+
+SERIES.forEach(s => {
+  svg.append('path').datum(s.data)
+    .attr('fill', 'none').attr('stroke', s.color).attr('stroke-width', 2.2)
+    .attr('d', line);
+
+  // Endpoint dots
+  const first = s.data[0], last = s.data[s.data.length - 1];
+  svg.append('circle').attr('cx', x(first.y)).attr('cy', y(first.v)).attr('r', 3.2).attr('fill', s.color);
+  svg.append('circle').attr('cx', x(last.y)).attr('cy', y(last.v)).attr('r', 3.6).attr('fill', s.color);
+
+  // End-of-line label
+  const pct = (last.v / first.v - 1) * 100;
+  const sign = pct >= 0 ? '+' : '';
+  svg.append('text')
+    .attr('x', x(last.y) + 8).attr('y', y(last.v) - 6)
+    .style('font-size', '13.5px').style('font-weight', '500').style('fill', s.color)
+    .text(s.label);
+  svg.append('text')
+    .attr('x', x(last.y) + 8).attr('y', y(last.v) + 10)
+    .style('font-size', '12px').style('fill', '#7F7570')
+    .text(`${(last.v / 1e6).toFixed(2)}M  (${sign}${pct.toFixed(1)}% since 1980)`);
+});
+
+// Decade reference verticals
+[1990, 2000, 2010, 2020].forEach(yr => {
+  svg.append('line').attr('x1', x(yr)).attr('x2', x(yr))
+    .attr('y1', M.t).attr('y2', M.t + ih)
+    .attr('stroke', '#DADFCE').attr('stroke-width', 0.6).attr('stroke-dasharray', '2,3');
+});
+</script>
+</body></html>

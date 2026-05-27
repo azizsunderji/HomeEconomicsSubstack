@@ -1,0 +1,57 @@
+{
+  "number": 139,
+  "status": "queued",
+  "email": "aziz.sunderji@gmail.com",
+  "downloadLinks": {},
+  "extractDefinition": {
+    "version": 2,
+    "dataStructure": {
+      "rectangular": {
+        "on": "P"
+      }
+    },
+    "dataFormat": "csv",
+    "caseSelectWho": "individuals",
+    "description": "Total US pop by METRO (PC/suburb/non-metro) \u2014 2010, 2021, 2023 ACS 1-yr",
+    "samples": {
+      "us2010a": {},
+      "us2021a": {},
+      "us2023a": {}
+    },
+    "variables": {
+      "YEAR": {
+        "preselected": true
+      },
+      "SAMPLE": {
+        "preselected": true
+      },
+      "SERIAL": {
+        "preselected": true
+      },
+      "CBSERIAL": {
+        "preselected": true
+      },
+      "HHWT": {
+        "preselected": true
+      },
+      "CLUSTER": {
+        "preselected": true
+      },
+      "METRO": {},
+      "STRATA": {
+        "preselected": true
+      },
+      "GQ": {
+        "preselected": true
+      },
+      "PERNUM": {
+        "preselected": true
+      },
+      "PERWT": {
+        "preselected": true
+      },
+      "AGE": {}
+    },
+    "collection": "usa"
+  }
+}

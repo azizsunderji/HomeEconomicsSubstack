@@ -1,0 +1,11 @@
+county_fips,county_name,in_1950,in_1960,in_1970,in_1980,in_1990,in_2000,in_2010,in_2020,first_in_houston_msa
+48015,Austin County,False,False,False,False,False,False,True,True,2010
+48039,Brazoria County,False,False,True,True,True,True,True,True,1970
+48071,Chambers County,False,False,False,False,True,True,True,True,1990
+48157,Fort Bend County,False,False,True,True,True,True,True,True,1970
+48167,Galveston County,False,False,False,True,True,True,True,True,1980
+48201,Harris County,True,True,True,True,True,True,True,True,1950
+48291,Liberty County,False,False,True,True,True,True,True,True,1970
+48339,Montgomery County,False,False,True,True,True,True,True,True,1970
+48407,San Jacinto County,False,False,False,False,False,False,False,True,2020
+48473,Waller County,False,False,True,True,True,True,True,True,1970

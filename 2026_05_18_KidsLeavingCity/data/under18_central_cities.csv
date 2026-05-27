@@ -1,0 +1,301 @@
+year,sma_code,sma_name,central_city,state_fips,matched_place_name,under18
+1980,5600,"New York-Northeastern NJ, NY-NJ SMA",New York,36,New York,1765467
+1980,5600,"New York-Northeastern NJ, NY-NJ SMA",Newark,34,Newark,112226
+1980,1600,"Chicago, IL-IN SMA",Chicago,17,Chicago,852876
+1980,4480,"Los Angeles, CA SMA",Los Angeles,06,Los Angeles,745738
+1980,6160,"Philadelphia, PA-NJ SMA",Philadelphia,42,Philadelphia,437158
+1980,2160,"Detroit, MI SMA",Detroit,26,Detroit,364618
+1980,1120,"Boston, MA SMA",Boston,25,Boston,121683
+1980,6280,"Pittsburgh, PA SMA",Pittsburgh,42,Pittsburgh,90545
+1980,7360,"San Francisco-Oakland, CA SMA",San Francisco,06,San Francisco,116611
+1980,7360,"San Francisco-Oakland, CA SMA",Oakland,06,Oakland,82492
+1980,6480,"Providence, RI SMA",Providence,44,Providence,36419
+1980,7040,"St. Louis, MO-IL SMA",St. Louis,29,St. Louis,118436
+1980,1680,"Cleveland, OH SMA",Cleveland,39,Cleveland,159444
+1980,720,"Baltimore, MD SMA",Baltimore,24,Baltimore,211943
+1980,5120,"Minneapolis-St. Paul, MN SMA",Minneapolis,27,Minneapolis,74025
+1980,5120,"Minneapolis-St. Paul, MN SMA",St. Paul,27,St. Paul,65232
+1980,1280,"Buffalo, NY SMA",Buffalo,36,Buffalo,90146
+1980,4560,"Lowell, MA SMA",Lowell,25,Lowell,25567
+1980,1160,"Bridgeport, CT SMA",Bridgeport,09,Bridgeport,39803
+1980,1200,"Brockton, MA SMA",Brockton,25,Brockton,28751
+1980,8000,"Springfield-Holyoke, MA-CT SMA",Springfield,25,Springfield,41932
+1980,8000,"Springfield-Holyoke, MA-CT SMA",Holyoke,25,Holyoke,12327
+1980,1640,"Cincinnati, OH-KY SMA",Cincinnati,39,Cincinnati,97254
+1980,3360,"Houston, TX SMA",Houston,48,Houston,452255
+1980,5080,"Milwaukee, WI SMA",Milwaukee,55,Milwaukee,171866
+1980,3760,"Kansas City, MO-KS SMA",Kansas City,29,Kansas City,118707
+1980,3760,"Kansas City, MO-KS SMA",Kansas City,20,Kansas City,47639
+1980,8840,"Washington, DC-MD-VA SMA",Washington,11,Washington,143491
+1980,5560,"New Orleans, LA SMA",New Orleans,22,New Orleans,160332
+1980,520,"Atlanta, GA SMA",Atlanta,13,Atlanta,113883
+1980,7600,"Seattle, WA SMA",Seattle,53,Seattle,86963
+1980,6440,"Portland, OR-WA SMA",Portland,41,Portland,79874
+1980,1000,"Birmingham, AL SMA",Birmingham,01,Birmingham,75759
+1980,1920,"Dallas, TX SMA",Dallas,48,Dallas,243792
+1980,5440,"New Britain-Bristol, CT SMA",New Britain,09,New Britain,15714
+1980,5440,"New Britain-Bristol, CT SMA",Bristol,09,Bristol,15533
+1980,8880,"Waterbury, CT SMA",Waterbury,09,Waterbury,26678
+1980,4520,"Louisville, KY-IN SMA",Louisville,21,Louisville,74672
+1980,7240,"San Antonio, TX SMA",San Antonio,48,San Antonio,253238
+1980,2080,"Denver, CO SMA",Denver,08,Denver,110877
+1980,9320,"Youngstown, OH-PA SMA",Youngstown,39,Youngstown,30416
+1980,3480,"Indianapolis, IN SMA",Indianapolis,18,Indianapolis,200447
+1980,7320,"San Diego, CA SMA",San Diego,06,San Diego,211432
+1980,9240,"Worcester, MA SMA",Worcester,25,Worcester,38180
+1980,3280,"Hartford, CT SMA",Hartford,09,Hartford,39530
+1980,5480,"New Haven, CT SMA",New Haven,09,New Haven,31863
+1980,4920,"Memphis, TN SMA",Memphis,47,Memphis,188018
+1980,4160,"Lawrence, MA SMA",Lawrence,25,Lawrence,18226
+1980,8040,"Stamford-Norwalk, CT SMA",Stamford,09,Stamford,25053
+1980,8040,"Stamford-Norwalk, CT SMA",Norwalk,09,Norwalk,19756
+1980,2000,"Dayton, OH SMA",Dayton,39,Dayton,55728
+1980,1840,"Columbus, OH SMA",Columbus,39,Columbus,145867
+1980,160,"Albany-Schenectady-Troy, NY SMA",Albany,36,Albany,20809
+1980,160,"Albany-Schenectady-Troy, NY SMA",Schenectady,36,Schenectady,16021
+1980,160,"Albany-Schenectady-Troy, NY SMA",Troy,36,Troy,13834
+1980,6840,"Rochester, NY SMA",Rochester,36,Rochester,64396
+1980,5720,"Norfolk-Portsmouth, VA SMA",Norfolk,51,Norfolk,65613
+1980,5720,"Norfolk-Portsmouth, VA SMA",Portsmouth,51,Portsmouth,30024
+1980,2480,"Fall River, MA-RI SMA",Fall River,25,Fall River,24884
+1980,80,"Akron, OH SMA",Akron,39,Akron,62511
+1990,5600,"New York-Northeastern NJ, NY-NJ SMA",New York,36,New York city,1686718
+1990,5600,"New York-Northeastern NJ, NY-NJ SMA",Newark,34,Newark city,78493
+1990,1600,"Chicago, IL-IN SMA",Chicago,17,Chicago city,722704
+1990,4480,"Los Angeles, CA SMA",Los Angeles,06,Los Angeles city,863277
+1990,6160,"Philadelphia, PA-NJ SMA",Philadelphia,42,Philadelphia city,379421
+1990,2160,"Detroit, MI SMA",Detroit,26,Detroit city,302315
+1990,1120,"Boston, MA SMA",Boston,25,Boston city,109833
+1990,6280,"Pittsburgh, PA SMA",Pittsburgh,42,Pittsburgh city,73379
+1990,7360,"San Francisco-Oakland, CA SMA",San Francisco,06,San Francisco city,116883
+1990,7360,"San Francisco-Oakland, CA SMA",Oakland,06,Oakland city,92587
+1990,6480,"Providence, RI SMA",Providence,44,Providence city,37972
+1990,7040,"St. Louis, MO-IL SMA",St. Louis,29,St. Louis city,100040
+1990,1680,"Cleveland, OH SMA",Cleveland,39,Cleveland city,136117
+1990,720,"Baltimore, MD SMA",Baltimore,24,Baltimore city,179869
+1990,5120,"Minneapolis-St. Paul, MN SMA",Minneapolis,27,Minneapolis city,75950
+1990,5120,"Minneapolis-St. Paul, MN SMA",St. Paul,27,St. Paul city,66916
+1990,1280,"Buffalo, NY SMA",Buffalo,36,Buffalo city,79537
+1990,4560,"Lowell, MA SMA",Lowell,25,Lowell city,27001
+1990,1160,"Bridgeport, CT SMA",Bridgeport,09,Bridgeport city,36992
+1990,1200,"Brockton, MA SMA",Brockton,25,Brockton city,24605
+1990,8000,"Springfield-Holyoke, MA-CT SMA",Springfield,25,Springfield city,42098
+1990,8000,"Springfield-Holyoke, MA-CT SMA",Holyoke,25,Holyoke city,12669
+1990,1640,"Cincinnati, OH-KY SMA",Cincinnati,39,Cincinnati city,91352
+1990,3360,"Houston, TX SMA",Houston,48,Houston city,435894
+1990,5080,"Milwaukee, WI SMA",Milwaukee,55,Milwaukee city,172140
+1990,3760,"Kansas City, MO-KS SMA",Kansas City,29,Kansas City city,108032
+1990,3760,"Kansas City, MO-KS SMA",Kansas City,20,Kansas City city,42648
+1990,8840,"Washington, DC-MD-VA SMA",Washington,11,Washington city,117092
+1990,5560,"New Orleans, LA SMA",New Orleans,22,New Orleans city,136462
+1990,520,"Atlanta, GA SMA",Atlanta,13,Atlanta city,94920
+1990,7600,"Seattle, WA SMA",Seattle,53,Seattle city,84930
+1990,6440,"Portland, OR-WA SMA",Portland,41,Portland city,95762
+1990,1000,"Birmingham, AL SMA",Birmingham,01,Birmingham city,67252
+1990,1920,"Dallas, TX SMA",Dallas,48,Dallas city,251378
+1990,5440,"New Britain-Bristol, CT SMA",New Britain,09,New Britain city,15938
+1990,5440,"New Britain-Bristol, CT SMA",Bristol,09,Bristol city,13401
+1990,8880,"Waterbury, CT SMA",Waterbury,09,Waterbury city,25561
+1990,4520,"Louisville, KY-IN SMA",Louisville,21,Louisville city,62808
+1990,7240,"San Antonio, TX SMA",San Antonio,48,San Antonio city,271798
+1990,2080,"Denver, CO SMA",Denver,08,Denver city,102879
+1990,9320,"Youngstown, OH-PA SMA",Youngstown,39,Youngstown city,25115
+1990,3480,"Indianapolis, IN SMA",Indianapolis,18,Indianapolis city (remainder),187387
+1990,7320,"San Diego, CA SMA",San Diego,06,San Diego city,256062
+1990,9240,"Worcester, MA SMA",Worcester,25,Worcester city,37843
+1990,3280,"Hartford, CT SMA",Hartford,09,Hartford city,38390
+1990,5480,"New Haven, CT SMA",New Haven,09,New Haven city,30936
+1990,4920,"Memphis, TN SMA",Memphis,47,Memphis city,163914
+1990,4160,"Lawrence, MA SMA",Lawrence,25,Lawrence city,22143
+1990,8040,"Stamford-Norwalk, CT SMA",Stamford,09,Stamford city,21773
+1990,8040,"Stamford-Norwalk, CT SMA",Norwalk,09,Norwalk city,15757
+1990,2000,"Dayton, OH SMA",Dayton,39,Dayton city,46999
+1990,1840,"Columbus, OH SMA",Columbus,39,Columbus city,150051
+1990,160,"Albany-Schenectady-Troy, NY SMA",Albany,36,Albany city,18029
+1990,160,"Albany-Schenectady-Troy, NY SMA",Schenectady,36,Schenectady city,14493
+1990,160,"Albany-Schenectady-Troy, NY SMA",Troy,36,Troy city,11557
+1990,6840,"Rochester, NY SMA",Rochester,36,Rochester city,60182
+1990,5720,"Norfolk-Portsmouth, VA SMA",Norfolk,51,Norfolk city,59987
+1990,5720,"Norfolk-Portsmouth, VA SMA",Portsmouth,51,Portsmouth city,27857
+1990,2480,"Fall River, MA-RI SMA",Fall River,25,Fall River city,22546
+1990,80,"Akron, OH SMA",Akron,39,Akron city,54551
+2000,5600,"New York-Northeastern NJ, NY-NJ SMA",New York,36,New York city,1940269
+2000,5600,"New York-Northeastern NJ, NY-NJ SMA",Newark,34,Newark city,76419
+2000,1600,"Chicago, IL-IN SMA",Chicago,17,Chicago city,759840
+2000,4480,"Los Angeles, CA SMA",Los Angeles,06,Los Angeles city,981311
+2000,6160,"Philadelphia, PA-NJ SMA",Philadelphia,42,Philadelphia city,383469
+2000,2160,"Detroit, MI SMA",Detroit,26,Detroit city,295709
+2000,1120,"Boston, MA SMA",Boston,25,Boston city,116559
+2000,6280,"Pittsburgh, PA SMA",Pittsburgh,42,Pittsburgh city,66508
+2000,7360,"San Francisco-Oakland, CA SMA",San Francisco,06,San Francisco city,112802
+2000,7360,"San Francisco-Oakland, CA SMA",Oakland,06,Oakland city,99759
+2000,6480,"Providence, RI SMA",Providence,44,Providence city,45277
+2000,7040,"St. Louis, MO-IL SMA",St. Louis,29,St. Louis city,89657
+2000,1680,"Cleveland, OH SMA",Cleveland,39,Cleveland city,136403
+2000,720,"Baltimore, MD SMA",Baltimore,24,Baltimore city,161353
+2000,5120,"Minneapolis-St. Paul, MN SMA",Minneapolis,27,Minneapolis city,84169
+2000,5120,"Minneapolis-St. Paul, MN SMA",St. Paul,27,St. Paul city,77827
+2000,1280,"Buffalo, NY SMA",Buffalo,36,Buffalo city,76957
+2000,4560,"Lowell, MA SMA",Lowell,25,Lowell city,28341
+2000,1160,"Bridgeport, CT SMA",Bridgeport,09,Bridgeport city,39672
+2000,1200,"Brockton, MA SMA",Brockton,25,Brockton city,26254
+2000,8000,"Springfield-Holyoke, MA-CT SMA",Springfield,25,Springfield city,44027
+2000,8000,"Springfield-Holyoke, MA-CT SMA",Holyoke,25,Holyoke city,11740
+2000,1640,"Cincinnati, OH-KY SMA",Cincinnati,39,Cincinnati city,81144
+2000,3360,"Houston, TX SMA",Houston,48,Houston city,536658
+2000,5080,"Milwaukee, WI SMA",Milwaukee,55,Milwaukee city,170984
+2000,3760,"Kansas City, MO-KS SMA",Kansas City,29,Kansas City city,111986
+2000,3760,"Kansas City, MO-KS SMA",Kansas City,20,Kansas City city,41949
+2000,8840,"Washington, DC-MD-VA SMA",Washington,11,Washington city,114992
+2000,5560,"New Orleans, LA SMA",New Orleans,22,New Orleans city,129408
+2000,520,"Atlanta, GA SMA",Atlanta,13,Atlanta city,93004
+2000,7600,"Seattle, WA SMA",Seattle,53,Seattle city,87827
+2000,6440,"Portland, OR-WA SMA",Portland,41,Portland city,111454
+2000,1000,"Birmingham, AL SMA",Birmingham,01,Birmingham city,60807
+2000,1920,"Dallas, TX SMA",Dallas,48,Dallas city,315576
+2000,5440,"New Britain-Bristol, CT SMA",New Britain,09,New Britain city,17289
+2000,5440,"New Britain-Bristol, CT SMA",Bristol,09,Bristol city,13922
+2000,8880,"Waterbury, CT SMA",Waterbury,09,Waterbury city,28454
+2000,4520,"Louisville, KY-IN SMA",Louisville,21,Louisville city,60609
+2000,7240,"San Antonio, TX SMA",San Antonio,48,San Antonio city,326657
+2000,2080,"Denver, CO SMA",Denver,08,Denver city,121766
+2000,9320,"Youngstown, OH-PA SMA",Youngstown,39,Youngstown city,21163
+2000,3480,"Indianapolis, IN SMA",Indianapolis,18,Indianapolis city (balance),200617
+2000,7320,"San Diego, CA SMA",San Diego,06,San Diego city,293908
+2000,9240,"Worcester, MA SMA",Worcester,25,Worcester city,40727
+2000,3280,"Hartford, CT SMA",Hartford,09,Hartford city,36568
+2000,5480,"New Haven, CT SMA",New Haven,09,New Haven city,31446
+2000,4920,"Memphis, TN SMA",Memphis,47,Memphis city,181295
+2000,4160,"Lawrence, MA SMA",Lawrence,25,Lawrence city,23019
+2000,8040,"Stamford-Norwalk, CT SMA",Stamford,09,Stamford city,25896
+2000,8040,"Stamford-Norwalk, CT SMA",Norwalk,09,Norwalk city,18310
+2000,2000,"Dayton, OH SMA",Dayton,39,Dayton city,41732
+2000,1840,"Columbus, OH SMA",Columbus,39,Columbus city,171868
+2000,160,"Albany-Schenectady-Troy, NY SMA",Albany,36,Albany city,19085
+2000,160,"Albany-Schenectady-Troy, NY SMA",Schenectady,36,Schenectady city,15040
+2000,160,"Albany-Schenectady-Troy, NY SMA",Troy,36,Troy city,10865
+2000,6840,"Rochester, NY SMA",Rochester,36,Rochester city,61735
+2000,5720,"Norfolk-Portsmouth, VA SMA",Norfolk,51,Norfolk city,56352
+2000,5720,"Norfolk-Portsmouth, VA SMA",Portsmouth,51,Portsmouth city,25854
+2000,2480,"Fall River, MA-RI SMA",Fall River,25,Fall River city,22179
+2000,80,"Akron, OH SMA",Akron,39,Akron city,54966
+2010,5600,"New York-Northeastern NJ, NY-NJ SMA",New York,36,New York city,1768111
+2010,5600,"New York-Northeastern NJ, NY-NJ SMA",Newark,34,Newark city,70887
+2010,1600,"Chicago, IL-IN SMA",Chicago,17,Chicago city,621630
+2010,4480,"Los Angeles, CA SMA",Los Angeles,06,Los Angeles city,874525
+2010,6160,"Philadelphia, PA-NJ SMA",Philadelphia,42,Philadelphia city,343837
+2010,2160,"Detroit, MI SMA",Detroit,26,Detroit city,190347
+2010,1120,"Boston, MA SMA",Boston,25,Boston city,103710
+2010,6280,"Pittsburgh, PA SMA",Pittsburgh,42,Pittsburgh city,49799
+2010,7360,"San Francisco-Oakland, CA SMA",San Francisco,06,San Francisco city,107524
+2010,7360,"San Francisco-Oakland, CA SMA",Oakland,06,Oakland city,83120
+2010,6480,"Providence, RI SMA",Providence,44,Providence city,41634
+2010,7040,"St. Louis, MO-IL SMA",St. Louis,29,St. Louis city,67539
+2010,1680,"Cleveland, OH SMA",Cleveland,39,Cleveland city,97657
+2010,720,"Baltimore, MD SMA",Baltimore,24,Baltimore city,133560
+2010,5120,"Minneapolis-St. Paul, MN SMA",Minneapolis,27,Minneapolis city,77204
+2010,5120,"Minneapolis-St. Paul, MN SMA",St. Paul,27,St. Paul city,71608
+2010,1280,"Buffalo, NY SMA",Buffalo,36,Buffalo city,61576
+2010,4560,"Lowell, MA SMA",Lowell,25,Lowell city,25260
+2010,1160,"Bridgeport, CT SMA",Bridgeport,09,Bridgeport city,36047
+2010,1200,"Brockton, MA SMA",Brockton,25,Brockton city,24127
+2010,8000,"Springfield-Holyoke, MA-CT SMA",Springfield,25,Springfield city,41328
+2010,8000,"Springfield-Holyoke, MA-CT SMA",Holyoke,25,Holyoke city,10511
+2010,1640,"Cincinnati, OH-KY SMA",Cincinnati,39,Cincinnati city,65706
+2010,3360,"Houston, TX SMA",Houston,48,Houston city,543024
+2010,5080,"Milwaukee, WI SMA",Milwaukee,55,Milwaukee city,161347
+2010,3760,"Kansas City, MO-KS SMA",Kansas City,29,Kansas City city,111058
+2010,3760,"Kansas City, MO-KS SMA",Kansas City,20,Kansas City city,41382
+2010,8840,"Washington, DC-MD-VA SMA",Washington,11,Washington city,100815
+2010,5560,"New Orleans, LA SMA",New Orleans,22,New Orleans city,73215
+2010,520,"Atlanta, GA SMA",Atlanta,13,Atlanta city,81410
+2010,7600,"Seattle, WA SMA",Seattle,53,Seattle city,93513
+2010,6440,"Portland, OR-WA SMA",Portland,41,Portland city,111523
+2010,1000,"Birmingham, AL SMA",Birmingham,01,Birmingham city,45691
+2010,1920,"Dallas, TX SMA",Dallas,48,Dallas city,317128
+2010,5440,"New Britain-Bristol, CT SMA",New Britain,09,New Britain city,17061
+2010,5440,"New Britain-Bristol, CT SMA",Bristol,09,Bristol city,12963
+2010,8880,"Waterbury, CT SMA",Waterbury,09,Waterbury city,28265
+2010,4520,"Louisville, KY-IN SMA",Louisville,21,Louisville/Jefferson County metro government (balance),140892
+2010,7240,"San Antonio, TX SMA",San Antonio,48,San Antonio city,356000
+2010,2080,"Denver, CO SMA",Denver,08,Denver city,128766
+2010,9320,"Youngstown, OH-PA SMA",Youngstown,39,Youngstown city,15286
+2010,3480,"Indianapolis, IN SMA",Indianapolis,18,Indianapolis city (balance),204855
+2010,7320,"San Diego, CA SMA",San Diego,06,San Diego city,279368
+2010,9240,"Worcester, MA SMA",Worcester,25,Worcester city,39942
+2010,3280,"Hartford, CT SMA",Hartford,09,Hartford city,32217
+2010,5480,"New Haven, CT SMA",New Haven,09,New Haven city,29582
+2010,4920,"Memphis, TN SMA",Memphis,47,Memphis city,167968
+2010,4160,"Lawrence, MA SMA",Lawrence,25,Lawrence city,22182
+2010,8040,"Stamford-Norwalk, CT SMA",Stamford,09,Stamford city,26461
+2010,8040,"Stamford-Norwalk, CT SMA",Norwalk,09,Norwalk city,18874
+2010,2000,"Dayton, OH SMA",Dayton,39,Dayton city,32441
+2010,1840,"Columbus, OH SMA",Columbus,39,Columbus city,182419
+2010,160,"Albany-Schenectady-Troy, NY SMA",Albany,36,Albany city,17556
+2010,160,"Albany-Schenectady-Troy, NY SMA",Schenectady,36,Schenectady city,16123
+2010,160,"Albany-Schenectady-Troy, NY SMA",Troy,36,Troy city,10102
+2010,6840,"Rochester, NY SMA",Rochester,36,Rochester city,52233
+2010,5720,"Norfolk-Portsmouth, VA SMA",Norfolk,51,Norfolk city,50612
+2010,5720,"Norfolk-Portsmouth, VA SMA",Portsmouth,51,Portsmouth city,22666
+2010,2480,"Fall River, MA-RI SMA",Fall River,25,Fall River city,19069
+2010,80,"Akron, OH SMA",Akron,39,Akron city,45541
+2020,5600,"New York-Northeastern NJ, NY-NJ SMA",New York,36,New York city,1740142
+2020,5600,"New York-Northeastern NJ, NY-NJ SMA",Newark,34,Newark city,76423
+2020,1600,"Chicago, IL-IN SMA",Chicago,17,Chicago city,545173
+2020,4480,"Los Angeles, CA SMA",Los Angeles,06,Los Angeles city,751492
+2020,6160,"Philadelphia, PA-NJ SMA",Philadelphia,42,Philadelphia city,325435
+2020,2160,"Detroit, MI SMA",Detroit,26,Detroit city,158993
+2020,1120,"Boston, MA SMA",Boston,25,Boston city,101811
+2020,6280,"Pittsburgh, PA SMA",Pittsburgh,42,Pittsburgh city,44424
+2020,7360,"San Francisco-Oakland, CA SMA",San Francisco,06,San Francisco city,113227
+2020,7360,"San Francisco-Oakland, CA SMA",Oakland,06,Oakland city,84252
+2020,6480,"Providence, RI SMA",Providence,44,Providence city,41021
+2020,7040,"St. Louis, MO-IL SMA",St. Louis,29,St. Louis city,54031
+2020,1680,"Cleveland, OH SMA",Cleveland,39,Cleveland city,79979
+2020,720,"Baltimore, MD SMA",Baltimore,24,Baltimore city,114008
+2020,5120,"Minneapolis-St. Paul, MN SMA",Minneapolis,27,Minneapolis city,80713
+2020,5120,"Minneapolis-St. Paul, MN SMA",St. Paul,27,St. Paul city,74284
+2020,1280,"Buffalo, NY SMA",Buffalo,36,Buffalo city,64299
+2020,4560,"Lowell, MA SMA",Lowell,25,Lowell city,25336
+2020,1160,"Bridgeport, CT SMA",Bridgeport,09,Bridgeport city,34938
+2020,1200,"Brockton, MA SMA",Brockton,25,Brockton city,25481
+2020,8000,"Springfield-Holyoke, MA-CT SMA",Springfield,25,Springfield city,38013
+2020,8000,"Springfield-Holyoke, MA-CT SMA",Holyoke,25,Holyoke city,8511
+2020,1640,"Cincinnati, OH-KY SMA",Cincinnati,39,Cincinnati city,64252
+2020,3360,"Houston, TX SMA",Houston,48,Houston city,544476
+2020,5080,"Milwaukee, WI SMA",Milwaukee,55,Milwaukee city,144462
+2020,3760,"Kansas City, MO-KS SMA",Kansas City,29,Kansas City city,114264
+2020,3760,"Kansas City, MO-KS SMA",Kansas City,20,Kansas City city,42509
+2020,8840,"Washington, DC-MD-VA SMA",Washington,11,Washington city,114384
+2020,5560,"New Orleans, LA SMA",New Orleans,22,New Orleans city,77801
+2020,520,"Atlanta, GA SMA",Atlanta,13,Atlanta city,85449
+2020,7600,"Seattle, WA SMA",Seattle,53,Seattle city,106841
+2020,6440,"Portland, OR-WA SMA",Portland,41,Portland city,111229
+2020,1000,"Birmingham, AL SMA",Birmingham,01,Birmingham city,37567
+2020,1920,"Dallas, TX SMA",Dallas,48,Dallas city,304674
+2020,5440,"New Britain-Bristol, CT SMA",New Britain,09,New Britain city,16550
+2020,5440,"New Britain-Bristol, CT SMA",Bristol,09,Bristol city,12029
+2020,8880,"Waterbury, CT SMA",Waterbury,09,Waterbury city,28347
+2020,4520,"Louisville, KY-IN SMA",Louisville,21,Louisville city,49408
+2020,7240,"San Antonio, TX SMA",San Antonio,48,San Antonio city,340077
+2020,2080,"Denver, CO SMA",Denver,08,Denver city,134460
+2020,9320,"Youngstown, OH-PA SMA",Youngstown,39,Youngstown city,13195
+2020,3480,"Indianapolis, IN SMA",Indianapolis,18,Indianapolis city (balance),212828
+2020,7320,"San Diego, CA SMA",San Diego,06,San Diego city,261863
+2020,9240,"Worcester, MA SMA",Worcester,25,Worcester city,40993
+2020,3280,"Hartford, CT SMA",Hartford,09,Hartford city,28003
+2020,5480,"New Haven, CT SMA",New Haven,09,New Haven city,29013
+2020,4920,"Memphis, TN SMA",Memphis,47,Memphis city,151576
+2020,4160,"Lawrence, MA SMA",Lawrence,25,Lawrence city,23362
+2020,8040,"Stamford-Norwalk, CT SMA",Stamford,09,Stamford city,26755
+2020,8040,"Stamford-Norwalk, CT SMA",Norwalk,09,Norwalk city,18502
+2020,2000,"Dayton, OH SMA",Dayton,39,Dayton city,30435
+2020,1840,"Columbus, OH SMA",Columbus,39,Columbus city,198225
+2020,160,"Albany-Schenectady-Troy, NY SMA",Albany,36,Albany city,17635
+2020,160,"Albany-Schenectady-Troy, NY SMA",Schenectady,36,Schenectady city,15119
+2020,160,"Albany-Schenectady-Troy, NY SMA",Troy,36,Troy city,9912
+2020,6840,"Rochester, NY SMA",Rochester,36,Rochester city,46671
+2020,5720,"Norfolk-Portsmouth, VA SMA",Norfolk,51,Norfolk city,45519
+2020,5720,"Norfolk-Portsmouth, VA SMA",Portsmouth,51,Portsmouth city,21751
+2020,2480,"Fall River, MA-RI SMA",Fall River,25,Fall River city,19609
+2020,80,"Akron, OH SMA",Akron,39,Akron city,40751

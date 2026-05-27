@@ -1,0 +1,31 @@
+=== V2019 (2011 baseline) — agesex by state ===
+  files: 51
+Traceback (most recent call last):
+  File "/Users/azizsunderji/Dropbox/Home Economics/2026_05_18_KidsLeavingCity/scripts/pull_pep_national.py", line 95, in <module>
+    main()
+  File "/Users/azizsunderji/Dropbox/Home Economics/2026_05_18_KidsLeavingCity/scripts/pull_pep_national.py", line 61, in main
+    df11 = duckdb.query(f"""
+_duckdb.InvalidInputException: Invalid Input Error: CSV Error on Line: 86
+Original Line: 050,35,011,New Mexico,De Baca County,12,1748,867,881,81,33,48,209,103,106,101,46,55,106,60,46,1411,707,704,1357,685,672,507,262,245,326,170,156,424,204,220,501,251,250,81,33,48,122,62,60,113,55,58,118,58,60,63,34,29,79,45,34,66,30,36,118,66,52,63,29,34,78,38,40,96,51,45,128,69,59,122,46,76,141,87,54,137,64,73,83,34,49,68,35,33,72,31,41,48.3,48.1,48.7
+Invalid unicode (byte sequence mismatch) detected. This file is not utf-8 encoded.
+
+Possible Solution: Set the correct encoding, if available, to read this CSV File (e.g., encoding='UTF-16')
+Possible Solution: Enable ignore errors (ignore_errors=true) to skip this row
+
+  file = /Users/azizsunderji/Dropbox/Home Economics/2026_05_18_KidsLeavingCity/data/pep_cache/v2019-agesex-35.csv
+  delimiter = , (Auto-Detected)
+  quote = (empty) (Auto-Detected)
+  escape = (empty) (Auto-Detected)
+  new_line = \n (Auto-Detected)
+  header = true (Auto-Detected)
+  skip_rows = 0 (Auto-Detected)
+  comment = (empty) (Auto-Detected)
+  strict_mode = true (Auto-Detected)
+  date_format =  (Auto-Detected)
+  timestamp_format =  (Auto-Detected)
+  null_padding = 0
+  sample_size = 20480
+  ignore_errors = false
+  all_varchar = 0
+
+

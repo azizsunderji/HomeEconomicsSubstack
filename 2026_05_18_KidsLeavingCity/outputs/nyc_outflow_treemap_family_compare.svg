@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1700 950" width="1700" height="950" style="background:#FFFFFF;font-family:'ABC Oracle Edu',Arial,sans-serif">
+<rect x="24" y="20" width="40" height="3" fill="#D03A2E"/>
+<text x="24" y="48" font-size="24" font-weight="700" fill="#3D3733">Families and singles leave NYC at the same rate — but they go to different places</text>
+<text x="24" y="72" font-size="13" fill="#7F7570">Where movers from Bronx · Brooklyn · Manhattan · Queens · Staten Island went, when they left the 5 boroughs entirely. IPUMS USA ACS 1-year, 2021 + 2022 pooled. Households flagged as "with kids" if any member is under 18.</text>
+<text x="24" y="92" font-size="18" font-weight="700" fill="#3D3733">Households WITH children</text>
+<text x="24" y="106" font-size="11.5" fill="#7F7570">Families with at least one kid under 18  ·  243,970 weighted persons</text>
+<rect x="25" y="111" width="280.6516333975489" height="456.8652694962895" fill="#0BB4FF" stroke="#FFFFFF" stroke-width="2"/>
+<text x="32" y="128" font-size="12" font-weight="700" fill="#1A1A1A">New Jersey</text>
+<text x="32" y="143" font-size="11" fill="#1A1A1A">49,703 · 20.4%</text>
+<rect x="25" y="569.8652694962896" width="280.6516333975489" height="324.1347305037105" fill="#67A275" stroke="#FFFFFF" stroke-width="2"/>
+<text x="32" y="586.8652694962896" font-size="12" font-weight="700" fill="#1A1A1A">Other NY State (Hudson Valley / upstate)</text>
+<text x="32" y="601.8652694962896" font-size="11" fill="#1A1A1A">35,326 · 14.5%</text>
+<rect x="307.6516333975489" y="111" width="265.3685874800758" height="212.4339408963075" fill="#1E5A8C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="314.6516333975489" y="128" font-size="12" font-weight="700" fill="#1A1A1A">Nassau (Long Island)</text>
+<text x="314.6516333975489" y="143" font-size="11" fill="#1A1A1A">21,971 · 9.0%</text>
+<rect x="575.0202208776248" y="111" width="258.9797791223752" height="212.4339408963075" fill="#FEC439" stroke="#FFFFFF" stroke-width="2"/>
+<text x="582.0202208776248" y="128" font-size="12" font-weight="700" fill="#1A1A1A">Pennsylvania</text>
+<text x="582.0202208776248" y="143" font-size="11" fill="#1A1A1A">21,446 · 8.8%</text>
+<rect x="307.6516333975489" y="325.4339408963075" width="219.10072177301066" height="203.94884265230496" fill="#D03A2E" stroke="#FFFFFF" stroke-width="2"/>
+<text x="314.6516333975489" y="342.4339408963075" font-size="12" font-weight="700" fill="#1A1A1A">Florida</text>
+<text x="314.6516333975489" y="357.4339408963075" font-size="11" fill="#1A1A1A">17,450 · 7.2%</text>
+<rect x="528.7523551705596" y="325.4339408963075" width="159.08042841835442" height="203.94884265230496" fill="#9CB39E" stroke="#FFFFFF" stroke-width="2"/>
+<text x="535.7523551705596" y="342.4339408963075" font-size="12" font-weight="700" fill="#1A1A1A">Connecticut</text>
+<text x="535.7523551705596" y="357.4339408963075" font-size="11" fill="#1A1A1A">12,713 · 5.2%</text>
+<rect x="689.832783588914" y="325.4339408963075" width="144.167216411086" height="203.94884265230496" fill="#B9A78A" stroke="#FFFFFF" stroke-width="2"/>
+<text x="696.832783588914" y="342.4339408963075" font-size="12" font-weight="700" fill="#1A1A1A">Other West</text>
+<text x="696.832783588914" y="357.4339408963075" font-size="11" fill="#1A1A1A">11,536 · 4.7%</text>
+<rect x="307.6516333975489" y="531.3827835486125" width="141.5075035165913" height="198.1830708115562" fill="#7BC2E0" stroke="#FFFFFF" stroke-width="2"/>
+<text x="314.6516333975489" y="548.3827835486125" font-size="12" font-weight="700" fill="#1A1A1A">Westchester / Rockland / Putnam</text>
+<text x="314.6516333975489" y="563.3827835486125" font-size="11" fill="#1A1A1A">11,009 · 4.5%</text>
+<rect x="307.6516333975489" y="731.5658543601687" width="141.5075035165913" height="162.4341456398313" fill="#C5621F" stroke="#FFFFFF" stroke-width="2"/>
+<text x="314.6516333975489" y="748.5658543601687" font-size="12" font-weight="700" fill="#1A1A1A">North Carolina</text>
+<text x="314.6516333975489" y="763.5658543601687" font-size="11" fill="#1A1A1A">9,043 · 3.7%</text>
+<rect x="451.15913691414016" y="531.3827835486125" width="121.9409009525398" height="181.63502493873438" fill="#A0531D" stroke="#FFFFFF" stroke-width="2"/>
+<text x="458.15913691414016" y="548.3827835486125" font-size="12" font-weight="700" fill="#1A1A1A">Texas</text>
+<text x="458.15913691414016" y="563.3827835486125" font-size="11" fill="#1A1A1A">8,722 · 3.6%</text>
+<rect x="451.15913691414016" y="715.0178084873469" width="121.9409009525398" height="178.98219151265315" fill="#34556E" stroke="#FFFFFF" stroke-width="2"/>
+<text x="458.15913691414016" y="732.0178084873469" font-size="12" font-weight="700" fill="#1A1A1A">Suffolk (Long Island)</text>
+<text x="458.15913691414016" y="747.0178084873469" font-size="11" fill="#1A1A1A">8,596 · 3.5%</text>
+<rect x="575.1000378666799" y="531.3827835486125" width="129.07195876623544" height="163.7205502505293" fill="#E8806C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="582.1000378666799" y="548.3827835486125" font-size="12" font-weight="700" fill="#1A1A1A">Other Southeast</text>
+<text x="582.1000378666799" y="563.3827835486125" font-size="11" fill="#1A1A1A">8,324 · 3.4%</text>
+<rect x="706.1719966329154" y="531.3827835486125" width="127.82800336708448" height="163.7205502505293" fill="#7E89C7" stroke="#FFFFFF" stroke-width="2"/>
+<text x="713.1719966329154" y="548.3827835486125" font-size="12" font-weight="700" fill="#1A1A1A">California</text>
+<text x="713.1719966329154" y="563.3827835486125" font-size="11" fill="#1A1A1A">8,245 · 3.4%</text>
+<rect x="575.1000378666799" y="697.1033337991418" width="185.36359042672973" height="102.24630953808726" fill="#9CA68F" stroke="#FFFFFF" stroke-width="2"/>
+<text x="582.1000378666799" y="714.1033337991418" font-size="12" font-weight="700" fill="#1A1A1A">Midwest</text>
+<text x="582.1000378666799" y="729.1033337991418" font-size="11" fill="#1A1A1A">7,485 · 3.1%</text>
+<rect x="575.1000378666799" y="801.349643337229" width="185.36359042672973" height="92.650356662771" fill="#C6DCCB" stroke="#FFFFFF" stroke-width="2"/>
+<text x="582.1000378666799" y="818.349643337229" font-size="12" font-weight="700" fill="#1A1A1A">Other Northeast</text>
+<text x="582.1000378666799" y="833.349643337229" font-size="11" fill="#1A1A1A">6,796 · 2.8%</text>
+<rect x="762.4636282934097" y="697.1033337991418" width="71.53637170659022" height="184.1573436020888" fill="#B05D2C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="769.4636282934097" y="714.1033337991418" font-size="12" font-weight="700" fill="#1A1A1A">Georgia</text>
+<text x="769.4636282934097" y="729.1033337991418" font-size="11" fill="#1A1A1A">5,246 · 2.2%</text>
+<rect x="762.4636282934097" y="883.2606774012305" width="71.53637170659603" height="10.73932259876946" fill="#BAB3AC" stroke="#FFFFFF" stroke-width="2"/>
+<text x="865" y="92" font-size="18" font-weight="700" fill="#3D3733">Households WITHOUT children</text>
+<text x="865" y="106" font-size="11.5" fill="#7F7570">No member under 18 in the household  ·  344,037 weighted persons</text>
+<rect x="866" y="111" width="277.15436711749027" height="466.88140616951387" fill="#67A275" stroke="#FFFFFF" stroke-width="2"/>
+<text x="873" y="128" font-size="12" font-weight="700" fill="#1A1A1A">Other NY State (Hudson Valley / upstate)</text>
+<text x="873" y="143" font-size="11" fill="#1A1A1A">70,733 · 20.6%</text>
+<rect x="866" y="579.8814061695139" width="277.15436711749027" height="314.1185938304862" fill="#0BB4FF" stroke="#FFFFFF" stroke-width="2"/>
+<text x="873" y="596.8814061695139" font-size="12" font-weight="700" fill="#1A1A1A">New Jersey</text>
+<text x="873" y="611.8814061695139" font-size="11" fill="#1A1A1A">47,688 · 13.9%</text>
+<rect x="1145.1543671174902" y="111" width="199.8811939989349" height="251.68384777675337" fill="#D03A2E" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1152.1543671174902" y="128" font-size="12" font-weight="700" fill="#1A1A1A">Florida</text>
+<text x="1152.1543671174902" y="143" font-size="11" fill="#1A1A1A">27,676 · 8.0%</text>
+<rect x="1347.035561116425" y="111" width="167.61784232032204" height="251.68384777675337" fill="#7E89C7" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1354.035561116425" y="128" font-size="12" font-weight="700" fill="#1A1A1A">California</text>
+<text x="1354.035561116425" y="143" font-size="11" fill="#1A1A1A">23,253 · 6.8%</text>
+<rect x="1516.653403436747" y="111" width="158.3465965632529" height="251.68384777675337" fill="#E8806C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1523.653403436747" y="128" font-size="12" font-weight="700" fill="#1A1A1A">Other Southeast</text>
+<text x="1523.653403436747" y="143" font-size="11" fill="#1A1A1A">21,982 · 6.4%</text>
+<rect x="1145.1543671174902" y="364.6838477767534" width="202.1391446261913" height="181.11837972910112" fill="#9CA68F" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1152.1543671174902" y="381.6838477767534" font-size="12" font-weight="700" fill="#1A1A1A">Midwest</text>
+<text x="1152.1543671174902" y="396.6838477767534" font-size="11" fill="#1A1A1A">20,201 · 5.9%</text>
+<rect x="1145.1543671174902" y="547.8022275058545" width="202.1391446261913" height="172.51586785528713" fill="#B9A78A" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1152.1543671174902" y="564.8022275058545" font-size="12" font-weight="700" fill="#1A1A1A">Other West</text>
+<text x="1152.1543671174902" y="579.8022275058545" font-size="11" fill="#1A1A1A">19,252 · 5.6%</text>
+<rect x="1145.1543671174902" y="722.3180953611416" width="202.1391446261913" height="171.68190463885836" fill="#C6DCCB" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1152.1543671174902" y="739.3180953611416" font-size="12" font-weight="700" fill="#1A1A1A">Other Northeast</text>
+<text x="1152.1543671174902" y="754.3180953611416" font-size="11" fill="#1A1A1A">19,160 · 5.6%</text>
+<rect x="1349.2935117436814" y="364.6838477767534" width="165.5791507899841" height="179.5268072261266" fill="#FEC439" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1356.2935117436814" y="381.6838477767534" font-size="12" font-weight="700" fill="#1A1A1A">Pennsylvania</text>
+<text x="1356.2935117436814" y="396.6838477767534" font-size="11" fill="#1A1A1A">16,439 · 4.8%</text>
+<rect x="1516.8726625336656" y="364.6838477767534" width="158.12733746633435" height="179.5268072261266" fill="#9CB39E" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1523.8726625336656" y="381.6838477767534" font-size="12" font-weight="700" fill="#1A1A1A">Connecticut</text>
+<text x="1523.8726625336656" y="396.6838477767534" font-size="11" fill="#1A1A1A">15,708 · 4.6%</text>
+<rect x="1349.2935117436814" y="546.21065500288" width="179.0787177815321" height="151.2985896841038" fill="#7BC2E0" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1356.2935117436814" y="563.21065500288" font-size="12" font-weight="700" fill="#1A1A1A">Westchester / Rockland / Putnam</text>
+<text x="1356.2935117436814" y="578.21065500288" font-size="11" fill="#1A1A1A">15,001 · 4.4%</text>
+<rect x="1530.3722295252135" y="546.21065500288" width="144.6277704747864" height="151.2985896841038" fill="#34556E" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1537.3722295252135" y="563.21065500288" font-size="12" font-weight="700" fill="#1A1A1A">Suffolk (Long Island)</text>
+<text x="1537.3722295252135" y="578.21065500288" font-size="11" fill="#1A1A1A">12,147 · 3.5%</text>
+<rect x="1349.2935117436814" y="699.5092446869838" width="175.81493245876214" height="96.8333617503159" fill="#A0531D" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1356.2935117436814" y="716.5092446869838" font-size="12" font-weight="700" fill="#1A1A1A">Texas</text>
+<text x="1356.2935117436814" y="731.5092446869838" font-size="11" fill="#1A1A1A">9,497 · 2.8%</text>
+<rect x="1349.2935117436814" y="798.3426064372998" width="175.81493245876214" height="95.65739356270026" fill="#1E5A8C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1356.2935117436814" y="815.3426064372998" font-size="12" font-weight="700" fill="#1A1A1A">Nassau (Long Island)</text>
+<text x="1356.2935117436814" y="830.3426064372998" font-size="11" fill="#1A1A1A">9,384 · 2.7%</text>
+<rect x="1527.1084442024435" y="699.5092446869838" width="147.89155579755635" height="99.60334985084954" fill="#C5621F" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1534.1084442024435" y="716.5092446869838" font-size="12" font-weight="700" fill="#1A1A1A">North Carolina</text>
+<text x="1534.1084442024435" y="731.5092446869838" font-size="11" fill="#1A1A1A">8,230 · 2.4%</text>
+<rect x="1527.1084442024435" y="801.1125945378334" width="139.622752823556" height="92.88740546216665" fill="#B05D2C" stroke="#FFFFFF" stroke-width="2"/>
+<text x="1534.1084442024435" y="818.1125945378334" font-size="12" font-weight="700" fill="#1A1A1A">Georgia</text>
+<text x="1534.1084442024435" y="833.1125945378334" font-size="11" fill="#1A1A1A">7,262 · 2.1%</text>
+<rect x="1668.7311970259996" y="801.1125945378334" width="6.2688029740003515" height="92.88740546216222" fill="#BAB3AC" stroke="#FFFFFF" stroke-width="2"/>
+<text x="850.0" y="922" font-size="14" font-weight="700" fill="#3D3733" text-anchor="middle">Both groups left NYC MSA at ≈51% of all out-of-borough moves — families: 243,970  ·  no-kids: 344,037</text>
+<text x="24" y="942" font-size="9" fill="#7F7570" font-style="italic">Source: U.S. Census Bureau ACS 1-year microdata via IPUMS USA (Data lake: Data/IPUMS/acs_1y_degfield_migration). PUMS persons whose MIGPLAC1=NY and MIGPUMA1 in NYC borough (3700-4100), excluding intra-NYC moves. Person weights (PERWT).</text>
+</svg>

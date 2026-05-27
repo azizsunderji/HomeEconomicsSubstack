@@ -1,0 +1,49 @@
+=== V2019 (2011 baseline) — agesex by state ===
+  files: 51
+  wrote pep_2011_national.csv — 3142 counties
+
+=== V2024 (2024 endpoint) — syasex by state ===
+  downloading v2024-syasex-01.csv (attempt 1)
+  downloading v2024-syasex-02.csv (attempt 1)
+  downloading v2024-syasex-05.csv (attempt 1)
+  downloading v2024-syasex-08.csv (attempt 1)
+  downloading v2024-syasex-09.csv (attempt 1)
+  downloading v2024-syasex-15.csv (attempt 1)
+  downloading v2024-syasex-16.csv (attempt 1)
+    ↳ HTTP Error 502: Bad Gateway; backoff
+  downloading v2024-syasex-16.csv (attempt 2)
+  downloading v2024-syasex-19.csv (attempt 1)
+  downloading v2024-syasex-20.csv (attempt 1)
+  downloading v2024-syasex-21.csv (attempt 1)
+  downloading v2024-syasex-22.csv (attempt 1)
+  downloading v2024-syasex-23.csv (attempt 1)
+  downloading v2024-syasex-25.csv (attempt 1)
+    ↳ IncompleteRead(0 bytes read, 461269 more expected); backoff
+  downloading v2024-syasex-25.csv (attempt 2)
+  downloading v2024-syasex-26.csv (attempt 1)
+  downloading v2024-syasex-27.csv (attempt 1)
+  downloading v2024-syasex-28.csv (attempt 1)
+  downloading v2024-syasex-29.csv (attempt 1)
+  downloading v2024-syasex-30.csv (attempt 1)
+  downloading v2024-syasex-31.csv (attempt 1)
+  downloading v2024-syasex-32.csv (attempt 1)
+  downloading v2024-syasex-33.csv (attempt 1)
+  downloading v2024-syasex-35.csv (attempt 1)
+  downloading v2024-syasex-38.csv (attempt 1)
+  downloading v2024-syasex-39.csv (attempt 1)
+  downloading v2024-syasex-41.csv (attempt 1)
+  downloading v2024-syasex-44.csv (attempt 1)
+  downloading v2024-syasex-46.csv (attempt 1)
+  downloading v2024-syasex-47.csv (attempt 1)
+  downloading v2024-syasex-49.csv (attempt 1)
+  downloading v2024-syasex-50.csv (attempt 1)
+  downloading v2024-syasex-53.csv (attempt 1)
+  downloading v2024-syasex-56.csv (attempt 1)
+  files: 51
+Traceback (most recent call last):
+  File "/Users/azizsunderji/Dropbox/Home Economics/2026_05_18_KidsLeavingCity/scripts/pull_pep_national.py", line 95, in <module>
+    main()
+  File "/Users/azizsunderji/Dropbox/Home Economics/2026_05_18_KidsLeavingCity/scripts/pull_pep_national.py", line 82, in main
+    df24 = duckdb.query(f"""
+_duckdb.BinderException: Binder Error: Referenced column "SUMLEV" not found in FROM clause!
+Candidate bindings: "STNAME", "TOT_MALE", "STATE", "AGE"

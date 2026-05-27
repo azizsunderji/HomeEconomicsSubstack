@@ -1,0 +1,162 @@
+"""
+Stacked-bar chart of NYC 5-borough annual under-18 decomposition, 2010-2024.
+
+Each year: positive "natural change" (births - aging-out - deaths) and negative
+"net migration" stacked. Black horizontal marker for the net ΔPop.
+
+The 2019→2020 period straddles the V2019/V2024 vintage break — that transition
+is flagged explicitly because the +100k apparent jump reflects Census 2020
+rebasing, not real migration.
+"""
+import json
+import pandas as pd
+from pathlib import Path
+
+PROJECT = Path("/Users/azizsunderji/Dropbox/Home Economics/2026_05_18_KidsLeavingCity")
+DATA = PROJECT / "data"
+OUTPUTS = PROJECT / "outputs"
+
+df = pd.read_csv(DATA / "nyc_5boro_annual_decomposition.csv")
+df = df.sort_values("period_start").reset_index(drop=True)
+
+# Bin into "period label" = "YYYY→YY"
+df["label"] = df["period_start"].apply(lambda y: f"{y}–{str(y+1)[-2:]}")
+
+# Flag the vintage-break year explicitly
+df["is_vintage_break"] = df["period_start"] == 2019
+
+records = df.to_dict(orient="records")
+
+template = """<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>NYC 5-borough annual under-18 decomposition</title>
+<style>
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Regular.otf') format('opentype'); font-weight:400; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Medium.otf') format('opentype'); font-weight:500; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Light.otf') format('opentype'); font-weight:300; }
+body { margin:0; background:#F6F7F3; font-family:'ABC Oracle Edu',sans-serif; }
+svg { display:block; margin:20px auto; background:#F6F7F3; }
+</style></head><body>
+<svg id="chart" viewBox="0 0 1400 920" xmlns="http://www.w3.org/2000/svg"></svg>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const data = __DATA__;
+const BG = '#F6F7F3', TEXT = '#3D3733', SUBTEXT = '#7F7570', GRID = '#e1e2e3';
+const GREEN = '#67A275', BLUE = '#0BB4FF', BLACK = '#3D3733';
+
+const W = 1400, H = 920, PAD = 60;
+const svg = d3.select('#chart');
+svg.append('rect').attr('width', W).attr('height', H).attr('fill', BG);
+
+svg.append('text').attr('x', PAD).attr('y', PAD + 12)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',32).attr('font-weight',500).attr('fill',TEXT)
+  .text('NYC: natural change vs net migration, year by year');
+svg.append('text').attr('x', PAD).attr('y', PAD + 44)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',18).attr('font-weight',400).attr('fill',SUBTEXT)
+  .text('Annual change in under-18 population, 5 boroughs combined. Births minus aging-out minus deaths = natural change.');
+svg.append('text').attr('x', PAD).attr('y', PAD + 70)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',14).attr('font-weight',300).attr('fill',SUBTEXT)
+  .text('Children (signed contributions to year-over-year Δ)');
+
+const chartLeft = 100, chartRight = W - PAD - 30;
+const chartTop = PAD + 100, chartBottom = H - PAD - 80;
+const innerW = chartRight - chartLeft;
+const innerH = chartBottom - chartTop;
+
+// X scale: bands per period
+const x = d3.scaleBand().domain(data.map(d => d.label))
+  .range([chartLeft, chartRight]).padding(0.2);
+
+// Y scale: combined range of natural_change, net_migration, delta_pop
+const allVals = data.flatMap(d => [d.natural_change, d.net_migration, d.delta_pop, 0]);
+const ymin = d3.min(allVals);
+const ymax = d3.max(allVals);
+const pad = Math.max(Math.abs(ymin), Math.abs(ymax)) * 0.05;
+const y = d3.scaleLinear().domain([ymin - pad, ymax + pad]).range([chartBottom, chartTop]).nice();
+
+// Gridlines + y-axis labels
+y.ticks(8).forEach(t => {
+  svg.append('line').attr('x1', chartLeft).attr('x2', chartRight)
+    .attr('y1', y(t)).attr('y2', y(t)).attr('stroke', t === 0 ? TEXT : GRID).attr('stroke-width', t === 0 ? 1 : 0.5);
+  const lbl = (t === 0 ? '0' : (t > 0 ? '+' : '') + (Math.abs(t) >= 1000 ? (t/1000).toFixed(0) + 'k' : t));
+  svg.append('text').attr('x', chartLeft - 8).attr('y', y(t)).attr('text-anchor','end').attr('dy','0.32em')
+    .attr('font-family','ABC Oracle Edu').attr('font-size',12).attr('font-weight',300).attr('fill',TEXT)
+    .text(lbl);
+});
+
+// X-axis labels (rotated for readability)
+data.forEach(d => {
+  const cx = x(d.label) + x.bandwidth()/2;
+  svg.append('text').attr('x', cx).attr('y', chartBottom + 18).attr('text-anchor','end')
+    .attr('font-family','ABC Oracle Edu').attr('font-size',12).attr('font-weight',300).attr('fill',TEXT)
+    .attr('transform', `rotate(-35, ${cx}, ${chartBottom + 18})`)
+    .text(d.label);
+});
+
+// Bars
+data.forEach(d => {
+  const cx = x(d.label);
+  const bw = x.bandwidth();
+
+  // Natural change bar (positive side; for NYC it's mostly negative when aging-out > births
+  // but in our data, births > aging-out, so natural change is positive)
+  const nv = d.natural_change;
+  svg.append('rect')
+    .attr('x', cx).attr('y', nv >= 0 ? y(nv) : y(0))
+    .attr('width', bw).attr('height', Math.abs(y(nv) - y(0)))
+    .attr('fill', GREEN).attr('opacity', d.is_vintage_break ? 0.35 : 1);
+
+  // Net migration bar
+  const mv = d.net_migration;
+  svg.append('rect')
+    .attr('x', cx).attr('y', mv >= 0 ? y(mv) : y(0))
+    .attr('width', bw).attr('height', Math.abs(y(mv) - y(0)))
+    .attr('fill', BLUE).attr('opacity', d.is_vintage_break ? 0.35 : 1);
+
+  // Net Δ marker
+  svg.append('line').attr('x1', cx).attr('x2', cx + bw)
+    .attr('y1', y(d.delta_pop)).attr('y2', y(d.delta_pop))
+    .attr('stroke', BLACK).attr('stroke-width', 2.5);
+
+  // Vintage break callout
+  if (d.is_vintage_break) {
+    svg.append('text').attr('x', cx + bw/2).attr('y', chartTop - 12).attr('text-anchor','middle')
+      .attr('font-family','ABC Oracle Edu').attr('font-size',10).attr('font-weight',400).attr('fill', '#A32515')
+      .text('Vintage break');
+    svg.append('text').attr('x', cx + bw/2).attr('y', chartTop - 0).attr('text-anchor','middle')
+      .attr('font-family','ABC Oracle Edu').attr('font-size',10).attr('font-weight',400).attr('fill', '#A32515')
+      .text('(Census 2020 rebase)');
+  }
+});
+
+// Legend
+const legY = chartBottom + 65;
+const legItems = [
+  { color: GREEN, label: 'Natural change (births − aging-out − deaths)' },
+  { color: BLUE,  label: 'Net migration' },
+  { color: BLACK, label: 'Net Δ marker', isLine: true },
+];
+let lx = chartLeft;
+legItems.forEach(it => {
+  if (it.isLine) {
+    svg.append('line').attr('x1', lx).attr('x2', lx + 22).attr('y1', legY).attr('y2', legY)
+      .attr('stroke', it.color).attr('stroke-width', 2.5);
+  } else {
+    svg.append('rect').attr('x', lx).attr('y', legY - 8).attr('width', 22).attr('height', 14).attr('fill', it.color);
+  }
+  svg.append('text').attr('x', lx + 28).attr('y', legY + 5)
+    .attr('font-family','ABC Oracle Edu').attr('font-size',13).attr('font-weight',400).attr('fill',TEXT)
+    .text(it.label);
+  lx += 28 + (it.label.length * 7.2) + 36;
+});
+
+// Source line
+svg.append('text').attr('x', PAD).attr('y', H - PAD + 4)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',11).attr('font-weight',300).attr('fill', SUBTEXT)
+  .text('Source: Census PEP V2019 + V2024 (under-18 stock); CDC WONDER Natality 2007-2024 (births by mother\\'s residence). Aging-out estimated as AGE14-17 × 0.25; deaths from PEP mortality.');
+</script>
+</body></html>"""
+
+html = template.replace("__DATA__", json.dumps(records))
+out_path = OUTPUTS / "nyc_annual_decomposition.html"
+out_path.write_text(html)
+print(f"Wrote {out_path}")

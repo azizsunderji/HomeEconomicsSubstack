@@ -1,0 +1,517 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1300" width="1100" height="1300" style="background:#FFFFFF;font-family:'ABC Oracle Edu',Arial,sans-serif">
+<rect x="24" y="20" width="36" height="3" fill="#D03A2E"/>
+<text x="24" y="46" font-size="24" font-weight="700" fill="#3D3733">Where New Yorkers went when they left the 5 boroughs</text>
+<text x="24" y="72" font-size="13" fill="#7F7570">IRS county-to-county migration, pooled 2020–21 + 2021–22 + 2022–23. All people moving out of Bronx, Brooklyn, Manhattan, Queens, Staten Island, excluding intra-borough moves.</text>
+<rect x="25" y="102" width="1050.0" height="476.1192891010142" fill="#0BB4FF" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="27" y="131" width="250.3521414571083" height="445.1192891010142" fill="#0BB4FF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="32" y="147" font-size="11.5" font-weight="700" fill="#1A1A1A">Nassau</text>
+<text x="32" y="161" font-size="11" fill="#1A1A1A">28,870</text>
+<rect x="279.3521414571083" y="131" width="284.91398306851835" height="260.43602924141294" fill="#13B6FF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="284.3521414571083" y="147" font-size="11.5" font-weight="700" fill="#1A1A1A">Westchester</text>
+<text x="284.3521414571083" y="161" font-size="11" fill="#1A1A1A">19,266</text>
+<rect x="279.3521414571083" y="393.43602924141294" width="284.91398306851835" height="182.68325985960118" fill="#1BB9FF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="284.3521414571083" y="409.43602924141294" font-size="11.5" font-weight="700" fill="#1A1A1A">Suffolk</text>
+<text x="284.3521414571083" y="423.43602924141294" font-size="11" fill="#1A1A1A">13,558</text>
+<rect x="566.2661245256267" y="131" width="186.04473914675341" height="245.07637748490944" fill="#24BBFF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="571.2661245256267" y="147" font-size="11.5" font-weight="700" fill="#1A1A1A">Hudson NJ</text>
+<text x="571.2661245256267" y="161" font-size="11" fill="#1A1A1A">11,888</text>
+<rect x="566.2661245256267" y="378.0763774849095" width="186.04473914675341" height="198.04291161610476" fill="#2CBEFF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="571.2661245256267" y="394.0763774849095" font-size="11.5" font-weight="700" fill="#1A1A1A">Bergen</text>
+<text x="571.2661245256267" y="408.0763774849095" font-size="11" fill="#1A1A1A">9,625</text>
+<rect x="754.31086367238" y="131" width="173.86104015318512" height="167.38811053246283" fill="#34C0FF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="759.31086367238" y="147" font-size="11.5" font-weight="700" fill="#1A1A1A">Essex</text>
+<text x="759.31086367238" y="161" font-size="11" fill="#1A1A1A">7,622</text>
+<rect x="930.1719038255651" y="131" width="142.8280961744349" height="167.38811053246283" fill="#3DC3FF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="935.1719038255651" y="147" font-size="11.5" font-weight="700" fill="#1A1A1A">Middlesex</text>
+<text x="935.1719038255651" y="161" font-size="11" fill="#1A1A1A">6,277</text>
+<rect x="754.31086367238" y="300.38811053246286" width="129.33492954257218" height="145.95665057782463" fill="#45C6FF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="759.31086367238" y="316.38811053246286" font-size="11.5" font-weight="700" fill="#1A1A1A">Union</text>
+<text x="759.31086367238" y="330.38811053246286" font-size="11" fill="#1A1A1A">4,972</text>
+<rect x="754.31086367238" y="448.3447611102875" width="129.33492954257218" height="127.77452799072674" fill="#4EC8FF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="759.31086367238" y="464.3447611102875" font-size="11.5" font-weight="700" fill="#1A1A1A">Monmouth</text>
+<text x="759.31086367238" y="478.3447611102875" font-size="11" fill="#1A1A1A">4,361</text>
+<rect x="885.6457932149522" y="300.38811053246286" width="97.66328981440911" height="127.32993199394645" fill="#56CBFF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="890.6457932149522" y="316.38811053246286" font-size="11.5" font-weight="700" fill="#1A1A1A">Rockland</text>
+<text x="890.6457932149522" y="330.38811053246286" font-size="11" fill="#1A1A1A">3,298</text>
+<rect x="985.3090830293613" y="300.38811053246286" width="87.69091697063865" height="127.32993199394645" fill="#5ECDFF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="990.3090830293613" y="316.38811053246286" font-size="11.5" font-weight="700" fill="#1A1A1A">Passaic</text>
+<text x="990.3090830293613" y="330.38811053246286" font-size="11" fill="#1A1A1A">2,968</text>
+<rect x="885.6457932149522" y="429.7180425264093" width="69.92299565089925" height="146.40124657460495" fill="#67D0FF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="889.6457932149522" y="442.7180425264093" font-size="10" font-weight="700" fill="#1A1A1A">Ocean</text>
+<text x="889.6457932149522" y="454.7180425264093" font-size="9.5" fill="#1A1A1A">2,731</text>
+<rect x="957.5687888658514" y="429.7180425264093" width="64.44530941693846" height="88.75806221326484" fill="#6FD2FF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="961.5687888658514" y="442.7180425264093" font-size="10" font-weight="700" fill="#1A1A1A">Morris</text>
+<text x="961.5687888658514" y="454.7180425264093" font-size="9.5" fill="#1A1A1A">1,543</text>
+<rect x="1024.0140982827897" y="429.7180425264093" width="48.98590171721007" height="88.75806221326484" fill="#78D5FF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="1028.0140982827897" y="442.7180425264093" font-size="10" font-weight="700" fill="#1A1A1A">Somerset</text>
+<text x="1028.0140982827897" y="454.7180425264093" font-size="9.5" fill="#1A1A1A">1,184</text>
+<rect x="957.5687888658514" y="520.4761047396742" width="70.88599998222276" height="55.643184361340126" fill="#80D8FF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="961.5687888658514" y="533.4761047396742" font-size="10" font-weight="700" fill="#1A1A1A">Putnam</text>
+<text x="961.5687888658514" y="545.4761047396742" font-size="9.5" fill="#1A1A1A">1,075</text>
+<rect x="1030.4547888480743" y="520.4761047396742" width="42.54521115192577" height="33.27025892429041" fill="#88DAFF" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1030.4547888480743" y="555.7463636639645" width="42.545211151926125" height="20.37292543704971" fill="#91DDFF" stroke="#FFFFFF" stroke-width="1"/>
+<text x="33" y="121" font-size="13.5" font-weight="700" fill="#FFFFFF">NYC MSA suburbs</text>
+<text x="1067.0" y="121" font-size="11" fill="#FFFFFF" text-anchor="end">119,895 · 41.8%</text>
+<rect x="25" y="580.1192891010141" width="349.9916990547478" height="357.2687080869579" fill="#D03A2E" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="27" y="609.1192891010141" width="141.44960365095196" height="123.74915906115562" fill="#D03A2E" stroke="#FFFFFF" stroke-width="1"/>
+<text x="32" y="625.1192891010141" font-size="11.5" font-weight="700" fill="#1A1A1A">Miami-Dade</text>
+<text x="32" y="639.1192891010141" font-size="11" fill="#1A1A1A">4,760</text>
+<rect x="27" y="734.8684481621698" width="141.44960365095196" height="104.9396209831004" fill="#D03D31" stroke="#FFFFFF" stroke-width="1"/>
+<text x="32" y="750.8684481621698" font-size="11.5" font-weight="700" fill="#1A1A1A">Broward</text>
+<text x="32" y="764.8684481621698" font-size="11" fill="#1A1A1A">4,048</text>
+<rect x="27" y="841.8080691452702" width="141.44960365095196" height="93.57992804270188" fill="#D14135" stroke="#FFFFFF" stroke-width="1"/>
+<text x="32" y="857.8080691452702" font-size="11.5" font-weight="700" fill="#1A1A1A">Palm Beach</text>
+<text x="32" y="871.8080691452702" font-size="11" fill="#1A1A1A">3,618</text>
+<rect x="170.44960365095196" y="609.1192891010141" width="120.45930416314728" height="92.04514969236924" fill="#D24539" stroke="#FFFFFF" stroke-width="1"/>
+<text x="175.44960365095196" y="625.1192891010141" font-size="11.5" font-weight="700" fill="#1A1A1A">Orange</text>
+<text x="175.44960365095196" y="639.1192891010141" font-size="11" fill="#1A1A1A">3,039</text>
+<rect x="292.9089078140992" y="609.1192891010141" width="80.08279124064856" height="92.04514969236924" fill="#D3483D" stroke="#FFFFFF" stroke-width="1"/>
+<text x="297.9089078140992" y="625.1192891010141" font-size="11.5" font-weight="700" fill="#1A1A1A">Hillsborough</text>
+<text x="297.9089078140992" y="639.1192891010141" font-size="11" fill="#1A1A1A">2,037</text>
+<rect x="170.44960365095196" y="703.1644387933834" width="83.66084415193549" height="75.68544378646655" fill="#D44C41" stroke="#FFFFFF" stroke-width="1"/>
+<text x="175.44960365095196" y="719.1644387933834" font-size="11.5" font-weight="700" fill="#1A1A1A">Osceola</text>
+<text x="175.44960365095196" y="733.1644387933834" font-size="11" fill="#1A1A1A">1,756</text>
+<rect x="256.11044780288745" y="703.1644387933834" width="69.9043760136406" height="75.68544378646655" fill="#D55045" stroke="#FFFFFF" stroke-width="1"/>
+<text x="260.11044780288745" y="716.1644387933834" font-size="10" font-weight="700" fill="#1A1A1A">Polk</text>
+<text x="260.11044780288745" y="728.1644387933834" font-size="9.5" fill="#1A1A1A">1,474</text>
+<rect x="328.01482381652806" y="703.1644387933834" width="44.97687523821975" height="75.68544378646655" fill="#D65449" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="170.44960365095196" y="780.8498825798499" width="53.462887983204666" height="53.82350049534515" fill="#D7574D" stroke="#FFFFFF" stroke-width="1"/>
+<text x="174.44960365095196" y="793.8498825798499" font-size="10" font-weight="700" fill="#1A1A1A">Duval</text>
+<text x="174.44960365095196" y="805.8498825798499" font-size="9.5" fill="#1A1A1A">817</text>
+<rect x="170.44960365095196" y="836.673383075195" width="53.462887983204666" height="50.065492506062434" fill="#D85B51" stroke="#FFFFFF" stroke-width="1"/>
+<text x="174.44960365095196" y="849.673383075195" font-size="10" font-weight="700" fill="#1A1A1A">Pinellas</text>
+<text x="174.44960365095196" y="861.673383075195" font-size="9.5" fill="#1A1A1A">762</text>
+<rect x="170.44960365095196" y="888.7388755812575" width="53.462887983204666" height="46.64912160671451" fill="#D85F55" stroke="#FFFFFF" stroke-width="1"/>
+<text x="174.44960365095196" y="901.7388755812575" font-size="10" font-weight="700" fill="#1A1A1A">St. Lucie</text>
+<text x="174.44960365095196" y="913.7388755812575" font-size="9.5" fill="#1A1A1A">712</text>
+<rect x="225.91249163415662" y="780.8498825798499" width="48.44943244522288" height="48.10338159996892" fill="#D96359" stroke="#FFFFFF" stroke-width="1"/>
+<text x="229.91249163415662" y="793.8498825798499" font-size="10" font-weight="700" fill="#1A1A1A">Seminole</text>
+<text x="229.91249163415662" y="805.8498825798499" font-size="9.5" fill="#1A1A1A">667</text>
+<rect x="276.3619240793795" y="780.8498825798499" width="47.61743280969448" height="48.10338159996892" fill="#DA665D" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="325.979356889074" y="780.8498825798499" width="47.012342165673815" height="48.10338159996892" fill="#DB6A61" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="225.91249163415662" y="830.9532641798188" width="34.922650607870324" height="51.679233715780235" fill="#DC6E65" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="225.91249163415662" y="884.632497895599" width="34.922650607870324" height="50.75549929237292" fill="#DD7269" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="262.83514224202696" y="830.9532641798188" width="50.94501586683044" height="34.57575559325237" fill="#DE756D" stroke="#FFFFFF" stroke-width="1"/>
+<text x="266.83514224202696" y="843.9532641798188" font-size="10" font-weight="700" fill="#1A1A1A">Collier</text>
+<text x="266.83514224202696" y="855.9532641798188" font-size="9.5" fill="#1A1A1A">511</text>
+<rect x="262.83514224202696" y="867.5290197730711" width="50.94501586683044" height="33.07264234969405" fill="#DF7971" stroke="#FFFFFF" stroke-width="1"/>
+<text x="266.83514224202696" y="880.5290197730711" font-size="10" font-weight="700" fill="#1A1A1A">Volusia</text>
+<text x="266.83514224202696" y="892.5290197730711" font-size="9.5" fill="#1A1A1A">490</text>
+<rect x="262.83514224202696" y="902.6016621227652" width="50.94501586683044" height="32.78633506520675" fill="#E07D75" stroke="#FFFFFF" stroke-width="1"/>
+<text x="266.83514224202696" y="915.6016621227652" font-size="10" font-weight="700" fill="#1A1A1A">Marion</text>
+<text x="266.83514224202696" y="927.6016621227652" font-size="9.5" fill="#1A1A1A">486</text>
+<rect x="315.7801581088574" y="830.9532641798188" width="29.1421148032383" height="43.63317175875717" fill="#E08079" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="346.9222729120957" y="830.9532641798188" width="26.069426142652123" height="43.63317175875717" fill="#E1847D" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="315.7801581088574" y="876.586435938576" width="29.036000930575412" height="24.496680376052552" fill="#E28881" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="346.8161590394328" y="876.586435938576" width="26.175540015315008" height="24.496680376052552" fill="#E38C85" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="315.7801581088574" y="903.0831163146286" width="24.40216098146977" height="17.807839165361482" fill="#E48F89" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="315.7801581088574" y="922.89095547999" width="24.40216098146977" height="12.497041707981953" fill="#E5938D" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="342.18231909032716" y="903.0831163146286" width="14.404689982210328" height="16.480743904831442" fill="#E69791" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="358.5870090725375" y="903.0831163146286" width="14.404689982210328" height="16.480743904831442" fill="#E79B95" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="342.18231909032716" y="921.56386021946" width="15.96133939658057" height="13.824136968511995" fill="#E89E99" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="360.1436584869077" y="921.56386021946" width="12.848040567840085" height="7.953892609225189" fill="#E8A29C" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="360.1436584869077" y="931.5177528286852" width="12.848040567839695" height="3.8702443592868043" fill="#E9A6A0" stroke="#FFFFFF" stroke-width="1"/>
+<text x="33" y="599.1192891010141" font-size="13.5" font-weight="700" fill="#FFFFFF">Florida</text>
+<text x="366.9916990547478" y="599.1192891010141" font-size="11" fill="#FFFFFF" text-anchor="end">30,144 · 10.5%</text>
+<rect x="25" y="939.387997187972" width="349.9916990547478" height="303.61200281202804" fill="#E8806C" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="27" y="968.387997187972" width="68.61074838865349" height="97.01443730066589" fill="#E8806C" stroke="#FFFFFF" stroke-width="1"/>
+<text x="31" y="981.387997187972" font-size="10" font-weight="700" fill="#1A1A1A">Mecklenburg</text>
+<text x="31" y="993.387997187972" font-size="9.5" fill="#1A1A1A">1,876</text>
+<rect x="27" y="1067.402434488638" width="68.61074838865349" height="91.78926177147295" fill="#E8806D" stroke="#FFFFFF" stroke-width="1"/>
+<text x="31" y="1080.402434488638" font-size="10" font-weight="700" fill="#1A1A1A">District of Columbia</text>
+<text x="31" y="1092.402434488638" font-size="9.5" fill="#1A1A1A">1,777</text>
+<rect x="27" y="1161.1916962601108" width="68.61074838865349" height="79.8083037398892" fill="#E8816E" stroke="#FFFFFF" stroke-width="1"/>
+<text x="31" y="1174.1916962601108" font-size="10" font-weight="700" fill="#1A1A1A">Fulton</text>
+<text x="31" y="1186.1916962601108" font-size="9.5" fill="#1A1A1A">1,550</text>
+<rect x="97.61074838865349" y="968.387997187972" width="64.30869049143973" height="78.25909537772739" fill="#E8826F" stroke="#FFFFFF" stroke-width="1"/>
+<text x="101.61074838865349" y="981.387997187972" font-size="10" font-weight="700" fill="#1A1A1A">Gwinnett</text>
+<text x="101.61074838865349" y="993.387997187972" font-size="9.5" fill="#1A1A1A">1,428</text>
+<rect x="97.61074838865349" y="1048.6470925656995" width="64.30869049143973" height="76.4043683837043" fill="#E88370" stroke="#FFFFFF" stroke-width="1"/>
+<text x="101.61074838865349" y="1061.6470925656995" font-size="10" font-weight="700" fill="#1A1A1A">Wake</text>
+<text x="101.61074838865349" y="1073.6470925656995" font-size="9.5" fill="#1A1A1A">1,395</text>
+<rect x="97.61074838865349" y="1127.0514609494037" width="64.30869049143973" height="62.465814004379084" fill="#E88471" stroke="#FFFFFF" stroke-width="1"/>
+<text x="101.61074838865349" y="1140.0514609494037" font-size="10" font-weight="700" fill="#1A1A1A">Montgomery</text>
+<text x="101.61074838865349" y="1152.0514609494037" font-size="9.5" fill="#1A1A1A">1,147</text>
+<rect x="97.61074838865349" y="1191.5172749537828" width="64.30869049143973" height="49.48272504621729" fill="#E88572" stroke="#FFFFFF" stroke-width="1"/>
+<text x="101.61074838865349" y="1204.5172749537828" font-size="10" font-weight="700" fill="#1A1A1A">DeKalb</text>
+<text x="101.61074838865349" y="1216.5172749537828" font-size="9.5" fill="#1A1A1A">916</text>
+<rect x="163.91943888009322" y="968.387997187972" width="58.27749612518057" height="53.335563351951116" fill="#E98673" stroke="#FFFFFF" stroke-width="1"/>
+<text x="167.91943888009322" y="981.387997187972" font-size="10" font-weight="700" fill="#1A1A1A">Fairfax</text>
+<text x="167.91943888009322" y="993.387997187972" font-size="9.5" fill="#1A1A1A">895</text>
+<rect x="224.1969350052738" y="968.387997187972" width="49.858851414959815" height="53.335563351951116" fill="#E98774" stroke="#FFFFFF" stroke-width="1"/>
+<text x="228.1969350052738" y="981.387997187972" font-size="10" font-weight="700" fill="#1A1A1A">Baltimore</text>
+<text x="228.1969350052738" y="993.387997187972" font-size="9.5" fill="#1A1A1A">770</text>
+<rect x="276.05578642023363" y="968.387997187972" width="49.724153099596286" height="53.335563351951116" fill="#E98875" stroke="#FFFFFF" stroke-width="1"/>
+<text x="280.05578642023363" y="981.387997187972" font-size="10" font-weight="700" fill="#1A1A1A">Baltimore city</text>
+<text x="280.05578642023363" y="993.387997187972" font-size="9.5" fill="#1A1A1A">768</text>
+<rect x="327.7799395198299" y="968.387997187972" width="45.21175953491796" height="53.335563351951116" fill="#E98876" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="163.91943888009322" y="1023.7235605399231" width="47.72862449714864" height="42.14132366939304" fill="#E98977" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="213.64806337724187" y="1023.7235605399231" width="46.546619840170564" height="42.14132366939304" fill="#E98A78" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="262.19468321741243" y="1023.7235605399231" width="36.07743573550769" height="42.14132366939304" fill="#EA8B79" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="300.2721189529201" y="1023.7235605399231" width="35.73972011922825" height="42.14132366939304" fill="#EA8C7A" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="338.01183907214835" y="1023.7235605399231" width="34.97985998259949" height="42.14132366939304" fill="#EA8D7B" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="163.91943888009322" y="1067.8648842093162" width="32.96236752363721" height="44.688484915593136" fill="#EA8E7C" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="163.91943888009322" y="1114.5533691249093" width="32.96236752363721" height="43.72913248582068" fill="#EA8F7D" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="163.91943888009322" y="1160.28250161073" width="32.96236752363721" height="40.851075196503295" fill="#EA907E" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="163.91943888009322" y="1203.133576807233" width="32.96236752363721" height="37.86642319276675" fill="#EB917F" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="198.88180640373042" y="1067.8648842093162" width="32.919808342232905" height="36.20741709510349" fill="#EB9180" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="198.88180640373042" y="1106.0723013044196" width="32.919808342232905" height="35.56706932255985" fill="#EB9281" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="198.88180640373042" y="1143.6393706269794" width="32.919808342232905" height="32.2586058310844" fill="#EB9382" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="198.88180640373042" y="1177.8979764580638" width="32.919808342232905" height="31.298084172268965" fill="#EB9483" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="198.88180640373042" y="1211.1960606303328" width="32.919808342232905" height="29.803939369667145" fill="#EB9584" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="233.80161474596332" y="1067.8648842093162" width="28.905663615978174" height="32.36713199087722" fill="#EC9685" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="264.7072783619415" y="1067.8648842093162" width="27.387490666421346" height="32.36713199087722" fill="#EC9786" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="294.09476902836286" y="1067.8648842093162" width="25.327113092022806" height="32.36713199087722" fill="#EC9887" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="321.42188212038565" y="1067.8648842093162" width="25.110231242086115" height="32.36713199087722" fill="#EC9989" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="348.53211336247176" y="1067.8648842093162" width="24.459585692276047" height="32.36713199087722" fill="#EC998A" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="233.80161474596332" y="1102.2320162001934" width="27.65177094052852" height="27.661825157816395" fill="#EC9A8B" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="233.80161474596332" y="1131.8938413580097" width="27.65177094052852" height="26.782025259067606" fill="#ED9B8C" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="233.80161474596332" y="1160.6758666170772" width="27.65177094052852" height="26.53065385942509" fill="#ED9C8D" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="233.80161474596332" y="1189.2065204765022" width="27.65177094052852" height="25.399482561033793" fill="#ED9D8E" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="233.80161474596332" y="1216.606003037536" width="27.65177094052852" height="24.393996962463742" fill="#ED9E8F" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="263.45338568649186" y="1102.2320162001934" width="26.63453032681388" height="25.331642712613764" fill="#ED9F90" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="292.08791601330574" y="1102.2320162001934" width="26.36182051417756" height="25.331642712613764" fill="#EDA091" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="320.4497365274833" y="1102.2320162001934" width="25.68004598258675" height="25.331642712613764" fill="#EEA192" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="348.1297825100701" y="1102.2320162001934" width="24.861916544677786" height="25.331642712613764" fill="#EEA293" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="263.45338568649186" y="1129.563658912807" width="22.199085443985712" height="24.79703845417633" fill="#EEA294" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="287.6524711304776" y="1129.563658912807" width="21.781859832882514" height="24.79703845417633" fill="#EEA395" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="311.4343309633601" y="1129.563658912807" width="20.530182999572908" height="24.79703845417633" fill="#EEA496" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="333.964513962933" y="1129.563658912807" width="18.722205351459028" height="24.79703845417633" fill="#EEA597" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="354.686719314392" y="1129.563658912807" width="18.304979740355826" height="24.79703845417633" fill="#EEA698" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="263.45338568649186" y="1156.3606973669835" width="21.74436906258282" height="20.758512467006163" fill="#EFA799" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="263.45338568649186" y="1179.1192098339895" width="21.74436906258282" height="20.287646691826726" fill="#EFA89A" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="263.45338568649186" y="1201.4068565258162" width="21.74436906258282" height="19.65982565825414" fill="#EFA99B" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="263.45338568649186" y="1223.0666821840705" width="21.74436906258282" height="17.933317815929534" fill="#EFAA9C" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="287.19775474907465" y="1156.3606973669835" width="17.571898412092725" height="21.04034201889012" fill="#EFAA9D" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="287.19775474907465" y="1179.4010393858737" width="17.571898412092725" height="20.27867781991854" fill="#EFAB9E" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="287.19775474907465" y="1201.6797172057923" width="17.571898412092725" height="19.51701362094697" fill="#F0AC9F" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="287.19775474907465" y="1223.1967308267392" width="17.571898412092725" height="17.803269173260926" fill="#F0ADA0" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="306.76965316116735" y="1156.3606973669835" width="16.02758725685286" height="19.086236328085974" fill="#F0AEA1" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="324.79724041802024" y="1156.3606973669835" width="15.850846205315086" height="19.086236328085974" fill="#F0AFA2" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="342.6480866233353" y="1156.3606973669835" width="15.320623050701766" height="19.086236328085974" fill="#F0B0A3" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="359.9687096740371" y="1156.3606973669835" width="13.022989380710717" height="19.086236328085974" fill="#F0B1A5" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="306.76965316116735" y="1177.4469336950694" width="16.931617735468542" height="14.732764672429731" fill="#F1B2A6" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="306.76965316116735" y="1194.1796983674992" width="16.931617735468542" height="14.535908617459967" fill="#F1B3A7" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="306.76965316116735" y="1210.715606984959" width="16.931617735468542" height="14.535908617459967" fill="#F1B3A8" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="306.76965316116735" y="1227.251515602419" width="16.931617735468542" height="13.74848439758092" fill="#F1B4A9" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="325.7012708966359" y="1177.4469336950694" width="14.972647431802677" height="14.029123479406294" fill="#F1B5AA" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="342.67391832843856" y="1177.4469336950694" width="14.74014541218894" height="14.029123479406294" fill="#F1B6AB" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="359.4140637406275" y="1177.4469336950694" width="13.577635314120265" height="14.029123479406294" fill="#F2B7AC" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="325.7012708966359" y="1193.4760571744757" width="13.640232011708578" height="13.726687187342023" fill="#F2B8AD" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="341.34150290834447" y="1193.4760571744757" width="9.848660614930742" height="13.726687187342023" fill="#F2B9AE" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="353.1901635232752" y="1193.4760571744757" width="9.611687402632127" height="13.726687187342023" fill="#F2BAAF" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="364.80185092590733" y="1193.4760571744757" width="8.189848128840438" height="13.726687187342023" fill="#F2BBB0" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="325.7012708966359" y="1209.2027443618178" width="12.00421560644337" height="9.443165294817616" fill="#F2BBB1" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="325.7012708966359" y="1220.6459096566355" width="12.00421560644337" height="9.177045171682323" fill="#F3BCB2" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="325.7012708966359" y="1231.8229548283177" width="12.00421560644337" height="9.177045171682323" fill="#F3BDB3" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="339.70548650307927" y="1209.2027443618178" width="10.901521464203734" height="10.132348177809018" fill="#F3BEB4" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="339.70548650307927" y="1221.3350925396269" width="10.901521464203734" height="9.26575187939409" fill="#F3BFB5" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="339.70548650307927" y="1232.600844419021" width="10.901521464203734" height="8.399155580979158" fill="#F3C0B6" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="352.607007967283" y="1209.2027443618178" width="9.349984213362422" height="9.820715026162176" fill="#F3C1B7" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="363.9569921806454" y="1209.2027443618178" width="9.034706874102355" height="9.820715026162176" fill="#F4C2B8" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="352.607007967283" y="1221.02345938798" width="9.701088522992807" height="9.147520600300046" fill="#F4C3B9" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="352.607007967283" y="1232.1709799882801" width="9.701088522992807" height="8.829020011720045" fill="#F4C4BA" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="364.3080964902758" y="1221.02345938798" width="8.683602564471974" height="9.511521272962602" fill="#F4C4BB" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="364.3080964902758" y="1232.5349806609427" width="8.683602564471386" height="8.465019339057486" fill="#F4C5BC" stroke="#FFFFFF" stroke-width="1"/>
+<text x="33" y="958.387997187972" font-size="13.5" font-weight="700" fill="#1A1A1A">Other Southeast</text>
+<text x="366.9916990547478" y="958.387997187972" font-size="11" fill="#1A1A1A" text-anchor="end">25,642 · 8.9%</text>
+<rect x="376.9916990547478" y="580.1192891010141" width="248.84756009788396" height="335.072912973364" fill="#FEC439" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="378.9916990547478" y="609.1192891010141" width="166.8994906316909" height="102.06934619729414" fill="#FEC439" stroke="#FFFFFF" stroke-width="1"/>
+<text x="383.9916990547478" y="625.1192891010141" font-size="11.5" font-weight="700" fill="#1A1A1A">Philadelphia</text>
+<text x="383.9916990547478" y="639.1192891010141" font-size="11" fill="#1A1A1A">4,689</text>
+<rect x="547.8911896864387" y="609.1192891010141" width="75.94806946619305" height="102.06934619729414" fill="#FEC53E" stroke="#FFFFFF" stroke-width="1"/>
+<text x="552.8911896864387" y="625.1192891010141" font-size="11.5" font-weight="700" fill="#1A1A1A">Lehigh</text>
+<text x="552.8911896864387" y="639.1192891010141" font-size="11" fill="#1A1A1A">2,164</text>
+<rect x="378.9916990547478" y="713.1886352983083" width="96.334477594248" height="79.12164372513242" fill="#FEC743" stroke="#FFFFFF" stroke-width="1"/>
+<text x="383.9916990547478" y="729.1886352983083" font-size="11.5" font-weight="700" fill="#1A1A1A">Luzerne</text>
+<text x="383.9916990547478" y="743.1886352983083" font-size="11" fill="#1A1A1A">2,128</text>
+<rect x="378.9916990547478" y="794.3102790234408" width="96.334477594248" height="59.41304889153587" fill="#FEC848" stroke="#FFFFFF" stroke-width="1"/>
+<text x="383.9916990547478" y="810.3102790234408" font-size="11.5" font-weight="700" fill="#1A1A1A">Monroe</text>
+<text x="383.9916990547478" y="824.3102790234408" font-size="11" fill="#1A1A1A">1,611</text>
+<rect x="378.9916990547478" y="855.7233279149766" width="96.334477594248" height="57.46887415940159" fill="#FECA4D" stroke="#FFFFFF" stroke-width="1"/>
+<text x="383.9916990547478" y="871.7233279149766" font-size="11.5" font-weight="700" fill="#1A1A1A">Berks</text>
+<text x="383.9916990547478" y="885.7233279149766" font-size="11" fill="#1A1A1A">1,560</text>
+<rect x="477.3261766489958" y="713.1886352983083" width="49.92984767134538" height="69.60866161985632" fill="#FECB52" stroke="#FFFFFF" stroke-width="1"/>
+<text x="481.3261766489958" y="726.1886352983083" font-size="10" font-weight="700" fill="#1A1A1A">Northampton</text>
+<text x="481.3261766489958" y="738.1886352983083" font-size="9.5" fill="#1A1A1A">992</text>
+<rect x="529.2560243203411" y="713.1886352983083" width="47.41711310660287" height="69.60866161985632" fill="#FECD58" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="578.673137426944" y="713.1886352983083" width="45.1661217256877" height="69.60866161985632" fill="#FECE5D" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="477.3261766489958" y="784.7972969181646" width="56.87626654422113" height="44.86066904051424" fill="#FED062" stroke="#FFFFFF" stroke-width="1"/>
+<text x="481.3261766489958" y="797.7972969181646" font-size="10" font-weight="700" fill="#1A1A1A">Delaware</text>
+<text x="481.3261766489958" y="809.7972969181646" font-size="9.5" fill="#1A1A1A">736</text>
+<rect x="477.3261766489958" y="831.6579659586789" width="56.87626654422113" height="40.91316702894918" fill="#FED167" stroke="#FFFFFF" stroke-width="1"/>
+<text x="481.3261766489958" y="844.6579659586789" font-size="10" font-weight="700" fill="#1A1A1A">Allegheny</text>
+<text x="481.3261766489958" y="856.6579659586789" font-size="9.5" fill="#1A1A1A">674</text>
+<rect x="477.3261766489958" y="874.5711329876281" width="56.87626654422113" height="38.621069086750126" fill="#FED36C" stroke="#FFFFFF" stroke-width="1"/>
+<text x="481.3261766489958" y="887.5711329876281" font-size="10" font-weight="700" fill="#1A1A1A">Dauphin</text>
+<text x="481.3261766489958" y="899.5711329876281" font-size="9.5" fill="#1A1A1A">638</text>
+<rect x="536.2024431932169" y="784.7972969181646" width="45.56546405235111" height="47.80767544613542" fill="#FED472" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="583.767907245568" y="784.7972969181646" width="40.07135190706372" height="47.80767544613542" fill="#FED677" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="536.2024431932169" y="834.6049723643" width="38.236557241771536" height="42.71892515703758" fill="#FED87C" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="536.2024431932169" y="879.3238975213376" width="38.236557241771536" height="33.86830455304055" fill="#FED981" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="576.4390004349884" y="834.6049723643" width="23.888905638123227" height="40.57009027057792" fill="#FEDB86" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="602.3279060731116" y="834.6049723643" width="21.51135307952007" height="40.57009027057792" fill="#FEDC8B" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="576.4390004349884" y="877.1750626348779" width="27.285183311656688" height="19.504644531434465" fill="#FEDE91" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="576.4390004349884" y="898.6797071663124" width="27.285183311656688" height="14.51249490806575" fill="#FEDF96" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="605.7241837466452" y="877.1750626348779" width="18.11507540598661" height="17.00856971974992" fill="#FEE19B" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="605.7241837466452" y="896.1836323546279" width="13.579323108557952" height="17.00856971975029" fill="#FEE2A0" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="621.3035068552031" y="896.1836323546279" width="2.5357522974286564" height="17.008569719748653" fill="#FEE4A5" stroke="#FFFFFF" stroke-width="1"/>
+<text x="384.9916990547478" y="599.1192891010141" font-size="13.5" font-weight="700" fill="#1A1A1A">Pennsylvania</text>
+<text x="617.8392591526317" y="599.1192891010141" font-size="11" fill="#1A1A1A" text-anchor="end">20,155 · 7.0%</text>
+<rect x="376.9916990547478" y="917.1922020743782" width="248.84756009788396" height="325.80779792562186" fill="#67A275" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="378.9916990547478" y="946.1922020743782" width="160.14989883315275" height="109.43352813298563" fill="#67A275" stroke="#FFFFFF" stroke-width="1"/>
+<text x="383.9916990547478" y="962.1922020743782" font-size="11.5" font-weight="700" fill="#1A1A1A">Orange</text>
+<text x="383.9916990547478" y="976.1922020743782" font-size="11" fill="#1A1A1A">4,834</text>
+<rect x="541.1415978879006" y="946.1922020743782" width="82.69766126473121" height="109.43352813298563" fill="#6BA478" stroke="#FFFFFF" stroke-width="1"/>
+<text x="546.1415978879006" y="962.1922020743782" font-size="11.5" font-weight="700" fill="#1A1A1A">Dutchess</text>
+<text x="546.1415978879006" y="976.1922020743782" font-size="11" fill="#1A1A1A">2,525</text>
+<rect x="378.9916990547478" y="1057.6257302073639" width="76.98234707591992" height="107.27474826428312" fill="#6FA77C" stroke="#FFFFFF" stroke-width="1"/>
+<text x="383.9916990547478" y="1073.6257302073639" font-size="11.5" font-weight="700" fill="#1A1A1A">Erie</text>
+<text x="383.9916990547478" y="1087.6257302073639" font-size="11" fill="#1A1A1A">2,309</text>
+<rect x="378.9916990547478" y="1166.900478471647" width="76.98234707591992" height="74.09952152835308" fill="#73A980" stroke="#FFFFFF" stroke-width="1"/>
+<text x="383.9916990547478" y="1182.900478471647" font-size="11.5" font-weight="700" fill="#1A1A1A">Ulster</text>
+<text x="383.9916990547478" y="1196.900478471647" font-size="11" fill="#1A1A1A">1,608</text>
+<rect x="457.9740461306677" y="1057.6257302073639" width="91.51637706873541" height="54.358231452872346" fill="#77AC84" stroke="#FFFFFF" stroke-width="1"/>
+<text x="462.9740461306677" y="1073.6257302073639" font-size="11.5" font-weight="700" fill="#1A1A1A">Albany</text>
+<text x="462.9740461306677" y="1087.6257302073639" font-size="11" fill="#1A1A1A">1,410</text>
+<rect x="551.4904231994032" y="1057.6257302073639" width="72.34883595322866" height="54.358231452872346" fill="#7BAE87" stroke="#FFFFFF" stroke-width="1"/>
+<text x="555.4904231994032" y="1070.6257302073639" font-size="10" font-weight="700" fill="#1A1A1A">Sullivan</text>
+<text x="555.4904231994032" y="1082.6257302073639" font-size="9.5" fill="#1A1A1A">1,121</text>
+<rect x="457.9740461306677" y="1113.9839616602362" width="49.947243173693735" height="64.6307035708987" fill="#80B18B" stroke="#FFFFFF" stroke-width="1"/>
+<text x="461.9740461306677" y="1126.9839616602362" font-size="10" font-weight="700" fill="#1A1A1A">Schenectady</text>
+<text x="461.9740461306677" y="1138.9839616602362" font-size="9.5" fill="#1A1A1A">926</text>
+<rect x="457.9740461306677" y="1180.614665231135" width="49.947243173693735" height="60.3853347688652" fill="#84B38F" stroke="#FFFFFF" stroke-width="1"/>
+<text x="461.9740461306677" y="1193.614665231135" font-size="10" font-weight="700" fill="#1A1A1A">Monroe</text>
+<text x="461.9740461306677" y="1205.614665231135" font-size="9.5" fill="#1A1A1A">867</text>
+<rect x="509.92128930436144" y="1113.9839616602362" width="60.39558474731814" height="37.59802426424145" fill="#88B693" stroke="#FFFFFF" stroke-width="1"/>
+<text x="513.9212893043614" y="1126.9839616602362" font-size="10" font-weight="700" fill="#1A1A1A">Broome</text>
+<text x="513.9212893043614" y="1138.9839616602362" font-size="9.5" fill="#1A1A1A">661</text>
+<rect x="572.3168740516796" y="1113.9839616602362" width="51.522385100952164" height="37.59802426424145" fill="#8CB997" stroke="#FFFFFF" stroke-width="1"/>
+<text x="576.3168740516796" y="1126.9839616602362" font-size="10" font-weight="700" fill="#1A1A1A">Onondaga</text>
+<text x="576.3168740516796" y="1138.9839616602362" font-size="9.5" fill="#1A1A1A">567</text>
+<rect x="509.92128930436144" y="1153.5819859244777" width="34.53527069866146" height="46.596746780175245" fill="#90BB9A" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="509.92128930436144" y="1202.178732704653" width="34.53527069866146" height="38.821267295347205" fill="#94BE9E" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="546.4565600030229" y="1153.5819859244777" width="39.673086001506505" height="31.007913568689425" fill="#99C0A2" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="588.1296460045294" y="1153.5819859244777" width="35.70961314810235" height="31.007913568689425" fill="#9DC3A6" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="546.4565600030229" y="1186.5898994931672" width="34.311952532542264" height="27.028555370304584" fill="#A1C5AA" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="546.4565600030229" y="1215.6184548634717" width="34.311952532542264" height="25.381545136528437" fill="#A5C8AD" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="582.7685125355652" y="1186.5898994931672" width="41.07074661706659" height="20.564040202733192" fill="#A9CAB1" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="582.7685125355652" y="1209.1539396959004" width="16.884865824406095" height="31.846060304099836" fill="#AECDB5" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="601.6533783599713" y="1209.1539396959004" width="22.18588079266049" height="16.391238247433197" fill="#B2D0B9" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="601.6533783599713" y="1227.5451779433336" width="14.688257746935648" height="13.45482205666664" fill="#B6D2BD" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="618.3416361069069" y="1227.5451779433336" width="5.497623045724847" height="13.45482205666636" fill="#BAD5C0" stroke="#FFFFFF" stroke-width="1"/>
+<text x="384.9916990547478" y="936.1922020743782" font-size="13.5" font-weight="700" fill="#1A1A1A">Other New York State</text>
+<text x="617.8392591526317" y="936.1922020743782" font-size="11" fill="#1A1A1A" text-anchor="end">19,601 · 6.8%</text>
+<rect x="627.8392591526317" y="580.1192891010141" width="223.50891879714584" height="275.85711050675593" fill="#1E5A8C" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="629.8392591526317" y="609.1192891010141" width="219.50891879714584" height="105.33061566891222" fill="#1E5A8C" stroke="#FFFFFF" stroke-width="1"/>
+<text x="634.8392591526317" y="625.1192891010141" font-size="11.5" font-weight="700" fill="#1A1A1A">Los Angeles</text>
+<text x="634.8392591526317" y="639.1192891010141" font-size="11" fill="#1A1A1A">6,494</text>
+<rect x="629.8392591526317" y="716.4499047699263" width="77.29400054548385" height="69.05601441278671" fill="#235E8F" stroke="#FFFFFF" stroke-width="1"/>
+<text x="634.8392591526317" y="732.4499047699263" font-size="11.5" font-weight="700" fill="#1A1A1A">San Francisco</text>
+<text x="634.8392591526317" y="746.4499047699263" font-size="11" fill="#1A1A1A">1,539</text>
+<rect x="629.8392591526317" y="787.505919182713" width="77.29400054548385" height="66.47048042505699" fill="#296292" stroke="#FFFFFF" stroke-width="1"/>
+<text x="634.8392591526317" y="803.505919182713" font-size="11.5" font-weight="700" fill="#1A1A1A">San Diego</text>
+<text x="634.8392591526317" y="817.505919182713" font-size="11" fill="#1A1A1A">1,483</text>
+<rect x="709.1332596981156" y="716.4499047699263" width="50.18920155028703" height="71.30577531701692" fill="#2F6695" stroke="#FFFFFF" stroke-width="1"/>
+<text x="713.1332596981156" y="729.4499047699263" font-size="10" font-weight="700" fill="#1A1A1A">Santa Clara</text>
+<text x="713.1332596981156" y="741.4499047699263" font-size="9.5" fill="#1A1A1A">1,045</text>
+<rect x="709.1332596981156" y="789.7556800869432" width="50.18920155028703" height="64.22071952082676" fill="#356B98" stroke="#FFFFFF" stroke-width="1"/>
+<text x="713.1332596981156" y="802.7556800869432" font-size="10" font-weight="700" fill="#1A1A1A">Orange</text>
+<text x="713.1332596981156" y="814.7556800869432" font-size="9.5" fill="#1A1A1A">944</text>
+<rect x="761.3224612484026" y="716.4499047699263" width="55.59746305913136" height="51.9643423636895" fill="#3B6F9B" stroke="#FFFFFF" stroke-width="1"/>
+<text x="765.3224612484026" y="729.4499047699263" font-size="10" font-weight="700" fill="#1A1A1A">Alameda</text>
+<text x="765.3224612484026" y="741.4499047699263" font-size="9.5" fill="#1A1A1A">849</text>
+<rect x="818.919924307534" y="716.4499047699263" width="30.42825364224357" height="51.9643423636895" fill="#41739E" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="761.3224612484026" y="770.4142471336158" width="39.204736303908795" height="28.38655882259682" fill="#4778A1" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="761.3224612484026" y="800.8008059562127" width="39.204736303908795" height="26.34301831698358" fill="#4D7CA4" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="761.3224612484026" y="829.1438242731963" width="39.204736303908795" height="24.832575334573797" fill="#5380A7" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="802.5271975523115" y="770.4142471336158" width="25.838346269193455" height="33.24470785526075" fill="#5885AA" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="830.365543821505" y="770.4142471336158" width="18.982634128272682" height="33.24470785526075" fill="#5E89AD" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="802.5271975523115" y="805.6589549888766" width="23.79221605903871" height="17.872016131157658" fill="#648DB0" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="828.3194136113502" y="805.6589549888766" width="21.028764338427422" height="17.872016131157658" fill="#6A92B3" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="802.5271975523115" y="825.5309711200343" width="18.08153627186421" height="15.50156368157267" fill="#7096B6" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="802.5271975523115" y="843.032534801607" width="18.08153627186421" height="10.943864806163122" fill="#769AB9" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="822.6087338241757" y="825.5309711200343" width="12.709164316252956" height="14.178114719424538" fill="#7C9FBC" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="837.3178981404287" y="825.5309711200343" width="12.030279809348974" height="14.178114719424538" fill="#82A3BF" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="822.6087338241757" y="841.7090858394589" width="5.954667570479186" height="12.267313768311258" fill="#88A7C2" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="830.5634013946549" y="841.7090858394589" width="5.441463211093432" height="12.267313768311258" fill="#8DACC5" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="838.0048646057483" y="841.7090858394589" width="11.343313344029308" height="5.133656884155787" fill="#93B0C8" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="838.0048646057483" y="848.8427427236147" width="11.343313344029898" height="5.133656884155472" fill="#99B4CB" stroke="#FFFFFF" stroke-width="1"/>
+<text x="635.8392591526317" y="599.1192891010141" font-size="13.5" font-weight="700" fill="#FFFFFF">California</text>
+<text x="843.3481779497776" y="599.1192891010141" font-size="11" fill="#FFFFFF" text-anchor="end">14,936 · 5.2%</text>
+<rect x="853.3481779497776" y="580.1192891010141" width="221.65182205022234" height="275.85711050675593" fill="#7BA7C6" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="855.3481779497776" y="609.1192891010141" width="139.78819227661262" height="129.30271880663807" fill="#7BA7C6" stroke="#FFFFFF" stroke-width="1"/>
+<text x="860.3481779497776" y="625.1192891010141" font-size="11.5" font-weight="700" fill="#1A1A1A">Western Connecticut</text>
+<text x="860.3481779497776" y="639.1192891010141" font-size="11" fill="#1A1A1A">5,086</text>
+<rect x="997.1363702263902" y="609.1192891010141" width="75.86362977360972" height="129.30271880663807" fill="#85ADCA" stroke="#FFFFFF" stroke-width="1"/>
+<text x="1002.1363702263902" y="625.1192891010141" font-size="11.5" font-weight="700" fill="#1A1A1A">Greater Bridgeport</text>
+<text x="1002.1363702263902" y="639.1192891010141" font-size="11" fill="#1A1A1A">2,793</text>
+<rect x="855.3481779497776" y="740.4220079076522" width="67.6271567445037" height="113.55439170011785" fill="#8FB4CE" stroke="#FFFFFF" stroke-width="1"/>
+<text x="859.3481779497776" y="753.4220079076522" font-size="10" font-weight="700" fill="#1A1A1A">South Central Connecticut Plannin</text>
+<text x="859.3481779497776" y="765.4220079076522" font-size="9.5" fill="#1A1A1A">2,198</text>
+<rect x="924.9753346942813" y="740.4220079076522" width="64.93456879032588" height="113.55439170011786" fill="#9ABBD3" stroke="#FFFFFF" stroke-width="1"/>
+<text x="928.9753346942813" y="753.4220079076522" font-size="10" font-weight="700" fill="#1A1A1A">Naugatuck Valley</text>
+<text x="928.9753346942813" y="765.4220079076522" font-size="9.5" fill="#1A1A1A">2,113</text>
+<rect x="991.9099034846072" y="740.4220079076522" width="81.09009651539277" height="70.24902874120974" fill="#A4C2D7" stroke="#FFFFFF" stroke-width="1"/>
+<text x="996.9099034846072" y="756.4220079076522" font-size="11.5" font-weight="700" fill="#1A1A1A">Capitol</text>
+<text x="996.9099034846072" y="770.4220079076522" font-size="11" fill="#1A1A1A">1,640</text>
+<rect x="991.9099034846072" y="812.6710366488619" width="32.233457872567655" height="41.30536295890812" fill="#AEC9DC" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1026.1433613571749" y="812.6710366488619" width="31.641768477239324" height="41.30536295890812" fill="#B9D0E0" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1059.7851298344142" y="812.6710366488619" width="13.214870165585793" height="41.305362958907644" fill="#C3D7E5" stroke="#FFFFFF" stroke-width="1"/>
+<text x="861.3481779497776" y="599.1192891010141" font-size="13.5" font-weight="700" fill="#1A1A1A">Connecticut</text>
+<text x="1067.0" y="599.1192891010141" font-size="11" fill="#1A1A1A" text-anchor="end">14,813 · 5.2%</text>
+<rect x="627.8392591526317" y="857.9763996077701" width="202.00137902713678" height="197.74283903346065" fill="#B9A78A" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="629.8392591526317" y="886.9763996077701" width="75.34018116194025" height="120.91810638859114" fill="#B9A78A" stroke="#FFFFFF" stroke-width="1"/>
+<text x="634.8392591526317" y="902.9763996077701" font-size="11.5" font-weight="700" fill="#1A1A1A">Cook</text>
+<text x="634.8392591526317" y="916.9763996077701" font-size="11" fill="#1A1A1A">2,736</text>
+<rect x="629.8392591526317" y="1009.8945059963612" width="75.34018116194025" height="43.82473264486951" fill="#BAA88C" stroke="#FFFFFF" stroke-width="1"/>
+<text x="633.8392591526317" y="1022.8945059963612" font-size="10" font-weight="700" fill="#1A1A1A">Franklin</text>
+<text x="633.8392591526317" y="1034.8945059963612" font-size="9.5" fill="#1A1A1A">1,020</text>
+<rect x="707.1794403145719" y="886.9763996077701" width="43.3200846849305" height="51.820949162930205" fill="#BBAA8E" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="752.4995249995025" y="886.9763996077701" width="36.735115115325215" height="51.820949162930205" fill="#BCAC90" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="791.2346401148277" y="886.9763996077701" width="36.605998064940806" height="51.820949162930205" fill="#BEAD92" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="707.1794403145719" y="940.7973487707003" width="35.24885279021989" height="43.427727570574945" fill="#BFAF95" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="707.1794403145719" y="986.2250763412752" width="35.24885279021989" height="36.61823247272695" fill="#C0B197" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="707.1794403145719" y="1024.8433088140023" width="35.24885279021989" height="28.875929827228553" fill="#C2B299" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="744.4282931047918" y="940.7973487707003" width="32.90199887581532" height="30.056088218753267" fill="#C3B49B" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="779.3302919806072" y="940.7973487707003" width="24.339086108146347" height="30.056088218753267" fill="#C4B69D" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="805.6693780887535" y="940.7973487707003" width="22.17126009101496" height="30.056088218753267" fill="#C6B7A0" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="744.4282931047918" y="972.8534369894536" width="22.571249000459645" height="26.988889656338436" fill="#C7B9A2" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="744.4282931047918" y="1001.842326645792" width="22.571249000459645" height="26.281843567159452" fill="#C8BBA4" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="744.4282931047918" y="1030.1241702129514" width="22.571249000459645" height="23.5950684282793" fill="#CABCA6" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="768.9995421052514" y="972.8534369894536" width="19.35646637717739" height="25.98362702230931" fill="#CBBEA9" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="790.3560084824288" y="972.8534369894536" width="18.238976857441365" height="25.98362702230931" fill="#CCC0AB" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="810.5949853398702" y="972.8534369894536" width="17.24565283989823" height="25.98362702230931" fill="#CEC1AD" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="768.9995421052514" y="1000.8370640117629" width="20.221877962700784" height="19.10852870364149" fill="#CFC3AF" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="768.9995421052514" y="1021.9455927154044" width="20.221877962700784" height="15.043182434792019" fill="#D0C5B1" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="768.9995421052514" y="1038.9887751501965" width="20.221877962700784" height="14.730463491034364" fill="#D2C6B4" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="791.2214200679522" y="1000.8370640117629" width="19.1033978753094" height="14.464652388840353" fill="#D3C8B6" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="812.3248179432616" y="1000.8370640117629" width="15.515820236506801" height="14.464652388840353" fill="#D4CAB8" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="791.2214200679522" y="1017.3017164006033" width="11.747356330201535" height="17.208761120313767" fill="#D6CBBA" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="791.2214200679522" y="1036.510477520917" width="11.747356330201535" height="17.208761120313767" fill="#D7CDBD" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="804.9687763981538" y="1017.3017164006033" width="10.864756093938617" height="14.205209381501042" fill="#D8CFBF" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="817.8335324920923" y="1017.3017164006033" width="10.007105687676043" height="14.205209381501042" fill="#DAD0C1" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="804.9687763981538" y="1033.5069257821042" width="11.921985525557849" height="9.230944704052723" fill="#DBD2C3" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="804.9687763981538" y="1044.737870486157" width="11.921985525557849" height="8.981368155073772" fill="#DCD4C5" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="818.8907619237116" y="1033.5069257821042" width="8.949876256056813" height="10.058112694954298" fill="#DED5C8" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="818.8907619237116" y="1045.5650384770586" width="8.949876256056648" height="8.154200164172194" fill="#DFD7CA" stroke="#FFFFFF" stroke-width="1"/>
+<text x="635.8392591526317" y="876.9763996077701" font-size="13.5" font-weight="700" fill="#1A1A1A">Midwest</text>
+<text x="821.8406381797685" y="876.9763996077701" font-size="11" fill="#1A1A1A" text-anchor="end">9,713 · 3.4%</text>
+<rect x="627.8392591526317" y="1057.7192386412307" width="202.00137902713678" height="185.28076135876927" fill="#A0531D" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="629.8392591526317" y="1086.7192386412307" width="81.89209046707616" height="98.51880383730264" fill="#A0531D" stroke="#FFFFFF" stroke-width="1"/>
+<text x="634.8392591526317" y="1102.7192386412307" font-size="11.5" font-weight="700" fill="#1A1A1A">Harris</text>
+<text x="634.8392591526317" y="1116.7192386412307" font-size="11" fill="#1A1A1A">2,457</text>
+<rect x="629.8392591526317" y="1187.2380424785333" width="81.89209046707616" height="53.76195752146662" fill="#A45A27" stroke="#FFFFFF" stroke-width="1"/>
+<text x="633.8392591526317" y="1200.2380424785333" font-size="10" font-weight="700" fill="#1A1A1A">Travis</text>
+<text x="633.8392591526317" y="1212.2380424785333" font-size="9.5" fill="#1A1A1A">1,363</text>
+<rect x="713.7313496197079" y="1086.7192386412307" width="70.52780210984253" height="61.55279684534783" fill="#A86231" stroke="#FFFFFF" stroke-width="1"/>
+<text x="717.7313496197079" y="1099.7192386412307" font-size="10" font-weight="700" fill="#1A1A1A">Dallas</text>
+<text x="717.7313496197079" y="1111.7192386412307" font-size="9.5" fill="#1A1A1A">1,343</text>
+<rect x="786.2591517295505" y="1086.7192386412307" width="41.58148645021811" height="61.55279684534783" fill="#AD6A3C" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="713.7313496197079" y="1150.2720354865785" width="48.485517882028276" height="47.015295025056346" fill="#B17246" stroke="#FFFFFF" stroke-width="1"/>
+<text x="717.7313496197079" y="1163.2720354865785" font-size="10" font-weight="700" fill="#1A1A1A">Fort Bend</text>
+<text x="717.7313496197079" y="1175.2720354865785" font-size="9.5" fill="#1A1A1A">721</text>
+<rect x="713.7313496197079" y="1199.2873305116348" width="48.485517882028276" height="41.712669488365094" fill="#B57A50" stroke="#FFFFFF" stroke-width="1"/>
+<text x="717.7313496197079" y="1212.2873305116348" font-size="10" font-weight="700" fill="#1A1A1A">Tarrant</text>
+<text x="717.7313496197079" y="1224.2873305116348" font-size="9.5" fill="#1A1A1A">643</text>
+<rect x="764.2168675017361" y="1150.2720354865785" width="36.602218045901374" height="41.56593031002825" fill="#BA825B" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="802.8190855476375" y="1150.2720354865785" width="25.021552632130962" height="41.56593031002825" fill="#BE8A65" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="764.2168675017361" y="1193.8379657966068" width="33.25532360894292" height="23.797899136434054" fill="#C2926F" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="764.2168675017361" y="1219.635864933041" width="33.25532360894292" height="21.36413506695914" fill="#C7997A" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="799.4721911106791" y="1193.8379657966068" width="28.368447069089424" height="21.507363481162745" fill="#CBA184" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="799.4721911106791" y="1217.3453292777695" width="22.482052042481826" height="23.654670722230446" fill="#CFA98E" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="823.9542431531609" y="1217.3453292777695" width="3.8863950266075946" height="23.654670722230694" fill="#D4B199" stroke="#FFFFFF" stroke-width="1"/>
+<text x="635.8392591526317" y="1076.7192386412307" font-size="13.5" font-weight="700" fill="#FFFFFF">Texas</text>
+<text x="821.8406381797685" y="1076.7192386412307" font-size="11" fill="#FFFFFF" text-anchor="end">9,107 · 3.2%</text>
+<rect x="831.8406381797685" y="857.9763996077701" width="243.15936182023142" height="150.0235957856731" fill="#9CA68F" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="833.8406381797685" y="885.9806468491912" width="92.14010207030196" height="64.35769646899053" fill="#9CA68F" stroke="#FFFFFF" stroke-width="1"/>
+<text x="838.8406381797685" y="901.9806468491912" font-size="11.5" font-weight="700" fill="#1A1A1A">Middlesex</text>
+<text x="838.8406381797685" y="915.9806468491912" font-size="11" fill="#1A1A1A">1,886</text>
+<rect x="833.8406381797685" y="952.3383433181817" width="92.14010207030196" height="53.66165207526142" fill="#9EA892" stroke="#FFFFFF" stroke-width="1"/>
+<text x="838.8406381797685" y="968.3383433181817" font-size="11.5" font-weight="700" fill="#1A1A1A">Suffolk</text>
+<text x="838.8406381797685" y="982.3383433181817" font-size="11" fill="#1A1A1A">1,582</text>
+<rect x="927.9807402500704" y="885.9806468491912" width="46.94308074762239" height="64.18686792916162" fill="#A1AA95" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="927.9807402500704" y="952.1675147783528" width="46.94308074762239" height="53.832480615090326" fill="#A4AD98" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="976.9238209976928" y="885.9806468491912" width="58.177289988360734" height="36.80438180939539" fill="#A6AF9B" stroke="#FFFFFF" stroke-width="1"/>
+<text x="980.9238209976928" y="898.9806468491912" font-size="10" font-weight="700" fill="#1A1A1A">Norfolk</text>
+<text x="980.9238209976928" y="910.9806468491912" font-size="9.5" fill="#1A1A1A">705</text>
+<rect x="1037.1011109860535" y="885.9806468491912" width="35.89888901394633" height="36.80438180939539" fill="#A9B29E" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="976.9238209976928" y="924.7850286585866" width="33.624261447672424" height="31.378964310406154" fill="#ACB4A1" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="976.9238209976928" y="958.1639929689927" width="33.624261447672424" height="24.87053115795927" fill="#AFB7A4" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="976.9238209976928" y="985.034524126952" width="33.624261447672424" height="20.965471266491143" fill="#B1B9A7" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1012.5480824453653" y="924.7850286585866" width="31.316681719211147" height="22.556105543810457" fill="#B4BCAA" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1045.8647641645764" y="924.7850286585866" width="27.135235835423508" height="22.556105543810457" fill="#B7BEAD" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1012.5480824453653" y="949.341134202397" width="18.723195065597587" height="28.68801457406227" fill="#B9C0B0" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1012.5480824453653" y="980.0291487764594" width="18.723195065597587" height="25.970846616983838" fill="#BCC3B3" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1033.2712775109628" y="949.341134202397" width="20.5177634563483" height="19.034638992729683" fill="#BFC5B7" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1055.7890409673112" y="949.341134202397" width="17.21095903268876" height="19.034638992729683" fill="#C2C8BA" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1033.2712775109628" y="970.3757731951267" width="17.807937890365725" height="17.23015801247284" fill="#C4CABD" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1033.2712775109628" y="989.6059312075996" width="17.807937890365725" height="16.394064185843586" fill="#C7CDC0" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1053.0792154013286" y="970.3757731951267" width="19.920784598671332" height="14.47004104263656" fill="#CACFC3" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1053.0792154013286" y="986.8458142377633" width="11.15247075920287" height="19.154181155679872" fill="#CDD2C6" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1066.2316861605316" y="986.8458142377633" width="6.768313839468465" height="9.332597047685793" fill="#CFD4C9" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1066.2316861605316" y="998.1784112854491" width="6.768313839468465" height="7.821584107994354" fill="#D2D6CC" stroke="#FFFFFF" stroke-width="1"/>
+<text x="839.8406381797685" y="876.9763996077701" font-size="13.5" font-weight="700" fill="#1A1A1A">Other Northeast</text>
+<text x="1067.0" y="876.9763996077701" font-size="11" fill="#1A1A1A" text-anchor="end">8,884 · 3.1%</text>
+<rect x="831.8406381797685" y="1009.9999953934432" width="130.56778714607418" height="233.00000460655681" fill="#7E89C7" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="833.8406381797685" y="1038.9999953934432" width="76.21438454890763" height="74.31457215149673" fill="#7E89C7" stroke="#FFFFFF" stroke-width="1"/>
+<text x="838.8406381797685" y="1054.9999953934432" font-size="11.5" font-weight="700" fill="#1A1A1A">King</text>
+<text x="838.8406381797685" y="1068.9999953934432" font-size="11" fill="#1A1A1A">1,690</text>
+<rect x="912.0550227286761" y="1038.9999953934432" width="48.35340259716657" height="74.31457215149673" fill="#808BC8" stroke="#FFFFFF" stroke-width="1"/>
+<text x="916.0550227286761" y="1051.9999953934432" font-size="10" font-weight="700" fill="#1A1A1A">Maricopa</text>
+<text x="916.0550227286761" y="1063.9999953934432" font-size="9.5" fill="#1A1A1A">1,088</text>
+<rect x="833.8406381797685" y="1115.31456754494" width="44.4979453942665" height="67.19775667255189" fill="#838EC9" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="833.8406381797685" y="1184.5123242174918" width="44.4979453942665" height="56.487675782508184" fill="#8690CA" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="880.3385835740349" y="1115.31456754494" width="39.753151696368896" height="34.88116468284007" fill="#8993CB" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="922.0917352704039" y="1115.31456754494" width="38.31669005543878" height="34.88116468284007" fill="#8C95CD" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="880.3385835740349" y="1152.1957322277801" width="27.92129647201321" height="26.919653053522204" fill="#8F98CE" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="910.2598800460481" y="1152.1957322277801" width="26.700019064992265" height="26.919653053522204" fill="#919BCF" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="938.9598991110404" y="1152.1957322277801" width="21.448526214802193" height="26.919653053522204" fill="#949DD0" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="880.3385835740349" y="1181.1153852813022" width="18.831357607378163" height="29.196627693809305" fill="#97A0D2" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="880.3385835740349" y="1212.3120129751114" width="18.831357607378163" height="28.687987024888507" fill="#9AA2D3" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="901.1699411814132" y="1181.1153852813022" width="20.948040096948958" height="24.933937626870343" fill="#9DA5D4" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="924.1179812783621" y="1181.1153852813022" width="17.800880312224532" height="24.933937626870343" fill="#A0A8D5" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="943.9188615905866" y="1181.1153852813022" width="16.489563735256016" height="24.933937626870343" fill="#A2AAD7" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="901.1699411814132" y="1208.0493229081726" width="13.764362255001654" height="16.59555255526718" fill="#A5ADD8" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="901.1699411814132" y="1226.6448754634398" width="13.764362255001654" height="14.355124536560293" fill="#A8AFD9" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="916.9343034364148" y="1208.0493229081726" width="12.450665400418183" height="15.597543710570474" fill="#ABB2DA" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="916.9343034364148" y="1225.6468666187432" width="12.450665400418183" height="15.353133381256995" fill="#AEB5DB" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="931.384968836833" y="1208.0493229081726" width="14.704938109466745" height="11.319964885159001" fill="#B1B7DD" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="948.0899069462997" y="1208.0493229081726" width="12.318518379542926" height="11.319964885159001" fill="#B3BADE" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="931.384968836833" y="1221.3692877933315" width="11.062507995372489" height="9.356123908500946" fill="#B6BCDF" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="931.384968836833" y="1232.7254117018324" width="11.062507995372489" height="8.274588298167522" fill="#B9BFE0" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="944.4474768322054" y="1221.3692877933315" width="7.27982338837921" height="9.798570294546433" fill="#BCC2E2" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="953.7273002205847" y="1221.3692877933315" width="6.681125105257969" height="9.798570294546433" fill="#BFC4E3" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="944.4474768322054" y="1233.167858087878" width="8.058131156436811" height="7.832141912122037" fill="#C2C7E4" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="954.5056079886423" y="1233.167858087878" width="5.902817337200368" height="7.832141912122015" fill="#C4C9E5" stroke="#FFFFFF" stroke-width="1"/>
+<text x="839.8406381797685" y="1028.9999953934432" font-size="13.5" font-weight="700" fill="#FFFFFF">Other West</text>
+<text x="954.4084253258427" y="1028.9999953934432" font-size="11" fill="#FFFFFF" text-anchor="end">7,426 · 2.6%</text>
+<rect x="964.4084253258427" y="1009.9999953934432" width="110.59157467415721" height="161.90756623818638" fill="#C6DCCB" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="966.4084253258427" y="1038.9999953934432" width="56.82791504042154" height="71.11577865342375" fill="#C6DCCB" stroke="#FFFFFF" stroke-width="1"/>
+<text x="970.4084253258427" y="1051.9999953934432" font-size="10" font-weight="700" fill="#1A1A1A">Mercer</text>
+<text x="970.4084253258427" y="1063.9999953934432" font-size="9.5" fill="#1A1A1A">1,311</text>
+<rect x="1025.2363403662641" y="1038.9999953934432" width="47.763659633735685" height="71.11577865342375" fill="#CADECF" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="966.4084253258427" y="1112.115774046867" width="55.99964347174542" height="57.79178758476263" fill="#CEE1D3" stroke="#FFFFFF" stroke-width="1"/>
+<text x="970.4084253258427" y="1125.115774046867" font-size="10" font-weight="700" fill="#1A1A1A">Camden</text>
+<text x="970.4084253258427" y="1137.115774046867" font-size="9.5" fill="#1A1A1A">1,057</text>
+<rect x="1024.4080687975882" y="1112.115774046867" width="27.7441016483096" height="34.51060348180192" fill="#D3E4D7" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1054.1521704458978" y="1112.115774046867" width="18.847829554102194" height="34.51060348180192" fill="#D7E7DB" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1024.4080687975882" y="1148.6263775286689" width="29.003411878915333" height="21.281184102960708" fill="#DCE9DF" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1055.4114806765035" y="1148.6263775286689" width="17.58851932349646" height="12.069204781645352" fill="#E0ECE3" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1055.4114806765035" y="1162.6955823103142" width="17.588519323496573" height="7.211979321315356" fill="#E5EFE7" stroke="#FFFFFF" stroke-width="1"/>
+<text x="972.4084253258427" y="1028.9999953934432" font-size="13.5" font-weight="700" fill="#1A1A1A">Other New Jersey</text>
+<text x="1067.0" y="1028.9999953934432" font-size="11" fill="#1A1A1A" text-anchor="end">4,399 · 1.5%</text>
+<rect x="964.4084253258427" y="1173.9075616316295" width="110.59157467415652" height="69.09243836837044" fill="#BAB3AC" stroke="#FFFFFF" stroke-width="2"/>
+<rect x="966.4084253258427" y="1187.344200537936" width="53.946288210008305" height="53.65579946206376" fill="#BAB3AC" stroke="#FFFFFF" stroke-width="1"/>
+<text x="970.4084253258427" y="1200.344200537936" font-size="10" font-weight="700" fill="#1A1A1A">New Castle</text>
+<text x="970.4084253258427" y="1212.344200537936" font-size="9.5" fill="#1A1A1A">983</text>
+<rect x="1022.354713535851" y="1187.344200537936" width="50.645286464148214" height="27.30202631137843" fill="#C3BDB7" stroke="#FFFFFF" stroke-width="1"/>
+<text x="1026.354713535851" y="1200.344200537936" font-size="10" font-weight="700" fill="#1A1A1A">Kent</text>
+<rect x="1022.354713535851" y="1216.6462268493146" width="22.519722462753958" height="24.35377315068533" fill="#CCC7C2" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1046.874435998605" y="1216.6462268493146" width="15.067649949564029" height="24.353773150685328" fill="#D6D2CE" stroke="#FFFFFF" stroke-width="1"/>
+<rect x="1063.9420859481688" y="1216.6462268493146" width="9.057914051830227" height="24.353773150685303" fill="#DFDCD9" stroke="#FFFFFF" stroke-width="1"/>
+<text x="972.4084253258427" y="1192.9075616316295" font-size="13.5" font-weight="700" fill="#1A1A1A">Other US</text>
+<text x="1066.9999999999993" y="1192.9075616316295" font-size="11" fill="#1A1A1A" text-anchor="end">1,908 · 0.7%</text>
+<text x="550.0" y="1282" font-size="16" font-weight="700" fill="#3D3733" text-anchor="middle">286,623 total people · 2020–21 + 2021–22 + 2022–23 pooled</text>
+<text x="24" y="1295" font-size="9" fill="#7F7570" font-style="italic">Source: IRS SOI county-to-county migration outflows (n2 = total exemptions). Categories: "Other Southeast" = GA/NC/VA/MD/SC/TN/etc.; "Other Northeast" = MA/NH/VT/ME/RI; "Other West" = AZ/CO/NV/WA/OR/etc.; "Other US" = remainder + unspecified.</text>
+</svg>

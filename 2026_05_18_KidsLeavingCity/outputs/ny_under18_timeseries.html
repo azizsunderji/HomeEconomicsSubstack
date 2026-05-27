@@ -1,0 +1,148 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>NYC area under-18 population, 1970–2024</title>
+<style>
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Regular.otf') format('opentype'); font-weight:400; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Medium.otf') format('opentype'); font-weight:500; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Light.otf') format('opentype'); font-weight:300; }
+body { margin:0; background:#fff; font-family:'ABC Oracle Edu',sans-serif; }
+svg { display:block; margin:20px auto; }
+</style></head><body>
+<svg id="chart" viewBox="0 0 1600 920" xmlns="http://www.w3.org/2000/svg"></svg>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const P = {"years": [1970, 1980, 1990, 2000, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "series": [{"fips": "34003", "name": "Bergen NJ", "values": [285513, 199135, 168368, 203054, 204305, 203792, 202768, 201341, 200602, 199816, 198843, 198967, 197472, 196309, 203050, 200814, 199854, 200721, 201694], "color": "#7E8F8C", "is_borough": false}, {"fips": "34013", "name": "Essex NJ", "values": [299651, 240472, 188637, 206950, 194416, 193233, 191289, 190639, 190099, 189329, 189116, 189760, 189664, 189397, 205880, 202107, 201239, 202992, 205811], "color": "#909FA0", "is_borough": false}, {"fips": "34017", "name": "Hudson NJ", "values": [178455, 144823, 122483, 137498, 131413, 133551, 134657, 135597, 136753, 137319, 137955, 138183, 137462, 136715, 147147, 142136, 140424, 140400, 141223], "color": "#A1B2AF", "is_borough": false}, {"fips": "34019", "name": "Hunterdon NJ", "values": [24502, 25735, 25941, 31374, 29985, 29141, 28187, 27189, 26479, 25846, 25181, 24738, 24181, 23712, 24902, 24811, 24831, 24902, 24967], "color": "#7C8D8A", "is_borough": false}, {"fips": "34021", "name": "Mercer NJ", "values": [95889, 78416, 73346, 84337, 82811, 82122, 81221, 80685, 80092, 79452, 79008, 78862, 78337, 78062, 84856, 83831, 84014, 85128, 86317], "color": "#919FA2", "is_borough": false}, {"fips": "34023", "name": "Middlesex NJ", "values": [208296, 154336, 144631, 177628, 185318, 184822, 184294, 183339, 182588, 181962, 181010, 180834, 179958, 178792, 188766, 186464, 185975, 186509, 187435], "color": "#8FA09E", "is_borough": false}, {"fips": "34025", "name": "Monmouth NJ", "values": [165291, 143921, 134814, 160342, 149668, 146790, 144078, 141692, 139381, 137105, 134917, 133039, 131171, 129412, 136871, 135597, 134381, 133517, 132733], "color": "#A0B5B0", "is_borough": false}, {"fips": "34027", "name": "Morris NJ", "values": [139991, 115709, 96291, 116838, 117312, 115800, 113848, 112018, 110084, 108582, 107049, 105764, 104021, 102477, 106734, 105842, 105838, 106197, 106446], "color": "#7E8F8C", "is_borough": false}, {"fips": "34029", "name": "Ocean NJ", "values": [68297, 91166, 98165, 119046, 135185, 135875, 135995, 136679, 137417, 138683, 140319, 142129, 144531, 146690, 158966, 161992, 164193, 165153, 166276], "color": "#909FA0", "is_borough": false}, {"fips": "34031", "name": "Passaic NJ", "values": [148266, 122996, 108743, 127486, 124696, 124184, 123380, 122582, 122340, 121586, 120989, 120872, 119937, 119018, 125120, 122635, 121734, 122560, 123669], "color": "#A1B2AF", "is_borough": false}, {"fips": "34035", "name": "Somerset NJ", "values": [71947, 54312, 52889, 75991, 80659, 79988, 78920, 77969, 76714, 75637, 74436, 73491, 72134, 70756, 75033, 74089, 73660, 73762, 73710], "color": "#7C8D8A", "is_borough": false}, {"fips": "34037", "name": "Sussex NJ", "values": [28753, 37253, 36386, 40218, 35460, 34331, 33084, 31903, 31023, 29905, 29056, 28236, 27843, 27245, 28139, 28385, 28433, 28517, 28630], "color": "#919FA2", "is_borough": false}, {"fips": "34039", "name": "Union NJ", "values": [169501, 123877, 108088, 129941, 131211, 130856, 130581, 130428, 130463, 130297, 130583, 130349, 130558, 129858, 136088, 134578, 134836, 136732, 139069], "color": "#8FA09E", "is_borough": false}, {"fips": "36005", "name": "Bronx", "values": [465369, 341710, 331648, 397372, 367851, 367236, 366249, 364692, 363961, 364914, 364027, 360277, 355046, 348663, 362816, 346843, 335486, 330406, 332553], "color": "#FEC439", "is_borough": true}, {"fips": "36027", "name": "Dutchess", "values": [75198, 68463, 61966, 70268, 65654, 64198, 62637, 60973, 59395, 58007, 56667, 56018, 55349, 54890, 55958, 55407, 54766, 54196, 53757], "color": "#7E8F8C", "is_borough": false}, {"fips": "36047", "name": "Brooklyn", "values": [816149, 631515, 605554, 662499, 595230, 600913, 603696, 605294, 605814, 605509, 602622, 596457, 587966, 580671, 621115, 596183, 577581, 565444, 562076], "color": "#0BB4FF", "is_borough": true}, {"fips": "36059", "name": "Nassau", "values": [496612, 339028, 280698, 329079, 311222, 308094, 304981, 301856, 299385, 296909, 295059, 293684, 292132, 290956, 303505, 300332, 298189, 296143, 295441], "color": "#A1B2AF", "is_borough": false}, {"fips": "36061", "name": "Manhattan", "values": [330797, 253244, 246827, 257916, 234832, 236564, 237963, 237969, 237475, 237959, 236571, 234539, 233753, 232284, 241431, 227091, 222144, 220305, 220513], "color": "#F4743B", "is_borough": true}, {"fips": "36071", "name": "Orange (NY)", "values": [76311, 79238, 85061, 99156, 101382, 100273, 98987, 98146, 97385, 97056, 96911, 97049, 97418, 98000, 103363, 103983, 104434, 104378, 104759], "color": "#919FA2", "is_borough": false}, {"fips": "36079", "name": "Putnam", "values": [22241, 24550, 21633, 25374, 23510, 23020, 22345, 21839, 21255, 20675, 20171, 19827, 19560, 19115, 19309, 19129, 19075, 18939, 18840], "color": "#8FA09E", "is_borough": false}, {"fips": "36081", "name": "Queens", "values": [520276, 436474, 408627, 509224, 462753, 465639, 466829, 468163, 468180, 468997, 468645, 464451, 458026, 451459, 482333, 462078, 445542, 439276, 439104], "color": "#67A275", "is_borough": true}, {"fips": "36085", "name": "Staten Island", "values": [102228, 102524, 94062, 113258, 109117, 108320, 107086, 106245, 105101, 104506, 104490, 104383, 104068, 103686, 109037, 107544, 106392, 105802, 105407], "color": "#A32515", "is_borough": true}, {"fips": "36087", "name": "Rockland", "values": [90419, 80249, 68959, 80286, 87672, 87981, 87955, 88362, 88713, 89337, 89790, 90908, 91874, 92568, 98564, 99725, 101249, 103070, 105541], "color": "#909FA0", "is_borough": false}, {"fips": "36103", "name": "Suffolk", "values": [445431, 405724, 326588, 370081, 356528, 351829, 345410, 339366, 333821, 328497, 322729, 317585, 313257, 309098, 323022, 319851, 317009, 315064, 314488], "color": "#A1B2AF", "is_borough": false}, {"fips": "36105", "name": "Sullivan (NY)", "values": [16391, 16987, 17135, 18452, 17482, 17023, 16857, 16863, 16226, 15932, 16109, 15969, 15953, 15858, 16816, 17047, 17128, 17287, 17223], "color": "#7C8D8A", "is_borough": false}, {"fips": "36111", "name": "Ulster", "values": [46971, 42370, 38609, 41771, 36615, 35769, 34847, 34013, 33403, 32820, 32382, 31971, 31488, 30944, 32180, 31855, 31109, 30740, 30203], "color": "#919FA2", "is_borough": false}, {"fips": "36119", "name": "Westchester", "values": [280896, 217456, 190269, 230797, 227788, 226394, 224838, 223521, 221409, 219613, 217799, 215424, 212376, 210282, 219352, 214939, 210772, 208973, 208740], "color": "#8FA09E", "is_borough": false}, {"fips": "42103", "name": "Pike PA", "values": [3565, 4402, 7063, 12352, 13198, 12514, 11780, 11368, 10733, 10394, 10102, 10047, 9924, 9710, 10244, 10459, 10407, 10498, 10536], "color": "#A0B5B0", "is_borough": false}, {"fips": "09120", "name": "Greater Bridgeport (CT)", "values": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, 73311, 72490, 72440, 72516, 73108], "color": "#7E8F8C", "is_borough": false}, {"fips": "09190", "name": "Western CT Planning Region", "values": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, 137240, 136238, 136107, 136265, 136684], "color": "#909FA0", "is_borough": false}]};
+const BG = '#F6F7F3', TEXT = '#3D3733', SUBTEXT = '#7F7570', GRID = '#e1e2e3';
+const W = 1600, H = 920, PAD = 40;
+const svg = d3.select('#chart');
+svg.append('rect').attr('width', W).attr('height', H).attr('fill', BG);
+
+svg.append('text').attr('x', PAD).attr('y', PAD + 32)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',30).attr('font-weight',500).attr('fill',TEXT)
+  .text('Under-18 population, NYC CSA counties, 1970–2024');
+svg.append('text').attr('x', PAD).attr('y', PAD + 32 + 30)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',18).attr('font-weight',400).attr('fill',SUBTEXT)
+  .text('Raw count. Decennial census 1970-2010, then annual PEP 2010-2024. 5 NYC boroughs in color, surrounding counties grey. Hover to highlight.');
+
+const chartLeft = 110, chartRight = W - PAD - 220;
+const chartTop = PAD + 90, chartBottom = H - PAD - 70;
+
+const x = d3.scaleLinear().domain(d3.extent(P.years)).range([chartLeft, chartRight]);
+const ymax = d3.max(P.series.flatMap(s => s.values.filter(v => v !== null)));
+const y = d3.scaleLinear().domain([0, ymax * 1.05]).range([chartBottom, chartTop]);
+
+// Gridlines & y-axis labels
+const yTicks = y.ticks(8);
+yTicks.forEach(t => {
+  svg.append('line').attr('x1', chartLeft).attr('x2', chartRight)
+    .attr('y1', y(t)).attr('y2', y(t)).attr('stroke', GRID).attr('stroke-width', 0.5);
+  svg.append('text').attr('x', chartLeft - 8).attr('y', y(t)).attr('text-anchor','end').attr('dy','0.32em')
+    .attr('font-family','ABC Oracle Edu').attr('font-size',13).attr('font-weight',300).attr('fill','#333')
+    .text(t >= 1e6 ? (t/1e6).toFixed(1) + 'M' : Math.round(t/1000) + 'k');
+});
+
+// X-axis: label every decade plus the latest year
+const xTickYears = [1970, 1980, 1990, 2000, 2010, 2020, 2024];
+xTickYears.forEach(yr => {
+  svg.append('line').attr('x1', x(yr)).attr('x2', x(yr))
+    .attr('y1', chartBottom).attr('y2', chartBottom + 5)
+    .attr('stroke', TEXT).attr('stroke-width', 0.5);
+  svg.append('text').attr('x', x(yr)).attr('y', chartBottom + 20).attr('text-anchor','middle')
+    .attr('font-family','ABC Oracle Edu').attr('font-size',13).attr('font-weight',300).attr('fill','#333')
+    .text(yr);
+});
+
+const lineFn = d3.line().defined(v => v !== null)
+  .x((_, i) => x(P.years[i]))
+  .y(v => y(v));
+
+const slug = s => s.replace(/[^a-z0-9]+/gi, '_');
+const lineGroup = svg.append('g').attr('id','lines');
+
+P.series.forEach(s => {
+  const id = slug(s.fips);
+  lineGroup.append('path').attr('d', lineFn(s.values))
+    .attr('fill','none').attr('stroke', s.color)
+    .attr('stroke-width', s.is_borough ? 2.5 : 1.6).attr('opacity', s.is_borough ? 1.0 : 0.55)
+    .attr('class','series-line').attr('data-id', id)
+    .attr('style','mix-blend-mode: multiply');
+  lineGroup.append('path').attr('d', lineFn(s.values))
+    .attr('fill','none').attr('stroke','transparent').attr('stroke-width', 16)
+    .attr('class','series-hit').attr('data-id', id).style('cursor','pointer');
+});
+
+// Endpoint dots — use the last NON-NULL value
+P.series.forEach(s => {
+  let lastIdx = -1;
+  for (let i = s.values.length - 1; i >= 0; i--) {
+    if (s.values[i] !== null) { lastIdx = i; break; }
+  }
+  if (lastIdx < 0) return;
+  const lv = s.values[lastIdx];
+  lineGroup.append('circle').attr('cx', x(P.years[lastIdx])).attr('cy', y(lv))
+    .attr('r', s.is_borough ? 4 : 2.5).attr('fill', s.color)
+    .attr('class','series-dot').attr('data-id', slug(s.fips));
+});
+
+const labels = P.series.map(s => {
+  let li = -1;
+  for (let i = s.values.length - 1; i >= 0; i--) { if (s.values[i] !== null) { li = i; break; } }
+  if (li < 0) return null;
+  const lv = s.values[li];
+  return { id: slug(s.fips), color: s.color, y: y(lv), v: lv, name: s.name, is_borough: s.is_borough };
+}).filter(Boolean);
+labels.sort((a, b) => a.y - b.y);
+const minGap = 14;
+for (let i = 1; i < labels.length; i++) {
+  if (labels[i].y - labels[i-1].y < minGap) labels[i].y = labels[i-1].y + minGap;
+}
+
+const labelGroup = svg.append('g').attr('id','labels');
+labels.forEach(d => {
+  labelGroup.append('line').attr('x1', chartRight + 4).attr('x2', chartRight + 14)
+    .attr('y1', d.y).attr('y2', d.y)
+    .attr('stroke', d.color).attr('stroke-width', d.is_borough ? 2 : 1.2)
+    .attr('class','series-label-line').attr('data-id', d.id);
+  labelGroup.append('text').attr('x', chartRight + 18).attr('y', d.y).attr('dy','0.32em')
+    .attr('font-family','ABC Oracle Edu').attr('font-size', d.is_borough ? 13 : 11)
+    .attr('font-weight', d.is_borough ? 700 : 400)
+    .attr('fill', d.color).attr('class','series-label-text').attr('data-id', d.id)
+    .style('cursor','pointer')
+    .text(`${d.name}  ${d.v >= 1e6 ? (d.v/1e6).toFixed(2) + 'M' : Math.round(d.v/1000) + 'k'}`);
+});
+
+function focus(targetId) {
+  d3.selectAll('.series-line, .series-dot, .series-label-line, .series-label-text').each(function() {
+    const el = d3.select(this);
+    const myId = el.attr('data-id');
+    const isT = myId === targetId;
+    const isLine = el.classed('series-line');
+    const isDot = el.classed('series-dot');
+    const isLabLine = el.classed('series-label-line');
+    const isLabText = el.classed('series-label-text');
+    if (targetId === null) {
+      const s = P.series.find(s => slug(s.fips) === myId);
+      const isB = s && s.is_borough;
+      if (isLine) el.attr('opacity', isB ? 1.0 : 0.55).attr('stroke-width', isB ? 2.5 : 1.6);
+      if (isDot) el.attr('opacity', 1).attr('r', isB ? 4 : 2.5);
+      if (isLabLine) el.attr('opacity', 1);
+      if (isLabText) el.attr('opacity', 1).attr('font-weight', isB ? 700 : 400);
+    } else {
+      if (isLine) el.attr('opacity', isT ? 1 : 0.06).attr('stroke-width', isT ? 4 : 1.6);
+      if (isDot) el.attr('opacity', isT ? 1 : 0.1).attr('r', isT ? 6 : 2.5);
+      if (isLabLine) el.attr('opacity', isT ? 1 : 0.15);
+      if (isLabText) el.attr('opacity', isT ? 1 : 0.25).attr('font-weight', isT ? 700 : 400);
+    }
+  });
+}
+d3.selectAll('.series-hit, .series-label-text, .series-dot')
+  .on('mouseenter', function() { focus(d3.select(this).attr('data-id')); })
+  .on('mouseleave', function() { focus(null); });
+
+svg.append('text').attr('x', PAD).attr('y', H - PAD - 16)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',13).attr('font-weight',200).attr('fill',TEXT)
+  .text('Source: NHGIS decennial census time-series table D08 (1970, 1980, 1990, 2000) and Census Bureau Population Estimates Program (2010-2024, July 1 estimates).');
+svg.append('text').attr('x', PAD).attr('y', H - PAD + 0)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',13).attr('font-weight',200).attr('fill',SUBTEXT)
+  .text('Counties: NYC CSA (5 boroughs + NY/NJ/CT/PA suburbs). Two CT planning regions begin in 2022.');
+</script>
+</body></html>

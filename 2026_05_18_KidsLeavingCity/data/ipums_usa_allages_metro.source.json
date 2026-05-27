@@ -1,0 +1,18 @@
+{
+  "source": "IPUMS USA API",
+  "extract_number": 139,
+  "samples": [
+    "us2010a",
+    "us2021a",
+    "us2023a"
+  ],
+  "variables": [
+    "YEAR",
+    "SAMPLE",
+    "AGE",
+    "METRO",
+    "PERWT"
+  ],
+  "filter": "none (all ages)",
+  "pulled_at": "2026-05-23T14:22:03"
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<title>When do families leave the city?</title>
+<style>
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Regular.otf') format('opentype'); font-weight:400; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Medium.otf') format('opentype'); font-weight:500; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Light.otf') format('opentype'); font-weight:300; }
+body { margin:0; background:#fff; font-family:'ABC Oracle Edu',sans-serif; }
+svg { display:block; margin:20px auto; }
+</style></head><body>
+<svg id="chart" viewBox="0 0 1280 1200" xmlns="http://www.w3.org/2000/svg"></svg>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const PANELS = [{"msa_full": "New York-Newark-Jersey City, NY-NJ", "msa_short": "New York", "ages": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], "inner_to_outer": [0, 1582, 2926, 1199, 616, 1042, 1286, 1169, 1067, 1089, 864, 791, 1600, 531, 1444, 1308, 1071, 427], "outer_to_inner": [0, 565, 618, 832, 551, 80, 0, 428, 0, 438, 164, 0, 123, 0, 217, 175, 184, 492], "total_io": 20012}, {"msa_full": "Los Angeles-Long Beach-Anaheim, CA", "msa_short": "Los Angeles", "ages": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], "inner_to_outer": [0, 453, 176, 0, 381, 0, 740, 0, 438, 127, 497, 181, 0, 250, 870, 0, 597, 78], "outer_to_inner": [0, 0, 447, 536, 793, 137, 128, 473, 461, 94, 0, 253, 82, 86, 0, 0, 0, 66], "total_io": 4788}, {"msa_full": "Chicago-Naperville-Elgin, IL-IN", "msa_short": "Chicago", "ages": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], "inner_to_outer": [0, 1813, 841, 576, 52, 283, 799, 553, 1032, 520, 144, 704, 799, 99, 431, 1068, 364, 363], "outer_to_inner": [0, 166, 485, 79, 167, 0, 86, 0, 259, 0, 91, 0, 0, 0, 205, 678, 266, 0], "total_io": 10441}, {"msa_full": "Dallas-Fort Worth-Arlington, TX", "msa_short": "Dallas", "ages": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], "inner_to_outer": [0, 1143, 1664, 1804, 351, 1360, 820, 498, 1145, 976, 391, 818, 696, 728, 334, 670, 161, 404], "outer_to_inner": [0, 658, 766, 996, 1310, 290, 581, 485, 491, 72, 244, 143, 543, 135, 587, 269, 188, 542], "total_io": 13963}, {"msa_full": "Houston-The Woodlands-Sugar Land, TX", "msa_short": "Houston", "ages": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], "inner_to_outer": [0, 851, 586, 767, 509, 881, 296, 1003, 107, 800, 244, 198, 287, 258, 1033, 894, 373, 149], "outer_to_inner": [0, 883, 748, 187, 798, 491, 194, 791, 788, 248, 742, 845, 630, 903, 292, 726, 0, 570], "total_io": 9236}, {"msa_full": "Atlanta-Sandy Springs-Roswell, GA", "msa_short": "Atlanta", "ages": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], "inner_to_outer": [0, 1375, 1741, 1030, 1431, 616, 360, 446, 1402, 905, 118, 609, 1420, 1116, 402, 417, 756, 432], "outer_to_inner": [0, 607, 41, 0, 144, 424, 53, 0, 66, 485, 0, 121, 0, 0, 98, 332, 68, 386], "total_io": 14576}, {"msa_full": "Washington-Arlington-Alexandria, DC-VA-MD-WV", "msa_short": "Washington", "ages": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], "inner_to_outer": [0, 54, 308, 120, 195, 324, 90, 382, 655, 0, 175, 285, 130, 211, 0, 675, 0, 35], "outer_to_inner": [0, 80, 539, 0, 82, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 491, 0, 80], "total_io": 3639}, {"msa_full": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD", "msa_short": "Philadelphia", "ages": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], "inner_to_outer": [0, 404, 257, 437, 511, 476, 74, 402, 647, 343, 57, 0, 465, 195, 0, 55, 0, 162], "outer_to_inner": [0, 0, 529, 0, 0, 532, 0, 170, 92, 346, 0, 0, 347, 309, 180, 0, 382, 540], "total_io": 4485}, {"msa_full": "Austin-Round Rock-San Marcos, TX", "msa_short": "Austin", "ages": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], "inner_to_outer": [0, 388, 604, 444, 472, 415, 213, 293, 557, 424, 317, 0, 478, 0, 0, 0, 0, 0], "outer_to_inner": [0, 315, 174, 314, 274, 166, 243, 125, 136, 119, 0, 0, 230, 237, 0, 547, 186, 99], "total_io": 4605}];
+const C = {"bar": "#0BB4FF", "bar_dim": "#C6DCCB", "text": "#3D3733", "subtext": "#7F7570", "bg": "#F6F7F3", "grid": "#e1e2e3", "peak": "#F4743B"};
+const W = 1280, H = 1200;
+const PAD = 40;
+const COLS = 3, ROWS = 3;
+const titleY = PAD + 32, subY = titleY + 30;
+const panelTop = subY + 50;
+const panelGridBottom = H - PAD - 70;       // room for source
+const panelW = (W - 2*PAD) / COLS;
+const panelH = (panelGridBottom - panelTop) / ROWS;
+const innerPad = 12;
+
+const svg = d3.select('#chart');
+svg.append('rect').attr('width', W).attr('height', H).attr('fill', C.bg);
+
+// Title
+svg.append('text')
+   .attr('x', PAD).attr('y', titleY)
+   .attr('font-family', 'ABC Oracle Edu').attr('font-size', 28).attr('font-weight', 500)
+   .attr('fill', C.text)
+   .text('When do families leave the city?');
+
+svg.append('text')
+   .attr('x', PAD).attr('y', subY)
+   .attr('font-family', 'ABC Oracle Edu').attr('font-size', 18).attr('font-weight', 400)
+   .attr('fill', C.subtext)
+   .text('Age distribution of kids who moved from inner→outer county within their MSA in the past year (ACS 5-year PUMS, 2019–2023)');
+
+// Find global max y for shared scale
+const globalMax = d3.max(PANELS, p => d3.max(p.inner_to_outer));
+
+PANELS.forEach((p, i) => {
+  const col = i % COLS, row = Math.floor(i / COLS);
+  const px = PAD + col * panelW + innerPad;
+  const py = panelTop + row * panelH + 28;  // 28px for panel title
+  const pw = panelW - 2 * innerPad;
+  const ph = panelH - 48;  // leave room for title + x-axis labels
+
+  // Panel title
+  svg.append('text')
+     .attr('x', px).attr('y', panelTop + row * panelH + 18)
+     .attr('font-family', 'ABC Oracle Edu').attr('font-size', 16).attr('font-weight', 500)
+     .attr('fill', C.text)
+     .text(p.msa_short);
+
+  svg.append('text')
+     .attr('x', px + pw).attr('y', panelTop + row * panelH + 18)
+     .attr('text-anchor', 'end')
+     .attr('font-family', 'ABC Oracle Edu').attr('font-size', 12).attr('font-weight', 300)
+     .attr('fill', C.subtext)
+     .text(p.total_io.toLocaleString() + ' kids/yr');
+
+  // Scales
+  const x = d3.scaleBand().domain(d3.range(18)).range([px, px + pw]).padding(0.15);
+  const y = d3.scaleLinear().domain([0, globalMax]).range([py + ph, py]);
+
+  // Zero line
+  svg.append('line').attr('x1', px).attr('x2', px + pw)
+     .attr('y1', py + ph).attr('y2', py + ph)
+     .attr('stroke', C.text).attr('stroke-width', 0.5);
+
+  // Find peak age (single peak — argmax)
+  let peakAge = 0, peakVal = 0;
+  p.inner_to_outer.forEach((v, a) => { if (v > peakVal) { peakVal = v; peakAge = a; } });
+
+  // Bars
+  p.ages.forEach(age => {
+    const v = p.inner_to_outer[age];
+    if (v <= 0) return;
+    svg.append('rect')
+       .attr('x', x(age)).attr('width', x.bandwidth())
+       .attr('y', y(v)).attr('height', py + ph - y(v))
+       .attr('fill', age === peakAge ? C.peak : C.bar);
+  });
+
+  // Peak label
+  if (peakVal > 0) {
+    svg.append('text')
+       .attr('x', x(peakAge) + x.bandwidth() / 2)
+       .attr('y', y(peakVal) - 4)
+       .attr('text-anchor', 'middle')
+       .attr('font-family', 'ABC Oracle Edu').attr('font-size', 11).attr('font-weight', 500)
+       .attr('fill', C.peak)
+       .text(`age ${peakAge}`);
+  }
+
+  // X-axis tick labels (just 0, 5, 10, 15)
+  [0, 5, 10, 15].forEach(t => {
+    svg.append('text')
+       .attr('x', x(t) + x.bandwidth() / 2).attr('y', py + ph + 14)
+       .attr('text-anchor', 'middle')
+       .attr('font-family', 'ABC Oracle Edu').attr('font-size', 11).attr('font-weight', 300)
+       .attr('fill', '#666')
+       .text(t);
+  });
+});
+
+// Footnote on age semantics
+svg.append('text')
+   .attr('x', PAD).attr('y', H - PAD - 36)
+   .attr('font-family', 'ABC Oracle Edu').attr('font-size', 12).attr('font-weight', 400)
+   .attr('fill', C.text)
+   .text('Note: AGE is the survey age. Since ACS asks "where lived 1 year ago", the actual age at move is approximately AGE − 1. A peak at age 2 means the move happened when the kid was ~1.');
+
+svg.append('text')
+   .attr('x', PAD).attr('y', H - PAD - 18)
+   .attr('font-family', 'ABC Oracle Edu').attr('font-size', 12).attr('font-weight', 200)
+   .attr('fill', C.text)
+   .text('Source: IPUMS ACS 5-year PUMS, latest 5-year window (2019–2023). Inner = MSA central county/counties; outer = other MSA counties.');
+
+svg.append('text')
+   .attr('x', PAD).attr('y', H - PAD - 2)
+   .attr('font-family', 'ABC Oracle Edu').attr('font-size', 12).attr('font-weight', 200)
+   .attr('fill', C.subtext)
+   .text('Miami and Phoenix excluded — Miami-Dade COUNTYFIP suppressed in PUMS; Phoenix sample too small.');
+</script>
+</body></html>

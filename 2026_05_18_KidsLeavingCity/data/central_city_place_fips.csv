@@ -1,0 +1,61 @@
+sma_code,sma_name,central_city,state_fips,place_fips,county_fips_central
+5600,"New York-Northeastern NJ, NY-NJ SMA",New York,36,3651000,36061
+5600,"New York-Northeastern NJ, NY-NJ SMA",Newark,34,3451000,34013
+1600,"Chicago, IL-IN SMA",Chicago,17,1714000,17031
+4480,"Los Angeles, CA SMA",Los Angeles,06,0644000,06037
+6160,"Philadelphia, PA-NJ SMA",Philadelphia,42,4260000,42101
+2160,"Detroit, MI SMA",Detroit,26,2622000,26163
+1120,"Boston, MA SMA",Boston,25,2507000,25025
+6280,"Pittsburgh, PA SMA",Pittsburgh,42,4261000,42003
+7360,"San Francisco-Oakland, CA SMA",San Francisco,06,0667000,06075
+7360,"San Francisco-Oakland, CA SMA",Oakland,06,0653000,06001
+6480,"Providence, RI SMA",Providence,44,4459000,44007
+7040,"St. Louis, MO-IL SMA",St. Louis,29,2965000,29510
+1680,"Cleveland, OH SMA",Cleveland,39,3916000,39035
+720,"Baltimore, MD SMA",Baltimore,24,2404000,24510
+5120,"Minneapolis-St. Paul, MN SMA",Minneapolis,27,2743000,27053
+5120,"Minneapolis-St. Paul, MN SMA",St. Paul,27,2758000,27123
+1280,"Buffalo, NY SMA",Buffalo,36,3611000,36029
+4560,"Lowell, MA SMA",Lowell,25,2537000,25017
+1160,"Bridgeport, CT SMA",Bridgeport,09,0908000,09001
+1200,"Brockton, MA SMA",Brockton,25,2509000,25021
+8000,"Springfield-Holyoke, MA-CT SMA",Springfield,25,2567000,25013
+8000,"Springfield-Holyoke, MA-CT SMA",Holyoke,25,2530000,25013
+1640,"Cincinnati, OH-KY SMA",Cincinnati,39,3915000,39061
+3360,"Houston, TX SMA",Houston,48,4835000,48201
+5080,"Milwaukee, WI SMA",Milwaukee,55,5553000,55079
+3760,"Kansas City, MO-KS SMA",Kansas City MO,29,2938000,29095
+3760,"Kansas City, MO-KS SMA",Kansas City KS,20,2036000,20209
+8840,"Washington, DC-MD-VA SMA",Washington,11,1150000,11001
+5560,"New Orleans, LA SMA",New Orleans,22,2255000,22071
+520,"Atlanta, GA SMA",Atlanta,13,1304000,13121
+7600,"Seattle, WA SMA",Seattle,53,5363000,53033
+6440,"Portland, OR-WA SMA",Portland,41,4159000,41051
+1000,"Birmingham, AL SMA",Birmingham,01,0107000,01073
+1920,"Dallas, TX SMA",Dallas,48,4819000,48113
+5440,"New Britain-Bristol, CT SMA",New Britain,09,0950000,09003
+5440,"New Britain-Bristol, CT SMA",Bristol,09,0907000,09003
+8880,"Waterbury, CT SMA",Waterbury,09,0972000,09009
+4520,"Louisville, KY-IN SMA",Louisville,21,2148000,21111
+7240,"San Antonio, TX SMA",San Antonio,48,4865000,48029
+2080,"Denver, CO SMA",Denver,08,0820000,08031
+9320,"Youngstown, OH-PA SMA",Youngstown,39,3989000,39099
+3480,"Indianapolis, IN SMA",Indianapolis,18,1836000,18097
+7320,"San Diego, CA SMA",San Diego,06,0666000,06073
+9240,"Worcester, MA SMA",Worcester,25,2581000,25027
+3280,"Hartford, CT SMA",Hartford,09,0935000,09003
+5480,"New Haven, CT SMA",New Haven,09,0953000,09009
+4920,"Memphis, TN SMA",Memphis,47,4748000,47157
+4160,"Lawrence, MA SMA",Lawrence,25,2534000,25009
+8040,"Stamford-Norwalk, CT SMA",Stamford,09,0973000,09001
+8040,"Stamford-Norwalk, CT SMA",Norwalk,09,0954000,09001
+2000,"Dayton, OH SMA",Dayton,39,3920000,39113
+1840,"Columbus, OH SMA",Columbus,39,3918000,39049
+160,"Albany-Schenectady-Troy, NY SMA",Albany,36,3601000,36001
+160,"Albany-Schenectady-Troy, NY SMA",Schenectady,36,3667000,36093
+160,"Albany-Schenectady-Troy, NY SMA",Troy,36,3675000,36083
+6840,"Rochester, NY SMA",Rochester,36,3663000,36055
+5720,"Norfolk-Portsmouth, VA SMA",Norfolk,51,5156000,51710
+5720,"Norfolk-Portsmouth, VA SMA",Portsmouth,51,5157000,51740
+2480,"Fall River, MA-RI SMA",Fall River,25,2522000,25005
+80,"Akron, OH SMA",Akron,39,3900100,39153

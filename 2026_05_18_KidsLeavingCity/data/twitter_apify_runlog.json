@@ -1,0 +1,181 @@
+{
+  "total_cost_usd": 0.6080000000000001,
+  "runs": [
+    {
+      "label": "narrative_anchors",
+      "raw": 124,
+      "new": 116,
+      "cost_usd": 0.096,
+      "elapsed_s": 14.257362842559814
+    },
+    {
+      "label": "kids_leaving_phrases",
+      "raw": 200,
+      "new": 199,
+      "cost_usd": 0.08,
+      "elapsed_s": 14.751892805099487
+    },
+    {
+      "label": "yimby_supply",
+      "raw": 119,
+      "new": 100,
+      "cost_usd": 0.08,
+      "elapsed_s": 13.229077816009521
+    },
+    {
+      "label": "density_pronatalist",
+      "raw": 200,
+      "new": 186,
+      "cost_usd": 0.08,
+      "elapsed_s": 17.193130016326904
+    },
+    {
+      "label": "school_enrollment",
+      "raw": 40,
+      "new": 39,
+      "cost_usd": 0,
+      "elapsed_s": 9.089319944381714
+    },
+    {
+      "label": "suburb_moves",
+      "raw": 26,
+      "new": 25,
+      "cost_usd": 0.064,
+      "elapsed_s": 13.410320043563843
+    },
+    {
+      "label": "specific_cities",
+      "raw": 200,
+      "new": 195,
+      "cost_usd": 0.08,
+      "elapsed_s": 13.61055302619934
+    },
+    {
+      "label": "commentators",
+      "raw": 250,
+      "new": 136,
+      "cost_usd": 0.128,
+      "elapsed_s": 11.533701658248901
+    },
+    {
+      "label": "data_charts",
+      "raw": 15,
+      "new": 12,
+      "cost_usd": 0,
+      "elapsed_s": 8.753949880599976
+    }
+  ],
+  "by_run": {
+    "narrative_anchors": {
+      "raw_count": 124,
+      "new": 116,
+      "cost_usd": 0.096,
+      "queries": [
+        "\"families leaving cities\" min_faves:25",
+        "\"families fleeing\" cities min_faves:25",
+        "\"urban exodus\" families min_faves:25",
+        "\"childless city\" min_faves:25",
+        "\"childless cities\" min_faves:25",
+        "\"future of the city is childless\" min_faves:5"
+      ]
+    },
+    "kids_leaving_phrases": {
+      "raw_count": 200,
+      "new": 199,
+      "cost_usd": 0.08,
+      "queries": [
+        "\"kids are leaving\" city min_faves:25",
+        "\"no kids\" Manhattan OR \"San Francisco\" OR Brooklyn min_faves:25",
+        "\"families with kids\" leaving city min_faves:25",
+        "\"hollowing out\" cities children OR families min_faves:25",
+        "\"fewer children\" cities min_faves:25"
+      ]
+    },
+    "yimby_supply": {
+      "raw_count": 119,
+      "new": 100,
+      "cost_usd": 0.08,
+      "queries": [
+        "\"family-sized\" housing cities min_faves:25",
+        "\"missing middle\" housing families min_faves:25",
+        "YIMBY families cities housing min_faves:50",
+        "\"three bedroom\" apartments cities min_faves:25",
+        "Yglesias families cities housing min_faves:25"
+      ]
+    },
+    "density_pronatalist": {
+      "raw_count": 200,
+      "new": 186,
+      "cost_usd": 0.08,
+      "queries": [
+        "\"high-rise\" fertility min_faves:25",
+        "density fertility cities min_faves:25",
+        "\"birth rate\" cities decline min_faves:50",
+        "\"apartments\" fertility OR babies min_faves:25",
+        "sprawl families cities OR fertility min_faves:25"
+      ]
+    },
+    "school_enrollment": {
+      "raw_count": 40,
+      "new": 39,
+      "cost_usd": 0,
+      "queries": [
+        "\"school enrollment\" decline city min_faves:25",
+        "SFUSD enrollment decline min_faves:25",
+        "\"NYC schools\" enrollment decline min_faves:25",
+        "Seattle schools enrollment families min_faves:25",
+        "Chicago schools closing enrollment min_faves:25",
+        "DC schools enrollment families min_faves:25"
+      ]
+    },
+    "suburb_moves": {
+      "raw_count": 26,
+      "new": 25,
+      "cost_usd": 0.064,
+      "queries": [
+        "\"moving to the suburbs\" families min_faves:25",
+        "\"leaving the city\" suburbs kids min_faves:25",
+        "\"central city\" families suburbs min_faves:25",
+        "remote work families suburbs min_faves:50"
+      ]
+    },
+    "specific_cities": {
+      "raw_count": 200,
+      "new": 195,
+      "cost_usd": 0.08,
+      "queries": [
+        "San Francisco families exodus OR leaving min_faves:50",
+        "Manhattan families exodus OR leaving kids min_faves:50",
+        "New York City families leaving min_faves:50",
+        "Brooklyn families leaving kids min_faves:50",
+        "Seattle families leaving children min_faves:25"
+      ]
+    },
+    "commentators": {
+      "raw_count": 250,
+      "new": 136,
+      "cost_usd": 0.128,
+      "queries": [
+        "from:mattyglesias families cities OR kids OR housing min_faves:25",
+        "from:dkthomp childless OR families OR cities min_faves:25",
+        "from:jerusalemd cities OR families OR housing min_faves:25",
+        "from:lymanstoneky cities OR fertility OR housing min_faves:25",
+        "from:cremieuxrecueil cities OR fertility OR housing min_faves:25",
+        "from:noahpinion cities OR families OR housing min_faves:25",
+        "from:ezraklein cities OR families OR housing min_faves:25",
+        "from:morebirths cities OR housing min_faves:25"
+      ]
+    },
+    "data_charts": {
+      "raw_count": 15,
+      "new": 12,
+      "cost_usd": 0,
+      "queries": [
+        "\"American Community Survey\" children cities min_faves:25",
+        "\"census\" families cities decline min_faves:25",
+        "\"stroller index\" min_faves:5",
+        "\"under 18\" cities decline min_faves:25"
+      ]
+    }
+  }
+}

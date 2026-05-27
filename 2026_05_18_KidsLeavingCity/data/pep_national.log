@@ -1,0 +1,73 @@
+=== V2019 (2011 baseline) — agesex by state ===
+  downloading v2019-agesex-01.csv (attempt 1)
+  downloading v2019-agesex-02.csv (attempt 1)
+  downloading v2019-agesex-05.csv (attempt 1)
+  downloading v2019-agesex-08.csv (attempt 1)
+    ↳ HTTP Error 520: <none>; backoff
+  downloading v2019-agesex-08.csv (attempt 2)
+  downloading v2019-agesex-09.csv (attempt 1)
+  downloading v2019-agesex-15.csv (attempt 1)
+  downloading v2019-agesex-16.csv (attempt 1)
+  downloading v2019-agesex-19.csv (attempt 1)
+  downloading v2019-agesex-20.csv (attempt 1)
+    ↳ HTTP Error 502: Bad Gateway; backoff
+  downloading v2019-agesex-20.csv (attempt 2)
+  downloading v2019-agesex-21.csv (attempt 1)
+  downloading v2019-agesex-22.csv (attempt 1)
+  downloading v2019-agesex-23.csv (attempt 1)
+  downloading v2019-agesex-25.csv (attempt 1)
+  downloading v2019-agesex-26.csv (attempt 1)
+  downloading v2019-agesex-27.csv (attempt 1)
+  downloading v2019-agesex-28.csv (attempt 1)
+  downloading v2019-agesex-29.csv (attempt 1)
+  downloading v2019-agesex-30.csv (attempt 1)
+    ↳ IncompleteRead(0 bytes read, 275079 more expected); backoff
+  downloading v2019-agesex-30.csv (attempt 2)
+  downloading v2019-agesex-31.csv (attempt 1)
+    ↳ HTTP Error 502: Bad Gateway; backoff
+  downloading v2019-agesex-31.csv (attempt 2)
+  downloading v2019-agesex-32.csv (attempt 1)
+  downloading v2019-agesex-33.csv (attempt 1)
+  downloading v2019-agesex-35.csv (attempt 1)
+  downloading v2019-agesex-38.csv (attempt 1)
+  downloading v2019-agesex-39.csv (attempt 1)
+  downloading v2019-agesex-40.csv (attempt 1)
+  downloading v2019-agesex-41.csv (attempt 1)
+  downloading v2019-agesex-44.csv (attempt 1)
+  downloading v2019-agesex-46.csv (attempt 1)
+  downloading v2019-agesex-47.csv (attempt 1)
+  downloading v2019-agesex-49.csv (attempt 1)
+  downloading v2019-agesex-50.csv (attempt 1)
+  downloading v2019-agesex-53.csv (attempt 1)
+  downloading v2019-agesex-55.csv (attempt 1)
+  downloading v2019-agesex-56.csv (attempt 1)
+  files: 51
+Traceback (most recent call last):
+  File "/Users/azizsunderji/Dropbox/Home Economics/2026_05_18_KidsLeavingCity/scripts/pull_pep_national.py", line 95, in <module>
+    main()
+  File "/Users/azizsunderji/Dropbox/Home Economics/2026_05_18_KidsLeavingCity/scripts/pull_pep_national.py", line 61, in main
+    df11 = duckdb.query(f"""
+_duckdb.InvalidInputException: Invalid Input Error: CSV Error on Line: 86
+Original Line: 050,35,011,New Mexico,De Baca County,12,1748,867,881,81,33,48,209,103,106,101,46,55,106,60,46,1411,707,704,1357,685,672,507,262,245,326,170,156,424,204,220,501,251,250,81,33,48,122,62,60,113,55,58,118,58,60,63,34,29,79,45,34,66,30,36,118,66,52,63,29,34,78,38,40,96,51,45,128,69,59,122,46,76,141,87,54,137,64,73,83,34,49,68,35,33,72,31,41,48.3,48.1,48.7
+Invalid unicode (byte sequence mismatch) detected. This file is not utf-8 encoded.
+
+Possible Solution: Set the correct encoding, if available, to read this CSV File (e.g., encoding='UTF-16')
+Possible Solution: Enable ignore errors (ignore_errors=true) to skip this row
+
+  file = /Users/azizsunderji/Dropbox/Home Economics/2026_05_18_KidsLeavingCity/data/pep_cache/v2019-agesex-35.csv
+  delimiter = , (Auto-Detected)
+  quote = (empty) (Auto-Detected)
+  escape = (empty) (Auto-Detected)
+  new_line = \n (Auto-Detected)
+  header = true (Auto-Detected)
+  skip_rows = 0 (Auto-Detected)
+  comment = (empty) (Auto-Detected)
+  strict_mode = true (Auto-Detected)
+  date_format =  (Auto-Detected)
+  timestamp_format =  (Auto-Detected)
+  null_padding = 0
+  sample_size = 20480
+  ignore_errors = false
+  all_varchar = 0
+
+

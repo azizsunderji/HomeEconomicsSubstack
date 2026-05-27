@@ -1,0 +1,42 @@
+States in scope: 17 — 04, 06, 10, 11, 12, 13, 17, 18, 24, 34, 36, 37, 42, 45, 48, 51, 54
+Counties in scope: 142
+
+--- V2019 (2011 baseline) ---
+  downloading https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/counties/asrh/cc-est2019-agesex-11.csv (attempt 1)
+  downloading https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/counties/asrh/cc-est2019-agesex-12.csv (attempt 1)
+  downloading https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/counties/asrh/cc-est2019-agesex-24.csv (attempt 1)
+  downloading https://www2.census.gov/programs-surveys/popest/datasets/2010-2019/counties/asrh/cc-est2019-agesex-48.csv (attempt 1)
+  V2019 files: 17
+Wrote 142 rows → pep_2011.csv
+
+--- V2024 (2024 endpoint) ---
+  downloading https://www2.census.gov/programs-surveys/popest/datasets/2020-2024/counties/asrh/cc-est2024-syasex-11.csv (attempt 1)
+  downloading https://www2.census.gov/programs-surveys/popest/datasets/2020-2024/counties/asrh/cc-est2024-syasex-13.csv (attempt 1)
+  downloading https://www2.census.gov/programs-surveys/popest/datasets/2020-2024/counties/asrh/cc-est2024-syasex-18.csv (attempt 1)
+  downloading https://www2.census.gov/programs-surveys/popest/datasets/2020-2024/counties/asrh/cc-est2024-syasex-24.csv (attempt 1)
+  downloading https://www2.census.gov/programs-surveys/popest/datasets/2020-2024/counties/asrh/cc-est2024-syasex-34.csv (attempt 1)
+  downloading https://www2.census.gov/programs-surveys/popest/datasets/2020-2024/counties/asrh/cc-est2024-syasex-36.csv (attempt 1)
+  downloading https://www2.census.gov/programs-surveys/popest/datasets/2020-2024/counties/asrh/cc-est2024-syasex-37.csv (attempt 1)
+  downloading https://www2.census.gov/programs-surveys/popest/datasets/2020-2024/counties/asrh/cc-est2024-syasex-48.csv (attempt 1)
+  downloading https://www2.census.gov/programs-surveys/popest/datasets/2020-2024/counties/asrh/cc-est2024-syasex-51.csv (attempt 1)
+  downloading https://www2.census.gov/programs-surveys/popest/datasets/2020-2024/counties/asrh/cc-est2024-syasex-54.csv (attempt 1)
+    ↳ failed: HTTP Error 502: Bad Gateway; backing off
+  downloading https://www2.census.gov/programs-surveys/popest/datasets/2020-2024/counties/asrh/cc-est2024-syasex-54.csv (attempt 2)
+  V2024 files: 17
+Wrote 142 rows → pep_2024.csv
+
+Top 5 counties by largest decline:
+fips_5 County/County Equivalent                     msa_name_short  pop_under18  pop_under18_2024  delta_under18  delta_pct
+ 06037       Los Angeles County Los Angeles-Long Beach-Anaheim, CA      2368374         1944946.0      -423428.0 -17.878426
+ 17031              Cook County    Chicago-Naperville-Elgin, IL-IN      1221148         1053196.0      -167952.0 -13.753615
+ 06059            Orange County Los Angeles-Long Beach-Anaheim, CA       732740          642905.0       -89835.0 -12.260147
+ 36047             Kings County New York-Newark-Jersey City, NY-NJ       600913          562076.0       -38837.0  -6.462999
+ 36103           Suffolk County New York-Newark-Jersey City, NY-NJ       351829          314488.0       -37341.0 -10.613395
+
+Top 5 counties by largest gain:
+fips_5 County/County Equivalent                       msa_name_short  pop_under18  pop_under18_2024  delta_under18  delta_pct
+ 48201            Harris County Houston-The Woodlands-Sugar Land, TX      1159880         1272618.0       112738.0   9.719799
+ 48157         Fort Bend County Houston-The Woodlands-Sugar Land, TX       176335          248961.0        72626.0  41.186378
+ 48085            Collin County      Dallas-Fort Worth-Arlington, TX       230022          301180.0        71158.0  30.935302
+ 48339        Montgomery County Houston-The Woodlands-Sugar Land, TX       128982          190255.0        61273.0  47.505078
+ 48121            Denton County      Dallas-Fort Worth-Arlington, TX       186012          235469.0        49457.0  26.588070

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Where Dallas families went, 2011 → 2024</title>
+<style>
+@font-face {
+  font-family: 'ABC Oracle Edu';
+  src: url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'ABC Oracle Edu';
+  src: url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'ABC Oracle Edu';
+  src: url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Light.otf') format('opentype');
+  font-weight: 300;
+}
+body { margin: 0; background: #fff; font-family: 'ABC Oracle Edu', sans-serif; }
+svg { display: block; margin: 20px auto; }
+.tooltip {
+  position: absolute; pointer-events: none;
+  background: rgba(61,55,51,0.95); color: #F6F7F3;
+  padding: 8px 12px; font-size: 13px; border-radius: 4px;
+  font-family: 'ABC Oracle Edu', sans-serif;
+}
+</style>
+</head>
+<body>
+<svg id="chart_combined" viewBox="0 0 1920 987" xmlns="http://www.w3.org/2000/svg"></svg>
+<div class="tooltip" style="display:none"></div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const DATA = [{"name": "Dallas", "full_name": "Dallas County", "fips": "48113", "pop_2011": 660186, "pop_2024": 651464, "delta": -8722, "births": 495165, "aging": 466633, "net_mig": -37254, "has_decomp": true}, {"name": "Johnson", "full_name": "Johnson County", "fips": "48251", "pop_2011": 40913, "pop_2024": 53353, "delta": 12440, "births": 28710, "aging": 30463, "net_mig": 14193, "has_decomp": true}, {"name": "Parker", "full_name": "Parker County", "fips": "48367", "pop_2011": 29601, "pop_2024": 43688, "delta": 14087, "births": 18515, "aging": 22482, "net_mig": 18054, "has_decomp": true}, {"name": "Ellis", "full_name": "Ellis County", "fips": "48139", "pop_2011": 43309, "pop_2024": 60523, "delta": 17214, "births": 30677, "aging": 32582, "net_mig": 19119, "has_decomp": true}, {"name": "Kaufman", "full_name": "Kaufman County", "fips": "48257", "pop_2011": 29948, "pop_2024": 57044, "delta": 27096, "births": 22997, "aging": 22321, "net_mig": 26420, "has_decomp": true}, {"name": "Tarrant", "full_name": "Tarrant County", "fips": "48439", "pop_2011": 513110, "pop_2024": 551303, "delta": 38193, "births": 360211, "aging": 370739, "net_mig": 48721, "has_decomp": true}, {"name": "Denton", "full_name": "Denton County", "fips": "48121", "pop_2011": 186012, "pop_2024": 235469, "delta": 49457, "births": 134784, "aging": 136583, "net_mig": 51256, "has_decomp": true}, {"name": "Collin", "full_name": "Collin County", "fips": "48085", "pop_2011": 230022, "pop_2024": 301180, "delta": 71158, "births": 150617, "aging": 171667, "net_mig": 92208, "has_decomp": true}, {"name": "Hunt", "full_name": "Hunt County", "fips": "48231", "pop_2011": 21378, "pop_2024": 29384, "delta": 8006, "births": null, "aging": 15779, "net_mig": null, "has_decomp": false}, {"name": "Rockwall", "full_name": "Rockwall County", "fips": "48397", "pop_2011": 23643, "pop_2024": 35636, "delta": 11993, "births": null, "aging": 18040, "net_mig": null, "has_decomp": false}, {"name": "Wise", "full_name": "Wise County", "fips": "48497", "pop_2011": 15516, "pop_2024": 19799, "delta": 4283, "births": null, "aging": 11471, "net_mig": null, "has_decomp": false}];
+const C = {"births": "#67A275", "aging": "#DADFCE", "natural": "#3F6E4B", "mig": "#0BB4FF", "net": "#3D3733", "bg": "#F6F7F3", "text": "#3D3733", "subtext": "#7F7570", "grid": "#e1e2e3"};
+const MSA = "Dallas";
+const MSA_FULL = "Dallas-Fort Worth-Arlington, TX";
+const WIDTH = 960, HEIGHT = 987;
+const PAD = 40;
+
+function fmtCount(v) {
+  const a = Math.abs(v);
+  let s;
+  if (a >= 1_000_000) s = (v / 1_000_000).toFixed(a >= 10_000_000 ? 0 : 1) + 'M';
+  else if (a >= 1000) s = Math.round(v / 1000) + 'k';
+  else s = Math.round(v).toString();
+  return (v > 0 ? '+' : '') + s;
+}
+
+function renderChart(parentSvg, xOffset, title, subtitle, componentsFn, legendItems) {
+  // parentSvg = a d3 selection of the shared SVG. xOffset = horizontal shift.
+  const g = parentSvg.append('g').attr('transform', `translate(${xOffset}, 0)`);
+
+  // Background panel
+  g.append('rect').attr('width', WIDTH).attr('height', HEIGHT).attr('fill', C.bg);
+
+  g.append('text')
+     .attr('x', PAD).attr('y', PAD + 32)
+     .attr('font-family', 'ABC Oracle Edu').attr('font-size', 30).attr('font-weight', 500)
+     .attr('fill', C.text)
+     .text(title);
+
+  g.append('text')
+     .attr('x', PAD).attr('y', PAD + 32 + 30)
+     .attr('font-family', 'ABC Oracle Edu').attr('font-size', 20).attr('font-weight', 400)
+     .attr('fill', C.subtext)
+     .text(subtitle);
+
+  const titleBlockBottom = PAD + 32 + 30 + 65;
+  const sourceTop = HEIGHT - PAD - 60;
+  const xLabelArea = 180;
+  const chartTop = titleBlockBottom;
+  const chartBottom = sourceTop - xLabelArea;
+  const chartLeft = PAD + 90;
+  const chartRight = WIDTH - PAD;
+
+  // Build per-county component arrays via componentsFn
+  const enriched = DATA.map(d => ({
+    ...d,
+    components: d.has_decomp ? componentsFn(d) : [],
+    delta_val: d.delta || 0,
+  }));
+
+  // Y-axis domain — symmetric enough to show all components on both sides
+  const allValues = enriched.flatMap(d => [...d.components.map(c => c.val), d.delta_val]);
+  const dataMin = d3.min(allValues);
+  const dataMax = d3.max(allValues);
+  const yPad = Math.max(Math.abs(dataMin), Math.abs(dataMax)) * 0.05;
+  const y = d3.scaleLinear()
+    .domain([dataMin - yPad, dataMax + yPad])
+    .range([chartBottom, chartTop]);
+
+  const x = d3.scaleBand()
+    .domain(enriched.map(d => d.name))
+    .range([chartLeft, chartRight])
+    .padding(0.25);
+
+  // Gridlines & y-axis labels
+  const yTicks = y.ticks(8);
+  const gridG = g.append('g').attr('class', 'grid-lines');
+  yTicks.forEach(t => {
+    gridG.append('line')
+      .attr('x1', chartLeft - 10).attr('x2', chartRight)
+      .attr('y1', y(t)).attr('y2', y(t))
+      .attr('stroke', t === 0 ? C.text : C.grid)
+      .attr('stroke-width', t === 0 ? 1 : 0.5);
+  });
+
+  const yLabG = g.append('g').attr('class', 'y-axis-labels');
+  yTicks.forEach((t) => {
+    yLabG.append('text')
+      .attr('x', chartLeft - 14).attr('y', y(t))
+      .attr('font-family', 'ABC Oracle Edu').attr('font-size', 18).attr('font-weight', 300)
+      .attr('fill', '#333').attr('text-anchor', 'end').attr('dy', '0.32em')
+      .text(fmtCount(t));
+  });
+
+  g.append('text')
+     .attr('x', chartLeft - 50).attr('y', chartTop - 15)
+     .attr('font-family', 'ABC Oracle Edu').attr('font-size', 15).attr('font-weight', 400)
+     .attr('fill', C.subtext)
+     .text('Children (signed contributions to 2011→2024 Δ)');
+
+  // Bars
+  const seriesG = g.append('g').attr('class', 'data-series');
+  enriched.forEach(d => {
+    const bw = x.bandwidth();
+    if (!d.has_decomp) {
+      const y0 = y(0), yEnd = y(d.delta_val);
+      seriesG.append('rect')
+        .attr('x', x(d.name)).attr('width', bw)
+        .attr('y', Math.min(y0, yEnd)).attr('height', Math.abs(y0 - yEnd))
+        .attr('fill', '#bbb').attr('opacity', 0.5)
+        .attr('data-tip', `${d.full_name} (no births data)\n2011 → 2024: ${d.delta?.toLocaleString()}`);
+      return;
+    }
+    let pos = 0, neg = 0;
+    d.components.forEach(c => {
+      let yTop, yBot;
+      if (c.val >= 0) {
+        yBot = y(pos);
+        pos += c.val;
+        yTop = y(pos);
+      } else {
+        yTop = y(neg);
+        neg += c.val;
+        yBot = y(neg);
+      }
+      seriesG.append('rect')
+        .attr('x', x(d.name)).attr('width', bw)
+        .attr('y', yTop).attr('height', yBot - yTop)
+        .attr('fill', c.color)
+        .attr('data-tip', `${d.full_name}\n${c.label}: ${fmtCount(c.val)}`);
+    });
+    // Net delta marker
+    seriesG.append('line')
+      .attr('x1', x(d.name) - 2).attr('x2', x(d.name) + bw + 2)
+      .attr('y1', y(d.delta_val)).attr('y2', y(d.delta_val))
+      .attr('stroke', C.net).attr('stroke-width', 2);
+  });
+
+  // X-axis labels (rotated)
+  const xLabG = g.append('g').attr('class', 'x-axis-labels');
+  enriched.forEach(d => {
+    xLabG.append('text')
+      .attr('x', x(d.name) + x.bandwidth() / 2).attr('y', chartBottom + 12)
+      .attr('font-family', 'ABC Oracle Edu').attr('font-size', 13).attr('font-weight', 300)
+      .attr('fill', '#333').attr('text-anchor', 'end')
+      .attr('transform', `rotate(-45, ${x(d.name) + x.bandwidth() / 2}, ${chartBottom + 12})`)
+      .text(d.name);
+  });
+
+  // Legend
+  const legend = g.append('g').attr('class', 'legend')
+    .attr('transform', `translate(${chartLeft}, ${sourceTop - 35})`);
+  let lx = 0;
+  legendItems.forEach(it => {
+    if (it.line) {
+      legend.append('line').attr('x1', lx).attr('x2', lx + 16).attr('y1', 6).attr('y2', 6)
+        .attr('stroke', it.color).attr('stroke-width', 2);
+    } else {
+      legend.append('rect').attr('x', lx).attr('y', 0).attr('width', 16).attr('height', 12).attr('fill', it.color);
+    }
+    legend.append('text').attr('x', lx + 22).attr('y', 9)
+      .attr('font-family', 'ABC Oracle Edu').attr('font-size', 14).attr('font-weight', 400)
+      .attr('fill', C.text).text(it.label);
+    lx += 22 + (it.label.length * 8) + 24;
+  });
+
+  // Source
+  g.append('text')
+    .attr('x', PAD).attr('y', HEIGHT - PAD - 18)
+    .attr('font-family', 'ABC Oracle Edu').attr('font-size', 13).attr('font-weight', 200)
+    .attr('fill', C.text)
+    .text('Source: Census PEP (V2019 & V2024); CDC WONDER NCHS Natality (D66, 2007-2024).');
+
+  g.append('text')
+    .attr('x', PAD).attr('y', HEIGHT - PAD - 2)
+    .attr('font-family', 'ABC Oracle Edu').attr('font-size', 13).attr('font-weight', 200)
+    .attr('fill', C.subtext)
+    .text(MSA_FULL);
+}
+
+const parentSvg = d3.select('#chart_combined');
+
+// Left panel: three-component
+renderChart(
+  parentSvg, 0,
+  `Where ${MSA} families went, 2011 → 2024`,
+  'Three components: births, aging-out, net migration',
+  d => [
+    { val:  d.births,   color: C.births, label: 'Births' },
+    { val: -d.aging,    color: C.aging,  label: 'Aging-out' },
+    { val:  d.net_mig,  color: C.mig,    label: 'Net migration' },
+  ],
+  [
+    { label: 'Births to residents', color: C.births },
+    { label: 'Aging out of <18', color: C.aging },
+    { label: 'Net migration', color: C.mig },
+    { label: 'Net Δ marker', color: C.net, line: true },
+  ]
+);
+
+// Right panel: two-component (natural change vs migration)
+renderChart(
+  parentSvg, WIDTH,
+  `${MSA}: natural change vs net migration`,
+  'Births and aging-out merged into one bar',
+  d => [
+    { val: d.births - d.aging, color: C.natural, label: 'Births − aging-out' },
+    { val: d.net_mig,          color: C.mig,     label: 'Net migration' },
+  ],
+  [
+    { label: 'Births − aging-out', color: C.natural },
+    { label: 'Net migration', color: C.mig },
+    { label: 'Net Δ marker', color: C.net, line: true },
+  ]
+);
+
+// Tooltips (delegated)
+const tip = d3.select('.tooltip');
+d3.selectAll('rect[data-tip]')
+  .on('mousemove', function(e) {
+    tip.style('left', (e.pageX + 12) + 'px').style('top', (e.pageY + 12) + 'px')
+       .style('display', 'block')
+       .html(d3.select(this).attr('data-tip').replace(/\n/g, '<br>'));
+  })
+  .on('mouseout', () => tip.style('display', 'none'));
+</script>
+</body>
+</html>

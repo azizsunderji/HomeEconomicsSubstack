@@ -1,0 +1,255 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>NYC MSA under-18 by county — rebased to 100 (interactive)</title>
+<style>
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracle-Light.otf') format('opentype'); font-weight:300; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracle-Regular.otf') format('opentype'); font-weight:400; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracle-Medium.otf') format('opentype'); font-weight:500; }
+body { margin:0; padding:28px; background:#F6F7F3; font-family:'ABC Oracle Edu',sans-serif; color:#3D3733; }
+h1 { font-size:28px; font-weight:500; margin:0 0 6px; }
+.sub { color:#7F7570; font-size:15px; margin-bottom:16px; max-width:1100px; line-height:1.5; }
+.controls { display:flex; align-items:center; gap:18px; margin-bottom:10px; max-width:1100px; }
+.controls label { font-size:13px; color:#7F7570; }
+#rebaseYearLabel { font-size:18px; font-weight:500; color:#3D3733; min-width:54px; display:inline-block; }
+input[type=range] { -webkit-appearance:none; appearance:none; height:4px; background:#DADFCE; border-radius:2px; flex:1; max-width:520px; cursor:pointer; }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance:none; appearance:none; width:18px; height:18px; border-radius:50%; background:#0BB4FF; cursor:pointer; border:2px solid #F6F7F3; box-shadow:0 0 0 1px #0BB4FF; }
+input[type=range]::-moz-range-thumb { width:18px; height:18px; border-radius:50%; background:#0BB4FF; cursor:pointer; border:2px solid #F6F7F3; box-shadow:0 0 0 1px #0BB4FF; }
+.legend { font-size:12.5px; color:#7F7570; display:flex; gap:18px; align-items:center; }
+.legend .sw { display:inline-block; width:18px; height:2px; vertical-align:middle; margin-right:6px; }
+.chartwrap { background:#fff; border:0.5px solid #e1e2e3; padding:18px 22px 14px; max-width:1100px; }
+.tooltip { position:absolute; pointer-events:none; background:#3D3733; color:#F6F7F3; font-size:12px; padding:6px 9px; border-radius:3px; line-height:1.4; opacity:0; transition:opacity 80ms; white-space:nowrap; }
+.tooltip .name { font-weight:500; color:#FEC439; }
+.source { color:#7F7570; font-size:12px; max-width:1100px; margin-top:16px; line-height:1.5; }
+</style></head>
+<body>
+<h1>NYC MSA under-18 by county, rebased to 100</h1>
+<div class="sub">All 22 NYC metro counties indexed to 100 at a chosen rebase year. Five NYC boroughs in <span style="color:#0BB4FF;font-weight:500">blue</span>; the seventeen suburban counties in <span style="color:#9D958F;font-weight:500">gray</span>. Drag the slider to re-anchor the index. Hover any line for the county's name, index value, and raw under-18 count.</div>
+
+<div class="controls">
+  <label for="rebaseSlider">Rebase year:</label>
+  <span id="rebaseYearLabel">2010</span>
+  <input type="range" id="rebaseSlider" min="1980" max="2024" step="1" value="2010">
+  <div class="legend">
+    <span><span class="sw" style="background:#0BB4FF"></span>Borough</span>
+    <span><span class="sw" style="background:#9D958F"></span>Suburb</span>
+  </div>
+</div>
+
+<div class="chartwrap">
+  <svg id="chart" viewBox="0 0 1040 560" width="100%" preserveAspectRatio="xMidYMid meet"></svg>
+</div>
+<div id="tooltip" class="tooltip"></div>
+
+<div class="source">
+Source: Stitched PEP — pe-02 intercensal 1980-1989 + cany9Y / canj9Y postcensal 1990-1999 (drift-corrected) + co-est00int 2000-2010 + cc-est2020int 2010-2020 + V2024 2020-2024 (scaled). Per-county correction factors linearly interpolated within each decade so the series passes exactly through NHGIS Decennial Census anchors at 1980, 1990, 2000, 2010. NYC MSA = OMB 2023 CBSA 35620 (22 counties).
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const DATA = {"counties": [{"fips": "34003", "name": "Bergen", "is_borough": false, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [199135.0, 193528.0, 187823.0, 183859.0, 180160.0, 176051.0, 172545.0, 170546.0, 169724.0, 169656.0, 168368.0, 171888.0, 176806.0, 181482.0, 186055.0, 189926.0, 192980.0, 195249.0, 197471.0, 199585.0, 202892.0, 205634.0, 206669.0, 207502.0, 207952.0, 207060.0, 205449.0, 203737.0, 203411.0, 203687.0, 204462.0, 204405.0, 203870.0, 202953.0, 202708.0, 202435.0, 202096.0, 202542.0, 201608.0, 200931.0, 199866.0, 197665.0, 196720.0, 197573.0, 198531.0]}, {"fips": "34013", "name": "Essex", "is_borough": false, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [240472.0, 230863.0, 222219.0, 216067.0, 210392.0, 205945.0, 200926.0, 197926.0, 195127.0, 193472.0, 188637.0, 191097.0, 195186.0, 198833.0, 201493.0, 202849.0, 203267.0, 203300.0, 203973.0, 205119.0, 206161.0, 207300.0, 208030.0, 207190.0, 205162.0, 202124.0, 198315.0, 195381.0, 193816.0, 194388.0, 194740.0, 194803.0, 194118.0, 194726.0, 195442.0, 195960.0, 197091.0, 199088.0, 200727.0, 202009.0, 201414.0, 197723.0, 196874.0, 198589.0, 201347.0]}, {"fips": "34017", "name": "Hudson", "is_borough": false, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [144823.0, 141738.0, 137948.0, 135563.0, 133137.0, 130262.0, 127161.0, 125136.0, 124114.0, 123895.0, 122483.0, 124351.0, 126929.0, 129044.0, 131138.0, 132878.0, 133872.0, 134999.0, 135588.0, 135996.0, 137447.0, 136981.0, 136310.0, 135194.0, 134060.0, 132632.0, 130662.0, 128393.0, 128113.0, 129752.0, 131577.0, 134290.0, 135969.0, 137493.0, 139263.0, 140435.0, 141585.0, 142320.0, 142363.0, 142448.0, 141327.0, 136514.0, 134870.0, 134847.0, 135637.0]}, {"fips": "34019", "name": "Hunterdon", "is_borough": false, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [25735.0, 25126.0, 24585.0, 24342.0, 24257.0, 24171.0, 24441.0, 24944.0, 25210.0, 25783.0, 25941.0, 26431.0, 27328.0, 28106.0, 28748.0, 29122.0, 29793.0, 30083.0, 30391.0, 30831.0, 31408.0, 31825.0, 32187.0, 32499.0, 32515.0, 32414.0, 32323.0, 31826.0, 31252.0, 30733.0, 29998.0, 29301.0, 28476.0, 27611.0, 27022.0, 26526.0, 25999.0, 25684.0, 25309.0, 24977.0, 24839.0, 24748.0, 24768.0, 24839.0, 24904.0]}, {"fips": "34023", "name": "Middlesex", "is_borough": false, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [154336.0, 149944.0, 146527.0, 144625.0, 142659.0, 141934.0, 141295.0, 142250.0, 143524.0, 145394.0, 144631.0, 147952.0, 152330.0, 156378.0, 160688.0, 164288.0, 167077.0, 169507.0, 171891.0, 174328.0, 177582.0, 179237.0, 180781.0, 181343.0, 182480.0, 182859.0, 181543.0, 181488.0, 183219.0, 184522.0, 185487.0, 185527.0, 185527.0, 185106.0, 184901.0, 184839.0, 184300.0, 184693.0, 184336.0, 183699.0, 182743.0, 180514.0, 180041.0, 180558.0, 181454.0]}, {"fips": "34025", "name": "Monmouth", "is_borough": false, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [143921.0, 140056.0, 137009.0, 134454.0, 133390.0, 132857.0, 132755.0, 134283.0, 135092.0, 135358.0, 134814.0, 137386.0, 140985.0, 144365.0, 147932.0, 150907.0, 152997.0, 154487.0, 155832.0, 157789.0, 160303.0, 161937.0, 162738.0, 162512.0, 161472.0, 159492.0, 157035.0, 154576.0, 152752.0, 151034.0, 149737.0, 147170.0, 144753.0, 142697.0, 140678.0, 138730.0, 136875.0, 135312.0, 133812.0, 132603.0, 131564.0, 130339.0, 129170.0, 128340.0, 127586.0]}, {"fips": "34027", "name": "Morris", "is_borough": false, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [115709.0, 112004.0, 108884.0, 106341.0, 104396.0, 101760.0, 99495.0, 98296.0, 97867.0, 97413.0, 96291.0, 98059.0, 100560.0, 103245.0, 106316.0, 108673.0, 110591.0, 112101.0, 113399.0, 114783.0, 116730.0, 118071.0, 119562.0, 120692.0, 121431.0, 121505.0, 121042.0, 120087.0, 119390.0, 118297.0, 117406.0, 116323.0, 114779.0, 113365.0, 111857.0, 110756.0, 109592.0, 108801.0, 107491.0, 106321.0, 105266.0, 104386.0, 104382.0, 104737.0, 104982.0]}, {"fips": "36059", "name": "Nassau", "is_borough": false, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [339028.0, 328041.0, 320250.0, 315983.0, 308963.0, 301629.0, 294076.0, 290018.0, 287997.0, 285997.0, 280698.0, 288835.0, 296660.0, 303025.0, 309650.0, 315353.0, 319036.0, 321352.0, 322244.0, 324241.0, 328393.0, 329315.0, 330283.0, 328909.0, 326288.0, 321637.0, 316570.0, 312360.0, 310803.0, 310399.0, 311408.0, 308919.0, 306490.0, 304041.0, 302241.0, 300497.0, 299389.0, 298607.0, 297840.0, 297341.0, 296024.0, 292929.0, 290839.0, 288843.0, 288159.0]}, {"fips": "34029", "name": "Ocean", "is_borough": false, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [91166.0, 89945.0, 88689.0, 88034.0, 88418.0, 89376.0, 90915.0, 92877.0, 95286.0, 97489.0, 98165.0, 100189.0, 102278.0, 105265.0, 108076.0, 110888.0, 112995.0, 114264.0, 115606.0, 116958.0, 119464.0, 121703.0, 124555.0, 126306.0, 127372.0, 128315.0, 128957.0, 129878.0, 131575.0, 133205.0, 135322.0, 136554.0, 137176.0, 138379.0, 139665.0, 141443.0, 143683.0, 145899.0, 149044.0, 152220.0, 155238.0, 158193.0, 160342.0, 161280.0, 162376.0]}, {"fips": "34031", "name": "Passaic", "is_borough": false, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [122996.0, 120148.0, 117432.0, 115268.0, 113719.0, 112352.0, 110963.0, 110458.0, 110430.0, 110291.0, 108743.0, 110617.0, 113436.0, 116552.0, 119355.0, 121201.0, 122569.0, 123592.0, 124459.0, 125612.0, 127244.0, 127313.0, 127679.0, 127080.0, 126290.0, 124978.0, 123741.0, 122816.0, 122940.0, 123817.0, 124769.0, 124416.0, 123794.0, 123174.0, 123118.0, 122524.0, 122071.0, 122188.0, 121450.0, 120634.0, 119874.0, 117493.0, 116630.0, 117421.0, 118483.0]}, {"fips": "36079", "name": "Putnam", "is_borough": false, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [24550.0, 23970.0, 23377.0, 23001.0, 22568.0, 22184.0, 21742.0, 21655.0, 21841.0, 21819.0, 21633.0, 22235.0, 22874.0, 23373.0, 23819.0, 24216.0, 24439.0, 24710.0, 24774.0, 25000.0, 25390.0, 25735.0, 25881.0, 25921.0, 25793.0, 25522.0, 24985.0, 24662.0, 24309.0, 23799.0, 23490.0, 23046.0, 22402.0, 21907.0, 21343.0, 20786.0, 20322.0, 20059.0, 19844.0, 19479.0, 19371.0, 19190.0, 19136.0, 19000.0, 18900.0]}, {"fips": "36087", "name": "Rockland", "is_borough": false, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [80249.0, 77878.0, 76290.0, 75155.0, 73959.0, 72814.0, 71498.0, 70398.0, 69833.0, 69644.0, 68959.0, 70782.0, 72596.0, 74235.0, 75851.0, 77145.0, 77832.0, 78256.0, 78608.0, 79153.0, 80261.0, 81077.0, 81967.0, 82615.0, 82837.0, 82673.0, 82993.0, 83335.0, 84702.0, 86213.0, 87787.0, 88617.0, 89111.0, 90034.0, 90872.0, 92014.0, 92985.0, 94563.0, 96154.0, 97697.0, 98842.0, 100007.0, 101535.0, 103361.0, 105839.0]}, {"fips": "34035", "name": "Somerset", "is_borough": false, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [54312.0, 52896.0, 51542.0, 50706.0, 49997.0, 49407.0, 49494.0, 50501.0, 51726.0, 52659.0, 52889.0, 54981.0, 57282.0, 59989.0, 62585.0, 64830.0, 66938.0, 69186.0, 71331.0, 73681.0, 76038.0, 78006.0, 79352.0, 80144.0, 80824.0, 80820.0, 80740.0, 80705.0, 80376.0, 80460.0, 80713.0, 80399.0, 79696.0, 79083.0, 78199.0, 77429.0, 76650.0, 76078.0, 75195.0, 74329.0, 73889.0, 72959.0, 72537.0, 72637.0, 72586.0]}, {"fips": "36103", "name": "Suffolk", "is_borough": false, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [405724.0, 391754.0, 380098.0, 372665.0, 363646.0, 354421.0, 344559.0, 338286.0, 335550.0, 332412.0, 326588.0, 333484.0, 341303.0, 347665.0, 353771.0, 358331.0, 361235.0, 363000.0, 363580.0, 365732.0, 369940.0, 374971.0, 378397.0, 379859.0, 378319.0, 373271.0, 367127.0, 361488.0, 359028.0, 358257.0, 356671.0, 352450.0, 346531.0, 340980.0, 335956.0, 331135.0, 325878.0, 321155.0, 317370.0, 313698.0, 310552.0, 307504.0, 304771.0, 302902.0, 302348.0]}, {"fips": "34037", "name": "Sussex", "is_borough": false, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [37253.0, 36634.0, 35895.0, 35363.0, 34936.0, 34764.0, 34732.0, 35163.0, 35790.0, 36289.0, 36386.0, 36923.0, 37637.0, 38334.0, 38970.0, 39464.0, 39715.0, 39673.0, 39705.0, 39835.0, 40248.0, 40474.0, 40855.0, 40678.0, 40281.0, 39585.0, 38703.0, 37993.0, 37211.0, 36205.0, 35464.0, 34431.0, 33253.0, 32136.0, 31328.0, 30278.0, 29530.0, 28782.0, 28439.0, 27956.0, 27693.0, 27936.0, 27983.0, 28065.0, 28177.0]}, {"fips": "34039", "name": "Union", "is_borough": false, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [123877.0, 120612.0, 117575.0, 115512.0, 113400.0, 111806.0, 109893.0, 109008.0, 108713.0, 109171.0, 108088.0, 110315.0, 113141.0, 116146.0, 119398.0, 121740.0, 123639.0, 124927.0, 126525.0, 127756.0, 129716.0, 131237.0, 131851.0, 131636.0, 131112.0, 130035.0, 129172.0, 128171.0, 128620.0, 130078.0, 131349.0, 131421.0, 131633.0, 131947.0, 132453.0, 132775.0, 133590.0, 133808.0, 134490.0, 134448.0, 134156.0, 132668.0, 132922.0, 134791.0, 137095.0]}, {"fips": "36119", "name": "Westchester", "is_borough": false, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [217456.0, 211804.0, 206897.0, 204351.0, 202010.0, 197949.0, 193933.0, 192498.0, 192239.0, 192378.0, 190269.0, 195852.0, 202128.0, 207225.0, 212301.0, 216966.0, 220387.0, 222845.0, 224600.0, 226744.0, 230506.0, 232877.0, 234642.0, 234270.0, 233118.0, 230567.0, 228144.0, 226992.0, 226372.0, 226937.0, 228171.0, 228104.0, 227883.0, 227928.0, 227180.0, 226749.0, 226339.0, 225381.0, 223693.0, 222877.0, 221098.0, 216650.0, 212450.0, 210636.0, 210401.0]}, {"fips": "36005", "name": "Bronx", "is_borough": true, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [341710.0, 334441.0, 330080.0, 330421.0, 328522.0, 328294.0, 327968.0, 331141.0, 333908.0, 336534.0, 331648.0, 340608.0, 350109.0, 359868.0, 368337.0, 375892.0, 380345.0, 384660.0, 387162.0, 390800.0, 396419.0, 396385.0, 397748.0, 395014.0, 388055.0, 379089.0, 371739.0, 367179.0, 366244.0, 367447.0, 367919.0, 367740.0, 367288.0, 366187.0, 366010.0, 367470.0, 367105.0, 363966.0, 359783.0, 353686.0, 346737.0, 331472.0, 320619.0, 315764.0, 317816.0]}, {"fips": "36047", "name": "Kings (Brooklyn)", "is_borough": true, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [631515.0, 621444.0, 615645.0, 616655.0, 613682.0, 612428.0, 609815.0, 609969.0, 612397.0, 615145.0, 605554.0, 616610.0, 628724.0, 639493.0, 648886.0, 654372.0, 656799.0, 658641.0, 657024.0, 656804.0, 659743.0, 650744.0, 644701.0, 634135.0, 620171.0, 605432.0, 594487.0, 586196.0, 585272.0, 590300.0, 595841.0, 603599.0, 608517.0, 612245.0, 614896.0, 616726.0, 615780.0, 611571.0, 605764.0, 600312.0, 591314.0, 567579.0, 549869.0, 538314.0, 535108.0]}, {"fips": "36061", "name": "New York (Manhattan)", "is_borough": true, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [253244.0, 248068.0, 243865.0, 243936.0, 245093.0, 244002.0, 243095.0, 243929.0, 245287.0, 247883.0, 246827.0, 249013.0, 252332.0, 255419.0, 259271.0, 262447.0, 262731.0, 262313.0, 259498.0, 256807.0, 257730.0, 255762.0, 255352.0, 253198.0, 251298.0, 248038.0, 244895.0, 241165.0, 239015.0, 235311.0, 235052.0, 236986.0, 238639.0, 238871.0, 238653.0, 239386.0, 238073.0, 236169.0, 235585.0, 234176.0, 231490.0, 217741.0, 212997.0, 211234.0, 211434.0]}, {"fips": "36081", "name": "Queens", "is_borough": true, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [436474.0, 429212.0, 424022.0, 423389.0, 420736.0, 417149.0, 412304.0, 410500.0, 410509.0, 412609.0, 408627.0, 420781.0, 433366.0, 445535.0, 457568.0, 469150.0, 479327.0, 488202.0, 493995.0, 499164.0, 506917.0, 498995.0, 492815.0, 484368.0, 475197.0, 465052.0, 456139.0, 451222.0, 452949.0, 458580.0, 463005.0, 466930.0, 469177.0, 471557.0, 472664.0, 474527.0, 475015.0, 471914.0, 466898.0, 460956.0, 452907.0, 433888.0, 418361.0, 412477.0, 412315.0]}, {"fips": "36085", "name": "Richmond (Staten Island)", "is_borough": true, "years": [1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "values": [102524.0, 100567.0, 98940.0, 97819.0, 96736.0, 95725.0, 94608.0, 94223.0, 94320.0, 94550.0, 94062.0, 97252.0, 100495.0, 102913.0, 104826.0, 106369.0, 107584.0, 108770.0, 109766.0, 111338.0, 113324.0, 113754.0, 113560.0, 112857.0, 111524.0, 110120.0, 108442.0, 108003.0, 108144.0, 108675.0, 109188.0, 108720.0, 107784.0, 107302.0, 106481.0, 106219.0, 106647.0, 106840.0, 106762.0, 106561.0, 106175.0, 104722.0, 103600.0, 103025.0, 102641.0]}], "year_min": 1980, "year_max": 2024};
+
+const svg = d3.select('#chart');
+const tooltip = d3.select('#tooltip');
+const slider = document.getElementById('rebaseSlider');
+const yearLbl = document.getElementById('rebaseYearLabel');
+
+const W = 1040, H = 560;
+const M = { t: 14, r: 90, b: 36, l: 50 };
+const iw = W - M.l - M.r;
+const ih = H - M.t - M.b;
+
+const x = d3.scaleLinear().domain([DATA.year_min, DATA.year_max]).range([M.l, M.l + iw]);
+const y = d3.scaleLinear().range([M.t + ih, M.t]);
+
+const COLOR_BOROUGH = '#0BB4FF';
+const COLOR_SUBURB = '#BAB3AC';
+const COLOR_AXIS = '#3D3733';
+const COLOR_GRID = '#EEEEE6';
+const COLOR_TICK = '#9D958F';
+const COLOR_HIGHLIGHT = '#F4743B';
+
+const line = d3.line()
+  .x(d => x(d.year))
+  .y(d => y(d.idx));
+
+const gAxis = svg.append('g').attr('class','axis');
+const gLines = svg.append('g').attr('class','lines');
+const gOverlay = svg.append('g').attr('class','overlay');
+
+function rebase(yearStart) {
+  const out = [];
+  DATA.counties.forEach(c => {
+    const i0 = c.years.indexOf(yearStart);
+    if (i0 < 0) return;
+    const base = c.values[i0];
+    if (!base) return;
+    const pts = c.years.map((yr, i) => ({ year: yr, idx: 100 * c.values[i] / base, raw: c.values[i] }));
+    out.push({ fips: c.fips, name: c.name, is_borough: c.is_borough, pts: pts });
+  });
+  return out;
+}
+
+function yDomain(series) {
+  let lo = Infinity, hi = -Infinity;
+  series.forEach(s => s.pts.forEach(p => { if (p.idx < lo) lo = p.idx; if (p.idx > hi) hi = p.idx; }));
+  const pad = Math.max(2, (hi - lo) * 0.06);
+  return [Math.max(0, lo - pad), hi + pad];
+}
+
+function niceTicks(lo, hi) {
+  const span = hi - lo;
+  let step;
+  if (span > 200) step = 50;
+  else if (span > 100) step = 25;
+  else if (span > 50) step = 20;
+  else if (span > 25) step = 10;
+  else if (span > 10) step = 5;
+  else step = 2;
+  const ticks = [];
+  const start = Math.ceil(lo / step) * step;
+  for (let v = start; v <= hi; v += step) ticks.push(v);
+  if (!ticks.includes(100) && lo <= 100 && hi >= 100) ticks.push(100);
+  return ticks.sort((a,b)=>a-b);
+}
+
+function draw(yearStart) {
+  const series = rebase(yearStart);
+  const [lo, hi] = yDomain(series);
+  y.domain([lo, hi]);
+
+  // Axes
+  gAxis.selectAll('*').remove();
+
+  // Y gridlines + labels
+  const yTicks = niceTicks(lo, hi);
+  gAxis.selectAll('line.ygrid').data(yTicks).join('line')
+    .attr('class','ygrid')
+    .attr('x1', M.l).attr('x2', M.l + iw)
+    .attr('y1', d => y(d)).attr('y2', d => y(d))
+    .attr('stroke', d => d === 100 ? '#3D3733' : COLOR_GRID)
+    .attr('stroke-width', d => d === 100 ? 1 : 0.5)
+    .attr('stroke-dasharray', d => d === 100 ? '2,3' : null);
+  gAxis.selectAll('text.ylab').data(yTicks).join('text')
+    .attr('class','ylab')
+    .attr('x', M.l - 6).attr('y', d => y(d) + 3)
+    .attr('text-anchor','end')
+    .style('font-size','10.5px').style('fill', d => d === 100 ? '#3D3733' : COLOR_TICK)
+    .style('font-weight', d => d === 100 ? '500' : '400')
+    .text(d => d);
+
+  // X ticks
+  const xTicks = [1980, 1985, 1990, 1995, 2000, 2005, 2010, 2015, 2020, 2024];
+  gAxis.selectAll('text.xlab').data(xTicks).join('text')
+    .attr('class','xlab')
+    .attr('x', d => x(d)).attr('y', M.t + ih + 16)
+    .attr('text-anchor', d => d === DATA.year_min ? 'start' : (d === DATA.year_max ? 'end' : 'middle'))
+    .style('font-size','11px').style('fill', COLOR_TICK)
+    .text(d => "'" + String(d).slice(2));
+
+  // Vertical marker at rebase year
+  gAxis.append('line').attr('class','rebase-marker')
+    .attr('x1', x(yearStart)).attr('x2', x(yearStart))
+    .attr('y1', M.t).attr('y2', M.t + ih)
+    .attr('stroke', COLOR_HIGHLIGHT).attr('stroke-width', 1).attr('stroke-dasharray','3,3');
+  gAxis.append('text').attr('class','rebase-marker-lbl')
+    .attr('x', x(yearStart)).attr('y', M.t - 3)
+    .attr('text-anchor','middle')
+    .style('font-size','10.5px').style('fill', COLOR_HIGHLIGHT).style('font-weight','500')
+    .text('= 100');
+
+  // Lines: draw suburbs first, then boroughs on top
+  const sortedSeries = series.slice().sort((a,b) => (a.is_borough?1:0) - (b.is_borough?1:0));
+
+  const paths = gLines.selectAll('path').data(sortedSeries, d => d.fips);
+  paths.join(
+    enter => enter.append('path')
+      .attr('fill','none')
+      .attr('stroke', d => d.is_borough ? COLOR_BOROUGH : COLOR_SUBURB)
+      .attr('stroke-width', d => d.is_borough ? 1.8 : 1.0)
+      .attr('stroke-opacity', d => d.is_borough ? 0.95 : 0.7)
+      .attr('d', d => line(d.pts)),
+    update => update
+      .attr('stroke', d => d.is_borough ? COLOR_BOROUGH : COLOR_SUBURB)
+      .attr('stroke-width', d => d.is_borough ? 1.8 : 1.0)
+      .attr('stroke-opacity', d => d.is_borough ? 0.95 : 0.7)
+      .transition().duration(250).attr('d', d => line(d.pts))
+  );
+
+  // Reorder so boroughs paint last (top)
+  gLines.selectAll('path').sort((a,b) => (a.is_borough?1:0) - (b.is_borough?1:0));
+
+  // Overlay for hover detection
+  gOverlay.selectAll('*').remove();
+  gOverlay.append('rect')
+    .attr('x', M.l).attr('y', M.t).attr('width', iw).attr('height', ih)
+    .attr('fill','transparent')
+    .on('mousemove', (event) => onHover(event, series))
+    .on('mouseleave', () => {
+      tooltip.style('opacity', 0);
+      gLines.selectAll('path')
+        .attr('stroke-width', d => d.is_borough ? 1.8 : 1.0)
+        .attr('stroke-opacity', d => d.is_borough ? 0.95 : 0.7)
+        .attr('stroke', d => d.is_borough ? COLOR_BOROUGH : COLOR_SUBURB);
+      gOverlay.selectAll('circle.hover-dot').remove();
+    });
+}
+
+function onHover(event, series) {
+  const [mx, my] = d3.pointer(event, svg.node());
+  const yr = Math.round(x.invert(mx));
+  if (yr < DATA.year_min || yr > DATA.year_max) return;
+  // Find closest series by y at this year
+  let best = null, bestDist = Infinity;
+  series.forEach(s => {
+    const p = s.pts.find(pt => pt.year === yr);
+    if (!p) return;
+    const dy = Math.abs(y(p.idx) - my);
+    if (dy < bestDist) { bestDist = dy; best = { s, p }; }
+  });
+  if (!best || bestDist > 30) {
+    tooltip.style('opacity', 0);
+    gLines.selectAll('path')
+      .attr('stroke-width', d => d.is_borough ? 1.8 : 1.0)
+      .attr('stroke-opacity', d => d.is_borough ? 0.95 : 0.7)
+      .attr('stroke', d => d.is_borough ? COLOR_BOROUGH : COLOR_SUBURB);
+    gOverlay.selectAll('circle.hover-dot').remove();
+    return;
+  }
+  const { s, p } = best;
+  gLines.selectAll('path')
+    .attr('stroke-width', d => d.fips === s.fips ? 2.6 : (d.is_borough ? 1.6 : 0.8))
+    .attr('stroke-opacity', d => d.fips === s.fips ? 1 : (d.is_borough ? 0.6 : 0.35))
+    .attr('stroke', d => d.fips === s.fips ? (d.is_borough ? COLOR_BOROUGH : COLOR_HIGHLIGHT) : (d.is_borough ? COLOR_BOROUGH : COLOR_SUBURB));
+
+  gOverlay.selectAll('circle.hover-dot').remove();
+  gOverlay.append('circle').attr('class','hover-dot')
+    .attr('cx', x(p.year)).attr('cy', y(p.idx))
+    .attr('r', 4).attr('fill', s.is_borough ? COLOR_BOROUGH : COLOR_HIGHLIGHT)
+    .attr('stroke','#F6F7F3').attr('stroke-width', 1.5);
+
+  const fmt = n => n >= 1000 ? (n/1000).toFixed(0) + 'K' : Math.round(n).toString();
+  const sign = p.idx >= 100 ? '+' : '';
+  tooltip.html(
+    `<span class="name">${s.name}</span>` +
+    `<br/>${p.year}: index = ${p.idx.toFixed(1)} (${sign}${(p.idx-100).toFixed(1)})` +
+    `<br/>Under-18: ${fmt(p.raw)}`
+  );
+  const rect = svg.node().getBoundingClientRect();
+  const scaleX = rect.width / W;
+  const scaleY = rect.height / H;
+  const px = rect.left + x(p.year) * scaleX + window.scrollX;
+  const py = rect.top + y(p.idx) * scaleY + window.scrollY;
+  tooltip
+    .style('left', (px + 12) + 'px')
+    .style('top', (py - 18) + 'px')
+    .style('opacity', 1);
+}
+
+slider.addEventListener('input', e => {
+  const yr = +e.target.value;
+  yearLbl.textContent = yr;
+  draw(yr);
+});
+
+draw(+slider.value);
+</script>
+</body></html>

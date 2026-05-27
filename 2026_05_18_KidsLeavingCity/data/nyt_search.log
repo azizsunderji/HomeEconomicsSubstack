@@ -1,0 +1,151 @@
+
+=== families_leaving_cities: '"families leaving cities"' ===
+  page=0: 0 hits (total available: 0)
+
+=== families_fleeing_cities: '"families fleeing"' ===
+  page=0: 10 hits (total available: 0)
+  page=1: 10 hits (total available: 0)
+  page=2: 10 hits (total available: 0)
+  page=3: 10 hits (total available: 0)
+  page=4: 10 hits (total available: 0)
+
+=== urban_exodus_families: '"urban exodus" families' ===
+  page=0: 10 hits (total available: 0)
+  page=1: 7 hits (total available: 0)
+
+=== childless_cities: '"childless" cities' ===
+  page=0: 10 hits (total available: 0)
+  page=1: 10 hits (total available: 0)
+  page=2: 10 hits (total available: 0)
+  page=3: 10 hits (total available: 0)
+  page=4: 10 hits (total available: 0)
+
+=== kids_disappearing_cities: '"fewer children" cities' ===
+  page=0: 10 hits (total available: 0)
+  page=1: 10 hits (total available: 0)
+  page=2: 10 hits (total available: 0)
+  page=3: 10 hits (total available: 0)
+  page=4: 10 hits (total available: 0)
+
+=== school_enrollment_decline_city: '"school enrollment" decline city' ===
+  page=0: 10 hits (total available: 0)
+  page=1: 10 hits (total available: 0)
+  page=2: 10 hits (total available: 0)
+  page=3: 10 hits (total available: 0)
+  page=4: 10 hits (total available: 0)
+
+=== housing_costs_families_leave: 'housing costs families leaving city' ===
+  page=0: 10 hits (total available: 0)
+  page=1: 10 hits (total available: 0)
+  page=2: 10 hits (total available: 0)
+  page=3: 10 hits (total available: 0)
+  page=4: 10 hits (total available: 0)
+
+=== stroller_index: '"stroller"' ===
+  page=0: 10 hits (total available: 0)
+  page=1: 10 hits (total available: 0)
+  page=2: 10 hits (total available: 0)
+  page=3: 10 hits (total available: 0)
+  page=4: 10 hits (total available: 0)
+
+=== manhattan_families_leave: 'Manhattan families leaving housing' ===
+  page=0: 10 hits (total available: 0)
+  page=1: 10 hits (total available: 0)
+  page=2: 10 hits (total available: 0)
+  page=3: 10 hits (total available: 0)
+  page=4: 10 hits (total available: 0)
+
+=== san_francisco_kids_leaving: 'San Francisco children families leaving' ===
+  page=0: 10 hits (total available: 0)
+  page=1: 10 hits (total available: 0)
+  page=2: 10 hits (total available: 0)
+  page=3: 10 hits (total available: 0)
+  page=4: 10 hits (total available: 0)
+
+=== brooklyn_families_leave: 'Brooklyn families leaving children' ===
+  page=0: 10 hits (total available: 0)
+  page=1: 10 hits (total available: 0)
+  page=2: 10 hits (total available: 0)
+  page=3: 10 hits (total available: 0)
+  page=4: 10 hits (total available: 0)
+
+=== city_suburb_families: 'families moving suburbs city' ===
+  page=0: 10 hits (total available: 0)
+  page=1: 10 hits (total available: 0)
+  page=2: 10 hits (total available: 0)
+  page=3: 10 hits (total available: 0)
+  page=4: 10 hits (total available: 0)
+
+=== housing_crisis_children: '"housing crisis" children city' ===
+  page=0: 10 hits (total available: 0)
+  page=1: 10 hits (total available: 0)
+  page=2: 10 hits (total available: 0)
+  page=3: 10 hits (total available: 0)
+  page=4: 10 hits (total available: 0)
+
+=== nyc_school_enrollment: 'New York City school enrollment decline' ===
+  page=0: 10 hits (total available: 0)
+  page=1: 10 hits (total available: 0)
+  page=2: 10 hits (total available: 0)
+  page=3: 10 hits (total available: 0)
+  page=4: 10 hits (total available: 0)
+
+=== sf_school_enrollment: 'San Francisco school enrollment decline' ===
+  page=0: 10 hits (total available: 0)
+  page=1: 10 hits (total available: 0)
+  page=2: 10 hits (total available: 0)
+  page=3: 10 hits (total available: 0)
+  page=4: 10 hits (total available: 0)
+
+=== priced_out_families: '"priced out" families city' ===
+  page=0: 10 hits (total available: 0)
+  page=1: 10 hits (total available: 0)
+  page=2: 10 hits (total available: 0)
+  page=3: 10 hits (total available: 0)
+  page=4: 10 hits (total available: 0)
+
+=== birth_rate_cities: 'birth rate cities decline' ===
+  page=0: 10 hits (total available: 0)
+  page=1: 10 hits (total available: 0)
+  page=2: 10 hits (total available: 0)
+  page=3: 10 hits (total available: 0)
+  page=4: 10 hits (total available: 0)
+
+=== family_unfriendly_cities: '"family unfriendly" cities' ===
+  page=0: 10 hits (total available: 0)
+  page=1: 10 hits (total available: 0)
+  page=2: 1 hits (total available: 0)
+
+=== dual_career_families_cities: 'dual income families leaving cities' ===
+  page=0: 10 hits (total available: 0)
+  page=1: 10 hits (total available: 0)
+  page=2: 10 hits (total available: 0)
+  page=3: 10 hits (total available: 0)
+  page=4: 10 hits (total available: 0)
+
+Wrote 706 unique articles → /Users/azizsunderji/Dropbox/Home Economics/2026_05_18_KidsLeavingCity/data/nyt_articles_raw.json
+Wrote digest → /Users/azizsunderji/Dropbox/Home Economics/2026_05_18_KidsLeavingCity/data/nyt_sweep.md
+
+Top sections:
+  New York: 206
+  U.S.: 143
+  World: 76
+  Opinion: 62
+  Real Estate: 29
+  Business: 28
+  Arts: 21
+  Style: 15
+  Briefing: 14
+  Books: 14
+
+By year (top 10):
+  2026: 305
+  2025: 248
+  2024: 70
+  2023: 39
+  2022: 12
+  2015: 7
+  2021: 5
+  2017: 3
+  2016: 3
+  2006: 3

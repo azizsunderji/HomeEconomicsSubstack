@@ -1,0 +1,10 @@
+Submitting NHGIS place-level extract...
+  extract # 124, status: queued
+  t+30s — status: started
+  t+60s — status: started
+  t+90s — status: started
+  t+120s — status: started
+  t+150s — status: completed
+  downloading https://api.ipums.org/downloads/nhgis/api/v1/extracts/2918798/nhgis0124_csv.zip
+  wrote 15.6MB -> /Users/azizsunderji/Dropbox/Home Economics/2026_05_18_KidsLeavingCity/data/nhgis_place_raw/nhgis_place_124.zip
+Done — unzip and process next.

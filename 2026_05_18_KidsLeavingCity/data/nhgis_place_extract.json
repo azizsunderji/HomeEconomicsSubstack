@@ -1,0 +1,62 @@
+{
+  "number": 124,
+  "status": "queued",
+  "email": "aziz.sunderji@gmail.com",
+  "downloadLinks": {},
+  "extractDefinition": {
+    "dataFormat": "csv_no_header",
+    "description": "Place-level Sex\u00d7Age for top-50 1950 SMA central cities, 1970-2020",
+    "datasets": {
+      "1970_Cnt2": {
+        "dataTables": [
+          "NT18"
+        ],
+        "geogLevels": [
+          "place"
+        ]
+      },
+      "1980_STF1": {
+        "dataTables": [
+          "NT10B"
+        ],
+        "geogLevels": [
+          "place"
+        ]
+      },
+      "1990_STF1": {
+        "dataTables": [
+          "NP12"
+        ],
+        "geogLevels": [
+          "place"
+        ]
+      },
+      "2000_SF1a": {
+        "dataTables": [
+          "NP012B"
+        ],
+        "geogLevels": [
+          "place"
+        ]
+      },
+      "2010_SF1a": {
+        "dataTables": [
+          "P12"
+        ],
+        "geogLevels": [
+          "place"
+        ]
+      },
+      "2020_DHCa": {
+        "dataTables": [
+          "P12"
+        ],
+        "geogLevels": [
+          "place"
+        ]
+      }
+    },
+    "version": 2,
+    "collection": "nhgis"
+  }
+}

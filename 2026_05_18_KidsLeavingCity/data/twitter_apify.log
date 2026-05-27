@@ -1,0 +1,79 @@
+
+=== narrative_anchors (6 terms, maxItems=200) ===
+  • "families leaving cities" min_faves:25
+  • "families fleeing" cities min_faves:25
+  • "urban exodus" families min_faves:25
+  • "childless city" min_faves:25
+  • "childless cities" min_faves:25
+  • "future of the city is childless" min_faves:5
+  → 124 tweets, $0.096, 14s
+
+=== kids_leaving_phrases (5 terms, maxItems=200) ===
+  • "kids are leaving" city min_faves:25
+  • "no kids" Manhattan OR "San Francisco" OR Brooklyn min_faves:25
+  • "families with kids" leaving city min_faves:25
+  • "hollowing out" cities children OR families min_faves:25
+  • "fewer children" cities min_faves:25
+  → 200 tweets, $0.080, 15s
+
+=== yimby_supply (5 terms, maxItems=200) ===
+  • "family-sized" housing cities min_faves:25
+  • "missing middle" housing families min_faves:25
+  • YIMBY families cities housing min_faves:50
+  • "three bedroom" apartments cities min_faves:25
+  • Yglesias families cities housing min_faves:25
+  → 119 tweets, $0.080, 13s
+
+=== density_pronatalist (5 terms, maxItems=200) ===
+  • "high-rise" fertility min_faves:25
+  • density fertility cities min_faves:25
+  • "birth rate" cities decline min_faves:50
+  • "apartments" fertility OR babies min_faves:25
+  • sprawl families cities OR fertility min_faves:25
+  → 200 tweets, $0.080, 17s
+
+=== school_enrollment (6 terms, maxItems=200) ===
+  • "school enrollment" decline city min_faves:25
+  • SFUSD enrollment decline min_faves:25
+  • "NYC schools" enrollment decline min_faves:25
+  • Seattle schools enrollment families min_faves:25
+  • Chicago schools closing enrollment min_faves:25
+  • DC schools enrollment families min_faves:25
+  → 40 tweets, $0.000, 9s
+
+=== suburb_moves (4 terms, maxItems=200) ===
+  • "moving to the suburbs" families min_faves:25
+  • "leaving the city" suburbs kids min_faves:25
+  • "central city" families suburbs min_faves:25
+  • remote work families suburbs min_faves:50
+  → 26 tweets, $0.064, 13s
+
+=== specific_cities (5 terms, maxItems=200) ===
+  • San Francisco families exodus OR leaving min_faves:50
+  • Manhattan families exodus OR leaving kids min_faves:50
+  • New York City families leaving min_faves:50
+  • Brooklyn families leaving kids min_faves:50
+  • Seattle families leaving children min_faves:25
+  → 200 tweets, $0.080, 14s
+
+=== commentators (8 terms, maxItems=250) ===
+  • from:mattyglesias families cities OR kids OR housing min_faves:25
+  • from:dkthomp childless OR families OR cities min_faves:25
+  • from:jerusalemd cities OR families OR housing min_faves:25
+  • from:lymanstoneky cities OR fertility OR housing min_faves:25
+  • from:cremieuxrecueil cities OR fertility OR housing min_faves:25
+  • from:noahpinion cities OR families OR housing min_faves:25
+  • from:ezraklein cities OR families OR housing min_faves:25
+  • from:morebirths cities OR housing min_faves:25
+  → 250 tweets, $0.128, 12s
+
+=== data_charts (4 terms, maxItems=150) ===
+  • "American Community Survey" children cities min_faves:25
+  • "census" families cities decline min_faves:25
+  • "stroller index" min_faves:5
+  • "under 18" cities decline min_faves:25
+  → 15 tweets, $0.000, 9s
+
+Wrote 1008 unique tweets → /Users/azizsunderji/Dropbox/Home Economics/2026_05_18_KidsLeavingCity/data/twitter_apify_raw.json
+Total Apify cost: $0.61
+Wrote digest → /Users/azizsunderji/Dropbox/Home Economics/2026_05_18_KidsLeavingCity/data/twitter_apify_top.md

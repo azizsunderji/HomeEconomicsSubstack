@@ -1,0 +1,897 @@
+STANDARD METROPOLITAN AREAS (SMAs) AND COMPONENTS, 1950, WITH FIPS CODES
+
+(Standard Metropolitan Areas defined by the Bureau of the Budget,October 13, 1950)
+
+Source:                 U.S. Census Bureau
+Internet Release Date:  December 14, 2000
+
+The file layout is located at the end of the data file.
+
+            STATE/  CITY/
+SMA        COUNTY  TOWN        Standard Metropolitan Statistical Area and Components
+FIPS        FIPS    FIPS
+CODE        CODE    CODE
+
+0080                            Akron, OH SMA
+0080        39153                 Summit County 
+
+0160                            Albany-Schenectady-Troy, NY SMA
+0160        36001                 Albany County
+0160        36083                 Rensselaer County
+0160        36093                 Schenectady County
+
+0200                            Albuquerque, NM SMA
+0200        35001                 Bernalillo County
+
+0240                            Allentown-Bethlehem-Easton, PA-NJ SMA
+0240        34041                 Warren County, NJ
+0240        42077                 Lehigh County, PA
+0240        42095                 Northampton County, PA
+
+0280                            Altoona, PA SMA
+0280        42013                 Blair County
+
+0320                            Amarillo, TX SMA
+0320        48375                 Potter County
+0320        48381                 Randall County
+
+0480                            Asheville, NC SMA
+0480        37021                 Buncombe County
+
+0520                            Atlanta, GA SMA
+0520        13067                 Cobb County
+0520        13089                 De Kalb County
+0520        13121                 Fulton County
+
+0560                            Atlantic City, NJ SMA
+0560        34001                 Atlantic County
+
+0600                            Augusta, GA-SC SMA
+0600        13245                 Richmond County, GA
+0600        45003                 Aiken County, SC
+
+0640                            Austin, TX SMA
+0640        48453                 Travis County
+
+0720                            Baltimore, MD SMA
+0720        24003                 Anne Arundel County
+0720        24510                 Baltimore city
+0720        24005                 Baltimore County
+
+0760                            Baton Rouge, LA SMA
+0760        22033                 East Baton Rouge Parish
+
+0800                            Bay City, MI SMA
+0800        26017                 Bay County
+
+0840                            Beaumont-Port Arthur, TX SMA
+0840        48245                 Jefferson County
+
+0960                            Binghamton, NY SMA
+0960        36007                 Broome County, NY
+
+1000                            Birmingham, AL SMA
+1000        01073                 Jefferson County
+
+1120                            Boston, MA SMA
+1120        25009                 Essex County (pt.)
+1120        25009   05595           Beverly city
+1120        25009   16250           Danvers town
+1120        25009   27900           Hamilton town
+1120        25009   37490           Lynn city
+1120        25009   37560           Lynnfield town
+1120        25009   37945           Manchester town 
+1120        25009   38400           Marblehead town
+1120        25009   41095           Middleton town
+1120        25009   43580           Nahant town
+1120        25009   52490           Peabody city
+1120        25009   59105           Salem city
+1120        25009   60015           Saugus town
+1120        25009   68645           Swampscott town
+1120        25009   74595           Wenham town
+1120        25017                 Middlesex County (pt.)
+1120        25017   01605           Arlington town
+1120        25017   02130           Ashland town
+1120        25017   04615           Bedford town
+1120        25017   05070           Belmont town
+1120        25017   09840           Burlington town
+1120        25017   11000           Cambridge city
+1120        25017   15060           Concord town
+1120        25017   21990           Everett city
+1120        25017   24925           Framingham town
+1120        25017   35215           Lexington town
+1120        25017   35425           Lincoln town
+1120        25017   37875           Malden city
+1120        25017   39835           Medford city
+1120        25017   40115           Melrose city
+1120        25017   43895           Natick town
+1120        25017   45560           Newton city
+1120        25017   48955           North Reading town
+1120        25017   56130           Reading town
+1120        25017   62535           Somerville city
+1120        25017   67665           Stoneham town
+1120        25017   72215           Wakefield town
+1120        25017   72600           Waltham city
+1120        25017   73405           Watertown town
+1120        25017   73790           Wayland town
+1120        25017   77255           Weston town
+1120        25017   80230           Wilmington town
+1120        25017   80510           Winchester town
+1120        25017   81035           Woburn city
+1120        25021                 Norfolk County (pt.)
+1120        25021   07665           Braintree town
+1120        25021   09175           Brookline town
+1120        25021   11315           Canton town
+1120        25021   14640           Cohasset town
+1120        25021   16495           Dedham town
+1120        25021   17405           Dover town
+1120        25021   39765           Medfield town
+1120        25021   41690           Milton town
+1120        25021   44105           Needham town
+1120        25021   50250           Norwood town
+1120        25021   55745           Quincy city
+1120        25021   55955           Randolph town
+1120        25021   60785           Sharon town
+1120        25021   72495           Walpole town
+1120        25021   74175           Wellesley town
+1120        25021   78690           Westwood town
+1120        25021   78865           Weymouth town
+1120        25023                 Plymouth County (pt.)
+1120        25023   30210           Hingham town
+1120        25023   31645           Hull town
+1120        25025                 Suffolk County
+1120        25025   07000           Boston city
+1120        25025   13205           Chelsea city
+1120        25025   56585           Revere city
+1120        25025   80930           Winthrop town
+
+1160                            Bridgeport, CT SMA
+1160        09001                 Fairfield County (pt.)
+1160        09001   08000           Bridgeport city
+1160        09001   26620           Fairfield town
+1160        09001   74190           Stratford town
+1160        09001   77200           Trumbull town
+1160        09009                 New Haven County (pt.)
+1160        09009   47535           Milford town
+
+1200                            Brockton, MA SMA
+1200        25005                 Bristol County (pt.)
+1200        25005   20100           Easton town
+1200        25021                 Norfolk County (pt.)
+1200        25021   02935           Avon town
+1200	    25021   30455           Holbrook town
+1200        25021   67945           Stoughton town
+1200        25023                 Plymouth County (pt.)
+1200        25023   00170           Abington town
+1200        25023   08085           Bridgewater town
+1200        25023   09000           Brockton city
+1200        25023   18455           East Bridgewater town
+1200        25023   57775	    Rockland town
+1200        25023   75260           West Bridgewater town
+1200        25023   79530           Whitman town
+
+1280                            Buffalo, NY SMA
+1280        36029                 Erie County
+1280        36063                 Niagara County
+
+1320                            Canton, OH SMA
+1320        39151                 Stark County
+
+1360                            Cedar Rapids, IA SMA
+1360        19113                 Linn County
+
+1440                            Charleston, SC SMA
+1440        45019                 Charleston County
+
+1480                            Charleston, WV SMA
+1480	    54019		  Fayette county
+1480        54039                 Kanawha County
+
+1520                            Charlotte, NC SMA
+1520        37119                 Mecklenburg County
+
+1560                            Chattanooga, TN-GA SMA
+1560        13295                 Walker County, GA
+1560        47065                 Hamilton County, TN
+
+1600                            Chicago, IL-IN SMA
+1600        17031                 Cook County
+1600        17043                 Du Page County
+1600        17089                 Kane County
+1600        17097                 Lake County
+1600        17197                 Will County
+1600        18089		  Lake County, IN
+
+1640                            Cincinnati, OH-KY SMA
+1640        21037                 Campbell County, KY
+1640        21117                 Kenton County, KY
+1640        39061                 Hamilton County, OH
+
+1680                            Cleveland, OH SMA
+1680        39035                 Cuyahoga County
+1680        39085                 Lake County
+
+1760                            Columbia, SC SMA
+1760        45079                 Richland County
+
+1800                            Columbus, GA-AL SMA
+1800        01113                 Russell County, AL
+1800        13053                 Chattahoochee County, GA
+1800        13215                 Muscogee County, GA
+
+1840                            Columbus, OH SMA
+1840        39049                 Franklin County
+
+1880                            Corpus Christi, TX SMA
+1880        48355                 Nueces County
+
+1920                            Dallas, TX SMA
+1920        48113                 Dallas County
+
+1960                            Davenport-Rock Island-Moline, IA-IL SMA
+1960        19163                 Scott County, IA
+1960        17161                 Rock Island County, IL
+
+2000                            Dayton, OH SMA
+2000        39057                 Greene County
+2000        39113                 Montgomery County
+
+2040                            Decatur, IL SMA
+2040        17115                 Macon County
+
+2080                            Denver, CO SMA
+2080        08001                 Adams County
+2080        08005                 Arapahoe County
+2080        08031                 Denver County
+2080        08059                 Jefferson County
+
+2120                            Des Moines, IA SMA
+2120        19153                 Polk County
+
+2160                            Detroit, MI SMA
+2160        26099                 Macomb County
+2160        26125                 Oakland County
+2160        26163                 Wayne County
+
+2240                            Duluth-Superior, MN-WI SMA
+2240        27137                 St.Louis County, MN
+2240        55031                 Douglas County, WI
+
+2280                            Durham, NC SMA
+2280        37063                 Durham County
+
+2320                            El Paso, TX SMA
+2320        48141                 El Paso County
+
+2360                            Erie, PA SMA
+2360        42049                 Erie County
+
+2440                            Evansville, IN SMA
+2440        18163                 Vanderburgh County, IN
+
+2480                            Fall River, MA-RI SMA
+2480        25005                 Bristol County, MA (pt.)
+2480        25005   23000           Fall River city
+2480        25005   62430           Somerset town
+2480        25005   68750           Swansea town
+2480        25005   77570           Westport town
+2480        44005                 Newport County, RI (pt.)
+2480        44005   70880           Tiverton town
+
+2640                            Flint, MI SMA
+2640        26049                 Genesee County
+
+2760                            Fort Wayne, IN SMA
+2760        18003                 Allen County
+
+2800                            Fort Worth, TX SMA
+2800        48439                 Tarrant County
+
+2840                            Fresno, CA SMA
+2840        06019                 Fresno County
+
+2880                            Gadsden, AL SMA
+2880        01055                 Etowah County
+
+2920                            Galveston, TX SMA
+2920        48167                 Galveston County
+
+3000                            Grand Rapids, MI SMA
+3000        26081                 Kent County
+
+3080                            Green Bay, WI SMA
+3080        55009                 Brown County
+
+3120                            Greensboro-High Point, NC SMA
+3120        37081                 Guilford County
+
+3160                            Greenville, SC SMA
+3160        45045                 Greenville County
+
+3200                            Hamilton-Middletown, OH SMA
+3200        39017                 Butler County
+
+3240                            Harrisburg, PA SMA
+3240        42041                 Cumberland County
+3240        42043                 Dauphin County
+
+3280                            Hartford, CT SMA
+3280        09003                 Hartford County (pt.)
+3280        09003   02060           Avon town
+3280        09003   05910           Bloomfield town
+3280        09003   22630           East Hartford town
+3280        09003   27600           Farmington town
+3280        09003   31240           Glastonbury town
+3280        09003   37000           Hartford city
+3280        09003   44700           Manchester town
+3280        09003   52140           Newington town
+3280        09003   65370           Rocky Hill town
+3280        09003   68940           Simsbury town
+3280        09003   71390           South Windsor town
+3280        09003   82590           West Hartford town
+3280        09003   84900           Wethersfield town
+3280        09003   87000           Windsor town
+
+3320                            Honolulu, Territory of Hawaii SMA
+3320        15003                 Honolulu County
+
+3360                            Houston, TX SMA
+3360        48201                 Harris County
+
+3400                            Huntington-Ashland, WV-KY-OH SMA
+3400        21019                 Boyd County, KY
+3400        39087                 Lawrence County, OH
+3400        54011                 Cabell County, WV
+3400        54099                 Wayne County, WV
+
+3480                            Indianapolis, IN SMA
+3480        18097                 Marion County
+
+3520                            Jackson, MI SMA
+3520        26075                 Jackson County
+
+3560                            Jackson, MS SMA
+3560        28049                 Hinds County
+
+3600                            Jacksonville, FL SMA
+3600        12031                 Duval County
+
+3680                            Johnstown, PA SMA
+3680        42021                 Cambria County
+3680        42111                 Somerset County
+
+3720                            Kalamazoo, MI SMA
+3720        26077                 Kalamazoo County
+
+3760                            Kansas City, MO-KS SMA
+3760        20091                 Johnson County, KS
+3760        20209                 Wyandotte County, KS
+3760        29047                 Clay County, MO
+3760        29095                 Jackson County, MO
+
+3800                            Kenosha, WI SMA
+3800        55059                 Kenosha County
+
+3840                            Knoxville, TN SMA
+3840        47001                 Anderson County
+3840        47009                 Blount County
+3840        47093                 Knox County
+
+4000                            Lancaster, PA SMA
+4000        42071                 Lancaster County
+
+4040                            Lansing, MI SMA
+4040        26065                 Ingham County
+
+4080                            Laredo, TX SMA
+4080        48479                 Webb County
+
+4160                            Lawrence, MA SMA
+4160        25009                 Essex County, MA (pt.)
+4160        25009   01465           Andover town
+4160        25009   34550           Lawrence city
+4160        25009   40675           Methuen town
+4160        25009   46365           North Andover town
+
+4280                            Lexington, KY SMA
+4280        21067                 Fayette County
+
+4320                            Lima, OH SMA
+4320        39003                 Allen County
+
+4360                            Lincoln, NE SMA
+4360        31109                 Lancaster County
+
+4400                            Little Rock-North Little Rock, AR SMA
+4400        05119                 Pulaski County
+
+4440                            Lorain-Elyria, OH SMA
+4440        39093                 Lorain County
+
+4480                            Los Angeles, CA SMA
+4480        06037                 Los Angeles County
+4480	    06059		  Orange County	
+
+4520                            Louisville, KY-IN SMA
+4520        18019                 Clark County, IN
+4520        18043                 Floyd County, IN
+4520        21111                 Jefferson County, KY
+
+4560                            Lowell, MA SMA
+4560        25017                 Middlesex County, MA (pt.)
+4560        25017   05805           Billerica town
+4560        25017   13135           Chelmsford town
+4560        25017   17475           Dracut town
+4560        25017   37000           Lowell city
+4560        25017   69415           Tewksbury town
+
+4600                            Lubbock, TX SMA
+4600        48303                 Lubbock County
+
+4680                            Macon, GA SMA
+4680        13021                 Bibb County
+4680        13153                 Houston County
+
+4720                            Madison, WI SMA
+4720        55025                 Dane County
+
+4760                            Manchester, NH SMA
+4760        33011                 Hillsborough County (pt.)
+4760        33011   29860           Goffstown town
+4760        33011   45140           Manchester city
+
+4840                            Mayaguez, PR SMA
+4840        72097                 Mayaguez Municipio
+
+4920                            Memphis, TN SMA
+4920        47157                 Shelby County, TN
+
+5000                            Miami, FL SMA
+5000        12025                 Dade County
+
+5080                            Milwaukee, WI SMA
+5080        55079                 Milwaukee County
+
+5120                            Minneapolis-St. Paul, MN SMA
+5120        27003                 Anoka County, MN
+5120        27037                 Dakota County, MN
+5120        27053                 Hennepin County, MN
+5120        27123                 Ramsey County, MN
+
+5160                            Mobile, AL SMA
+5160        01097                 Mobile County
+
+5240                            Montgomery, AL SMA
+5240        01101                 Montgomery County
+
+5280                            Muncie, IN SMA
+5280        18035                 Delaware County
+
+5360                            Nashville, TN SMA
+5360        47037                 Davidson County
+
+5400                            New Bedford, MA SMA
+5400        25005                 Bristol County (pt.)
+5400        25005   00520           Acushnet town
+5400        25005   16425           Dartmouth town
+5400        25005   22130           Fairhaven town
+5400        25005   45000           New Bedford city
+
+5440                            New Britain-Bristol, CT SMA
+5440        09003                 Hartford County (pt.)
+5440        09003   04300           Berlin town
+5440        09003   08420	    Bristol city
+5440        09003   50370           New Britain city
+5440        09003   60120           Plainville town
+5440        09003   70550           Southington town
+5440        09005		  Litchfield County (pt.)
+5440	    09005   60750	    Plymouth town
+
+5480                            New Haven, CT SMA
+5480        09009                 New Haven County (pt.)
+5480        09009   07310           Branford town
+5480        09009   22910           East Haven town
+5480        09009   35650           Hamden town
+5480        09009   52000           New Haven city
+5480        09009   54870           North Haven town
+5480        09009   57600           Orange town
+5480        09009   82800           West Haven town
+5480        09009   87700           Woodbridge town
+
+5560                            New Orleans, LA SMA
+5560        22051                 Jefferson Parish
+5560        22071                 Orleans Parish
+5560        22087                 St. Bernard Parish
+
+5600                            New York-Northeastern NJ, NY-NJ SMA
+5600	    34003		  Bergen County, NJ
+5600	    34013		  Essex County, NJ
+5600	    34017		  Hudson County, NJ
+5600	    34023		  Middlesex County, NJ
+5600	    34027		  Morris County, NJ
+5600	    34031		  Passaic County, NJ
+5600        34035		  Somerset County, NJ
+5600	    34039		  Union County, NJ
+
+5600        36005                 Bronx County, NY
+5600        36047                 Kings County, NY
+5600        36059                 Nassau County, NY
+5600        36061                 New York County, NY
+5600        36081                 Queens County, NY
+5600        36085                 Richmond County, NY
+5600        36087                 Rockland County, NY
+5600        36103                 Suffolk County, NY
+5600        36119                 Westchester County, NY
+
+5720                            Norfolk-Portsmouth, VA SMA
+5720        51710                 Norfolk city
+5720        51129		  Norfolk County
+5720        51740                 Portsmouth city
+5720	    51151		  Princess Anne County
+5720        51785                 South Norfolk city
+
+5840                            Ogden, UT SMA
+5840        49057                 Weber County
+
+5880                            Oklahoma City, OK SMA
+5880        40109                 Oklahoma County
+
+5920                            Omaha, NE-IA SMA
+5920        19155                 Pottawattamie County, IA
+5920        31055                 Douglas County, NE
+5920        31153                 Sarpy County, NE
+
+5960                            Orlando, FL SMA
+5960        12095                 Orange County
+
+6120                            Peoria, IL SMA
+6120        17143                 Peoria County
+6120        17179                 Tazewell County
+
+6160                            Philadelphia, PA-NJ SMA
+6160        34005                 Burlington County, NJ
+6160        34007                 Camden County, NJ
+6160        34015                 Gloucester County, NJ
+6160        42017                 Bucks County, PA
+6160        42029                 Chester  County, PA
+6160        42045                 Delaware County, PA
+6160        42091                 Montgomery County, PA
+6160        42101                 Philadelphia County, PA
+
+6200                            Phoenix, AZ SMA
+6200        04013                 Maricopa County
+
+6280                            Pittsburgh, PA SMA
+6280        42003                 Allegheny County
+6280        42007                 Beaver County
+6280        42125                 Washington County
+6280        42129                 Westmoreland County
+
+6320                            Pittsfield, MA SMA
+6320        25003                 Berkshire County (pt.)
+6320        25003   16180           Dalton town
+6320        25003   34655           Lee town
+6320        25003   34970           Lenox town
+6320        25003   53960           Pittsfield city
+
+6360                            Ponce, PR SMA
+6360        72113                 Ponce Municipio
+
+6400                            Portland, ME SMA
+6400        23005                 Cumberland County (pt.)
+6400        23005   10180           Cape Elizabeth town
+6400        23005   24495           Falmouth town
+6400        23005   60545           Portland city
+6400        23005   71990           South Portland city
+6400        23005   82105           Westbrook city
+
+6440                            Portland, OR-WA SMA
+6440        41005                 Clackamas County, OR
+6440        41051                 Multnomah County, OR
+6440        41067                 Washington County, OR
+6440        53011                 Clark County, WA
+
+6480                            Providence, RI SMA
+6480        25005                 Bristol County, MA (pt.)
+6480        25005   02690           Attleboro city
+6480        25005   46575           North Attleboro town
+6480        25005   60645           Seekonk town
+6480        25021                 Norfolk County, MA (pt.)
+6480        25021   04930           Bellingham town
+6480        25021   25065           Franklin town
+6480        25021   54100           Plainville town
+6480        25021   82315           Wrentham town
+6480        25027                 Worcester County, MA (pt.)
+6480        25027   06015           Blackstone town
+6480        25027   41585           Millville town
+6480        44001                 Bristol County, RI 
+6480        44001   05140           Barrington town
+6480        44001   09280           Bristol town
+6480        44001   73760           Warren town
+6480        44003                 Kent County, RI (pt.)
+6480        44003   22240           East Greenwich town
+6480        44003   74300           Warwick city
+6480        44003   78440           West Warwick town
+6480        44007                 Providence County, RI (pt.)
+6480        44007   14140           Central Falls city
+6480        44007   19180           Cranston city
+6480        44007   20080           Cumberland town
+6480        44007   22960           East Providence city
+6480        44007   37720           Johnston town
+6480        44007   41500           Lincoln town
+6480        44007   51760           North Providence town
+6480        44007   52480           North Smithfield town
+6480        44007   54640           Pawtucket city
+6480        44007   59000           Providence city
+6480        44007   66200           Smithfield town
+6480        44007   80780           Woonsocket city 
+6480        44009                 Washington County, RI (pt.)
+6480        44009   51580           North Kingstown town
+
+6560                            Pueblo, CO SMA
+6560        08101                 Pueblo County
+
+6600                            Racine, WI SMA
+6600        55101                 Racine County
+
+6640                            Raleigh, NC SMA
+6640        37183                 Wake County
+
+6680                            Reading, PA SMA
+6680        42011                 Berks County
+
+6760                            Richmond, VA SMA
+6760        51041                 Chesterfield County
+6760        51087                 Henrico County
+6760        51760                 Richmond city
+
+6800                            Roanoke, VA SMA
+6800        51161                 Roanoke County
+6800        51770                 Roanoke city
+
+6840                            Rochester, NY SMA
+6840        36055                 Monroe County
+
+6880                            Rockford, IL SMA
+6880        17201                 Winnebago County
+
+6920                            Sacramento, CA SMA
+6920        06067                 Sacramento County
+
+6960                            Saginaw, MI SMA
+6960        26145                 Saginaw County
+
+7000                            St. Joseph, MO SMA
+7000        29021                 Buchanan County
+
+7040                            St. Louis, MO-IL SMA
+7040        17119                 Madison County, IL
+7040        17163                 St. Clair County, IL
+7040        29183                 St. Charles County, MO
+7040        29189                 St. Louis County, MO
+7040        29510                 St. Louis city, MO
+
+7160                            Salt Lake City, UT SMA
+7160        49035                 Salt Lake County
+
+7200                            San Angelo, TX SMA
+7200        48451                 Tom Green County
+
+7240                            San Antonio, TX SMA
+7240        48029                 Bexar County
+
+7280                            San Bernardino, CA SMA
+7280        06071                 San Bernardino County
+
+7320                            San Diego, CA SMA
+7320        06073                 San Diego County
+
+7360                            San Francisco-Oakland, CA SMA
+7360        06001                 Alameda County
+7360        06013                 Contra Costa County
+7360        06041                 Marin County
+7360        06075                 San Francisco County
+7360        06081                 San Mateo County
+7360        06095		  Solano County
+
+7400                            San Jose, CA SMA
+7400        06085                 Santa Clara County
+
+7440                            San Juan-Rio Piedras, PR SMA
+7440        72021                 Bayamon Municipio
+7440        72033                 Catano Municipio
+7440        72061                 Guaynabo Municipio
+7440        72127                 San Juan Municipio
+7440	    72 		          Rio Piedras Municipio*
+
+7520                            Savannah, GA SMA
+7520        13051                 Chatham County
+
+7560                            Scranton, PA SMA
+7560        42069                 Lackawanna County
+
+7600                            Seattle, WA SMA
+7600        53033                 King County
+
+7680                            Shreveport, LA SMA
+7680        22017                 Caddo Parish
+
+7720                            Sioux City, IA SMA
+7720        19193                 Woodbury County, IA
+
+7760                            Sioux Falls, SD SMA
+7760        46099                 Minnehaha County
+
+7800                            South Bend, IN SMA
+7800        18141                 St.Joseph County
+
+7840                            Spokane, WA SMA
+7840        53063                 Spokane County
+
+7880                            Springfield, IL SMA
+7880        17167                 Sangamon County
+
+7920                            Springfield, MO SMA
+7920        29077                 Greene County
+
+7960                            Springfield, OH SMA
+7960        39023                 Clark County 
+
+8000                            Springfield-Holyoke, MA-CT SMA
+8000        25013                 Hampden County, MA (pt.)
+8000        25013   00800           Agawam town
+8000        25013   13660           Chicopee city
+8000        25013   19645           East Longmeadow town
+8000        25013   30840           Holyoke city
+8000        25013   36300           Longmeadow town
+8000        25013   37175           Ludlow town
+8000        25013   67000           Springfield city
+8000        25013   76030           Westfield city
+8000        25013   77850           West Springfield town
+8000        25013   79740           Wilbraham town
+8000        25015                 Hampshire County, MA (pt.)
+8000        25015   19330           Easthampton town
+8000        25015   46330           Northampton city
+8000        25015   64145           South Hadley town
+8000	    09003		  Hartford County, CT (pt.) 
+8000	    09003		    Enfield town
+
+8040                            Stamford-Norwalk, CT SMA
+8040        09001                 Fairfield County (pt.)
+8040        09001   18850           Darien town
+8040        09001   33620           Greenwich town
+8040        09001   50580           New Canaan town
+8040	    09001   55990           Norwalk city
+8040        09001   73000           Stamford city
+8040	    09001   83500	    Westport town
+
+8120                            Stockton, CA SMA
+8120        06077                 San Joaquin County
+
+8160                            Syracuse, NY SMA
+8160        36067                 Onondaga County
+
+8200                            Tacoma, WA SMA
+8200        53053                 Pierce County
+
+8280                            Tampa-St. Petersburg, FL SMA
+8280        12057                 Hillsborough County
+8280        12103                 Pinellas County
+
+8320                            Terre Haute, IN SMA
+8320        18167                 Vigo County
+
+8400                            Toledo, OH-MI SMA
+8400        39095                 Lucas County, OH
+
+8440                            Topeka, KS SMA
+8440        20177                 Shawnee County
+
+8480                            Trenton, NJ SMA
+8480        34021                 Mercer County
+
+8560                            Tulsa, OK SMA
+8560        40143                 Tulsa County
+
+8680                            Utica-Rome, NY SMA
+8680        36043                 Herkimer County
+8680        36065                 Oneida County
+
+8800                            Waco, TX SMA
+8800        48309                 McLennan County
+
+8840                            Washington, DC-MD-VA SMA
+8840        11001                 District of Columbia
+8840        24031                 Montgomery County, MD
+8840        24033                 Prince George's County, MD
+8840        51510                 Alexandria city, VA
+8840        51013                 Arlington County, VA
+8840        51059                 Fairfax County, VA
+8840        51610                 Falls Church city, VA
+
+8880                            Waterbury, CT SMA
+8880        09005                 Litchfield County (pt.)
+8880        09005   75730           Thomaston town
+8880        09005   80490           Watertown town
+
+8880        09009                 New Haven County (pt.)
+8880        09009   03250           Beacon Falls town
+8880        09009   14160           Cheshire town
+8880        09009   46940           Middlebury town
+8880        09009   49880           Naugatuck borough
+8880        09009   62290           Prospect town
+8880        09009   80000           Waterbury city
+8880        09009   87560           Wolcott town
+
+8920                            Waterloo, IA SMA
+8920        19013                 Black Hawk County
+
+9000                            Wheeling-Steubenville, WV-OH SMA
+9000        39013                 Belmont County, OH
+9000	    39081	          Jefferson County, OH
+9000	    54009	          Brooke County, WV
+9000	    54029	          Hancock County, WV	   
+9000        54051                 Marshall County, WV
+9000        54069                 Ohio County, WV
+
+9040                            Wichita, KS SMA
+9040        20173                 Sedgwick County
+
+9080                            Wichita Falls, TX SMA
+9080        48485                 Wichita County
+
+9120                            Wilkes-Barre--Hazleton, PA SMA
+9120        42079                 Luzerne County
+ 
+9160                            Wilmington, DE-NJ SMA
+9160        10003                 New Castle County, DE
+9160        34033                 Salem County, NJ 
+
+9220        		        Winston-Salem, NC
+9220        37067		  Forsyth County	
+
+9240                            Worcester, MA SMA
+9240        25027                 Worcester County (pt.)
+9240        25027   02760           Auburn town
+9240        25027   18560           East Brookfield town
+9240        25027   26430           Grafton town
+9240        25027   30560           Holden town
+9240        25027   34795           Leicester town
+9240        25027   41340           Millbury town
+9240        25027   46820           Northborough town
+9240        25027   47135           North Brookfield town
+9240        25027   61800           Shrewsbury town
+9240        25027   66105           Spencer town
+9240        25027   75015           Westborough town
+9240        25027   75155           West Boylston town
+9240	    25027   82000	    Worcester city
+
+9280                            York, PA SMA
+9280        42133                 York County
+
+9320                            Youngstown, OH-PA SMA
+9320        39099                 Mahoning County, OH
+9320        39155                 Trumbull County, OH
+9320	    42085	          Mercer County, PA
+
+
+Footnote: No FIPS code exists for Rio Piedras Municipio because it was consolidated
+with San Juan Municipio in July 1951, before FIPS codes were developed. 
+
+
+File Layout:
+
+Character       Length          Field
+
+1-4             4               Four-digit FIPS SMA code ( 1950 definition)
+5-12            8               Blank
+13-14           2               Two-digit FIPS state code (blank at SMA level)
+15-17           3               Three-digit FIPS county code (blank at SMA level)
+18-20           3               Blank
+21-25           5               Five-digit FIPS entity code (blank at SMA and county levels) 
+26-32           7               Blank
+33-99           67              SMA Title
+35-99           65              Component County Name
+37-99           63              Component City/Town Name (New England Only) 
+
+

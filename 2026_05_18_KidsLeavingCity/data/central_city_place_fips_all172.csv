@@ -1,0 +1,197 @@
+sma_code,sma_name,central_city,state_fips,place_fips,county_fips_central
+5600,"New York-Northeastern NJ, NY-NJ SMA",New York,36,3651000,36061
+5600,"New York-Northeastern NJ, NY-NJ SMA",Newark,34,3451000,34013
+1600,"Chicago, IL-IN SMA",Chicago,17,1714000,17031
+4480,"Los Angeles, CA SMA",Los Angeles,06,0644000,06037
+6160,"Philadelphia, PA-NJ SMA",Philadelphia,42,4260000,42101
+2160,"Detroit, MI SMA",Detroit,26,2622000,26163
+1120,"Boston, MA SMA",Boston,25,2507000,25025
+6280,"Pittsburgh, PA SMA",Pittsburgh,42,4261000,42003
+7360,"San Francisco-Oakland, CA SMA",San Francisco,06,0667000,06075
+7360,"San Francisco-Oakland, CA SMA",Oakland,06,0653000,06001
+6480,"Providence, RI SMA",Providence,44,4459000,44007
+7040,"St. Louis, MO-IL SMA",St. Louis,29,2965000,29510
+1680,"Cleveland, OH SMA",Cleveland,39,3916000,39035
+720,"Baltimore, MD SMA",Baltimore,24,2404000,24510
+5120,"Minneapolis-St. Paul, MN SMA",Minneapolis,27,2743000,27053
+5120,"Minneapolis-St. Paul, MN SMA",St. Paul,27,2758000,27123
+1280,"Buffalo, NY SMA",Buffalo,36,3611000,36029
+4560,"Lowell, MA SMA",Lowell,25,2537000,25017
+1160,"Bridgeport, CT SMA",Bridgeport,09,0908000,09001
+1200,"Brockton, MA SMA",Brockton,25,2509000,25021
+8000,"Springfield-Holyoke, MA-CT SMA",Springfield,25,2567000,25013
+8000,"Springfield-Holyoke, MA-CT SMA",Holyoke,25,2530000,25013
+1640,"Cincinnati, OH-KY SMA",Cincinnati,39,3915000,39061
+3360,"Houston, TX SMA",Houston,48,4835000,48201
+5080,"Milwaukee, WI SMA",Milwaukee,55,5553000,55079
+3760,"Kansas City, MO-KS SMA",Kansas City MO,29,2938000,29095
+3760,"Kansas City, MO-KS SMA",Kansas City KS,20,2036000,20209
+8840,"Washington, DC-MD-VA SMA",Washington,11,1150000,11001
+5560,"New Orleans, LA SMA",New Orleans,22,2255000,22071
+520,"Atlanta, GA SMA",Atlanta,13,1304000,13121
+7600,"Seattle, WA SMA",Seattle,53,5363000,53033
+6440,"Portland, OR-WA SMA",Portland,41,4159000,41051
+1000,"Birmingham, AL SMA",Birmingham,01,0107000,01073
+1920,"Dallas, TX SMA",Dallas,48,4819000,48113
+5440,"New Britain-Bristol, CT SMA",New Britain,09,0950000,09003
+5440,"New Britain-Bristol, CT SMA",Bristol,09,0907000,09003
+8880,"Waterbury, CT SMA",Waterbury,09,0972000,09009
+4520,"Louisville, KY-IN SMA",Louisville,21,2148000,21111
+7240,"San Antonio, TX SMA",San Antonio,48,4865000,48029
+2080,"Denver, CO SMA",Denver,08,0820000,08031
+9320,"Youngstown, OH-PA SMA",Youngstown,39,3989000,39099
+3480,"Indianapolis, IN SMA",Indianapolis,18,1836000,18097
+7320,"San Diego, CA SMA",San Diego,06,0666000,06073
+9240,"Worcester, MA SMA",Worcester,25,2581000,25027
+3280,"Hartford, CT SMA",Hartford,09,0935000,09003
+5480,"New Haven, CT SMA",New Haven,09,0953000,09009
+4920,"Memphis, TN SMA",Memphis,47,4748000,47157
+4160,"Lawrence, MA SMA",Lawrence,25,2534000,25009
+8040,"Stamford-Norwalk, CT SMA",Stamford,09,0973000,09001
+8040,"Stamford-Norwalk, CT SMA",Norwalk,09,0954000,09001
+2000,"Dayton, OH SMA",Dayton,39,3920000,39113
+1840,"Columbus, OH SMA",Columbus,39,3918000,39049
+160,"Albany-Schenectady-Troy, NY SMA",Albany,36,3601000,36001
+160,"Albany-Schenectady-Troy, NY SMA",Schenectady,36,3667000,36093
+160,"Albany-Schenectady-Troy, NY SMA",Troy,36,3675000,36083
+6840,"Rochester, NY SMA",Rochester,36,3663000,36055
+5720,"Norfolk-Portsmouth, VA SMA",Norfolk,51,5156000,51710
+5720,"Norfolk-Portsmouth, VA SMA",Portsmouth,51,5157000,51740
+2480,"Fall River, MA-RI SMA",Fall River,25,2522000,25005
+80,"Akron, OH SMA",Akron,39,3900100,39153
+5000,"Miami, FL SMA",Miami,12,1245000,12086
+240,"Allentown-Bethlehem-Easton, PA-NJ SMA",Allentown,42,4202000,42077
+240,"Allentown-Bethlehem-Easton, PA-NJ SMA",Bethlehem,42,4206088,42095
+240,"Allentown-Bethlehem-Easton, PA-NJ SMA",Easton,42,4221648,42095
+1480,"Charleston, WV SMA",Charleston,54,5414600,54039
+3840,"Knoxville, TN SMA",Knoxville,47,4740000,47093
+6200,"Phoenix, AZ SMA",Phoenix,04,0455000,04013
+9120,"Wilkes-Barre--Hazleton, PA SMA",Wilkes-Barre,42,4285152,42079
+9120,"Wilkes-Barre--Hazleton, PA SMA",Hazleton,42,4233408,42079
+8400,"Toledo, OH-MI SMA",Toledo,39,3977000,39095
+8280,"Tampa-St. Petersburg, FL SMA",Tampa,12,1271000,12057
+8280,"Tampa-St. Petersburg, FL SMA",St. Petersburg,12,1263000,12103
+9000,"Wheeling-Steubenville, WV-OH SMA",Wheeling,54,5486452,54069
+9000,"Wheeling-Steubenville, WV-OH SMA",Steubenville,39,3974608,39081
+5400,"New Bedford, MA SMA",New Bedford,25,2545000,25005
+5920,"Omaha, NE-IA SMA",Omaha,31,3137000,31055
+2800,"Fort Worth, TX SMA",Fort Worth,48,4827000,48439
+5880,"Oklahoma City, OK SMA",Oklahoma City,40,4055000,40109
+3680,"Johnstown, PA SMA",Johnstown,42,4238288,42021
+7160,"Salt Lake City, UT SMA",Salt Lake City,49,4967000,49035
+2840,"Fresno, CA SMA",Fresno,06,0627000,06019
+3600,"Jacksonville, FL SMA",Jacksonville,12,1235000,12031
+5360,"Nashville, TN SMA",Nashville,47,4752006,47037
+8160,"Syracuse, NY SMA",Syracuse,36,3673000,36067
+2640,"Flint, MI SMA",Flint,26,2629000,26049
+6760,"Richmond, VA SMA",Richmond,51,5167000,51760
+3000,"Grand Rapids, MI SMA",Grand Rapids,26,2634000,26081
+7280,"San Bernardino, CA SMA",San Bernardino,06,0665000,06071
+1320,"Canton, OH SMA",Canton,39,3912000,39151
+3400,"Huntington-Ashland, WV-KY-OH SMA",Huntington,54,5439460,54011
+3400,"Huntington-Ashland, WV-KY-OH SMA",Ashland,21,2102368,21019
+7400,"San Jose, CA SMA",San Jose,06,0668000,06085
+3240,"Harrisburg, PA SMA",Harrisburg,42,4232800,42043
+5160,"Mobile, AL SMA",Mobile,01,0150000,01097
+1560,"Chattanooga, TN-GA SMA",Chattanooga,47,4714000,47065
+8680,"Utica-Rome, NY SMA",Utica,36,3676540,36065
+8680,"Utica-Rome, NY SMA",Rome,36,3663418,36065
+6920,"Sacramento, CA SMA",Sacramento,06,0664000,06067
+9160,"Wilmington, DE-NJ SMA",Wilmington,10,1077580,10003
+8560,"Tulsa, OK SMA",Tulsa,40,4075000,40143
+8200,"Tacoma, WA SMA",Tacoma,53,5370000,53053
+2240,"Duluth-Superior, MN-WI SMA",Duluth,27,2717000,27137
+2240,"Duluth-Superior, MN-WI SMA",Superior,55,5578650,55031
+6120,"Peoria, IL SMA",Peoria,17,1759000,17143
+4000,"Lancaster, PA SMA",Lancaster,42,4241216,42071
+7560,"Scranton, PA SMA",Scranton,42,4269000,42069
+2320,"El Paso, TX SMA",El Paso,48,4824000,48141
+9040,"Wichita, KS SMA",Wichita,20,2079000,20173
+1960,"Davenport-Rock Island-Moline, IA-IL SMA",Davenport,19,1919000,19163
+1960,"Davenport-Rock Island-Moline, IA-IL SMA",Rock Island,17,1765078,17161
+1960,"Davenport-Rock Island-Moline, IA-IL SMA",Moline,17,1749867,17161
+6680,"Reading, PA SMA",Reading,42,4263624,42011
+2360,"Erie, PA SMA",Erie,42,4224000,42049
+2120,"Des Moines, IA SMA",Des Moines,19,1921000,19153
+840,"Beaumont-Port Arthur, TX SMA",Beaumont,48,4807000,48245
+840,"Beaumont-Port Arthur, TX SMA",Port Arthur,48,4858820,48245
+1520,"Charlotte, NC SMA",Charlotte,37,3712000,37119
+7840,"Spokane, WA SMA",Spokane,53,5367000,53063
+1880,"Corpus Christi, TX SMA",Corpus Christi,48,4817000,48355
+1440,"Charleston, SC SMA",Charleston,45,4513330,45019
+9280,"York, PA SMA",York,42,4287048,42133
+3120,"Greensboro-High Point, NC SMA",Greensboro-High Point,37,3728000,37081
+4400,"Little Rock-North Little Rock, AR SMA",Little Rock,05,0541000,05119
+4400,"Little Rock-North Little Rock, AR SMA",North Little Rock,05,0550450,05119
+8120,"Stockton, CA SMA",Stockton,06,0675000,06077
+7800,"South Bend, IN SMA",South Bend,18,1871000,18141
+1800,"Columbus, GA-AL SMA",Columbus,13,1319000,13215
+3160,"Greenville, SC SMA",Greenville,45,4530850,45045
+8480,"Trenton, NJ SMA",Trenton,34,3474000,34021
+7680,"Shreveport, LA SMA",Shreveport,22,2270000,22017
+600,"Augusta, GA-SC SMA",Augusta,13,1304204,13245
+2760,"Fort Wayne, IN SMA",Fort Wayne,18,1825000,18003
+960,"Binghamton, NY SMA",Binghamton,36,3606607,36007
+760,"Baton Rouge, LA SMA",Baton Rouge,22,2205000,22033
+6960,"Saginaw, MI SMA",Saginaw,26,2670520,26145
+4040,"Lansing, MI SMA",Lansing,26,2646000,26065
+200,"Albuquerque, NM SMA",Albuquerque,35,3502000,35001
+6400,"Portland, ME SMA",Portland,23,2360545,23005
+7520,"Savannah, GA SMA",Savannah,13,1369000,13051
+2440,"Evansville, IN SMA",Evansville,18,1822000,18163
+3560,"Jackson, MS SMA",Jackson,28,2836000,28049
+4720,"Madison, WI SMA",Madison,55,5548000,55025
+640,"Austin, TX SMA",Austin,48,4805000,48453
+4680,"Macon, GA SMA",Macon,13,1349008,13021
+5240,"Montgomery, AL SMA",Montgomery,01,0151000,01101
+1760,"Columbia, SC SMA",Columbia,45,4516000,45079
+3200,"Hamilton-Middletown, OH SMA",Hamilton,39,3933012,39017
+3200,"Hamilton-Middletown, OH SMA",Middletown,39,3949840,39017
+4760,"Manchester, NH SMA",Manchester,33,3345140,33011
+4440,"Lorain-Elyria, OH SMA",Lorain,39,3944856,39093
+4440,"Lorain-Elyria, OH SMA",Elyria,39,3925256,39093
+6880,"Rockford, IL SMA",Rockford,17,1765000,17201
+6640,"Raleigh, NC SMA",Raleigh,37,3755000,37183
+280,"Altoona, PA SMA",Altoona,42,4202184,42013
+480,"Asheville, NC SMA",Asheville,37,3702140,37021
+8800,"Waco, TX SMA",Waco,48,4876000,48309
+6800,"Roanoke, VA SMA",Roanoke,51,5168000,51770
+6320,"Pittsfield, MA SMA",Pittsfield,25,2553960,25003
+3720,"Kalamazoo, MI SMA",Kalamazoo,26,2642160,26077
+7880,"Springfield, IL SMA",Springfield,17,1772000,17167
+2920,"Galveston, TX SMA",Galveston,48,4828068,48167
+2880,"Gadsden, AL SMA",Gadsden,01,0128696,01055
+4600,"Lubbock, TX SMA",Lubbock,48,4845000,48303
+7960,"Springfield, OH SMA",Springfield,39,3974118,39023
+3080,"Green Bay, WI SMA",Green Bay,55,5531000,55009
+560,"Atlantic City, NJ SMA",Atlantic City,34,3402080,34001
+5960,"Orlando, FL SMA",Orlando,12,1253000,12095
+6600,"Racine, WI SMA",Racine,55,5566000,55101
+3520,"Jackson, MI SMA",Jackson,26,2641420,26075
+7720,"Sioux City, IA SMA",Sioux City,19,1973335,19193
+5840,"Ogden, UT SMA",Ogden,49,4955980,49057
+2280,"Durham, NC SMA",Durham,37,3719000,37063
+8920,"Waterloo, IA SMA",Waterloo,19,1982425,19013
+800,"Bay City, MI SMA",Bay City,26,2606020,26017
+1360,"Cedar Rapids, IA SMA",Cedar Rapids,19,1912000,19113
+7920,"Springfield, MO SMA",Springfield,29,2970000,29077
+4360,"Lincoln, NE SMA",Lincoln,31,3128000,31109
+2040,"Decatur, IL SMA",Decatur,17,1718823,17115
+8320,"Terre Haute, IN SMA",Terre Haute,18,1875428,18167
+6560,"Pueblo, CO SMA",Pueblo,08,0862000,08101
+5280,"Muncie, IN SMA",Muncie,18,1851876,18035
+8440,"Topeka, KS SMA",Topeka,20,2071000,20177
+9080,"Wichita Falls, TX SMA",Wichita Falls,48,4879000,48485
+320,"Amarillo, TX SMA",Amarillo,48,4803000,48375
+4320,"Lima, OH SMA",Lima,39,3943554,39003
+4280,"Lexington, KY SMA",Lexington,21,2146027,21067
+7000,"St. Joseph, MO SMA",St. Joseph,29,2964550,29021
+4080,"Laredo, TX SMA",Laredo,48,4841464,48479
+3800,"Kenosha, WI SMA",Kenosha,55,5539225,55059
+7760,"Sioux Falls, SD SMA",Sioux Falls,46,4659020,46099
+7200,"San Angelo, TX SMA",San Angelo,48,4864472,48451
+6360,"Ponce, PR SMA",Ponce,72,7263820,72113
+7440,"San Juan-Rio Piedras, PR SMA",San Juan,72,7276770,72127
+7440,"San Juan-Rio Piedras, PR SMA",Rio Piedras,72,7276770,72127
+3320,"Honolulu, Territory of Hawaii SMA",Honolulu,15,1571550,15003
+4840,"Mayaguez, PR SMA",Mayaguez,72,7252431,72097

@@ -1,0 +1,94 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>NYC MSA: under-18 population by county, 2009–2023 (ACS 5-year)</title>
+<style>
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracle-Light.otf') format('opentype'); font-weight:300; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracle-Regular.otf') format('opentype'); font-weight:400; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracle-Medium.otf') format('opentype'); font-weight:500; }
+body { margin:0; padding:28px; background:#F6F7F3; font-family:'ABC Oracle Edu',sans-serif; color:#3D3733; }
+h1 { font-size:28px; font-weight:500; margin:0 0 6px; }
+.sub { color:#7F7570; font-size:15px; margin-bottom:20px; max-width:1400px; line-height:1.5; }
+.grid { display:grid; grid-template-columns:repeat(5, 1fr); gap:14px 18px; max-width:1500px; }
+.panel { background:#fff; border:0.5px solid #e1e2e3; padding:10px 12px 12px; }
+.panel-hdr { display:flex; align-items:baseline; justify-content:space-between; gap:6px; margin-bottom:2px; }
+.cname { font-size:13.5px; font-weight:500; }
+.cname.borough { color:#0BB4FF; }
+.pct { font-size:11.5px; color:#7F7570; font-variant-numeric:tabular-nums; }
+.pct.up { color:#67A275; }
+.pct.down { color:#F4743B; }
+.rng { font-size:10.5px; color:#9D958F; font-variant-numeric:tabular-nums; margin-bottom:2px; }
+.source { color:#7F7570; font-size:12px; max-width:1500px; margin-top:24px; line-height:1.5; }
+</style></head>
+<body>
+<h1>Where the kids are: NYC MSA under-18 by county, 2009–2023</h1>
+<div class="sub">Every available ACS 5-year endpoint (2005-09 through 2019-23) for the 22 New York–Newark–Jersey City MSA counties. Each panel has its own y-axis so smaller counties' trends are visible. Counties ordered by 2023 under-18 size (largest first). Boroughs of NYC in blue, all other counties in grey. Right-side number: % change endpoint-to-endpoint. ACS 5-year smooths out short-term noise; the "2009" point is really a 2005–2009 average.</div>
+
+<div class="grid" id="grid"></div>
+
+<div class="source">
+Source: U.S. Census Bureau, American Community Survey 5-year estimates, Table B01001 (Sex by Age). Under-18 = sum of cells B01001_003E to _006E (male) and _027E to _030E (female). 15 endpoint years (2009-2023). MSA = New York–Newark–Jersey City, NY-NJ-PA (CBSA 35620) per OMB 2023.
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const P = {"panels": [{"fips": "36047", "name": "Kings (Brooklyn)", "is_borough": true, "series": [{"year": 2009, "v": 638344}, {"year": 2010, "v": 596320}, {"year": 2011, "v": 595321}, {"year": 2012, "v": 596667}, {"year": 2013, "v": 599605}, {"year": 2014, "v": 604473}, {"year": 2015, "v": 607648}, {"year": 2016, "v": 608369}, {"year": 2017, "v": 608815}, {"year": 2018, "v": 599759}, {"year": 2019, "v": 594646}, {"year": 2020, "v": 588281}, {"year": 2021, "v": 622098}, {"year": 2022, "v": 604364}, {"year": 2023, "v": 595037}], "first": 638344, "last": 595037, "pct_chg": -6.7842730565337845, "ymin": 588281, "ymax": 638344}, {"fips": "36081", "name": "Queens", "is_borough": true, "series": [{"year": 2009, "v": 493313}, {"year": 2010, "v": 460988}, {"year": 2011, "v": 460943}, {"year": 2012, "v": 462335}, {"year": 2013, "v": 465358}, {"year": 2014, "v": 468282}, {"year": 2015, "v": 471373}, {"year": 2016, "v": 472878}, {"year": 2017, "v": 473695}, {"year": 2018, "v": 465458}, {"year": 2019, "v": 462323}, {"year": 2020, "v": 457287}, {"year": 2021, "v": 484107}, {"year": 2022, "v": 469866}, {"year": 2023, "v": 460935}], "first": 493313, "last": 460935, "pct_chg": -6.563378625740657, "ymin": 457287, "ymax": 493313}, {"fips": "36005", "name": "Bronx", "is_borough": true, "series": [{"year": 2009, "v": 392365}, {"year": 2010, "v": 372502}, {"year": 2011, "v": 370593}, {"year": 2012, "v": 369168}, {"year": 2013, "v": 367306}, {"year": 2014, "v": 367505}, {"year": 2015, "v": 367625}, {"year": 2016, "v": 367431}, {"year": 2017, "v": 367161}, {"year": 2018, "v": 361080}, {"year": 2019, "v": 358404}, {"year": 2020, "v": 354681}, {"year": 2021, "v": 365944}, {"year": 2022, "v": 355908}, {"year": 2023, "v": 347363}], "first": 392365, "last": 347363, "pct_chg": -11.46942260395295, "ymin": 347363, "ymax": 392365}, {"fips": "36103", "name": "Suffolk", "is_borough": false, "series": [{"year": 2009, "v": 376350}, {"year": 2010, "v": 364079}, {"year": 2011, "v": 359874}, {"year": 2012, "v": 355483}, {"year": 2013, "v": 350498}, {"year": 2014, "v": 345451}, {"year": 2015, "v": 340236}, {"year": 2016, "v": 334451}, {"year": 2017, "v": 329414}, {"year": 2018, "v": 322908}, {"year": 2019, "v": 318213}, {"year": 2020, "v": 313746}, {"year": 2021, "v": 322241}, {"year": 2022, "v": 316671}, {"year": 2023, "v": 319324}], "first": 376350, "last": 319324, "pct_chg": -15.152384748239667, "ymin": 313746, "ymax": 376350}, {"fips": "36059", "name": "Nassau", "is_borough": false, "series": [{"year": 2009, "v": 322090}, {"year": 2010, "v": 314686}, {"year": 2011, "v": 311945}, {"year": 2012, "v": 309309}, {"year": 2013, "v": 307349}, {"year": 2014, "v": 305266}, {"year": 2015, "v": 302598}, {"year": 2016, "v": 300415}, {"year": 2017, "v": 298504}, {"year": 2018, "v": 295105}, {"year": 2019, "v": 293742}, {"year": 2020, "v": 292536}, {"year": 2021, "v": 302095}, {"year": 2022, "v": 297719}, {"year": 2023, "v": 300139}], "first": 322090, "last": 300139, "pct_chg": -6.815175882517311, "ymin": 292536, "ymax": 322090}, {"fips": "36061", "name": "New York (Manhattan)", "is_borough": true, "series": [{"year": 2009, "v": 260675}, {"year": 2010, "v": 241956}, {"year": 2011, "v": 239406}, {"year": 2012, "v": 238294}, {"year": 2013, "v": 236724}, {"year": 2014, "v": 237922}, {"year": 2015, "v": 238627}, {"year": 2016, "v": 239355}, {"year": 2017, "v": 239651}, {"year": 2018, "v": 235771}, {"year": 2019, "v": 234936}, {"year": 2020, "v": 233239}, {"year": 2021, "v": 241898}, {"year": 2022, "v": 235675}, {"year": 2023, "v": 229519}], "first": 260675, "last": 229519, "pct_chg": -11.952047568811741, "ymin": 229519, "ymax": 260675}, {"fips": "36119", "name": "Westchester", "is_borough": false, "series": [{"year": 2009, "v": 232689}, {"year": 2010, "v": 229040}, {"year": 2011, "v": 227990}, {"year": 2012, "v": 227113}, {"year": 2013, "v": 226286}, {"year": 2014, "v": 225215}, {"year": 2015, "v": 224115}, {"year": 2016, "v": 222372}, {"year": 2017, "v": 220874}, {"year": 2018, "v": 217100}, {"year": 2019, "v": 215101}, {"year": 2020, "v": 212908}, {"year": 2021, "v": 219626}, {"year": 2022, "v": 214632}, {"year": 2023, "v": 214739}], "first": 232689, "last": 214739, "pct_chg": -7.714159242594187, "ymin": 212908, "ymax": 232689}, {"fips": "34013", "name": "Essex", "is_borough": false, "series": [{"year": 2009, "v": 196458}, {"year": 2010, "v": 196859}, {"year": 2011, "v": 195399}, {"year": 2012, "v": 194431}, {"year": 2013, "v": 193620}, {"year": 2014, "v": 193134}, {"year": 2015, "v": 192129}, {"year": 2016, "v": 190943}, {"year": 2017, "v": 191160}, {"year": 2018, "v": 188971}, {"year": 2019, "v": 189366}, {"year": 2020, "v": 190028}, {"year": 2021, "v": 204042}, {"year": 2022, "v": 201363}, {"year": 2023, "v": 202319}], "first": 196458, "last": 202319, "pct_chg": 2.9833348603772736, "ymin": 188971, "ymax": 204042}, {"fips": "34003", "name": "Bergen", "is_borough": false, "series": [{"year": 2009, "v": 201049}, {"year": 2010, "v": 204860}, {"year": 2011, "v": 203999}, {"year": 2012, "v": 203207}, {"year": 2013, "v": 203495}, {"year": 2014, "v": 203322}, {"year": 2015, "v": 202687}, {"year": 2016, "v": 202493}, {"year": 2017, "v": 202016}, {"year": 2018, "v": 199408}, {"year": 2019, "v": 198254}, {"year": 2020, "v": 197484}, {"year": 2021, "v": 203142}, {"year": 2022, "v": 199993}, {"year": 2023, "v": 200829}], "first": 201049, "last": 200829, "pct_chg": -0.10942606031365543, "ymin": 197484, "ymax": 204860}, {"fips": "34023", "name": "Middlesex", "is_borough": false, "series": [{"year": 2009, "v": 184165}, {"year": 2010, "v": 184918}, {"year": 2011, "v": 184919}, {"year": 2012, "v": 184774}, {"year": 2013, "v": 184910}, {"year": 2014, "v": 184849}, {"year": 2015, "v": 184867}, {"year": 2016, "v": 184071}, {"year": 2017, "v": 183576}, {"year": 2018, "v": 181137}, {"year": 2019, "v": 180478}, {"year": 2020, "v": 179636}, {"year": 2021, "v": 187867}, {"year": 2022, "v": 185693}, {"year": 2023, "v": 186485}], "first": 184165, "last": 186485, "pct_chg": 1.2597399071484716, "ymin": 179636, "ymax": 187867}, {"fips": "34029", "name": "Ocean", "is_borough": false, "series": [{"year": 2009, "v": 130570}, {"year": 2010, "v": 133149}, {"year": 2011, "v": 133864}, {"year": 2012, "v": 134436}, {"year": 2013, "v": 135742}, {"year": 2014, "v": 136473}, {"year": 2015, "v": 137090}, {"year": 2016, "v": 137926}, {"year": 2017, "v": 139158}, {"year": 2018, "v": 140531}, {"year": 2019, "v": 142499}, {"year": 2020, "v": 144960}, {"year": 2021, "v": 154487}, {"year": 2022, "v": 156270}, {"year": 2023, "v": 160999}], "first": 130570, "last": 160999, "pct_chg": 23.304740752086992, "ymin": 130570, "ymax": 160999}, {"fips": "34017", "name": "Hudson", "is_borough": false, "series": [{"year": 2009, "v": 124720}, {"year": 2010, "v": 130718}, {"year": 2011, "v": 130746}, {"year": 2012, "v": 131268}, {"year": 2013, "v": 132206}, {"year": 2014, "v": 134283}, {"year": 2015, "v": 135337}, {"year": 2016, "v": 137647}, {"year": 2017, "v": 138879}, {"year": 2018, "v": 137658}, {"year": 2019, "v": 137582}, {"year": 2020, "v": 137365}, {"year": 2021, "v": 146380}, {"year": 2022, "v": 143595}, {"year": 2023, "v": 142298}], "first": 124720, "last": 142298, "pct_chg": 14.09397049390635, "ymin": 124720, "ymax": 146380}, {"fips": "34025", "name": "Monmouth", "is_borough": false, "series": [{"year": 2009, "v": 158587}, {"year": 2010, "v": 154224}, {"year": 2011, "v": 151828}, {"year": 2012, "v": 149321}, {"year": 2013, "v": 146999}, {"year": 2014, "v": 144681}, {"year": 2015, "v": 142396}, {"year": 2016, "v": 139855}, {"year": 2017, "v": 137851}, {"year": 2018, "v": 135336}, {"year": 2019, "v": 133141}, {"year": 2020, "v": 131589}, {"year": 2021, "v": 136236}, {"year": 2022, "v": 133992}, {"year": 2023, "v": 135467}], "first": 158587, "last": 135467, "pct_chg": -14.578748573338295, "ymin": 131589, "ymax": 158587}, {"fips": "34039", "name": "Union", "is_borough": false, "series": [{"year": 2009, "v": 129940}, {"year": 2010, "v": 130779}, {"year": 2011, "v": 130684}, {"year": 2012, "v": 130733}, {"year": 2013, "v": 131193}, {"year": 2014, "v": 131500}, {"year": 2015, "v": 131582}, {"year": 2016, "v": 131182}, {"year": 2017, "v": 131444}, {"year": 2018, "v": 130363}, {"year": 2019, "v": 130333}, {"year": 2020, "v": 130376}, {"year": 2021, "v": 135155}, {"year": 2022, "v": 133658}, {"year": 2023, "v": 134776}], "first": 129940, "last": 134776, "pct_chg": 3.7217177158688663, "ymin": 129940, "ymax": 135155}, {"fips": "34031", "name": "Passaic", "is_borough": false, "series": [{"year": 2009, "v": 124970}, {"year": 2010, "v": 124591}, {"year": 2011, "v": 124244}, {"year": 2012, "v": 123852}, {"year": 2013, "v": 124196}, {"year": 2014, "v": 124175}, {"year": 2015, "v": 124208}, {"year": 2016, "v": 123409}, {"year": 2017, "v": 123172}, {"year": 2018, "v": 121021}, {"year": 2019, "v": 120481}, {"year": 2020, "v": 119891}, {"year": 2021, "v": 124914}, {"year": 2022, "v": 123033}, {"year": 2023, "v": 122854}], "first": 124970, "last": 122854, "pct_chg": -1.693206369528688, "ymin": 119891, "ymax": 124970}, {"fips": "36085", "name": "Richmond (Staten Island)", "is_borough": true, "series": [{"year": 2009, "v": 114338}, {"year": 2010, "v": 109718}, {"year": 2011, "v": 109060}, {"year": 2012, "v": 108445}, {"year": 2013, "v": 107980}, {"year": 2014, "v": 107162}, {"year": 2015, "v": 106363}, {"year": 2016, "v": 105828}, {"year": 2017, "v": 105322}, {"year": 2018, "v": 104503}, {"year": 2019, "v": 104238}, {"year": 2020, "v": 103981}, {"year": 2021, "v": 108334}, {"year": 2022, "v": 106747}, {"year": 2023, "v": 107343}], "first": 114338, "last": 107343, "pct_chg": -6.117826094561741, "ymin": 103981, "ymax": 114338}, {"fips": "34027", "name": "Morris", "is_borough": false, "series": [{"year": 2009, "v": 118740}, {"year": 2010, "v": 119370}, {"year": 2011, "v": 118165}, {"year": 2012, "v": 116905}, {"year": 2013, "v": 115768}, {"year": 2014, "v": 114335}, {"year": 2015, "v": 112811}, {"year": 2016, "v": 111109}, {"year": 2017, "v": 109554}, {"year": 2018, "v": 107219}, {"year": 2019, "v": 105545}, {"year": 2020, "v": 104116}, {"year": 2021, "v": 107351}, {"year": 2022, "v": 105429}, {"year": 2023, "v": 106161}], "first": 118740, "last": 106161, "pct_chg": -10.593734209196558, "ymin": 104116, "ymax": 119370}, {"fips": "36087", "name": "Rockland", "is_borough": false, "series": [{"year": 2009, "v": 83088}, {"year": 2010, "v": 85953}, {"year": 2011, "v": 86620}, {"year": 2012, "v": 87174}, {"year": 2013, "v": 87961}, {"year": 2014, "v": 88540}, {"year": 2015, "v": 88939}, {"year": 2016, "v": 89382}, {"year": 2017, "v": 89998}, {"year": 2018, "v": 90065}, {"year": 2019, "v": 90892}, {"year": 2020, "v": 91903}, {"year": 2021, "v": 96911}, {"year": 2022, "v": 97168}, {"year": 2023, "v": 99733}], "first": 83088, "last": 99733, "pct_chg": 20.032977084536885, "ymin": 83088, "ymax": 99733}, {"fips": "34035", "name": "Somerset", "is_borough": false, "series": [{"year": 2009, "v": 81109}, {"year": 2010, "v": 80945}, {"year": 2011, "v": 80616}, {"year": 2012, "v": 80073}, {"year": 2013, "v": 79638}, {"year": 2014, "v": 78982}, {"year": 2015, "v": 78098}, {"year": 2016, "v": 77091}, {"year": 2017, "v": 76144}, {"year": 2018, "v": 74584}, {"year": 2019, "v": 73290}, {"year": 2020, "v": 72347}, {"year": 2021, "v": 75143}, {"year": 2022, "v": 73674}, {"year": 2023, "v": 74097}], "first": 81109, "last": 74097, "pct_chg": -8.645156517772378, "ymin": 72347, "ymax": 81109}, {"fips": "34037", "name": "Sussex", "is_borough": false, "series": [{"year": 2009, "v": 37740}, {"year": 2010, "v": 37456}, {"year": 2011, "v": 36516}, {"year": 2012, "v": 35321}, {"year": 2013, "v": 34263}, {"year": 2014, "v": 33209}, {"year": 2015, "v": 32229}, {"year": 2016, "v": 31078}, {"year": 2017, "v": 30194}, {"year": 2018, "v": 29238}, {"year": 2019, "v": 28438}, {"year": 2020, "v": 27830}, {"year": 2021, "v": 28495}, {"year": 2022, "v": 28106}, {"year": 2023, "v": 28394}], "first": 37740, "last": 28394, "pct_chg": -24.764175940646528, "ymin": 27830, "ymax": 37740}, {"fips": "34019", "name": "Hunterdon", "is_borough": false, "series": [{"year": 2009, "v": 31675}, {"year": 2010, "v": 31344}, {"year": 2011, "v": 30668}, {"year": 2012, "v": 29881}, {"year": 2013, "v": 28893}, {"year": 2014, "v": 27997}, {"year": 2015, "v": 27232}, {"year": 2016, "v": 26439}, {"year": 2017, "v": 25864}, {"year": 2018, "v": 25239}, {"year": 2019, "v": 24805}, {"year": 2020, "v": 24155}, {"year": 2021, "v": 24838}, {"year": 2022, "v": 24549}, {"year": 2023, "v": 24848}], "first": 31675, "last": 24848, "pct_chg": -21.553275453827936, "ymin": 24155, "ymax": 31675}, {"fips": "36079", "name": "Putnam", "is_borough": false, "series": [{"year": 2009, "v": 24502}, {"year": 2010, "v": 24475}, {"year": 2011, "v": 24000}, {"year": 2012, "v": 23420}, {"year": 2013, "v": 22934}, {"year": 2014, "v": 22423}, {"year": 2015, "v": 21875}, {"year": 2016, "v": 21307}, {"year": 2017, "v": 20755}, {"year": 2018, "v": 20311}, {"year": 2019, "v": 19868}, {"year": 2020, "v": 19591}, {"year": 2021, "v": 19397}, {"year": 2022, "v": 19058}, {"year": 2023, "v": 19180}], "first": 24502, "last": 19180, "pct_chg": -21.72067586319484, "ymin": 19058, "ymax": 24502}], "years": [2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023], "x_min": 2009, "x_max": 2023};
+const grid = d3.select('#grid');
+
+const W = 260, H = 110, M = {t:6, r:8, b:18, l:6};
+const iw = W - M.l - M.r;
+const ih = H - M.t - M.b;
+
+const x = d3.scaleLinear().domain([P.x_min, P.x_max]).range([M.l, M.l + iw]);
+const fmt = n => n >= 1000 ? (n/1000).toFixed(0) + 'K' : n.toString();
+
+P.panels.forEach(panel => {
+  const cell = grid.append('div').attr('class','panel');
+  const hdr = cell.append('div').attr('class','panel-hdr');
+  hdr.append('div').attr('class','cname' + (panel.is_borough ? ' borough':''))
+     .text(panel.name);
+  const pctCls = panel.pct_chg >= 0 ? 'up' : 'down';
+  const pctTxt = (panel.pct_chg >= 0 ? '+' : '') + panel.pct_chg.toFixed(0) + '%';
+  hdr.append('div').attr('class','pct ' + pctCls).text(pctTxt);
+
+  cell.append('div').attr('class','rng')
+      .text(`${fmt(panel.ymin)}–${fmt(panel.ymax)} kids`);
+
+  const svg = cell.append('svg').attr('viewBox', `0 0 ${W} ${H}`).attr('width','100%').attr('height',H);
+
+  const y = d3.scaleLinear()
+    .domain([panel.ymin * 0.95, panel.ymax * 1.05])
+    .range([H - M.b, M.t]);
+
+  // Zero baseline reference (only if range crosses zero — these never do, but draw the lower bound)
+  // X-axis ticks (years)
+  const tickYears = [P.x_min, 2014, 2019, P.x_max];
+  svg.append('g').selectAll('text').data(tickYears).join('text')
+    .attr('x', d => x(d))
+    .attr('y', H - 4)
+    .attr('text-anchor', d => d === P.x_min ? 'start' : (d === P.x_max ? 'end' : 'middle'))
+    .style('font-size', '9.5px')
+    .style('fill', '#9D958F')
+    .text(d => String(d).slice(2));
+
+  // Line
+  const line = d3.line()
+    .x(d => x(d.year))
+    .y(d => y(d.v))
+    .curve(d3.curveMonotoneX);
+
+  const colr = panel.is_borough ? '#0BB4FF' : '#3D3733';
+  svg.append('path').datum(panel.series)
+    .attr('fill', 'none')
+    .attr('stroke', colr)
+    .attr('stroke-width', 1.6)
+    .attr('d', line);
+
+  // Endpoint dots
+  svg.append('circle').attr('cx', x(panel.series[0].year)).attr('cy', y(panel.series[0].v))
+    .attr('r', 2.2).attr('fill', colr);
+  svg.append('circle').attr('cx', x(panel.series[panel.series.length-1].year))
+    .attr('cy', y(panel.series[panel.series.length-1].v))
+    .attr('r', 2.4).attr('fill', colr);
+});
+</script>
+</body>
+</html>

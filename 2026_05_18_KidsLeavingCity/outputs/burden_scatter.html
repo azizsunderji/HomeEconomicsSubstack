@@ -1,0 +1,184 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Housing burden vs kid population change</title>
+<style>
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Regular.otf') format('opentype'); font-weight:400; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Medium.otf') format('opentype'); font-weight:500; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Bold.otf') format('opentype'); font-weight:700; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Light.otf') format('opentype'); font-weight:300; }
+body { margin:0; background:#fff; font-family:'ABC Oracle Edu',sans-serif; }
+svg { display:block; margin:20px auto; }
+.tooltip { position:absolute; pointer-events:none; background:rgba(61,55,51,0.95); color:#F6F7F3; padding:8px 12px; font-size:13px; border-radius:4px; font-family:'ABC Oracle Edu',sans-serif; max-width: 280px; }
+</style></head><body>
+<svg id="chart" viewBox="0 0 1920 987" xmlns="http://www.w3.org/2000/svg"></svg>
+<div class="tooltip" style="display:none"></div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const D = [{"fips": "04013", "name": "Maricopa County", "msa": "Phoenix", "burden_2011": 38.720461528481366, "burden_2023": 32.26147204286665, "burden_delta": -6.458989485614715, "delta_kids_pct": 1.1334948577624913, "pop_2011": 1003357}, {"fips": "06037", "name": "Los Angeles County", "msa": "Los Angeles", "burden_2011": 52.346725711158015, "burden_2023": 46.676935686306834, "burden_delta": -5.669790024851181, "delta_kids_pct": -17.878426295846854, "pop_2011": 2368374}, {"fips": "06059", "name": "Orange County", "msa": "Los Angeles", "burden_2011": 46.9110322554758, "burden_2023": 42.25465832684716, "burden_delta": -4.656373928628639, "delta_kids_pct": -12.26014684608456, "pop_2011": 732740}, {"fips": "10003", "name": "New Castle County", "msa": "Philadelphia", "burden_2011": 34.525884058410234, "burden_2023": 26.924505230741364, "burden_delta": -7.601378827668871, "delta_kids_pct": -0.9090174531351004, "pop_2011": 123760}, {"fips": "11001", "name": "District of Columbia", "msa": "Washington", "burden_2011": 42.10666749162793, "burden_2023": 34.22522714695999, "burden_delta": -7.881440344667943, "delta_kids_pct": 24.963665238943165, "pop_2011": 103895}, {"fips": "12011", "name": "Broward County", "msa": "Miami", "burden_2011": 50.14497323095565, "burden_2023": 46.72427262290516, "burden_delta": -3.4207006080504883, "delta_kids_pct": 5.164131507681406, "pop_2011": 395110}, {"fips": "12099", "name": "Palm Beach County", "msa": "Miami", "burden_2011": 46.03178998670802, "burden_2023": 40.30389174552907, "burden_delta": -5.7278982411789485, "delta_kids_pct": 9.961490900043447, "pop_2011": 269287}, {"fips": "13015", "name": "Bartow County", "msa": "Atlanta", "burden_2011": null, "burden_2023": 30.184444227578805, "burden_delta": null, "delta_kids_pct": 0.6382251263153895, "pop_2011": 26323}, {"fips": "13045", "name": "Carroll County", "msa": "Atlanta", "burden_2011": null, "burden_2023": 31.57979003224995, "burden_delta": null, "delta_kids_pct": 9.812161045864311, "pop_2011": 27843}, {"fips": "13057", "name": "Cherokee County", "msa": "Atlanta", "burden_2011": 35.712879732301026, "burden_2023": 25.805020408968115, "burden_delta": -9.90785932333291, "delta_kids_pct": 7.63044065963774, "pop_2011": 59184}, {"fips": "13063", "name": "Clayton County", "msa": "Atlanta", "burden_2011": 47.20718065839073, "burden_2023": 44.71981314494668, "burden_delta": -2.487367513444056, "delta_kids_pct": 1.517493138639452, "pop_2011": 75058}, {"fips": "13067", "name": "Cobb County", "msa": "Atlanta", "burden_2011": 35.98333267817131, "burden_2023": 28.743893574942103, "burden_delta": -7.239439103229206, "delta_kids_pct": -2.1219466504691784, "pop_2011": 176159}, {"fips": "13077", "name": "Coweta County", "msa": "Atlanta", "burden_2011": null, "burden_2023": 29.023429913307552, "burden_delta": null, "delta_kids_pct": 2.572800183976773, "pop_2011": 34787}, {"fips": "13089", "name": "DeKalb County", "msa": "Atlanta", "burden_2011": 42.748811441593645, "burden_2023": 37.50268379130839, "burden_delta": -5.24612765028526, "delta_kids_pct": 3.030029161545321, "pop_2011": 165972}, {"fips": "13097", "name": "Douglas County", "msa": "Atlanta", "burden_2011": null, "burden_2023": 28.722374888725472, "burden_delta": null, "delta_kids_pct": 1.3640538058451732, "pop_2011": 37022}, {"fips": "13113", "name": "Fayette County", "msa": "Atlanta", "burden_2011": null, "burden_2023": 31.73683736025965, "burden_delta": null, "delta_kids_pct": -0.2566076469078778, "pop_2011": 27279}, {"fips": "13117", "name": "Forsyth County", "msa": "Atlanta", "burden_2011": null, "burden_2023": 23.761006713673627, "burden_delta": null, "delta_kids_pct": 26.381276035957026, "pop_2011": 54732}, {"fips": "13121", "name": "Fulton County", "msa": "Atlanta", "burden_2011": 41.02564827085388, "burden_2023": 36.51292163152048, "burden_delta": -4.512726639333394, "delta_kids_pct": -0.7934666190646198, "pop_2011": 224080}, {"fips": "13135", "name": "Gwinnett County", "msa": "Atlanta", "burden_2011": 41.191886346920604, "burden_2023": 36.90566882565663, "burden_delta": -4.286217521263971, "delta_kids_pct": 6.865708234876378, "pop_2011": 236567}, {"fips": "13151", "name": "Henry County", "msa": "Atlanta", "burden_2011": 36.67533834146912, "burden_2023": 33.6016669323435, "burden_delta": -3.073671409125616, "delta_kids_pct": 8.21790067987996, "pop_2011": 58981}, {"fips": "13223", "name": "Paulding County", "msa": "Atlanta", "burden_2011": null, "burden_2023": 27.34678174762478, "burden_delta": null, "delta_kids_pct": 10.561405988644662, "pop_2011": 42447}, {"fips": "17031", "name": "Cook County", "msa": "Chicago", "burden_2011": 45.138111702714646, "burden_2023": 35.822429423339, "burden_delta": -9.315682279375643, "delta_kids_pct": -13.753615450379478, "pop_2011": 1221148}, {"fips": "17043", "name": "DuPage County", "msa": "Chicago", "burden_2011": 38.96349306008497, "burden_2023": 27.81522749984115, "burden_delta": -11.14826556024382, "delta_kids_pct": -9.924923393480354, "pop_2011": 225503}, {"fips": "17089", "name": "Kane County", "msa": "Chicago", "burden_2011": null, "burden_2023": 28.15648434174189, "burden_delta": null, "delta_kids_pct": -19.341282516308908, "pop_2011": 147772}, {"fips": "17093", "name": "Kendall County", "msa": "Chicago", "burden_2011": null, "burden_2023": 28.45176856193381, "burden_delta": null, "delta_kids_pct": 3.410535625449118, "pop_2011": 36182}, {"fips": "17097", "name": "Lake County", "msa": "Chicago", "burden_2011": 39.5352683019908, "burden_2023": 25.699732556267257, "burden_delta": -13.83553574572354, "delta_kids_pct": -13.936875401361846, "pop_2011": 188421}, {"fips": "17111", "name": "McHenry County", "msa": "Chicago", "burden_2011": null, "burden_2023": 25.64909987523023, "burden_delta": null, "delta_kids_pct": -14.7980968647066, "pop_2011": 81970}, {"fips": "17197", "name": "Will County", "msa": "Chicago", "burden_2011": null, "burden_2023": 26.35946722295345, "burden_delta": null, "delta_kids_pct": -16.139981212665365, "pop_2011": 192683}, {"fips": "18089", "name": "Lake County", "msa": "Chicago", "burden_2011": 32.5478058521987, "burden_2023": 28.820002618143736, "burden_delta": -3.727803234054964, "delta_kids_pct": -8.946918833475703, "pop_2011": 125261}, {"fips": "18127", "name": "Porter County", "msa": "Chicago", "burden_2011": 26.540529708426572, "burden_2023": 26.804748062015506, "burden_delta": 0.2642183535889302, "delta_kids_pct": -7.211025940403067, "pop_2011": 39398}, {"fips": "24015", "name": "Cecil County", "msa": "Philadelphia", "burden_2011": null, "burden_2023": 23.753869010771325, "burden_delta": null, "delta_kids_pct": -6.617529242108637, "pop_2011": 24964}, {"fips": "24017", "name": "Charles County", "msa": "Washington", "burden_2011": 37.07045686875836, "burden_2023": 32.39560153978592, "burden_delta": -4.674855328972434, "delta_kids_pct": 5.548667079975202, "pop_2011": 38712}, {"fips": "24021", "name": "Frederick County", "msa": "Washington", "burden_2011": 35.3118818255241, "burden_2023": 25.630204174746208, "burden_delta": -9.681677650777887, "delta_kids_pct": 17.395438876530424, "pop_2011": 58889}, {"fips": "24031", "name": "Montgomery County", "msa": "Washington", "burden_2011": 37.01042255200629, "burden_2023": 32.04987442722908, "burden_delta": -4.960548124777212, "delta_kids_pct": 2.9888120466129475, "pop_2011": 236415}, {"fips": "24033", "name": "Prince George's County", "msa": "Washington", "burden_2011": 44.51367149905277, "burden_2023": 36.90123532307442, "burden_delta": -7.612436175978352, "delta_kids_pct": 2.849576063756878, "pop_2011": 204276}, {"fips": "34003", "name": "Bergen County", "msa": "New York", "burden_2011": 44.92283835288842, "burden_2023": 36.82451045660109, "burden_delta": -8.09832789628733, "delta_kids_pct": -1.029481039491246, "pop_2011": 203792}, {"fips": "34005", "name": "Burlington County", "msa": "Philadelphia", "burden_2011": 40.13658644727443, "burden_2023": 31.775320073806583, "burden_delta": -8.36126637346785, "delta_kids_pct": -6.12555336700665, "pop_2011": 102554}, {"fips": "34007", "name": "Camden County", "msa": "Philadelphia", "burden_2011": 43.96398368866143, "burden_2023": 36.51963268532971, "burden_delta": -7.444351003331718, "delta_kids_pct": -2.409883862981122, "pop_2011": 122786}, {"fips": "34013", "name": "Essex County", "msa": "New York", "burden_2011": 52.93959109923397, "burden_2023": 43.137437381863926, "burden_delta": -9.802153717370048, "delta_kids_pct": 6.509240140141694, "pop_2011": 193233}, {"fips": "34015", "name": "Gloucester County", "msa": "Philadelphia", "burden_2011": null, "burden_2023": 32.91460005410767, "burden_delta": null, "delta_kids_pct": -6.109510086455332, "pop_2011": 69400}, {"fips": "34017", "name": "Hudson County", "msa": "New York", "burden_2011": 48.56173122839228, "burden_2023": 42.56840145941098, "burden_delta": -5.9933297689813045, "delta_kids_pct": 5.744621904740511, "pop_2011": 133551}, {"fips": "34019", "name": "Hunterdon County", "msa": "New York", "burden_2011": 37.34133494516881, "burden_2023": 26.08112436934412, "burden_delta": -11.260210575824694, "delta_kids_pct": -14.323461789231668, "pop_2011": 29141}, {"fips": "34023", "name": "Middlesex County", "msa": "New York", "burden_2011": 44.86280286706829, "burden_2023": 33.9210793947698, "burden_delta": -10.941723472298492, "delta_kids_pct": 1.4137927303026696, "pop_2011": 184822}, {"fips": "34025", "name": "Monmouth County", "msa": "New York", "burden_2011": 45.87110547322175, "burden_2023": 33.39834128772278, "burden_delta": -12.472764185498969, "delta_kids_pct": -9.576265413175284, "pop_2011": 146790}, {"fips": "34027", "name": "Morris County", "msa": "New York", "burden_2011": 40.423454041173486, "burden_2023": 28.60974613119873, "burden_delta": -11.81370790997476, "delta_kids_pct": -8.077720207253886, "pop_2011": 115800}, {"fips": "34029", "name": "Ocean County", "msa": "New York", "burden_2011": 46.684161634928, "burden_2023": 36.80932589458445, "burden_delta": -9.874835740343556, "delta_kids_pct": 22.374241030358785, "pop_2011": 135875}, {"fips": "34031", "name": "Passaic County", "msa": "New York", "burden_2011": 54.8259045026653, "burden_2023": 43.12065072123139, "burden_delta": -11.70525378143391, "delta_kids_pct": -0.4147072086581202, "pop_2011": 124184}, {"fips": "34035", "name": "Somerset County", "msa": "New York", "burden_2011": 39.571537601391526, "burden_2023": 27.25176405478947, "burden_delta": -12.319773546602056, "delta_kids_pct": -7.848677301595239, "pop_2011": 79988}, {"fips": "34037", "name": "Sussex County", "msa": "New York", "burden_2011": 43.91467079668861, "burden_2023": 30.84322341787481, "burden_delta": -13.071447378813795, "delta_kids_pct": -16.6059829308788, "pop_2011": 34331}, {"fips": "34039", "name": "Union County", "msa": "New York", "burden_2011": 48.53915140304226, "burden_2023": 36.87521897251926, "burden_delta": -11.663932430523005, "delta_kids_pct": 6.276364859081738, "pop_2011": 130856}, {"fips": "36005", "name": "Bronx County", "msa": "New York", "burden_2011": 58.069460673458416, "burden_2023": 55.318112359198814, "burden_delta": -2.7513483142596016, "delta_kids_pct": -9.444335522661175, "pop_2011": 367236}, {"fips": "36047", "name": "Kings County", "msa": "New York", "burden_2011": 53.4126932404817, "burden_2023": 45.78550986594367, "burden_delta": -7.627183374538035, "delta_kids_pct": -6.46299880348736, "pop_2011": 600913}, {"fips": "36059", "name": "Nassau County", "msa": "New York", "burden_2011": 45.87228509577811, "burden_2023": 33.755924302125536, "burden_delta": -12.116360793652577, "delta_kids_pct": -4.106863489714178, "pop_2011": 308094}, {"fips": "36061", "name": "New York County", "msa": "New York", "burden_2011": 40.89781116141673, "burden_2023": 41.86302102869314, "burden_delta": 0.9652098672764068, "delta_kids_pct": -6.785056052484739, "pop_2011": 236564}, {"fips": "36081", "name": "Queens County", "msa": "New York", "burden_2011": 50.29299615167211, "burden_2023": 45.01237214159322, "burden_delta": -5.280624010078888, "delta_kids_pct": -5.698620605232809, "pop_2011": 465639}, {"fips": "36085", "name": "Richmond County", "msa": "New York", "burden_2011": 42.961900005689394, "burden_2023": 43.59549728316303, "burden_delta": 0.6335972774736334, "delta_kids_pct": -2.6892540620384047, "pop_2011": 108320}, {"fips": "36087", "name": "Rockland County", "msa": "New York", "burden_2011": 45.23399933676007, "burden_2023": 39.913620872017866, "burden_delta": -5.320378464742205, "delta_kids_pct": 19.958854752730705, "pop_2011": 87981}, {"fips": "36103", "name": "Suffolk County", "msa": "New York", "burden_2011": 46.46529928704404, "burden_2023": 35.84535124876885, "burden_delta": -10.61994803827519, "delta_kids_pct": -10.613394575205568, "pop_2011": 351829}, {"fips": "36119", "name": "Westchester County", "msa": "New York", "burden_2011": null, "burden_2023": 37.296701428402976, "burden_delta": null, "delta_kids_pct": -7.7979098385999635, "pop_2011": 226394}, {"fips": "37071", "name": "Gaston County", "msa": "Charlotte", "burden_2011": null, "burden_2023": 30.66945030256144, "burden_delta": null, "delta_kids_pct": 9.425634948202935, "pop_2011": 48941}, {"fips": "37119", "name": "Mecklenburg County", "msa": "Charlotte", "burden_2011": 39.64643821861432, "burden_2023": 33.39810834049871, "burden_delta": -6.248329878115612, "delta_kids_pct": 13.50810098995738, "pop_2011": 237687}, {"fips": "37159", "name": "Rowan County", "msa": "Charlotte", "burden_2011": 34.61943319838057, "burden_2023": 25.202382770734687, "burden_delta": -9.417050427645885, "delta_kids_pct": 3.784254023488473, "pop_2011": 32186}, {"fips": "42017", "name": "Bucks County", "msa": "Philadelphia", "burden_2011": 38.39262962735157, "burden_2023": 25.544721024434864, "burden_delta": -12.847908602916704, "delta_kids_pct": -9.550090323314794, "pop_2011": 140606}, {"fips": "42029", "name": "Chester County", "msa": "Philadelphia", "burden_2011": 34.59119149523678, "burden_2023": 25.310795054828823, "burden_delta": -9.280396440407957, "delta_kids_pct": -2.597941837366073, "pop_2011": 122828}, {"fips": "42045", "name": "Delaware County", "msa": "Philadelphia", "burden_2011": 41.49993031913834, "burden_2023": 31.28299919427461, "burden_delta": -10.216931124863734, "delta_kids_pct": -0.8188570185524722, "pop_2011": 128716}, {"fips": "42091", "name": "Montgomery County", "msa": "Philadelphia", "burden_2011": 35.30143656515657, "burden_2023": 28.09702457178243, "burden_delta": -7.204411993374141, "delta_kids_pct": 0.5032867144368726, "pop_2011": 182401}, {"fips": "42101", "name": "Philadelphia County", "msa": "Philadelphia", "burden_2011": 43.96266973296811, "burden_2023": 39.40548446842136, "burden_delta": -4.557185264546746, "delta_kids_pct": -5.15911576248227, "pop_2011": 344749}, {"fips": "48039", "name": "Brazoria County", "msa": "Houston", "burden_2011": 26.470420986788483, "burden_2023": 31.48443263981113, "burden_delta": 5.014011653022646, "delta_kids_pct": 17.539246155072117, "pop_2011": 87843}, {"fips": "48085", "name": "Collin County", "msa": "Dallas", "burden_2011": 29.88294666012477, "burden_2023": 32.07589586799155, "burden_delta": 2.192949207866782, "delta_kids_pct": 30.935301840693494, "pop_2011": 230022}, {"fips": "48113", "name": "Dallas County", "msa": "Dallas", "burden_2011": 38.6030531399098, "burden_2023": 39.61544102306693, "burden_delta": 1.0123878831571318, "delta_kids_pct": -1.3211428294450351, "pop_2011": 660186}, {"fips": "48121", "name": "Denton County", "msa": "Dallas", "burden_2011": 29.381314362511716, "burden_2023": 32.01951962231393, "burden_delta": 2.6382052598022163, "delta_kids_pct": 26.588069586908368, "pop_2011": 186012}, {"fips": "48139", "name": "Ellis County", "msa": "Dallas", "burden_2011": 31.262658954709654, "burden_2023": 31.45702065652954, "burden_delta": 0.1943617018198864, "delta_kids_pct": 39.74693481724353, "pop_2011": 43309}, {"fips": "48157", "name": "Fort Bend County", "msa": "Houston", "burden_2011": 28.944435514118844, "burden_2023": 31.45166943152877, "burden_delta": 2.507233917409927, "delta_kids_pct": 41.18637820058412, "pop_2011": 176335}, {"fips": "48167", "name": "Galveston County", "msa": "Houston", "burden_2011": 32.41669916580266, "burden_2023": 34.226233593138815, "burden_delta": 1.809534427336153, "delta_kids_pct": 13.932638720620306, "pop_2011": 74286}, {"fips": "48201", "name": "Harris County", "msa": "Houston", "burden_2011": 36.8893966708164, "burden_2023": 37.024205188644096, "burden_delta": 0.1348085178276932, "delta_kids_pct": 9.719798599855158, "pop_2011": 1159880}, {"fips": "48209", "name": "Hays County", "msa": "Austin", "burden_2011": null, "burden_2023": 35.82214765100672, "burden_delta": null, "delta_kids_pct": 60.2801751094434, "pop_2011": 39975}, {"fips": "48251", "name": "Johnson County", "msa": "Dallas", "burden_2011": 21.826737216158698, "burden_2023": 32.16372441805968, "burden_delta": 10.336987201900982, "delta_kids_pct": 30.405983428250188, "pop_2011": 40913}, {"fips": "48257", "name": "Kaufman County", "msa": "Dallas", "burden_2011": null, "burden_2023": 32.71569417270879, "burden_delta": null, "delta_kids_pct": 90.4768264992654, "pop_2011": 29948}, {"fips": "48339", "name": "Montgomery County", "msa": "Houston", "burden_2011": null, "burden_2023": 29.729184527711936, "burden_delta": null, "delta_kids_pct": 47.5050782279698, "pop_2011": 128982}, {"fips": "48367", "name": "Parker County", "msa": "Dallas", "burden_2011": null, "burden_2023": 32.70811786772311, "burden_delta": null, "delta_kids_pct": 47.58960845917368, "pop_2011": 29601}, {"fips": "48439", "name": "Tarrant County", "msa": "Dallas", "burden_2011": null, "burden_2023": 37.494615560614406, "burden_delta": null, "delta_kids_pct": 7.443433181968778, "pop_2011": 513110}, {"fips": "48453", "name": "Travis County", "msa": "Austin", "burden_2011": null, "burden_2023": 36.42763531189901, "burden_delta": null, "delta_kids_pct": 6.39471089625342, "pop_2011": 251536}, {"fips": "48491", "name": "Williamson County", "msa": "Austin", "burden_2011": 29.430025837800315, "burden_2023": 30.47628854969984, "burden_delta": 1.0462627118995265, "delta_kids_pct": 35.70103323630082, "pop_2011": 125044}, {"fips": "51013", "name": "Arlington County", "msa": "Washington", "burden_2011": 31.685608806700944, "burden_2023": 30.900993185765824, "burden_delta": -0.7846156209351207, "delta_kids_pct": 22.451571927596063, "pop_2011": 34639}, {"fips": "51107", "name": "Loudoun County", "msa": "Washington", "burden_2011": null, "burden_2023": 20.896154380119395, "burden_delta": null, "delta_kids_pct": 14.252435408725116, "pop_2011": 99162}, {"fips": "51510", "name": "Alexandria city", "msa": "Washington", "burden_2011": 32.75524431702465, "burden_2023": 33.75254031513104, "burden_delta": 0.9972959981063952, "delta_kids_pct": 13.0038751947585, "pop_2011": 25031}];
+const BG = '#F6F7F3', TEXT = '#3D3733', SUBTEXT='#7F7570', GRID = '#e1e2e3';
+const W = 1920, H = 987, PAD = 40;
+const svg = d3.select('#chart');
+svg.append('rect').attr('width', W).attr('height', H).attr('fill', BG);
+
+// Title row
+svg.append('text').attr('x', PAD).attr('y', PAD + 32)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',30).attr('font-weight',700).attr('fill',TEXT)
+  .text('Housing burden and the urban child population');
+svg.append('text').attr('x', PAD).attr('y', PAD + 32 + 28)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',17).attr('font-weight',400).attr('fill',TEXT)
+  .text('Each bubble = one county across our 12 MSAs. Burden = share of households (owners + renters) paying ≥30% of income on housing.');
+
+// Color scale (for chart 2, by burden level 2023)
+const burdenExtent = d3.extent(D, d => d.burden_2023);
+const colorScale = d3.scaleSequential(d3.interpolate('#BCE8FF', '#003D66')).domain(burdenExtent);
+
+// Common bubble-size scale
+const popExtent = d3.extent(D, d => d.pop_2011);
+const rScale = d3.scaleSqrt().domain(popExtent).range([3, 28]);
+
+function drawPanel(x0, y0, pw, ph, xVal, xLabel, xExtent, colorFn, panelTitle, panelSubtitle, yRange) {
+  // Local panel scales
+  const chartLeft = x0 + 80, chartRight = x0 + pw - 30;
+  const chartTop = y0 + 80, chartBottom = y0 + ph - 60;
+
+  const xS = d3.scaleLinear().domain(xExtent).nice().range([chartLeft, chartRight]);
+  const yS = d3.scaleLinear().domain(yRange).nice().range([chartBottom, chartTop]);
+
+  // Panel title
+  svg.append('text').attr('x', x0 + 30).attr('y', y0 + 30)
+    .attr('font-family','ABC Oracle Edu').attr('font-size',20).attr('font-weight',700).attr('fill',TEXT)
+    .text(panelTitle);
+  svg.append('text').attr('x', x0 + 30).attr('y', y0 + 52)
+    .attr('font-family','ABC Oracle Edu').attr('font-size',13).attr('font-weight',400).attr('fill',SUBTEXT)
+    .text(panelSubtitle);
+
+  // Gridlines
+  yS.ticks(6).forEach(t => {
+    svg.append('line').attr('x1', chartLeft).attr('x2', chartRight).attr('y1', yS(t)).attr('y2', yS(t))
+      .attr('stroke', t === 0 ? TEXT : GRID).attr('stroke-width', t === 0 ? 1 : 0.5);
+    svg.append('text').attr('x', chartLeft - 8).attr('y', yS(t)).attr('text-anchor','end').attr('dy','0.32em')
+      .attr('font-family','ABC Oracle Edu').attr('font-size',13).attr('font-weight',300).attr('fill','#333')
+      .text(t > 0 ? '+' + t + '%' : t + '%');
+  });
+  xS.ticks(6).forEach(t => {
+    svg.append('line').attr('x1', xS(t)).attr('x2', xS(t)).attr('y1', chartBottom).attr('y2', chartBottom + 5)
+      .attr('stroke', TEXT).attr('stroke-width', 0.5);
+    svg.append('text').attr('x', xS(t)).attr('y', chartBottom + 20).attr('text-anchor','middle')
+      .attr('font-family','ABC Oracle Edu').attr('font-size',13).attr('font-weight',300).attr('fill','#333')
+      .text(t.toFixed(t === 0 ? 0 : 0) + (xLabel.includes('change') ? 'pp' : '%'));
+  });
+
+  // X axis title
+  svg.append('text').attr('x', (chartLeft + chartRight)/2).attr('y', chartBottom + 50)
+    .attr('text-anchor','middle')
+    .attr('font-family','ABC Oracle Edu').attr('font-size',14).attr('font-weight',500).attr('fill',TEXT)
+    .text(xLabel);
+
+  // Y axis title (left)
+  svg.append('text').attr('transform', `translate(${x0 + 22}, ${(chartTop + chartBottom)/2}) rotate(-90)`)
+    .attr('text-anchor','middle')
+    .attr('font-family','ABC Oracle Edu').attr('font-size',14).attr('font-weight',500).attr('fill',TEXT)
+    .text('Change in under-18 population (2011 → 2024)');
+
+  // Reference line at 0
+  if (xExtent[0] < 0 && xExtent[1] > 0) {
+    svg.append('line').attr('x1', xS(0)).attr('x2', xS(0)).attr('y1', chartTop).attr('y2', chartBottom)
+      .attr('stroke', TEXT).attr('stroke-width', 1);
+  }
+
+  // Bubbles
+  const tip = d3.select('.tooltip');
+  D.forEach(p => {
+    const x = xVal(p);
+    if (x === null || x === undefined || isNaN(x)) return;
+    svg.append('circle')
+      .attr('cx', xS(x)).attr('cy', yS(p.delta_kids_pct))
+      .attr('r', rScale(p.pop_2011))
+      .attr('fill', colorFn(p))
+      .attr('fill-opacity', 0.7)
+      .attr('stroke', TEXT).attr('stroke-width', 0.5)
+      .style('cursor', 'pointer')
+      .on('mousemove', e => {
+        tip.style('display','block').style('left', (e.pageX + 12) + 'px').style('top', (e.pageY + 12) + 'px')
+          .html(
+            `<b>${p.name}</b><br>` +
+            `<span style="opacity:0.7">${p.msa}</span><br>` +
+            `Δ under-18: ${p.delta_kids_pct > 0 ? '+' : ''}${p.delta_kids_pct.toFixed(1)}%<br>` +
+            `Burden 2023: ${p.burden_2023.toFixed(1)}%<br>` +
+            (p.burden_delta !== null ? `Δ burden 2011→23: ${p.burden_delta > 0 ? '+' : ''}${p.burden_delta.toFixed(1)}pp<br>` : '') +
+            `2011 under-18 pop: ${p.pop_2011.toLocaleString()}`
+          );
+      })
+      .on('mouseout', () => tip.style('display','none'));
+  });
+}
+
+// Panel 1: Δ kids vs burden LEVEL in 2023
+drawPanel(
+  0, 100, W/2, H - 160,
+  d => d.burden_2023,
+  'Burden level in 2023 (% households paying ≥30% of income)',
+  d3.extent(D, d => d.burden_2023),
+  d => '#0BB4FF',
+  'Burden LEVEL vs kid population change',
+  'Are high-burden counties losing more kids?',
+  d3.extent(D, d => d.delta_kids_pct),
+);
+
+// Panel 2: Δ kids vs change in burden, colored by 2023 level
+drawPanel(
+  W/2, 100, W/2, H - 160,
+  d => d.burden_delta,
+  'Change in burden 2011 → 2023 (percentage points)',
+  d3.extent(D.filter(d => d.burden_delta !== null), d => d.burden_delta),
+  d => colorScale(d.burden_2023),
+  'Burden CHANGE vs kid population change',
+  'Color: 2023 burden level (light = low, dark = high)',
+  d3.extent(D, d => d.delta_kids_pct),
+);
+
+// Color legend for panel 2
+const lgX = W/2 + 80, lgY = H - 50;
+const lgW = 200, lgH = 12;
+const stops = 30;
+for (let i = 0; i < stops; i++) {
+  const t = i / (stops - 1);
+  const v = burdenExtent[0] + t * (burdenExtent[1] - burdenExtent[0]);
+  svg.append('rect').attr('x', lgX + t * lgW).attr('y', lgY)
+    .attr('width', lgW / stops + 1).attr('height', lgH).attr('fill', colorScale(v));
+}
+svg.append('text').attr('x', lgX).attr('y', lgY + lgH + 14)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',12).attr('font-weight',300).attr('fill',TEXT)
+  .text(burdenExtent[0].toFixed(0) + '%');
+svg.append('text').attr('x', lgX + lgW).attr('y', lgY + lgH + 14)
+  .attr('text-anchor','end')
+  .attr('font-family','ABC Oracle Edu').attr('font-size',12).attr('font-weight',300).attr('fill',TEXT)
+  .text(burdenExtent[1].toFixed(0) + '%');
+svg.append('text').attr('x', lgX + lgW/2).attr('y', lgY - 4)
+  .attr('text-anchor','middle')
+  .attr('font-family','ABC Oracle Edu').attr('font-size',12).attr('font-weight',500).attr('fill',TEXT)
+  .text('2023 burden level');
+
+// Bubble-size legend
+const blX = 100, blY = H - 50;
+[3, 14, 28].forEach((r, i) => {
+  const xb = blX + i * 60;
+  svg.append('circle').attr('cx', xb).attr('cy', blY).attr('r', r)
+    .attr('fill','none').attr('stroke', TEXT).attr('stroke-width', 0.5);
+  const pop = rScale.invert(r);
+  svg.append('text').attr('x', xb).attr('y', blY + 35).attr('text-anchor','middle')
+    .attr('font-family','ABC Oracle Edu').attr('font-size',11).attr('font-weight',300).attr('fill',TEXT)
+    .text(pop > 1e6 ? (pop/1e6).toFixed(1)+'M' : Math.round(pop/1000) + 'k');
+});
+svg.append('text').attr('x', blX - 60).attr('y', blY + 4)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',12).attr('font-weight',500).attr('fill',TEXT)
+  .text('2011 under-18 pop:');
+
+// Source
+svg.append('text').attr('x', PAD).attr('y', H - PAD - 16)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',12).attr('font-weight',300).attr('fill',TEXT)
+  .text('Source: ACS 5-year PUMS (housing burden, 2007-2011 and 2019-2023 windows); Census PEP for under-18 population (2011, 2024).');
+svg.append('text').attr('x', PAD).attr('y', H - PAD)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',12).attr('font-weight',300).attr('fill',SUBTEXT)
+  .text('Burden = % of households (owners + renters combined) paying ≥30% of income on housing. Counties shown: ' + D.length + ' (counties where PUMS COUNTYFIP populated).');
+</script>
+</body></html>

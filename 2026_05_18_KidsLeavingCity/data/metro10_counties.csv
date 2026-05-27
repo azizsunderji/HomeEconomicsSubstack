@@ -1,0 +1,127 @@
+county_fips,county_name,state_name,cbsa_code,cbsa_title,central_or_outlying,in_modern_msa
+13013,Barrow County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13035,Butts County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13045,Carroll County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13063,Clayton County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13077,Coweta County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13085,Dawson County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13089,DeKalb County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13097,Douglas County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13113,Fayette County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13117,Forsyth County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13121,Fulton County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13135,Gwinnett County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13149,Heard County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13151,Henry County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13159,Jasper County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13187,Lumpkin County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13199,Meriwether County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13211,Morgan County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13217,Newton County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13227,Pickens County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13231,Pike County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13247,Rockdale County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13255,Spalding County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13297,Walton County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13015,Bartow County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13057,Cherokee County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13067,Cobb County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+13143,Haralson County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Outlying,True
+13223,Paulding County,Georgia,12060,"Atlanta-Sandy Springs-Roswell, GA",Central,True
+17031,Cook County,Illinois,16980,"Chicago-Naperville-Elgin, IL-IN",Central,True
+17043,DuPage County,Illinois,16980,"Chicago-Naperville-Elgin, IL-IN",Central,True
+17063,Grundy County,Illinois,16980,"Chicago-Naperville-Elgin, IL-IN",Outlying,True
+17111,McHenry County,Illinois,16980,"Chicago-Naperville-Elgin, IL-IN",Central,True
+17197,Will County,Illinois,16980,"Chicago-Naperville-Elgin, IL-IN",Central,True
+17037,DeKalb County,Illinois,16980,"Chicago-Naperville-Elgin, IL-IN",Outlying,True
+17089,Kane County,Illinois,16980,"Chicago-Naperville-Elgin, IL-IN",Central,True
+17093,Kendall County,Illinois,16980,"Chicago-Naperville-Elgin, IL-IN",Central,True
+17097,Lake County,Illinois,16980,"Chicago-Naperville-Elgin, IL-IN",Central,True
+18073,Jasper County,Indiana,16980,"Chicago-Naperville-Elgin, IL-IN",Outlying,True
+18089,Lake County,Indiana,16980,"Chicago-Naperville-Elgin, IL-IN",Central,True
+18111,Newton County,Indiana,16980,"Chicago-Naperville-Elgin, IL-IN",Outlying,True
+18127,Porter County,Indiana,16980,"Chicago-Naperville-Elgin, IL-IN",Central,True
+48085,Collin County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Central,True
+48113,Dallas County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Central,True
+48121,Denton County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Outlying,True
+48139,Ellis County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Central,True
+48231,Hunt County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Outlying,True
+48257,Kaufman County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Outlying,True
+48397,Rockwall County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Central,True
+48251,Johnson County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Central,True
+48367,Parker County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Outlying,True
+48439,Tarrant County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Central,True
+48497,Wise County,Texas,19100,"Dallas-Fort Worth-Arlington, TX",Outlying,True
+48015,Austin County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Outlying,True
+48039,Brazoria County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Central,True
+48071,Chambers County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Outlying,True
+48157,Fort Bend County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Central,True
+48167,Galveston County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Outlying,True
+48201,Harris County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Central,True
+48291,Liberty County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Outlying,True
+48339,Montgomery County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Outlying,True
+48407,San Jacinto County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Outlying,True
+48473,Waller County,Texas,26420,"Houston-Pasadena-The Woodlands, TX",Central,True
+06059,Orange County,California,31080,"Los Angeles-Long Beach-Anaheim, CA",Central,True
+06037,Los Angeles County,California,31080,"Los Angeles-Long Beach-Anaheim, CA",Central,True
+12011,Broward County,Florida,33100,"Miami-Fort Lauderdale-West Palm Beach, FL",Central,True
+12086,Miami-Dade County,Florida,33100,"Miami-Fort Lauderdale-West Palm Beach, FL",Central,True
+12099,Palm Beach County,Florida,33100,"Miami-Fort Lauderdale-West Palm Beach, FL",Central,True
+34023,Middlesex County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34025,Monmouth County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34029,Ocean County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34035,Somerset County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36059,Nassau County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36103,Suffolk County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34013,Essex County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34019,Hunterdon County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Outlying,True
+34027,Morris County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34037,Sussex County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Outlying,True
+34039,Union County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34003,Bergen County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34017,Hudson County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34031,Passaic County,New Jersey,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36005,Bronx County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36047,Kings County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36061,New York County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36079,Putnam County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36081,Queens County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36085,Richmond County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36087,Rockland County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+36119,Westchester County,New York,35620,"New York-Newark-Jersey City, NY-NJ",Central,True
+34005,Burlington County,New Jersey,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+34007,Camden County,New Jersey,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+34015,Gloucester County,New Jersey,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+42017,Bucks County,Pennsylvania,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+42029,Chester County,Pennsylvania,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+42091,Montgomery County,Pennsylvania,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+42045,Delaware County,Pennsylvania,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+42101,Philadelphia County,Pennsylvania,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+10003,New Castle County,Delaware,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+24015,Cecil County,Maryland,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+34033,Salem County,New Jersey,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Central,True
+04013,Maricopa County,Arizona,38060,"Phoenix-Mesa-Chandler, AZ",Central,True
+04021,Pinal County,Arizona,38060,"Phoenix-Mesa-Chandler, AZ",Central,True
+51013,Arlington County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+51043,Clarke County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+51047,Culpeper County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+51059,Fairfax County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+51061,Fauquier County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+51107,Loudoun County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+51153,Prince William County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+51157,Rappahannock County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+51177,Spotsylvania County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+51179,Stafford County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+51187,Warren County,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+51510,Alexandria city,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+51600,Fairfax city,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+51610,Falls Church city,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+51630,Fredericksburg city,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+51683,Manassas city,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+51685,Manassas Park city,Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+54037,Jefferson County,West Virginia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+24021,Frederick County,Maryland,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+24031,Montgomery County,Maryland,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+11001,District of Columbia,District of Columbia,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True
+24017,Charles County,Maryland,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Outlying,True
+24033,Prince George's County,Maryland,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",Central,True

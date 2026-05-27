@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Where Houston families went, 2011 → 2024</title>
+<style>
+@font-face {
+  font-family: 'ABC Oracle Edu';
+  src: url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'ABC Oracle Edu';
+  src: url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'ABC Oracle Edu';
+  src: url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Light.otf') format('opentype');
+  font-weight: 300;
+}
+body { margin: 0; background: #fff; font-family: 'ABC Oracle Edu', sans-serif; }
+svg { display: block; margin: 20px auto; }
+.tooltip {
+  position: absolute; pointer-events: none;
+  background: rgba(61,55,51,0.95); color: #F6F7F3;
+  padding: 8px 12px; font-size: 13px; border-radius: 4px;
+  font-family: 'ABC Oracle Edu', sans-serif;
+}
+</style>
+</head>
+<body>
+<svg id="chart_combined" viewBox="0 0 1920 987" xmlns="http://www.w3.org/2000/svg"></svg>
+<div class="tooltip" style="display:none"></div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const DATA = [{"name": "Galveston", "full_name": "Galveston County", "fips": "48167", "pop_2011": 74286, "pop_2024": 84636, "delta": 10350, "births": 51753, "aging": 54258, "net_mig": 12855, "has_decomp": true}, {"name": "Brazoria", "full_name": "Brazoria County", "fips": "48039", "pop_2011": 87843, "pop_2024": 103250, "delta": 15407, "births": 61310, "aging": 63156, "net_mig": 17253, "has_decomp": true}, {"name": "Harris", "full_name": "Harris County", "fips": "48201", "pop_2011": 1159880, "pop_2024": 1272618, "delta": 112738, "births": 876894, "aging": 821351, "net_mig": 57195, "has_decomp": true}, {"name": "Montgomery", "full_name": "Montgomery County", "fips": "48339", "pop_2011": 128982, "pop_2024": 190255, "delta": 61273, "births": 98564, "aging": 95197, "net_mig": 57906, "has_decomp": true}, {"name": "Fort Bend", "full_name": "Fort Bend County", "fips": "48157", "pop_2011": 176335, "pop_2024": 248961, "delta": 72626, "births": 120316, "aging": 132598, "net_mig": 84908, "has_decomp": true}, {"name": "Austin", "full_name": "Austin County", "fips": "48015", "pop_2011": 7085, "pop_2024": 7635, "delta": 550, "births": null, "aging": 5254, "net_mig": null, "has_decomp": false}, {"name": "Chambers", "full_name": "Chambers County", "fips": "48071", "pop_2011": 10028, "pop_2024": 15413, "delta": 5385, "births": null, "aging": 7545, "net_mig": null, "has_decomp": false}, {"name": "Liberty", "full_name": "Liberty County", "fips": "48291", "pop_2011": 19242, "pop_2024": 35266, "delta": 16024, "births": null, "aging": 13942, "net_mig": null, "has_decomp": false}, {"name": "San Jacinto", "full_name": "San Jacinto County", "fips": "48407", "pop_2011": 6326, "pop_2024": 6184, "delta": -142, "births": null, "aging": 4750, "net_mig": null, "has_decomp": false}, {"name": "Waller", "full_name": "Waller County", "fips": "48473", "pop_2011": 10764, "pop_2024": 15486, "delta": 4722, "births": null, "aging": 7619, "net_mig": null, "has_decomp": false}];
+const C = {"births": "#67A275", "aging": "#DADFCE", "natural": "#3F6E4B", "mig": "#0BB4FF", "net": "#3D3733", "bg": "#F6F7F3", "text": "#3D3733", "subtext": "#7F7570", "grid": "#e1e2e3"};
+const MSA = "Houston";
+const MSA_FULL = "Houston-The Woodlands-Sugar Land, TX";
+const WIDTH = 960, HEIGHT = 987;
+const PAD = 40;
+
+function fmtCount(v) {
+  const a = Math.abs(v);
+  let s;
+  if (a >= 1_000_000) s = (v / 1_000_000).toFixed(a >= 10_000_000 ? 0 : 1) + 'M';
+  else if (a >= 1000) s = Math.round(v / 1000) + 'k';
+  else s = Math.round(v).toString();
+  return (v > 0 ? '+' : '') + s;
+}
+
+function renderChart(parentSvg, xOffset, title, subtitle, componentsFn, legendItems) {
+  // parentSvg = a d3 selection of the shared SVG. xOffset = horizontal shift.
+  const g = parentSvg.append('g').attr('transform', `translate(${xOffset}, 0)`);
+
+  // Background panel
+  g.append('rect').attr('width', WIDTH).attr('height', HEIGHT).attr('fill', C.bg);
+
+  g.append('text')
+     .attr('x', PAD).attr('y', PAD + 32)
+     .attr('font-family', 'ABC Oracle Edu').attr('font-size', 30).attr('font-weight', 500)
+     .attr('fill', C.text)
+     .text(title);
+
+  g.append('text')
+     .attr('x', PAD).attr('y', PAD + 32 + 30)
+     .attr('font-family', 'ABC Oracle Edu').attr('font-size', 20).attr('font-weight', 400)
+     .attr('fill', C.subtext)
+     .text(subtitle);
+
+  const titleBlockBottom = PAD + 32 + 30 + 65;
+  const sourceTop = HEIGHT - PAD - 60;
+  const xLabelArea = 180;
+  const chartTop = titleBlockBottom;
+  const chartBottom = sourceTop - xLabelArea;
+  const chartLeft = PAD + 90;
+  const chartRight = WIDTH - PAD;
+
+  // Build per-county component arrays via componentsFn
+  const enriched = DATA.map(d => ({
+    ...d,
+    components: d.has_decomp ? componentsFn(d) : [],
+    delta_val: d.delta || 0,
+  }));
+
+  // Y-axis domain — symmetric enough to show all components on both sides
+  const allValues = enriched.flatMap(d => [...d.components.map(c => c.val), d.delta_val]);
+  const dataMin = d3.min(allValues);
+  const dataMax = d3.max(allValues);
+  const yPad = Math.max(Math.abs(dataMin), Math.abs(dataMax)) * 0.05;
+  const y = d3.scaleLinear()
+    .domain([dataMin - yPad, dataMax + yPad])
+    .range([chartBottom, chartTop]);
+
+  const x = d3.scaleBand()
+    .domain(enriched.map(d => d.name))
+    .range([chartLeft, chartRight])
+    .padding(0.25);
+
+  // Gridlines & y-axis labels
+  const yTicks = y.ticks(8);
+  const gridG = g.append('g').attr('class', 'grid-lines');
+  yTicks.forEach(t => {
+    gridG.append('line')
+      .attr('x1', chartLeft - 10).attr('x2', chartRight)
+      .attr('y1', y(t)).attr('y2', y(t))
+      .attr('stroke', t === 0 ? C.text : C.grid)
+      .attr('stroke-width', t === 0 ? 1 : 0.5);
+  });
+
+  const yLabG = g.append('g').attr('class', 'y-axis-labels');
+  yTicks.forEach((t) => {
+    yLabG.append('text')
+      .attr('x', chartLeft - 14).attr('y', y(t))
+      .attr('font-family', 'ABC Oracle Edu').attr('font-size', 18).attr('font-weight', 300)
+      .attr('fill', '#333').attr('text-anchor', 'end').attr('dy', '0.32em')
+      .text(fmtCount(t));
+  });
+
+  g.append('text')
+     .attr('x', chartLeft - 50).attr('y', chartTop - 15)
+     .attr('font-family', 'ABC Oracle Edu').attr('font-size', 15).attr('font-weight', 400)
+     .attr('fill', C.subtext)
+     .text('Children (signed contributions to 2011→2024 Δ)');
+
+  // Bars
+  const seriesG = g.append('g').attr('class', 'data-series');
+  enriched.forEach(d => {
+    const bw = x.bandwidth();
+    if (!d.has_decomp) {
+      const y0 = y(0), yEnd = y(d.delta_val);
+      seriesG.append('rect')
+        .attr('x', x(d.name)).attr('width', bw)
+        .attr('y', Math.min(y0, yEnd)).attr('height', Math.abs(y0 - yEnd))
+        .attr('fill', '#bbb').attr('opacity', 0.5)
+        .attr('data-tip', `${d.full_name} (no births data)\n2011 → 2024: ${d.delta?.toLocaleString()}`);
+      return;
+    }
+    let pos = 0, neg = 0;
+    d.components.forEach(c => {
+      let yTop, yBot;
+      if (c.val >= 0) {
+        yBot = y(pos);
+        pos += c.val;
+        yTop = y(pos);
+      } else {
+        yTop = y(neg);
+        neg += c.val;
+        yBot = y(neg);
+      }
+      seriesG.append('rect')
+        .attr('x', x(d.name)).attr('width', bw)
+        .attr('y', yTop).attr('height', yBot - yTop)
+        .attr('fill', c.color)
+        .attr('data-tip', `${d.full_name}\n${c.label}: ${fmtCount(c.val)}`);
+    });
+    // Net delta marker
+    seriesG.append('line')
+      .attr('x1', x(d.name) - 2).attr('x2', x(d.name) + bw + 2)
+      .attr('y1', y(d.delta_val)).attr('y2', y(d.delta_val))
+      .attr('stroke', C.net).attr('stroke-width', 2);
+  });
+
+  // X-axis labels (rotated)
+  const xLabG = g.append('g').attr('class', 'x-axis-labels');
+  enriched.forEach(d => {
+    xLabG.append('text')
+      .attr('x', x(d.name) + x.bandwidth() / 2).attr('y', chartBottom + 12)
+      .attr('font-family', 'ABC Oracle Edu').attr('font-size', 13).attr('font-weight', 300)
+      .attr('fill', '#333').attr('text-anchor', 'end')
+      .attr('transform', `rotate(-45, ${x(d.name) + x.bandwidth() / 2}, ${chartBottom + 12})`)
+      .text(d.name);
+  });
+
+  // Legend
+  const legend = g.append('g').attr('class', 'legend')
+    .attr('transform', `translate(${chartLeft}, ${sourceTop - 35})`);
+  let lx = 0;
+  legendItems.forEach(it => {
+    if (it.line) {
+      legend.append('line').attr('x1', lx).attr('x2', lx + 16).attr('y1', 6).attr('y2', 6)
+        .attr('stroke', it.color).attr('stroke-width', 2);
+    } else {
+      legend.append('rect').attr('x', lx).attr('y', 0).attr('width', 16).attr('height', 12).attr('fill', it.color);
+    }
+    legend.append('text').attr('x', lx + 22).attr('y', 9)
+      .attr('font-family', 'ABC Oracle Edu').attr('font-size', 14).attr('font-weight', 400)
+      .attr('fill', C.text).text(it.label);
+    lx += 22 + (it.label.length * 8) + 24;
+  });
+
+  // Source
+  g.append('text')
+    .attr('x', PAD).attr('y', HEIGHT - PAD - 18)
+    .attr('font-family', 'ABC Oracle Edu').attr('font-size', 13).attr('font-weight', 200)
+    .attr('fill', C.text)
+    .text('Source: Census PEP (V2019 & V2024); CDC WONDER NCHS Natality (D66, 2007-2024).');
+
+  g.append('text')
+    .attr('x', PAD).attr('y', HEIGHT - PAD - 2)
+    .attr('font-family', 'ABC Oracle Edu').attr('font-size', 13).attr('font-weight', 200)
+    .attr('fill', C.subtext)
+    .text(MSA_FULL);
+}
+
+const parentSvg = d3.select('#chart_combined');
+
+// Left panel: three-component
+renderChart(
+  parentSvg, 0,
+  `Where ${MSA} families went, 2011 → 2024`,
+  'Three components: births, aging-out, net migration',
+  d => [
+    { val:  d.births,   color: C.births, label: 'Births' },
+    { val: -d.aging,    color: C.aging,  label: 'Aging-out' },
+    { val:  d.net_mig,  color: C.mig,    label: 'Net migration' },
+  ],
+  [
+    { label: 'Births to residents', color: C.births },
+    { label: 'Aging out of <18', color: C.aging },
+    { label: 'Net migration', color: C.mig },
+    { label: 'Net Δ marker', color: C.net, line: true },
+  ]
+);
+
+// Right panel: two-component (natural change vs migration)
+renderChart(
+  parentSvg, WIDTH,
+  `${MSA}: natural change vs net migration`,
+  'Births and aging-out merged into one bar',
+  d => [
+    { val: d.births - d.aging, color: C.natural, label: 'Births − aging-out' },
+    { val: d.net_mig,          color: C.mig,     label: 'Net migration' },
+  ],
+  [
+    { label: 'Births − aging-out', color: C.natural },
+    { label: 'Net migration', color: C.mig },
+    { label: 'Net Δ marker', color: C.net, line: true },
+  ]
+);
+
+// Tooltips (delegated)
+const tip = d3.select('.tooltip');
+d3.selectAll('rect[data-tip]')
+  .on('mousemove', function(e) {
+    tip.style('left', (e.pageX + 12) + 'px').style('top', (e.pageY + 12) + 'px')
+       .style('display', 'block')
+       .html(d3.select(this).attr('data-tip').replace(/\n/g, '<br>'));
+  })
+  .on('mouseout', () => tip.style('display', 'none'));
+</script>
+</body>
+</html>

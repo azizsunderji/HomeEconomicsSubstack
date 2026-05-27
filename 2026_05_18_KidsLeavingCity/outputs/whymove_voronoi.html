@@ -1,0 +1,215 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<title>Why NY families with kids leave</title>
+<style>
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Regular.otf') format('opentype'); font-weight:400; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Medium.otf') format('opentype'); font-weight:500; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Bold.otf') format('opentype'); font-weight:700; }
+@font-face { font-family:'ABC Oracle Edu'; src:url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Light.otf') format('opentype'); font-weight:300; }
+body { margin:0; background:#fff; font-family:'ABC Oracle Edu',sans-serif; }
+svg { display:block; margin:20px auto; }
+</style></head><body>
+<svg id="chart" viewBox="0 0 1200 1100" xmlns="http://www.w3.org/2000/svg"></svg>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://unpkg.com/d3-weighted-voronoi@1"></script>
+<script src="https://unpkg.com/d3-voronoi-map@2"></script>
+<script src="https://unpkg.com/d3-voronoi-treemap@1"></script>
+<script>
+const P = {"hierarchy": {"name": "root", "children": [{"name": "Employment", "weight": 118750.2866, "pct_total": 15.64981790400815, "children": [{"code": 4, "label": "New job / transfer", "category": "Employment", "weight": 84384.4994, "pct": 11.120832524633965, "color": "#0099E0"}, {"code": 8, "label": "Other job-related", "category": "Employment", "weight": 19354.55, "pct": 2.550690122831425, "color": "#0099E0"}, {"code": 5, "label": "Lost job / looking", "category": "Employment", "weight": 15011.2372, "pct": 1.978295256542759, "color": "#0099E0"}]}, {"name": "Housing", "weight": 439388.06270000007, "pct_total": 57.90590799677208, "children": [{"code": 10, "label": "Better housing", "category": "Housing", "weight": 140426.5026, "pct": 18.506474868471827, "color": "#0BB4FF"}, {"code": 9, "label": "Wanted to own", "category": "Housing", "weight": 117404.3255, "pct": 15.472436891094631, "color": "#0BB4FF"}, {"code": 13, "label": "Other housing", "category": "Housing", "weight": 60756.36, "pct": 8.006936216610063, "color": "#0BB4FF"}, {"code": 11, "label": "Better neighborhood", "category": "Housing", "weight": 44124.08, "pct": 5.815007584006016, "color": "#0BB4FF"}, {"code": 6, "label": "Easier commute", "category": "Housing", "weight": 39773.1446, "pct": 5.241608153388533, "color": "#0BB4FF"}, {"code": 12, "label": "Cheaper housing", "category": "Housing", "weight": 36903.65, "pct": 4.863444283201, "color": "#0BB4FF"}]}, {"name": "Family", "weight": 157413.2404, "pct_total": 20.745116651700435, "children": [{"code": 3, "label": "Other family reason", "category": "Family", "weight": 65537.16, "pct": 8.63698648072018, "color": "#7DD4FF"}, {"code": 1, "label": "Marital status change", "category": "Family", "weight": 64313.0315, "pct": 8.475661496464465, "color": "#7DD4FF"}, {"code": 2, "label": "Establish own household", "category": "Family", "weight": 27563.048899999998, "pct": 3.6324686745157897, "color": "#7DD4FF"}]}, {"name": "Retirement", "weight": 8276.7431, "pct_total": 1.0907722925298264, "children": [{"code": 7, "label": "Retired", "category": "Retirement", "weight": 8276.7431, "pct": 1.0907722925298264, "color": "#4FC4FF"}]}, {"name": "Education", "weight": 1333.1, "pct_total": 0.17568607912591985, "children": [{"code": 14, "label": "College", "category": "Education", "weight": 1333.1, "pct": 0.17568607912591985, "color": "#BCE8FF"}]}, {"name": "Other", "weight": 33635.17, "pct_total": 4.432699075863601, "children": [{"code": 17, "label": "Natural disaster", "category": "Other", "weight": 29640.3, "pct": 3.906224657652092, "color": "#0077CC"}, {"code": 16, "label": "Health", "category": "Other", "weight": 3994.87, "pct": 0.5264744182115096, "color": "#0077CC"}]}]}, "n_records": 422, "total": 758796};
+const BG = "#F6F7F3";
+const TEXT = "#3D3733";
+const W = 1200, H = 1100;
+const PAD = 40;
+
+const svg = d3.select('#chart');
+svg.append('rect').attr('width', W).attr('height', H).attr('fill', BG);
+
+svg.append('text').attr('x', PAD).attr('y', PAD + 32)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',30).attr('font-weight',700).attr('fill',TEXT)
+  .text('Why NYC-area families with kids are leaving');
+svg.append('text').attr('x', PAD).attr('y', PAD + 32 + 28)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',17).attr('font-weight',400).attr('fill',TEXT)
+  .text('Stated reasons for families moving from NY state to NJ, CT, or PA — 63% originate in the 5 boroughs, another 21% in NY-state NYC suburbs.');
+
+// Container — circular polygon (60 sides ≈ smooth circle)
+const cx = W / 2, cy = H / 2 + 30, R = 380, N = 60;
+const clipPoly = [];
+for (let i = 0; i < N; i++) {
+  const a = (i / N) * 2 * Math.PI - Math.PI / 2;
+  clipPoly.push([cx + R * Math.cos(a), cy + R * Math.sin(a)]);
+}
+
+// Build hierarchy. d3-voronoi-treemap will lay out cat-level regions first, then sub-cells.
+const root = d3.hierarchy(P.hierarchy).sum(d => d.weight);
+const vt = d3.voronoiTreemap()
+  .clip(clipPoly)
+  .convergenceRatio(0.001)
+  .maxIterationCount(400)
+  .minWeightRatio(0.005);
+vt(root);
+
+// Polygon helpers
+function centroid(pts) {
+  let cxx=0, cyy=0, A=0;
+  for (let i=0; i<pts.length; i++) {
+    const [x0,y0]=pts[i], [x1,y1]=pts[(i+1)%pts.length];
+    const cross = x0*y1 - x1*y0;
+    A += cross; cxx += (x0+x1)*cross; cyy += (y0+y1)*cross;
+  }
+  A *= 0.5;
+  return [cxx/(6*A), cyy/(6*A)];
+}
+function bbox(pts) {
+  let xmin=Infinity, ymin=Infinity, xmax=-Infinity, ymax=-Infinity;
+  pts.forEach(([x,y]) => { if (x<xmin) xmin=x; if (x>xmax) xmax=x; if (y<ymin) ymin=y; if (y>ymax) ymax=y; });
+  return {xmin, ymin, xmax, ymax, w: xmax-xmin, h: ymax-ymin};
+}
+
+function fillLabel(hex) {
+  const h = hex.replace('#','');
+  const r=parseInt(h.slice(0,2),16), g=parseInt(h.slice(2,4),16), b=parseInt(h.slice(4,6),16);
+  const L = 0.299*r + 0.587*g + 0.114*b;
+  return L > 160 ? '#3D3733' : '#F6F7F3';
+}
+
+const g = svg.append('g');
+
+// Draw individual LEAF cells, filled with their category's shade.
+// Stroke is thin (subtle separator between sub-cells within a category).
+const leaves = root.leaves();
+leaves.forEach(leaf => {
+  const pts = leaf.polygon;
+  if (!pts || pts.length === 0) return;
+  const d = "M" + pts.map(p => p[0]+","+p[1]).join("L") + "Z";
+  g.append('path').attr('d', d)
+    .attr('fill', leaf.data.color)
+    .attr('stroke', BG)
+    .attr('stroke-width', 0.8);
+});
+
+// Draw thicker category outlines (parent polygons) to reinforce grouping —
+// these visually separate one color region from the next.
+const cats = root.children;
+cats.forEach(cat => {
+  const pts = cat.polygon;
+  if (!pts || pts.length === 0) return;
+  const d = "M" + pts.map(p => p[0]+","+p[1]).join("L") + "Z";
+  g.append('path').attr('d', d)
+    .attr('fill', 'none')
+    .attr('stroke', BG).attr('stroke-width', 5);
+});
+
+// Sort leaves by share for label priority
+const sortedLeaves = [...leaves].sort((a,b) => b.data.weight - a.data.weight);
+
+const outsideLabels = [];
+// Force-edge: cells from these categories ALWAYS get outside labels regardless of size.
+const FORCE_EDGE_CATS = new Set(['Education', 'Retirement']);
+
+sortedLeaves.forEach((leaf, idx) => {
+  const pts = leaf.polygon;
+  if (!pts) return;
+  const [tx, ty] = centroid(pts);
+  const bb = bbox(pts);
+  // Light or dark label depending on fill luminance
+  const fc = fillLabel(leaf.data.color);
+
+  const forceOutside = FORCE_EDGE_CATS.has(leaf.data.category);
+
+  if (!forceOutside && idx === 0) {
+    g.append('text').attr('x', tx).attr('y', ty - 12)
+      .attr('text-anchor','middle')
+      .attr('font-family','ABC Oracle Edu').attr('font-size', 64).attr('font-weight', 700).attr('fill', fc)
+      .text(`${leaf.data.pct.toFixed(0)}%`);
+    g.append('text').attr('x', tx).attr('y', ty + 26)
+      .attr('text-anchor','middle')
+      .attr('font-family','ABC Oracle Edu').attr('font-size', 16).attr('font-weight', 700).attr('fill', fc).attr('letter-spacing','2')
+      .text(leaf.data.label.toUpperCase());
+  } else if (!forceOutside && Math.min(bb.w, bb.h) > 55) {
+    const fs = Math.min(28, Math.max(13, Math.min(bb.w, bb.h) / 5.5));
+    g.append('text').attr('x', tx).attr('y', ty - 3)
+      .attr('text-anchor','middle')
+      .attr('font-family','ABC Oracle Edu').attr('font-size', fs).attr('font-weight', 700).attr('fill', fc)
+      .text(`${leaf.data.pct.toFixed(0)}%`);
+    g.append('text').attr('x', tx).attr('y', ty + fs - 5)
+      .attr('text-anchor','middle')
+      .attr('font-family','ABC Oracle Edu').attr('font-size', Math.max(9, fs * 0.42)).attr('font-weight', 500).attr('fill', fc).attr('letter-spacing','1.2')
+      .text(leaf.data.label.toUpperCase());
+  } else {
+    outsideLabels.push({leaf, tx, ty});
+  }
+});
+
+// Outside labels — distribute around the rim with collision avoidance.
+// For each small cell: compute its angle from container center.
+// Pull the rim position toward that angle, but enforce a minimum angular gap.
+const rimSlots = outsideLabels.map(({leaf, tx, ty}) => {
+  let ang = Math.atan2(ty - cy, tx - cx);  // [-π, π]
+  return { leaf, tx, ty, angle: ang };
+});
+// Sort by angle, then space them out so each has ≥ minGap radians from neighbors
+rimSlots.sort((a, b) => a.angle - b.angle);
+const minGap = 0.13;  // ~7.5°
+for (let i = 1; i < rimSlots.length; i++) {
+  if (rimSlots[i].angle - rimSlots[i-1].angle < minGap) {
+    rimSlots[i].angle = rimSlots[i-1].angle + minGap;
+  }
+}
+// One more pass — if total spread exceeds 2π we have too many labels for the rim;
+// gracefully clamp the last few. Otherwise rotate back if angles drifted off 2π.
+if (rimSlots.length > 0) {
+  const last = rimSlots[rimSlots.length - 1].angle;
+  const first = rimSlots[0].angle;
+  if (last - first > 2 * Math.PI - minGap) {
+    // shift all proportionally
+    const scale = (2 * Math.PI - minGap) / (last - first);
+    for (let i = 0; i < rimSlots.length; i++) {
+      rimSlots[i].angle = first + (rimSlots[i].angle - first) * scale;
+    }
+  }
+}
+
+rimSlots.forEach(({leaf, tx, ty, angle}) => {
+  const ux = Math.cos(angle), uy = Math.sin(angle);
+  const x1 = cx + ux * (R + 16);
+  const y1 = cy + uy * (R + 16);
+  const isRight = ux >= 0;
+  const x2 = x1 + (isRight ? 14 : -14);
+  const anchor = isRight ? 'start' : 'end';
+
+  // Leader: from cell centroid → straight elbow at the rim → flat to label
+  g.append('polyline')
+    .attr('points', `${tx},${ty} ${cx + ux * (R - 4)},${cy + uy * (R - 4)} ${x1},${y1}`)
+    .attr('fill', 'none').attr('stroke', TEXT).attr('stroke-width', 0.5);
+
+  g.append('text').attr('x', x2).attr('y', y1 - 4).attr('text-anchor', anchor)
+    .attr('font-family','ABC Oracle Edu').attr('font-size', 13).attr('font-weight', 700).attr('fill', TEXT)
+    .text(`${leaf.data.pct.toFixed(1)}%`);
+  g.append('text').attr('x', x2).attr('y', y1 + 12).attr('text-anchor', anchor)
+    .attr('font-family','ABC Oracle Edu').attr('font-size', 11).attr('font-weight', 400).attr('fill', TEXT)
+    .text(leaf.data.label);
+});
+
+// Category legend (just the categories, hue swatches)
+const legendY = H - 95;
+const cats2 = ['Employment','Housing','Family','Retirement','Education','Other'];
+const catSwatch = {
+  Housing: '#0BB4FF', Employment: '#0099E0', Family: '#7DD4FF',
+  Retirement: '#4FC4FF', Education: '#BCE8FF', Other: '#0077CC',
+};
+let lx = 40;
+cats2.forEach(c => {
+  svg.append('rect').attr('x', lx).attr('y', legendY).attr('width', 16).attr('height', 16).attr('fill', catSwatch[c]);
+  svg.append('text').attr('x', lx + 22).attr('y', legendY + 13)
+    .attr('font-family','ABC Oracle Edu').attr('font-size',14).attr('font-weight',500).attr('fill',TEXT)
+    .text(c);
+  lx += 22 + (c.length * 9) + 24;
+});
+
+svg.append('text').attr('x', PAD).attr('y', H - 38)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',13).attr('font-weight',300).attr('fill',TEXT)
+  .text(`n = ${P.n_records.toLocaleString()} unweighted records, ~${(P.total/1000).toFixed(0)}k weighted family-with-kids out-of-state movers.`);
+svg.append('text').attr('x', PAD).attr('y', H - 20)
+  .attr('font-family','ABC Oracle Edu').attr('font-size',13).attr('font-weight',300).attr('fill',TEXT)
+  .text('Source: IPUMS CPS ASEC 1999-2025, WHYMOVE variable. CPS lacks county-level previous residence — NY → NJ/CT/PA is the closest proxy for NYC suburb flight (84% of these moves originate in the NY metro area per ACS).');
+</script>
+</body></html>

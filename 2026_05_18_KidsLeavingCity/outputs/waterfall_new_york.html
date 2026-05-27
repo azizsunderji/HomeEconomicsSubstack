@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Where New York families went, 2011 → 2024</title>
+<style>
+@font-face {
+  font-family: 'ABC Oracle Edu';
+  src: url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'ABC Oracle Edu';
+  src: url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'ABC Oracle Edu';
+  src: url('file:///Users/azizsunderji/Dropbox/Home%20Economics/Brand%20Assets/OracleFont/Oracle%20Aziz%20Sunderji/Desktop/ABCOracleEdu-Light.otf') format('opentype');
+  font-weight: 300;
+}
+body { margin: 0; background: #fff; font-family: 'ABC Oracle Edu', sans-serif; }
+svg { display: block; margin: 20px auto; }
+.tooltip {
+  position: absolute; pointer-events: none;
+  background: rgba(61,55,51,0.95); color: #F6F7F3;
+  padding: 8px 12px; font-size: 13px; border-radius: 4px;
+  font-family: 'ABC Oracle Edu', sans-serif;
+}
+</style>
+</head>
+<body>
+<svg id="chart_combined" viewBox="0 0 1920 987" xmlns="http://www.w3.org/2000/svg"></svg>
+<div class="tooltip" style="display:none"></div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+const DATA = [{"name": "Kings", "full_name": "Kings County", "fips": "36047", "pop_2011": 600913, "pop_2024": 562076, "delta": -38837, "births": 490912, "aging": 415787, "net_mig": -113962, "has_decomp": true}, {"name": "New York", "full_name": "New York County", "fips": "36061", "pop_2011": 236564, "pop_2024": 220513, "delta": -16051, "births": 213630, "aging": 156224, "net_mig": -73457, "has_decomp": true}, {"name": "Queens", "full_name": "Queens County", "fips": "36081", "pop_2011": 465639, "pop_2024": 439104, "delta": -26535, "births": 356622, "aging": 327673, "net_mig": -55484, "has_decomp": true}, {"name": "Hudson", "full_name": "Hudson County", "fips": "34017", "pop_2011": 133551, "pop_2024": 141223, "delta": 7672, "births": 127288, "aging": 88607, "net_mig": -31009, "has_decomp": true}, {"name": "Bronx", "full_name": "Bronx County", "fips": "36005", "pop_2011": 367236, "pop_2024": 332553, "delta": -34683, "births": 251923, "aging": 261504, "net_mig": -25102, "has_decomp": true}, {"name": "Passaic", "full_name": "Passaic County", "fips": "34031", "pop_2011": 124184, "pop_2024": 123669, "delta": -515, "births": 85593, "aging": 89546, "net_mig": 3438, "has_decomp": true}, {"name": "Sussex", "full_name": "Sussex County", "fips": "34037", "pop_2011": 34331, "pop_2024": 28630, "delta": -5701, "births": 16637, "aging": 26867, "net_mig": 4529, "has_decomp": true}, {"name": "Hunterdon", "full_name": "Hunterdon County", "fips": "34019", "pop_2011": 29141, "pop_2024": 24967, "delta": -4174, "births": 12749, "aging": 23476, "net_mig": 6553, "has_decomp": true}, {"name": "Rockland", "full_name": "Rockland County", "fips": "36087", "pop_2011": 87981, "pop_2024": 105541, "delta": 17560, "births": 75018, "aging": 64150, "net_mig": 6692, "has_decomp": true}, {"name": "Ocean", "full_name": "Ocean County", "fips": "34029", "pop_2011": 135875, "pop_2024": 166276, "delta": 30401, "births": 119282, "aging": 96784, "net_mig": 7903, "has_decomp": true}, {"name": "Richmond", "full_name": "Richmond County", "fips": "36085", "pop_2011": 108320, "pop_2024": 105407, "delta": -2913, "births": 67756, "aging": 79873, "net_mig": 9204, "has_decomp": true}, {"name": "Somerset", "full_name": "Somerset County", "fips": "34035", "pop_2011": 79988, "pop_2024": 73710, "delta": -6278, "births": 41824, "aging": 61050, "net_mig": 12948, "has_decomp": true}, {"name": "Union", "full_name": "Union County", "fips": "34039", "pop_2011": 130856, "pop_2024": 139069, "delta": 8213, "births": 87215, "aging": 95064, "net_mig": 16062, "has_decomp": true}, {"name": "Morris", "full_name": "Morris County", "fips": "34027", "pop_2011": 115800, "pop_2024": 106446, "delta": -9354, "births": 61289, "aging": 89068, "net_mig": 18425, "has_decomp": true}, {"name": "Westchester", "full_name": "Westchester County", "fips": "36119", "pop_2011": 226394, "pop_2024": 208740, "delta": -17654, "births": 132062, "aging": 169476, "net_mig": 19760, "has_decomp": true}, {"name": "Essex", "full_name": "Essex County", "fips": "34013", "pop_2011": 193233, "pop_2024": 205811, "delta": 12578, "births": 131758, "aging": 139540, "net_mig": 20360, "has_decomp": true}, {"name": "Monmouth", "full_name": "Monmouth County", "fips": "34025", "pop_2011": 146790, "pop_2024": 132733, "delta": -14057, "births": 78549, "aging": 113109, "net_mig": 20503, "has_decomp": true}, {"name": "Middlesex", "full_name": "Middlesex County", "fips": "34023", "pop_2011": 184822, "pop_2024": 187435, "delta": 2613, "births": 116121, "aging": 134880, "net_mig": 21372, "has_decomp": true}, {"name": "Suffolk", "full_name": "Suffolk County", "fips": "36103", "pop_2011": 351829, "pop_2024": 314488, "delta": -37341, "births": 201915, "aging": 267135, "net_mig": 27879, "has_decomp": true}, {"name": "Bergen", "full_name": "Bergen County", "fips": "34003", "pop_2011": 203792, "pop_2024": 201694, "delta": -2098, "births": 119307, "aging": 153693, "net_mig": 32288, "has_decomp": true}, {"name": "Nassau", "full_name": "Nassau County", "fips": "36059", "pop_2011": 308094, "pop_2024": 295441, "delta": -12653, "births": 181188, "aging": 234100, "net_mig": 40259, "has_decomp": true}, {"name": "Putnam", "full_name": "Putnam County", "fips": "36079", "pop_2011": 23020, "pop_2024": 18840, "delta": -4180, "births": null, "aging": 18038, "net_mig": null, "has_decomp": false}];
+const C = {"births": "#67A275", "aging": "#DADFCE", "natural": "#3F6E4B", "mig": "#0BB4FF", "net": "#3D3733", "bg": "#F6F7F3", "text": "#3D3733", "subtext": "#7F7570", "grid": "#e1e2e3"};
+const MSA = "New York";
+const MSA_FULL = "New York-Newark-Jersey City, NY-NJ";
+const WIDTH = 960, HEIGHT = 987;
+const PAD = 40;
+
+function fmtCount(v) {
+  const a = Math.abs(v);
+  let s;
+  if (a >= 1_000_000) s = (v / 1_000_000).toFixed(a >= 10_000_000 ? 0 : 1) + 'M';
+  else if (a >= 1000) s = Math.round(v / 1000) + 'k';
+  else s = Math.round(v).toString();
+  return (v > 0 ? '+' : '') + s;
+}
+
+function renderChart(parentSvg, xOffset, title, subtitle, componentsFn, legendItems) {
+  // parentSvg = a d3 selection of the shared SVG. xOffset = horizontal shift.
+  const g = parentSvg.append('g').attr('transform', `translate(${xOffset}, 0)`);
+
+  // Background panel
+  g.append('rect').attr('width', WIDTH).attr('height', HEIGHT).attr('fill', C.bg);
+
+  g.append('text')
+     .attr('x', PAD).attr('y', PAD + 32)
+     .attr('font-family', 'ABC Oracle Edu').attr('font-size', 30).attr('font-weight', 500)
+     .attr('fill', C.text)
+     .text(title);
+
+  g.append('text')
+     .attr('x', PAD).attr('y', PAD + 32 + 30)
+     .attr('font-family', 'ABC Oracle Edu').attr('font-size', 20).attr('font-weight', 400)
+     .attr('fill', C.subtext)
+     .text(subtitle);
+
+  const titleBlockBottom = PAD + 32 + 30 + 65;
+  const sourceTop = HEIGHT - PAD - 60;
+  const xLabelArea = 180;
+  const chartTop = titleBlockBottom;
+  const chartBottom = sourceTop - xLabelArea;
+  const chartLeft = PAD + 90;
+  const chartRight = WIDTH - PAD;
+
+  // Build per-county component arrays via componentsFn
+  const enriched = DATA.map(d => ({
+    ...d,
+    components: d.has_decomp ? componentsFn(d) : [],
+    delta_val: d.delta || 0,
+  }));
+
+  // Y-axis domain — symmetric enough to show all components on both sides
+  const allValues = enriched.flatMap(d => [...d.components.map(c => c.val), d.delta_val]);
+  const dataMin = d3.min(allValues);
+  const dataMax = d3.max(allValues);
+  const yPad = Math.max(Math.abs(dataMin), Math.abs(dataMax)) * 0.05;
+  const y = d3.scaleLinear()
+    .domain([dataMin - yPad, dataMax + yPad])
+    .range([chartBottom, chartTop]);
+
+  const x = d3.scaleBand()
+    .domain(enriched.map(d => d.name))
+    .range([chartLeft, chartRight])
+    .padding(0.25);
+
+  // Gridlines & y-axis labels
+  const yTicks = y.ticks(8);
+  const gridG = g.append('g').attr('class', 'grid-lines');
+  yTicks.forEach(t => {
+    gridG.append('line')
+      .attr('x1', chartLeft - 10).attr('x2', chartRight)
+      .attr('y1', y(t)).attr('y2', y(t))
+      .attr('stroke', t === 0 ? C.text : C.grid)
+      .attr('stroke-width', t === 0 ? 1 : 0.5);
+  });
+
+  const yLabG = g.append('g').attr('class', 'y-axis-labels');
+  yTicks.forEach((t) => {
+    yLabG.append('text')
+      .attr('x', chartLeft - 14).attr('y', y(t))
+      .attr('font-family', 'ABC Oracle Edu').attr('font-size', 18).attr('font-weight', 300)
+      .attr('fill', '#333').attr('text-anchor', 'end').attr('dy', '0.32em')
+      .text(fmtCount(t));
+  });
+
+  g.append('text')
+     .attr('x', chartLeft - 50).attr('y', chartTop - 15)
+     .attr('font-family', 'ABC Oracle Edu').attr('font-size', 15).attr('font-weight', 400)
+     .attr('fill', C.subtext)
+     .text('Children (signed contributions to 2011→2024 Δ)');
+
+  // Bars
+  const seriesG = g.append('g').attr('class', 'data-series');
+  enriched.forEach(d => {
+    const bw = x.bandwidth();
+    if (!d.has_decomp) {
+      const y0 = y(0), yEnd = y(d.delta_val);
+      seriesG.append('rect')
+        .attr('x', x(d.name)).attr('width', bw)
+        .attr('y', Math.min(y0, yEnd)).attr('height', Math.abs(y0 - yEnd))
+        .attr('fill', '#bbb').attr('opacity', 0.5)
+        .attr('data-tip', `${d.full_name} (no births data)\n2011 → 2024: ${d.delta?.toLocaleString()}`);
+      return;
+    }
+    let pos = 0, neg = 0;
+    d.components.forEach(c => {
+      let yTop, yBot;
+      if (c.val >= 0) {
+        yBot = y(pos);
+        pos += c.val;
+        yTop = y(pos);
+      } else {
+        yTop = y(neg);
+        neg += c.val;
+        yBot = y(neg);
+      }
+      seriesG.append('rect')
+        .attr('x', x(d.name)).attr('width', bw)
+        .attr('y', yTop).attr('height', yBot - yTop)
+        .attr('fill', c.color)
+        .attr('data-tip', `${d.full_name}\n${c.label}: ${fmtCount(c.val)}`);
+    });
+    // Net delta marker
+    seriesG.append('line')
+      .attr('x1', x(d.name) - 2).attr('x2', x(d.name) + bw + 2)
+      .attr('y1', y(d.delta_val)).attr('y2', y(d.delta_val))
+      .attr('stroke', C.net).attr('stroke-width', 2);
+  });
+
+  // X-axis labels (rotated)
+  const xLabG = g.append('g').attr('class', 'x-axis-labels');
+  enriched.forEach(d => {
+    xLabG.append('text')
+      .attr('x', x(d.name) + x.bandwidth() / 2).attr('y', chartBottom + 12)
+      .attr('font-family', 'ABC Oracle Edu').attr('font-size', 13).attr('font-weight', 300)
+      .attr('fill', '#333').attr('text-anchor', 'end')
+      .attr('transform', `rotate(-45, ${x(d.name) + x.bandwidth() / 2}, ${chartBottom + 12})`)
+      .text(d.name);
+  });
+
+  // Legend
+  const legend = g.append('g').attr('class', 'legend')
+    .attr('transform', `translate(${chartLeft}, ${sourceTop - 35})`);
+  let lx = 0;
+  legendItems.forEach(it => {
+    if (it.line) {
+      legend.append('line').attr('x1', lx).attr('x2', lx + 16).attr('y1', 6).attr('y2', 6)
+        .attr('stroke', it.color).attr('stroke-width', 2);
+    } else {
+      legend.append('rect').attr('x', lx).attr('y', 0).attr('width', 16).attr('height', 12).attr('fill', it.color);
+    }
+    legend.append('text').attr('x', lx + 22).attr('y', 9)
+      .attr('font-family', 'ABC Oracle Edu').attr('font-size', 14).attr('font-weight', 400)
+      .attr('fill', C.text).text(it.label);
+    lx += 22 + (it.label.length * 8) + 24;
+  });
+
+  // Source
+  g.append('text')
+    .attr('x', PAD).attr('y', HEIGHT - PAD - 18)
+    .attr('font-family', 'ABC Oracle Edu').attr('font-size', 13).attr('font-weight', 200)
+    .attr('fill', C.text)
+    .text('Source: Census PEP (V2019 & V2024); CDC WONDER NCHS Natality (D66, 2007-2024).');
+
+  g.append('text')
+    .attr('x', PAD).attr('y', HEIGHT - PAD - 2)
+    .attr('font-family', 'ABC Oracle Edu').attr('font-size', 13).attr('font-weight', 200)
+    .attr('fill', C.subtext)
+    .text(MSA_FULL);
+}
+
+const parentSvg = d3.select('#chart_combined');
+
+// Left panel: three-component
+renderChart(
+  parentSvg, 0,
+  `Where ${MSA} families went, 2011 → 2024`,
+  'Three components: births, aging-out, net migration',
+  d => [
+    { val:  d.births,   color: C.births, label: 'Births' },
+    { val: -d.aging,    color: C.aging,  label: 'Aging-out' },
+    { val:  d.net_mig,  color: C.mig,    label: 'Net migration' },
+  ],
+  [
+    { label: 'Births to residents', color: C.births },
+    { label: 'Aging out of <18', color: C.aging },
+    { label: 'Net migration', color: C.mig },
+    { label: 'Net Δ marker', color: C.net, line: true },
+  ]
+);
+
+// Right panel: two-component (natural change vs migration)
+renderChart(
+  parentSvg, WIDTH,
+  `${MSA}: natural change vs net migration`,
+  'Births and aging-out merged into one bar',
+  d => [
+    { val: d.births - d.aging, color: C.natural, label: 'Births − aging-out' },
+    { val: d.net_mig,          color: C.mig,     label: 'Net migration' },
+  ],
+  [
+    { label: 'Births − aging-out', color: C.natural },
+    { label: 'Net migration', color: C.mig },
+    { label: 'Net Δ marker', color: C.net, line: true },
+  ]
+);
+
+// Tooltips (delegated)
+const tip = d3.select('.tooltip');
+d3.selectAll('rect[data-tip]')
+  .on('mousemove', function(e) {
+    tip.style('left', (e.pageX + 12) + 'px').style('top', (e.pageY + 12) + 'px')
+       .style('display', 'block')
+       .html(d3.select(this).attr('data-tip').replace(/\n/g, '<br>'));
+  })
+  .on('mouseout', () => tip.style('display', 'none'));
+</script>
+</body>
+</html>
